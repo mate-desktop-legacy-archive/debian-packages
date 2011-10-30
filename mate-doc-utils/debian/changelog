@@ -1,0 +1,18 @@
+mate-doc-utils (2011.10.30-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added package mate-doc-utils-gnome to prevent conflicts.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 30 Oct 2011 16:40:46 +0100
+
+mate-doc-utils (2011.10.18-2) unstable; urgency=low
+
+  * Fixed debian/control.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Oct 2011 02:59:30 +0200
+
+mate-doc-utils (2011.10.18-1) unstable; urgency=low
+
+  * New upsream release;
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Oct 2011 18:56:28 +0200

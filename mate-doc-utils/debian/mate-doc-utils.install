@@ -1,0 +1,7 @@
+debian/tmp/usr/bin/mate*
+debian/tmp/usr/share/aclocal
+debian/tmp/usr/share/locale
+debian/tmp/usr/share/mate*
+debian/tmp/usr/share/omf
+debian/tmp/usr/share/pkgconfig
+debian/tmp/usr/share/xml/mate

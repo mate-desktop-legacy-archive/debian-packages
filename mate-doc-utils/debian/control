@@ -1,0 +1,42 @@
+Source: mate-doc-utils
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper
+Build-Depends-Indep: libxml2-dev,
+                     libxslt1-dev,
+                     libxml2-utils,
+                     automake,
+                     intltool,
+                     python-dev,
+                     python-support,
+                     python-libxml2,
+                     xsltproc,
+                     pkg-config,
+                     librarian-dev
+Standards-Version: 3.9.0
+
+Package: mate-doc-utils
+Architecture: any
+Depends: ${misc:Depends},
+         libxml2,
+         libxslt1.1,
+         python-libxml2
+Suggests: mate-doc-utils-gnome
+Description: a collection of documentation utilities for the MATE project
+ mate-doc-utils is a collection of documentation utilities for the MATE
+ project.
+
+Package: mate-doc-utils-gnome
+Architecture: any
+Depends: ${misc:Depends},
+         mlibxml2,
+         libxslt1.1,
+         python-libxml2
+Conflicts: gnome-doc-utils
+Description: a collection of documentation utilities for the MATE project - GNOME files
+ mate-doc-utils is a collection of documentation utilities for the MATE
+ project.
+ .
+ This package contains files that conflict with gnome-doc-utils.
