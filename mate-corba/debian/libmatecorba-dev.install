@@ -1,0 +1,4 @@
+debian/tmp/usr/include/
+debian/tmp/usr/lib/pkgconfig/
+debian/tmp/usr/share/aclocal/
+debian/tmp/usr/share/doc/libmatecorba-dev

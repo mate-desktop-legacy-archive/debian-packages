@@ -1,0 +1,5 @@
+debian/tmp/usr/bin/
+debian/tmp/usr/lib/lib*
+debian/tmp/usr/lib/matecorba-2.0/
+debian/tmp/usr/share/doc/mate-corba/
+debian/tmp/usr/share/idl
