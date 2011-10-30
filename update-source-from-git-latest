@@ -25,7 +25,8 @@ if not pkgname in valid_pkgnames:
     sys.exit(1)
 
 ROOT_DIR = os.getcwd()
-SOURCE_DIR = ROOT_DIR + "/git-source/Mate-Desktop-Environment"
+GIT_DIR = os.path.join(ROOT_DIR, "git-source")
+SOURCE_DIR = os.path.join(ROOT_DIR, "git-source/Mate-Desktop-Environment")
 
 # Get the latest source code
 if os.path.exists(SOURCE_DIR):
@@ -35,7 +36,8 @@ if os.path.exists(SOURCE_DIR):
 else:
     print "CLONING MATE SOURCE CODE FROM GITHUB..."
     os.chdir(ROOT_DIR)
-    os.system("mkdir -p git-source")    
+    os.system("mkdir -p git-source")
+    os.chdir(GIT_DIR)
     os.system("git clone https://github.com/Perberos/Mate-Desktop-Environment.git")
 
 # Clean up mate-conf
