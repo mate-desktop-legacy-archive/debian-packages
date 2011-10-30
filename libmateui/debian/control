@@ -1,0 +1,58 @@
+Source: libmateui
+Section: libs
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper,
+               libmatecanvas,
+               intltool,
+               gettext,
+               libmatecomponentui,
+               libglib2.0-dev,
+               libpango1.0-dev,
+               libgtk2.0-dev,
+               libpopt-dev,
+               mate-vfs,
+               mate-conf,
+               libglade2-dev,
+               libmate,
+               cdbs,
+               libmatekeyring,
+               libxt-dev,
+               libxml-parser-perl,
+               libxml2-dev,
+               libx11-dev,
+               libsm-dev,
+               libice-dev,
+               dh-autoreconf,
+               gtk-doc-tools,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               libavahi-client-dev,
+               libavahi-common-dev,
+               libavahi-glib-dev,
+               libselinux1-dev,
+               libgcrypt11-dev
+Build-Depends-Indep: libglib2.0-doc, libgtk2.0-doc
+
+Package: libmateui
+Architecture: any
+Section: libs
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmate,
+         libgtk2.0-dev,
+         libmatecanvas,
+         libmatekeyring,
+         mate-conf,
+         libmatecomponent,
+         mate-vfs,
+         libsm-dev,
+         libice-dev,
+         libpango1.0-dev,
+         libglib2.0-dev
+Suggests: mate-icon-theme
+Description: MATE user interface library
+ This package contains the shared library for the base MATE library
+ functions (User Interface functions).
+
