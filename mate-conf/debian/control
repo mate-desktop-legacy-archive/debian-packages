@@ -1,0 +1,42 @@
+Source: mate-conf
+Section: libs
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs,
+               quilt,
+               dpkg-dev,
+               gtk-doc-tools,
+               libglib2.0-dev,
+               mate-corba,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               libxml2-dev,
+               libgtk2.0-dev,
+               libpolkit-gobject-1-dev,
+               libldap2-dev,
+               intltool,
+               libxml-parser-perl,
+               gettext,
+               python,
+               python-support,
+               autotools-dev,
+               libglib2.0-doc,
+               gobject-introspection
+Standards-Version: 3.9.0
+
+Package: mate-conf
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         psmisc,
+         dbus,
+         dbus-x11,
+         ${python:Depends}
+Recommends: libgtk2.0-0
+Description: MATE configuration database system (support tools)
+ mate-conf is a configuration database system for storing application
+ preferences. It supports default or mandatory settings set by the
+ administrator, and changes to the database are instantly applied to all
+ running applications. It is written for the MATE desktop but doesn't
+ require it.

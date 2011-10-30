@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/utils.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc \
+	--libexecdir=/usr/lib/MateConf \
+	--localstatedir=/var \
+	--enable-defaults-service \
+	--enable-gsettings-backend=no
+
+binary-install/mate-conf::
+	mkdir -p debian/mate-conf/etc/mateconf/mateconf.xml.system
+
+binary-predeb/mate-conf::
+	dh_pysupport -p$(cdbs_curpkg)
+

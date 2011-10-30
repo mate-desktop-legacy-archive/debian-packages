@@ -1,0 +1,60 @@
+mate-conf (2011.10.27-6) unstable; urgency=low
+
+  * Added mkdir /etc/mateconf/mateconf.xml.system.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 22:44:23 +0200
+
+mate-conf (2011.10.27-5) unstable; urgency=low
+
+  * Added postinst script.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 04:03:51 +0200
+
+mate-conf (2011.10.27-4) unstable; urgency=low
+
+  * Added mateconfpkg script.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 17:46:55 +0200
+
+mate-conf (2011.10.27-3) unstable; urgency=low
+
+  * Moved to /usr/lib/mateconf instead of /usr/lib/MateConf.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 16:55:58 +0200
+
+mate-conf (2011.10.27-2) unstable; urgency=low
+
+  * Disabled gsettings.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 04:59:14 +0200
+
+mate-conf (2011.10.27-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added gobject-introspection in build-depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 02:37:56 +0200
+
+mate-conf (2011.10.18-4) unstable; urgency=low
+
+  * Removed /etc/xdg/autostart that breaks gconf.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 21 Oct 2011 01:15:59 +0200
+
+mate-conf (2011.10.18-3) unstable; urgency=low
+
+  * Removed postinst, postrm and prerm scripts.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Oct 2011 00:01:34 +0200
+
+mate-conf (2011.10.18-2) unstable; urgency=low
+
+  * Fixed debian/control.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Oct 2011 22:25:02 +0200
+
+mate-conf (2011.10.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Oct 2011 01:20:23 +0200
