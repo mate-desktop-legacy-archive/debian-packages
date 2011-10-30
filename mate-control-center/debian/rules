@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
+							--localstatedir=/var \
+							--disable-static \
+							--disable-update-mimedb 
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-control-center::
+	mkdir -p debian/mate-control-center/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-control-center/usr/share/mateconf/schemas/mate-control-center.schemas" --domain mate-control-center debian/mate-control-center/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-control-center/etc/mateconf/schemas/
+

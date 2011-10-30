@@ -1,0 +1,63 @@
+Source: mate-control-center
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.8.3
+Build-Depends: cdbs (>= 0.4.41),
+               dh-autoreconf,
+               debhelper (>= 5.0.0),
+               mate-common,
+               docbook-to-man,
+               autotools-dev,
+               type-handling (>= 0.2.8),
+               mate-doc-utils (>= 0.3.2),
+               intltool (>= 0.37.1),
+               libxt-dev,
+               libx11-dev,
+               libxss-dev,
+               libcanberra-gtk-dev,
+               libgtk2.0-dev (>= 2.18.0),
+               libglib2.0-dev (>= 2.17.4),
+               mate-conf,
+               mate-desktop,
+               mate-menus,
+               libdbus-1-dev (>= 0.32),
+               libdbus-glib-1-dev (>= 0.32),
+               libxml2-dev,
+               mate-window-manager,
+               mate-settings-daemon,
+               libxft-dev (>= 2.1.2),
+               libxrender-dev,
+               libxrandr-dev,
+               libxcursor-dev,
+               libxi-dev (>= 2:1.2),
+               libmatekbd,
+               libxklavier-dev (>= 4.0),
+               libunique-dev,
+               desktop-file-utils,
+               shared-mime-info,
+               scrollkeeper,
+               libgtop2-dev,
+               xsltproc,
+               libmate,
+               libstartup-notification0-dev
+
+Package: mate-control-center
+Architecture: any
+Section: mate
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-settings-daemon,
+         mate-menus,
+         mate-desktop,
+         mate-icon-theme,
+         desktop-file-utils
+Description: utilities to configure the MATE desktop
+ This package contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ It also contains a front end to these applets, which can also be
+ accessed with the MATE panel or the Caja file manager.
+

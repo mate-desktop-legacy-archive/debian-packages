@@ -1,0 +1,37 @@
+Source: libmateweather
+Section: libs
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               autotools-dev,
+               cdbs,
+               libxml2-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               mate-conf,
+               intltool (>= 0.40.3),
+               pkg-config (>= 0.19),
+               libxml2-utils,
+               python-support,
+               python-all-dev,
+               python-gobject-dev,
+               python-gtk2-dev,
+               libglib2.0-doc,
+               libgtk2.0-doc,
+               libsoup2.4-dev
+Standards-Version: 3.9.1
+
+Package: libmateweather
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libxml2-dev (>= 2.6.0),
+         libglib2.0-dev (>= 2.13.0),
+         libgtk2.0-dev (>= 2.11.0),
+         libsoup2.4-1,
+         mate-conf,
+         ${python:Depends}
+Description: MateWeather shared library
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+
