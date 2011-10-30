@@ -31,7 +31,7 @@ Description: a collection of documentation utilities for the MATE project
 Package: mate-doc-utils-gnome
 Architecture: any
 Depends: ${misc:Depends},
-         mlibxml2,
+         libxml2,
          libxslt1.1,
          python-libxml2
 Conflicts: gnome-doc-utils
