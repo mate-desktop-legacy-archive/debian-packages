@@ -1,0 +1,30 @@
+Source: libmatekeyring
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 5),
+               cdbs,
+               quilt,
+               intltool (>= 0.35.0),
+               libglib2.0-dev (>= 2.16.0),
+               gtk-doc-tools (>= 1.9),
+               docbook-xml,
+               libdbus-1-dev (>= 1.0),
+               libgcrypt11-dev (>= 1.2.2),
+               libglib2.0-doc,
+Standards-Version: 3.8.4
+
+Package: libmatekeyring
+Section: libs
+Architecture: any
+Depends: ${misc:Depends},
+         libglib2.0-dev (>= 2.16)
+Description: MATE keyring services library
+ mate-keyring is a daemon in the session, similar to ssh-agent,
+ and other applications can use it to store passwords and other
+ sensitive information.
+ .
+ The program can manage several keyrings, each with its own master
+ password, and there is also a session keyring which is never stored to
+ disk, but forgotten when the session ends.
+

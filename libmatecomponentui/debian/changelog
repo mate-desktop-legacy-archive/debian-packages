@@ -1,0 +1,12 @@
+libmatecomponentui (2011.10.18-2) unstable; urgency=low
+
+  * Fixed debian/control.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Oct 2011 03:44:40 +0200
+
+libmatecomponentui (2011.10.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Oct 2011 03:40:14 +0200
+

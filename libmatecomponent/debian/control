@@ -1,0 +1,37 @@
+Source: libmatecomponent
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper (>= 5),
+               libdbus-1-dev (>= 1.0.0),
+               libdbus-glib-1-dev (>= 0.74),
+               bison,
+               flex,
+               intltool (>= 0.35.0),
+               mate-corba,
+               libglib2.0-dev (>= 2.14.0),
+               libxml2-dev (>= 2.6.7),
+               libpopt-dev,
+               gtk-doc-tools,
+               docbook-xml,
+               autotools-dev,
+               libglib2.0-doc
+Standards-Version: 3.8.4
+
+Package: libmatecomponent
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libglib2.0-dev (>= 2.8.0),
+         mate-corba,
+         libpopt-dev
+Description: Mate CORBA interfaces library
+ mate-component is a set of language and system independent CORBA interfaces
+ for creating reusable components, controls and creating compound
+ documents.
+ .
+ The mate-component distribution includes a Gtk+ based implementation of the
+ mate-component interfaces, enabling developers to create reusable
+ components and applications that can be used to form more complex
+ documents.

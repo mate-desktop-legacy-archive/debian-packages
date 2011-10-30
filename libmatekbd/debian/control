@@ -1,0 +1,28 @@
+Source: libmatekbd
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+        autotools-dev,
+        cdbs,
+        dpkg-dev,
+        libglib2.0-dev,
+        mate-conf,
+        libgtk2.0-dev,
+        libxklavier-dev,
+        intltool
+Standards-Version: 3.8.3
+
+Package: libmatekbd
+Section: mate
+Architecture: any
+Depends: ${misc:Depends},
+        iso-codes,
+        libglib2.0-dev,
+        libgtk2.0-dev,
+        mate-conf,
+        libxklavier-dev,
+        libx11-dev
+Description: MATE library to manage keyboard configuration
+ libgnomekbd offers an API to manage the keyboard in MATE applications.
+

@@ -1,0 +1,54 @@
+Source: libmatecomponentui
+Section: devel
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 5),
+               cdbs,
+               dpkg-dev (>= 1.13.19),
+               x11-xserver-utils,
+               intltool (>= 0.40.0),
+               gettext,
+               pkg-config (>= 0.10),
+               libpango1.0-dev,
+               libxt-dev,
+               libpopt-dev,
+               libmatecanvas,
+               libmatecomponent,
+               libmate,
+               libxml2-dev,
+               mate-conf,
+               libgtk2.0-dev (>= 2.6.0),
+               libglib2.0-dev (>= 2.6.0),
+               libglade2-dev (>= 1:2.4.0),
+               xvfb,
+               xfonts-base,
+               xauth,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               libavahi-client-dev,
+               libavahi-common-dev,
+               libavahi-glib-dev,
+               libselinux1-dev
+Build-Depends-Indep: libglib2.0-doc,
+                     libgtk2.0-doc
+Standards-Version: 3.8.4
+
+Package: libmatecomponentui
+Architecture: any
+Section: libs
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libglib2.0-dev,
+         libmatecomponent,
+         libmatecanvas,
+         libmate,
+         mate-corba,
+         libxml2-dev,
+         libsm-dev,
+         libice-dev,
+         libx11-dev
+Description: The Mate Component UI library
+ The Mate Component UI library
+ .
+ This package is a part of MATE.
+
