@@ -1,3 +1,10 @@
+libmatecomponent (2011.10.31-1) unstable; urgency=low
+
+  * New upstream release.
+  * Splitted include files into a -dev package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 10:39:34 +0100
+
 libmatecomponent (2011.10.18-2) unstable; urgency=low
 
   * Fixed debian/control for MATE.

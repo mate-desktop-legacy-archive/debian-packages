@@ -1,2 +1,7 @@
 debian/matecomponent-activation-config.xml /etc/matecomponent-activation
-usr/bin
+usr/bin/
+usr/lib/*.so.*
+usr/lib/matecomponent/
+usr/lib/matecomponent-2.0/
+usr/lib/matecorba-2.0/
+usr/sbin/
