@@ -1,0 +1,22 @@
+Source: mate-dialogs
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs,
+               intltool,
+               libgtk2.0-dev,
+               mate-doc-utils,
+               libmatenotify,
+               libglib2.0-dev,
+               docbook-xml,
+               xsltproc
+Standards-Version: 3.8.4
+
+Package: mate-dialogs
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Display graphical dialog boxes from shell scripts
+ mate-dialogs allows you to display GTK+ dialogs from shell scripts for
+ MATE desktop (like zenity of gnome).

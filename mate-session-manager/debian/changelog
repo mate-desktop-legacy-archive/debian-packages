@@ -1,0 +1,18 @@
+mate-session-manager (2011.10.27-3) unstable; urgency=low
+
+  * Added mateconf-merge-schema in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 22:04:47 +0200
+
+mate-session-manager (2011.10.27-2) unstable; urgency=low
+
+  * Added scripts.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 06:53:39 +0200
+
+mate-session-manager (2011.10.27-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Oct 2011 01:45:33 +0200
+

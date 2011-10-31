@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+pkgname=mate-session-manager
+
+/usr/sbin/mateconfpkg --uninstall ${pkgname}
+
+exit 0
+

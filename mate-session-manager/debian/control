@@ -1,0 +1,47 @@
+Source: mate-session-manager
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.0
+Build-Depends: cdbs,
+               debhelper,
+               intltool,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libupower-glib-dev,
+               libdbus-glib-1-dev,
+               mate-conf,
+               libstartup-notification0-dev,
+               libsm-dev,
+               libice-dev,
+               libx11-dev,
+               libxt-dev,
+               libxau-dev,
+               libxext-dev,
+               libxtst-dev,
+               libxrender-dev,
+               xmlto,
+               xsltproc,
+               gobject-introspection
+
+Package: mate-session-manager
+Architecture: all
+Depends: ${misc:Depends},
+         mate-settings-daemon,
+         mate-panel,
+         mate-window-manager,
+         mate-file-manager,
+         mate-polkit,
+         dbus-x11,
+         upower
+Description: The MATE Session Manager
+ This package contains a session that can be started from a display
+ manager such as MDM. It will load all necessary applications for a
+ full-featured user session.
+ .
+ The session manager also features the ability to save a running session
+ an restore it later.
+ .
+ This version is configured to start the MATE 2 desktop, based on the
+ MATE panel.
+

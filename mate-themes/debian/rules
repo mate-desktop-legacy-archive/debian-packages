@@ -1,0 +1,11 @@
+#! /usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS := PKG_CONFIG_PATH=./debian
+
+#DEB_INSTALL_DOCS_ALL := AUTHORS
+#DEB_INSTALL_DOCS_gnome-accessibility-themes := README
+
+#DEB_DH_MAKESHLIBS_ARGS_ALL := -n

@@ -1,0 +1,33 @@
+Source: mate-desktop
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs,
+               intltool,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libstartup-notification0-dev,
+               mate-conf,
+               mate-doc-utils,
+               libx11-dev,
+               libxrandr-dev,
+               libxml2-dev,
+               libunique-dev,
+               libmatenotify,
+               gtk-doc-tools,
+               python-dev,
+               python-support,
+               libglib2.0-doc,
+               libgtk2.0-doc
+Standards-Version: 3.9.0
+
+Package: mate-desktop
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libunique-1.0-0,
+         libmatenotify,
+         hicolor-icon-theme
+Description: Library with common API for various MATE modules
+ This package contain the library with common API for various MATE modules.

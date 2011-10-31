@@ -1,0 +1,56 @@
+Source: mate-vfs
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               autotools-dev,
+               cdbs,
+               pkg-config,
+               gtk-doc-tools,
+               libglib2.0-dev,
+               libdbus-1-dev,
+               intltool,
+               openssh-client,
+               libxml2-dev,
+               libudev-dev,
+               libavahi-glib-dev,
+               libavahi-client-dev,
+               libfuse-dev,
+               mate-conf,
+               libgdu-dev,
+               libgudev-1.0-dev,
+               libcdio-paranoia-dev,
+               libbluetooth-dev,
+               libdbus-glib-1-dev,
+               libexpat1-dev,
+               libgphoto2-2-dev,
+               libsmbclient-dev,
+               libarchive-dev,
+               libltdl-dev,
+               libimobiledevice-dev,
+               libbz2-dev,
+               mate-mime-data
+Standards-Version: 3.9.0
+Section: libs
+
+Package: mate-vfs
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         x11-utils,
+         fuse-utils,
+         mate-mime-data,
+         mate-conf,
+         mate-common
+Recommends: dbus,
+            psmisc,
+            mate-keyring
+Suggests: obex-data-server, samba-common
+Description: mate-vfs userspace virtual filesystem
+ mate-vfs is a userspace virtual filesystem where mount runs as a separate 
+ processes which you talk to via D-Bus. It also contains a gio module 
+ that seamlessly adds mate-vfs support to all applications using the gio 
+ API. It also supports exposing the mate-vfs mounts to non-gio applications 
+ using fuse. 
+ .
+ This package contains the mate-vfs server that provides mate-vfs mounts to all 
+ gio applications, and the minimal set of backends.
