@@ -1,3 +1,15 @@
+mate-corba (2011.10.31-2) unstable; urgency=low
+
+  * Fixed arch of -dev package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 01:36:23 +0100
+
+mate-corba (2011.10.31-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 00:38:37 +0100
+
 mate-corba (2011.10.30-1) unstable; urgency=low
 
   * New upstream release.

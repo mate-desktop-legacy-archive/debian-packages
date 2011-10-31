@@ -4,7 +4,6 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/utils.mk
 
-DEB_DH_MAKESHLIBS_ARGS_ALL += -V 'libmatecomponent'
-DEB_DH_SHLIBDEPS_ARGS_ALL += -Llibmatecomponent
-DEB_CONFIGURE_LIBEXECDIR := "\$${prefix}/lib/matecomponent-activation"
-DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc
+DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc \
+							--disable-static \
+							--libexecdir=/usr/lib/matecomponent

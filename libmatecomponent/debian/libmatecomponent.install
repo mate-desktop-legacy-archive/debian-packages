@@ -1,0 +1,2 @@
+debian/matecomponent-activation-config.xml /etc/matecomponent-activation
+usr/bin

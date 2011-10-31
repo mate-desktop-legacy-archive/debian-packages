@@ -1,0 +1,13 @@
+debian/mateconfpkg /usr/sbin
+debian/mateconf-merge-schema /usr/bin
+etc/
+usr/bin/
+usr/lib/MateConf
+usr/lib/*.so.*
+usr/share/dbus-1
+usr/share/gtk-doc
+usr/share/locale
+usr/share/man
+usr/share/MateConf
+usr/share/polkit-1
+usr/share/sgml

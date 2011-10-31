@@ -25,10 +25,11 @@ Description: a CORBA ORB
  language they're written in or the operating system they run on.
 
 Package: libmatecorba-dev
-Architecture: all
-Section: net
+Section: libdevel
+Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         mate-corba,
          libidl-dev,
          libglib2.0-dev,
          pkg-config
