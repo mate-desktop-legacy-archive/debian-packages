@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += \
+			--localstatedir=/var \
+			--libexecdir=/usr/lib/mate-panel \
+			--disable-scrollkeeper \
+			--disable-static
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-panel::
+	mkdir -p debian/mate-panel/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-panel/usr/share/mateconf/schemas/mate-panel.schemas" --domain mate-panel debian/mate-panel/etc/mateconf/schemas/*.schemas
+	rm debian/mate-panel/etc/mateconf/schemas/*.schemas

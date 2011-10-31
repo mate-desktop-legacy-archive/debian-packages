@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/utils.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var \
+		--libexecdir=/usr/lib/mate-window-manager --disable-static \
+		--disable-startup-notification --disable-scrollkeeper
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-window-manager::
+	mkdir -p debian/mate-window-manager/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-window-manager/usr/share/mateconf/schemas/mate-window-manager.schemas" --domain mate-window-manager debian/mate-window-manager/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-window-manager/etc/mateconf/schemas/
+

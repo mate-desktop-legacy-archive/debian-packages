@@ -1,0 +1,12 @@
+mate-dialogs (2011.10.18-2) unstable; urgency=low
+
+  * Removed gdialog to have compatibility with zenity.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Oct 2011 00:26:47 +0200
+
+mate-dialogs (2011.10.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 21 Oct 2011 01:20:12 +0200
+

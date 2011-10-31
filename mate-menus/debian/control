@@ -1,0 +1,30 @@
+Source: mate-menus
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 5.0.37.2),
+               cdbs (>= 0.4.73),
+               libglib2.0-dev (>= 2.15.2),
+               python-all-dev,
+               dpkg-dev (>= 1.13.19),
+               python-support (>= 0.6),
+               intltool (>= 0.40.0)
+Standards-Version: 3.8.3
+XS-Python-Version: >= 2.3
+
+Package: mate-menus
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         python-gtk2
+XB-Python-Version: ${python:Versions}
+Description: an implementation of the freedesktop menu specification for MATE
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ Also contained here are the MATE menu layout configuration files, .directory
+ files and assorted menu related utility programs.
+

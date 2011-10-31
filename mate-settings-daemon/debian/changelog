@@ -1,0 +1,18 @@
+mate-settings-daemon (2011.10.27-2) unstable; urgency=low
+
+  * Fixed mateconf schemas.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 15:48:45 +0200
+
+mate-settings-daemon (2011.10.27-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 04:15:35 +0200
+
+mate-settings-daemon (2011.10.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Oct 2011 01:31:28 +0200
+

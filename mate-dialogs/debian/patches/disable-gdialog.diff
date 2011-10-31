@@ -1,0 +1,105 @@
+--- a/configure
++++ b/configure
+@@ -6863,7 +6863,7 @@
+ 
+ # *******************************
+ 
+-ac_config_files="$ac_config_files Makefile po/Makefile.in src/Makefile src/gdialog data/Makefile help/Makefile"
++ac_config_files="$ac_config_files Makefile po/Makefile.in src/Makefile data/Makefile help/Makefile"
+ 
+ 
+ cat >confcache <<\_ACEOF
+@@ -7622,7 +7622,6 @@
+     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
+     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
+     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
+-    "src/gdialog") CONFIG_FILES="$CONFIG_FILES src/gdialog" ;;
+     "data/Makefile") CONFIG_FILES="$CONFIG_FILES data/Makefile" ;;
+     "help/Makefile") CONFIG_FILES="$CONFIG_FILES help/Makefile" ;;
+     "po/stamp-it") CONFIG_COMMANDS="$CONFIG_COMMANDS po/stamp-it" ;;
+--- a/configure.in
++++ b/configure.in
+@@ -128,7 +128,6 @@
+ Makefile
+ po/Makefile.in
+ src/Makefile
+-src/gdialog
+ data/Makefile
+ help/Makefile
+ ])
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -1,6 +1,6 @@
+ bin_PROGRAMS = matedialog
+ 
+-bin_SCRIPTS = gdialog
++bin_SCRIPTS = 
+ 
+ matedialog_SOURCES = \
+ 	about.c		\
+@@ -46,10 +46,7 @@
+ ui_DATA = \
+ 	matedialog.ui
+ 
+-DISTCLEANFILES= \
+-	gdialog
++DISTCLEANFILES= 
+ 
+ EXTRA_DIST = \
+-	$(ui_DATA) \
+-	gdialog \
+-	gdialog.in
++	$(ui_DATA)
+--- a/src/Makefile.in
++++ b/src/Makefile.in
+@@ -36,15 +36,14 @@
+ POST_UNINSTALL = :
+ bin_PROGRAMS = matedialog$(EXEEXT)
+ subdir = src
+-DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
+-	$(srcdir)/gdialog.in
++DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
+ ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
+ am__aclocal_m4_deps = $(top_srcdir)/configure.in
+ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
+ 	$(ACLOCAL_M4)
+ mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+ CONFIG_HEADER = $(top_builddir)/config.h
+-CONFIG_CLEAN_FILES = gdialog
++CONFIG_CLEAN_FILES = 
+ CONFIG_CLEAN_VPATH_FILES =
+ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(bindir)" \
+ 	"$(DESTDIR)$(uidir)"
+@@ -244,7 +243,7 @@
+ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-bin_SCRIPTS = gdialog
++bin_SCRIPTS = 
+ matedialog_SOURCES = \
+ 	about.c		\
+ 	calendar.c	\
+@@ -288,13 +287,10 @@
+ ui_DATA = \
+ 	matedialog.ui
+ 
+-DISTCLEANFILES = \
+-	gdialog
++DISTCLEANFILES = 
+ 
+ EXTRA_DIST = \
+ 	$(ui_DATA) \
+-	gdialog \
+-	gdialog.in
+ 
+ all: all-am
+ 
+@@ -330,8 +326,6 @@
+ $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
+ 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
+ $(am__aclocal_m4_deps):
+-gdialog: $(top_builddir)/config.status $(srcdir)/gdialog.in
+-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
+ install-binPROGRAMS: $(bin_PROGRAMS)
+ 	@$(NORMAL_INSTALL)
+ 	test -z "$(bindir)" || $(MKDIR_P) "$(DESTDIR)$(bindir)"

@@ -1,0 +1,14 @@
+Source: mate-mime-data
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs, debhelper
+Build-Depends-Indep: gettext, libxml-parser-perl, shared-mime-info, intltool
+Standards-Version: 3.7.2
+
+Package: mate-mime-data
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}, shared-mime-info, intltool
+Description: base MIME and Application database for MATE.
+ This module contains the base MIME and Application database for MATE.
+ It is meant to be accessed through the MIME functions in MateVFS.
