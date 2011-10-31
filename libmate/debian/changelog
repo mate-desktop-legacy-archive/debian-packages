@@ -1,3 +1,10 @@
+libmate (2011.10.31-1) unstable; urgency=low
+
+  * New upstream release.
+  * Splitted include files into -dev package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 11:32:02 +0100
+
 libmate (2011.10.18-1) unstable; urgency=low
 
   * New upstream release.

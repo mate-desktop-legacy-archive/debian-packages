@@ -3,19 +3,19 @@ Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper,
                mate-vfs,
-               mate-corba,
+               libmatecorba-dev,
                libpopt-dev,
-               intltool (>= 0.40.0),
-               mate-conf,
+               intltool,
+               libmateconf-dev,
                libcanberra-dev,
-               libglib2.0-dev (>= 2.16.0),
-               cdbs (>= 0.4.41),
-               dpkg-dev (>= 1.13.19),
-               gtk-doc-tools (>= 1.0),
+               libglib2.0-dev,
+               cdbs,
+               dpkg-dev,
+               gtk-doc-tools,
                docbook-xml,
-               libmatecomponent,
+               libmatecomponent-dev,
                libxml2-dev,
                libdbus-1-dev,
                libdbus-glib-1-dev,
@@ -31,14 +31,29 @@ Section: libs
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          mate-conf,
-         libglib2.0-dev,
+         libglib2.0,
          libmatecomponent,
          mate-corba,
-         mate-conf,
-         mate-vfs,
-         libcanberra-dev,
-         libpopt-dev
+         mate-vfs
 Description: The MATE library
  This package contains the shared library for the base MATE library
  functions.
 
+Package: libmate-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmateconf-dev,
+         libglib2.0-dev,
+         libmatecomponent-dev,
+         libmatecorba-dev,
+         libmateconf-dev,
+         mate-vfs,
+         libcanberra-dev,
+         libpopt-dev
+Description: The MATE library (development files)
+ This package contains the shared library for the base MATE library
+ functions.
+ .
+ This package contains the development files.

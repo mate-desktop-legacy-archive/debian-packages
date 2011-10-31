@@ -4,16 +4,16 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/rules/utils.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
-LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
+DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc \
+						--libexecdir=/usr/lib/libmate \
+						--disable-canberra \
+						--disable-schemas-install \
+						--disable-static
 
-CFLAGS += -include debian.h
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc
+binary-install/libmate::
+	mkdir -p debian/libmate/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/libmate/usr/share/mateconf/schemas/libmate.schemas" --domain libmate debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -r debian/tmp/etc/mateconf/schemas/
 
-makebuilddir::
-	echo '#define MULTIARCH "${DEB_HOST_MULTIARCH}"' >debian.h
-
-clean::
-	dh_clean intltool-extract intltool-merge intltool-update \
-	po/.intltool-merge-cache
-	rm -f debian.h
