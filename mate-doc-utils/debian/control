@@ -35,7 +35,7 @@ Depends: ${misc:Depends},
          libxslt1.1,
          python-libxml2
 Conflicts: gnome-doc-utils
-Description: a collection of documentation utilities for the MATE project - GNOME files
+Description: a collection of documentation utilities for the MATE project (GNOME files)
  mate-doc-utils is a collection of documentation utilities for the MATE
  project.
  .

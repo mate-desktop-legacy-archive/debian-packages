@@ -2,13 +2,21 @@ Source: mate-common
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: cdbs, debhelper (>= 5)
-Build-Depends-Indep: pkg-config, autotools-dev
-Standards-Version: 3.8.3
+Build-Depends: cdbs,
+               debhelper
+Build-Depends-Indep: pkg-config,
+                     autotools-dev
+Standards-Version: 3.9.2
 
 Package: mate-common
 Architecture: all
-Depends: ${misc:Depends}, autoconf, automake (>= 1:1.9), libtool, pkg-config, gettext, intltool
+Depends: ${misc:Depends},
+         autoconf,
+         automake,
+         libtool,
+         pkg-config,
+         gettext,
+         intltool
 Description: common scripts and macros to develop with MATE
  mate-common is an extension to autoconf, automake and libtool for the MATE
  environment and MATE using applications. Included are mate-autogen.sh and

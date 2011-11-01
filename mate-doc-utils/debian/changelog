@@ -1,3 +1,9 @@
+mate-doc-utils (2011.11.01-1) unstable; urgency=low
+
+  * Fixed pkgconfig conflict with gnome-doc-utils.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 01 Nov 2011 13:58:22 +0100
+
 mate-doc-utils (2011.10.30-2) unstable; urgency=low
 
   * Fixed mate-doc-utils-gnome depends.

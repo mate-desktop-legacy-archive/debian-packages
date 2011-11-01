@@ -33,7 +33,7 @@ Depends: ${shlibs:Depends},
          libidl-dev,
          libglib2.0-dev,
          pkg-config
-Description: a CORBA ORB - development files
+Description: a CORBA ORB (development files)
  ORBit2 is a high-performance CORBA (Common Object Request Broker
  Architecture) ORB (Object Request Broker). It allows programs to send
  requests and receive replies from other programs, regardless of the
