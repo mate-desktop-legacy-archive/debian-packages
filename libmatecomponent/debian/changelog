@@ -1,3 +1,15 @@
+libmatecomponent (2011.11.01-2) unstable; urgency=low
+
+  * Moved /usr/share/locale files to appropriate package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 01 Nov 2011 22:01:24 +0100
+
+libmatecomponent (2011.11.01-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 01 Nov 2011 20:54:51 +0100
+
 libmatecomponent (2011.10.31-1) unstable; urgency=low
 
   * New upstream release.

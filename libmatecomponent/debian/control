@@ -17,7 +17,7 @@ Build-Depends: cdbs,
                docbook-xml,
                autotools-dev,
                libglib2.0-doc
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: libmatecomponent
 Architecture: any

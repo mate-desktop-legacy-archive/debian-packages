@@ -4,6 +4,3 @@ usr/lib/*.so
 #usr/lib/*.a
 usr/lib/*.la
 usr/share/gtk-doc/
-usr/share/idl
-usr/share/locale
-usr/share/man

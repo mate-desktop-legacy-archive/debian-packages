@@ -5,3 +5,6 @@ usr/lib/matecomponent/
 usr/lib/matecomponent-2.0/
 usr/lib/matecorba-2.0/
 usr/sbin/
+usr/share/idl
+usr/share/locale
+usr/share/man

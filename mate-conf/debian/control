@@ -23,7 +23,7 @@ Build-Depends: debhelper,
                autotools-dev,
                libglib2.0-doc,
                gobject-introspection
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: mate-conf
 Architecture: any

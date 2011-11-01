@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
 Build-Depends: debhelper,
-               mate-vfs,
+               libmatevfs-dev,
                libmatecorba-dev,
                libpopt-dev,
                intltool,
@@ -49,7 +49,7 @@ Depends: ${misc:Depends},
          libmatecomponent-dev,
          libmatecorba-dev,
          libmateconf-dev,
-         mate-vfs,
+         libmatevfs-dev,
          libcanberra-dev,
          libpopt-dev
 Description: The MATE library (development files)

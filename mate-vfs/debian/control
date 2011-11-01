@@ -30,7 +30,7 @@ Build-Depends: debhelper,
                libimobiledevice-dev,
                libbz2-dev,
                mate-mime-data
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 Section: libs
 
 Package: mate-vfs
