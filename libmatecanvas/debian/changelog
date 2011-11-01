@@ -1,3 +1,10 @@
+libmatecanvas (2011.11.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Splitted include files into a libmatecanvas-dev package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 01 Nov 2011 23:42:12 +0100
+
 libmatecanvas (2011.10.18-1) unstable; urgency=low
 
   * New upstream release.

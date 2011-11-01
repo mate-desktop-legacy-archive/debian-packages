@@ -3,26 +3,27 @@ Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8),
-        libgtk2.0-dev (>= 2.8.17),
-        libgail-dev (>= 1.9.0),
+Build-Depends: debhelper,
+        libgtk2.0-dev,
+        libgail-dev,
         gettext,
-        libart-2.0-dev (>= 2.3.16),
-        libglade2-dev (>= 2.4.0),
-        cdbs (>= 0.4.41),
+        libart-2.0-dev,
+        libglade2-dev,
+        cdbs,
         gtk-doc-tools,
         docbook-xml
 Build-Depends-Indep: libglib2.0-doc,
                      libgtk2.0-doc
+Homepage: https://github.com/Perberos/Mate-Desktop-Environment
 
 Package: libmatecanvas
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libart-2.0-dev (>= 2.3.16),
-         libgtk2.0-dev (>= 2.8.17),
-         libgail-dev (>= 1.9.0)
+         libart-2.0-dev,
+         libgtk2.0-dev,
+         libgail-dev
 Description: powerful object-oriented display engine
  The canvas widget is a powerful and extensible object-oriented display
  engine. A MateCanvasItem is a GtkObject representing some element of the
@@ -31,3 +32,21 @@ Description: powerful object-oriented display engine
  with graphics in terms of items, rather than an undifferentiated grid of
  pixels.
 
+Package: libmatecanvas-dev
+Architecture: any
+Section: libdevel
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libmatecanvas,
+         libart-2.0-dev,
+         libgtk2.0-dev,
+         libgail-dev
+Description: powerful object-oriented display engine (development files)
+ The canvas widget is a powerful and extensible object-oriented display
+ engine. A MateCanvasItem is a GtkObject representing some element of the
+ display, such as an image, a rectangle, an ellipse, or some text. You can
+ refer to this architecture as structured graphics; the canvas lets you deal
+ with graphics in terms of items, rather than an undifferentiated grid of
+ pixels.
+ .
+ This package contains the development files.
