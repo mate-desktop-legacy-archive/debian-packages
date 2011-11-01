@@ -1,3 +1,10 @@
+mate-vfs (2011.10.31-1) unstable; urgency=low
+
+  * New upstream release.
+  * Include files splitted to libmatevfs-dev package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 14:55:36 +0100
+
 mate-vfs (2011.10.30-1) unstable; urgency=low
 
   * New upstream release.

@@ -1,5 +1,5 @@
-debian/tmp/usr/share/xml/mallard/
-debian/tmp/usr/share/pkgconfig/xml2po.pc
-debian/tmp/usr/share/man/
-debian/tmp/usr/lib/
-debian/tmp/usr/bin/xml2po
+usr/share/xml/mallard/
+usr/share/pkgconfig/xml2po.pc
+usr/share/man/
+usr/lib/
+usr/bin/xml2po

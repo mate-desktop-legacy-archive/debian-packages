@@ -15,7 +15,8 @@ Build-Depends: debhelper,
                libavahi-glib-dev,
                libavahi-client-dev,
                libfuse-dev,
-               mate-conf,
+               libmateconf-dev,
+               libmatecorba-dev,
                libgdu-dev,
                libgudev-1.0-dev,
                libcdio-paranoia-dev,
@@ -54,3 +55,19 @@ Description: mate-vfs userspace virtual filesystem
  .
  This package contains the mate-vfs server that provides mate-vfs mounts to all 
  gio applications, and the minimal set of backends.
+
+Package: libmatevfs-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-vfs,
+         libmateconf-dev
+Description: mate-vfs userspace virtual filesystem (development files)
+ mate-vfs is a userspace virtual filesystem where mount runs as a separate 
+ processes which you talk to via D-Bus. It also contains a gio module 
+ that seamlessly adds mate-vfs support to all applications using the gio 
+ API. It also supports exposing the mate-vfs mounts to non-gio applications 
+ using fuse. 
+ .
+ This package contains the development files.
