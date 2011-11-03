@@ -1,3 +1,9 @@
+libmate (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 16:44:29 +0000
+
 libmate (2011.11.03-1) unstable; urgency=low
 
   * Now libmate-dev depends on libmate.
