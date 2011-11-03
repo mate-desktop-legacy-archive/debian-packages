@@ -28,6 +28,18 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libunique-1.0-0,
          libmatenotify,
-         hicolor-icon-theme
+         hicolor-icon-theme,
+         mate-desktop-gnome | gnome-desktop-data
 Description: Library with common API for various MATE modules
  This package contain the library with common API for various MATE modules.
+ 
+Package: mate-desktop-gnome
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libunique-1.0-0,
+         libmatenotify,
+         hicolor-icon-theme
+Conflicts: gnome-desktop-data
+Description: Library with common API for various MATE modules
+ The files in this package are common with gnome-desktop-data

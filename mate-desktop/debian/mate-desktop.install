@@ -1,0 +1,13 @@
+usr/bin
+usr/include
+usr/lib
+usr/share/applications
+usr/share/doc
+usr/share/gtk-doc
+usr/share/locale
+usr/share/man
+usr/share/mate
+usr/share/pixmaps
+usr/share/omf/fdl
+usr/share/omf/gpl
+
