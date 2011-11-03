@@ -36,6 +36,24 @@ Depends: ${shlibs:Depends},
          shared-mime-info (>= 0.50),
          desktop-file-utils (>= 0.7),
          mate-vfs,
+         libglib2.0-data,
+         gir1.2-mate-file-manager
+Description: file manager and graphical shell for MATE, called caja
+ Nautilus is the official file manager for the GNOME desktop. It allows
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the GNOME
+ desktop. It works on local and remote filesystems.
+ .
+ Several icon themes and components for viewing different kinds of files
+ are available in separate packages.
+ 
+Package: gir1.2-mate-file-manager
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         shared-mime-info (>= 0.50),
+         desktop-file-utils (>= 0.7),
+         mate-vfs,
          libglib2.0-data
 Description: file manager and graphical shell for MATE, called caja
  Nautilus is the official file manager for the GNOME desktop. It allows
@@ -45,4 +63,5 @@ Description: file manager and graphical shell for MATE, called caja
  .
  Several icon themes and components for viewing different kinds of files
  are available in separate packages.
+
 

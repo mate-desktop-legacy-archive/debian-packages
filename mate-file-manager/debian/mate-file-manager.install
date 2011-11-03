@@ -1,0 +1,14 @@
+etc
+usr/bin
+usr/include
+usr/lib/caja
+usr/lib/pkgconfig
+usr/lib/libcaja*
+usr/share/applications
+usr/share/caja
+usr/share/gtk-doc
+usr/share/icons
+usr/share/locale
+usr/share/man
+usr/share/mime
+usr/share/pixmaps
