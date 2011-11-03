@@ -17,7 +17,8 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends},
-         python-gtk2
+         python-gtk2,
+         gir1.2-mate-menus
 XB-Python-Version: ${python:Versions}
 Description: an implementation of the freedesktop menu specification for MATE
  The package contains an implementation of the draft
@@ -28,3 +29,19 @@ Description: an implementation of the freedesktop menu specification for MATE
  Also contained here are the MATE menu layout configuration files, .directory
  files and assorted menu related utility programs.
 
+Package: gir1.2-mate-menus
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         python-gtk2
+XB-Python-Version: ${python:Versions}
+Description: an implementation of the freedesktop menu specification for MATE
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ Also contained here are the MATE menu layout configuration files, .directory
+ files and assorted menu related utility programs.
+ 
