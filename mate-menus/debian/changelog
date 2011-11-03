@@ -1,3 +1,9 @@
+mate-menus (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 19:22:01 +0000
+
 mate-menus (2011.10.18-1) unstable; urgency=low
 
   * New upstream release.
