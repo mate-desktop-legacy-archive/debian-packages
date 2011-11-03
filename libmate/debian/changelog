@@ -1,3 +1,15 @@
+libmate (2011.11.03-3) unstable; urgency=low
+
+  * Dropped gtk-update-icon-cache.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 03 Nov 2011 16:31:27 +0100
+
+libmate (2011.11.03-2) unstable; urgency=low
+
+  * Added dependency on libgtk2.0-bin.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 03 Nov 2011 15:44:39 +0100
+
 libmate (2011.11.03-1) unstable; urgency=low
 
   * Now libmate-dev depends on libmate.
