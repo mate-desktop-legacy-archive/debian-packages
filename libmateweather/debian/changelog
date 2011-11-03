@@ -1,3 +1,9 @@
+libmateweather (2011.11.02) unstable; urgency=low
+
+  * 2011.11.02
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Nov 2011 17:36:11 +0000
+
 libmateweather (2011.10.18-1) unstable; urgency=low
 
   * New upstream release.

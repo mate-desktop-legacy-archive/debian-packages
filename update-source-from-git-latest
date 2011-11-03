@@ -43,7 +43,7 @@ else:
 # Clean up mate-conf
 print "CLEANING UP %s..." % pkgname
 os.chdir(ROOT_DIR)
-os.system("git clean -f -x -d %s/" % pkgname)
+os.system("sudo git clean -f -x -d %s/" % pkgname)
 
 # Remove any previous orig archive
 print "REMOVING PREVIOUS ARCHIVES FOR %s..." % pkgname

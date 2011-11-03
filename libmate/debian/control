@@ -31,7 +31,7 @@ Section: libs
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          mate-conf,
-         libglib2.0,
+         libglib2.0 | libglib2.0-0,
          libmatecomponent,
          mate-corba,
          mate-vfs

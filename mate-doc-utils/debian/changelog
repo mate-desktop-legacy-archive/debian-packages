@@ -1,3 +1,9 @@
+mate-doc-utils (2011.11.02) unstable; urgency=low
+
+  * 2011.11.02
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Nov 2011 16:31:44 +0000
+
 mate-doc-utils (2011.11.01-1) unstable; urgency=low
 
   * Fixed pkgconfig conflict with gnome-doc-utils.

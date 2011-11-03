@@ -1,3 +1,9 @@
+mate-dialogs (2011.11.02) unstable; urgency=low
+
+  * 2011.11.02
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Nov 2011 17:58:25 +0000
+
 mate-dialogs (2011.10.18-2) unstable; urgency=low
 
   * Removed gdialog to have compatibility with zenity.
