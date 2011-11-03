@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-DEB_BUILDDIR = debian/build
+DEB_BUILDDIR = debian/tmp
 DEB_PYTHON_SYSTEM = pysupport
 
 include /usr/share/cdbs/1/rules/debhelper.mk
@@ -8,6 +8,11 @@ include /usr/share/cdbs/1/class/python-autotools.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/utils.mk
 
-LDFLAGS += -Wl,-O1 -Wl,--as-needed
-
 DEB_CONFIGURE_EXTRA_FLAGS += --enable-locations-compression --enable-python
+ 
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/libmateweather::
+	mkdir -p debian/libmateweather/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/libmateweather/usr/share/mateconf/schemas/libmateweather.schemas" --domain libmateweather debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -r debian/tmp/etc/mateconf/schemas/
