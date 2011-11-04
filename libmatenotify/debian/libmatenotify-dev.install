@@ -3,4 +3,4 @@ usr/lib/pkgconfig/
 usr/lib/*.so
 #usr/lib/*.a
 usr/lib/*.la
-#usr/share/gtk-doc/
+usr/share/gtk-doc/
