@@ -3,7 +3,6 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
-LDFLAGS := -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
+#LDFLAGS := -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
 
-DEB_CONFIGURE_EXTRA_FLAGS += --enable-static
-
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-static --libexecdir=/usr/lib/mate-keyring
