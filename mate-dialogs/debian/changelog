@@ -1,3 +1,9 @@
+mate-dialogs (1.0.0-2) unstable; urgency=low
+
+  * Fixed conflict with GNOME zenity.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 02:32:01 +0100
+
 mate-dialogs (1.0.0-1) unstable; urgency=low
 
   * New upstream release
