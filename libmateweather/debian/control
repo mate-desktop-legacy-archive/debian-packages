@@ -8,7 +8,8 @@ Build-Depends: debhelper,
                libxml2-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               mate-conf,
+               libmateconf-dev,
+               libmatecorba-dev,
                intltool (>= 0.40.3),
                pkg-config (>= 0.19),
                libxml2-utils,
@@ -19,15 +20,15 @@ Build-Depends: debhelper,
                libglib2.0-doc,
                libgtk2.0-doc,
                libsoup2.4-dev
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 
 Package: libmateweather
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libxml2-dev (>= 2.6.0),
-         libglib2.0-dev (>= 2.13.0),
-         libgtk2.0-dev (>= 2.11.0),
+         libxml2,
+         libglib2.0,
+         libgtk2.0-dev,
          libsoup2.4-1,
          mate-conf,
          ${python:Depends}
@@ -35,3 +36,18 @@ Description: MateWeather shared library
  libmateweather is a library to access weather information from online
  services for numerous locations.
 
+Package: libmateweather-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libmateweather,
+         libxml2-dev,
+         libglib2.0-dev,
+         libgtk2.0-dev,
+         libmateconf-dev
+Description: MateWeather shared library (development files)
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the development files.

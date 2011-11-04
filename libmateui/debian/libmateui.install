@@ -1,0 +1,4 @@
+usr/lib/*.so.*
+usr/lib/libglade/
+usr/share/locale/
+usr/share/pixmaps/

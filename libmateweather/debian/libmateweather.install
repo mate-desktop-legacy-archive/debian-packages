@@ -1,0 +1,7 @@
+usr/lib/*.so.*
+usr/lib/pyshared/
+usr/share/icons/
+usr/share/libmateweather/
+usr/share/locale/
+usr/share/pyshared/
+usr/share/python-support/

@@ -41,7 +41,7 @@ Depends: ${misc:Depends},
          libmatecomponent,
          libmatecanvas,
          libmate,
-         libmatecorba
+         mate-corba
 Description: The Mate Component UI library
  The Mate Component UI library
  .

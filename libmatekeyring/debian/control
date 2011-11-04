@@ -31,6 +31,7 @@ Package: libmatekeyring-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
+         libmatekeyring,
          libglib2.0-dev
 Description: MATE keyring services library (development files)
  mate-keyring is a daemon in the session, similar to ssh-agent,

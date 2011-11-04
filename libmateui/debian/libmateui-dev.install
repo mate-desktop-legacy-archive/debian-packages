@@ -1,7 +1,6 @@
 usr/include/
 usr/lib/pkgconfig/
 usr/lib/*.so
-usr/lib/*.a
+#usr/lib/*.a
 usr/lib/*.la
-usr/share/aclocal
-usr/share/gtk-doc
+usr/share/gtk-doc/
