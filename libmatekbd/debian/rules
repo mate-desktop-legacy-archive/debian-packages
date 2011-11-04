@@ -3,5 +3,12 @@
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
 
-LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed,-lm
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-static
+ 
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/libmatekbd::
+	mkdir -p debian/libmatekbd/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/libmatekbd/usr/share/mateconf/schemas/libmatekbd.schemas" --domain libmatekbd debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -r debian/tmp/etc/mateconf/schemas/
 
