@@ -1,3 +1,10 @@
+mate-desktop (1.0.0-2) unstable; urgency=low
+
+  * Splitted library to libmatedesktop package.
+  * Splitted include files to libmatedesktop-dev package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 02:26:46 +0100
+
 mate-desktop (1.0.0-1) unstable; urgency=low
 
   * New upstream release

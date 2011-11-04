@@ -8,8 +8,10 @@ Build-Depends: debhelper,
                libglib2.0-dev,
                libgtk2.0-dev,
                libstartup-notification0-dev,
-               mate-conf,
+               libmateconf-dev,
+               libmatecorba-dev,
                mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
                libx11-dev,
                libxrandr-dev,
                libxml2-dev,
@@ -20,7 +22,7 @@ Build-Depends: debhelper,
                python-support,
                libglib2.0-doc,
                libgtk2.0-doc
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: mate-desktop
 Architecture: any
@@ -29,6 +31,7 @@ Depends: ${misc:Depends},
          libunique-1.0-0,
          libmatenotify,
          hicolor-icon-theme,
+         libmatedesktop,
          mate-desktop-gnome | gnome-desktop-data
 Description: Library with common API for various MATE modules
  This package contain the library with common API for various MATE modules.
@@ -41,5 +44,26 @@ Depends: ${misc:Depends},
          libmatenotify,
          hicolor-icon-theme
 Conflicts: gnome-desktop-data
-Description: Library with common API for various MATE modules
- The files in this package are common with gnome-desktop-data
+Description: Library with common API for various MATE modules (GNOME files)
+ This package contain the library with common API for various MATE modules.
+ .
+ The files in this package conflict with gnome-desktop-data.
+
+Package: libmatedesktop
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Library with common API for various MATE modules (library)
+ This package contain the library with common API for various MATE modules.
+ .
+ The package contains the library.
+
+Package: libmatedesktop-dev
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmatedesktop
+Description: Library with common API for various MATE modules (development files)
+ This package contain the library with common API for various MATE modules.
+ .
+ This package contains the development files.
