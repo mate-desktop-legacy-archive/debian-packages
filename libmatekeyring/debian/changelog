@@ -1,3 +1,9 @@
+libmatekeyring (1.0.0-3) unstable; urgency=low
+
+  * libmatekeyring-dev depends on libmatekeyring.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 01:20:28 +0100
+
 libmatekeyring (1.0.0-2) unstable; urgency=low
 
   * Splitted include files into libmatekeyring-dev package.
