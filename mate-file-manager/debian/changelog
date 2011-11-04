@@ -1,3 +1,12 @@
+mate-file-manager (1.0.0-2) unstable; urgency=low
+
+  * File manager moved to caja package.
+  * Library files moved to libcaja-extension package.
+  * Include files moved to libcaja-extension-deve package.
+  * Added appropriate depends to gir1.2-caja package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 20:29:14 +0100
+
 mate-file-manager (1.0.0-1) unstable; urgency=low
 
   * New upstream release

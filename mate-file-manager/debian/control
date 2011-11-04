@@ -2,66 +2,93 @@ Source: mate-file-manager
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper (>= 5),
-               cdbs (>= 0.4.41),
+Build-Depends: debhelper,
+               cdbs,
                quilt,
-               dpkg-dev (>= 1.13.19),
-               libglib2.0-dev (>= 2.24.0),
-               mate-desktop,
-               libpango1.0-dev (>= 1.1.2),
-               libgtk2.0-dev (>= 2.20.0),
-               libxml2-dev (>= 2.4.7),
-               libexif-dev (>= 0.5.12),
-               libexempi-dev (>= 1.99.5),
-               libgail-dev (>= 0.16),
+               dpkg-dev,
+               libglib2.0-dev,
+               libmatedesktop-dev,
+               libpango1.0-dev,
+               libgtk2.0-dev,
+               libxml2-dev,
+               libexif-dev,
+               libexempi-dev,
+               libgail-dev,
                libunique-dev,
                libdbus-glib-1-dev,
-               intltool (>= 0.40.1),
-               gtk-doc-tools (>= 1.4),
+               intltool,
+               gtk-doc-tools,
                libxt-dev,
                libx11-dev,
                libselinux1-dev [linux-any],
                libxrender-dev,
                libxext-dev,
-               libgconf2-dev,
+               libmateconf-dev,
                x11proto-core-dev,
-               shared-mime-info (>= 0.50),
+               shared-mime-info,
                libstartup-notification0-dev
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: mate-file-manager
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja (= ${binary:Version})
+Description: file manager for the MATE desktop
+ Caja is the official file manager for the MATE desktop. It allows
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This is a metapackage to install Caja, the MATE file manager.
+
+Package: caja
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         shared-mime-info (>= 0.50),
-         desktop-file-utils (>= 0.7),
+         shared-mime-info,
+         desktop-file-utils,
          mate-vfs,
          libglib2.0-data,
-         gir1.2-mate-file-manager
-Description: file manager and graphical shell for MATE, called caja
- Nautilus is the official file manager for the GNOME desktop. It allows
+         libcaja-extension (= ${binary:Version})
+Description: Caja, the file manager for the MATE desktop
+ Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the GNOME
+ with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
+
+Package: libcaja-extension
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: libraries for caja components
+ Caja is the official file manager for the MATE desktop.
  .
- Several icon themes and components for viewing different kinds of files
- are available in separate packages.
- 
-Package: gir1.2-mate-file-manager
+ This package contains a few runtime libraries needed by caja's
+ extensions.
+
+Package: libcaja-extension-dev
+Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         shared-mime-info (>= 0.50),
-         desktop-file-utils (>= 0.7),
-         mate-vfs,
-         libglib2.0-data
-Description: file manager and graphical shell for MATE, called caja
- Nautilus is the official file manager for the GNOME desktop. It allows
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the GNOME
- desktop. It works on local and remote filesystems.
+         libcaja-extension (= ${binary:Version})
+Description: libraries for caja components (development files)
+ Caja is the official file manager for the MATE desktop.
  .
- Several icon themes and components for viewing different kinds of files
- are available in separate packages.
+ This package contains the development files for the libraries needed
+ by caja's extensions. 
 
-
+Package: gir1.2-caja
+Section: libdevel
+Architecture: any
+Depends: ${gir:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends},
+         libcaja-extension (= ${binary:Version})
+Description: libraries for caja components - gir bindings
+ Caja is the official file manager for the MATE desktop.
+ .
+ This package can be used by other packages using the GIRepository
+ format to generate dynamic bindings. 

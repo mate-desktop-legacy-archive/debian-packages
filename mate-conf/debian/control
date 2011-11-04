@@ -32,6 +32,7 @@ Depends: ${shlibs:Depends},
          psmisc,
          dbus,
          dbus-x11,
+         mate-corba,
          ${python:Depends}
 Description: MATE configuration database system
  mate-conf is a configuration database system for storing application
@@ -45,7 +46,8 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-conf
+         mate-conf,
+         libmatecorba-dev
 Description: MATE configuration database system (development files)
  mate-conf is a configuration database system for storing application
  preferences. It supports default or mandatory settings set by the
