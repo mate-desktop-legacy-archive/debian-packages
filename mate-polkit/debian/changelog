@@ -1,3 +1,9 @@
+mate-polkit (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:19:23 +0000
+
 mate-polkit (2011.10.30-1) unstable; urgency=low
 
   * New upstream release.

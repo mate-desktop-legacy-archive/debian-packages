@@ -1,3 +1,9 @@
+mate-settings-daemon (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:16:12 +0000
+
 mate-settings-daemon (2011.10.27-2) unstable; urgency=low
 
   * Fixed mateconf schemas.

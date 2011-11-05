@@ -40,10 +40,10 @@ mate-file-manager
 mate-notification-daemon
 mate-backgrounds
 mate-menus
-* mate-window-manager
-* mate-settings-daemon
+mate-window-manager
+mate-polkit
+mate-settings-daemon (had to use mate-doc-prepare --force --copy; autoreconf -i --force)
 * mate-control-center
 * mate-panel
-* mate-polkit
-* mate-session-manager
+ mate-session-manager
 

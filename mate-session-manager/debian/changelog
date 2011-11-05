@@ -1,3 +1,9 @@
+mate-session-manager (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:44:49 +0000
+
 mate-session-manager (2011.10.27-3) unstable; urgency=low
 
   * Added mateconf-merge-schema in debian/rules.
