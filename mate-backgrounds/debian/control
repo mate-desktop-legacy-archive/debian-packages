@@ -2,14 +2,14 @@ Source: mate-backgrounds
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper (>= 5),
+Build-Depends: debhelper,
                cdbs
 Build-Depends-Indep: intltool
-Standards-Version: 3.8.3
+Standards-Version: 3.9.2
 
 Package: mate-backgrounds
 Architecture: all
 Depends: ${misc:Depends}
-Description: a set of backgrounds packaged with the mate desktop
- This is a collection of desktop wallpapers created with mate users in 
+Description: a set of backgrounds packaged with the MATE desktop
+ This is a collection of desktop wallpapers created with MATE users in 
  mind.
