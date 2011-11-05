@@ -3,12 +3,12 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper (>= 5),
+               debhelper,
                autotools-dev,
-               intltool (>= 0.37.1),
-               libdbus-glib-1-dev (>= 0.74),
-               libglib2.0-dev (>= 2.17.3),
-               libgtk2.0-dev (>= 2.16.0),
+               intltool,
+               libdbus-glib-1-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
                mate-desktop,
                libmatenotify,
                libxt-dev,
@@ -19,15 +19,15 @@ Build-Depends: cdbs,
                libxext-dev,
                libx11-dev,
                libmatekbd,
-               libxklavier-dev (>= 5.0),
-               libgstreamer0.10-dev (>= 0.10.1.2),
-               libgstreamer-plugins-base0.10-dev (>= 0.10.1.2),
+               libxklavier-dev,
+               libgstreamer0.10-dev,
+               libgstreamer-plugins-base0.10-dev,
                mate-conf,
                libstartup-notification0-dev,
                mate-polkit,
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: mate-settings-daemon
 Architecture: any

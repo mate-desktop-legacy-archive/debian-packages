@@ -1,7 +1,7 @@
 usr/lib/*.so.*
-usr/lib/pyshared/
+#debian/build/usr/lib/pyshared/ usr/lib/pyshared/
 usr/share/icons/
 usr/share/libmateweather/
 usr/share/locale/
-usr/share/pyshared/
-usr/share/python-support/
+#debian/build/usr/share/pyshared/ usr/share/pyshared/
+#debian/build/usr/share/python-support/ usr/share/python-support/

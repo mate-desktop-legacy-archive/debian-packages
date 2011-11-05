@@ -4,8 +4,6 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/rules/utils.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
-#LDFLAGS += -Wl,-O1 -Wl,-z,defs -Wl,--warn-unresolved-symbols -Wl,--as-needed
-
 DEB_CONFIGURE_EXTRA_FLAGS += \
 	--libexecdir=/usr/bin \
 	--disable-static \
