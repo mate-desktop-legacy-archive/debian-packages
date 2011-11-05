@@ -2,7 +2,7 @@ mate-notification-daemon (1.0.0-2) unstable; urgency=low
 
   * Updated debian/ folder.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 11:32:15 +0100
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 11:40:29 +0000
 
 mate-notification-daemon (1.0.0-1) unstable; urgency=low
 

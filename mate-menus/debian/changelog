@@ -1,8 +1,8 @@
 mate-menus (1.0.0-2) unstable; urgency=low
 
-  * Updated debian/ folder.
+  * Minor changes from stefano
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 12:36:17 +0100
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 11:42:27 +0000
 
 mate-menus (1.0.0-1) unstable; urgency=low
 
