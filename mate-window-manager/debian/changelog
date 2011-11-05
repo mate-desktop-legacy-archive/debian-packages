@@ -1,8 +1,8 @@
 mate-window-manager (1.0.0-2) unstable; urgency=low
 
-  * Fixed debian/ folder.
+  * Changes from stefano
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 13:34:43 +0100
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:07:55 +0000
 
 mate-window-manager (1.0.0-1) unstable; urgency=low
 
