@@ -8,7 +8,8 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 			--localstatedir=/var \
 			--libexecdir=/usr/lib/mate-panel \
 			--disable-scrollkeeper \
-			--disable-static
+			--disable-static \
+			--disable-introspection
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
