@@ -8,7 +8,8 @@ DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/caja \
                              --disable-update-mimedb \
                              --disable-static \
                              --localstatedir=/var \
-                             --enable-unique
+                             --enable-unique \
+                             --disable-introspection
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
@@ -20,3 +21,4 @@ binary-install/caja::
 binary-post-install/caja::
 	dh_installmime -p$(cdbs_curpkg)
 
+common-binary-post-install-arch:: list-missing

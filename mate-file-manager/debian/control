@@ -26,7 +26,9 @@ Build-Depends: debhelper,
                libmateconf-dev,
                x11proto-core-dev,
                shared-mime-info,
-               libstartup-notification0-dev
+               libstartup-notification0-dev,
+               libmatecorba-dev,
+               libgconf2-dev
 Standards-Version: 3.9.2
 
 Package: mate-file-manager
@@ -79,16 +81,3 @@ Description: libraries for caja components (development files)
  .
  This package contains the development files for the libraries needed
  by caja's extensions. 
-
-Package: gir1.2-caja
-Section: libdevel
-Architecture: any
-Depends: ${gir:Depends},
-         ${shlibs:Depends},
-         ${misc:Depends},
-         libcaja-extension (= ${binary:Version})
-Description: libraries for caja components - gir bindings
- Caja is the official file manager for the MATE desktop.
- .
- This package can be used by other packages using the GIRepository
- format to generate dynamic bindings. 
