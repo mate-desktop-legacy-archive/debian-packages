@@ -1,3 +1,9 @@
+mate-polkit (1.0.0-2) unstable; urgency=low
+
+  * Splitted into more binary packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 19:26:30 +0100
+
 mate-polkit (1.0.0-1) unstable; urgency=low
 
   * New upstream release

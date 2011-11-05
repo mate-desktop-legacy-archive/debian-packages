@@ -15,7 +15,7 @@ Build-Depends-Indep: libxml2-dev,
                      xsltproc,
                      pkg-config,
                      librarian-dev
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: mate-doc-utils
 Architecture: any
