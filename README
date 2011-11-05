@@ -43,7 +43,7 @@ mate-menus
 mate-window-manager
 mate-polkit
 mate-settings-daemon (had to use mate-doc-prepare --force --copy; autoreconf -i --force)
-* mate-control-center
-* mate-panel
- mate-session-manager
+mate-control-center (needs mate-window-manager installed, else complains about libmarco)
+mate-panel (needs gobject-introspection removed on the host, or --disable-introspection in DEB_CONFIGURE_EXTRA_FLAGS in debian/rules)
+mate-session-manager
 
