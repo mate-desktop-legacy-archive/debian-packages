@@ -1,3 +1,9 @@
+mate-notification-daemon (1.0.0-2) unstable; urgency=low
+
+  * Minor changes from stefano
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 11:40:29 +0000
+
 mate-notification-daemon (1.0.0-1) unstable; urgency=low
 
   * New upstream release

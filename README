@@ -40,10 +40,10 @@ mate-file-manager
 mate-notification-daemon
 mate-backgrounds
 mate-menus
-mate-window-manager
-mate-settings-daemon
-mate-control-center
-mate-panel
-mate-polkit
-mate-session-manager
+* mate-window-manager
+* mate-settings-daemon
+* mate-control-center
+* mate-panel
+* mate-polkit
+* mate-session-manager
 
