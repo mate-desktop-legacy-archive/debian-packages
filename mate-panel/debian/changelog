@@ -1,3 +1,15 @@
+mate-panel (1.0.0-5) unstable; urgency=low
+
+  * Added --enable-matecomponent in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 22:01:30 +0100
+
+mate-panel (1.0.0-4) unstable; urgency=low
+
+  * Fixed scripts in debian folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 20:05:58 +0100
+
 mate-panel (1.0.0-3) unstable; urgency=low
 
   * Fixed error in prerm
