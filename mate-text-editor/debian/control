@@ -40,6 +40,7 @@ Depends: ${misc:Depends},
          python-gtk2,
          iso-codes
 Recommends: mate-dialogs
+Conflicts: gedit
 XB-Python-Version: ${python:Versions}
 Description: official text editor of the MATE desktop environment
  mate-text-editor is a text editor which supports most standard editor features,
