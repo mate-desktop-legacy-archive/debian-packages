@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/utils.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/MateConf \
+                             --localstatedir=/var
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-conf-editor::
+	mkdir -p debian/mate-conf-editor/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-conf-editor/usr/share/mateconf/schemas/mate-conf-editor.schemas" --domain mate-conf-editor debian/mate-conf-editor/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-conf-editor/etc/mateconf/schemas/
+

@@ -1,0 +1,29 @@
+Source: mate-conf-editor
+Section: utils
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs,
+               libmateconf-dev,
+               libgtk2.0-dev,
+               gettext,
+               libdbus-glib-1-dev,
+               scrollkeeper,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               pkg-config,
+               intltool,
+               xsltproc
+Standards-Version: 3.9.2
+
+Package: mate-conf-editor
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-conf,
+         mate-polkit
+Description: An editor for the MateConf configuration system
+ MateConf-Editor is a tool used for editing the MateConf configuration database.  
+ This is not the recommended way of setting desktop preferences, but it might 
+ be useful when the proper configuration utility for some software provides no 
+ way of changing some option.
