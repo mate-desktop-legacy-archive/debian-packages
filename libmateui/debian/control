@@ -42,7 +42,7 @@ Section: libs
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate,
-         libgtk2.0,
+         libgtk2.0-0,
          libmatecanvas,
          libmatekeyring,
          mate-conf,

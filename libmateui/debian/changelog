@@ -1,3 +1,9 @@
+libmateui (1.0.0-3) unstable; urgency=low
+
+  * Fixed gtk depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 02:29:26 +0100
+
 libmateui (1.0.0-2) unstable; urgency=low
 
   * Splitted include files into libmateui-dev package.
