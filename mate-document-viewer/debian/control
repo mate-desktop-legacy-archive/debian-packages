@@ -1,0 +1,52 @@
+Source: mate-document-viewer
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper,
+               intltool,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               gtk-doc-tools,
+               libdbus-glib-1-dev,
+               libx11-dev,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libmatekeyring-dev,
+               mate-icon-theme,
+               libxml2-dev,
+               libsm-dev,
+               libmateconf-dev,
+               libgconf2-dev,
+               zlib1g-dev,
+               libcaja-extension-dev,
+               libpoppler-glib-dev,
+               libspectre-dev,
+               libtiff4-dev,
+               libdjvulibre-dev,
+               libkpathsea-dev,
+               libt1-dev,
+               autotools-dev,
+               libgail-dev
+Standards-Version: 3.9.2
+
+Package: mate-document-viewer
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-icon-theme,
+         shared-mime-info
+Recommends: dbus-x11,
+            gvfs
+Provides: pdf-viewer,
+          postscript-viewer,
+          djvu-viewer
+Suggests: unrar, poppler-data, mate-file-manager
+Description: Document (PostScript, PDF) viewer
+ mate-document-viewer is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ When supported by the document, it also allows searching for text,
+ copying text to the clipboard, hypertext navigation, and
+ table-of-contents bookmarks.
+
