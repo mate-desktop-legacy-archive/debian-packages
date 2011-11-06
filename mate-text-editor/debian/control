@@ -1,0 +1,59 @@
+Source: mate-text-editor
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper,
+               autotools-dev,
+               python-support,
+               intltool,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               gtk-doc-tools,
+               libenchant-dev,
+               iso-codes,
+               libsm-dev,
+               libxml2-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libgtksourceview2.0-dev,
+               libmateconf-dev,
+               libx11-dev,
+               python-dev,
+               python-gobject-dev,
+               python-gtk2-dev,
+               python-gtksourceview2,
+               scrollkeeper
+Build-Depends-Indep: libglib2.0-doc,
+                     libgtk2.0-doc,
+                     libgtksourceview2.0-doc
+Standards-Version: 3.9.2
+XS-Python-Version: >= 2.5
+
+Package: mate-text-editor
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
+         python-gtksourceview2,
+         python-gobject,
+         python-gtk2,
+         iso-codes
+Recommends: mate-dialogs
+XB-Python-Version: ${python:Versions}
+Description: official text editor of the MATE desktop environment
+ mate-text-editor is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. mate-text-editor is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ mate-text-editor fully supports international text through its use of the
+ Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ mate-text-editor is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+

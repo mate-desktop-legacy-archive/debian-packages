@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
+                             --libexecdir=/usr/lib/ \
+                             --enable-python
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-text-editor::
+	mkdir -p debian/mate-text-editor/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-text-editor/usr/share/mateconf/schemas/mate-text-editor.schemas" --domain mate-text-editor debian/mate-text-editor/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-text-editor/etc/mateconf/schemas/
+

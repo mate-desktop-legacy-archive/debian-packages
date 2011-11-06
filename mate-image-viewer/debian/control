@@ -1,0 +1,45 @@
+Source: mate-image-viewer
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.2
+Build-Depends: cdbs,
+               debhelper,
+               gtk-doc-tools,
+               intltool,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libmatedesktop-dev,
+               libmateconf-dev,
+               mate-icon-theme,
+               shared-mime-info,
+               zlib1g-dev,
+               libexif-dev,
+               liblcms-dev,
+               libexempi-dev,
+               libjpeg62-dev,
+               libdbus-glib-1-dev,
+               libxml2-dev,
+               x11proto-core-dev,
+               python-dev,
+               python-gobject-dev,
+               python-gtk2-dev,
+               scrollkeeper,
+               libstartup-notification0-dev
+Build-Depends-Indep: libglib2.0-doc, libgtk2.0-doc
+
+Package: mate-image-viewer
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-icon-theme,
+         shared-mime-info
+Recommends: librsvg2-common
+Description: Eye of MATE graphics viewer program
+ eog or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.
+

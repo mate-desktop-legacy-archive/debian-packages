@@ -62,7 +62,8 @@ Package: libmatedesktop-dev
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmatedesktop
+         libmatedesktop,
+         libstartup-notification0-dev 
 Description: Library with common API for various MATE modules (development files)
  This package contain the library with common API for various MATE modules.
  .
