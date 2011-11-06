@@ -1,0 +1,43 @@
+Source: mate-media
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.2
+Build-Depends: cdbs,
+               dpkg-dev,
+               debhelper,
+               intltool,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libgladeui-1-dev,
+               libmateconf-dev,
+               libpulse-dev,
+               libcanberra-gtk-dev,
+               libxml2-dev,
+               libunique-dev,
+               libgstreamer0.10-dev,
+               libgstreamer-plugins-base0.10-dev,
+               docbook-utils,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               scrollkeeper,
+               gstreamer0.10-tools,
+               gstreamer0.10-plugins-base,
+               gstreamer0.10-plugins-good
+
+Package: mate-media
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         gstreamer0.10-alsa | gstreamer0.10-audiosink
+         gstreamer0.10-plugins-base,
+         gstreamer0.10-plugins-good,
+         x11-utils
+Recommends: alsa-utils
+Suggests: pulseaudio
+Description: MATE media utilities
+ This package contains a few media utilities for the MATE desktop:
+  * the MATE GStreamer-based audio mixer;
+  * the MATE Sound Recorder;
+  * the GStreamer properties capplet.
+

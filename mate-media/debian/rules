@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+LDFLAGS += -Wl,-z,defs -Wl,--as-needed -Wl,-O1
+
+DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
+		--localstatedir=/var --disable-static \
+		--disable-schemas-install \
+		--enable-pulseaudio \
+		--disable-scrollkeeper \
+		--enable-profiles --enable-grecord \
+		--enable-gstprops --enable-gstmix 
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-media::
+	mkdir -p debian/mate-media/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-media/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/mate-media/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-media/etc/mateconf/schemas/
+
