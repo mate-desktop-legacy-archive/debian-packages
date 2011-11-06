@@ -1,0 +1,3 @@
+debian/mdm.pam /etc/pam.d/mdm
+debian/mdm-autologin.pam /etc/pam.d/mdm-autologin
+debian/mdm /etc/rc.d/

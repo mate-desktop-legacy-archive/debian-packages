@@ -1,0 +1,74 @@
+Source: mate-display-manager
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs,
+               intltool,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               libdbus-glib-1-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libpango1.0-dev,
+               libmateconf-dev,
+               mate-panel,
+               libxklavier-dev,
+               libcanberra-gtk-dev,
+               libfontconfig1-dev,
+               libupower-glib-dev,
+               libpolkit-gobject-1-dev,
+               libpolkit-gtk-1-dev,
+               libx11-dev,
+               libxau-dev,
+               libxt-dev,
+               libxext-dev,
+               check,
+               libpam0g-dev,
+               libxdmcp-dev,
+               libwrap0-dev,
+               libxft-dev,
+               libxi-dev,
+               libxinerama-dev,
+               libselinux1-dev [linux-any],
+               libattr1-dev [linux-any],
+               iso-codes,
+               libaudit-dev [linux-any],
+               docbook-xml
+Standards-Version: 3.9.2
+
+Package: mate-display-manager
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         adduser,
+         libpam-modules,
+         libpam-runtime,
+         mate-polkit,
+         upower,
+         mate-session-manager,
+         lsb-base,
+         librsvg2-common,
+         mate-conf
+Recommends: mate-dialogs,
+            xserver-xephyr | xnest,
+            x11-xkb-utils,
+            xserver-xorg,
+            at-spi,
+            mate-power-manager,
+            mate-settings-daemon,
+            mate-icon-theme,
+            desktop-base
+Suggests: mate-keyring,
+          mate-window-manager
+Provides: x-display-manager
+Description: MATE Display Manager
+ MDM provides the equivalent of a "login:" prompt for X displays: it 
+ asks for a login and starts X sessions.
+ .
+ It provides all the functionality of XDM, including XDMCP support for
+ managing remote displays, and extends it with the ability to start X 
+ servers on demand.
+ .
+ The greeter is written using the MATE libraries and hence looks like a 
+ MATE application - even to the extent of supporting themes!

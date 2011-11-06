@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
+		--libexecdir=/usr/lib/mdm
+		--localstatedir=/var \
+		--disable-static \
+		--with-at-spi-registryd-directory=/usr/lib/at-spi
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-display-manager::
+	mkdir -p debian/mate-display-manager/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-display-manager/usr/share/mateconf/schemas/mate-display-manager.schemas" --domain mate-display-manager debian/mate-display-manager/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-display-manager/etc/mateconf/schemas/
+	
+	# fix for wrong path to executables
+	#_path=debian/mate-display-manager/usr/share/mdm/autostart/LoginWindow
+	#sed -i 's_/usr/lib/mdm/_/usr/lib/polkit-mate/_' ${_path}/polkit-mate-authentication-agent-1.desktop
+	#sed -i 's_/usr/lib/mdm/__' ${_path}/mate-settings-daemon.desktop
