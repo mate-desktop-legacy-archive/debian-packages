@@ -1,0 +1,494 @@
+Description: Upstream changes introduced in version 1.0.0-1
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ mate-themes (1.0.0-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/apps/preferences-desktop-accessibility.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/apps/preferences-desktop-accessibility.svg
+@@ -129,7 +129,7 @@
+             <dc:title>Andreas Nilsson</dc:title>
+           </cc:Agent>
+         </dc:rights>
+-        <dc:source>http://www.mate.org</dc:source>
++        <dc:source>http://www.gnome.org</dc:source>
+         <dc:subject>
+           <rdf:Bag>
+             <rdf:li>preferences</rdf:li>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/apps/preferences-desktop-locale.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/apps/preferences-desktop-locale.svg
+@@ -56,7 +56,7 @@
+           </cc:Agent>
+         </dc:rights>
+         <dc:relation></dc:relation>
+-        <dc:source>http://www.mate.org/</dc:source>
++        <dc:source>http://www.gnome.org/</dc:source>
+         <dc:subject>
+           <rdf:Bag>
+             <rdf:li>preferences</rdf:li>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/apps/system-file-manager.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/apps/system-file-manager.svg
+@@ -58,7 +58,7 @@
+           </cc:Agent>
+         </dc:rights>
+         <dc:date>September 2007</dc:date>
+-        <dc:source>http://www.mate.org</dc:source>
++        <dc:source>http://www.gnome.org</dc:source>
+         <dc:subject>
+           <rdf:Bag>
+             <rdf:li>sytem</rdf:li>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/apps/utilities-terminal.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/apps/utilities-terminal.svg
+@@ -77,7 +77,7 @@
+         </dc:creator>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>mate.org</dc:title>
++            <dc:title>gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+         <dc:subject>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/apps/utilities-system-monitor.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/apps/utilities-system-monitor.svg
+@@ -77,7 +77,7 @@
+         </dc:creator>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>mate.org</dc:title>
++            <dc:title>gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+         <dc:subject>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/edit-undo.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/edit-undo.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata17"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Undo</dc:title><dc:date>Novembrer 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org/</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>undo</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas sizing and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Undo</dc:title><dc:date>Novembrer 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org/</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>undo</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas sizing and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -67,5 +67,5 @@
+    d="M 24.1,5.1 L 9,20 C 8,21 8,21 9,22 L 24,37 C 24.927457,37.072543 25,36 25,36 L 25,28 L 29,28 C 30.4,28 33,27.8 33,31 L 33,35 C 33,38.8 26.821173,40.043779 26.5,41.2 C 26,43 29,43 29,43 L 34,43 C 39.1,43.2 41,37.9 41,33 L 41,26 C 41,18.1 37.3,14 31,14 L 25,14 L 25,6 C 25,6 25,5 24.1,5.1 z "
+    id="path9"
+    sodipodi:nodetypes="cccccccccscccccccc" />
+-	
+-</svg>
+\ No newline at end of file
++
++</svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/mail-forward.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/mail-forward.svg
+@@ -50,7 +50,7 @@
+             <dc:title>Andreas Nilsson</dc:title>
+           </cc:Agent>
+         </dc:creator>
+-        <dc:source>http://www.mate.org/</dc:source>
++        <dc:source>http://www.gnome.org/</dc:source>
+         <dc:rights>
+           <cc:Agent>
+             <dc:title>Andreas Nilsson</dc:title>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/media-record.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/media-record.svg
+@@ -85,7 +85,7 @@
+         <dc:date>January 2008</dc:date>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>http://www.mate.org</dc:title>
++            <dc:title>http://www.gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+       </cc:Work>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/format-text-underline.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/format-text-underline.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata27"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Underline</dc:title><dc:date>January 2008</dc:date><dc:creator><cc:Agent><dc:title>Luca Ferretti</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>underline</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title></dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Underline</dc:title><dc:date>January 2008</dc:date><dc:creator><cc:Agent><dc:title>Luca Ferretti</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>underline</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title></dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -93,7 +93,7 @@
+ 				<g
+    style="stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    id="g4165">
+-					
++
+ 				</g>
+ 			</g>
+ 			<g
+@@ -134,7 +134,7 @@
+ 				<g
+    id="g13"
+    style="stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
+-					
++
+ 				</g>
+ 			</g>
+ 			<g
+@@ -148,5 +148,5 @@
+ 			</g>
+ 		</g>
+ 	</g>
+-	
+-</svg>
+\ No newline at end of file
++
++</svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/mail-reply-sender.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/mail-reply-sender.svg
+@@ -50,7 +50,7 @@
+             <dc:title>Andreas Nilsson</dc:title>
+           </cc:Agent>
+         </dc:creator>
+-        <dc:source>http://www.mate.org/</dc:source>
++        <dc:source>http://www.gnome.org/</dc:source>
+         <dc:rights>
+           <cc:Agent>
+             <dc:title>Andreas Nilsson</dc:title>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/edit-paste.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/edit-paste.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata10089"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Paste</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>paste</rdf:li><rdf:li>get form clipboard</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas size and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Paste</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>paste</rdf:li><rdf:li>get form clipboard</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas size and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -53,7 +53,7 @@
+    inkscape:window-x="0"
+    inkscape:window-y="26"
+    inkscape:current-layer="svg10056" />
+-	
++
+ 	<rect
+    style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    id="rect2164"
+@@ -123,4 +123,4 @@
+    id="path12037" /><path
+    id="path13008"
+    d="M 25,30.5 L 37,30.5"
+-   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></svg>
+\ No newline at end of file
++   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/format-text-strikethrough.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/format-text-strikethrough.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata27"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Strikethrough</dc:title><dc:date>January 2008</dc:date><dc:creator><cc:Agent><dc:title>Luca Ferretti</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>striketrough</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Based on text-bold shape, plus minor editing</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Strikethrough</dc:title><dc:date>January 2008</dc:date><dc:creator><cc:Agent><dc:title>Luca Ferretti</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>striketrough</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Based on text-bold shape, plus minor editing</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -92,7 +92,7 @@
+ 				<g
+    id="g13"
+    style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+-					
++
+ 				</g>
+ 			</g>
+ 			<g
+@@ -110,7 +110,7 @@
+ 			</g>
+ 		</g>
+ 	</g>
+-	
++
+ <rect
+    style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    id="rect2170"
+@@ -118,4 +118,4 @@
+    height="13"
+    x="3"
+    y="17"
+-   ry="3.8847735" /></svg>
+\ No newline at end of file
++   ry="3.8847735" /></svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/document-properties.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/document-properties.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata17"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Document Properties</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Stainer</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org/</dc:source><dc:subject><rdf:Bag><rdf:li>document</rdf:li><rdf:li>properties</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas resize and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Document Properties</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Stainer</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org/</dc:source><dc:subject><rdf:Bag><rdf:li>document</rdf:li><rdf:li>properties</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas resize and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -31,10 +31,10 @@
+          rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+          rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+    id="defs15">
+-		
+-	
+-			
+-			
++
++
++
++
+ 		</defs><sodipodi:namedview
+    inkscape:window-height="949"
+    inkscape:window-width="1280"
+@@ -72,7 +72,7 @@
+    d="M 40,27 C 41.3,25.8 41.4,24.5 42,23 L 40,17 L 34,23 L 27,21 L 25,14 L 31,8 L 25,6 C 23.5,6.6 22.2,7.8 21,9 C 17.2,12.8 16.1,18.3 18,23 L 7,34 C 5.1,35.9 5.1,39.1 7,41 C 8.9,42.9 12.1,42.9 14,41 L 25,30 C 29.7,32 36.2,30.8 40,27 z "
+    id="path9"
+    sodipodi:nodetypes="ccccccccsccsccc" />
+-	
++
+ <path
+    sodipodi:type="arc"
+    style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.70588235"
+@@ -81,4 +81,4 @@
+    sodipodi:cy="38"
+    sodipodi:rx="2"
+    sodipodi:ry="2"
+-   d="M 12 38 A 2 2 0 1 1  8,38 A 2 2 0 1 1  12 38 z" /></svg>
+\ No newline at end of file
++   d="M 12 38 A 2 2 0 1 1  8,38 A 2 2 0 1 1  12 38 z" /></svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/media-eject.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/media-eject.svg
+@@ -71,7 +71,7 @@
+         </dc:creator>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>http://www.mate.org</dc:title>
++            <dc:title>http://www.gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+         <dc:subject>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/media-playback-stop.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/media-playback-stop.svg
+@@ -76,7 +76,7 @@
+         <dc:date>January 2008</dc:date>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>http://www.mate.org</dc:title>
++            <dc:title>http://www.gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+       </cc:Work>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/media-skip-forward.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/media-skip-forward.svg
+@@ -76,7 +76,7 @@
+         </dc:creator>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>http://www.mate.org</dc:title>
++            <dc:title>http://www.gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+         <dc:subject>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/contact-new.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/contact-new.svg
+@@ -57,7 +57,7 @@
+             <rdf:li>add</rdf:li>
+           </rdf:Bag>
+         </dc:subject>
+-        <dc:source>http://www.mate.org</dc:source>
++        <dc:source>http://www.gnome.org</dc:source>
+         <cc:license
+            rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+       </cc:Work>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/format-text-bold.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/format-text-bold.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata27"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Bold</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>bold</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas resize and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Bold</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>bold</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas resize and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -92,7 +92,7 @@
+ 				<g
+    id="g13"
+    style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+-					
++
+ 				</g>
+ 			</g>
+ 			<g
+@@ -110,5 +110,5 @@
+ 			</g>
+ 		</g>
+ 	</g>
+-	
+-</svg>
+\ No newline at end of file
++
++</svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/edit-copy.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/edit-copy.svg
+@@ -52,7 +52,7 @@
+             <dc:title>Luca Ferretti</dc:title>
+           </cc:Agent>
+         </dc:creator>
+-        <dc:source>http://www.mate.org</dc:source>
++        <dc:source>http://www.gnome.org</dc:source>
+         <dc:subject>
+           <rdf:Bag>
+             <rdf:li>edit</rdf:li>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/edit-redo.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/edit-redo.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata17"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Redo</dc:title><dc:date>Novembrer 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org/</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>redo</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas sizing and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Redo</dc:title><dc:date>Novembrer 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org/</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>redo</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas sizing and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -31,10 +31,10 @@
+          rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+          rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+    id="defs15">
+-		
+-	
+-			
+-			
++
++
++
++
+ 		</defs><sodipodi:namedview
+    inkscape:window-height="949"
+    inkscape:window-width="1280"
+@@ -72,5 +72,5 @@
+    d="M 24.9,5.1 L 40,20 C 41,21 41,21 40,22 L 25,37 C 24.072543,37.072543 24,36 24,36 L 24,28 L 20,28 C 18.6,28 16,27.8 16,31 L 16,35 C 16,38.8 22.178827,40.043779 22.5,41.2 C 23,43 20,43 20,43 L 15,43 C 9.9,43.2 8,37.9 8,33 L 8,26 C 8,18.1 11.7,14 18,14 L 24,14 L 24,6 C 24,6 24,5 24.9,5.1 z "
+    id="path9"
+    sodipodi:nodetypes="cccccccccscccccccc" />
+-	
+-</svg>
+\ No newline at end of file
++
++</svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/edit-cut.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/edit-cut.svg
+@@ -21,7 +21,7 @@
+    version="1.0"><metadata
+    id="metadata17"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Cut</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>cut</rdf:li><rdf:li>move to clipboard</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas size and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
++         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Cut</dc:title><dc:date>November 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>cut</rdf:li><rdf:li>move to clipboard</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas size and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+          rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+@@ -31,10 +31,10 @@
+          rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+          rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+    id="defs15">
+-		
+-	
+-			
+-			
++
++
++
++
+ 		</defs><sodipodi:namedview
+    inkscape:window-height="949"
+    inkscape:window-width="1280"
+@@ -66,7 +66,7 @@
+    y="0"
+    rx="0"
+    ry="0" />
+-	
++
+ <path
+    transform="translate(-0.5,-2.5)"
+    d="M 20 39 A 4.5 6 0 1 1  11,39 A 4.5 6 0 1 1  20 39 z"
+@@ -111,4 +111,4 @@
+    sodipodi:cx="15.5"
+    id="path4119"
+    style="fill:none;fill-opacity:0.29296875;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+-   sodipodi:type="arc" /></svg>
+\ No newline at end of file
++   sodipodi:type="arc" /></svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/media-skip-backward.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/media-skip-backward.svg
+@@ -76,7 +76,7 @@
+         </dc:creator>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>http://www.mate.org</dc:title>
++            <dc:title>http://www.gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+         <dc:subject>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/format-text-italic.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/format-text-italic.svg
+@@ -22,7 +22,7 @@
+    id="metadata7122"><rdf:RDF><cc:Work
+        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
+-         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /><dc:title>Format Text Italic</dc:title><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.mate.org/</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>italic</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas resize, pixel perfect and &quot;sync&quot; with format-text-bold by Luca Ferretti</dc:title></cc:Agent></dc:contributor></cc:Work><cc:License
++         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /><dc:title>Format Text Italic</dc:title><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org/</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>italic</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas resize, pixel perfect and &quot;sync&quot; with format-text-bold by Luca Ferretti</dc:title></cc:Agent></dc:contributor></cc:Work><cc:License
+        rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+          rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+          rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+@@ -31,10 +31,10 @@
+          rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+          rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+    id="defs7120">
+-		
+-	
+-			
+-			
++
++
++
++
+ 		</defs><sodipodi:namedview
+    inkscape:window-height="947"
+    inkscape:window-width="1280"
+@@ -86,5 +86,5 @@
+    d="M 20,30 L 13,40 L 8,40 L 31,8 L 35,8 L 40,40 L 36,40 L 35,30 L 20,30 L 20,30 z M 35,27 C 35,27 34.1,13.8 34,12 L 33,12 C 31.9,13.8 22,27 22,27 L 34,27 L 35,27 z "
+    id="path7114"
+    sodipodi:nodetypes="cccccccccccccccc" />
+-	
+-</svg>
+\ No newline at end of file
++
++</svg>
+--- mate-themes-1.0.0.orig/icon-themes/HighContrast-SVG/scalable/actions/media-playback-pause.svg
++++ mate-themes-1.0.0/icon-themes/HighContrast-SVG/scalable/actions/media-playback-pause.svg
+@@ -77,7 +77,7 @@
+         </dc:creator>
+         <dc:publisher>
+           <cc:Agent>
+-            <dc:title>http://www.mate.org</dc:title>
++            <dc:title>http://www.gnome.org</dc:title>
+           </cc:Agent>
+         </dc:publisher>
+         <dc:subject>

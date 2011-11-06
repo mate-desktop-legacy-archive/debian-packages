@@ -2,21 +2,22 @@ Source: mate-keyring
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper (>= 5),
+Build-Depends: debhelper,
                cdbs,
-               intltool (>= 0.35.0),
-               libgtk2.0-dev (>= 2.20.0),
-               libglib2.0-dev (>= 2.16.0),
-               libtasn1-3-dev (>= 0.3.4),
+               intltool,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libtasn1-3-dev,
                libtasn1-3-bin,
-               gtk-doc-tools (>= 1.9),
+               gtk-doc-tools,
                docbook-xml,
-               libdbus-1-dev (>= 1.0),
-               libgcrypt11-dev (>= 1.2.2),
+               libdbus-1-dev,
+               libgcrypt11-dev,
                libpam0g-dev,
                libglib2.0-doc,
-               mate-conf
-Standards-Version: 3.9.0
+               libmateconf-dev,
+               libmatecorba-dev
+Standards-Version: 3.9.2
 
 Package: mate-keyring
 Section: mate

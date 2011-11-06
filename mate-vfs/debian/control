@@ -41,11 +41,13 @@ Depends: ${shlibs:Depends},
          fuse-utils,
          mate-mime-data,
          mate-conf,
-         mate-common
+         mate-common,
+         gvfs
 Recommends: dbus,
             psmisc,
             mate-keyring
-Suggests: obex-data-server, samba-common
+Suggests: obex-data-server,
+          samba-common
 Description: mate-vfs userspace virtual filesystem
  mate-vfs is a userspace virtual filesystem where mount runs as a separate 
  processes which you talk to via D-Bus. It also contains a gio module 

@@ -1,3 +1,9 @@
+mate-session-manager (1.0.0-2) unstable; urgency=low
+
+  * Fixed debian/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 00:40:13 +0100
+
 mate-session-manager (1.0.0-1) unstable; urgency=low
 
   * New upstream release

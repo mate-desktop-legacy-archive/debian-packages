@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-pkgname=mate-control-center
+pkgname=mate-keyring
 
 if [ -f /usr/sbin/mateconfpkg ]; then
 	/usr/sbin/mateconfpkg --uninstall ${pkgname}

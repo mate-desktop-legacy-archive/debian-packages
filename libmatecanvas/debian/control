@@ -21,9 +21,8 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libart-2.0-dev,
-         libgtk2.0-dev,
-         libgail-dev
+         libart-2.0-2,
+         libgtk2.0-0
 Description: powerful object-oriented display engine
  The canvas widget is a powerful and extensible object-oriented display
  engine. A MateCanvasItem is a GtkObject representing some element of the

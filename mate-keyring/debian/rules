@@ -3,8 +3,10 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
-LDFLAGS := -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
+#LDFLAGS := -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
 
-DEB_CONFIGURE_EXTRA_FLAGS += --enable-static --with-pam-dir=/lib/security \
-                             --with-root-certs=/etc/ssl/certs
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
+                             --with-pam-dir=/lib/security \
+                             --with-root-certs=/etc/ssl/certs \
+                             --libexecdir=/usr/lib/mate-keyring \
 

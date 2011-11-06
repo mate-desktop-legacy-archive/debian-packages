@@ -5,7 +5,9 @@ include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/utils.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var/lib \
-	--libexecdir=/usr/lib
+						--libexecdir=/usr/lib \
+						--enable-splash \
+						--disable-introspection
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 

@@ -1,3 +1,10 @@
+mate-keyring (1.0.0-2) unstable; urgency=low
+
+  * Update debian/ folder.
+  * This package may conflicts with gnome-keyring. Need testing.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 00:16:11 +0100
+
 mate-keyring (1.0.0-1) unstable; urgency=low
 
   * New upstream release
