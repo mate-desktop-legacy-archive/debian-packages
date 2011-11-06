@@ -1,3 +1,9 @@
+mate-notification-daemon (1.0.0-3) unstable; urgency=low
+
+  * Added conflict with notification-daemon.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 19:39:01 +0100
+
 mate-notification-daemon (1.0.0-2) unstable; urgency=low
 
   * Updated debian/ folder.
