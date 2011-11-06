@@ -4,13 +4,20 @@ import os
 import sys
 from time import strftime
 
-valid_pkgnames = ["libmate", "libmatecanvas", "libmatecomponent", "libmatecomponentui", "libmatekbd", "libmatekeyring", "libmatenotify", "libmateui", "libmateweather", "mate-backgrounds", "mate-common", "mate-conf", "mate-control-center", "mate-corba", "mate-desktop", "mate-dialogs", "mate-display-manager", "mate-doc-utils", "mate-file-manager", "mate-icon-theme", "mate-keyring", "mate-menus", "mate-mime-data", "mate-notification-daemon", "mate-panel", "mate-polkit", "mate-session-manager", "mate-settings-daemon", "mate-themes", "mate-vfs", "mate-window-manager"]
+# next version is 1.0.1, so git source code is treated as this version
+VERSION = "1.0.1"
+
+base_pkgnames = ["libmate", "libmatecanvas", "libmatecomponent", "libmatecomponentui", "libmatekbd", "libmatekeyring", "libmatenotify", "libmateui", "libmateweather", "mate-backgrounds", "mate-common", "mate-conf", "mate-control-center", "mate-corba", "mate-desktop", "mate-dialogs", "mate-display-manager", "mate-doc-utils", "mate-file-manager", "mate-icon-theme", "mate-keyring", "mate-menus", "mate-mime-data", "mate-notification-daemon", "mate-panel", "mate-polkit", "mate-session-manager", "mate-settings-daemon", "mate-themes", "mate-vfs", "mate-window-manager"]
+extra_pkgnames = ["mate-applets", "mate-desktop-environment", "mate-image-viewer", "mate-power-manager", "mate-video-player", "mate-bluetooth", "mate-disk-utility", "mate-indicator-applet", "mate-system-monitor", "music-applet-2.5.1", "xfce4-xfapplet-plugin", "mate-calc", "mate-document-viewer", "mate-media", "mate-system-tools","python-caja", "mate-character-map", "mate-extract", "mate-menu-editor", "mate-terminal", "python-corba", "mate-conf-dbus", "mate-file-manager-open-terminal", "mate-pl-parser", "mate-text-editor", "python-mate", "mate-conf-editor", "mate-file-manager-sendto", "mate-policykit", "mate-utils", "python-mate-desktop"]
+
+base_pkgnames.sort()
+extra_pkgnames.sort()
 
 def usage():
     print "USAGE: update-source-from-git-latest pkgname"
     print "pkgname can be one of the following: "
-    for valid_pkgname in valid_pkgnames:
-        print "      %s" %valid_pkgname    
+    print "      BASE PACKAGES: %s" % ", ".join(base_pkgnames)
+    print "      EXTRA PACKAGES: %s" % ", ".join(extra_pkgnames)
 
 if len(sys.argv) != 2:
     print "WRONG NUMBER OF ARGUMENTS!"
@@ -19,14 +26,20 @@ if len(sys.argv) != 2:
     
 pkgname = sys.argv[1]
 
-if not pkgname in valid_pkgnames:
+if (not pkgname in base_pkgnames) and (not pkgname in extra_pkgnames):
     print "INVALID PKGNAME!"
     usage()
     sys.exit(1)
 
 ROOT_DIR = os.getcwd()
 GIT_DIR = os.path.join(ROOT_DIR, "git-source")
-SOURCE_DIR = os.path.join(ROOT_DIR, "git-source/Mate-Desktop-Environment")
+SOURCE_BASE_DIR = os.path.join(ROOT_DIR, "git-source/Mate-Desktop-Environment")
+SOURCE_EXTRA_DIR = os.path.join(ROOT_DIR, "git-source/Mate-Extra")
+
+if pkgname in base_pkgnames:
+    SOURCE_DIR = SOURCE_BASE_DIR
+elif pkgname in extra_pkgnames:
+    SOURCE_DIR = SOURCE_EXTRA_DIR
 
 # Get the latest source code
 if os.path.exists(SOURCE_DIR):
@@ -38,9 +51,12 @@ else:
     os.chdir(ROOT_DIR)
     os.system("mkdir -p git-source")
     os.chdir(GIT_DIR)
-    os.system("git clone https://github.com/Perberos/Mate-Desktop-Environment.git")
+    if pkgname in base_pkgnames:
+        os.system("git clone git://github.com/perberos/Mate-Desktop-Environment.git")
+    elif pkgname in extra_pkgnames:
+        os.system("git clone git://github.com/perberos/Mate-Extra.git")
 
-# Clean up mate-conf
+# Clean up package folder (WARNING: this deletes debian/ files not committed!!!)
 print "CLEANING UP %s..." % pkgname
 os.chdir(ROOT_DIR)
 os.system("sudo git clean -f -x -d %s/" % pkgname)
@@ -57,8 +73,7 @@ os.system("cp -R %(SOURCE_DIR)s/%(pkgname)s/* %(pkgname)s/" % {'SOURCE_DIR':SOUR
 
 # Create an orig archive
 print "CREATING NEW ORIG.TAR.BZ2 ARCHIVE FOR %s..." % pkgname
-today = strftime("%Y.%m.%d")
-archive_filename = "%(pkgname)s_%(today)s.orig.tar" % {'pkgname':pkgname, 'today':today}
+archive_filename = "%(pkgname)s_%(version)s.orig.tar" % {'pkgname':pkgname, 'version':VERSION}
 os.chdir(SOURCE_DIR)
 os.chdir(pkgname)
 os.system("tar cf %s *" % archive_filename)
