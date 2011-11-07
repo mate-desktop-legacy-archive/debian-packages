@@ -4,11 +4,14 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/utils.mk
 
+DEB_DH_INSTALL_ARGS += --list-missing
+
 DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc \
 	--libexecdir=/usr/lib/MateConf \
 	--localstatedir=/var \
 	--enable-defaults-service \
-	--enable-gsettings-backend=no
+	--enable-gsettings-backend=no \
+	--enable-introspection
 
 binary-install/mate-conf::
 	mkdir -p debian/mate-conf/etc/mateconf/mateconf.xml.system
