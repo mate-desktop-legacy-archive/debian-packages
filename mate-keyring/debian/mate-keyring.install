@@ -1,0 +1,10 @@
+etc/
+lib/
+usr/bin/
+usr/lib/*.so.*
+usr/lib/mate-keyring/
+usr/share/MateConf/
+usr/share/mategcr/
+usr/share/glib-2.0/
+usr/share/locale/
+usr/share/mate-keyring/
