@@ -39,7 +39,7 @@ Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmatecomponent,
+         libmatecomponent (= ${binary:Version}),
          libglib2.0-dev,
          libmatecorba-dev,
          libpopt-dev

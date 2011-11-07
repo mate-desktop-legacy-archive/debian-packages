@@ -58,7 +58,7 @@ Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmateui,
+         libmateui (= ${binary:Version}),
          libmate-dev,
          libgtk2.0-dev,
          libmatecanvas-dev,

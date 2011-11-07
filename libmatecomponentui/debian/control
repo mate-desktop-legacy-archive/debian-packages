@@ -52,7 +52,7 @@ Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmatecomponentui,
+         libmatecomponentui (= ${binary:Version}),
          libglib2.0-dev,
          libmatecorba-dev,
          libxml2-dev,

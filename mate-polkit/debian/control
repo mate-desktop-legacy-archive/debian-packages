@@ -43,7 +43,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
         ${misc:Depends},
-        libmatepolkit,
+        libmatepolkit (= ${binary:Version}),
         mate-polkit,
         policykit-1
 Description: MATE authentication agent for PolicyKit-1 (development files)

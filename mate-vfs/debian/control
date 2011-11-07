@@ -63,7 +63,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-vfs,
+         mate-vfs (= ${binary:Version}),
          libmateconf-dev
 Description: mate-vfs userspace virtual filesystem (development files)
  mate-vfs is a userspace virtual filesystem where mount runs as a separate 

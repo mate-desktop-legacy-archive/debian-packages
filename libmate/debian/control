@@ -44,7 +44,7 @@ Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmate,
+         libmate (= ${binary:Version}),
          libmateconf-dev,
          libglib2.0-dev,
          libmatecomponent-dev,

@@ -36,7 +36,7 @@ Architecture: any
 Section: libdevel
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmatecanvas,
+         libmatecanvas (= ${binary:Version}),
          libart-2.0-dev,
          libgtk2.0-dev,
          libgail-dev

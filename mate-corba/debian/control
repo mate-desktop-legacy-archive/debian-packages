@@ -29,7 +29,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-corba,
+         mate-corba (= ${binary:Version}),
          libidl-dev,
          libglib2.0-dev,
          pkg-config

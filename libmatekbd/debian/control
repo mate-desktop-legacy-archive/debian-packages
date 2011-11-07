@@ -28,8 +28,7 @@ Package: libmatekbd-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
-         libmatekbd,
-         iso-codes,
+         libmatekbd (= ${binary:Version}),
          libglib2.0-dev,
          libgtk2.0-dev,
          libmateconf-dev,

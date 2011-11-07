@@ -42,7 +42,7 @@ Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         mate-keyring,
+         mate-keyring (= ${binary:Version}),
          libglib2.0-dev,
          libgtk2.0-dev,
          libtasn1-3-dev,

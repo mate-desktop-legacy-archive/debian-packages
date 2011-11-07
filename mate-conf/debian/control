@@ -46,7 +46,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-conf,
+         mate-conf (= ${binary:Version}),
          libmatecorba-dev
 Description: MATE configuration database system (development files)
  mate-conf is a configuration database system for storing application
