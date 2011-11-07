@@ -23,13 +23,14 @@ Build-Depends: cdbs,
                scrollkeeper,
                gstreamer0.10-tools,
                gstreamer0.10-plugins-base,
-               gstreamer0.10-plugins-good
+               gstreamer0.10-plugins-good,
+               xsltproc
 
 Package: mate-media
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         gstreamer0.10-alsa | gstreamer0.10-audiosink
+         gstreamer0.10-alsa | gstreamer0.10-audiosink,
          gstreamer0.10-plugins-base,
          gstreamer0.10-plugins-good,
          x11-utils
@@ -40,4 +41,3 @@ Description: MATE media utilities
   * the MATE GStreamer-based audio mixer;
   * the MATE Sound Recorder;
   * the GStreamer properties capplet.
-

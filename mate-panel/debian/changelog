@@ -1,3 +1,9 @@
+mate-panel (1.0.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 23:45:28 +0100
+
 mate-panel (1.0.0-5) unstable; urgency=low
 
   * Added --enable-matecomponent in debian/rules.

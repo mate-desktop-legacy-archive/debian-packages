@@ -25,10 +25,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          dbus-x11,
-         libpam-runtime (>= 1.0.1-6),
-         libglib2.0-dev,
-         libgtk2.0-dev (>= 2.20.0),
-         libtasn1-3-dev (>= 0.3.4),
+         libpam-runtime,
          libtasn1-3-bin,
          mate-conf
 Description: MATE keyring services
@@ -40,3 +37,23 @@ Description: MATE keyring services
  password, and there is also a session keyring which is never stored to
  disk, but forgotten when the session ends.
  
+Package: mate-keyring-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         mate-keyring,
+         libglib2.0-dev,
+         libgtk2.0-dev,
+         libtasn1-3-dev,
+         libmateconf-dev
+Description: MATE keyring services (development files)
+ mate-keyring is a daemon in the session, similar to ssh-agent,
+ and other applications can use it to store passwords and other
+ sensitive information.
+ .
+ The program can manage several keyrings, each with its own master
+ password, and there is also a session keyring which is never stored to
+ disk, but forgotten when the session ends.
+ .
+ This package contains the development files.

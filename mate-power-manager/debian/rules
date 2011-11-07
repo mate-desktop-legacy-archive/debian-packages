@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/utils.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS += \
+			--libexecdir=/usr/lib/${pkgname} \
+			--disable-scrollkeeper \
+			--enable-applets
+
+#LDFLAGS += -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-power-manager::
+	mkdir -p debian/mate-power-manager/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-power-manager/usr/share/mateconf/schemas/mate-power-manager.schemas" --domain mate-power-manager debian/mate-power-manager/etc/mateconf/schemas/*.schemas
+	rm -r debian/mate-power-manager/etc/mateconf/schemas/
+

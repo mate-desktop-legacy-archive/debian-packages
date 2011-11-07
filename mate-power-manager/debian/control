@@ -1,0 +1,54 @@
+Source: mate-power-manager
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs,
+               autotools-dev,
+               libtool,
+               mate-panel,
+               libdbus-glib-1-dev,
+               libxml-parser-perl,
+               libxext-dev,
+               libx11-dev,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libwnck-dev,
+               docbook-to-man,
+               intltool,
+               libmatenotify-dev,
+               docbook-utils,
+               libxrandr-dev,
+               xmlto,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               scrollkeeper,
+               libupower-glib-dev,
+               libcanberra-gtk-dev,
+               libunique-dev,
+               libmatekeyring-dev,
+               libmateconf-dev,
+               pkg-config
+Standards-Version: 3.9.2
+
+Package: mate-power-manager
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-notification-daemon,
+         dbus-x11,
+         consolekit,
+         upower,
+         mate-conf,
+Recommends: udisks
+Suggests: policykit-1
+Description: power management tool for the MATE desktop
+ MATE Power Manager is a session daemon for the MATE desktop
+ that takes care of system or desktop events related to power, and
+ triggers actions accordingly. Its philosophy is to completely hide
+ these complex tasks and only show some settings important to the user.
+ .
+ The MATE power manager displays and manages battery status, power plug
+ events, display brightness, CPU, graphics card and hard disk drive
+ power saving, and can trigger suspend-to-RAM, hibernate or shutdown
+ events, all integrated to other components of the MATE desktop.
