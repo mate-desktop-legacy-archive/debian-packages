@@ -18,7 +18,7 @@ Depends: gtk2-engines,
          gtk2-engines-pixbuf,
          librsvg2-common,
          mate-icon-theme,
-         mate-themes-gnome | gnome-themes,
+         mate-themes-gnome | gnome-themes | gnome-themes-standard,
          ${misc:Depends}
 Recommends: dmz-cursor-theme
 Description: official themes for the MATE desktop
@@ -29,7 +29,7 @@ Package: mate-themes-gnome
 Architecture: all
 Depends: mate-themes,
          ${misc:Depends}
-Conflicts: gnome-themes
+Conflicts: gnome-themes, gnome-themes-standard
 Description: official themes for the MATE desktop (GNOME files)
  This package contains the official desktop themes of the MATE desktop
  environment.
