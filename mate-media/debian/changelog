@@ -1,3 +1,10 @@
+mate-media (1.0.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fixed conflict with gnome-media.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Nov 2011 02:38:14 +0100
+
 mate-media (1.0.1-1) unstable; urgency=low
 
   * New upstream release.
