@@ -1,3 +1,9 @@
+mate-conf (1.0.0-2) unstable; urgency=low
+
+  * Added gir package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 07 Nov 2011 23:06:06 +0100
+
 mate-conf (1.0.0-1) unstable; urgency=low
 
   * New upstream release

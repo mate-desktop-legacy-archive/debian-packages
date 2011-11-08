@@ -22,7 +22,8 @@ Build-Depends: debhelper,
                python-support,
                autotools-dev,
                libglib2.0-doc,
-               gobject-introspection
+               gobject-introspection,
+               libgirepository1.0-dev
 Standards-Version: 3.9.2
 
 Package: mate-conf
@@ -56,3 +57,16 @@ Description: MATE configuration database system (development files)
  require it.
  .
  This package contains the development files.
+
+Package: gir1.2-mate-conf
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         ${gir:Depends}
+Description: GObject introspection data for MATE configuration database system
+ This package contains introspection data for MATE configuration database
+ system.
+ .
+ It can be used by packages using the GIRepository format to generate dynamic
+ bindings. 
