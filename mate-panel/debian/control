@@ -18,6 +18,7 @@ Build-Depends: cdbs,
                libmatedesktop-dev,
                libmatecomponentui-dev,
                libmatecomponent-dev,
+               libmatecanvas-dev,
                libmate-dev,
                libmatecorba-dev,
                libwnck-dev,
@@ -36,7 +37,10 @@ Build-Depends: cdbs,
                libsoup2.4-dev,
                libavahi-client-dev,
                libavahi-common-dev,
-               libavahi-glib-dev
+               libavahi-glib-dev,
+               libgirepository1.0-dev,
+               gobject-introspection,
+               gir1.2-mate-conf
 
 Package: mate-panel
 Architecture: any
