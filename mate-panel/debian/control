@@ -40,6 +40,7 @@ Build-Depends: cdbs,
                libavahi-glib-dev,
                libgirepository1.0-dev,
                gobject-introspection,
+               gir1.2-gtk-2.0,
                gir1.2-mate-conf
 
 Package: mate-panel
@@ -51,7 +52,8 @@ Depends: ${shlibs:Depends},
          mate-conf,
          menu-xdg,
          python,
-         mate-polkit
+         mate-polkit,
+         libmatepanelapplet (= ${binary:Version})
 Description: launcher and docking facility for MATE
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -59,3 +61,43 @@ Description: launcher and docking facility for MATE
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
+
+Package: libmatepanelapplet
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: library for MATE Panel applets
+ This library is used by MATE Panel applets.
+
+Package: libmatepanelapplet-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libmatepanelapplet (= ${binary:Version})
+Description: library for MATE Panel applets (development files)
+ This library is used by MATE Panel applets.
+ .
+ This package contains the development files.
+
+Package: libmatepanelapplet-doc
+Section: doc
+Architecture: all
+Description: library for MATE Panel applets
+ This library is used by MATE Panel applets.
+ .
+ This package contains the documentation files.
+
+Package: gir1.2-mate-panel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         ${gir:Depends},
+         gir1.2-gtk-2.0
+Description: GObject introspection data for MATE panel
+ This package contains introspection data for MATE panel.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
