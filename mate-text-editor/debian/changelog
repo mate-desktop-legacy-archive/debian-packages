@@ -1,10 +1,17 @@
-mate-text-editor (1.0.0-2) stable; urgency=low
+mate-text-editor (1.0.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * gedit renamed with pluma, dropped conflict with gedit.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Nov 2011 01:39:22 +0100
+
+mate-text-editor (1.0.0-2) unstable; urgency=low
 
   * Added conflict with gedit.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 16:59:12 +0100
 
-mate-text-editor (1.0.0-1) stable; urgency=low
+mate-text-editor (1.0.0-1) unstable; urgency=low
 
   * New upstream release.
 
