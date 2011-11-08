@@ -42,3 +42,16 @@ Description: GObject introspection data for the MATE menu specification
  .
  It can be used by packages using the GIRepository format to generate dynamic
  bindings. 
+
+Package: python-mate-menu
+Section: python
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         python-gtk2
+Description: an implementation of the freedesktop menu specification for MATE
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org.
+ .
+ This package contains the python bindings.
