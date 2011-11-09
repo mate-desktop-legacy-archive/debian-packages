@@ -1,6 +1,6 @@
-mate-display-manager (1.0.0-1) unstable; urgency=low
+mate-display-manager (1.0.2-1) unstable; urgency=low
 
-  * New upstream release.
+  * Initial release.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 13:39:42 +0100
 

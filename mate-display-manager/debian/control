@@ -12,7 +12,7 @@ Build-Depends: debhelper,
                libgtk2.0-dev,
                libpango1.0-dev,
                libmateconf-dev,
-               mate-panel,
+               libmatepanelapplet-dev,
                libxklavier-dev,
                libcanberra-gtk-dev,
                libfontconfig1-dev,
@@ -34,7 +34,15 @@ Build-Depends: debhelper,
                libattr1-dev,
                iso-codes,
                libaudit-dev,
-               docbook-xml
+               docbook-xml,
+               libmatecomponentui-dev,
+               libmatecomponent-dev,
+               libmatecanvas-dev,
+               libmate-dev,
+               xsltproc,
+               libavahi-client-dev,
+               libavahi-common-dev,
+               libavahi-glib-dev 
 Standards-Version: 3.9.2
 
 Package: mate-display-manager
