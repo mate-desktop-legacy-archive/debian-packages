@@ -1,0 +1,109 @@
+Source: mate-applets
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.2
+Build-Depends: cdbs,
+               autotools-dev,
+               dh-autoreconf,
+               debhelper,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libmateconf-dev,
+               scrollkeeper | rarian-compat,
+               libmatepanelapplet-dev,
+               libgtop2-dev,
+               libxklavier-dev,
+               libwnck-dev,
+               libmatedesktop-dev,
+               libmatenotify-dev,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               python-gtk2-dev,
+               python-gobject-dev,
+               python-mate,
+               mate-icon-theme,
+               libxml2-dev,
+               libmateweather-dev,
+               libgucharmap2-dev,
+               libpolkit-gobject-1-dev,
+               intltool,
+               python-dev,
+               libxt-dev,
+               libx11-dev,
+               mate-settings-daemon,
+               xsltproc,
+               docbook-xsl,
+               docbook-to-man,
+               docbook-utils,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               network-manager-dev,
+               libgstreamer0.10-dev,
+               libgstreamer-plugins-base0.10-dev,
+               x11proto-kb-dev,
+               system-tools-backends-dev,
+               libcpufreq-dev,
+               python-mate-desktop,
+               sharutils,
+               liboobs-1-dev,
+               libupower-glib-dev,
+               libmatecomponentui-dev,
+               libmatecomponent-dev,
+               libmatecanvas-dev,
+               libmate-dev,
+               libavahi-client-dev,
+               libavahi-common-dev,
+               libavahi-glib-dev 
+
+Package: mate-applets
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-panel,
+         mate-icon-theme,
+         gstreamer0.10-alsa,
+         gstreamer0.10-plugins-good,
+         ${python:Depends},
+         gvfs
+Recommends: mate-system-monitor,
+            mate-media,
+            python-mate,
+            python-gobject,
+            python-gtk2,
+            cpufrequtils,
+            mate-polkit
+Description: Various applets for the MATE panel
+ accessx-status: indicates keyboard accessibility settings, including
+ the current state of the keyboard, if those features are in use.
+ .
+ Battstat: monitors the power subsystem on a laptop.
+ .
+ Character palette: provides a convenient way to access non-standard
+ characters, such as accented characters, mathematical symbols, special
+ symbols, and punctuation marks.
+ .
+ MATE CPUFreq Applet: CPU frequency scaling monitor
+ .
+ Drivemount: lets you mount and unmount drives and file systems.
+ .
+ Geyes: pair of eyes which follow the mouse pointer around the screen.
+ .
+ Keyboard layout switcher: lets you assign different keyboard
+ layouts for different locales.
+ .
+ Mixer: volume control.
+ .
+ Modem Monitor: monitors the modem.
+ .
+ Invest: downloads current stock quotes from the Internet and displays
+ the quotes in a scrolling display in the applet. The applet downloads the
+ stock information from Yahoo! Finance.
+ .
+ System monitor: CPU, memory, network, swap file and resource.
+ .
+ Trash: lets you drag items to the trash folder.
+ .
+ Weather report: downloads weather information from the U.S National Weather
+ Service (NWS) servers, including the Interactive Weather Information
+ Network (IWIN).
