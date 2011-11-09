@@ -58,3 +58,12 @@ Description: The MATE library (development files)
  functions.
  .
  This package contains the development files.
+
+Package: libmate-doc
+Section: doc
+Architecture: all
+Description: The MATE library (documentation files)
+ This package contains the shared library for the base MATE library
+ functions.
+ .
+ This package contains the documentation files.

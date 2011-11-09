@@ -1,3 +1,9 @@
+libmate (1.0.0-4) unstable; urgency=low
+
+  * Splitted documentation into libmate-doc.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Nov 2011 07:09:13 +0100
+
 libmate (1.0.0-3) unstable; urgency=low
 
   * Fixed libgtk depends.
