@@ -1,3 +1,9 @@
+mate-calc (1.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 09 Nov 2011 02:36:20 +0100
+
 mate-calc (1.0.2-1) unstable; urgency=low
 
   * Initial release.

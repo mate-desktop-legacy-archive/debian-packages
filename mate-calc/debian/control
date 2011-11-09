@@ -14,7 +14,8 @@ Build-Depends: cdbs,
                flex,
                bison,
                mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils
+               mate-doc-utils-gnome | gnome-doc-utils,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-calc
