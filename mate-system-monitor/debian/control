@@ -1,0 +1,37 @@
+Source: mate-system-monitor
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper,
+               quilt,
+               docbook-to-man,
+               intltool,
+               pkg-config,
+               libglib2.0-dev,
+               libmateconf-dev,
+               libwnck-dev,
+               libgtop2-dev,
+               libgtk2.0-dev,
+               mate-icon-theme,
+               libgtkmm-2.4-dev,
+               libglibmm-2.4-dev,
+               libxml2-dev,
+               librsvg2-dev,
+               libdbus-glib-1-dev,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               scrollkeeper,
+               xsltproc
+Standards-Version: 3.9.2
+
+Package: mate-system-monitor
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: libgksu2-0,
+            gvfs
+Description: Process viewer and system resource monitor for MATE
+ This package allows you to graphically view and manipulate the running
+ processes on your system.  It also provides an overview of available
+ resources such as CPU and memory.
