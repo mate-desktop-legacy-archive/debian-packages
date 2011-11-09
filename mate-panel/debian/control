@@ -75,7 +75,8 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmatepanelapplet (= ${binary:Version})
+         libmatepanelapplet (= ${binary:Version}),
+         libmatecomponentui-dev
 Description: library for MATE Panel applets (development files)
  This library is used by MATE Panel applets.
  .
@@ -84,7 +85,7 @@ Description: library for MATE Panel applets (development files)
 Package: libmatepanelapplet-doc
 Section: doc
 Architecture: all
-Description: library for MATE Panel applets
+Description: library for MATE Panel applets (documentation files)
  This library is used by MATE Panel applets.
  .
  This package contains the documentation files.
