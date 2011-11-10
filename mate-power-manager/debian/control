@@ -28,7 +28,16 @@ Build-Depends: debhelper,
                libunique-dev,
                libmatekeyring-dev,
                libmateconf-dev,
-               pkg-config
+               pkg-config,
+               libmatepanelapplet-dev,
+               libmatecomponentui-dev,
+               libmatecomponent-dev,
+               libmatecanvas-dev,
+               libmate-dev,
+               libgcrypt11-dev,
+               libavahi-client-dev,
+               libavahi-common-dev,
+               libavahi-glib-dev 
 Standards-Version: 3.9.2
 
 Package: mate-power-manager
