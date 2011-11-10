@@ -1,3 +1,10 @@
+mate-desktop (1.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Splitted documentation files into libmatedesktop-doc.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 02:03:10 +0100
+
 mate-desktop (1.0.0-3) unstable; urgency=low
 
   * Added pkgconfig files to libmatedesktop-dev package.

@@ -10,6 +10,3 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 			--with-mate-distributor=Debian \
 			--disable-static \
 			--disable-scrollkeeper
-
-#LDFLAGS += -Wl,-O1 -Wl,-z,defs -Wl,--as-needed,-lm
-

@@ -69,3 +69,13 @@ Description: Library with common API for various MATE modules (development files
  This package contain the library with common API for various MATE modules.
  .
  This package contains the development files.
+
+Package: libmatedesktop-doc
+Section: doc
+Architecture: all
+Description: Library with common API for various MATE modules (documentation files)
+ This package contain the library with common API for various MATE modules.
+ .
+ This package contains the documentation files.
+
+
