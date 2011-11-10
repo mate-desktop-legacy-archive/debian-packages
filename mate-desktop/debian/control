@@ -59,6 +59,7 @@ Description: Library with common API for various MATE modules (library)
  The package contains the library.
 
 Package: libmatedesktop-dev
+Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
