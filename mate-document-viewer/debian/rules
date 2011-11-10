@@ -13,12 +13,15 @@ DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper \
 			--enable-pixbuf \
 			--enable-comics \
 			--enable-impress \
-			--disable-introspection
+			--disable-introspection \
+			--disable-static
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-binary-install/mate-document-viewer::
-	mkdir -p debian/mate-document-viewer/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-document-viewer/usr/share/mateconf/schemas/mate-document-viewer.schemas" --domain mate-document-viewer debian/mate-document-viewer/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-document-viewer/etc/mateconf/schemas/
+binary-install/atril::
+	mkdir -p debian/atril/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/atril/usr/share/mateconf/schemas/mate-document-viewer.schemas" --domain mate-document-viewer debian/atril/etc/tmp/schemas/*.schemas
+	rm -r debian/tmp/etc/mateconf/schemas/
 

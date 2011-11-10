@@ -1,0 +1,11 @@
+usr/bin/
+usr/share/MateConf/gsettings/atril.convert
+usr/share/applications/atril.desktop
+usr/share/atril/
+usr/share/dbus-1/
+usr/share/glib-2.0/
+usr/share/icons/
+usr/share/locale/
+usr/share/man/
+usr/share/mate/
+usr/share/omf/

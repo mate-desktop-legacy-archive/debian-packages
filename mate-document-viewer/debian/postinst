@@ -3,7 +3,7 @@
 pkgname=mate-document-viewer
 
 /usr/sbin/mateconfpkg --install ${pkgname}
-gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
+#gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 
 update-desktop-database -q
 

@@ -5,6 +5,7 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
                debhelper,
                intltool,
+               mate-common,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
                gtk-doc-tools,
@@ -27,10 +28,11 @@ Build-Depends: cdbs,
                libkpathsea-dev,
                libt1-dev,
                autotools-dev,
-               libgail-dev
+               libgail-dev,
+               xsltproc
 Standards-Version: 3.9.2
 
-Package: mate-document-viewer
+Package: atril
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -42,11 +44,41 @@ Provides: pdf-viewer,
           postscript-viewer,
           djvu-viewer
 Suggests: unrar, poppler-data, mate-file-manager
-Description: Document (PostScript, PDF) viewer
- mate-document-viewer is a simple multi-page document viewer.  It can display
+Description: document (PostScript, PDF) viewer
+ atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  When supported by the document, it also allows searching for text,
  copying text to the clipboard, hypertext navigation, and
  table-of-contents bookmarks.
 
+Package: libatril
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: document (PostScript, PDF) rendering library
+ atril is a simple multi-page document viewer.
+ .
+ This package contains the rendering library.
+
+Package: libatril-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libatril
+Description: document (PostScript, PDF) rendering library (development files)
+ atril is a simple multi-page document viewer.
+ .
+ This package contains the development files.
+
+Package: libatril-doc
+Section: doc
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: document (PostScript, PDF) rendering library (documentation files)
+ atril is a simple multi-page document viewer.
+ .
+ This package contains the documentation files.
