@@ -1,0 +1,51 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          mate-display-manager
+# Should-Start:      console-screen dbus network-manager
+# Required-Start:    $local_fs $remote_fs
+# Required-Stop:     $local_fs $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: MATE Display Manager
+# Description:       Debian init script for the MATE Display Manager
+### END INIT INFO
+#
+# Author:       Stefano Karapetsas <stefano@karapetsas.com>
+#
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/sbin/mdm
+
+test -x $DAEMON || exit 0
+
+if [ -r /etc/default/locale ]; then
+  . /etc/default/locale
+  export LANG LANGUAGE
+fi
+
+. /lib/lsb/init-functions
+
+case "$1" in
+  start)
+    log_daemon_msg "Starting MATE Display Manager" "mate-display-manager"
+    start-stop-daemon --start --quiet --pidfile /var/run/mdm.pid \
+        --background --exec $DAEMON || log_end_msg 1
+    log_end_msg 0
+    ;;
+  stop)
+    log_daemon_msg "Stopping MATE Display Manager" "mate-display-manager"
+    set +e
+    start-stop-daemon --stop --quiet --pidfile /var/run/mdm.pid \
+        --name mate-display-manager --retry 5
+    set -e
+    log_end_msg $?
+    ;;
+  restart|force-reload)
+    $0 stop
+    sleep 2
+    $0 start
+    ;;
+  *)
+    echo "Usage: /etc/init.d/mate-display-manager {start|stop|restart|force-reload}"
+esac
+exit 0

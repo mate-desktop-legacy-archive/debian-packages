@@ -1,3 +1,9 @@
+mate-display-manager (1.0.2-2) unstable; urgency=low
+
+  * Fixed and debianized init script.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 03:04:05 +0100
+
 mate-display-manager (1.0.2-1) unstable; urgency=low
 
   * Initial release.
