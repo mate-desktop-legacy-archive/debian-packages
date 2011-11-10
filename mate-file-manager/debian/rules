@@ -22,5 +22,3 @@ binary-install/caja::
 
 binary-post-install/caja::
 	dh_installmime -p$(cdbs_curpkg)
-
-common-binary-post-install-arch:: list-missing
