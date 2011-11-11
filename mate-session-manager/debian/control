@@ -26,7 +26,7 @@ Build-Depends: cdbs,
                gobject-introspection
 
 Package: mate-session-manager
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends},
          mate-settings-daemon,
          mate-panel,

@@ -1,3 +1,9 @@
+mate-session-manager (1.0.0-3) unstable; urgency=low
+
+  * Fixed architecture, must be any instead of all.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 11 Nov 2011 11:37:08 +0100
+
 mate-session-manager (1.0.0-2) unstable; urgency=low
 
   * Fixed debian/ folder.
