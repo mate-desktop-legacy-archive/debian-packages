@@ -1,8 +1,8 @@
-mate-keyring (1.0.1-2) unstable; urgency=low
+mate-keyring (1.0.4-1) unstable; urgency=low
 
-  * Added mateconf schemas.
+  * New upstream release.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 17:04:18 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 14 Nov 2011 01:17:58 +0100
 
 mate-keyring (1.0.1-1) unstable; urgency=low
 

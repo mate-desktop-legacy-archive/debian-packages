@@ -41,7 +41,6 @@ Depends: ${shlibs:Depends},
          fuse-utils,
          mate-mime-data,
          mate-conf,
-         mate-common,
          gvfs
 Recommends: dbus,
             psmisc,
