@@ -1,3 +1,9 @@
+mate-settings-daemon (1.0.0-3) unstable; urgency=low
+
+  * Dropped wrong depends on mate-common.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 16 Nov 2011 01:52:11 +0100
+
 mate-settings-daemon (1.0.0-2) unstable; urgency=low
 
   * Fixed debian/ folder.
