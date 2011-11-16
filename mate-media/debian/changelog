@@ -1,3 +1,10 @@
+mate-media (1.0.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fixed conflict with mate-icon-theme.
+
+ -- stefano <stefano@athlon>  Wed, 16 Nov 2011 01:29:28 +0100
+
 mate-media (1.0.4-1) unstable; urgency=low
 
   * New upstream release.
