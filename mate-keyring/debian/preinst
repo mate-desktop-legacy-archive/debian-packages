@@ -2,7 +2,7 @@
 
 pkgname=mate-keyring
 
-if [ -f /usr/sbin/mateconfpkg ]; then
-	/usr/sbin/mateconfpkg --uninstall ${pkgname}
-fi
+#if [ -f /usr/sbin/mateconfpkg ]; then
+#	/usr/sbin/mateconfpkg --uninstall ${pkgname}
+#fi
 
