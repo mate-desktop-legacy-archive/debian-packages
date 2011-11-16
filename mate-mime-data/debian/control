@@ -8,14 +8,11 @@ Build-Depends-Indep: gettext,
                      libxml-parser-perl,
                      shared-mime-info,
                      intltool
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 
 Package: mate-mime-data
 Architecture: all
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         shared-mime-info,
-         intltool
+Depends: ${misc:Depends}
 Description: base MIME and Application database for MATE.
  This module contains the base MIME and Application database for MATE.
  It is meant to be accessed through the MIME functions in Mate-VFS.
