@@ -10,7 +10,8 @@ Build-Depends: cdbs,
                libgtop2-dev,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
-               wireless-tools
+               wireless-tools,
+               xsltproc
 Standards-Version: 3.9.2
 
 Package: mate-netspeed
