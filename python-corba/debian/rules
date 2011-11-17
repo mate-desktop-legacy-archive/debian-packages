@@ -8,3 +8,6 @@ include /usr/share/cdbs/1/class/autotools.mk
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-static
 
 DEB_DH_INSTALL_ARGS += --list-missing
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
