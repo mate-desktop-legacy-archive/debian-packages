@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+pkgname=mate-netspeed
+
+/usr/sbin/mateconfpkg --uninstall ${pkgname}
+
+exit 0

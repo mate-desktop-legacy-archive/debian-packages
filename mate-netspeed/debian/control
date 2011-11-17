@@ -1,0 +1,23 @@
+Source: mate-netspeed
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper,
+               libmatepanelapplet-dev,
+               scrollkeeper,
+               libxml-parser-perl,
+               libgtop2-dev,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               wireless-tools
+Standards-Version: 3.9.2
+
+Package: mate-netspeed
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Traffic monitor applet for MATE
+ Netspeed is an applet for the MATE panel that shows how much traffic
+ occurs on a network device (ethernet card, wireless LAN card, or
+ dial-up).
