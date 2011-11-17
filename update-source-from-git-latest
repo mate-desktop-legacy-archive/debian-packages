@@ -7,15 +7,20 @@ from time import strftime
 # next version is 1.0.x, so git source code is treated as this version
 #VERSION = "1.0.1"
 #VERSION = "1.0.2" # 2011.11.07
-VERSION = "1.0.3" # 2011.11.08
+#VERSION = "1.0.3" # 2011.11.08
+#VERSION = "1.0.4" # 2011.11.14
+#VERSION = "1.0.5" # 2011.11.16
+VERSION = "1.0.6" # 2011.11.17
 
 base_pkgnames = ["libmate", "libmatecanvas", "libmatecomponent", "libmatecomponentui", "libmatekbd", "libmatekeyring", "libmatenotify", "libmateui", "libmateweather", "mate-backgrounds", "mate-common", "mate-conf", "mate-control-center", "mate-corba", "mate-desktop", "mate-dialogs", "mate-display-manager", "mate-doc-utils", "mate-file-manager", "mate-icon-theme", "mate-keyring", "mate-menus", "mate-mime-data", "mate-notification-daemon", "mate-panel", "mate-polkit", "mate-session-manager", "mate-settings-daemon", "mate-themes", "mate-vfs", "mate-window-manager"]
-extra_pkgnames = ["mate-applets", "mate-desktop-environment", "mate-power-manager", "mate-video-player", "mate-bluetooth", "mate-disk-utility", "mate-indicator-applet", "music-applet-2.5.1", "xfce4-xfapplet-plugin", "mate-media", "mate-system-tools","python-caja", "mate-character-map", "mate-extract", "mate-menu-editor", "python-corba", "mate-conf-dbus", "mate-file-manager-open-terminal", "mate-pl-parser", "python-mate", "mate-conf-editor", "mate-file-manager-sendto", "mate-policykit", "mate-utils", "python-mate-desktop"]
-sep_extra_pkgnames = ["mate-calc", "mate-document-viewer", "mate-image-viewer", "mate-screensaver", "mate-system-monitor", "mate-text-editor", "mate-terminal"]
+extra_pkgnames = ["mate-desktop-environment", "mate-power-manager", "mate-video-player", "mate-bluetooth", "mate-disk-utility", "mate-indicator-applet", "music-applet-2.5.1", "xfce4-xfapplet-plugin", "mate-media", "mate-system-tools","python-caja", "mate-character-map", "mate-extract", "mate-menu-editor", "python-corba", "mate-conf-dbus", "mate-file-manager-open-terminal", "mate-pl-parser", "python-mate", "mate-conf-editor", "mate-file-manager-sendto", "mate-policykit", "mate-utils", "python-mate-desktop"]
+sep_extra_pkgnames = ["mate-applets", "mate-calc", "mate-document-viewer", "mate-image-viewer", "mate-screensaver", "mate-system-monitor", "mate-text-editor", "mate-terminal"]
+stefano_pkgnames = ["mate-netspeed"]
 
 base_pkgnames.sort()
 extra_pkgnames.sort()
 sep_extra_pkgnames.sort()
+stefano_pkgnames.sort()
 
 def usage():
     print "USAGE: update-source-from-git-latest pkgname"
@@ -23,6 +28,7 @@ def usage():
     print "      BASE PACKAGES: %s" % ", ".join(base_pkgnames)
     print "      EXTRA PACKAGES: %s" % ", ".join(extra_pkgnames)
     print "      SEPARATED EXTRA PACKAGES: %s" % ", ".join(sep_extra_pkgnames)
+    print "      STEFANO PACKAGES: %s" % ", ".join(stefano_pkgnames)
 
 if len(sys.argv) != 2:
     print "WRONG NUMBER OF ARGUMENTS!"
@@ -31,7 +37,7 @@ if len(sys.argv) != 2:
     
 pkgname = sys.argv[1]
 
-if (not pkgname in base_pkgnames) and (not pkgname in extra_pkgnames) and (not pkgname in sep_extra_pkgnames):
+if (not pkgname in base_pkgnames) and (not pkgname in extra_pkgnames) and (not pkgname in sep_extra_pkgnames) and (not pkgname in stefano_pkgnames):
     print "INVALID PKGNAME!"
     usage()
     sys.exit(1)
@@ -41,6 +47,7 @@ GIT_DIR = os.path.join(ROOT_DIR, "git-source")
 SOURCE_BASE_DIR = os.path.join(ROOT_DIR, "git-source/Mate-Desktop-Environment")
 SOURCE_EXTRA_DIR = os.path.join(ROOT_DIR, "git-source/Mate-Extra")
 SOURCE_SEP_EXTRA_DIR = os.path.join(ROOT_DIR, "git-source/" + pkgname)
+SOURCE_STEFANO_DIR = os.path.join(ROOT_DIR, "git-source/" + pkgname)
 
 if pkgname in base_pkgnames:
     SOURCE_DIR = SOURCE_BASE_DIR
@@ -48,6 +55,8 @@ elif pkgname in extra_pkgnames:
     SOURCE_DIR = SOURCE_EXTRA_DIR
 elif pkgname in sep_extra_pkgnames:
     SOURCE_DIR = SOURCE_SEP_EXTRA_DIR
+elif pkgname in stefano_pkgnames:
+    SOURCE_DIR = SOURCE_STEFANO_DIR
 
 # Get the latest source code
 if os.path.exists(SOURCE_DIR):
@@ -65,6 +74,8 @@ else:
         os.system("git clone git://github.com/perberos/Mate-Extra.git")
     elif pkgname in sep_extra_pkgnames:
         os.system("git clone git://github.com/perberos/" + pkgname + ".git")
+    elif pkgname in stefano_pkgnames:
+        os.system("git clone git://github.com/stefano-k/" + pkgname + ".git")
 
 # Clean up package folder (WARNING: this deletes debian/ files not yet committed!!!)
 print "CLEANING UP %s..." % pkgname

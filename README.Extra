@@ -1,15 +1,13 @@
-
-
-mate-applets
+mate-applets                              ok
 mate-bluetooth
-mate-calc
+mate-calc                                 ok
 mate-character-map
 mate-conf-dbus
 mate-conf-editor                          ok
 mate-desktop-environment
 mate-disk-utility
-mate-document-viewer                      errors (see below)
-mate-extract
+mate-document-viewer                      ok
+mate-extract                              ok
 mate-file-manager-open-terminal
 mate-file-manager-sendto
 mate-image-viewer                         ok
@@ -18,42 +16,16 @@ mate-media                                ok
 mate-menu-editor
 mate-pl-parser
 mate-policykit
-mate-power-manager                        problem with mate-panel
-mate-system-monitor
+mate-power-manager                        ok
+mate-system-monitor                       ok
 mate-system-tools
 mate-terminal                             ok
-mate-text-editor                          ok, but in conflict with gedit
+mate-text-editor                          ok
 mate-utils
 mate-video-player
 music-applet-2.5.1
 python-caja
-python-corba
-python-mate
-python-mate-desktop
+python-corba                              ok
+python-mate                               ok
+python-mate-desktop                       ok
 xfce4-xfapplet-plugin
-
-
-mate-display-manager:
-
-configure: error: Package requirements (dbus-glib-1 >= 0.74
-        gtk+-2.0 >= 2.20.0
-        libmatepanelapplet-2.0 >= 2.0.0) were not met:
-
-No package 'libmatepanelapplet-2.0' found
-
-mate-document-viewer:
-
-make[4]: Entering directory `/tmp/buildd/mate-document-viewer-1.0.0/backend/pdf'
-/bin/bash ../../libtool  --tag=CXX   --mode=link g++  -g -O2 -g -O2 -Wall -module -avoid-version -no-undefined -export-symbols ../../backend/backend.symbols -Wl,-Bsymbolic-functions -o libpdfdocument.la -rpath /usr/lib/evince/3/backends ev-poppler.lo ../../libdocument/libevdocument.la -pthread -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0   -lm -pthread -lpoppler-glib -lgdk-x11-2.0 -lpoppler -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lpango-1.0 -lcairo -lgmodule-2.0 -lgobject-2.0 -lgthread-2.0 -lrt -lglib-2.0 -lxml2   -lz -lcairo   -lz -lcairo   
-/bin/grep: /usr/lib/libgtk-x11-2.0.la: No such file or directory
-/bin/sed: can't read /usr/lib/libgtk-x11-2.0.la: No such file or directory
-libtool: link: `/usr/lib/libgtk-x11-2.0.la' is not a valid libtool archive
-make[4]: *** [libpdfdocument.la] Error 1
-make[4]: Leaving directory `/tmp/buildd/mate-document-viewer-1.0.0/backend/pdf'
-make[3]: *** [all-recursive] Error 1
-make[3]: Leaving directory `/tmp/buildd/mate-document-viewer-1.0.0/backend'
-make[2]: *** [all-recursive] Error 1
-make[2]: Leaving directory `/tmp/buildd/mate-document-viewer-1.0.0'
-make[1]: *** [all] Error 2
-make[1]: Leaving directory `/tmp/buildd/mate-document-viewer-1.0.0'
-make: *** [debian/stamp-makefile-build] Error 2
