@@ -1,3 +1,9 @@
+mate-panel (1.0.2-2) unstable; urgency=low
+
+  * mate-panel.install: added some missing files.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 21:15:01 +0100
+
 mate-panel (1.0.2-1) unstable; urgency=low
 
   * New upstream release.
