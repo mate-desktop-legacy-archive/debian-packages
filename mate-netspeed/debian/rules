@@ -12,8 +12,8 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-binary-install/mate-netspeed::
-	mkdir -p debian/mate-netspeed/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-netspeed/usr/share/mateconf/schemas/mate-netspeed.schemas" --domain mate-netspeed debian/mate-netspeed/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-netspeed/etc/mateconf/schemas/
+#binary-install/mate-netspeed::
+#	mkdir -p debian/mate-netspeed/usr/share/mateconf/schemas
+#	mateconf-merge-schema "debian/mate-netspeed/usr/share/mateconf/schemas/mate-netspeed.schemas" --domain mate-netspeed debian/mate-netspeed/etc/mateconf/schemas/*.schemas
+#	rm -r debian/mate-netspeed/etc/mateconf/schemas/
 
