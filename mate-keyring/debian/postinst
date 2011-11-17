@@ -2,9 +2,9 @@
 
 pkgname=mate-keyring
 
-if [ -f /usr/sbin/mateconfpkg ]; then
-	/usr/sbin/mateconfpkg --install ${pkgname}
-fi
+#if [ -f /usr/sbin/mateconfpkg ]; then
+#	/usr/sbin/mateconfpkg --install ${pkgname}
+#fi
 
 #gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 

@@ -24,7 +24,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends}
 Conflicts: notification-daemon
 Replaces: notification-daemon
-Provides: notificatin-daemon
+Provides: notification-daemon
 Description: daemon to displays passive pop-up notifications
  mate-notification-daemon displays passive pop-up notifications, as per
  the Desktop Notifications Specification.

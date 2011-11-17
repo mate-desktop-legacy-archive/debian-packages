@@ -1,3 +1,9 @@
+mate-vfs (1.0.0-3) unstable; urgency=low
+
+  * Dropped wrong mate-common depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 15 Nov 2011 00:51:08 +0100
+
 mate-vfs (1.0.0-2) unstable; urgency=low
 
   * Added gvfs in depends.

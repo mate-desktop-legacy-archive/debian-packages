@@ -33,8 +33,7 @@ Standards-Version: 3.9.2
 Package: mate-settings-daemon
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-common
+         ${misc:Depends}
 Description: daemon handling the MATE session settings
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run

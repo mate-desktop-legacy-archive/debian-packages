@@ -1,3 +1,9 @@
+mate-notification-daemon (1.0.0-4) unstable; urgency=low
+
+  * Fixed provides notification-daemon in debian/control.
+
+ -- stefano <stefano@athlon>  Sun, 13 Nov 2011 23:08:22 +0100
+
 mate-notification-daemon (1.0.0-3) unstable; urgency=low
 
   * Added conflict with notification-daemon.
