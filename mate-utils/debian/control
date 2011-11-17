@@ -1,0 +1,41 @@
+Source: mate-utils
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper,
+               autotools-dev,
+               intltool,
+               libxt-dev,
+               libglib2.0-dev,
+               libmateconf-dev,
+               libgtk2.0-dev,
+               libmatepanelapplet-dev,
+               libgtop2-dev,
+               libcanberra-gtk-dev,
+               x11proto-xext-dev,
+               libxext-dev,
+               libx11-dev,
+               zlib1g-dev,
+               rarian-compat,
+               gtk-doc-tools,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               libglib2.0-doc,
+               libgtk2.0-doc
+Standards-Version: 3.9.2
+
+Package: mate-utils
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: MATE desktop utilities
+ This package contains all the tools bundled the MATE utilities:
+  - baobab, a disk usage analyser
+  - mate-dictionary, a program which can look up the definition of words
+    over the internet (including a panel applet to do the same)
+  - mate-search-tool, with which one can find files by name or content
+  - mate-system-log, a log viewing application
+  - mate-screenshot, a tool to take desktop screenshots and save them into
+    a file
+
