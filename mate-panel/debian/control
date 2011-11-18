@@ -76,7 +76,9 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libmatepanelapplet (= ${binary:Version}),
-         libmatecomponentui-dev
+         libmatecomponentui-dev,
+         libmateconf-dev,
+         libgtk2.0-dev
 Description: library for MATE Panel applets (development files)
  This library is used by MATE Panel applets.
  .

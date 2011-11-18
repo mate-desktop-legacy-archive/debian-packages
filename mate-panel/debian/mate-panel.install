@@ -4,8 +4,10 @@ usr/lib/mate-panel/
 usr/share/applications/
 usr/share/dbus-1/
 usr/share/icons/
+usr/share/idl/
 usr/share/locale/
 usr/share/man/
+usr/share/mate-2.0/
 usr/share/mate-panel/
 usr/share/mate-panelrc
 usr/share/mate/

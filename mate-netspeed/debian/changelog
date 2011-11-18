@@ -1,0 +1,17 @@
+mate-netspeed (1.0.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 20:21:26 +0100
+
+mate-netspeed (1.0.5-2) unstable; urgency=low
+
+  * Removed post-* and pre-* scripts.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 17:14:45 +0100
+
+mate-netspeed (1.0.5-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 02:38:42 +0100

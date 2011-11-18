@@ -8,7 +8,8 @@ Build-Depends: debhelper,
                python-all-dev,
                libmatecorba-dev,
                autotools-dev,
-               quilt
+               quilt,
+               mate-common
 Standards-Version: 3.9.2
 XS-Python-Version: >= 2.4
 
