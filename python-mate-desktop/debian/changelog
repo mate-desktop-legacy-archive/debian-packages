@@ -1,6 +1,6 @@
-python-mate-desktop (1.0.2-1) unstable; urgency=low
+python-mate-desktop (1.0.6-1) unstable; urgency=low
 
-  * Using autogen.sh
+  * Using autogen.sh.
 
  -- Clement Lefebvre <root@linuxmint.com>  Fri, 18 Nov 2011 10:12:29 +0000
 
