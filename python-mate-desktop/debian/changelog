@@ -1,14 +1,8 @@
-python-mate-desktop (1.0.0-4) lisa; urgency=low
+python-mate-desktop (1.0.2-1) unstable; urgency=low
 
-  * Upstream fix
+  * Using autogen.sh
 
- -- Clement Lefebvre <root@linuxmint.com>  Thu, 17 Nov 2011 17:11:18 +0000
-
-python-mate-desktop (1.0.0-3) unstable; urgency=low
-
-  * 1.0.0... 
-
- -- Clement Lefebvre <root@linuxmint.com>  Thu, 17 Nov 2011 13:46:54 +0000
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 18 Nov 2011 10:12:29 +0000
 
 python-mate-desktop (1.0.1-2) unstable; urgency=low
 
