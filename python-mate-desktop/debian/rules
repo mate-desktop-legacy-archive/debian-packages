@@ -15,6 +15,8 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 #binary-install/python-mate-desktop::
 #	rm -rf debian/python-mate-desktop/
 
