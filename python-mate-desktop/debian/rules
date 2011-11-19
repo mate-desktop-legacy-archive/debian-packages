@@ -6,12 +6,27 @@ include /usr/share/cdbs/1/rules/utils.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
+  --enable-applet \
+  --enable-cajaburn \
+  --enable-matekeyring \
+  --enable-matedesktop \
+  --enable-mateprint \
+  --enable-mateprintui \
+  --enable-marco \
   --disable-rsvg \
   --disable-bugbuddy \
   --disable-mediaprofiles \
   --disable-wnck \
   --disable-gtop \
-  --disable-gtksourceview
+  --disable-gtksourceview \
+  --disable-totem_plparser \
+  --disable-evolution \
+  --disable-evolution_ecal \
+  --disable-evince \
+  --disable-braseroburn \
+  --disable-braseromedia
+
+#allapplets: applet mateprint mateprintui gtksourceview wnck totem_plparser gtop cajaburn mediaprofiles rsvg matekeyring matedesktop bugbuddy marco evolution evolution_ecal evince braseromedia braseroburn marco
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
@@ -19,4 +34,3 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 #binary-install/python-mate-desktop::
 #	rm -rf debian/python-mate-desktop/
-

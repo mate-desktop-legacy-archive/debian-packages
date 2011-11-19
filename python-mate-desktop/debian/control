@@ -16,7 +16,7 @@ Build-Depends: debhelper,
                librsvg2-dev,
                libgtop2-dev,
                libwnck-dev,
-               mate-panel,
+               libmatepanelapplet-dev,
                mate-media,
                libmateconf-dev,
                mate-window-manager,
@@ -42,4 +42,4 @@ Depends: ${misc:Depends},
          python-gtk2
 Description: Python bindings for the MATE desktop environment
  This archive contains files that allow you to build wrappers for addons
- that interoperate gnome-python.
+ that interoperate mate-python.
