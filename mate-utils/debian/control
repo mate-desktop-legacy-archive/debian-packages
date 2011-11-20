@@ -31,12 +31,12 @@ Build-Depends: cdbs,
 Standards-Version: 3.9.2
 
 Package: mate-utils
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
 Description: MATE desktop utilities
  This package contains all the tools bundled the MATE utilities:
-  - baobab, a disk usage analyser
+  - mate-disk-usage-analyzer, a disk usage analyser
   - mate-dictionary, a program which can look up the definition of words
     over the internet (including a panel applet to do the same)
   - mate-search-tool, with which one can find files by name or content
