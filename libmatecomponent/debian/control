@@ -54,3 +54,14 @@ Description: Mate CORBA interfaces library (development files)
  documents.
  .
  This package contains the development files.
+
+Package: libmatecomponent-doc
+Section: doc
+Architecture: all
+Description: Mate CORBA interfaces library (documentation files)
+ mate-component is a set of language and system independent CORBA interfaces
+ for creating reusable components, controls and creating compound
+ documents.
+ .
+ This package contains the documentation files.
+

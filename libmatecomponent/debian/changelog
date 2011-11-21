@@ -1,3 +1,9 @@
+libmatecomponent (1.0.0-2) unstable; urgency=low
+
+  * Splitted gtk-doc into libmatecomponent-doc package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 21 Nov 2011 00:34:19 +0100
+
 libmatecomponent (1.0.0-1) unstable; urgency=low
 
   * New upstream release
