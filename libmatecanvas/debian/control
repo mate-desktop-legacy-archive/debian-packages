@@ -49,3 +49,13 @@ Description: powerful object-oriented display engine (development files)
  pixels.
  .
  This package contains the development files.
+
+Package: libmatecanvas-doc
+Section: doc
+Architecture: all
+Description: powerful object-oriented display engine (documentation files)
+ The canvas widget is a powerful and extensible object-oriented display
+ engine.
+ .
+ This package contains the documentation files.
+
