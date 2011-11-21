@@ -54,13 +54,26 @@ case "$1" in
     set -e
     log_end_msg $?
     ;;
+  reload)
+        log_daemon_msg "Scheduling reload of MATE Display Manager configuration" "mdm"
+        set +e
+        start-stop-daemon --stop --signal USR1 --quiet --pidfile \
+                /var/run/mdm.pid --name mdm
+        start-stop-daemon --stop --signal HUP --quiet --name mateconfd-2 \
+                --user mdm --oknodo
+        set -e
+        log_end_msg $?
+  ;;
+  status)
+        status_of_proc -p "$PIDFILE" "$DAEMON" mdm && exit 0 || exit $?
+  ;;
   restart|force-reload)
     $0 stop
     sleep 2
     $0 start
     ;;
   *)
-    echo "Usage: /etc/init.d/mdm {start|stop|restart|force-reload}"
+    echo "Usage: /etc/init.d/mdm {start|stop|restart|reload|force-reload|status}"
     exit 1
 esac
 

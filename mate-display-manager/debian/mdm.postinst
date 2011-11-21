@@ -1,15 +1,47 @@
 #!/bin/sh
 
-pkgname=mate-display-manager
+DEFAULT_DISPLAY_MANAGER_FILE=/etc/X11/default-display-manager
+THIS_PACKAGE=mdm
 
-getent group mdm >/dev/null 2>&1 || groupadd -g 120 mdm
-getent passwd mdm > /dev/null 2>&1 || /usr/sbin/useradd -c 'MATE Display Manager' -u 120 -g mdm -d /var/lib/mdm -s /sbin/nologin mdm
-passwd -l mdm > /dev/null
-chown -R mdm:mdm /var/lib/mdm > /dev/null
+# creating mdm group if it isn't already there
+if ! getent group mdm >/dev/null; then
+        addgroup --system --force-badname mdm
+fi
 
-#gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
-mateconfpkg --install ${pkgname}
+# creating Debian-gdm user if it isn't already there
+if ! getent passwd mdm >/dev/null; then
+        adduser --system --force-badname \
+            --ingroup mdm \
+            --home /var/lib/mdm \
+            --shell /bin/false \
+            mdm
+        usermod -c "MATE Display Manager" mdm
+fi
 
+# debconf is not a registry, so we only fiddle with the default file if it
+# does not exist
+if [ ! -e $DEFAULT_DISPLAY_MANAGER_FILE ]; then
+  if db_get shared/default-x-display-manager; then
+    # workaround debconf passthru bug (#379198)
+    if [ -z "$RET" ]; then
+      $RET="$THIS_PACKAGE"
+    fi
+    if [ "$THIS_PACKAGE" != "$RET" ]; then
+      echo "Please be sure to run \"dpkg --configure $RET\"."
+    fi
+    if db_get "$RET"/daemon_name; then
+      echo "$RET" > $DEFAULT_DISPLAY_MANAGER_FILE
+    fi
+  fi
+fi
+# debconf hangs if gdm3 gets started below without this
+db_stop || true
+
+mateconfpkg --install ${THIS_PACKAGE}
+
+# update-rc.d levels
+S=30
+K=01
 if [ -x /etc/init.d/mdm ]; then
   update-rc.d mdm defaults $S $K >/dev/null 2>&1
   invoke-rc.d mdm reload || true

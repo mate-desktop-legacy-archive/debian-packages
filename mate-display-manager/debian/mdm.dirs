@@ -1,2 +1,3 @@
-/etc/pam.d/
-/etc/rc.d/
+etc/pam.d
+etc/rc.d
+var/lib/mdm

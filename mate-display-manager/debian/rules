@@ -16,7 +16,10 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
 		--with-user=mdm \
 		--with-group=mdm \
 		--with-pam-domain=mdm \
-		--with-lang-file=/etc/default/locale
+		--with-lang-file=/etc/default/locale \
+		--with-log-dir=/var/log/mdm \
+		--with-xauth-dir=/var/run/gdm3 \
+		--with-working-directory=/var/lib/gdm3
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
