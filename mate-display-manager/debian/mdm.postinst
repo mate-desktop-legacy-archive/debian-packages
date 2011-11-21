@@ -10,4 +10,9 @@ chown -R mdm:mdm /var/lib/mdm > /dev/null
 #gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 mateconfpkg --install ${pkgname}
 
+if [ -x /etc/init.d/mdm ]; then
+  update-rc.d mdm defaults $S $K >/dev/null 2>&1
+  invoke-rc.d mdm reload || true
+fi
+
 exit 0

@@ -1,3 +1,23 @@
+mate-display-manager (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switched to autogen.sh.
+  * Renamed binary package "mdm".
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 20 Nov 2011 20:40:34 +0100
+
+mate-display-manager (1.0.2-4) unstable; urgency=low
+
+  * Fixed insserv.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 16:29:10 +0100
+
+mate-display-manager (1.0.2-3) unstable; urgency=low
+
+  * Updated debian/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 15:01:39 +0100
+
 mate-display-manager (1.0.2-2) unstable; urgency=low
 
   * Fixed and debianized init script.

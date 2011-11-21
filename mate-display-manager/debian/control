@@ -5,6 +5,7 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper,
                cdbs,
                intltool,
+               mate-common,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
                libdbus-glib-1-dev,
@@ -45,7 +46,7 @@ Build-Depends: debhelper,
                libavahi-glib-dev 
 Standards-Version: 3.9.2
 
-Package: mate-display-manager
+Package: mdm
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -68,7 +69,8 @@ Recommends: mate-dialogs,
             mate-icon-theme,
             desktop-base
 Suggests: mate-keyring,
-          mate-window-manager
+          mate-window-manager,
+          mate-themes
 Provides: x-display-manager
 Description: MATE Display Manager
  MDM provides the equivalent of a "login:" prompt for X displays: it 
@@ -80,3 +82,12 @@ Description: MATE Display Manager
  .
  The greeter is written using the MATE libraries and hence looks like a 
  MATE application - even to the extent of supporting themes!
+
+Package: mate-display-manager
+Architecture: all
+Depends: mdm
+Description: MATE Display Manager (metapackage)
+ MDM provides the equivalent of a "login:" prompt for X displays: it 
+ asks for a login and starts X sessions.
+ .
+ This is a metapackage that depends on mdm.

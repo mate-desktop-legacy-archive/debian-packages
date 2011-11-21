@@ -1,0 +1,12 @@
+debian/insserv.conf.d			etc
+etc/
+usr/bin/
+usr/lib/
+usr/sbin/
+usr/share/icons/
+usr/share/locale
+usr/share/mate-2.0
+usr/share/mate
+usr/share/mdm/
+usr/share/omf/
+usr/share/pixmaps/

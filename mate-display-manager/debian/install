@@ -1,2 +1,0 @@
-debian/mdm /etc/pam.d/
-debian/mdm-autologin /etc/pam.d/
