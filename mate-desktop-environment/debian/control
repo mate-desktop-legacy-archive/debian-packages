@@ -2,8 +2,7 @@ Source: mate-desktop-environment
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
-               cdbs
+Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
 
 Package: mate-core
@@ -29,7 +28,7 @@ Depends: ${shlibs:Depends},
          mate-terminal,
          mate-text-editor,
          mate-themes
-Description: The MATE Desktop Environment (essential components)
+Description: MATE Desktop Environment (essential components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
  .
@@ -41,6 +40,7 @@ Package: mate-desktop-environment
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         mate-core (= ${binary:Version}),
          icedove | thunderbird | mail-reader,
          iceweasel | firefox | www-browser,
          mate-calc,
@@ -49,7 +49,7 @@ Depends: ${shlibs:Depends},
          pidgin,
          transmission-gtk,
          vlc
-Description: The MATE Desktop Environment
+Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
  .
