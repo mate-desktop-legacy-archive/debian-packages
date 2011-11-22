@@ -1,0 +1,60 @@
+Source: mate-desktop-environment
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper,
+               cdbs
+Standards-Version: 3.9.2
+
+Package: mate-core
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         atril,
+         engrampa,
+         ffmpegthumbnailer-caja,
+         libmateui,
+         mate-applets,
+         mate-backgrounds,
+         mate-control-center,
+         mate-icon-theme,
+         mate-image-viewer,
+         mate-keyring,
+         mate-media,
+         mate-notification-daemon | notification-daemon,
+         mate-power-manager,
+         mate-screensaver,
+         mate-session-manager,
+         mate-system-monitor,
+         mate-terminal,
+         mate-text-editor,
+         mate-themes
+Description: The MATE Desktop Environment (essential components)
+ The MATE Desktop Environment, a non-intuitive and unattractive desktop
+ for users, using traditional computing desktop metaphor.
+ .
+ This package depends on a basic set of programs, including a file
+ manager, an image viewer, a text editor, a mail reader, a web browser,
+ a video player and other tools. 
+
+Package: mate-desktop-environment
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         icedove | thunderbird | mail-reader,
+         iceweasel | firefox | www-browser,
+         mate-calc,
+         mate-netspeed,
+         mate-utils,
+         pidgin,
+         transmission-gtk,
+         vlc
+Description: The MATE Desktop Environment
+ The MATE Desktop Environment, a non-intuitive and unattractive desktop
+ for users, using traditional computing desktop metaphor.
+ .
+ This package depends on the standard set of applications that are
+ part of the official MATE release. It provides much of what is
+ necessary for daily use of a personal computer, including web browsing,
+ email, audio and video playback, network and communication tools,
+ document viewers, and much more. 
