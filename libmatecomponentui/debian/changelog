@@ -1,3 +1,9 @@
+libmatecomponentui (1.0.0-4) unstable; urgency=low
+
+  * Splitted gtk-doc into appropriate package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Nov 2011 23:50:52 +0100
+
 libmatecomponentui (1.0.0-3) unstable; urgency=low
 
   * Fixed depends.
