@@ -1,0 +1,4 @@
+usr/lib/matecomponent
+usr/lib/mate-panel
+usr/lib/mate-sensors-applet/plugins/*.so
+usr/share
