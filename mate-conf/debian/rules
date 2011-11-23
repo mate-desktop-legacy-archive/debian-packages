@@ -15,6 +15,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc \
 
 binary-install/mate-conf::
 	mkdir -p debian/mate-conf/etc/mateconf/mateconf.xml.system
+	chmod 755 debian/mate-conf/etc/mateconf/mateconf.xml.system
 
 binary-predeb/mate-conf::
 	dh_pysupport -p$(cdbs_curpkg)

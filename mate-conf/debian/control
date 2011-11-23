@@ -2,10 +2,9 @@ Source: mate-conf
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                quilt,
-               dpkg-dev,
                gtk-doc-tools,
                libglib2.0-dev,
                libmatecorba-dev,
@@ -30,17 +29,32 @@ Package: mate-conf
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         ${python:Depends},
          psmisc,
          dbus,
          dbus-x11,
          mate-corba,
-         ${python:Depends}
+         mate-conf-common (>= ${source:Version})
 Description: MATE configuration database system
  mate-conf is a configuration database system for storing application
  preferences. It supports default or mandatory settings set by the
  administrator, and changes to the database are instantly applied to all
  running applications. It is written for the MATE desktop but doesn't
  require it.
+
+Package: mate-conf-common
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Breaks: mate-conf (<= 1.0.0-2)
+Description: MATE configuration database system (common files)
+ mate-conf is a configuration database system for storing application
+ preferences. It supports default or mandatory settings set by the
+ administrator, and changes to the database are instantly applied to all
+ running applications. It is written for the MATE desktop but doesn't
+ require it.
+ .
+ This package contains the common files between all architectures.
 
 Package: libmateconf-dev
 Section: libdevel
@@ -57,6 +71,19 @@ Description: MATE configuration database system (development files)
  require it.
  .
  This package contains the development files.
+
+Package: libmateconf-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: MATE configuration database system (documentation files)
+ mate-conf is a configuration database system for storing application
+ preferences. It supports default or mandatory settings set by the
+ administrator, and changes to the database are instantly applied to all
+ running applications. It is written for the MATE desktop but doesn't
+ require it.
+ .
+ This package contains the documentation files.
 
 Package: gir1.2-mate-conf
 Architecture: any

@@ -1,12 +1,14 @@
 debian/mateconfpkg /usr/sbin
 debian/mateconf-merge-schema /usr/bin
+debian/mateconf-schemas usr/sbin/
+debian/update-mateconf-defaults usr/bin/
 etc/
 usr/bin/
-usr/lib/MateConf
+usr/lib/MateConf/mateconf*
+usr/lib/MateConf/2/*.so
 usr/lib/*.so.*
 usr/share/dbus-1
-usr/share/locale
-usr/share/man
 usr/share/MateConf
+usr/share/man/
 usr/share/polkit-1
 usr/share/sgml

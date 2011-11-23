@@ -1,3 +1,18 @@
+mate-conf (1.0.0-4) unstable; urgency=low
+
+  * Fixed mateconf-merge-schemas.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 23 Nov 2011 13:05:30 +0100
+
+mate-conf (1.0.0-3) unstable; urgency=low
+
+  * Added mateconf-merge-schema and update-mateconf-defaults.
+  * Split documentation into libmateconf-doc package.
+  * Split arch common files into mate-conf-common package.
+  * Added triggers to remove mateconfpkg call from other packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 23 Nov 2011 12:01:28 +0100
+
 mate-conf (1.0.0-2) unstable; urgency=low
 
   * Added gir package.

@@ -1,5 +1,10 @@
 * engrampa:
 
-I/O warning : failed to load external entity "/usr/share/mateconf/schemas/mate-file-archiver.schemas"
-Apertura di "/usr/share/mateconf/schemas/mate-file-archiver.schemas" non riuscita: File o directory non esistente
+  I/O warning : failed to load external entity "/usr/share/mateconf/schemas/mate-file-archiver.schemas"
+  Apertura di "/usr/share/mateconf/schemas/mate-file-archiver.schemas" non riuscita: File o directory non esistente
 
+* remove xsltproc from all packages that already depends on mate-doc-utils
+
+* remove all .la files from libraries (see http://wiki.debian.org/ReleaseGoals/LAFileRemoval)
+
+* remove mateconfpkg in all package scripts. mate-conf now uses triggers to install/uninstall schemas
