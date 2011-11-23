@@ -14,26 +14,30 @@ Build-Depends-Indep: libxml2-dev,
                      python-libxml2,
                      xsltproc,
                      pkg-config,
-                     librarian-dev
+                     librarian-dev,
+                     mate-common
 Standards-Version: 3.9.2
 
 Package: mate-doc-utils
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends},
          libxml2,
          libxslt1.1,
-         python-libxml2
+         python-libxml2,
+         xsltproc
 Suggests: mate-doc-utils-gnome
 Description: a collection of documentation utilities for the MATE project
  mate-doc-utils is a collection of documentation utilities for the MATE
  project.
 
 Package: mate-doc-utils-gnome
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends},
          libxml2,
          libxslt1.1,
-         python-libxml2
+         python,
+         python-libxml2,
+         xsltproc
 Conflicts: gnome-doc-utils
 Description: a collection of documentation utilities for the MATE project (GNOME files)
  mate-doc-utils is a collection of documentation utilities for the MATE

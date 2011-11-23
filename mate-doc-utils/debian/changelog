@@ -1,3 +1,12 @@
+mate-doc-utils (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switched to autogen.sh.
+  * Added xsltproc as depends.
+  * Changed arch to all (thanks to lubos).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 23 Nov 2011 00:07:20 +0100
+
 mate-doc-utils (1.0.0-2) unstable; urgency=low
 
   * Fixed debian/ folder.
