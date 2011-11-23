@@ -3,7 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                libmatepanelapplet-dev,
                scrollkeeper,
                libxml-parser-perl,
@@ -17,7 +17,7 @@ Build-Depends: cdbs,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
                wireless-tools,
-               xsltproc
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-netspeed
