@@ -16,7 +16,7 @@ VERSION = "1.0.7" # 2011.11.20
 base_pkgnames = ["libmate", "libmatecanvas", "libmatecomponent", "libmatecomponentui", "libmatekbd", "libmatekeyring", "libmatenotify", "libmateui", "libmateweather", "mate-backgrounds", "mate-common", "mate-conf", "mate-control-center", "mate-corba", "mate-desktop", "mate-dialogs", "mate-display-manager", "mate-doc-utils", "mate-file-manager", "mate-icon-theme", "mate-keyring", "mate-menus", "mate-mime-data", "mate-notification-daemon", "mate-panel", "mate-polkit", "mate-session-manager", "mate-settings-daemon", "mate-themes", "mate-vfs", "mate-window-manager"]
 extra_pkgnames = ["mate-desktop-environment", "mate-power-manager", "mate-video-player", "mate-bluetooth", "mate-disk-utility", "mate-indicator-applet", "music-applet-2.5.1", "xfce4-xfapplet-plugin", "mate-media", "mate-system-tools","python-caja", "mate-character-map", "mate-extract", "mate-menu-editor", "python-corba", "mate-conf-dbus", "mate-file-manager-open-terminal", "mate-pl-parser", "python-mate", "mate-conf-editor", "mate-file-manager-sendto", "mate-policykit", "mate-utils", "python-mate-desktop"]
 sep_extra_pkgnames = ["mate-applets", "mate-calc", "mate-document-viewer", "mate-image-viewer", "mate-screensaver", "mate-system-monitor", "mate-text-editor", "mate-terminal"]
-stefano_pkgnames = ["mate-netspeed"]
+stefano_pkgnames = ["mate-netspeed", "mate-sensors-applet"]
 
 base_pkgnames.sort()
 extra_pkgnames.sort()
@@ -93,7 +93,7 @@ print "COPYING SOURCE CODE INTO PACKAGE FOR %s..." % pkgname
 os.chdir(ROOT_DIR)
 if (pkgname in base_pkgnames) or (pkgname in extra_pkgnames):
     os.system("cp -R %(SOURCE_DIR)s/%(pkgname)s/* %(pkgname)s/" % {'SOURCE_DIR':SOURCE_DIR, 'pkgname':pkgname})
-elif pkgname in sep_extra_pkgnames:
+elif (pkgname in sep_extra_pkgnames) or (pkgname in stefano_pkgnames):
     os.system("cp -R %(SOURCE_DIR)s/* %(pkgname)s/" % {'SOURCE_DIR':SOURCE_DIR, 'pkgname':pkgname})
 
 # Create an orig archive
