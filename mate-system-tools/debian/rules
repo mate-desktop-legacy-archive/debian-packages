@@ -10,9 +10,9 @@ DEB_DH_INSTALL_ARGS += --list-missing
 
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+#DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-binary-install/mate-system-tools::
-	mkdir -p debian/mate-system-tools/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-system-tools/usr/share/mateconf/schemas/mate-system-tools.schemas" --domain mate-system-tools debian/mate-system-tools/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-system-tools/etc/mateconf/schemas/
+#binary-install/mate-system-tools::
+#	mkdir -p debian/mate-system-tools/usr/share/mateconf/schemas
+#	mateconf-merge-schema "debian/mate-system-tools/usr/share/mateconf/schemas/mate-system-tools.schemas" --domain mate-system-tools debian/mate-system-tools/etc/mateconf/schemas/*.schemas
+#	rm -r debian/mate-system-tools/etc/mateconf/schemas/
