@@ -13,8 +13,8 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-binary-install/mate-file-archiver::
+binary-install/engrampa::
 	mkdir -p debian/engrampa/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/engrampa/usr/share/mateconf/schemas/mate-file-archiver.schemas" --domain mate-file-archiver debian/engrampa/etc/mateconf/schemas/*.schemas
-	rm -r debian/engrampa/etc/mateconf/schemas/
+	mateconf-merge-schema "debian/engrampa/usr/share/mateconf/schemas/engrampa.schemas" --domain engrampa debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -r debian/tmp/etc/mateconf/schemas/
 
