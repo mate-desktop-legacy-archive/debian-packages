@@ -41,13 +41,17 @@ Build-Depends: cdbs,
                libgtop2-dev,
                xsltproc,
                libmate-dev,
-               libstartup-notification0-dev
+               libstartup-notification0-dev,
+               libpango1.0-dev,
+               libslab-dev,
+               librsvg2-dev
 
 Package: mate-control-center
 Architecture: any
 Section: mate
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         mate-conf (>= 1.0.0-4),
          mate-settings-daemon,
          mate-menus,
          mate-desktop,

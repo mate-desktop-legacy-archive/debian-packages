@@ -1,3 +1,9 @@
+mate-panel (1.0.2-3) unstable; urgency=low
+
+  * Fixed conflict with mate-panel package in mint/lisa.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 24 Nov 2011 16:42:10 +0100
+
 mate-panel (1.0.2-2) unstable; urgency=low
 
   * mate-panel.install: added some missing files.
