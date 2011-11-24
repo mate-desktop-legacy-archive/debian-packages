@@ -10,18 +10,18 @@ Build-Depends: cdbs (>= 0.4.41),
                libgtk2.0-dev (>= 2.16),
                libglib2.0-dev (>= 2.15.2),
                libmateconf-dev,
+               libpolkit-gobject-1-dev,
                libdbus-1-dev (>= 0.32),
-               libpolkit-gtk-1-dev (>= 0.92),
                system-tools-backends-dev (>= 2.9.4),
                gettext,
                libxml-parser-perl,
                scrollkeeper,
+               mate-common,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
                libmatepolkit-dev,
                libcaja-extension-dev,
-               pkg-config,
-               xsltproc
+               pkg-config
 Standards-Version: 3.9.2
 
 Package: mate-system-tools

@@ -3,9 +3,8 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends:
-    autoconf,
-    automake,
     debhelper (>= 8),
+    cdbs,
     docbook-xml,
     mate-common,
     mate-doc-utils,
