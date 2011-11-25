@@ -1,0 +1,12 @@
+Source: mate-archive-keyring
+Section: misc
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.2
+
+Package: mate-archive-keyring
+Architecture: all
+Depends: gnupg (>= 1.0.6-4)
+Description: GnuPG key of the MATE repository
+ The MATE repository digitally signs its Release files. This package
+ contains the repository key used for that.
