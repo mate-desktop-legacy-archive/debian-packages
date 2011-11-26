@@ -63,6 +63,19 @@ Description: launcher and docking facility for MATE
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
 
+Package: mate-panel-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-panel (= ${binary:Version}),
+         libmatepanelapplet (= ${binary:Version})
+Description: launcher and docking facility for MATE (debugging symbols)
+ This package contains debugging symbols for mate-panel and the 
+ libmatepanelapplet library. It is provided to help debugging problem in 
+ the panel itself or in the library. The debugging symbols are installed 
+ in /usr/lib/debug and will automatically be used by gdb.
+
 Package: mate-panel-common
 Architecture: all
 Depends: ${misc:Depends}
