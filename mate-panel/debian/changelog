@@ -1,3 +1,9 @@
+mate-panel (1.0.7-2) unstable; urgency=low
+
+  * Dropped applets in process.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 26 Nov 2011 17:04:32 +0100
+
 mate-panel (1.0.7-1) unstable; urgency=low
 
   * New upstream release.
