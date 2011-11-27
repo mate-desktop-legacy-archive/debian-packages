@@ -1,3 +1,9 @@
+mate-control-center (1.0.0-4) unstable; urgency=low
+
+  * Applied patch to solve gtk engine dection issue.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Nov 2011 23:06:08 +0100
+
 mate-control-center (1.0.0-3) unstable; urgency=low
 
   * Added depends to build also /usr/bin/mate-control-center.
