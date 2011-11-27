@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
+               mate-common,
                libunique-dev,
                libmatenotify-dev,
                libglib2.0-dev,
@@ -32,7 +33,6 @@ Depends: ${shlibs:Depends},
          obex-data-server
 Recommends: gvfs-backends
 Suggests: caja-sendto
-Conflicts: gnome-bluetooth
 Architecture: any
 Description: MATE Bluetooth tools
  This package contains tools for managing and manipulating Bluetooth
