@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_DH_INSTALL_ARGS += --list-missing
+
+DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper \
+				--disable-desktop-update \
+				--disable-schemas-install \
+				--disable-icon-update
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+binary-install/mate-bluetooth::
+	mkdir -p debian/mate-bluetooth/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-bluetooth/usr/share/mateconf/schemas/mate-bluetooth.schemas" --domain mate-bluetooth debian/tmp/etc/mateconf/schemas/*.schemas
+	#rm -r debian/tmp/etc/mateconf/schemas/
+
