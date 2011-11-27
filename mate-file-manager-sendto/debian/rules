@@ -5,7 +5,7 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
-#DEB_CONFIGURE_EXTRA_FLAGS := 
+DEB_CONFIGURE_EXTRA_FLAGS := --with-plugins=pidgin,removable-devices,upnp
 #DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
