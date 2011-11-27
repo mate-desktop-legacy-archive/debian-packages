@@ -10,7 +10,7 @@ DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper \
 				--disable-schemas-install \
 				--disable-icon-update
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+#DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 

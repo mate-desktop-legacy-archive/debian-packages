@@ -1,3 +1,10 @@
+mate-bluetooth (1.0.7-2) unstable; urgency=low
+
+  * Added temporary conflict with gnome-bluetooth, until it's fixed
+    upstream.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Nov 2011 15:35:39 +0100
+
 mate-bluetooth (1.0.7-1) unstable; urgency=low
 
   * Initial release.
