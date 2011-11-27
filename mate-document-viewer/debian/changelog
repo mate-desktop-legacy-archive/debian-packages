@@ -1,6 +1,21 @@
+mate-document-viewer (1.0.7-2) unstable; urgency=low
+
+  * Fixed depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Nov 2011 00:09:47 +0100
+
+mate-document-viewer (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fixed mateconf schemas.
+  * Depends on mateconf witb triggers.
+  * Added atril-dbg and atril-common packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 26 Nov 2011 22:53:12 +0100
+
 mate-document-viewer (1.0.3-3) unstable; urgency=low
 
-  * Splitted into more appropriate packages.
+  * Split into more appropriate packages.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 00:55:53 +0100
 

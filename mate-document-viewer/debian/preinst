@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-pkgname=mate-document-viewer
-
-/usr/sbin/mateconfpkg --uninstall ${pkgname}
-

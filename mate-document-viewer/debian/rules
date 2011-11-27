@@ -22,6 +22,6 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 
 binary-install/atril::
 	mkdir -p debian/atril/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/atril/usr/share/mateconf/schemas/mate-document-viewer.schemas" --domain mate-document-viewer debian/atril/etc/tmp/schemas/*.schemas
-	rm -r debian/tmp/etc/mateconf/schemas/
+	mateconf-merge-schema "debian/atril/usr/share/mateconf/schemas/atril.schemas" --domain atril debian/tmp/etc/mateconf/schemas/*.schemas
+	#rm -r debian/tmp/etc/mateconf/schemas/
 
