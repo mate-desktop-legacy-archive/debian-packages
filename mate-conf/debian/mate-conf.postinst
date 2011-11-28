@@ -10,13 +10,7 @@ if [ "$1" = triggered ]; then
     for trigger in $2; do
         case $trigger in
             /usr/share/mateconf/schemas)
-                mateconf-schemas --register-all --no-signal
-                ;;
-            /usr/share/mateconf/defaults)
-                update-mateconf-defaults --no-signal
-                ;;
-            /usr/share/mateconf/mandatory)
-                update-mateconf-defaults --no-signal --mandatory
+                mateconf-all-schemas
                 ;;
         esac
     done
@@ -28,7 +22,5 @@ fi
 
 # Upon installation/upgrade, regenerate all databases, because in this case 
 # there will be no trigger run
-mateconf-schemas --register-all --no-signal
-update-mateconf-defaults --no-signal
-update-mateconf-defaults --no-signal --mandatory
+mateconf-all-schemas
 signal_daemons

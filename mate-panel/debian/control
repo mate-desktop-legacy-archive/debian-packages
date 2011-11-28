@@ -5,6 +5,7 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
 Build-Depends: cdbs,
                debhelper (>= 8),
+               autoconf,
                intltool,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
@@ -41,6 +42,11 @@ Build-Depends: cdbs,
                gobject-introspection,
                gir1.2-gtk-2.0,
                gir1.2-mate-conf,
+               gir1.2-glib-2.0,
+               gir1.2-atk-1.0,
+               gir1.2-freedesktop,
+               gir1.2-pango-1.0,
+               gir1.2-gdkpixbuf-2.0,
                mate-common
 
 Package: mate-panel
