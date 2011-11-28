@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+#DEBHELPER#
+
+pkgname=mate-window-manager
+mateconfpkg --uninstall ${pkgname}
+
+exit 0

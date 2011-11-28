@@ -19,7 +19,9 @@ Build-Depends: debhelper (>= 8),
                gtk-doc-tools,
                caja-sendto,
                mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils
+               mate-doc-utils-gnome | gnome-doc-utils,
+               gobject-introspection,
+               libgirepository1.0-dev
 Standards-Version: 3.9.2
 Homepage: https://github.com/perberos/Mate-extra
 

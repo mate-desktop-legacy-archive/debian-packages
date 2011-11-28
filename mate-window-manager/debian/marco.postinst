@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+pkgname=mate-window-manager
+mateconfpkg --install ${pkgname}
+
+exit 0
