@@ -1,3 +1,9 @@
+mate-panel (1.0.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 29 Nov 2011 02:27:11 +0100
+
 mate-panel (1.0.8-0+really1.0.0) unstable; urgency=low
 
   * Try to understand various mate-panel issues.

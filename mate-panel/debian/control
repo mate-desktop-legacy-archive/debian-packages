@@ -55,7 +55,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-desktop,
          mate-menus,
-         mate-conf (>= 1.0.0-4),
+         mate-conf (>= 1.0.9),
          menu-xdg,
          python,
          mate-polkit,
@@ -101,7 +101,7 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-conf (>= 1.0.0-4)
+         mate-conf (>= 1.0.9)
 Breaks: mate-panel (<= 1.0.0-3)
 Description: library for MATE Panel applets
  This library is used by MATE Panel applets.
