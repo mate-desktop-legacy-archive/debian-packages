@@ -22,7 +22,8 @@ Build-Depends: debhelper (>= 8),
                autotools-dev,
                libglib2.0-doc,
                gobject-introspection,
-               libgirepository1.0-dev
+               libgirepository1.0-dev,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-conf
@@ -41,6 +42,18 @@ Description: MATE configuration database system
  administrator, and changes to the database are instantly applied to all
  running applications. It is written for the MATE desktop but doesn't
  require it.
+
+Package: mate-conf-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-conf (= ${binary:Version})
+Description: MATE configuration database system (debugging symbols)
+ This package contains debugging symbols for mate-conf and the
+ libmateconf library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
 Package: mate-conf-common
 Architecture: all
@@ -96,4 +109,4 @@ Description: GObject introspection data for MATE configuration database system
  system.
  .
  It can be used by packages using the GIRepository format to generate dynamic
- bindings. 
+ bindings.
