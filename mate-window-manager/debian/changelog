@@ -1,3 +1,10 @@
+mate-window-manager (1.0.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * Depends on mate-conf >= 1.0.9 for schemas installation.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 29 Nov 2011 00:23:49 +0100
+
 mate-window-manager (1.0.8-1) unstable; urgency=low
 
   * New upstream release.

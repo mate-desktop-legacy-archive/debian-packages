@@ -36,6 +36,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-dialogs,
+         mate-conf (>= 1.0.9),
          marco-common (= ${source:Version}),
          libmarco (= ${binary:Version})
 Breaks: mate-window-manager (<= 1.0.0-2)
