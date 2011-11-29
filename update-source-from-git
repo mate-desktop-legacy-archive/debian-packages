@@ -1,0 +1,130 @@
+#!/usr/bin/env python
+
+import optparse
+import os
+import sys
+
+# copyright (c) 2011 clem-l, stefano-k
+
+# NOTE:
+# this script is intended to replaces update-source-from-git-label and 
+# update-source-from-git-latest. Use --label parameter if you want to
+# use a git label.
+#  e.g. ./update-source-from-git mate-panel --label v1.0.0
+
+# next version is 1.0.x, so git source code is treated as this version
+VERSION = "1.0.9" # 2011.11.29
+
+parser = optparse.OptionParser()
+parser.add_option("-l", "--label", dest="label", help="git label to use")
+parser.add_option("-s", "--stefano-k-fork", dest="stefano_k_fork", action="store_true", \
+    help="use stefano-k fork instead of perberos repository")
+(options, args) = parser.parse_args()
+
+if len(args) == 0:
+    print "E: No package given!"
+    sys.exit(1)
+elif len(args) > 1:
+    print "E: Too many packages given!"
+    sys.exit(1)
+
+pkgname = args[0]
+
+base_pkgnames = ["libmate", "libmatecanvas", "libmatecomponent", "libmatecomponentui", "libmatekbd", "libmatekeyring", "libmatenotify", "libmateui", "libmateweather", "mate-backgrounds", "mate-common", "mate-conf", "mate-control-center", "mate-corba", "mate-desktop", "mate-dialogs", "mate-display-manager", "mate-doc-utils", "mate-file-manager", "mate-icon-theme", "mate-keyring", "mate-menus", "mate-mime-data", "mate-notification-daemon", "mate-panel", "mate-polkit", "mate-session-manager", "mate-settings-daemon", "mate-themes", "mate-vfs", "mate-window-manager"]
+extra_pkgnames = ["mate-desktop-environment", "mate-power-manager", "mate-video-player", "mate-bluetooth", "mate-disk-utility", "mate-indicator-applet", "music-applet-2.5.1", "xfce4-xfapplet-plugin", "mate-media", "python-caja", "mate-character-map", "mate-extract", "mate-menu-editor", "python-corba", "mate-conf-dbus", "mate-file-manager-open-terminal", "mate-pl-parser", "python-mate", "mate-conf-editor", "mate-file-manager-sendto", "mate-policykit", "mate-utils", "python-mate-desktop"]
+sep_extra_pkgnames = ["mate-applets", "mate-calc", "mate-document-viewer", "mate-image-viewer", "mate-screensaver", "mate-system-monitor", "mate-system-tools", "mate-text-editor", "mate-terminal"]
+stefano_pkgnames = ["mate-netspeed", "mate-sensors-applet"]
+
+base_pkgnames.sort()
+extra_pkgnames.sort()
+sep_extra_pkgnames.sort()
+stefano_pkgnames.sort()
+
+
+if (not pkgname in base_pkgnames) and (not pkgname in extra_pkgnames) and (not pkgname in sep_extra_pkgnames) and (not pkgname in stefano_pkgnames):
+    print "E: Invalid package name!"
+    sys.exit(1)
+
+ROOT_DIR = os.getcwd()
+if options.stefano_k_fork:
+    print "I: stefano-k fork enabled"
+    GIT_SOURCE_DIR = "git-source-stefano_k_fork"
+else:
+    GIT_SOURCE_DIR = "git-source"
+GIT_DIR = os.path.join(ROOT_DIR, GIT_SOURCE_DIR)
+SOURCE_BASE_DIR = os.path.join(ROOT_DIR, GIT_SOURCE_DIR, "Mate-Desktop-Environment")
+SOURCE_EXTRA_DIR = os.path.join(ROOT_DIR, GIT_SOURCE_DIR, "Mate-Extra")
+SOURCE_SEP_EXTRA_DIR = os.path.join(ROOT_DIR, GIT_SOURCE_DIR, pkgname)
+SOURCE_STEFANO_DIR = os.path.join(ROOT_DIR, GIT_SOURCE_DIR, pkgname)
+
+if pkgname in base_pkgnames:
+    SOURCE_DIR = SOURCE_BASE_DIR
+elif pkgname in extra_pkgnames:
+    SOURCE_DIR = SOURCE_EXTRA_DIR
+elif pkgname in sep_extra_pkgnames:
+    SOURCE_DIR = SOURCE_SEP_EXTRA_DIR
+elif pkgname in stefano_pkgnames:
+    SOURCE_DIR = SOURCE_STEFANO_DIR
+
+# Get the latest source code
+if os.path.exists(SOURCE_DIR):
+    print "PULLING LATEST SOURCE CODE CHANGES FROM FROM GITHUB..."
+    os.chdir(SOURCE_DIR)
+    os.system("git pull")
+    if options.label != None:
+        os.system("git reset --hard %s" % options.label)
+else:
+    print "CLONING MATE SOURCE CODE FROM GITHUB..."
+    os.chdir(ROOT_DIR)
+    os.system("mkdir -p " + GIT_SOURCE_DIR)
+    os.chdir(GIT_DIR)
+    if options.stefano_k_fork:
+        if pkgname in base_pkgnames:
+            os.system("git clone git://github.com/stefano-k/Mate-Desktop-Environment.git")
+        elif pkgname in extra_pkgnames:
+            os.system("git clone git://github.com/stefano-k/Mate-Extra.git")
+        elif pkgname in sep_extra_pkgnames:
+            os.system("git clone git://github.com/stefano-k/" + pkgname + ".git")
+        elif pkgname in stefano_pkgnames:
+            os.system("git clone git://github.com/stefano-k/" + pkgname + ".git")
+    else:
+        if pkgname in base_pkgnames:
+            os.system("git clone git://github.com/perberos/Mate-Desktop-Environment.git")
+        elif pkgname in extra_pkgnames:
+            os.system("git clone git://github.com/perberos/Mate-Extra.git")
+        elif pkgname in sep_extra_pkgnames:
+            os.system("git clone git://github.com/perberos/" + pkgname + ".git")
+        elif pkgname in stefano_pkgnames:
+            os.system("git clone git://github.com/stefano-k/" + pkgname + ".git")
+        if options.label != None:
+            os.system("git reset --hard %s" % options.label)
+
+# Clean up package folder (WARNING: this deletes debian/ files not yet committed!!!)
+print "CLEANING UP %s..." % pkgname
+os.chdir(ROOT_DIR)
+os.system("git clean -f -x -d %s/" % pkgname)
+
+# Remove any previous orig archive
+print "REMOVING PREVIOUS ARCHIVES FOR %s..." % pkgname
+os.chdir(ROOT_DIR)
+os.system("rm -rf %s*bz2" % pkgname)
+
+# Copy mate-conf
+print "COPYING SOURCE CODE INTO PACKAGE FOR %s..." % pkgname
+os.chdir(ROOT_DIR)
+if (pkgname in base_pkgnames) or (pkgname in extra_pkgnames):
+    os.system("cp -R %(SOURCE_DIR)s/%(pkgname)s/* %(pkgname)s/" % {'SOURCE_DIR':SOURCE_DIR, 'pkgname':pkgname})
+elif (pkgname in sep_extra_pkgnames) or (pkgname in stefano_pkgnames):
+    os.system("cp -R %(SOURCE_DIR)s/* %(pkgname)s/" % {'SOURCE_DIR':SOURCE_DIR, 'pkgname':pkgname})
+
+# Create an orig archive
+print "CREATING NEW ORIG.TAR.BZ2 ARCHIVE FOR %s..." % pkgname
+archive_filename = "%(pkgname)s_%(version)s.orig.tar" % {'pkgname':pkgname, 'version':VERSION}
+os.chdir(SOURCE_DIR)
+if (pkgname in base_pkgnames) or (pkgname in extra_pkgnames):
+    os.chdir(pkgname)
+os.system("tar cf %s *" % archive_filename)
+os.system("bzip2 %s" % archive_filename)
+os.system("mv %(archive_filename)s.bz2 %(ROOT_DIR)s/" % {'archive_filename':archive_filename, 'ROOT_DIR':ROOT_DIR})
+
+print "FINISHED UPDATING SOURCE FOR %s" % pkgname
