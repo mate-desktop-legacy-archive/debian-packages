@@ -1,6 +1,13 @@
+mate-conf (1.0.9-2) unstable; urgency=low
+
+  * Restored mateconf-merge-schema, deleted accidentally in the previous
+    release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 29 Nov 2011 01:55:15 +0100
+
 mate-conf (1.0.9-1) unstable; urgency=low
 
-  * New upstream reelase.
+  * New upstream release.
   * Switch to autogen.sh.
   * Added new custom trigger for MATE.
   * Added mate-conf-dbg package.

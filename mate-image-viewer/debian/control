@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                gtk-doc-tools,
                intltool,
                mate-doc-utils,
@@ -28,18 +28,72 @@ Build-Depends: cdbs,
                python-gtk2-dev,
                scrollkeeper,
                libstartup-notification0-dev
-Build-Depends-Indep: libglib2.0-doc, libgtk2.0-doc
+Build-Depends-Indep: libglib2.0-doc,
+                     libgtk2.0-doc
 
-Package: mate-image-viewer
+Package: eom
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         eom-common (= ${source:Version}),
+         mate-conf (>= 1.0.9),
          mate-icon-theme,
          shared-mime-info
 Recommends: librsvg2-common
+Breaks: mate-image-viewer (<= 1.0.0-1)
 Description: Eye of MATE graphics viewer program
- eog or the Eye of MATE is a simple graphics viewer for the MATE
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library.  It can deal with large
  images, and zoom and scroll with constant memory usage.  Its goals are
  simplicity and standards compliance.
+ 
+Package: eom-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: mate-image-viewer (<= 1.0.0-1)
+Description: Eye of MATE graphics viewer program (common files)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains the architecture independent files.
 
+Package: eom-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         eom (= ${binary:Version})
+Description: Eye of MATE graphics viewer program (debugging symbols)
+ This package contains debugging symbols for eom.
+ It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: eom-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+         eom (= ${binary:Version})
+Breaks: mate-image-viewer (<= 1.0.0-1)
+Description: Eye of MATE graphics viewer program (development files)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains the development files.
+
+Package: mate-image-viewer
+Section: mate
+Architecture: all
+Depends: ${misc:Depends},
+         eom (>= ${source:Version})
+Description: MATE image viewer (metapackage)
+ This metapackage install the default MATE image viewer application.
+ .
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.

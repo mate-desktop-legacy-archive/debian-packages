@@ -1,5 +1,6 @@
 debian/mateconfpkg /usr/sbin
 debian/mateconf-all-schemas usr/sbin/
+debian/mateconf-merge-schema usr/bin/
 etc/
 usr/bin/
 usr/lib/MateConf/mateconf*

@@ -1,3 +1,15 @@
+mate-image-viewer (1.0.0-3) unstable; urgency=low
+
+  * Add breaks with old package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 29 Nov 2011 04:36:45 +0100
+
+mate-image-viewer (1.0.0-2) unstable; urgency=low
+
+  * Split into more packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 29 Nov 2011 00:52:21 +0100
+
 mate-image-viewer (1.0.0-1) unstable; urgency=low
 
   * New upstream release.
