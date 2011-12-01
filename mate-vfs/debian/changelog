@@ -1,3 +1,12 @@
+mate-vfs (1.0.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add libmatevfs package.
+  * Switch to autogen.sh.
+  * Switch to mate-conf trigger for schemas installation.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 30 Nov 2011 01:29:26 +0100
+
 mate-vfs (1.0.0-3) unstable; urgency=low
 
   * Dropped wrong mate-common depends.

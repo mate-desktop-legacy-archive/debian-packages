@@ -6,6 +6,8 @@ include /usr/share/cdbs/1/rules/utils.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var \
 							--disable-static \
 							--libexecdir=/usr/lib/${pkgname} \
@@ -16,5 +18,5 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 binary-install/mate-vfs::
 	mkdir -p debian/mate-vfs/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-vfs/usr/share/mateconf/schemas/mate-vfs.schemas" --domain mate-vfs debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -r debian/tmp/etc/mateconf/schemas/
+	#rm -r debian/tmp/etc/mateconf/schemas/
 

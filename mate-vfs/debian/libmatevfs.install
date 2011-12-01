@@ -1,0 +1,3 @@
+usr/lib/*.so.*
+usr/lib/mate-vfs-2.0/
+usr/lib/mate-vfs-daemon
