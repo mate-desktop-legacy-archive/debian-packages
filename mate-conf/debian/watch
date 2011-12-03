@@ -1,0 +1,3 @@
+version=3
+
+http://mate.karapetsas.com/automate/sources/mate-conf/mate-conf-(.*)\.tar\.bz2

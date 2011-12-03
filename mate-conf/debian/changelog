@@ -1,3 +1,14 @@
+mate-conf (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switching version to upstream versioning scheme.
+  * Added debian/watch.
+  * Added get-orig-source in debian/rules.
+  * Split package into libmateconf.
+  * Removed .la files.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 03 Dec 2011 16:10:53 -0500
+
 mate-conf (1.0.9-2) unstable; urgency=low
 
   * Restored mateconf-merge-schema, deleted accidentally in the previous
