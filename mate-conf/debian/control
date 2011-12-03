@@ -35,7 +35,8 @@ Depends: ${shlibs:Depends},
          dbus,
          dbus-x11,
          mate-corba,
-         mate-conf-common (>= ${source:Version})
+         mate-conf-common (>= ${source:Version}),
+		 libmateconf (= ${binary:Version})
 Description: MATE configuration database system
  mate-conf is a configuration database system for storing application
  preferences. It supports default or mandatory settings set by the
@@ -73,17 +74,17 @@ Package: libmateconf
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends},
-         ${misc:Depends},
-		 mate-conf (= ${binary:Version}),
-		 libmatecorba-dev
+         ${misc:Depends}
+Breaks: mate-conf (<= 1.0.9-2)
+Replaces: mate-conf (<= 1.0.9-2)
 Description: MATE configuration database system (library)
  mate-conf is a configuration database system for storing application
  preferences. It supports default or mandatory settings set by the
  administrator, and changes to the database are instantly applied to all
  running applications. It is written for the MATE desktop but doesn't
  require it.
-.
-This package contains the library.
+ .
+ This package contains the library.
 
 Package: libmateconf-dev
 Section: libdevel
