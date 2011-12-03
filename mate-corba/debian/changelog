@@ -1,3 +1,12 @@
+mate-corba (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Come back to upstream versioning schema.
+  * Add debian/watch.
+  * Add get-orig-source in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 03 Dec 2011 18:54:44 +0100
+
 mate-corba (1.0.0-1) unstable; urgency=low
 
   * New upstream release

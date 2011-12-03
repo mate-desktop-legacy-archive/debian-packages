@@ -2,20 +2,20 @@ Source: mate-corba
 Section: net
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.0
+Standards-Version: 3.9.2
 Build-Depends: libglib2.0-dev,
                libidl-dev,
                pkg-config,
                cdbs,
-               debhelper,
+               debhelper (>= 8),
                docbook-xsl,
                gtk-doc-tools
 
 Package: mate-corba
 Architecture: any
-Section: net
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         libmatecorba (= ${binary:Version})
 Description: a CORBA ORB
  ORBit2 is a high-performance CORBA (Common Object Request Broker
  Architecture) ORB (Object Request Broker). It allows programs to send
@@ -24,12 +24,30 @@ Description: a CORBA ORB
  communication between program objects, regardless of the programming
  language they're written in or the operating system they run on.
 
+Package: libmatecorba
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Breaks: mate-corba (<= 1.0.0-1)
+Replaces: mate-corba (<= 1.0.0-1)
+Description: a CORBA ORB (library)
+ ORBit2 is a high-performance CORBA (Common Object Request Broker
+ Architecture) ORB (Object Request Broker). It allows programs to send
+ requests and receive replies from other programs, regardless of the
+ locations of the two programs. CORBA is an architecture that enables
+ communication between program objects, regardless of the programming
+ language they're written in or the operating system they run on.
+ .
+ This package contains the library.
+
 Package: libmatecorba-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-corba (= ${binary:Version}),
+         libmatecorba (= ${binary:Version}),
          libidl-dev,
          libglib2.0-dev,
          pkg-config

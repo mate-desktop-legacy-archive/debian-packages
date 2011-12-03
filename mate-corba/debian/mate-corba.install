@@ -1,4 +1,2 @@
-debian/tmp/usr/bin/
-debian/tmp/usr/lib/*.so.*
-debian/tmp/usr/lib/matecorba-2.0/
-debian/tmp/usr/share/idl
+usr/bin/
+usr/share/idl

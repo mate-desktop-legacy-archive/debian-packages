@@ -1,7 +1,5 @@
-debian/tmp/usr/include/
-debian/tmp/usr/lib/pkgconfig/
-debian/tmp/usr/lib/*.so
-debian/tmp/usr/lib/*.a
-debian/tmp/usr/lib/*.la
-debian/tmp/usr/share/aclocal/
-debian/tmp/usr/share/doc/libmatecorba-dev
+usr/include/
+usr/lib/pkgconfig/
+usr/lib/*.so
+usr/share/aclocal/
+usr/share/doc/libmatecorba-dev
