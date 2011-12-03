@@ -9,3 +9,9 @@ DEB_DH_INSTALL_ARGS += --list-missing
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	#DEB_UPSTREAM_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p')
+	#wget http://mate.karapetsas.com/automate/sources/mate-doc-utils/mate-doc-utils-$(DEB_UPSTREAM_VERSION).tar.bz2 \
+	#	-O- | bzcat | gzip -9fn -c - > mate-doc-utils_$(DEB_UPSTREAM_VERSION).orig.tar.gz

@@ -3,7 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper
+               debhelper (>= 8)
 Build-Depends-Indep: libxml2-dev,
                      libxslt1-dev,
                      libxml2-utils,
@@ -26,7 +26,7 @@ Depends: ${misc:Depends},
          python-libxml2,
          xsltproc
 Suggests: mate-doc-utils-gnome
-Description: a collection of documentation utilities for the MATE project
+Description: collection of documentation utilities for the MATE project
  mate-doc-utils is a collection of documentation utilities for the MATE
  project.
 
@@ -39,7 +39,7 @@ Depends: ${misc:Depends},
          python-libxml2,
          xsltproc
 Conflicts: gnome-doc-utils
-Description: a collection of documentation utilities for the MATE project (GNOME files)
+Description: collection of documentation utilities for the MATE project (GNOME files)
  mate-doc-utils is a collection of documentation utilities for the MATE
  project.
  .
