@@ -1,6 +1,6 @@
 usr/include/
 usr/lib/pkgconfig/
 usr/lib/*.so
-urs/lib/*.a
+usr/lib/*.a
 usr/share/aclocal/
 usr/share/doc/libmatecorba-dev
