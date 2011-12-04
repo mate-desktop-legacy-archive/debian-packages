@@ -1,3 +1,9 @@
+mate-mime-data (2011.12.01-3) unstable; urgency=low
+
+  * Added libglib2.0-dev dependency 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 03 Dec 2011 22:29:10 -0500
+
 mate-mime-data (2011.12.01-2) unstable; urgency=low
 
   * Added mate-common dependency 
