@@ -1,4 +1,4 @@
-libmatecanvas (1.0.0-4) unstable; urgency=low
+libmatecanvas (2011.12.01-1) unstable; urgency=low
 
   * New upstream release.
   * Switch to autgen.sh.
