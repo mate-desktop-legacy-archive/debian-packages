@@ -1,3 +1,11 @@
+mate-vfs (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Created debian/watch.
+  * Added get-orig-source to debian/rules
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 03 Dec 2011 22:47:52 -0500
+
 mate-vfs (1.0.9-1) unstable; urgency=low
 
   * New upstream release.

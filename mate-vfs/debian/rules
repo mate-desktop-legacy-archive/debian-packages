@@ -20,3 +20,5 @@ binary-install/mate-vfs::
 	mateconf-merge-schema "debian/mate-vfs/usr/share/mateconf/schemas/mate-vfs.schemas" --domain mate-vfs debian/tmp/etc/mateconf/schemas/*.schemas
 	#rm -r debian/tmp/etc/mateconf/schemas/
 
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
