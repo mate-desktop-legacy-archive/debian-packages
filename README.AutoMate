@@ -1,0 +1,53 @@
+Short guide to build packages in AutoMate:
+
+
+
+  * Add debian/watch with following content:
+
+version=3
+
+http://mate.karapetsas.com/automate/sources/#PACKAGE#/#PACKAGE#-(.*)\.tar\.bz2
+
+
+
+  * Add at the end of debian/rules:
+  
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+
+
+
+  * Switch to augogen.sh if necessary:
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+
+
+  * Check if possible to solve some lintian warning/errors:
+
+http://mate.karapetsas.com/lintian.php?package=#PACKAGE#
+
+
+
+  * Add -dbg and -doc packages, if it needed:
+
+Package: #PKGNAME#-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         #PKGNAME# (= ${binary:Version}),
+         #LIBPKGNAME# (= ${binary:Version})
+Description: #DESCRIPTION# (debugging symbols)
+ This package contains debugging symbols for #PKGNAME# and the
+ #PKGNAME# library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: #PKGNAME#-doc
+Section: doc
+Architecture: all
+Description: #DESCRIPTION# (documentation files)
+ #LONGDESCRIPTION#.
+ .
+ This package contains the documentation files.
