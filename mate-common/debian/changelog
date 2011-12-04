@@ -1,3 +1,13 @@
+mate-common (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to autogen.sh.
+  * Add debian/watch file.
+  * debian/rules: add get-orig-source with uscan.
+  * Come back to the upstream versioning schema.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 04 Dec 2011 01:56:34 +0100
+
 mate-common (1.0.0-1) unstable; urgency=low
 
   * New upstream release.
