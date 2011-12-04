@@ -5,7 +5,6 @@ Short guide to build packages in AutoMate:
   * Add debian/watch with following content:
 
 version=3
-
 http://mate.karapetsas.com/automate/sources/#PACKAGE#/#PACKAGE#-(.*)\.tar\.bz2
 
 
@@ -23,13 +22,13 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 
 
-  * Check if possible to solve some lintian warning/errors:
+  * Check if possible to solve some lintian warnings/errors:
 
 http://mate.karapetsas.com/lintian.php?package=#PACKAGE#
 
 
 
-  * Add -dbg and -doc packages, if it needed:
+  * Add -dbg and -doc packages, if they are useful:
 
 Package: #PKGNAME#-dbg
 Section: debug
