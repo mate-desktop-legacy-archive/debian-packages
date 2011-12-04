@@ -1,3 +1,13 @@
+libmatecomponent (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to upstream versioning schema.
+  * Fixed some lintian warnings.
+  * Add debian/watch and get-orig-source in debian/rules.
+  * Removed .la files.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 04 Dec 2011 16:39:32 +0100
+
 libmatecomponent (1.0.0-2) unstable; urgency=low
 
   * Splitted gtk-doc into libmatecomponent-doc package.
@@ -37,7 +47,7 @@ libmatecomponent (2011.11.01-1) unstable; urgency=low
 libmatecomponent (2011.10.31-1) unstable; urgency=low
 
   * New upstream release.
-  * Splitted include files into a -dev package.
+  * Split include files into a -dev package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 10:39:34 +0100
 

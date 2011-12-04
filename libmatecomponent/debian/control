@@ -3,7 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                libdbus-1-dev,
                libdbus-glib-1-dev,
                bison,
@@ -16,7 +16,8 @@ Build-Depends: cdbs,
                gtk-doc-tools,
                docbook-xml,
                autotools-dev,
-               libglib2.0-doc
+               libglib2.0-doc,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: libmatecomponent
@@ -64,4 +65,16 @@ Description: Mate CORBA interfaces library (documentation files)
  documents.
  .
  This package contains the documentation files.
+
+Package: libmatecomponent-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmatecomponent (= ${binary:Version})
+Description: Mate CORBA interfaces library (debugging symbols)
+ This package contains debugging symbols for the libmatecomponent
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
