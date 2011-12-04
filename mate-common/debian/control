@@ -3,9 +3,14 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper (>= 8)
-Build-Depends-Indep: pkg-config,
-                     autotools-dev
+               debhelper (>= 8),
+               pkg-config,
+               autoconf,
+               automake,
+               libtool,
+               autotools-dev,
+               gettext,
+               intltool
 Standards-Version: 3.9.2
 
 Package: mate-common
