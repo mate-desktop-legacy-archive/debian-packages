@@ -10,5 +10,7 @@ DEB_CONFIGURE_EXTRA_FLAGS := --disable-static \
                              --enable-gtk-doc \
                              --with-html-dir=/usr/share/doc/libmatecorba-dev
 
+DEB_DH_MAKESHLIBS_ARGS_libmatecorba := -V 'libmatecorba $(shlibver)'
+
 get-orig-source:
 	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

@@ -1,3 +1,9 @@
+mate-corba (2011.12.01-3) unstable; urgency=low
+
+  * Add DEB_DH_MAKESHLIBS_ARGS_libmatecorba in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 04 Dec 2011 20:01:49 +0100
+
 mate-corba (2011.12.01-2) unstable; urgency=low
 
   * Re-added static library in libmatecorba-dev package (delete in previous
