@@ -1,3 +1,11 @@
+mate-mime-data (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Created debian/watch.
+  * Added get-orig-source to debian/rules
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 03 Dec 2011 21:57:45 -0500
+
 mate-mime-data (1.0.0-3) unstable; urgency=low
 
   * Fixed depends again.
