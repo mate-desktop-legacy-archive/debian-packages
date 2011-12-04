@@ -23,6 +23,7 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-doc,
                gobject-introspection,
                libgirepository1.0-dev,
+			   gir1.2-glib-2.0,
                mate-common
 Standards-Version: 3.9.2
 
