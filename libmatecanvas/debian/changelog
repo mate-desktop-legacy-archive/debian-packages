@@ -1,6 +1,14 @@
+libmatecanvas (1.0.0-4) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to autgen.sh.
+  * Add debian/watch file.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 05 Dec 2011 00:15:09 +0100
+
 libmatecanvas (1.0.0-3) unstable; urgency=low
 
-  * Splitted gtk-doc into libmatecanvas-doc package.
+  * Split gtk-doc into libmatecanvas-doc package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 21 Nov 2011 00:53:14 +0100
 
@@ -25,7 +33,7 @@ libmatecanvas (2011.11.02) unstable; urgency=low
 libmatecanvas (2011.11.01-1) unstable; urgency=low
 
   * New upstream release.
-  * Splitted include files into a libmatecanvas-dev package.
+  * Split include files into a libmatecanvas-dev package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 01 Nov 2011 23:42:12 +0100
 
