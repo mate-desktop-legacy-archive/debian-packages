@@ -1,3 +1,10 @@
+mate-corba (2011.12.01-2) unstable; urgency=low
+
+  * Re-added static library in libmatecorba-dev package (delete in previous
+    version).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 04 Dec 2011 17:01:54 +0100
+
 mate-corba (2011.12.01-1) unstable; urgency=low
 
   * New upstream release.
