@@ -3,9 +3,6 @@ debian/mateconf-all-schemas usr/sbin/
 debian/mateconf-merge-schema usr/bin/
 etc/
 usr/bin/
-usr/lib/MateConf/mateconf*
-usr/lib/MateConf/2/*.so
-usr/lib/*.so.*
 usr/share/dbus-1
 usr/share/MateConf
 usr/share/man/

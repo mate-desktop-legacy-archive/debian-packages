@@ -1,0 +1,3 @@
+usr/lib/MateConf/mateconf*
+usr/lib/MateConf/2/*.so
+usr/lib/*.so.*
