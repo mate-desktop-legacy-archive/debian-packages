@@ -7,7 +7,8 @@ Build-Depends: cdbs,
 Build-Depends-Indep: gettext,
                      libxml-parser-perl,
                      shared-mime-info,
-                     intltool
+                     intltool,
+					 mate-common
 Standards-Version: 3.9.2
 
 Package: mate-mime-data

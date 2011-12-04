@@ -1,3 +1,9 @@
+mate-mime-data (2011.12.01-2) unstable; urgency=low
+
+  * Added mate-common dependency 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 03 Dec 2011 22:21:23 -0500
+
 mate-mime-data (2011.12.01-1) unstable; urgency=low
 
   * New upstream release.
