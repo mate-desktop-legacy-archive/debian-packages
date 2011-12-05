@@ -1,3 +1,11 @@
+mate-dialogs (2011.12.01-1) unstable; urgency=low
+
+  * Added mate-common dependency
+  * Created debian/watch
+  * Added get-org-source to debian/rules
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 05 Dec 2011 15:24:08 -0500
+
 mate-dialogs (1.0.0-2) unstable; urgency=low
 
   * Fixed conflict with GNOME zenity.

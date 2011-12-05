@@ -11,7 +11,8 @@ Build-Depends: debhelper,
                libmatenotify-dev,
                libglib2.0-dev,
                docbook-xml,
-               xsltproc
+               xsltproc,
+			   mate-common
 Standards-Version: 3.9.2
 
 Package: mate-dialogs
