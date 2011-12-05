@@ -9,7 +9,8 @@ Build-Depends: libglib2.0-dev,
                cdbs,
                debhelper (>= 8),
                docbook-xsl,
-               gtk-doc-tools
+               gtk-doc-tools,
+               mate-common
 
 Package: mate-corba
 Architecture: any

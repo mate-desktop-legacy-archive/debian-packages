@@ -3,18 +3,19 @@ Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
-Build-Depends: debhelper,
-        libgtk2.0-dev,
-        libgail-dev,
-        gettext,
-        libart-2.0-dev,
-        libglade2-dev,
-        cdbs,
-        gtk-doc-tools,
-        docbook-xml
+Build-Depends: debhelper (>= 8),
+               libgtk2.0-dev,
+               libgail-dev,
+               gettext,
+               libart-2.0-dev,
+               libglade2-dev,
+               cdbs,
+               gtk-doc-tools,
+               docbook-xml,
+               mate-common
 Build-Depends-Indep: libglib2.0-doc,
                      libgtk2.0-doc
-Homepage: https://github.com/Perberos/Mate-Desktop-Environment
+Homepage: https://github.com/mate-dekstop/libmatecanvas
 
 Package: libmatecanvas
 Architecture: any
@@ -59,3 +60,14 @@ Description: powerful object-oriented display engine (documentation files)
  .
  This package contains the documentation files.
 
+Package: libmatecanvas-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmatecanvas (= ${binary:Version})
+Description: powerful object-oriented display engine (debugging symbols)
+ This package contains debugging symbols for the libmatecanvas
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

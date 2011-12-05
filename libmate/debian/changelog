@@ -1,6 +1,14 @@
+libmate (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to autogen.sh.
+  * Add debian/watch.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 05 Dec 2011 00:08:04 +0100
+
 libmate (1.0.0-4) unstable; urgency=low
 
-  * Splitted documentation into libmate-doc.
+  * Split documentation into libmate-doc.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Nov 2011 07:09:13 +0100
 
@@ -55,7 +63,7 @@ libmate (2011.11.01-1) unstable; urgency=low
 libmate (2011.10.31-1) unstable; urgency=low
 
   * New upstream release.
-  * Splitted include files into -dev package.
+  * Split include files into -dev package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 31 Oct 2011 11:32:02 +0100
 
