@@ -9,7 +9,8 @@ Build-Depends-Indep: gettext,
                      intltool (>= 0.40.0),
                      pkg-config,
                      icon-naming-utils (>= 0.8.7),
-                     librsvg2-bin
+                     librsvg2-bin,
+					 mate-common
 Standards-Version: 3.8.3
 
 Package: mate-icon-theme

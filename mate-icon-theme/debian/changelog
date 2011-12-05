@@ -1,3 +1,12 @@
+mate-icon-theme (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release
+  * Created debian/watch
+  * Added DEB_CONFIGURE_SCRIPT and get-orig-source to debian/rules
+  * Added mate-common dependency to debian/control
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 05 Dec 2011 15:48:45 -0500
+
 mate-icon-theme (1.0.0-1) unstable; urgency=low
 
   * New upstream release
