@@ -8,8 +8,9 @@ Build-Depends: cdbs,
                libdbus-1-dev,
                libdbus-glib-1-dev,
                libpopt-dev,
-			   mate-common
-Standards-Version: 3.8.4
+               mate-common,
+               gtk-doc-tools
+Standards-Version: 3.9.2
 Section: libs
 
 Package: libmatenotify
@@ -39,3 +40,27 @@ Description: sends desktop notifications to a notification daemon (development f
  information without getting in the user's way.
  .
  This package contains the development files.
+
+Package: libmatenotify-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: sends desktop notifications to a notification daemon (documentation files)
+ A library that sends desktop notifications to a notification daemon, as
+ defined in the Desktop Notifications spec. These notifications can be
+ used to inform the user about an event or display some form of
+ information without getting in the user's way.
+ .
+ This package contains the documentation files.
+
+Package: libmatenotify-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmatenotify (= ${binary:Version})
+Description: sends desktop notifications to a notification daemon (debugging symbols)
+ This package contains debugging symbols for the libmatenotify
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
