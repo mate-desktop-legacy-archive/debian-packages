@@ -11,13 +11,15 @@ Build-Depends: debhelper,
                docbook-xml,
                libdbus-1-dev,
                libgcrypt11-dev,
-               libglib2.0-doc
+               libglib2.0-doc,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: libmatekeyring
 Section: libs
 Architecture: any
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
 Description: MATE keyring services library
  mate-keyring is a daemon in the session, similar to ssh-agent,
  and other applications can use it to store passwords and other
@@ -43,3 +45,30 @@ Description: MATE keyring services library (development files)
  disk, but forgotten when the session ends.
  .
  This package contains the development files.
+
+Package: libmatekeyring-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: MATE keyring services library (documentation files)
+ mate-keyring is a daemon in the session, similar to ssh-agent,
+ and other applications can use it to store passwords and other
+ sensitive information.
+ .
+ The program can manage several keyrings, each with its own master
+ password, and there is also a session keyring which is never stored to
+ disk, but forgotten when the session ends.
+ .
+ This package contains the documentation files.
+
+Package: libmatekeyring-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmatekeyring (= ${binary:Version})
+Description: MATE keyring services library (debugging symbols)
+ This package contains debugging symbols for the libmatekeyring
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
