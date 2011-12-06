@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                libmatecanvas-dev,
                intltool,
                gettext,
@@ -32,7 +32,8 @@ Build-Depends: debhelper,
                libavahi-common-dev,
                libavahi-glib-dev,
                libselinux1-dev,
-               libgcrypt11-dev
+               libgcrypt11-dev,
+               mate-conf
 Build-Depends-Indep: libglib2.0-doc,
                      libgtk2.0-doc
 
@@ -75,4 +76,26 @@ Description: MATE user interface library (development files)
  functions (User Interface functions).
  .
  This package contains the development files.
+
+Package: libmateui-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: MATE user interface library (documentation files)
+ This package contains the shared library for the base MATE library
+ functions (User Interface functions).
+ .
+ This package contains the documentation files.
+
+Package: libmateui-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmateui (= ${binary:Version})
+Description: MATE user interface library (debugging symbols)
+ This package contains debugging symbols for the libmateui
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 

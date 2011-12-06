@@ -1,3 +1,13 @@
+libmateui (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to new versioning schema.
+  * Switch to autogen.sh.
+  * Add debian/watch and get-orig-source in debian/rules.
+  * Add -dbg and -doc packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 00:32:28 +0100
+
 libmateui (1.0.0-3) unstable; urgency=low
 
   * Fixed gtk depends.

@@ -5,5 +5,8 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
-#LDFLAGS += -Wl,-z,defs -Wl,-O1 -Wl,--as-needed
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
 
