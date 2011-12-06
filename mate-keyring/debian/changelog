@@ -1,3 +1,14 @@
+mate-keyring (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to new versioning schema.
+  * Switch to autogen.sh.
+  * Add debian/watch and get-orig-source in debian/rules.
+  * Add -dbg and -doc packages.
+  * Fixed mateconf schemas.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 00:01:43 +0100
+
 mate-keyring (1.0.4-2) unstable; urgency=low
 
   * Dropped mateconf schema installation.
