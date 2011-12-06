@@ -1,6 +1,15 @@
+libmatecomponentui (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to new versioning schema.
+  * Switch to autogen.sh.
+  * Add debian/watch and get-orig-source in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 06 Dec 2011 23:23:12 +0100
+
 libmatecomponentui (1.0.0-4) unstable; urgency=low
 
-  * Splitted gtk-doc into appropriate package.
+  * Split gtk-doc into appropriate package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Nov 2011 23:50:52 +0100
 
@@ -12,7 +21,7 @@ libmatecomponentui (1.0.0-3) unstable; urgency=low
 
 libmatecomponentui (1.0.0-2) unstable; urgency=low
 
-  * Splitted package
+  * Split package
 
  -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 16:50:03 +0000
 
