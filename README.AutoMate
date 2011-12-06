@@ -16,7 +16,7 @@ get-orig-source:
 
 
 
-  * Switch to augogen.sh if necessary:
+  * Switch to augogen.sh if necessary (add also mate-common in debian/control!):
 
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
