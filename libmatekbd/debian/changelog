@@ -1,6 +1,12 @@
+libmatekbd (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 14:17:53 +0100
+
 libmatekbd (1.0.0-2) unstable; urgency=low
 
-  * Splitted include files into libmatekbd-dev package.
+  * Split include files into libmatekbd-dev package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 01:24:40 +0100
 

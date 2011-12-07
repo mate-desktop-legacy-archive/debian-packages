@@ -3,15 +3,15 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper,
-        autotools-dev,
-        cdbs,
-        dpkg-dev,
-        libglib2.0-dev,
-        libmateconf-dev,
-        libmatecorba-dev,
-        libgtk2.0-dev,
-        libxklavier-dev,
-        intltool
+               autotools-dev,
+               cdbs,
+               libglib2.0-dev,
+               libmateconf-dev,
+               libmatecorba-dev,
+               libgtk2.0-dev,
+               libxklavier-dev,
+               intltool,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: libmatekbd
@@ -20,7 +20,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          iso-codes,
-         mate-conf
+         mate-conf (>= 2011.12.01-1)
 Description: MATE library to manage keyboard configuration
  libmatekbd offers an API to manage the keyboard in MATE applications.
 
@@ -38,3 +38,16 @@ Description: MATE library to manage keyboard configuration (development files)
  libmatekbd offers an API to manage the keyboard in MATE applications.
  .
  This package contains the development files.
+
+Package: libmatekbd-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmatekbd (= ${binary:Version})
+Description: MATE library to manage keyboard configuration (debugging symbols)
+ This package contains debugging symbols for the libmatekbd library.
+ It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
