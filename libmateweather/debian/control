@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
                autotools-dev,
-               cdbs,
+               cdbs (>= 0.4.90~),
                libxml2-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
@@ -16,8 +16,7 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-doc,
                libgtk2.0-doc,
                libsoup2.4-dev,
-               python-support,
-               python-all-dev,
+               python-all-dev (>= 2.6.6-3~),
                python-gobject-dev,
                python-gtk2-dev,
                mate-common
@@ -51,6 +50,18 @@ Description: MateWeather shared library (development files)
  services for numerous locations.
  .
  This package contains the development files.
+
+Package: python-mateweather
+Architecture: any
+Section: python
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends}
+Description: Python bindings for MateWeather
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the Python bindings.
 
 Package: libmateweather-dbg
 Section: debug

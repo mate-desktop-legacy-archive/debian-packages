@@ -1,3 +1,9 @@
+libmateweather (2011.12.01-2) unstable; urgency=low
+
+  * Add package for python bindings.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 19:39:12 +0100
+
 libmateweather (2011.12.01-1) unstable; urgency=low
 
   * New upstream release.
