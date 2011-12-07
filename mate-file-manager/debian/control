@@ -2,7 +2,7 @@ Source: mate-file-manager
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                quilt,
                dpkg-dev,
