@@ -5,6 +5,8 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
                              --with-pam-dir=/lib/security \
                              --with-root-certs=/etc/ssl/certs \
