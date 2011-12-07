@@ -1,7 +1,13 @@
+mate-desktop (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 00:07:49 +0100
+
 mate-desktop (1.0.3-1) unstable; urgency=low
 
   * New upstream release.
-  * Splitted documentation files into libmatedesktop-doc.
+  * Split documentation files into libmatedesktop-doc.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 02:03:10 +0100
 
@@ -13,8 +19,8 @@ mate-desktop (1.0.0-3) unstable; urgency=low
 
 mate-desktop (1.0.0-2) unstable; urgency=low
 
-  * Splitted library to libmatedesktop package.
-  * Splitted include files to libmatedesktop-dev package.
+  * Split library to libmatedesktop package.
+  * Split include files to libmatedesktop-dev package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 02:26:46 +0100
 

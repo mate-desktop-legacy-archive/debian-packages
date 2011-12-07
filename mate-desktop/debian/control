@@ -2,7 +2,7 @@ Source: mate-desktop
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                intltool,
                libglib2.0-dev,
@@ -21,7 +21,8 @@ Build-Depends: debhelper,
                python-dev,
                python-support,
                libglib2.0-doc,
-               libgtk2.0-doc
+               libgtk2.0-doc,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-desktop
@@ -73,9 +74,22 @@ Description: Library with common API for various MATE modules (development files
 Package: libmatedesktop-doc
 Section: doc
 Architecture: all
+Depends: ${misc:Depends}
 Description: Library with common API for various MATE modules (documentation files)
  This package contain the library with common API for various MATE modules.
  .
  This package contains the documentation files.
 
+Package: mate-desktop-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-desktop (= ${binary:Version}),
+         libmatedesktop (= ${binary:Version})
+Description: Library with common API for various MATE modules (debugging symbols)
+ This package contains debugging symbols for mate-desktop and the
+ libmatedesktop library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
