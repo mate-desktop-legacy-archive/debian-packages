@@ -2,7 +2,7 @@ Source: libmateweather
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                autotools-dev,
                cdbs,
                libxml2-dev,
@@ -19,7 +19,8 @@ Build-Depends: debhelper,
                python-support,
                python-all-dev,
                python-gobject-dev,
-               python-gtk2-dev
+               python-gtk2-dev,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: libmateweather
@@ -30,7 +31,7 @@ Depends: ${shlibs:Depends},
          libglib2.0-0,
          libgtk2.0-0,
          libsoup2.4-1,
-         mate-conf
+         mate-conf (>= 2011.12.01-1)
 Description: MateWeather shared library
  libmateweather is a library to access weather information from online
  services for numerous locations.
@@ -50,3 +51,16 @@ Description: MateWeather shared library (development files)
  services for numerous locations.
  .
  This package contains the development files.
+
+Package: libmateweather-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmateweather (= ${binary:Version})
+Description: MateWeather shared library (debugging symbols)
+ This package contains debugging symbols for the libmateweather
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
