@@ -21,6 +21,7 @@ Build-Depends: debhelper (>= 8),
                python-gtk2-dev,
                mate-common
 Standards-Version: 3.9.2
+X-Python-Version: >= 2.5
 
 Package: libmateweather
 Architecture: any
