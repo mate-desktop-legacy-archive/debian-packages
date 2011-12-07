@@ -1,3 +1,12 @@
+mate-file-manager (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add caja-dbg and caja-common packages.
+  * Switch to autogen.sh.
+  * Add debian/watch file and get-orig-source in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 22:58:52 +0100
+
 mate-file-manager (1.0.3-1) unstable; urgency=low
 
   * New upstream release.
