@@ -14,5 +14,5 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 			--disable-scrollkeeper
 
 get-orig-source:
-        uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
 
