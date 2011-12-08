@@ -1,3 +1,9 @@
+libmatenotify (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 21:51:30 +0100
+
 libmatenotify (2011.12.01-2) unstable; urgency=low
 
   * Add gtk-doc-tools to build depends.

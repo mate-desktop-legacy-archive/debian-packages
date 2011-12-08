@@ -1,3 +1,9 @@
+mate-conf (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 21:52:21 +0100
+
 mate-conf (2011.12.01-3) unstable; urgency=low
 
   * Added gir1.2-glib-2.0 to debian/control 
