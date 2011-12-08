@@ -1,3 +1,2 @@
 version=3
-
-http://mate.karapetsas.com/automate/sources/mate-corba/mate-corba-(.*)\.tar\.bz2
+http://pub.mate-desktop.org/releases/(\d\.\d.\d)/mate-corba-(.*)\.tar\.bz2
