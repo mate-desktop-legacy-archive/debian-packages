@@ -1,3 +1,9 @@
+mate-common (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 19:20:12 +0100
+
 mate-common (2011.12.01-2) unstable; urgency=low
 
   * Updated depends to use mate-autogen.sh.
