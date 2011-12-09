@@ -31,7 +31,7 @@ Depends: ${shlibs:Depends},
          libglib2.0-0,
          libgtk2.0-0,
          libsoup2.4-1,
-         mate-conf (>= 2011.12.01-1),
+         mate-conf (>= 1.1.0),
          libmateweather-common (= ${source:Version})
 Description: MateWeather shared library
  libmateweather is a library to access weather information from online
@@ -87,4 +87,3 @@ Description: MateWeather shared library (debugging symbols)
  library. It is provided to help debugging problems.
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
-
