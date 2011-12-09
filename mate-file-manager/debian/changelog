@@ -1,6 +1,7 @@
 mate-file-manager (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
+  * Add gir package.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 21:53:14 +0100
 

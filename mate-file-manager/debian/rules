@@ -13,7 +13,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/caja \
                              --disable-static \
                              --localstatedir=/var \
                              --enable-unique \
-                             --disable-introspection
+                             --enable-introspection
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 

@@ -12,5 +12,4 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 get-orig-source:
 	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
-#LDFLAGS += -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
 
