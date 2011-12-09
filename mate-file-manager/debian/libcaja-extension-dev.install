@@ -1,5 +1,4 @@
 usr/include/
-usr/lib/*.la
 usr/lib/*.so
 usr/lib/pkgconfig/
 usr/share/gtk-doc/
