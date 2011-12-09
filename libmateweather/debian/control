@@ -17,7 +17,10 @@ Build-Depends: debhelper (>= 8),
                libgtk2.0-doc,
                libsoup2.4-dev,
                mate-common,
-               gtk-doc-tools
+               gtk-doc-tools,
+               python-all-dev (>= 2.6.6-3~),
+               python-gobject-dev,
+               python-gtk2-dev
 Standards-Version: 3.9.2
 
 Package: libmateweather
