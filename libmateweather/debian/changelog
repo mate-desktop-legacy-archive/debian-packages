@@ -2,6 +2,7 @@ libmateweather (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
   * Switch to autogen.sh.
+  * Removed package for python bindings.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 21:52:05 +0100
 

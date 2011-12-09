@@ -16,5 +16,5 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 binary-install/mate-control-center::
 	mkdir -p debian/mate-control-center/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-control-center/usr/share/mateconf/schemas/mate-control-center.schemas" --domain mate-control-center debian/mate-control-center/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-control-center/etc/mateconf/schemas/
-
+	rm -rf debian/mate-control-center/etc/mateconf/schemas/
+	rm -rf debian/mate-control-center/usr/share/applications/mimeinfo.cache
