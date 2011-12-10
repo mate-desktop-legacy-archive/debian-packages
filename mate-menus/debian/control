@@ -2,25 +2,26 @@ Source: mate-menus
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
-               cdbs,
+Build-Depends: debhelper (>= 8),
+               cdbs (>= 0.4.90~),
                libglib2.0-dev,
-               python-all-dev,
-               dpkg-dev,
-               python-support,
+               python-all-dev (>= 2.6.6-3~),
                intltool,
                gobject-introspection,
-               libgirepository1.0-dev
+               libgirepository1.0-dev,
+               mate-common
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org/
+X-Python-Version: >= 2.5
 
 Package: mate-menus
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends},
+         libmatemenu (= ${binary:Version}),
          python-gtk2
-XB-Python-Version: ${python:Versions}
-Description: an implementation of the freedesktop menu specification for MATE
+Description: implementation of the freedesktop menu specification for MATE
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
@@ -29,7 +30,38 @@ Description: an implementation of the freedesktop menu specification for MATE
  Also contained here are the MATE menu layout configuration files, .directory
  files and assorted menu related utility programs.
 
-Package: gir1.2-mate-menus
+Package: libmatemenu
+Architecture: any
+Section: libs
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: mate-menus (<= 1.0.2-1)
+Replaces: mate-menus (<= 1.0.2-1)
+Description: implementation of the freedesktop menu specification for MATE (library)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the library.
+
+Package: libmatemenu-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmatemenu (= ${binary:Version}),
+         mate-menus (= ${binary:Version}),
+         libglib2.0-dev 
+Description: implementation of the freedesktop menu specification for MATE (development files)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the development files.
+
+Package: gir1.2-mate-menu
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -50,7 +82,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends},
          python-gtk2
-Description: an implementation of the freedesktop menu specification for MATE
+Description: implementation of the freedesktop menu specification for MATE (python bindings)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
  .

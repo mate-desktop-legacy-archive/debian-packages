@@ -1,8 +1,4 @@
-etc
-usr/include
-usr/lib/pkgconfig
-usr/lib/libmate*
+etc/
 usr/share/desktop-directories
 usr/share/locale
 usr/share/mate-menus
-
