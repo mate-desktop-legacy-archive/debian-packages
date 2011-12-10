@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
-               mate-common
+               mate-common,
+               libglib2.0-dev
 Build-Depends-Indep: intltool
 Standards-Version: 3.9.2
 
