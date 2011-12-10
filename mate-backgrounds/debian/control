@@ -2,8 +2,9 @@ Source: mate-backgrounds
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
-               cdbs
+Build-Depends: debhelper (>= 8),
+               cdbs,
+               mate-common
 Build-Depends-Indep: intltool
 Standards-Version: 3.9.2
 
