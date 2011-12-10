@@ -6,6 +6,8 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
 							--localstatedir=/var \
 							--disable-static \
@@ -18,3 +20,6 @@ binary-install/mate-control-center::
 	mateconf-merge-schema "debian/mate-control-center/usr/share/mateconf/schemas/mate-control-center.schemas" --domain mate-control-center debian/mate-control-center/etc/mateconf/schemas/*.schemas
 	rm -rf debian/mate-control-center/etc/mateconf/schemas/
 	rm -rf debian/mate-control-center/usr/share/applications/mimeinfo.cache
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
