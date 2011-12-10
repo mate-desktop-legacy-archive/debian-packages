@@ -1,8 +1,14 @@
+mate-notification-daemon (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Dec 2011 12:11:34 +0100
+
 mate-notification-daemon (1.0.0-4) unstable; urgency=low
 
   * Fixed provides notification-daemon in debian/control.
 
- -- stefano <stefano@athlon>  Sun, 13 Nov 2011 23:08:22 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 13 Nov 2011 23:08:22 +0100
 
 mate-notification-daemon (1.0.0-3) unstable; urgency=low
 

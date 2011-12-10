@@ -5,13 +5,18 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
-				--libexecdir=/usr/lib/mate-notification-daemon \
-				--disable-schemas-install
+							--libexecdir=/usr/lib/mate-notification-daemon \
+							--disable-schemas-install
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 binary-install/mate-notification-daemon::
 	mkdir -p debian/mate-notification-daemon/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-notification-daemon/usr/share/mateconf/schemas/mate-notification-daemon.schemas" --domain mate-notification-daemon debian/mate-notification-daemon/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-notification-daemon/etc/mateconf/schemas/
+	rm -rf debian/mate-notification-daemon/etc/mateconf/schemas/
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

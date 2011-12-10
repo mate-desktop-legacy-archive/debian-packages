@@ -15,7 +15,8 @@ Build-Depends: cdbs,
                libmatenotify-dev,
                libmateconf-dev,
                libmatecorba-dev,
-               intltool
+               intltool,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-notification-daemon
