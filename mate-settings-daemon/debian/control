@@ -27,7 +27,8 @@ Build-Depends: cdbs,
                libstartup-notification0-dev,
                libmatepolkit-dev,
                libpolkit-agent-1-dev,
-               libpolkit-gobject-1-dev
+               libpolkit-gobject-1-dev,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-settings-daemon
