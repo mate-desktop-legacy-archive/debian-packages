@@ -1,3 +1,9 @@
+mate-window-manager (1.1.0-2) unstable; urgency=low
+
+  * libmarco-dev depends on libmarco.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Dec 2011 22:18:18 +0100
+
 mate-window-manager (1.1.0-1) unstable; urgency=low
 
   * New upstream release.

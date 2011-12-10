@@ -83,7 +83,8 @@ Package: libmarco-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         libmarco (= ${binary:Version})
 Breaks: mate-window-manager (<= 1.0.0-2)
 Description: library for marco window manager (development files)
  Marco is a small window manager, using GTK+ to do everything. It is
