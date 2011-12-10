@@ -6,6 +6,8 @@ include /usr/share/cdbs/1/rules/utils.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var/lib \
 						--libexecdir=/usr/lib \
 						--enable-splash \
@@ -16,5 +18,7 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 binary-install/mate-session-manager::
 	mkdir -p debian/mate-session-manager/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-session-manager/usr/share/mateconf/schemas/mate-session-manager.schemas" --domain mate-session-manager debian/mate-session-manager/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-session-manager/etc/mateconf/schemas/
+	rm -rf debian/mate-session-manager/etc/mateconf/schemas/
 
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

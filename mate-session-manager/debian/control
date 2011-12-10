@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                intltool,
                libglib2.0-dev,
                libgtk2.0-dev,
@@ -23,7 +23,8 @@ Build-Depends: cdbs,
                libxrender-dev,
                xmlto,
                xsltproc,
-               gobject-introspection
+               gobject-introspection,
+               mate-common
 
 Package: mate-session-manager
 Architecture: any
@@ -35,7 +36,7 @@ Depends: ${misc:Depends},
          mate-polkit,
          dbus-x11,
          upower
-Description: The MATE Session Manager
+Description: MATE Session Manager
  This package contains a session that can be started from a display
  manager such as MDM. It will load all necessary applications for a
  full-featured user session.
