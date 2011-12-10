@@ -6,6 +6,8 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += \
 	--libexecdir=/usr/bin \
 	--disable-static \
@@ -19,3 +21,6 @@ binary-install/mate-settings-daemon::
 	mkdir -p debian/mate-settings-daemon/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-settings-daemon/usr/share/mateconf/schemas/mate-settings-daemon.schemas" --domain mate-settings-daemon debian/mate-settings-daemon/etc/mateconf/schemas/*.schemas
 	rm debian/mate-settings-daemon/etc/mateconf/schemas/*.schemas
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
