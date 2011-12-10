@@ -3,7 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-         debhelper,
+         debhelper (>= 8),
          autotools-dev,
          pkg-config,
          libdbus-glib-1-dev,
@@ -13,8 +13,9 @@ Build-Depends: cdbs,
          gtk-doc-tools,
          quilt,
          libgirepository1.0-dev,
-         gobject-introspection
-Standards-Version: 3.9.0
+         gobject-introspection,
+         mate-common
+Standards-Version: 3.9.2
 
 Package: mate-polkit
 Architecture: any
