@@ -18,3 +18,6 @@ binary-install/marco::
 	mkdir -p debian/marco/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/marco/usr/share/mateconf/schemas/mate-window-manager.schemas" --domain mate-window-manager debian/tmp/etc/mateconf/schemas/*.schemas
 	#rm -r debian/mate-window-manager/etc/mateconf/schemas/
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

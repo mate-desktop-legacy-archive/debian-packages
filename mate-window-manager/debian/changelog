@@ -1,3 +1,9 @@
+mate-window-manager (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Dec 2011 18:26:51 +0100
+
 mate-window-manager (1.0.9-1) unstable; urgency=low
 
   * New upstream release.
