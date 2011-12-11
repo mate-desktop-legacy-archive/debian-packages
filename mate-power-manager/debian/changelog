@@ -1,3 +1,9 @@
+mate-power-manager (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Dec 2011 21:28:23 +0100
+
 mate-power-manager (1.0.3-2) unstable; urgency=low
 
   * Fixed conflict with notification-daemon.
