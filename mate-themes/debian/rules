@@ -5,5 +5,9 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS := PKG_CONFIG_PATH=./debian
 
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

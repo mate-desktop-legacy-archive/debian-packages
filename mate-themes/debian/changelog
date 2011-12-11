@@ -1,3 +1,9 @@
+mate-themes (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Dec 2011 11:31:39 +0100
+
 mate-themes (1.0.0-3) unstable; urgency=low
 
   * Fixed conflict with some other GNOME2 package, thanks to Amanas.
