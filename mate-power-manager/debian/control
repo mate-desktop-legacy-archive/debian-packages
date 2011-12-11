@@ -2,7 +2,7 @@ Source: mate-power-manager
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                autotools-dev,
                libtool,
@@ -37,7 +37,8 @@ Build-Depends: debhelper,
                libgcrypt11-dev,
                libavahi-client-dev,
                libavahi-common-dev,
-               libavahi-glib-dev 
+               libavahi-glib-dev,
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-power-manager
@@ -48,7 +49,7 @@ Depends: ${shlibs:Depends},
          dbus-x11,
          consolekit,
          upower,
-         mate-conf,
+         mate-conf (>= 1.1.0),
 Recommends: udisks
 Suggests: policykit-1
 Description: power management tool for the MATE desktop
