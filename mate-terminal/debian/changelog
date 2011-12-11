@@ -1,3 +1,9 @@
+mate-terminal (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Dec 2011 11:52:01 +0100
+
 mate-terminal (1.0.0-1) unstable; urgency=low
 
   * New upstream release.
