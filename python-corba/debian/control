@@ -2,7 +2,7 @@ Source: python-corba
 Section: python
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                python-support,
                python-all-dev,
@@ -11,7 +11,7 @@ Build-Depends: debhelper,
                quilt,
                mate-common
 Standards-Version: 3.9.2
-XS-Python-Version: >= 2.4
+XS-Python-Version: >= 2.5
 
 Package: python-corba
 Architecture: any
