@@ -25,7 +25,7 @@ Build-Depends: cdbs,
                mate-icon-theme,
                libxml2-dev,
                libmateweather-dev,
-               libgucharmap-2-90-dev,
+               libgucharmap2-dev | libgucharmap-2-90-dev,
                libpolkit-gobject-1-dev,
                intltool,
                python-dev,
@@ -54,7 +54,8 @@ Build-Depends: cdbs,
                libmate-dev,
                libavahi-client-dev,
                libavahi-common-dev,
-               libavahi-glib-dev
+               libavahi-glib-dev,
+               mate-common
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-applets
