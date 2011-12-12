@@ -2,7 +2,7 @@ Source: python-mate-desktop
 Section: python
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                dh-autoreconf,
                python-all-dev,
@@ -19,7 +19,7 @@ Build-Depends: debhelper,
                libmatepanelapplet-dev,
                mate-media,
                libmateconf-dev,
-               mate-window-manager,
+               libmarco-dev,
                mate-common,
                libmatekeyring-dev,
                libmatedesktop-dev,

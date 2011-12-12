@@ -24,7 +24,7 @@ Build-Depends: cdbs,
                gstreamer0.10-tools,
                gstreamer0.10-plugins-base,
                gstreamer0.10-plugins-good,
-               xsltproc
+               mate-common
 
 Package: mate-media
 Architecture: any

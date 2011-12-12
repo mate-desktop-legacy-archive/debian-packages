@@ -6,6 +6,8 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
 		--localstatedir=/var --disable-static \
 		--disable-schemas-install \
@@ -19,5 +21,7 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 binary-install/mate-media::
 	mkdir -p debian/mate-media/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-media/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/mate-media/etc/mateconf/schemas/*.schemas
-	rm -r debian/mate-media/etc/mateconf/schemas/
+	rm -rf debian/mate-media/etc/mateconf/schemas/
 
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

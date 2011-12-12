@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-pkgname=mate-media
-
-/usr/sbin/mateconfpkg --uninstall ${pkgname}
-
