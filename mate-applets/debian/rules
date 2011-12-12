@@ -22,3 +22,6 @@ binary-install/mate-applets::
 	mkdir -p debian/mate-applets/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-applets/usr/share/mateconf/schemas/mate-applets.schemas" --domain mate-applets debian/mate-applets/etc/mateconf/schemas/*.schemas
 	rm debian/mate-applets/etc/mateconf/schemas/*.schemas
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

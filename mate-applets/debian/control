@@ -6,7 +6,7 @@ Standards-Version: 3.9.2
 Build-Depends: cdbs,
                autotools-dev,
                dh-autoreconf,
-               debhelper,
+               debhelper (>= 8),
                libgtk2.0-dev,
                libglib2.0-dev,
                libmateconf-dev,
@@ -54,7 +54,8 @@ Build-Depends: cdbs,
                libmate-dev,
                libavahi-client-dev,
                libavahi-common-dev,
-               libavahi-glib-dev 
+               libavahi-glib-dev
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-applets
 Architecture: any
