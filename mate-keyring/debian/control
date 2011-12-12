@@ -28,7 +28,7 @@ Depends: ${misc:Depends},
          dbus-x11,
          libpam-runtime,
          libtasn1-3-bin,
-         mate-conf (>= 2011.12.01-1)
+         mate-conf (>= 1.1.0)
 Description: MATE keyring services
  mate-keyring is a daemon in the session, similar to ssh-agent,
  and other applications can use it to store passwords and other
