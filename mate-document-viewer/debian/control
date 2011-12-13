@@ -38,7 +38,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-icon-theme,
          shared-mime-info,
-         mate-conf (>= 1.0.0-5),
+         mate-conf (>= 1.1.0),
          atril-common (= ${source:Version}),
          libatril (= ${binary:Version})
 Recommends: dbus-x11,
