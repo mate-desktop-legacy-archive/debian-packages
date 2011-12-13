@@ -17,3 +17,5 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper
 #	mateconf-merge-schema "debian/mate-netspeed/usr/share/mateconf/schemas/mate-netspeed.schemas" --domain mate-netspeed debian/mate-netspeed/etc/mateconf/schemas/*.schemas
 #	rm -r debian/mate-netspeed/etc/mateconf/schemas/
 
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
