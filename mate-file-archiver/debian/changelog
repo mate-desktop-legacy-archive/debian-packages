@@ -1,3 +1,9 @@
+mate-file-archiver (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 13 Dec 2011 23:08:02 +0100
+
 mate-file-archiver (1.0.3-3) unstable; urgency=low
 
   * Fixed depends.

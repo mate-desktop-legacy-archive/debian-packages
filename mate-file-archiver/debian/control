@@ -47,7 +47,7 @@ Suggests: lha,
           xz-utils,
           arj,
           rar
-Description: an archive manager for MATE
+Description: archive manager for MATE
  Engrampa is an archive manager for the MATE environment. It allows you to:
  .
   * Create and modify archives.
@@ -75,7 +75,19 @@ Package: engrampa-common
 Architecture: all
 Depends: ${misc:Depends}
 Breaks: engrampa (<= 1.0.3-1)
-Description: an archive manager for MATE (common files)
+Description: archive manager for MATE (common files)
  Engrampa is an archive manager for the MATE environment.
  .
  This package contains the architecture independent files.
+
+Package: engrampa-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         engrampa (= ${binary:Version})
+Description: archive manager for MATE (debugging symbols)
+ This package contains debugging symbols for engrampa. It is provided
+ to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
