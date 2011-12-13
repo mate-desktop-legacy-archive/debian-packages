@@ -3,7 +3,7 @@ Section: math
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                libatk1.0-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
