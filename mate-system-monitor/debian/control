@@ -3,7 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                quilt,
                docbook-to-man,
                intltool,
@@ -22,7 +22,7 @@ Build-Depends: cdbs,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
                scrollkeeper,
-               xsltproc
+               mate-common
 Standards-Version: 3.9.2
 
 Package: mate-system-monitor
