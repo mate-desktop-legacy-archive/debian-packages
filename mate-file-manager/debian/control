@@ -111,7 +111,8 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libcaja-extension (= ${binary:Version})
+         libcaja-extension (= ${binary:Version}),
+         libgtk2.0-dev
 Description: libraries for caja components (development files)
  Caja is the official file manager for the MATE desktop.
  .

@@ -9,6 +9,7 @@ Build-Depends: debhelper (>= 8),
                libxml-parser-perl,
                libmatedesktop-dev,
                libmateconf-dev,
+               libgtk2.0-dev,
                mate-common
 Standards-Version: 3.9.2
 Homepage: http://www.mate-desktop.org/
