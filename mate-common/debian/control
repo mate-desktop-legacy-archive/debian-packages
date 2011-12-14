@@ -21,7 +21,8 @@ Depends: ${misc:Depends},
          libtool,
          pkg-config,
          gettext,
-         intltool
+         intltool,
+         gtk-doc-tools
 Description: common scripts and macros to develop with MATE
  mate-common is an extension to autoconf, automake and libtool for the MATE
  environment and MATE using applications. Included are mate-autogen.sh and
