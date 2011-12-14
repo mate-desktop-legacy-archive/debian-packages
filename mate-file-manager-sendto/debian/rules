@@ -5,11 +5,15 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
 DEB_CONFIGURE_EXTRA_FLAGS := --with-plugins=pidgin,removable-devices,upnp
-#DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 binary-install/caja-sendto::
 	mkdir -p debian/caja-sendto/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/caja-sendto/usr/share/mateconf/schemas/caja-sendto.schemas" --domain caja-sendto debian/caja-sendto/etc/mateconf/schemas/*.schemas
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
