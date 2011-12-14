@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 8),
                libdbus-glib-1-dev (>= 0.60),
                libgupnp-1.0-dev (>= 0.13),
                libxml-parser-perl,
-               mate-conf
+               mate-common
 Standards-Version: 3.9.2
 
 Package: caja-sendto
