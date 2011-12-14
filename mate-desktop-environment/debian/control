@@ -16,6 +16,7 @@ Depends: ${shlibs:Depends},
          mate-applets,
          mate-backgrounds,
          mate-control-center,
+         mate-file-manager,
          mate-icon-theme,
          mate-image-viewer,
          mate-keyring,
@@ -41,14 +42,11 @@ Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
-         icedove | thunderbird | mail-reader,
-         iceweasel | firefox | www-browser,
          mate-calc,
          mate-netspeed,
-         mate-utils,
-         pidgin,
-         transmission-gtk,
-         vlc
+         mate-sensors-applet,
+         mate-system-tools,
+         mate-utils
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
