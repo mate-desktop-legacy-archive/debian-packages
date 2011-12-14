@@ -18,3 +18,6 @@ binary-install/mate-utils::
 	mkdir -p debian/mate-utils/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-utils/usr/share/mateconf/schemas/mate-utils.schemas" --domain mate-utils debian/mate-utils/etc/mateconf/schemas/*.schemas
 	rm -r debian/mate-utils/etc/mateconf/schemas/
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.

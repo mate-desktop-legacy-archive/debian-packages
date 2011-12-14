@@ -3,7 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                autotools-dev,
                intltool,
                mate-common,
