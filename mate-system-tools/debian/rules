@@ -16,3 +16,6 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper
 #	mkdir -p debian/mate-system-tools/usr/share/mateconf/schemas
 #	mateconf-merge-schema "debian/mate-system-tools/usr/share/mateconf/schemas/mate-system-tools.schemas" --domain mate-system-tools debian/mate-system-tools/etc/mateconf/schemas/*.schemas
 #	rm -r debian/mate-system-tools/etc/mateconf/schemas/
+
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
