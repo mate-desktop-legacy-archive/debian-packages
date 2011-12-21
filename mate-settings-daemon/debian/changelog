@@ -1,3 +1,9 @@
+mate-settings-daemon (1.1.0-3) unstable; urgency=low
+
+  * Add more build depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 21 Dec 2011 06:41:39 +0100
+
 mate-settings-daemon (1.1.0-2) unstable; urgency=low
 
   * Enable pulse in debian/rules. This should fix the keybinding issue.
