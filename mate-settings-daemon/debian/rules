@@ -11,8 +11,8 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += \
 	--libexecdir=/usr/bin \
 	--disable-static \
-	--disable-pulse \
 	--disable-schemas-install \
+	--enable-pulse \
 	--enable-polkit
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
