@@ -1,0 +1,34 @@
+Source: mate-indicator-applet
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 8),
+               cdbs (>= 0.4.41),
+               libgtk2.0-dev (>= 2.12.0),
+               libmatepanelapplet-dev,
+               libdbus-glib-1-dev,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               libtool,
+               intltool,
+               libxml2-dev,
+               gtk-doc-tools,
+               libindicator-dev (>= 0.3.6),
+               mate-common
+Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org
+
+Package: mate-indicator-applet
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-panel
+Recommends: indicator-messages,
+            indicator-sound,
+            indicator-application
+Description: MATE panel indicator applet
+ indicator-applet is an applet to display information from
+ various applications consistently in the MATE panel.
+ .
+ Currently this includes support for messaging applications in the
+ indicator-messages package.
