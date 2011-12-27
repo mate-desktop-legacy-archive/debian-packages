@@ -1,2 +1,2 @@
 version=3
-http://pub.mate-desktop.org/releases/(\d\.\d.\d)/mate-panel-(.*)\.tar\.bz2
+http://pub.mate-desktop.org/releases/(\d\.\d)/mate-panel-(.*)\.tar\.bz2

@@ -6,7 +6,7 @@ Short guide to build packages in AutoMate:
   package name):
 
 version=3
-http://pub.mate-desktop.org/releases/(\d\.\d.\d)/#PACKAGE#-(.*)\.tar\.bz2
+http://pub.mate-desktop.org/releases/(\d\.\d)/#PACKAGE#-(.*)\.tar\.bz2
 
 
 
