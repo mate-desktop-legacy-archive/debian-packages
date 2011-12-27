@@ -5,7 +5,6 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
                quilt,
-               dpkg-dev,
                libglib2.0-dev,
                libmatedesktop-dev,
                libpango1.0-dev,
@@ -44,7 +43,7 @@ Package: mate-file-manager
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         caja (= ${binary:Version})
+         caja (= ${source:Version})
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
