@@ -23,7 +23,7 @@ Build-Depends: debhelper (>= 8),
                gobject-introspection,
                libgirepository1.0-dev
 Standards-Version: 3.9.2
-Homepage: https://github.com/perberos/Mate-extra
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-bluetooth
 Depends: ${shlibs:Depends},

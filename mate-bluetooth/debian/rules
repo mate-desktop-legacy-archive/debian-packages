@@ -20,3 +20,5 @@ binary-install/mate-bluetooth::
 	mateconf-merge-schema "debian/mate-bluetooth/usr/share/mateconf/schemas/mate-bluetooth.schemas" --domain mate-bluetooth debian/tmp/etc/mateconf/schemas/*.schemas
 	#rm -r debian/tmp/etc/mateconf/schemas/
 
+get-orig-source:
+	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
