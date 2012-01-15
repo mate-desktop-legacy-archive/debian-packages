@@ -28,7 +28,8 @@ Build-Depends: cdbs,
 
 Package: mate-session-manager
 Architecture: any
-Depends: ${misc:Depends},
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
          mate-settings-daemon,
          mate-panel,
          mate-window-manager,
