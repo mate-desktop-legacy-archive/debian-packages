@@ -11,7 +11,7 @@ DEB_DH_INSTALL_ARGS += --list-missing
 
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
-DEB_CONFIGURE_EXTRA_FLAGS += pythondir=/usr/share/alacarte
+DEB_CONFIGURE_EXTRA_FLAGS += pythondir=/usr/share/mozo
 
 install/mozo::
 	dh_pysupport
