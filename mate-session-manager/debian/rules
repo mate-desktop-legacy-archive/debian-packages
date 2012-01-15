@@ -10,7 +10,6 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var/lib \
 						--libexecdir=/usr/lib \
-						--enable-splash \
 						--disable-introspection
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
