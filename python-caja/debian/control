@@ -1,0 +1,25 @@
+Source: python-caja
+Section: python
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 8),
+               cdbs,
+               mate-common,
+               gtk-doc-tools,
+               python,
+               python-dev,
+               python-gtk2-dev (>= 2.8.0),
+               python-mate,
+               python-gobject-dev (>= 2.16.0),
+               libcaja-extension-dev
+Standards-Version: 3.9.2
+
+Package: python-caja
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-gtk2 (>= 2.8.0),
+         python-mate
+Description: Python binding for Caja components
+ Python binding for Caja, to allow Caja property page and menu item
+ extensions to be written in Python.
