@@ -16,6 +16,12 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 						--enable-introspection \
 						--enable-matecomponent
 
+ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)	
+	DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
+endif
+
+#@echo $DEB_CONFIGURE_EXTRA_FLAGS
+
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 binary-install/mate-panel::

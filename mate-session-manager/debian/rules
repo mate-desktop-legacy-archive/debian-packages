@@ -16,7 +16,7 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 
 binary-install/mate-session-manager::
 	mkdir -p debian/mate-session-manager/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-session-manager/usr/share/mateconf/schemas/mate-session-manager.schemas" --domain mate-session-manager debian/tmpr/etc/mateconf/schemas/*.schemas
+	mateconf-merge-schema "debian/mate-session-manager/usr/share/mateconf/schemas/mate-session-manager.schemas" --domain mate-session-manager debian/tmp/etc/mateconf/schemas/*.schemas
 	rm -rf debian/tmp/etc/mateconf/schemas/
 	rm -rf debian/tmp/etc/mateconf/
 

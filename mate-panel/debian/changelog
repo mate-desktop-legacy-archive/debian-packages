@@ -1,3 +1,9 @@
+mate-panel (1.1.0-2) unstable; urgency=low
+
+  * Add --enable-ubuntu on Ubuntu and derivates to disable the resize grip.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 16 Jan 2012 23:59:20 +0100
+
 mate-panel (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
