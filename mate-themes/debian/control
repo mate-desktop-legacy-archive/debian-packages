@@ -1,7 +1,7 @@
 Source: mate-themes
 Section: mate
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Standards-Version: 3.9.2
 Build-Depends: debhelper,
                cdbs,
