@@ -1,3 +1,9 @@
+libmatecomponentui (1.1.1-2) unstable; urgency=low
+
+  * Fix some lintian errors.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 18 Jan 2012 00:46:18 +0100
+
 libmatecomponentui (1.1.1-1) unstable; urgency=low
 
   * New upstream release.

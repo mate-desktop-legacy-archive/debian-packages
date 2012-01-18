@@ -72,6 +72,7 @@ Description: MATE Component UI library (development files)
 Package: libmatecomponentui-doc
 Section: doc
 Architecture: all
+Depends: ${misc:Depends}
 Description: MATE Component UI library (documentation files)
  The Mate Component UI library.
  .
