@@ -49,7 +49,7 @@ Recommends: dbus,
             mate-keyring
 Suggests: obex-data-server,
           samba-common
-Description: mate-vfs userspace virtual filesystem
+Description: MATE VFS userspace virtual filesystem
  mate-vfs is a userspace virtual filesystem where mount runs as a separate 
  processes which you talk to via D-Bus. It also contains a gio module 
  that seamlessly adds mate-vfs support to all applications using the gio 
@@ -60,13 +60,12 @@ Description: mate-vfs userspace virtual filesystem
  gio applications, and the minimal set of backends.
 
 Package: libmatevfs
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Breaks: mate-vfs (<< 1.0.9)
 Replaces: mate-vfs (<< 1.0.9)
-Description: mate-vfs userspace virtual filesystem (library)
+Description: MATE VFS userspace virtual filesystem (library)
  mate-vfs is a userspace virtual filesystem where mount runs as a separate
  processes which you talk to via D-Bus. It also contains a gio module
  that seamlessly adds mate-vfs support to all applications using the gio
@@ -83,7 +82,7 @@ Depends: ${shlibs:Depends},
          mate-vfs (= ${binary:Version}),
          libmatevfs (= ${binary:Version}),
          libmateconf-dev
-Description: mate-vfs userspace virtual filesystem (development files)
+Description: MATE VFS userspace virtual filesystem (development files)
  mate-vfs is a userspace virtual filesystem where mount runs as a separate 
  processes which you talk to via D-Bus. It also contains a gio module 
  that seamlessly adds mate-vfs support to all applications using the gio 
@@ -99,7 +98,7 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-vfs (= ${binary:Version}),
          libmatevfs (= ${binary:Version})
-Description: mate-vfs userspace virtual filesystem (debugging symbols)
+Description: MATE VFS userspace virtual filesystem (debugging symbols)
  This package contains debugging symbols for mate-vfs and the
  libmatevfs library. It is provided to help debugging problems.
  The debugging symbols are installed in /usr/lib/debug and will
