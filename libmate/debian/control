@@ -30,6 +30,7 @@ Architecture: any
 Section: libs
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+         libmate-common (= ${source:Version}),
          mate-conf (>= 1.1.0),
          libglib2.0-0,
          libmatecomponent,
@@ -59,9 +60,21 @@ Description: MATE library (development files)
  .
  This package contains the development files.
 
+Package: libmate-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: libmate (<= 1.1.2-1)
+Replaces: libmate (<= 1.1.2-1)
+Description: MATE library (common files)
+ This package contains the shared library for the base MATE library
+ functions.
+ .
+ This package contains the architecture independent files.
+
 Package: libmate-doc
 Section: doc
 Architecture: all
+Depends: ${misc:Depends}
 Description: MATE library (documentation files)
  This package contains the shared library for the base MATE library
  functions.

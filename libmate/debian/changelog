@@ -1,3 +1,10 @@
+libmate (1.1.2-2) unstable; urgency=low
+
+  * Fix lintian errors and some warnings.
+  * Add libmate-common package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 18 Jan 2012 15:36:35 +0100
+
 libmate (1.1.2-1) unstable; urgency=low
 
   * New upstream release.
