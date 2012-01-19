@@ -17,5 +17,5 @@ schemas.sort()
 
 for schema in schemas:
     command = ["mateconfpkg", "--install", schema]
-    print " ".join(command)
+    #print " ".join(command)
     subprocess.call(command)

@@ -1,6 +1,7 @@
-mate-conf (1.1.1-0) unstable; urgency=low
+mate-conf (1.1.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
+  * Silent trigger.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 24 Dec 2011 17:51:44 +0100
 

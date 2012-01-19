@@ -23,7 +23,7 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-doc,
                gobject-introspection,
                libgirepository1.0-dev,
-			   gir1.2-glib-2.0,
+               gir1.2-glib-2.0,
                mate-common
 Standards-Version: 3.9.2
 
@@ -37,7 +37,7 @@ Depends: ${shlibs:Depends},
          dbus-x11,
          mate-corba,
          mate-conf-common (>= ${source:Version}),
-		 libmateconf (= ${binary:Version})
+         libmateconf (= ${binary:Version})
 Description: MATE configuration database system
  mate-conf is a configuration database system for storing application
  preferences. It supports default or mandatory settings set by the
@@ -73,7 +73,6 @@ Description: MATE configuration database system (common files)
 
 Package: libmateconf
 Architecture: any
-Section: libs
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Breaks: mate-conf (<= 1.0.9-2)
@@ -93,7 +92,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-conf (= ${binary:Version}),
-		 libmateconf (= ${binary:Version}),
+         libmateconf (= ${binary:Version}),
          libmatecorba-dev
 Description: MATE configuration database system (development files)
  mate-conf is a configuration database system for storing application
