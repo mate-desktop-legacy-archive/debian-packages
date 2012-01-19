@@ -20,14 +20,15 @@ ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
 	DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
 endif
 
-#@echo $DEB_CONFIGURE_EXTRA_FLAGS
+# this fixes 'E: mate-panel: pkg-has-shlibs-control-file-but-no-actual-shared-libs'
+DEB_DH_MAKESHLIBS_ARGS_mate-panel += --no-act
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 binary-install/mate-panel::
 	mkdir -p debian/mate-panel/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-panel/usr/share/mateconf/schemas/mate-panel.schemas" --domain mate-panel debian/mate-panel/etc/mateconf/schemas/*.schemas
-	rm -rf debian/mate-panel/etc/mateconf/schemas/*.schemas
+	mateconf-merge-schema "debian/mate-panel/usr/share/mateconf/schemas/mate-panel.schemas" --domain mate-panel debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -rf debian/tmp/etc/mateconf/schemas/*.schemas
 
 get-orig-source:
 	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
