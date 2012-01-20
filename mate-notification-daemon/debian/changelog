@@ -1,3 +1,9 @@
+mate-notification-daemon (1.1.0-2) unstable; urgency=low
+
+  * Fix lintian error.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 20 Jan 2012 00:55:45 +0100
+
 mate-notification-daemon (1.1.0-1) unstable; urgency=low
 
   * New upstream release.

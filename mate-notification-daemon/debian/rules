@@ -17,6 +17,7 @@ binary-install/mate-notification-daemon::
 	mkdir -p debian/mate-notification-daemon/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-notification-daemon/usr/share/mateconf/schemas/mate-notification-daemon.schemas" --domain mate-notification-daemon debian/mate-notification-daemon/etc/mateconf/schemas/*.schemas
 	rm -rf debian/mate-notification-daemon/etc/mateconf/schemas/
+	rm -rf debian/mate-notification-daemon/usr/lib/mate-notification-daemon/engines/*.la
 
 get-orig-source:
 	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
