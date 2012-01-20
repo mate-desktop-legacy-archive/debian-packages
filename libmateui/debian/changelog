@@ -1,3 +1,9 @@
+libmateui (1.1.2-2) unstable; urgency=low
+
+  * Fix lintian error.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 20 Jan 2012 00:19:21 +0100
+
 libmateui (1.1.2-1) unstable; urgency=low
 
   * New upstream release.

@@ -1,4 +1,4 @@
 usr/lib/*.so.*
-usr/lib/libglade/
+usr/lib/libglade/2.0/*.so
 usr/share/locale/
 usr/share/pixmaps/
