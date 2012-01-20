@@ -1,3 +1,9 @@
+mate-keyring (1.1.0-3) unstable; urgency=low
+
+  * Fix lintian error.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 20 Jan 2012 00:50:56 +0100
+
 mate-keyring (1.1.0-2) unstable; urgency=low
 
   * Fixed version depends on mate-conf.

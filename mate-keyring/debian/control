@@ -21,7 +21,6 @@ Build-Depends: debhelper (>= 8),
 Standards-Version: 3.9.2
 
 Package: mate-keyring
-Section: mate
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},

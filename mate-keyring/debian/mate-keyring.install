@@ -1,5 +1,5 @@
 etc/
-lib/
+lib/security/pam_mate_keyring.so
 usr/bin/
 usr/lib/*.so.*
 usr/lib/mate-keyring/devel/*.so
