@@ -1,3 +1,10 @@
+mate-terminal (1.1.0-2) unstable; urgency=low
+
+  * Fix some lintian errors/warnings.
+  * Add script to link to x-terminal-emulator with update-alternatives.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 22 Jan 2012 19:19:48 +0100
+
 mate-terminal (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
