@@ -1,3 +1,11 @@
+mate-settings-daemon (1.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add mate-setting-daemon-pulse to use pulseaudio.
+    The default package now supports gstreamer/alsa/oss.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 22 Jan 2012 23:25:05 +0100
+
 mate-settings-daemon (1.1.0-4) unstable; urgency=low
 
   * Add libcanberra-gtk in build-depends.
