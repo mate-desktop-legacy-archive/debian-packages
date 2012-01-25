@@ -61,7 +61,6 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-settings-daemon-common (= ${source:Version})
 Breaks: mate-setting-daemon (<< 1.1.1-1)
-Replaces: mate-setting-daemon (<< 1.1.1-1)
 Description: daemon handling the MATE session settings (GStreamer version)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -86,6 +85,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-settings-daemon-common (= ${source:Version}),
          pulseaudio
+Breaks: mate-setting-daemon (<< 1.1.1-1)
 Replaces: mate-settings-daemon
 Provides: mate-settings-daemon
 Conflicts: mate-settings-daemon
@@ -111,7 +111,6 @@ Package: mate-settings-daemon-common
 Architecture: all
 Depends: ${misc:Depends}
 Breaks: mate-setting-daemon (<< 1.1.1-1)
-Replaces: mate-setting-daemon (<< 1.1.1-1)
 Description: daemon handling the MATE session settings (common files)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
