@@ -10,5 +10,8 @@ DEB_DH_ICONS_ARGS := --no-act
 
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
+binary-install/mate-icon-theme::
+	rm -rf debian/mate-icon-theme/usr/share/locale/
+
 get-orig-source:
 	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
