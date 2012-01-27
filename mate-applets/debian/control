@@ -55,7 +55,8 @@ Build-Depends: cdbs,
                libavahi-client-dev,
                libavahi-common-dev,
                libavahi-glib-dev,
-               mate-common
+               mate-common,
+               libsoup2.4-dev
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-applets
@@ -67,7 +68,7 @@ Depends: ${shlibs:Depends},
          mate-icon-theme,
          gstreamer0.10-alsa,
          gstreamer0.10-plugins-good,
-         ${python:Depends},
+         python,
          gvfs
 Recommends: mate-system-monitor,
             mate-media,
