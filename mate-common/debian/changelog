@@ -1,3 +1,11 @@
+mate-common (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: updated.
+  * debian/watch: removed --repack argument.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 28 Jan 2012 01:16:01 +0100
+
 mate-common (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
