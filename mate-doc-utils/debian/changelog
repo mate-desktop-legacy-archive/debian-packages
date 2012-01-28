@@ -1,3 +1,10 @@
+mate-doc-utils (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: updated.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 28 Jan 2012 01:54:06 +0100
+
 mate-doc-utils (1.1.0-1) unstable; urgency=low
 
   * New upstream release.

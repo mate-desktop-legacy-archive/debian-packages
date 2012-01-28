@@ -1,43 +1,80 @@
-This work was packaged for Debian by:
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: mate-doc-utils
+Source: http://pub.mate-desktop.org/releases/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Tue, 18 Oct 2011 18:56:28 +0200
+Files: *
+Copyright: 2011 Perberos <perberos@gmail.com>
+License: GPL-2.0+
 
-It was downloaded from:
+Files: data/*
+Copyright: Josef Vybíral
+License: GPL-2.0+
 
-    <https://github.com/Perberos/Mate-Desktop-Environment>
+Files: doc/*
+Copyright: 2006 GNOME Documentation Project <http://live.gnome.org/DocumentationProject>
+License: GFDL
 
-Upstream Author:
+Files: m4/glib-gettext.m4
+Copyright: 1995-2002 Free Software Foundation, Inc.
+           2001-2003,2004 Red Hat, Inc.
+License: GPL-2.0+
 
-    Perberos <perberos@gmail.com>
+Files: tools/*
+Copyright: 2011 Perberos <perberos@gmail.com>
+           1996-1999 Free Software Foundation, Inc.
+           2001 Eazel, Inc.
+           2004 Danilo Segan <danilo@gnome.org>
+           2004, 2005, 2006 Shaun McCance <shaunm@gnome.org>
+License: GPL-2.0+
 
-Copyright:
+Files: xml2po/*
+Copyright: 2004, 2005, 2006 Danilo Šegan <danilo@gnome.org>
+           2009 Claude Paroz <claude@2xlibre.net>
+License: GPL-2.0+
 
-    Copyright (C) 2011 Perberos
+Files: debian/*
+Copyright: 2011 Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-3.0+
 
-License:
+License: GPL-2.0+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+License: GPL-3.0+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
-
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
-The Debian packaging is:
-
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
-
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
+License: GFDL
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.3
+ or any later version published by the Free Software Foundation;
+ with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation
+ License version 1.3 can be found in "/usr/share/common-licenses/GFDL-1.3".

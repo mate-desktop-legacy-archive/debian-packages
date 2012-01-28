@@ -17,6 +17,7 @@ Build-Depends-Indep: libxml2-dev,
                      librarian-dev,
                      mate-common
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org
 
 Package: mate-doc-utils
 Architecture: all
