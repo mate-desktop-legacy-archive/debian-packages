@@ -3,11 +3,11 @@ Upstream-Name: mate-common
 Source: http://pub.mate-desktop.org/releases/
 
 Files: *
-Copyright: Copyright 2011 Perberos <perberos@gmail.com>
+Copyright: 2011 Perberos <perberos@gmail.com>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: Copyright 2011 Stefano Karapetsas <stefano@karapetsas.com>
+Copyright: 2011 Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-3.0+
 
 License: GPL-3.0+
