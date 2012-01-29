@@ -1,3 +1,11 @@
+mate-desktop (1.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add mate-desktop-common package.
+  * debian/rules: add --disable-nyancat.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 29 Jan 2012 16:27:49 +0100
+
 mate-desktop (1.1.0-1) unstable; urgency=low
 
   * New upstream release.

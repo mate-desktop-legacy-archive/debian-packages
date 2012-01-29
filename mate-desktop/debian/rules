@@ -11,7 +11,10 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += \
 			--with-mate-distributor=Debian \
 			--disable-static \
-			--disable-scrollkeeper
+			--disable-scrollkeeper \
+			--disable-nyancat
+
+# TODO: add a package with nyancat support?
 
 get-orig-source:
 	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
