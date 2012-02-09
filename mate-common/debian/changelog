@@ -1,10 +1,25 @@
+mate-common (1.2.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #658783).
+  * Add manpages for mate-autogen and mate-doc-common scripts.
+  * debian/copyright: updated Format (thanks to Dominique Lasserre).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 08 Feb 2012 21:00:18 +0100
+
+mate-common (1.2.0-2) unstable; urgency=low
+
+  * debian/control: add Homepage field, changed section to "devel" instead of
+    "mate".
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 08 Feb 2012 14:07:48 +0100
+
 mate-common (1.2.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/copyright: updated.
   * debian/watch: removed --repack argument.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 28 Jan 2012 01:16:01 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 06 Feb 2012 01:50:25 +0100
 
 mate-common (1.1.0-1) unstable; urgency=low
 

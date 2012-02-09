@@ -1,5 +1,5 @@
 Source: mate-common
-Section: mate
+Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
@@ -12,6 +12,7 @@ Build-Depends: cdbs,
                gettext,
                intltool
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org
 
 Package: mate-common
 Architecture: all
