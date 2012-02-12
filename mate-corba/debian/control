@@ -11,13 +11,14 @@ Build-Depends: libglib2.0-dev,
                docbook-xsl,
                gtk-doc-tools,
                mate-common
+Homepage: http://www.mate-desktop.org
 
 Package: mate-corba
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libmatecorba (= ${binary:Version})
-Description: a CORBA ORB
+Description: high-performance CORBA ORB
  ORBit2 is a high-performance CORBA (Common Object Request Broker
  Architecture) ORB (Object Request Broker). It allows programs to send
  requests and receive replies from other programs, regardless of the
@@ -32,7 +33,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends}
 Breaks: mate-corba (<= 1.0.0-1)
 Replaces: mate-corba (<= 1.0.0-1)
-Description: a CORBA ORB (library)
+Description: high-performance CORBA ORB (library)
  ORBit2 is a high-performance CORBA (Common Object Request Broker
  Architecture) ORB (Object Request Broker). It allows programs to send
  requests and receive replies from other programs, regardless of the
@@ -52,7 +53,7 @@ Depends: ${shlibs:Depends},
          libidl-dev,
          libglib2.0-dev,
          pkg-config
-Description: a CORBA ORB (development files)
+Description: high-performance CORBA ORB (development files)
  ORBit2 is a high-performance CORBA (Common Object Request Broker
  Architecture) ORB (Object Request Broker). It allows programs to send
  requests and receive replies from other programs, regardless of the
