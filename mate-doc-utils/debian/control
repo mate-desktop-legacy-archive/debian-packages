@@ -1,5 +1,5 @@
 Source: mate-doc-utils
-Section: mate
+Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
@@ -9,7 +9,6 @@ Build-Depends-Indep: libxml2-dev,
                      libxml2-utils,
                      automake,
                      intltool,
-                     python-dev,
                      python-support,
                      python-libxml2,
                      xsltproc,
@@ -30,6 +29,10 @@ Suggests: mate-doc-utils-gnome
 Description: collection of documentation utilities for the MATE project
  mate-doc-utils is a collection of documentation utilities for the MATE
  project.
+ .
+ Notably, it contains utilities for building documentation and
+ all auxiliary files in your source tree, and it contains the DocBook
+ XSLT stylesheets.
 
 Package: mate-doc-utils-gnome
 Architecture: all
