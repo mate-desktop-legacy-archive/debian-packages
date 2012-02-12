@@ -1,3 +1,12 @@
+mate-conf (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: add homepage field.
+  * mate-conf.postinst: add "set -e".
+  * Enable GSettings backend.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 13 Feb 2012 00:01:24 +0100
+
 mate-conf (1.1.1-1) unstable; urgency=low
 
   * New upstream bugfix release.

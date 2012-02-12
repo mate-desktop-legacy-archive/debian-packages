@@ -12,7 +12,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += --enable-gtk-doc \
 	--libexecdir=/usr/lib/MateConf \
 	--localstatedir=/var \
 	--enable-defaults-service \
-	--enable-gsettings-backend=no \
+	--enable-gsettings-backend=yes \
 	--enable-introspection
 
 binary-install/mate-conf::
