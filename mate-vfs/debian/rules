@@ -10,8 +10,11 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var \
 							--disable-static \
-							--libexecdir=/usr/lib/${pkgname} \
-							--enable-openssl
+							--libexecdir=/usr/lib/mate-vfs \
+							--disable-hal \
+							--enable-gtk-doc \
+							--enable-openssl \
+							--enable-ipv6
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
@@ -21,4 +24,4 @@ binary-install/mate-vfs::
 	#rm -r debian/tmp/etc/mateconf/schemas/
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=.

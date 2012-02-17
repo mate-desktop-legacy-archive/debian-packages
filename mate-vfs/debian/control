@@ -31,14 +31,20 @@ Build-Depends: debhelper (>= 8),
                libimobiledevice-dev,
                libbz2-dev,
                mate-mime-data,
-               mate-common
+               mate-common,
+               libfam-dev,
+               libacl1-dev,
+               libattr1-dev,
+               libkrb5-dev
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-vfs
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libmatevfs (= ${binary:Version}),
+         mate-vfs-common (= ${source:Version}),
          x11-utils,
          fuse-utils,
          mate-mime-data,
@@ -58,6 +64,20 @@ Description: MATE VFS userspace virtual filesystem
  .
  This package contains the mate-vfs server that provides mate-vfs mounts to all 
  gio applications, and the minimal set of backends.
+
+Package: mate-vfs-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: mate-vfs (<< 1.2.0-1)
+Replaces: mate-vfs (<< 1.2.0-1)
+Description: MATE VFS userspace virtual filesystem (common files)
+ mate-vfs is a userspace virtual filesystem where mount runs as a separate 
+ processes which you talk to via D-Bus. It also contains a gio module 
+ that seamlessly adds mate-vfs support to all applications using the gio 
+ API. It also supports exposing the mate-vfs mounts to non-gio applications 
+ using fuse. 
+ .
+ This package contains the architecture independent files.
 
 Package: libmatevfs
 Architecture: any
