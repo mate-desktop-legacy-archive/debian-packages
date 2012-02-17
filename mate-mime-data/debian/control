@@ -1,20 +1,24 @@
 Source: mate-mime-data
-Section: mate
+Section: utils
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: cdbs,
-               debhelper
+               debhelper (>= 8)
 Build-Depends-Indep: gettext,
                      libxml-parser-perl,
                      shared-mime-info,
                      intltool,
-					 mate-common,
-					 libglib2.0-dev
+                     mate-common,
+                     libglib2.0-dev
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org
 
 Package: mate-mime-data
 Architecture: all
 Depends: ${misc:Depends}
-Description: base MIME and Application database for MATE.
+Description: base MIME and Application database for MATE
  This module contains the base MIME and Application database for MATE.
  It is meant to be accessed through the MIME functions in Mate-VFS.
+ .
+ A canonical list of mime types is available at
+ http://www.iana.org/assignments/media-types/
