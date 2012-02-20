@@ -1,3 +1,9 @@
+mate-common (1.2.1-2) unstable; urgency=low
+
+  * Rebuild.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 19 Feb 2012 23:20:22 +0100
+
 mate-common (1.2.1-1) unstable; urgency=low
 
   * New upstream release (Closes: #658783).
