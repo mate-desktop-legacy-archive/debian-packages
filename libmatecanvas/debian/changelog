@@ -1,3 +1,9 @@
+libmatecanvas (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 20 Feb 2012 00:42:02 +0100
+
 libmatecanvas (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
