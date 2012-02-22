@@ -22,4 +22,4 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
 #	rm -rf debian/tmp/etc/mateconf/
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -2,7 +2,7 @@ Source: libmatekeyring
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                quilt,
                intltool,
@@ -14,6 +14,7 @@ Build-Depends: debhelper,
                libglib2.0-doc,
                mate-common
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org/
 
 Package: libmatekeyring
 Section: libs

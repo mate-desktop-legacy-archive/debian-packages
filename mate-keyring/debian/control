@@ -1,5 +1,5 @@
 Source: mate-keyring
-Section: mate
+Section: utils
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
@@ -19,6 +19,7 @@ Build-Depends: debhelper (>= 8),
                libmatecorba-dev,
                mate-common
 Standards-Version: 3.9.2
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-keyring
 Architecture: any

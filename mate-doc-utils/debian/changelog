@@ -1,3 +1,9 @@
+mate-doc-utils (1.2.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 22 Feb 2012 00:22:48 +0100
+
 mate-doc-utils (1.2.0-2) unstable; urgency=low
 
   * Fix some lintian tags.

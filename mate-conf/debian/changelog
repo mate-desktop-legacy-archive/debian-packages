@@ -1,3 +1,9 @@
+mate-conf (1.2.1-0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 22 Feb 2012 07:11:41 +0100
+
 mate-conf (1.2.0-1) unstable; urgency=low
 
   * New upstream release.
