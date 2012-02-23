@@ -1,3 +1,10 @@
+mate-icon-theme (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.3 (no changes).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 23 Feb 2012 02:09:36 +0100
+
 mate-icon-theme (1.1.1-1) unstable; urgency=low
 
   * New upstream release.

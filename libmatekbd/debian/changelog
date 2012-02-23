@@ -1,3 +1,9 @@
+libmatekbd (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 23 Feb 2012 00:01:51 +0100
+
 libmatekbd (1.1.0-2) unstable; urgency=low
 
   * Fixed mate-conf depends.

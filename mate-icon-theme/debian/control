@@ -1,8 +1,8 @@
 Source: mate-icon-theme
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper (>= 5),
+Build-Depends: debhelper (>= 8),
                cdbs
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
@@ -11,7 +11,8 @@ Build-Depends-Indep: gettext,
                      icon-naming-utils (>= 0.8.7),
                      librsvg2-bin,
                      mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-icon-theme
 Architecture: all

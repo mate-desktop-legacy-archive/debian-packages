@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 8),
                libxklavier-dev,
                intltool,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 
 Package: libmatekbd
 Section: mate
