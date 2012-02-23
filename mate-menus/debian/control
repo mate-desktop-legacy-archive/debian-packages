@@ -1,5 +1,5 @@
 Source: mate-menus
-Section: mate
+Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 8),
                gobject-introspection,
                libgirepository1.0-dev,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 X-Python-Version: >= 2.5
 

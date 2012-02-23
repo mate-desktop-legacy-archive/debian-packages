@@ -1,5 +1,5 @@
 Source: mate-backgrounds
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
@@ -7,7 +7,8 @@ Build-Depends: debhelper (>= 8),
                mate-common,
                libglib2.0-dev
 Build-Depends-Indep: intltool
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-backgrounds
 Architecture: all
