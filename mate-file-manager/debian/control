@@ -1,5 +1,5 @@
 Source: mate-file-manager
-Section: mate
+Section: utils
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
@@ -36,21 +36,8 @@ Build-Depends: debhelper (>= 8),
                gir1.2-gtk-2.0, 
                gir1.2-pango-1.0,
                libgirepository1.0-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
-
-Package: mate-file-manager
-Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         caja (>= ${source:Version})
-Description: file manager for the MATE desktop
- Caja is the official file manager for the MATE desktop. It allows
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- This is a metapackage to install Caja, the MATE file manager.
 
 Package: caja
 Architecture: any

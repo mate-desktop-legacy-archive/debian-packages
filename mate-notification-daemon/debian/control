@@ -17,7 +17,7 @@ Build-Depends: cdbs,
                libmatecorba-dev,
                intltool,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-notification-daemon

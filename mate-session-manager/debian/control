@@ -33,7 +33,7 @@ Depends: ${shlibs:Depends},
          mate-settings-daemon,
          mate-panel,
          mate-window-manager,
-         mate-file-manager,
+         caja,
          mate-polkit,
          dbus-x11,
          upower

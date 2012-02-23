@@ -1,3 +1,10 @@
+mate-file-manager (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed mate-file-manager binary (empty) package. Use caja.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 23 Feb 2012 01:32:23 +0100
+
 mate-file-manager (1.1.2-1) unstable; urgency=low
 
   * New upstream bugfix release.

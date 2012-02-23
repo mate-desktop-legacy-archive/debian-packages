@@ -20,4 +20,4 @@ binary-install/mate-notification-daemon::
 	rm -rf debian/mate-notification-daemon/usr/lib/mate-notification-daemon/engines/*.la
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
