@@ -2,7 +2,6 @@ Source: mate-panel
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
 Build-Depends: cdbs,
                debhelper (>= 8),
                autoconf,
@@ -48,6 +47,7 @@ Build-Depends: cdbs,
                gir1.2-pango-1.0,
                gir1.2-gdkpixbuf-2.0,
                mate-common
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-panel
