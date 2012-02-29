@@ -2,7 +2,7 @@ Source: mate-session-manager
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Build-Depends: cdbs,
                debhelper (>= 8),
                intltool,
@@ -25,6 +25,7 @@ Build-Depends: cdbs,
                xsltproc,
                gobject-introspection,
                mate-common
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-session-manager
 Architecture: any
