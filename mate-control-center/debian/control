@@ -2,7 +2,6 @@ Source: mate-control-center
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
 Build-Depends: cdbs,
                dh-autoreconf,
                debhelper,
@@ -43,8 +42,9 @@ Build-Depends: cdbs,
                libmate-dev,
                libstartup-notification0-dev,
                libpango1.0-dev,
-               libslab-dev,
                librsvg2-dev
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-control-center
 Architecture: any

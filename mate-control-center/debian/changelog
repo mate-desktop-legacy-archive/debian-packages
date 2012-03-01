@@ -1,3 +1,10 @@
+mate-control-center (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add --enable-ubuntu if build on Ubuntu.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 29 Feb 2012 00:01:10 +0100
+
 mate-control-center (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
