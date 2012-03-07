@@ -2,7 +2,7 @@ Source: mate-themes
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Build-Depends: debhelper,
                cdbs,
                mate-common
@@ -11,6 +11,7 @@ Build-Depends-Indep: libxml-parser-perl,
                      icon-naming-utils,
                      pkg-config,
                      intltool
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-themes
 Architecture: all
@@ -18,22 +19,10 @@ Depends: gtk2-engines,
          gtk2-engines-murrine,
          gtk2-engines-pixbuf,
          librsvg2-common,
-         mate-icon-theme,
-         mate-themes-gnome | gnome-themes | gnome-themes-standard | gnome-themes-selected | gnome-accessibility-themes,
+         mate-icon-theme
          ${misc:Depends}
 Recommends: dmz-cursor-theme
+Conflicts: mate-themes-gnome
 Description: official themes for the MATE desktop
  This package contains the official desktop themes of the MATE desktop
  environment.
-
-Package: mate-themes-gnome
-Architecture: all
-Depends: mate-themes,
-         ${misc:Depends}
-Conflicts: gnome-themes, gnome-themes-standard, gnome-themes-selected, gnome-accessibility-themes
-Description: official themes for the MATE desktop (GNOME files)
- This package contains the official desktop themes of the MATE desktop
- environment.
- .
- This package contains the files in conflict with GNOME themes.
-

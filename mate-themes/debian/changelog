@@ -1,3 +1,10 @@
+mate-themes (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop mate-themes-gnome package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 01 Mar 2012 19:11:43 +0100
+
 mate-themes (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
