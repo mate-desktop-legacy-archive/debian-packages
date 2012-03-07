@@ -23,4 +23,4 @@ binary-install/mate-system-monitor::
 	rm debian/mate-system-monitor/etc/mateconf/schemas/*.schemas
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

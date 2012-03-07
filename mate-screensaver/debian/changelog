@@ -1,3 +1,9 @@
+mate-screensaver (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Mar 2012 22:27:08 +0100
+
 mate-screensaver (1.1.0-2) unstable; urgency=low
 
   * Fixed PAM.

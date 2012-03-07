@@ -23,7 +23,8 @@ Build-Depends: cdbs,
                mate-doc-utils-gnome | gnome-doc-utils,
                scrollkeeper,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-system-monitor
 Architecture: any
