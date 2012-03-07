@@ -2,7 +2,8 @@ Source: mate-image-viewer
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 Build-Depends: cdbs,
                debhelper (>= 8),
                gtk-doc-tools,
@@ -85,16 +86,3 @@ Description: Eye of MATE graphics viewer program (development files)
  simplicity and standards compliance.
  .
  This package contains the development files.
-
-Package: mate-image-viewer
-Section: mate
-Architecture: all
-Depends: ${misc:Depends},
-         eom (>= ${source:Version})
-Description: MATE image viewer (metapackage)
- This metapackage install the default MATE image viewer application.
- .
- eom or the Eye of MATE is a simple graphics viewer for the MATE
- desktop which uses the gdk-pixbuf library.  It can deal with large
- images, and zoom and scroll with constant memory usage.  Its goals are
- simplicity and standards compliance.
