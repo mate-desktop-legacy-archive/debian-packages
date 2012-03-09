@@ -1,2 +1,2 @@
 version=3
-http://pub.mate-desktop.org/releases/(\d\.\d)/python-corba-(.*)\.tar\.bz2
+http://pub.mate-desktop.org/releases/(\d\.\d)/python-corba-(.*)\.tar\.xz
