@@ -28,8 +28,9 @@ Build-Depends: cdbs,
 Build-Depends-Indep: libglib2.0-doc,
                      libgtk2.0-doc,
                      libgtksourceview2.0-doc
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 XS-Python-Version: >= 2.5
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-text-editor
 Architecture: any
@@ -57,4 +58,3 @@ Description: official text editor of the MATE desktop environment
  pluma is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
-
