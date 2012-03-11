@@ -1,3 +1,9 @@
+mate-netspeed (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Mar 2012 17:10:55 +0100
+
 mate-netspeed (1.1.0-0) unstable; urgency=low
 
   * New upstream release.

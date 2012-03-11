@@ -22,7 +22,7 @@ Build-Depends: debhelper (>= 8),
                libtool,
                libxml-parser-perl,
                rarian-compat
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-sensors-applet
