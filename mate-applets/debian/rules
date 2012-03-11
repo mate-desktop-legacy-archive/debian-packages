@@ -28,4 +28,4 @@ binary-install/mate-applets::
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyo
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
