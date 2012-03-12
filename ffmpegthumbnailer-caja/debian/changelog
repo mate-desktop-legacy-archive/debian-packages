@@ -1,3 +1,9 @@
+ffmpegthumbnailer-caja (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 12 Mar 2012 11:52:43 +0100
+
 ffmpegthumbnailer-caja (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
