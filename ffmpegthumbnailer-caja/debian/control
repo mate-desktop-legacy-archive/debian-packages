@@ -3,15 +3,15 @@ Section: mate
 Priority: extra
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org
 
 Package: ffmpegthumbnailer-caja
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-conf (>= 1.1.0),
-         caja (>= 1.1.0),
+         mate-conf (>= 1.1.0-1),
+         caja (>= 1.1.0-1),
          ffmpegthumbnailer
 Description: MateConf schema to use ffmpegthumbnailer with caja
  This package contains the MateConf schema to use ffmpegthumbnailer to make
