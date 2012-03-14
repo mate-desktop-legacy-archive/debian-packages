@@ -14,7 +14,8 @@ Build-Depends-Indep: intltool (>= 0.40.0),
                      python-gtk2 (>= 2.13.0),
                      python-gobject (>= 2.15.1)
 XS-Python-Version: >= 2.4
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mozo
 Architecture: all

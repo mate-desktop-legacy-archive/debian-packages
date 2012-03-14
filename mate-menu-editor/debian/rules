@@ -1,10 +1,6 @@
 #!/usr/bin/make -f
 
-#DEB_BUILDDIR = debian/build
-#DEB_PYTHON_SYSTEM = pysupport
-
 include /usr/share/cdbs/1/rules/debhelper.mk
-#include /usr/share/cdbs/1/class/python-autotools.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
@@ -17,4 +13,4 @@ install/mozo::
 	dh_pysupport
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
