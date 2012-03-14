@@ -39,7 +39,8 @@ Build-Depends: debhelper (>= 8),
                libavahi-common-dev,
                libavahi-glib-dev,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-power-manager
 Architecture: any
@@ -49,7 +50,7 @@ Depends: ${shlibs:Depends},
          dbus-x11,
          consolekit,
          upower,
-         mate-conf (>= 1.1.0),
+         mate-conf (>= 1.1.0-1),
 Recommends: udisks
 Suggests: policykit-1
 Description: power management tool for the MATE desktop
