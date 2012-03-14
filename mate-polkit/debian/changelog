@@ -1,3 +1,16 @@
+mate-polkit (1.2.0-2) unstable; urgency=low
+
+  * Fix conflict between libmatepolkit and mate-polkit-1.0.0-1
+    (https://github.com/mate-desktop/debian-packages/issues/17).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Mar 2012 14:05:36 +0100
+
+mate-polkit (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 25 Feb 2012 20:10:22 +0100
+
 mate-polkit (1.1.0-1) unstable; urgency=low
 
   * New upstream release.

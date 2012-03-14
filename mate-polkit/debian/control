@@ -15,7 +15,8 @@ Build-Depends: cdbs,
          libgirepository1.0-dev,
          gobject-introspection,
          mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-polkit
 Architecture: any
@@ -33,6 +34,8 @@ Architecture: any
 Depends: ${shlibs:Depends},
         ${misc:Depends},
         policykit-1
+Breaks: mate-polkit (<< 1.1.0-1)
+Replaces: mate-polkit (<< 1.1.0-1)
 Description: MATE authentication agent for PolicyKit-1 (library)
  mate-polkit provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
