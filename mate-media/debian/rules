@@ -24,4 +24,4 @@ binary-install/mate-media::
 	rm -rf debian/mate-media/etc/mateconf/schemas/
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
