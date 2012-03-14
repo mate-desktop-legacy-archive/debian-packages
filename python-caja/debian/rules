@@ -16,4 +16,4 @@ binary-install/python-caja::
 	rm -rf debian/python-caja/usr/lib/caja/extensions-2.0/libcaja-python.la
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

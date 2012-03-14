@@ -12,7 +12,8 @@ Build-Depends: debhelper (>= 8),
                python-mate,
                python-gobject-dev (>= 2.16.0),
                libcaja-extension-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: python-caja
 Architecture: any
