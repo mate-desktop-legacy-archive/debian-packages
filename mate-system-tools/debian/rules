@@ -10,12 +10,5 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper
 
-#DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-#binary-install/mate-system-tools::
-#	mkdir -p debian/mate-system-tools/usr/share/mateconf/schemas
-#	mateconf-merge-schema "debian/mate-system-tools/usr/share/mateconf/schemas/mate-system-tools.schemas" --domain mate-system-tools debian/mate-system-tools/etc/mateconf/schemas/*.schemas
-#	rm -r debian/mate-system-tools/etc/mateconf/schemas/
-
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
