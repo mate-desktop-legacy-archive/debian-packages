@@ -18,7 +18,7 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 binary-install/mate-bluetooth::
 	mkdir -p debian/mate-bluetooth/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-bluetooth/usr/share/mateconf/schemas/mate-bluetooth.schemas" --domain mate-bluetooth debian/tmp/etc/mateconf/schemas/*.schemas
-	#rm -r debian/tmp/etc/mateconf/schemas/
+	rm -rf debian/tmp/etc/mateconf/schemas/
 
 get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 8),
                gtk-doc-tools,
                libindicator-dev (>= 0.3.6),
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org
 
 Package: mate-indicator-applet

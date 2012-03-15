@@ -1,5 +1,5 @@
 Source: mate-bluetooth
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 8),
@@ -22,7 +22,7 @@ Build-Depends: debhelper (>= 8),
                mate-doc-utils-gnome | gnome-doc-utils,
                gobject-introspection,
                libgirepository1.0-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-bluetooth
