@@ -11,7 +11,7 @@ Build-Depends: debhelper (>= 8),
                libmateconf-dev,
                libgtk2.0-dev,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: caja-open-terminal
