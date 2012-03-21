@@ -9,7 +9,7 @@ DEB_DH_INSTALL_ARGS += --list-missing
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += \
-			--libexecdir=/usr/lib/${pkgname} \
+			--libexecdir=/usr/lib/mate-power-manager \
 			--disable-scrollkeeper \
 			--enable-applets
 
@@ -17,8 +17,8 @@ DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFI
 
 binary-install/mate-power-manager::
 	mkdir -p debian/mate-power-manager/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-power-manager/usr/share/mateconf/schemas/mate-power-manager.schemas" --domain mate-power-manager debian/mate-power-manager/etc/mateconf/schemas/*.schemas
-	rm -rf debian/mate-power-manager/etc/mateconf/schemas/
+	mateconf-merge-schema "debian/mate-power-manager/usr/share/mateconf/schemas/mate-power-manager.schemas" --domain mate-power-manager debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -rf debian/tmp/etc/mateconf/schemas/
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

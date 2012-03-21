@@ -1,0 +1,6 @@
+etc/xdg/
+usr/bin/
+usr/lib/
+usr/sbin/mate-power-backlight-helper
+usr/share/man/
+usr/share/polkit-1/
