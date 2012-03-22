@@ -20,7 +20,7 @@ Depends: ${shlibs:Depends},
          caja,
          mate-icon-theme,
          eom,
-         mate-keyring,
+         gnome-keyring | mate-keyring,
          mate-media,
          mate-notification-daemon | notification-daemon,
          mate-power-manager,
@@ -47,7 +47,8 @@ Depends: ${shlibs:Depends},
          mate-netspeed,
          mate-sensors-applet,
          mate-system-tools,
-         mate-utils
+         mate-utils,
+         mozo
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.

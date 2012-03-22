@@ -1,3 +1,10 @@
+mate-desktop-environment (1.2.1) unstable; urgency=low
+
+  * Install gnome-keyring by default instead of mate-keyring.
+  * Add mozo to mate-desktop-environment package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 22 Mar 2012 15:05:54 +0100
+
 mate-desktop-environment (1.2.0) unstable; urgency=low
 
   * New release.
