@@ -1,53 +1,47 @@
-Short guide to build packages in AutoMate:
+Short guide to build packages in AutoMate
+=========================================
 
+Build source package
+--------------------
 
+Enter in the package folder.
 
-  * Add debian/watch with following content (#PACKAGE# is the lowercase
-  package name):
+    $ cd mate-terminal/
 
-version=3
-http://pub.mate-desktop.org/releases/(\d\.\d)/#PACKAGE#-(.*)\.tar\.bz2
+If needed, add an entry to changelog.
+Add ~devX to the version if it's a development build.
 
+    $ dch -i
 
+Get the orig tarball:
 
-  * Add at the end of debian/rules:
-  
-get-orig-source:
-	uscan --noconf --force-download --rename --repack --download-current-version --destdir=.
+    $ debian/rules get-orig-source
 
+Or, if it's a devel build, just archive your source and rename it as
+follow:
 
+    mate-terminal_1.2.1.orig.tar.xz
 
-  * Switch to augogen.sh if necessary (add also mate-common in debian/control!):
+Build the source package:
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
+    $ debuild -S -sa
 
+Send package to AutoMate server
+-------------------------------
 
+Add those lines to your ~/.dput.cf
 
-  * Check if possible to solve some lintian warnings/errors:
+[automate]
+fqdn = automate.mate-desktop.org
+method = ftp
+login = anonymous
+incoming = /upload/
 
-http://mate.karapetsas.com/lintian.php?package=#PACKAGE#
+Send package with dput:
 
+    $ dput automate mate-terminal_1.2.1-1_source.changes
 
+You should receive an email if the package is accepted and verified.
 
-  * Add -dbg and -doc packages, if they are useful:
-
-Package: #PKGNAME#-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: ${misc:Depends},
-         #PKGNAME# (= ${binary:Version}),
-         #LIBPKGNAME# (= ${binary:Version})
-Description: #DESCRIPTION# (debugging symbols)
- This package contains debugging symbols for #PKGNAME# and the
- #PKGNAME# library. It is provided to help debugging problems.
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
-Package: #PKGNAME#-doc
-Section: doc
-Architecture: all
-Description: #DESCRIPTION# (documentation files)
- #LONGDESCRIPTION#.
- .
- This package contains the documentation files.
+To follow the build process and check logs, go to
+http://automate.mate-desktop.org/
