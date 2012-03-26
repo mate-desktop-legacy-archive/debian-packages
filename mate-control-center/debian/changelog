@@ -1,3 +1,15 @@
+mate-control-center (1.2.1-2) unstable; urgency=low
+
+  * Fixed version info and removed type-handling from depends 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 19:06:59 -0400
+
+mate-control-center (1.2.1-1) unstable; urgency=low
+
+  * Upstream bug fix.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 18:14:26 -0400
+
 mate-control-center (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

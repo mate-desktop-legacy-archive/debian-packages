@@ -1,3 +1,15 @@
+mate-system-tools (1.2.1-2) unstable; urgency=low
+
+  * Fixed version info 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 18:56:42 -0400
+
+mate-system-tools (1.2.1-1) unstable; urgency=low
+
+  * Upstream bug fix 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 17:28:55 -0400
+
 mate-system-tools (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

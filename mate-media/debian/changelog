@@ -1,3 +1,15 @@
+mate-media (1.2.1-2) unstable; urgency=low
+
+  * Fixed version info 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 19:01:48 -0400
+
+mate-media (1.2.1-1) unstable; urgency=low
+
+  * Non-maintainer upload.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 18:05:55 -0400
+
 mate-media (1.2.0-1) unstable; urgency=low
 
   * New upstream release.
