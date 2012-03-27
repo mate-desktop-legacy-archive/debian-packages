@@ -18,7 +18,7 @@ Build-Depends: cdbs,
                autotools-dev,
                libglib2.0-doc,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-deskop.org/
 
 Package: libmatecomponent

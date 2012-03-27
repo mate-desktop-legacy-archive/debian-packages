@@ -1,3 +1,10 @@
+mate-doc-utils (1.2.1-2) unstable; urgency=low
+
+  * Rebuild for precise.
+  * Add Steve Zesch to maintainers.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 27 Mar 2012 17:09:21 +0200
+
 mate-doc-utils (1.2.1-1) unstable; urgency=low
 
   * New upstream bugfix release.

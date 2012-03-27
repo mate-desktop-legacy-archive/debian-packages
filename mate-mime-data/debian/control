@@ -10,7 +10,7 @@ Build-Depends-Indep: gettext,
                      intltool,
                      mate-common,
                      libglib2.0-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org
 
 Package: mate-mime-data

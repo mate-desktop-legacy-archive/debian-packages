@@ -1,7 +1,7 @@
 Source: mate-doc-utils
 Section: devel
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>, Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: cdbs,
                debhelper (>= 8)
 Build-Depends-Indep: libxml2-dev,
@@ -15,7 +15,7 @@ Build-Depends-Indep: libxml2-dev,
                      pkg-config,
                      librarian-dev,
                      mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org
 
 Package: mate-doc-utils

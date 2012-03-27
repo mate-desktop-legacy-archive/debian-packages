@@ -1,3 +1,9 @@
+mate-corba (1.2.2-3) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 27 Mar 2012 20:15:47 +0200
+
 mate-corba (1.2.2-2) unstable; urgency=low
 
   * Upstream bugfix 

@@ -1,3 +1,9 @@
+mate-conf (1.2.1-1) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 27 Mar 2012 20:37:09 +0200
+
 mate-conf (1.2.1-0) unstable; urgency=low
 
   * New upstream release.
