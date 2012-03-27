@@ -1,7 +1,7 @@
 Source: mate-vfs
 Section: libs
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>, Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                autotools-dev,
                cdbs,
@@ -36,7 +36,7 @@ Build-Depends: debhelper (>= 8),
                libacl1-dev,
                libattr1-dev,
                libkrb5-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-vfs
