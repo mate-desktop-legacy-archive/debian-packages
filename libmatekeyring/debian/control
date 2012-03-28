@@ -2,6 +2,7 @@ Source: libmatekeyring
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
                quilt,
@@ -13,7 +14,7 @@ Build-Depends: debhelper (>= 8),
                libgcrypt11-dev,
                libglib2.0-doc,
                mate-common
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: libmatekeyring

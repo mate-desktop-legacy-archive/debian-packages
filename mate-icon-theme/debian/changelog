@@ -1,3 +1,9 @@
+mate-icon-theme (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 28 Mar 2012 16:47:40 +0200
+
 mate-icon-theme (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

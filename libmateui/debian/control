@@ -2,7 +2,8 @@ Source: libmateui
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 8),
                libmatecanvas-dev,
                intltool,

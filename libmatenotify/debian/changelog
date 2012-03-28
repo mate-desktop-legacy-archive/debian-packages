@@ -1,3 +1,9 @@
+libmatenotify (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 28 Mar 2012 14:50:50 +0200
+
 libmatenotify (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

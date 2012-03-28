@@ -2,6 +2,7 @@ Source: libmateweather
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                autotools-dev,
                cdbs (>= 0.4.90~),
@@ -22,6 +23,7 @@ Build-Depends: debhelper (>= 8),
                python-gobject-dev,
                python-gtk2-dev
 Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: libmateweather
 Architecture: any
