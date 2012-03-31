@@ -1,3 +1,9 @@
+mate-themes (1.2.1-1) unstable; urgency=low
+
+  * Renamed themes. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 19:59:32 -0400
+
 mate-themes (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

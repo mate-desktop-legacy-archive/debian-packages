@@ -2,6 +2,7 @@ Source: mate-media
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 Build-Depends: cdbs,

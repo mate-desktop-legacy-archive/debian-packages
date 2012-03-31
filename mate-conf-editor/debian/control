@@ -2,6 +2,7 @@ Source: mate-conf-editor
 Section: utils
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
                libmateconf-dev,

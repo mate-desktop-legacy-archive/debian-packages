@@ -1,3 +1,9 @@
+mate-menu-editor (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 21:01:23 -0400
+
 mate-menu-editor (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

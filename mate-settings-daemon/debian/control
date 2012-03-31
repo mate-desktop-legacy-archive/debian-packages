@@ -2,6 +2,7 @@ Source: mate-settings-daemon
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: cdbs,
                debhelper (>= 8),
                autotools-dev,

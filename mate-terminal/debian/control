@@ -2,6 +2,7 @@ Source: mate-terminal
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Standards-Version: 3.9.3
 Build-Depends: cdbs,
                debhelper (>= 8),

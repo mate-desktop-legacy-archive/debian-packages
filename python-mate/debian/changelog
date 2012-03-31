@@ -1,3 +1,9 @@
+python-mate (1.2.0-3) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 21:17:09 -0400
+
 python-mate (1.2.0-2) unstable; urgency=low
 
   * New upstream release.

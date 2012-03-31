@@ -1,3 +1,9 @@
+mate-window-manager (1.2.0-1) unstable; urgency=low
+
+  * Rebuild for precise
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 19:40:55 -0400
+
 mate-window-manager (1.1.0-2) unstable; urgency=low
 
   * libmarco-dev depends on libmarco.

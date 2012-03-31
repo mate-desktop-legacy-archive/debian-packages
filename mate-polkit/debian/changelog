@@ -1,3 +1,9 @@
+mate-polkit (1.2.0-3) unstable; urgency=low
+
+  * Rebuild for precise 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 19:47:23 -0400
+
 mate-polkit (1.2.0-2) unstable; urgency=low
 
   * Fix conflict between libmatepolkit and mate-polkit-1.0.0-1

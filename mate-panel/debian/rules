@@ -17,7 +17,9 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 						--enable-matecomponent
 
 ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)	
-	DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
+    ifeq ($(shell lsb_release -r | sed 's/Release:.*\([0-9][0-9]\.[0-9][0-9]\)/\1/'),11.10)
+        DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
+    endif
 endif
 
 # this fixes 'E: mate-panel: pkg-has-shlibs-control-file-but-no-actual-shared-libs'

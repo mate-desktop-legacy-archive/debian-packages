@@ -2,6 +2,7 @@ Source: python-mate-desktop
 Section: python
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
                dh-autoreconf,
