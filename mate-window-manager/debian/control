@@ -30,7 +30,8 @@ Build-Depends: cdbs,
                libmateconf-dev,
                libmatecorba-dev,
                mate-dialogs
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: marco
 Architecture: any

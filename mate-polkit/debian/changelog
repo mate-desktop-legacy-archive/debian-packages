@@ -1,3 +1,9 @@
+mate-polkit (1.2.0-4) unstable; urgency=low
+
+  * Rebuild.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 01 Apr 2012 17:25:12 +0200
+
 mate-polkit (1.2.0-3) unstable; urgency=low
 
   * Rebuild for precise 

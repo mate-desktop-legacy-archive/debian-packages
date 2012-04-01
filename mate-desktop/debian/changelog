@@ -1,3 +1,9 @@
+mate-desktop (1.2.0-1) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 28 Mar 2012 23:58:51 +0200
+
 mate-desktop (1.2.0-0) unstable; urgency=low
 
   * New upstream release.
