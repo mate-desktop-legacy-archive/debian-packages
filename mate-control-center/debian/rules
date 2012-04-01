@@ -14,8 +14,11 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 						--disable-static \
 						--disable-update-mimedb
 
+# enable ubuntu hack only in oneiric (not needed in precise)
 ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
-	DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
+    ifeq ($(shell lsb_release -cs),oneiric)
+        DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
+    endif
 endif
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
