@@ -16,8 +16,9 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 						--enable-introspection \
 						--enable-matecomponent
 
-ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)	
-    ifeq ($(shell lsb_release -r | sed 's/Release:.*\([0-9][0-9]\.[0-9][0-9]\)/\1/'),11.10)
+# enable ubuntu hack only in oneiric (not needed in precise)
+ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
+    ifeq ($(shell lsb_release -cs),oneiric)
         DEB_CONFIGURE_EXTRA_FLAGS += --enable-ubuntu
     endif
 endif
