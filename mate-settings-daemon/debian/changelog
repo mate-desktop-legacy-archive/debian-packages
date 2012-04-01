@@ -1,3 +1,9 @@
+mate-settings-daemon (1.2.0-3) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 01 Apr 2012 12:40:44 -0400
+
 mate-settings-daemon (1.2.0-2) unstable; urgency=low
 
   * Rebuild for precise 
