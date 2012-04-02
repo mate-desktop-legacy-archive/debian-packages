@@ -1,3 +1,9 @@
+mate-desktop-environment (1.2.2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 01 Apr 2012 22:38:12 -0400
+
 mate-desktop-environment (1.2.1) unstable; urgency=low
 
   * Install gnome-keyring by default instead of mate-keyring.

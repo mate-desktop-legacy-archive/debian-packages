@@ -1,3 +1,9 @@
+ffmpegthumbnailer-caja (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 01 Apr 2012 21:31:26 -0400
+
 ffmpegthumbnailer-caja (1.2.0-1) unstable; urgency=low
 
   * New upstream release.
