@@ -1,3 +1,9 @@
+mate-session-manager (1.2.0-3) unstable; urgency=low
+
+  * Added postinst and prerm script to have x-session-manager alternative.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 02 Apr 2012 13:58:22 +0200
+
 mate-session-manager (1.2.0-2) unstable; urgency=low
 
   * Rebuild for precise. 
