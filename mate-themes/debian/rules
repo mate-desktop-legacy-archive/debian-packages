@@ -9,25 +9,5 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS := PKG_CONFIG_PATH=./debian
 
-binary-install/mate-themes::
-	# solve conflicts with GNOME themes
-	rm -rf debian/mate-themes/usr/share/icons/Crux
-	rm -rf debian/mate-themes/usr/share/icons/High*
-	rm -rf debian/mate-themes/usr/share/icons/MateCrux
-	rm -rf debian/mate-themes/usr/share/icons/MateHigh*
-	rm -rf debian/mate-themes/usr/share/icons/MateLargePrint
-	rm -rf debian/mate-themes/usr/share/icons/MateMist
-	rm -rf debian/mate-themes/usr/share/icons/Mist
-	rm -rf debian/mate-themes/usr/share/themes/Clearlooks*
-	rm -rf debian/mate-themes/usr/share/themes/Crux
-	rm -rf debian/mate-themes/usr/share/themes/Glider
-	rm -rf debian/mate-themes/usr/share/themes/Glossy
-	rm -rf debian/mate-themes/usr/share/themes/HighContrast*
-	rm -rf debian/mate-themes/usr/share/themes/Inverted
-	rm -rf debian/mate-themes/usr/share/themes/LargePrint
-	rm -rf debian/mate-themes/usr/share/themes/LowContrast*
-	rm -rf debian/mate-themes/usr/share/themes/Mist
-	rm -rf debian/mate-themes/usr/share/themes/Simple
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -20,7 +20,7 @@ Depends: gtk2-engines,
          gtk2-engines-murrine,
          gtk2-engines-pixbuf,
          librsvg2-common,
-         mate-icon-theme
+         mate-icon-theme,
          ${misc:Depends}
 Recommends: dmz-cursor-theme
 Conflicts: mate-themes-gnome
