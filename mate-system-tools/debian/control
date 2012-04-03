@@ -2,7 +2,7 @@ Source: mate-system-tools
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zessch <stevezesch2@gmail.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: cdbs (>= 0.4.41),
                autotools-dev,
                intltool (>= 0.35.0),
