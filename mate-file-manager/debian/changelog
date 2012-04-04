@@ -1,3 +1,10 @@
+mate-file-manager (1.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed acconfig.h and replaced it with AH_TEMPLATE and AC_DEFINE.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Tue, 03 Apr 2012 21:15:15 -0400
+
 mate-file-manager (1.2.0-2) unstable; urgency=low
 
   * Rebuild for precise.
