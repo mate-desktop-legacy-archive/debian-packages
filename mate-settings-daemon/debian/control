@@ -1,5 +1,5 @@
 Source: mate-settings-daemon
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
@@ -41,7 +41,7 @@ Package: mate-settings-daemon
 Architecture: all
 Depends: ${misc:Depends},
          mate-settings-daemon-gstreamer | mate-settings-daemon-pulse
-Description: daemon handling the MATE session settings
+Description: daemon handling the MATE session settings (metapackage)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
  under it. It handles the following kinds of settings:
@@ -56,6 +56,8 @@ Description: daemon handling the MATE session settings
  .
  It also sets various application settings through X resources and
  freedesktop.org XSETTINGS.
+ .
+ This is a metapackage, it depends on GStreamer or PulseAudio backends.
 
 Package: mate-settings-daemon-gstreamer
 Architecture: any

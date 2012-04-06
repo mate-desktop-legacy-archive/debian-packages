@@ -8,6 +8,7 @@ DEB_SRCDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/build/mate-settings-da
 DEB_BUILDDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/build/mate-settings-daemon-pulse
 DEB_DESTDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/mate-settings-daemon-pulse
 
+DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-gstreamer += --no-act
 DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-pulse += --no-act
 
 DEB_DH_INSTALL_ARGS += --list-missing
@@ -47,7 +48,7 @@ install/mate-settings-daemon-pulse::
 	mkdir -p debian/mate-settings-daemon-pulse/usr/share/mateconf/schemas
 	mateconf-merge-schema "debian/mate-settings-daemon-pulse/usr/share/mateconf/schemas/mate-settings-daemon.schemas" --domain mate-settings-daemon debian/mate-settings-daemon-pulse/etc/mateconf/schemas/*.schemas
 	rm -rf debian/mate-settings-daemon-pulse/etc/mateconf/schemas
-	rm -rf debian/mate-settings-daemon-pulse/usr/lib/mate-settings-daemon-1.1.1/*.la
+	rm -rf debian/mate-settings-daemon-pulse/usr/lib/mate-settings-daemon-*/*.la
 	# delete conflicts file with mate-settings-daemon-common
 	rm -rf debian/mate-settings-daemon-pulse/usr/share/locale/
 

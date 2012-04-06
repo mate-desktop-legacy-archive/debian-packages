@@ -1,3 +1,9 @@
+mate-control-center (1.2.1-5) unstable; urgency=low
+
+  * Fix lintian errors.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 06 Apr 2012 14:03:29 +0200
+
 mate-control-center (1.2.1-4) unstable; urgency=low
 
   * Ubuntu hack only used for precise. 

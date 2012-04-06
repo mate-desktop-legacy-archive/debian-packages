@@ -1,3 +1,11 @@
+mate-settings-daemon (1.2.0-4) unstable; urgency=low
+
+  * Fixed lintian errors.
+  * Changed section from mate to x11.
+  * Add "metapackage" in mate-settings-daemon description.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 06 Apr 2012 00:07:40 +0200
+
 mate-settings-daemon (1.2.0-3) unstable; urgency=low
 
   * Rebuild for precise. 
