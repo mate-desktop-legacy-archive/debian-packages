@@ -2,6 +2,7 @@ Source: mate-desktop
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                cdbs,
                intltool,
@@ -35,7 +36,7 @@ Depends: ${misc:Depends},
          hicolor-icon-theme,
          libmatedesktop,
          mate-desktop-common (= ${source:Version}),
-         mate-desktop-gnome | gnome-desktop-data
+         mate-desktop-gnome | gnome-desktop-data | gnome-desktop3-data
 Description: Library with common API for various MATE modules
  This package contains the library with common API for various MATE modules.
 
@@ -55,7 +56,7 @@ Depends: ${misc:Depends},
          libunique-1.0-0,
          libmatenotify,
          hicolor-icon-theme
-Conflicts: gnome-desktop-data
+Conflicts: gnome-desktop-data, gnome-desktop3-data
 Description: Library with common API for various MATE modules (GNOME files)
  This package contains the library with common API for various MATE modules.
  .

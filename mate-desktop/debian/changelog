@@ -1,3 +1,9 @@
+mate-desktop (1.2.0-2) unstable; urgency=low
+
+  * Added gnome-desktop3-data to depends. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 06 Apr 2012 19:42:15 -0400
+
 mate-desktop (1.2.0-1) unstable; urgency=low
 
   * Rebuild for precise.
