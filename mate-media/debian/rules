@@ -6,22 +6,58 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
+DEB_SRCDIR_mate-media-pulse := $(CURDIR)/debian/build/mate-media-pulse
+DEB_BUILDDIR_mate-media-pulse := $(CURDIR)/debian/build/mate-media-pulse
+DEB_DESTDIR_mate-media-pulse := $(CURDIR)/debian/mate-media-pulse
+
+DEB_DH_MAKESHLIBS_ARGS_mate-media-gstreamer += --no-act
+DEB_DH_MAKESHLIBS_ARGS_mate-media-pulse += --no-act
+
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
 		--localstatedir=/var --disable-static \
 		--disable-schemas-install \
-		--enable-pulseaudio \
+		--disable-pulseaudio \
 		--disable-scrollkeeper \
 		--enable-profiles --enable-grecord \
 		--enable-gstprops --enable-gstmix 
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-binary-install/mate-media::
-	mkdir -p debian/mate-media/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-media/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/mate-media/etc/mateconf/schemas/*.schemas
-	rm -rf debian/mate-media/etc/mateconf/schemas/
+configure/mate-media-pulse:: $(DEB_BUILDDIR_mate-media-pulse)/config.status
+$(DEB_BUILDDIR_mate-media-pulse)/config.status:
+	cp -a `find . -maxdepth 1 -mindepth 1 -not -name debian` $(DEB_SRCDIR_mate-media-pulse)/$*
+	cd $(DEB_BUILDDIR_mate-media-pulse) && \
+		$(DEB_CONFIGURE_SCRIPT_ENV) $(DEB_CONFIGURE_SCRIPT) \
+			$(DEB_CONFIGURE_NORMAL_ARGS) \
+			$(cdbs_configure_flags) \
+			--libexecdir=/usr/lib/mate-media \
+			--localstatedir=/var --disable-static \
+			--disable-schemas-install \
+			--enable-pulseaudio \
+			--disable-scrollkeeper \
+			--enable-profiles --disable-grecord \
+			--disable-gstprops --disable-gstmix 
+			$(DEB_CONFIGURE_USER_FLAGS)
+
+build/mate-media-pulse::
+	make -C $(DEB_BUILDDIR_mate-media-pulse)
+
+install/mate-media-pulse::
+	make -C $(DEB_BUILDDIR_mate-media-pulse) install DESTDIR=$(DEB_DESTDIR_mate-media-pulse) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+	mkdir -p debian/mate-media-pulse/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-media-pulse/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/mate-media-pulse/etc/mateconf/schemas/*.schemas
+	rm -rf debian/mate-media-pulse/etc/mateconf/schemas
+	rm -rf debian/mate-media-pulse/usr/lib/glade3/modules/*.la
+	rm -rf debian/mate-media-pulse/usr/lib/*.la
+	# delete conflicts file with mate-media-common
+	rm -rf debian/mate-media-pulse/usr/share/locale/
+
+binary-install/mate-media-gstreamer::
+	mkdir -p debian/mate-media-gstreamer/usr/share/mateconf/schemas
+	mateconf-merge-schema "debian/mate-media-gstreamer/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/tmp/etc/mateconf/schemas/*.schemas
+	rm -rf debian/tmp/etc/mateconf/schemas/
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

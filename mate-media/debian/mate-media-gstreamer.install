@@ -1,0 +1,16 @@
+usr/bin/
+usr/include/
+usr/lib/glade3/modules/lib*.so
+usr/lib/*.so
+usr/lib/*.so.*
+usr/lib/pkgconfig/
+usr/share/applications/
+usr/share/glade3/
+usr/share/icons/
+usr/share/mate-gstreamer-properties/
+usr/share/mate-media/
+usr/share/mate-sound-recorder/
+usr/share/mate/help/
+usr/share/omf/
+usr/share/sounds/
+

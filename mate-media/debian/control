@@ -1,5 +1,5 @@
 Source: mate-media
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
@@ -28,15 +28,57 @@ Build-Depends: cdbs,
                mate-common
 
 Package: mate-media
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-media-gstreamer | mate-media-pulse
+Description: MATE media utilities (metapackage)
+ This package contains a few media utilities for the MATE desktop:
+ .
+ This is a metapackage, it depends on GStreamer or PulseAudio backends
+ for mate-media.
+
+Package: mate-media-gstreamer
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         mate-media-common (= ${source:Version}),
          gstreamer0.10-alsa | gstreamer0.10-audiosink,
          gstreamer0.10-plugins-base,
          gstreamer0.10-plugins-good,
          x11-utils
 Recommends: alsa-utils
-Suggests: pulseaudio
+Replaces: mate-media (<< 1.2.1-4)
+Conflicts: mate-media-pulse
+Description: MATE media utilities (GStreamer backend)
+ This package contains a few media utilities for the MATE desktop:
+  * the MATE GStreamer-based audio mixer;
+  * the MATE Sound Recorder;
+  * the GStreamer properties capplet.
+  .
+  This package uses GStreamer for mate-media package.
+
+Package: mate-media-pulse
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-media-common (= ${source:Version}),
+         x11-utils,
+         pulseaudio
+Replaces: mate-media (<< 1.2.1-4)
+Conflicts: mate-media-gstreamer
+Description: MATE media utilities (PulseAudio backend)
+ This package contains a few media utilities for the MATE desktop:
+  * the MATE PulseAudio-based audio mixer;
+  * the MATE Sound Recorder;
+  * the PulseAudio properties capplet.
+  .
+  This package uses PulseAudio for mate-media package.
+
+Package: mate-media-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-media (<< 1.2.1-4)
 Description: MATE media utilities
  This package contains a few media utilities for the MATE desktop:
   * the MATE GStreamer-based audio mixer;
