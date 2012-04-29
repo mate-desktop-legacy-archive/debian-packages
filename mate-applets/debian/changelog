@@ -1,3 +1,17 @@
+mate-applets (1.2.2-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * battstat applet now has upower backend.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 23 Apr 2012 19:54:34 -0400
+
+mate-applets (1.2.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * cpufreq applet now displays menu when clicked.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 20 Apr 2012 21:32:30 -0400
+
 mate-applets (1.2.0-2) unstable; urgency=low
 
   * Rebuild for precise. 
