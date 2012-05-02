@@ -1,17 +1,26 @@
 Source: caja-dropbox
-Section: non-free/mate
+Section: non-free/x11
 Priority: optional
-Maintainer: Raphaël Hertzog <hertzog@debian.org>
-Build-Depends: debhelper (>= 8), libcaja-extension-dev (>= 1.1.0), libglib2.0-dev (>= 2.14.0), python-gtk2 (>= 2.12), python-docutils (>= 0.6), python (>= 2.6.6-3~), dh-autoreconf
-Standards-Version: 3.9.2
-XS-Autobuild: yes
-Homepage: http://www.dropbox.com/
-Vcs-Git: git://git.debian.org/collab-maint/caja-dropbox.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/caja-dropbox.git
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 8),
+               libcaja-extension-dev,
+               libglib2.0-dev (>= 2.14.0),
+               python-gtk2 (>= 2.12),
+               python-docutils (>= 0.6),
+               python (>= 2.6.6-3~),
+               mate-common
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 
 Package: caja-dropbox
 Architecture: i386 amd64
-Depends: procps, python-gtk2 (>= 2.12), python-gpgme, policykit-1, ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
+Depends: procps,
+         python-gtk2 (>= 2.12),
+         python-gpgme,
+         policykit-1,
+         ${shlibs:Depends},
+         ${python:Depends},
+         ${misc:Depends}
 Suggests: caja
 Description: Dropbox integration for Caja
  Caja Dropbox is an extension that integrates the Dropbox web service with

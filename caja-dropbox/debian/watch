@@ -1,3 +1,2 @@
 version=3
-https://linux.dropbox.com/packages/ \
- caja-dropbox-([\d\.]+).tar.bz2
+http://pub.mate-desktop.org/releases/(\d\.\d)/caja-dropbox-(.*)\.tar\.xz

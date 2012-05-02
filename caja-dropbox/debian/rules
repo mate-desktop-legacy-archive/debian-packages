@@ -1,10 +1,9 @@
 #!/usr/bin/make -f
 
-%:
-	dh $@ --with=python2,autoreconf
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
-override_dh_autoreconf:
-	dh_autoreconf --as-needed
+%:
+	dh $@ --with=python2
 
 override_dh_makeshlibs:
 	# Don't generate a shlibs file for the plugin
@@ -15,3 +14,6 @@ override_dh_auto_install:
 	# Drop useless files
 	rm -f debian/caja-dropbox/usr/lib/caja/extensions-*/libcaja-dropbox.a
 	rm -f debian/caja-dropbox/usr/lib/caja/extensions-*/libcaja-dropbox.la
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=../
