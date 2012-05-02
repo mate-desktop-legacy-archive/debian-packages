@@ -1,3 +1,9 @@
+mate-media (1.2.1-5) unstable; urgency=low
+
+  * Add Breaks fields in debian/control to avoid conflicts.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 24 Apr 2012 12:54:17 +0200
+
 mate-media (1.2.1-4) unstable; urgency=low
 
   * Split mate-media into mate-media-pulse and mate-media-gstreamer to
