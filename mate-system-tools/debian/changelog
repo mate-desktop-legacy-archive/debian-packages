@@ -1,3 +1,10 @@
+mate-system-tools (1.2.3-1) unstable; urgency=low
+
+  * New upstream release.
+  	- Fixed shares.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 06 May 2012 20:00:04 -0400
+
 mate-system-tools (1.2.2-1) unstable; urgency=low
 
   * Rebuild for precise. Check glib version to build for precise.
