@@ -50,6 +50,8 @@ Depends: ${shlibs:Depends},
          libglib2.0-data,
          libcaja-extension (= ${binary:Version}),
          caja-common (= ${source:Version})
+Suggests: ffmpegthumbnailer-caja,
+          gstreamer0.10-tools
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
