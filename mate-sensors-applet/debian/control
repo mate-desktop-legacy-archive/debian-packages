@@ -46,7 +46,7 @@ Description: Display readings from hardware sensors in your Mate panel
   * Linux kernel iMac G5 Windfarm module
   * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
   * Linux kernel Omnibook module
-  * NVIDIA graphics cards (with separate sensors-applet-nvidia package)
+  * NVIDIA graphics cards (supplied with nvidia-settings package)
   * Linux kernel sonypi module (for Sony Vaio laptops)
  .
  Alarms can be set for each sensor to notify the user once a certain high or
