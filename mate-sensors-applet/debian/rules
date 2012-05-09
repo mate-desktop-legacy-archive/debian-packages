@@ -11,5 +11,13 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-scrollkeeper \
                              --with-nvidia=yes
 
+ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
+    DEB_CONFIGURE_EXTRA_FLAGS += --with-aticonfig=yes
+endif
+
+ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
+    DEB_CONFIGURE_EXTRA_FLAGS += --with-aticonfig=/usr/lib/fglrx/bin/aticonfig
+endif
+
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

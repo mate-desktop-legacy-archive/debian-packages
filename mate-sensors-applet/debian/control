@@ -20,6 +20,8 @@ Build-Depends: debhelper (>= 8),
                libmatenotify-dev,
                libmatepanelapplet-dev,
                libsensors4-dev [!kfreebsd-i386 !kfreebsd-amd64],
+               libxnvctrl-dev | nvidia-settings,
+               fglrx-driver | fglrx,
                libtool,
                libxml-parser-perl,
                rarian-compat
@@ -31,6 +33,8 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Recommends: hddtemp
+Suggests: mate-sensors-applet-ati,
+          mate-sensors-applet-nvidia
 Description: Display readings from hardware sensors in your Mate panel
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
@@ -46,12 +50,38 @@ Description: Display readings from hardware sensors in your Mate panel
   * Linux kernel iMac G5 Windfarm module
   * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
   * Linux kernel Omnibook module
-  * NVIDIA graphics cards (supplied with nvidia-settings package)
+  * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
+  * ATI graphics cards (supplied with mate-sensors-applet-ati package)
   * Linux kernel sonypi module (for Sony Vaio laptops)
  .
  Alarms can be set for each sensor to notify the user once a certain high or
  low value has been reached, and can be configured to execute a given command
  at given repeated intervals.
+
+Package: mate-sensors-applet-nvidia
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-sensors-applet (= ${binary:Version})
+Description: Display readings from hardware sensors in your Mate panel (NVIDIA sensors)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains plugin for NVIDIA graphics cards.
+
+Package: mate-sensors-applet-ati
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-sensors-applet (= ${binary:Version}),
+         fglrx-driver | fglrx
+Description: Display readings from hardware sensors in your Mate panel (ATI sensors)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains plugin for ATI graphics cards.
 
 Package: libmatesensorsappletplugin
 Architecture: any

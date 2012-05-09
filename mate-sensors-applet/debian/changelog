@@ -1,6 +1,7 @@
 mate-sensors-applet (1.2.0-3) unstable; urgency=low
 
-  * Add support for NVIDIA sensors.
+  * Add support for NVIDIA sensors (mate-sensors-applet-nvidia package).
+  * Add support for ATI sensors (mate-sensors-applet-ati package).
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 May 2012 17:31:47 +0200
 
