@@ -3,9 +3,9 @@ lib/security/pam_mate_keyring.so
 usr/bin/
 usr/lib/*.so.*
 usr/lib/mate-keyring/devel/*.so
-usr/lib/mate-keyring/*.so
 usr/lib/mate-keyring/mate-keyring-prompt
 usr/lib/mate-keyring/standalone/*.so
+usr/lib/pkcs11/*.so
 usr/share/dbus-1/services/
 usr/share/MateConf/
 usr/share/mategcr/
