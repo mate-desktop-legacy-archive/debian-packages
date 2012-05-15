@@ -1,3 +1,9 @@
+mate-indicator-applet (1.2.1-1) unstable; urgency=low
+
+  * Testing
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 11 May 2012 11:02:21 -0400
+
 mate-indicator-applet (1.2.0-4) unstable; urgency=low
 
   * Add provides indicator-renderer.

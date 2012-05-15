@@ -25,7 +25,6 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-panel
 Recommends: indicator-messages-gtk2,
-            indicator-session-gtk2
 Suggests: indicator-application-gtk2,
           indicator-sound-gtk2
 Provides: indicator-renderer
