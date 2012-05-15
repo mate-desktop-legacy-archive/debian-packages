@@ -1,0 +1,490 @@
+Index: gnome-user-share-2.30.0/configure.in
+===================================================================
+--- gnome-user-share-2.30.0.orig/configure.in	2010-03-29 18:25:21.000000000 +0200
++++ gnome-user-share-2.30.0/configure.in	2010-04-03 18:01:06.797715578 +0200
+@@ -56,10 +56,21 @@
+    AC_DEFINE(HAVE_DBUS_1_1, 1, [Set to true if we have D-BUS 1.1])
+ fi
+ 
+-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gio-2.0 gdk-x11-2.0 gtk+-2.0 gconf-2.0 dbus-glib-1 libnotify libcanberra-gtk $DBUS_MODULES gnome-bluetooth-1.0 >= 2.27.7.2)
++PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gio-2.0 gdk-x11-2.0 gtk+-2.0 gconf-2.0 dbus-glib-1 libnotify libcanberra-gtk $DBUS_MODULES)
+ AC_SUBST(USER_SHARE_CFLAGS)
+ AC_SUBST(USER_SHARE_LIBS)
+ 
++PKG_CHECK_MODULES(BLUETOOTH, gnome-bluetooth-1.0 >= 2.27.7.2,
++                             have_bluetooth=true, have_bluetooth=false)
++AC_SUBST(BLUETOOTH_CFLAGS)
++AC_SUBST(BLUETOOTH_LIBS)
++if $have_bluetooth; then
++   AC_DEFINE(HAVE_BLUETOOTH, 1, [Set to true if gnome-bluetooth support is available])
++else
++   AC_MSG_WARN([Bluetooth support is disabled.])
++fi
++AM_CONDITIONAL(USE_BLUETOOTH, [test "$have_bluetooth" = "true"])
++
+ PKG_CHECK_MODULES(USER_SHARE_CONFIG, glib-2.0 >= 2.15.2 gtk+-2.0 >= 2.12.0 gconf-2.0 unique-1.0)
+ AC_SUBST(USER_SHARE_CONFIG_CFLAGS)
+ AC_SUBST(USER_SHARE_CONFIG_LIBS)
+Index: gnome-user-share-2.30.0/data/file-share-properties.ui
+===================================================================
+--- gnome-user-share-2.30.0.orig/data/file-share-properties.ui	2009-06-29 11:41:06.000000000 +0200
++++ gnome-user-share-2.30.0/data/file-share-properties.ui	2010-04-03 18:01:06.801708047 +0200
+@@ -19,7 +19,7 @@
+             <property name="border_width">5</property>
+             <property name="spacing">18</property>
+             <child>
+-              <object class="GtkVBox" id="vbox3">
++              <object class="GtkVBox" id="vbox_share_http">
+                 <property name="visible">True</property>
+                 <property name="spacing">6</property>
+                 <child>
+@@ -130,8 +130,8 @@
+               </packing>
+             </child>
+             <child>
+-              <object class="GtkVBox" id="vbox4">
+-                <property name="visible">True</property>
++              <object class="GtkVBox" id="vbox_share_bluetooth">
++                <property name="visible">False</property>
+                 <property name="spacing">6</property>
+                 <child>
+                   <object class="GtkLabel" id="label7">
+@@ -213,8 +213,8 @@
+               </packing>
+             </child>
+             <child>
+-              <object class="GtkVBox" id="vbox5">
+-                <property name="visible">True</property>
++              <object class="GtkVBox" id="vbox_receive_bluetooth">
++                <property name="visible">False</property>
+                 <property name="spacing">6</property>
+                 <child>
+                   <object class="GtkLabel" id="label8">
+Index: gnome-user-share-2.30.0/src/Makefile.am
+===================================================================
+--- gnome-user-share-2.30.0.orig/src/Makefile.am	2010-03-02 15:36:45.000000000 +0100
++++ gnome-user-share-2.30.0/src/Makefile.am	2010-04-03 18:01:06.809707809 +0200
+@@ -31,6 +31,7 @@
+ 	-I$(top_builddir) 				\
+ 	$(EXTENSION_CFLAGS)				\
+ 	$(USER_SHARE_CFLAGS)				\
++	$(BLUETOOTH_CFLAGS)				\
+ 	$(USER_SHARE_CONFIG_CFLAGS)			\
+ 	$(X_CFLAGS)
+ 
+@@ -41,10 +42,6 @@
+ 	user_share-private.c	\
+ 	http.c			\
+ 	http.h			\
+-	obexftp.c		\
+-	obexftp.h		\
+-	obexpush.c		\
+-	obexpush.h		\
+ 	$(MARSHALFILES)
+ 
+ gnome_user_share_LDADD =	\
+@@ -53,6 +50,15 @@
+ 	$(SELINUX_LIBS)	\
+ 	$(X_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
+ 
++if USE_BLUETOOTH
++gnome_user_share_SOURCES += \
++	obexftp.c		\
++	obexftp.h		\
++	obexpush.c		\
++	obexpush.h
++gnome_user_share_LDADD += $(BLUETOOTH_LIBS)
++endif
++
+ gnome_file_share_properties_SOURCES =	\
+ 	file-share-properties.c		\
+ 	user_share-private.h		\
+Index: gnome-user-share-2.30.0/src/file-share-properties.c
+===================================================================
+--- gnome-user-share-2.30.0.orig/src/file-share-properties.c	2010-03-02 15:36:45.000000000 +0100
++++ gnome-user-share-2.30.0/src/file-share-properties.c	2010-04-03 18:01:06.825701562 +0200
+@@ -86,26 +86,39 @@
+ update_ui (void)
+ {
+     GConfClient *client;
+-    gboolean enabled, bluetooth_enabled, bluetooth_write_enabled, require_pairing_enabled;
++    gboolean enabled;
++#ifdef HAVE_BLUETOOTH
++    gboolean bluetooth_enabled, bluetooth_write_enabled, require_pairing_enabled;
+     gboolean bluetooth_obexpush_enabled, bluetooth_obexpush_notify;
++#endif /* HAVE_BLUETOOTH */
+     char *str;
+     PasswordSetting password_setting;
+     AcceptSetting accept_setting;
+     GtkWidget *check;
+     GtkWidget *password_combo;
+     GtkWidget *password_entry;
++#ifdef HAVE_BLUETOOTH
++    GtkWidget *vbox_share_bluetooth;
++    GtkWidget *vbox_receive_bluetooth;
+     GtkWidget *bluetooth_check;
+     GtkWidget *allow_write_bluetooth_check;
+     GtkWidget *require_pairing_check;
+     GtkWidget *enable_obexpush_check;
+     GtkWidget *accept_obexpush_combo;
+     GtkWidget *notify_received_obexpush_check;
++#endif /* HAVE_BLUETOOTH */
+ 
+     client = gconf_client_get_default ();
+ 
+     enabled = gconf_client_get_bool (client,
+ 				     FILE_SHARING_ENABLED,
+ 				     NULL);
++
++    str = gconf_client_get_string (client, FILE_SHARING_REQUIRE_PASSWORD, NULL);
++    password_setting = password_setting_from_string (str);
++    g_free (str);
++
++#ifdef HAVE_BLUETOOTH
+     bluetooth_enabled = gconf_client_get_bool (client,
+     					       FILE_SHARING_BLUETOOTH_ENABLED,
+     					       NULL);
+@@ -122,23 +135,24 @@
+     						       FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY,
+     						       NULL);
+ 
+-    str = gconf_client_get_string (client, FILE_SHARING_REQUIRE_PASSWORD, NULL);
+-    password_setting = password_setting_from_string (str);
+-    g_free (str);
+-
+     str = gconf_client_get_string (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ACCEPT_FILES, NULL);
+     accept_setting = accept_setting_from_string (str);
+     g_free (str);
++#endif /* HAVE_BLUETOOTH */
+ 
+     check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_check"));
+     password_combo = GTK_WIDGET (gtk_builder_get_object (builder, "password_combo"));
+     password_entry = GTK_WIDGET (gtk_builder_get_object (builder, "password_entry"));
++#ifdef HAVE_BLUETOOTH
++    vbox_share_bluetooth = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_share_bluetooth"));
++    vbox_receive_bluetooth = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_receive_bluetooth"));
+     bluetooth_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_bluetooth_check"));
+     allow_write_bluetooth_check = GTK_WIDGET (gtk_builder_get_object (builder, "allow_write_bluetooth_check"));
+     require_pairing_check = GTK_WIDGET (gtk_builder_get_object (builder, "require_pairing_check"));
+     enable_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_obexpush_check"));
+     accept_obexpush_combo = GTK_WIDGET (gtk_builder_get_object (builder, "accept_obexpush_combo"));
+     notify_received_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "notify_received_obexpush_check"));
++#endif /* HAVE_BLUETOOTH */
+ 
+     /* Network */
+     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check), enabled);
+@@ -148,7 +162,9 @@
+     gtk_combo_box_set_active (GTK_COMBO_BOX (password_combo),
+ 			      password_setting);
+ 
++#ifdef HAVE_BLUETOOTH
+     /* Bluetooth ObexFTP */
++    gtk_widget_set_visible (vbox_share_bluetooth, TRUE);
+     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (bluetooth_check), bluetooth_enabled);
+     gtk_widget_set_sensitive (allow_write_bluetooth_check, bluetooth_enabled);
+     gtk_widget_set_sensitive (require_pairing_check, bluetooth_enabled);
+@@ -159,6 +175,7 @@
+     				  require_pairing_enabled);
+ 
+     /* Bluetooth ObexPush */
++    gtk_widget_set_visible (vbox_receive_bluetooth, TRUE);
+     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (enable_obexpush_check), bluetooth_obexpush_enabled);
+     gtk_widget_set_sensitive (accept_obexpush_combo, bluetooth_obexpush_enabled);
+     gtk_widget_set_sensitive (notify_received_obexpush_check, bluetooth_obexpush_enabled);
+@@ -168,6 +185,7 @@
+ 
+     gtk_combo_box_set_active (GTK_COMBO_BOX (accept_obexpush_combo),
+     			      accept_setting);
++#endif /* HAVE_BLUETOOTH */
+ 
+     g_object_unref (client);
+ }
+@@ -190,6 +208,7 @@
+     update_ui ();
+ }
+ 
++#ifdef HAVE_BLUETOOTH
+ static void
+ file_sharing_bluetooth_enabled_changed (GConfClient* client,
+ 					guint cnxn_id,
+@@ -243,6 +262,7 @@
+ {
+ 	update_ui ();
+ }
++#endif /* HAVE_BLUETOOTH */
+ 
+ static void
+ password_combo_changed (GtkComboBox *combo_box)
+@@ -283,6 +303,7 @@
+ 	}
+ }
+ 
++#ifdef HAVE_BLUETOOTH
+ static void
+ enable_bluetooth_check_toggled (GtkWidget *check)
+ {
+@@ -303,6 +324,7 @@
+ 	if (enabled != FALSE)
+ 		launch_share ();
+ }
++#endif /* HAVE_BLUETOOTH */
+ 
+ static void
+ enable_check_toggled (GtkWidget *check)
+@@ -333,6 +355,7 @@
+ 	flush_password ();
+ }
+ 
++#ifdef HAVE_BLUETOOTH
+ static void
+ bluetooth_allow_write_check_toggled (GtkWidget *check)
+ {
+@@ -424,6 +447,7 @@
+ 
+ 	g_object_unref (client);
+ }
++#endif /* HAVE_BLUETOOTH */
+ 
+ static GtkWidget *
+ error_dialog (const char *title,
+@@ -490,12 +514,14 @@
+     GtkWidget *check;
+     GtkWidget *password_combo;
+     GtkWidget *password_entry;
++#ifdef HAVE_BLUETOOTH
+     GtkWidget *bluetooth_check;
+     GtkWidget *bluetooth_allow_write_check;
+     GtkWidget *require_pairing_check;
+     GtkWidget *enable_obexpush_check;
+     GtkWidget *accept_obexpush_combo;
+     GtkWidget *notify_received_obexpush_check;
++#endif /* HAVE_BLUETOOTH */
+     GtkWidget *window;
+     GtkListStore *store;
+     GtkCellRenderer *cell;
+@@ -544,12 +570,14 @@
+     check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_check"));
+     password_combo = GTK_WIDGET (gtk_builder_get_object (builder, "password_combo"));
+     password_entry = GTK_WIDGET (gtk_builder_get_object (builder, "password_entry"));
++#ifdef HAVE_BLUETOOTH
+     bluetooth_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_bluetooth_check"));
+     bluetooth_allow_write_check = GTK_WIDGET (gtk_builder_get_object (builder, "allow_write_bluetooth_check"));
+     require_pairing_check = GTK_WIDGET (gtk_builder_get_object (builder, "require_pairing_check"));
+     enable_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "enable_obexpush_check"));
+     accept_obexpush_combo = GTK_WIDGET (gtk_builder_get_object (builder, "accept_obexpush_combo"));
+     notify_received_obexpush_check = GTK_WIDGET (gtk_builder_get_object (builder, "notify_received_obexpush_check"));
++#endif /* HAVE_BLUETOOTH */
+ 
+     store = gtk_list_store_new (1, G_TYPE_STRING);
+     gtk_combo_box_set_model (GTK_COMBO_BOX (password_combo),
+@@ -579,6 +607,7 @@
+     g_signal_connect (password_entry,
+ 		      "changed", G_CALLBACK (password_entry_changed), NULL);
+ 
++#ifdef HAVE_BLUETOOTH
+     /* Accept files combo */
+     store = gtk_list_store_new (1, G_TYPE_STRING);
+     gtk_combo_box_set_model (GTK_COMBO_BOX (accept_obexpush_combo),
+@@ -603,6 +632,7 @@
+     			_("Ask"), -1);
+ #endif
+     g_object_unref (store);
++#endif /* HAVE_BLUETOOTH */
+ 
+     update_ui ();
+ 
+@@ -610,6 +640,7 @@
+ 		      "toggled", G_CALLBACK (enable_check_toggled), NULL);
+     g_signal_connect (password_combo,
+ 		      "changed", G_CALLBACK (password_combo_changed), NULL);
++#ifdef HAVE_BLUETOOTH
+     g_signal_connect (bluetooth_check,
+     		      "toggled", G_CALLBACK (enable_bluetooth_check_toggled), NULL);
+     g_signal_connect (bluetooth_allow_write_check,
+@@ -622,6 +653,7 @@
+     		      "changed", G_CALLBACK (accept_obexpush_combo_changed), NULL);
+     g_signal_connect (notify_received_obexpush_check,
+     		      "toggled", G_CALLBACK (notify_received_obexpush_check_toggled), NULL);
++#endif /* HAVE_BLUETOOTH */
+ 
+     g_signal_connect (GTK_WIDGET (gtk_builder_get_object (builder, "close_button")),
+ 		      "clicked", G_CALLBACK (gtk_main_quit), NULL);
+@@ -641,6 +673,7 @@
+ 			     NULL,
+ 			     NULL,
+ 			     NULL);
++#ifdef HAVE_BLUETOOTH
+     gconf_client_notify_add (client,
+ 			     FILE_SHARING_BLUETOOTH_ENABLED,
+ 			     file_sharing_bluetooth_enabled_changed,
+@@ -677,6 +710,7 @@
+ 			     NULL,
+ 			     NULL,
+ 			     NULL);
++#endif /* HAVE_BLUETOOTH */
+ 
+     g_object_unref (client);
+ 
+Index: gnome-user-share-2.30.0/src/user_share.c
+===================================================================
+--- gnome-user-share-2.30.0.orig/src/user_share.c	2010-03-02 15:36:45.000000000 +0100
++++ gnome-user-share-2.30.0/src/user_share.c	2010-04-03 18:03:54.193706592 +0200
+@@ -26,18 +26,22 @@
+ #include <gdk/gdkx.h>
+ #include <gtk/gtk.h>
+ #include <glib/gi18n.h>
+-#include <bluetooth-client.h>
+ #include <X11/Xlib.h>
+ 
+ #include "user_share.h"
+ #include "user_share-private.h"
+ #include "user_share-common.h"
+ #include "http.h"
++
++#ifdef HAVE_BLUETOOTH
++#include <bluetooth-client.h>
++
+ #include "obexftp.h"
+ #include "obexpush.h"
+ 
+ #include <dbus/dbus.h>
+ #include <dbus/dbus-glib.h>
++#endif /* HAVE_BLUETOOTH */
+ 
+ #include <gconf/gconf-client.h>
+ 
+@@ -48,6 +52,9 @@
+ #include <signal.h>
+ #include <unistd.h>
+ 
++static guint disabled_timeout_tag = 0;
++
++#ifdef HAVE_BLUETOOTH
+ /* ConsoleKit */
+ #define CK_NAME			"org.freedesktop.ConsoleKit"
+ #define CK_INTERFACE		"org.freedesktop.ConsoleKit"
+@@ -56,7 +63,6 @@
+ #define CK_SEAT_INTERFACE	"org.freedesktop.ConsoleKit.Seat"
+ #define CK_SESSION_INTERFACE	"org.freedesktop.ConsoleKit.Session"
+ 
+-static guint disabled_timeout_tag = 0;
+ static gboolean has_console = TRUE;
+ 
+ static BluetoothClient *client = NULL;
+@@ -262,6 +268,7 @@
+ 	g_signal_connect (G_OBJECT (client), "notify::default-adapter-powered",
+ 			  G_CALLBACK (default_adapter_changed), NULL);
+ }
++#endif /* HAVE_BLUETOOTH */
+ 
+ static void
+ migrate_old_configuration (void)
+@@ -297,9 +304,13 @@
+ 	GConfClient* client = (GConfClient *) user_data;
+ 	http_down ();
+ 
++#ifdef HAVE_BLUETOOTH
+ 	if (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE &&
+ 	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE)
+ 		_exit (0);
++#else /* HAVE_BLUETOOTH */
++	_exit (0);
++#endif /* HAVE_BLUETOOTH */
+ 	return FALSE;
+ }
+ 
+@@ -330,6 +341,7 @@
+ 	}
+ }
+ 
++#ifdef HAVE_BLUETOOTH
+ static void
+ file_sharing_bluetooth_allow_write_changed (GConfClient* client,
+ 					    guint cnxn_id,
+@@ -414,13 +426,16 @@
+ {
+ 	obexpush_set_notify (gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_NOTIFY, NULL));
+ }
++#endif /* HAVE_BLUETOOTH */
+ 
+ static RETSIGTYPE
+ cleanup_handler (int sig)
+ {
+ 	http_down ();
++#ifdef HAVE_BLUETOOTH
+ 	obexftp_down ();
+ 	obexpush_down ();
++#endif /* HAVE_BLUETOOTH */
+ 	_exit (2);
+ }
+ 
+@@ -428,7 +443,9 @@
+ x_io_error_handler (Display *xdisplay)
+ {
+ 	http_down ();
++#ifdef HAVE_BLUETOOTH
+ 	obexftp_down ();
++#endif /* HAVE_BLUETOOTH */
+ 	_exit (2);
+ }
+ 
+@@ -485,20 +502,27 @@
+ 	migrate_old_configuration ();
+ 
+ 	client = gconf_client_get_default ();
++#ifdef HAVE_BLUETOOTH
+ 	if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE &&
+ 	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_ENABLED, NULL) == FALSE &&
+ 	    gconf_client_get_bool (client, FILE_SHARING_BLUETOOTH_OBEXPUSH_ENABLED, NULL) == FALSE)
+ 		return 1;
++#else /* HAVE_BLUETOOTH */
++	if (gconf_client_get_bool (client, FILE_SHARING_ENABLED, NULL) == FALSE)
++		return 1;
++#endif /* HAVE_BLUETOOTH */
+ 
+ 	x_fd = ConnectionNumber (xdisplay);
+ 	XSetIOErrorHandler (x_io_error_handler);
+ 
+ 	if (http_init () == FALSE)
+ 		return 1;
++#ifdef HAVE_BLUETOOTH
+ 	if (obexftp_init () == FALSE)
+ 		return 1;
+ 	if (obexpush_init () == FALSE)
+ 		return 1;
++#endif /* HAVE_BLUETOOTH */
+ 
+ 	gconf_client_add_dir (client,
+ 			      FILE_SHARING_DIR,
+@@ -517,6 +541,7 @@
+ 				 NULL,
+ 				 NULL,
+ 				 NULL);
++#ifdef HAVE_BLUETOOTH
+ 	gconf_client_notify_add (client,
+ 				 FILE_SHARING_BLUETOOTH_ENABLED,
+ 				 file_sharing_bluetooth_enabled_changed,
+@@ -553,18 +578,23 @@
+ 				 NULL,
+ 				 NULL,
+ 				 NULL);
++#endif /* HAVE_BLUETOOTH */
+ 
+ 	g_object_unref (client);
+ 
++#ifdef HAVE_BLUETOOTH
+ 	bluez_init ();
+ 	consolekit_init ();
++#endif /* HAVE_BLUETOOTH */
+ 
+ 	/* Initial setting */
+ 	file_sharing_enabled_changed (client, 0, NULL, NULL);
++#ifdef HAVE_BLUETOOTH
+ 	file_sharing_bluetooth_enabled_changed (client, 0, NULL, NULL);
+ 	file_sharing_bluetooth_obexpush_accept_files_changed (client, 0, NULL, NULL);
+ 	file_sharing_bluetooth_obexpush_notify_changed (client, 0, NULL, NULL);
+ 	file_sharing_bluetooth_obexpush_enabled_changed (client, 0, NULL, NULL);
++#endif /* HAVE_BLUETOOTH */
+ 
+ 	gtk_main ();
+ 

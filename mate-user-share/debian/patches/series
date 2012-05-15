@@ -1,0 +1,3 @@
+01_apache-config.patch
+02_bluetooth_optional.patch
+90_relibtoolize.patch
