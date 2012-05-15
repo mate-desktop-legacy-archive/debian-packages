@@ -31,7 +31,8 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-sensors-applet
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         libmatesensorsappletplugin (= ${binary:Version})
 Recommends: hddtemp
 Suggests: mate-sensors-applet-ati,
           mate-sensors-applet-nvidia

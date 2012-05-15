@@ -24,8 +24,6 @@ Package: mate-notification-daemon
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Conflicts: notification-daemon
-Replaces: notification-daemon
 Provides: notification-daemon
 Description: daemon to displays passive pop-up notifications
  mate-notification-daemon displays passive pop-up notifications, as per
@@ -35,5 +33,5 @@ Description: daemon to displays passive pop-up notifications
  doing passive pop-up notifications on the Linux desktop. These are
  designed to notify the user of something without interrupting their
  work with a dialog box that they must close.  Passive popups can
- automatically disappear after a short period of time.  as per the
- Desktop Notifications spec
+ automatically disappear after a short period of time, as per the
+ Desktop Notifications spec.
