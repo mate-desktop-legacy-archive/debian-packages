@@ -19,9 +19,10 @@ Build-Depends: cdbs,
                libmatenotify-dev,
                libcanberra-gtk-dev,
                libselinux1-dev [linux-any],
-               libmate-bluetooth-dev (>= 2.27.7.2) [linux-any],
+               libmatebluetooth-dev (>= 1.2.0) [linux-any],
                libunique-dev,
-               libcaja-extension-dev
+               libcaja-extension-dev,
+               mate-common
 Standards-Version: 3.9.3
 
 Package: mate-user-share
