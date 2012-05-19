@@ -1,3 +1,9 @@
+mate-panel (1.3.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 13 May 2012 17:50:59 +0200
+
 mate-panel (1.2.1-3) unstable; urgency=low
 
   * Enable ubuntu hack only in oneiric.
