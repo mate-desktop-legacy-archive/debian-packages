@@ -1,17 +1,17 @@
-Index: mate-user-share-2.30.0/configure.in
+Index: mate-user-share/configure.in
 ===================================================================
---- mate-user-share-2.30.0.orig/configure.in	2010-03-29 18:25:21.000000000 +0200
-+++ mate-user-share-2.30.0/configure.in	2010-04-03 18:01:06.797715578 +0200
+--- mate-user-share.orig/configure.in	2010-03-29 18:25:21.000000000 +0200
++++ mate-user-share/configure.in	2010-04-03 18:01:06.797715578 +0200
 @@ -56,10 +56,21 @@
     AC_DEFINE(HAVE_DBUS_1_1, 1, [Set to true if we have D-BUS 1.1])
  fi
  
--PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gio-2.0 gdk-x11-2.0 gtk+-2.0 mateconf-2.0 dbus-glib-1 libmatenotify libcanberra-gtk $DBUS_MODULES mate-bluetooth-1.0 >= 2.27.7.2)
+-PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gio-2.0 gdk-x11-2.0 gtk+-2.0 mateconf-2.0 dbus-glib-1 libmatenotify libcanberra-gtk $DBUS_MODULES mate-bluetooth-1.0 >= 1.2.0)
 +PKG_CHECK_MODULES(USER_SHARE, glib-2.0 >= 2.15.2 gio-2.0 gdk-x11-2.0 gtk+-2.0 mateconf-2.0 dbus-glib-1 libmatenotify libcanberra-gtk $DBUS_MODULES)
  AC_SUBST(USER_SHARE_CFLAGS)
  AC_SUBST(USER_SHARE_LIBS)
  
-+PKG_CHECK_MODULES(BLUETOOTH, mate-bluetooth-1.0 >= 2.27.7.2,
++PKG_CHECK_MODULES(BLUETOOTH, mate-bluetooth-1.0 >= 1.2.0,
 +                             have_bluetooth=true, have_bluetooth=false)
 +AC_SUBST(BLUETOOTH_CFLAGS)
 +AC_SUBST(BLUETOOTH_LIBS)
@@ -25,10 +25,10 @@ Index: mate-user-share-2.30.0/configure.in
  PKG_CHECK_MODULES(USER_SHARE_CONFIG, glib-2.0 >= 2.15.2 gtk+-2.0 >= 2.12.0 mateconf-2.0 unique-1.0)
  AC_SUBST(USER_SHARE_CONFIG_CFLAGS)
  AC_SUBST(USER_SHARE_CONFIG_LIBS)
-Index: mate-user-share-2.30.0/data/file-share-properties.ui
+Index: mate-user-share/data/file-share-properties.ui
 ===================================================================
---- mate-user-share-2.30.0.orig/data/file-share-properties.ui	2009-06-29 11:41:06.000000000 +0200
-+++ mate-user-share-2.30.0/data/file-share-properties.ui	2010-04-03 18:01:06.801708047 +0200
+--- mate-user-share.orig/data/file-share-properties.ui	2009-06-29 11:41:06.000000000 +0200
++++ mate-user-share/data/file-share-properties.ui	2010-04-03 18:01:06.801708047 +0200
 @@ -19,7 +19,7 @@
              <property name="border_width">5</property>
              <property name="spacing">18</property>
@@ -60,10 +60,10 @@ Index: mate-user-share-2.30.0/data/file-share-properties.ui
                  <property name="spacing">6</property>
                  <child>
                    <object class="GtkLabel" id="label8">
-Index: mate-user-share-2.30.0/src/Makefile.am
+Index: mate-user-share/src/Makefile.am
 ===================================================================
---- mate-user-share-2.30.0.orig/src/Makefile.am	2010-03-02 15:36:45.000000000 +0100
-+++ mate-user-share-2.30.0/src/Makefile.am	2010-04-03 18:01:06.809707809 +0200
+--- mate-user-share.orig/src/Makefile.am	2010-03-02 15:36:45.000000000 +0100
++++ mate-user-share/src/Makefile.am	2010-04-03 18:01:06.809707809 +0200
 @@ -31,6 +31,7 @@
  	-I$(top_builddir) 				\
  	$(EXTENSION_CFLAGS)				\
@@ -99,10 +99,10 @@ Index: mate-user-share-2.30.0/src/Makefile.am
  mate_file_share_properties_SOURCES =	\
  	file-share-properties.c		\
  	user_share-private.h		\
-Index: mate-user-share-2.30.0/src/file-share-properties.c
+Index: mate-user-share/src/file-share-properties.c
 ===================================================================
---- mate-user-share-2.30.0.orig/src/file-share-properties.c	2010-03-02 15:36:45.000000000 +0100
-+++ mate-user-share-2.30.0/src/file-share-properties.c	2010-04-03 18:01:06.825701562 +0200
+--- mate-user-share.orig/src/file-share-properties.c	2010-03-02 15:36:45.000000000 +0100
++++ mate-user-share/src/file-share-properties.c	2010-04-03 18:01:06.825701562 +0200
 @@ -86,26 +86,39 @@
  update_ui (void)
  {
@@ -325,10 +325,10 @@ Index: mate-user-share-2.30.0/src/file-share-properties.c
  
      g_object_unref (client);
  
-Index: mate-user-share-2.30.0/src/user_share.c
+Index: mate-user-share/src/user_share.c
 ===================================================================
---- mate-user-share-2.30.0.orig/src/user_share.c	2010-03-02 15:36:45.000000000 +0100
-+++ mate-user-share-2.30.0/src/user_share.c	2010-04-03 18:03:54.193706592 +0200
+--- mate-user-share.orig/src/user_share.c	2010-03-02 15:36:45.000000000 +0100
++++ mate-user-share/src/user_share.c	2010-04-03 18:03:54.193706592 +0200
 @@ -26,18 +26,22 @@
  #include <gdk/gdkx.h>
  #include <gtk/gtk.h>
