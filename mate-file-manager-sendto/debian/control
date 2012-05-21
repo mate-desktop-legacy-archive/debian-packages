@@ -11,7 +11,6 @@ Build-Depends: debhelper (>= 8),
                libgtk2.0-dev (>= 2.12.0),
                libcaja-extension-dev,
                libmateconf-dev,
-               libebook1.2-dev (>= 1.5.3),
                libdbus-1-dev (>= 1.0),
                libdbus-glib-1-dev (>= 0.60),
                libgupnp-1.0-dev (>= 0.13),
@@ -29,11 +28,11 @@ Suggests: thunderbird | icedove | evolution (>= 2.28) | claws-mail,
           pidgin (>= 2.0.0) | gajim,
           python-dbus,
           mate-bluetooth
-Description: integrates Evolution and Pidgin into the Caja file manager
+Description: integrates email clients and Pidgin into the Caja file manager
  The Caja Send To plugin provides the Caja file manager with a context
- menu component for quickly sending files to accounts in an Evolution email
- address book, contacts on a Pidgin or Gajim instant messaging list, through
- Thunderbird/Icedove, or through Claws Mail.
+ menu component for quickly sending files to given email addresses, contacts
+ on a Pidgin or Gajim instant messaging list, through Thunderbird/Icedove,
+ or through Claws Mail.
  .
  Caja Send To also provides the option of compressing the files (tar.bz2,
  tar.gz, or zip) before sending.
