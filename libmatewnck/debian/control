@@ -1,0 +1,76 @@
+Source: libmatewnck
+Section: devel
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8),
+               cdbs,
+               gtk-doc-tools,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libstartup-notification0-dev,
+               libx11-dev,
+               libxres-dev,
+               libxt-dev,
+               libxres-dev,
+               libgirepository1.0-dev,
+               mate-common (>= 1.2.1-1)
+Build-Depends-Indep: libglib2.0-doc
+Homepage: http://www.mate-desktop.org/
+
+Package: libmatewnck
+Architecture: any
+Section: libs
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmatewnck-common (= ${source:Version})
+Description: MATE Window Navigator Construction Kit
+ A library to use for writing pagers and task lists.
+
+Package: libmatewnck-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libmatewnck (= ${binary:Version}),
+         libglib2.0-dev,
+         libpango1.0-dev,
+         libx11-dev,
+         libgtk2.0-dev,
+         libstartup-notification0-dev,
+         libcairo2-dev,
+         libxres-dev,
+Description: MATE Window Navigator Construction Kit (development files)
+ A library to use for writing pagers and task lists.
+ .
+ This package contains the development files.
+
+Package: libmatewnck-common
+Architecture: all
+Depends: ${misc:Depends}
+Description: MATE library (common files)
+ This package contains the shared library for the base MATE library
+ functions.
+ .
+ This package contains the architecture independent files.
+
+Package: libmatewnck-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: MATE Window Navigator Construction Kit (documentation files)
+ A library to use for writing pagers and task lists.
+ .
+ This package contains the documentation files.
+
+Package: libmatewnck-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         libmatewnck (= ${binary:Version})
+Description: MATE Window Navigator Construction Kit (debugging symbols)
+ This package contains debugging symbols for the libmatewnck
+ library. It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

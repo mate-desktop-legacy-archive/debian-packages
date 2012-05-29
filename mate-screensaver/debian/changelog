@@ -1,3 +1,10 @@
+mate-screensaver (1.2.0-3) unstable; urgency=low
+
+  * Add patches to support user switch with GDM.
+  * Add libmatenofiy-dev to build depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 26 May 2012 12:30:11 +0200
+
 mate-screensaver (1.2.0-2) unstable; urgency=low
 
   * Rebuild for precise. 

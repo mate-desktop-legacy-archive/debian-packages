@@ -2,6 +2,7 @@ Source: caja-dropbox
 Section: non-free/x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                libcaja-extension-dev,
                libglib2.0-dev (>= 2.14.0),
@@ -26,5 +27,5 @@ Description: Dropbox integration for Caja
  Caja Dropbox is an extension that integrates the Dropbox web service with
  your MATE Desktop.
  .
- Installing this package will download the proprietary dropbox binary
- from dropbox.com.
+ To use this package you need to install the proprietary dropbox package
+ from https://www.dropbox.com/install.

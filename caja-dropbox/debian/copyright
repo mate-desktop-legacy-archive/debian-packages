@@ -34,7 +34,8 @@ License: public-domain
  This module has been placed in the public domain.
 
 Files: debian/*
-Copyright: 2011, Raphaël Hertzog <hertzog@debian.org>
+Copyright: 2012, Stefano Karapetsas <stefano@karapetsas.com>
+           2011, Raphaël Hertzog <hertzog@debian.org>
            2008, Rian Hunter <rian@getdropbox.com>
 License: GPL-3+
 
