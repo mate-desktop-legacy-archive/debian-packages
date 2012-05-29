@@ -1,3 +1,9 @@
+mate-media (1.3.0-1) unstable; urgency=low
+
+  * Test 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Tue, 29 May 2012 12:15:24 -0400
+
 mate-media (1.2.1-5) unstable; urgency=low
 
   * Add Breaks fields in debian/control to avoid conflicts.

@@ -20,7 +20,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
 		--disable-schemas-install \
 		--disable-pulseaudio \
 		--disable-scrollkeeper \
-		--enable-profiles --enable-grecord \
+		--enable-profiles \
 		--enable-gstprops --enable-gstmix 
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
@@ -37,7 +37,7 @@ $(DEB_BUILDDIR_mate-media-pulse)/config.status:
 			--disable-schemas-install \
 			--enable-pulseaudio \
 			--disable-scrollkeeper \
-			--enable-profiles --disable-grecord \
+			--enable-profiles \
 			--disable-gstprops --disable-gstmix 
 			$(DEB_CONFIGURE_USER_FLAGS)
 
