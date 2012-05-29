@@ -1,3 +1,10 @@
+mate-applets (1.2.3-1) unstable; urgency=low
+
+  * New upstream release.
+    - invest-applet now supports network-manager dbus api 0.9
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 26 May 2012 13:40:27 -0400
+
 mate-applets (1.2.2-1) unstable; urgency=low
 
   * New upstream bugfix release.
