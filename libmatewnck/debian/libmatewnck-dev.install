@@ -1,6 +1,4 @@
 usr/include
-usr/lib/girepository-*/
 usr/lib/pkgconfig
 usr/lib/libmatewnck.a
 usr/lib/libmatewnck.so
-usr/share/gir-*/

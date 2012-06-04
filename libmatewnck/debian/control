@@ -74,3 +74,16 @@ Description: MATE Window Navigator Construction Kit (debugging symbols)
  library. It is provided to help debugging problems.
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
+
+Package: gir1.2-mate-wnck
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         ${gir:Depends}
+Description: GObject introspection data for MATE Window Navigator Construction Kit
+ This package contains introspection data for MATE Window Navigator
+ Construction Kit.
+ .
+ It can be used by packages using the GIRepository format to generate dynamic
+ bindings.
