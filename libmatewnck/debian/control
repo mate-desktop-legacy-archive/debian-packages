@@ -14,7 +14,8 @@ Build-Depends: debhelper (>= 8),
                libxt-dev,
                libxres-dev,
                libgirepository1.0-dev,
-               mate-common (>= 1.2.1-1)
+               mate-common (>= 1.2.1-1),
+               gir1.2-gtk-2.0
 Build-Depends-Indep: libglib2.0-doc
 Homepage: http://www.mate-desktop.org/
 
@@ -31,7 +32,6 @@ Package: libmatewnck-dev
 Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
-         ${shlibs:Depends},
          libmatewnck (= ${binary:Version}),
          libglib2.0-dev,
          libpango1.0-dev,
@@ -77,9 +77,7 @@ Description: MATE Window Navigator Construction Kit (debugging symbols)
 
 Package: gir1.2-mate-wnck
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         ${python:Depends},
+Depends: ${misc:Depends},
          ${gir:Depends}
 Description: GObject introspection data for MATE Window Navigator Construction Kit
  This package contains introspection data for MATE Window Navigator
