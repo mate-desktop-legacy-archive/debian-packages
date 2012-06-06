@@ -1,3 +1,10 @@
+mate-panel (1.3.1-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Move build depends from libwnck to libmatewnck.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 05 Jun 2012 14:43:36 +0200
+
 mate-panel (1.3.0-1) unstable; urgency=low
 
   * New upstream development release.
