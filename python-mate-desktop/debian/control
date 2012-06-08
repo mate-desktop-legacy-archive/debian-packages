@@ -16,7 +16,7 @@ Build-Depends: debhelper (>= 8),
                libgtk2.0-dev,
                librsvg2-dev,
                libgtop2-dev,
-               libwnck-dev,
+               libmatewnck-dev,
                libmatepanelapplet-dev,
                mate-media,
                libmateconf-dev,
@@ -31,7 +31,8 @@ Build-Depends: debhelper (>= 8),
                libavahi-common-dev,
                libavahi-glib-dev,
                libselinux1-dev,
-               libgcrypt11-dev
+               libgcrypt11-dev,
+               libatril-dev
 Standards-Version: 3.9.3
 X-Python-Version: >= 2.5
 Homepage: http://www.mate-desktop.org/

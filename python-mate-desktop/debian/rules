@@ -9,27 +9,23 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
   --enable-applet \
+  --enable-atril \
   --enable-cajaburn \
   --enable-matekeyring \
   --enable-matedesktop \
   --enable-mateprint \
   --enable-mateprintui \
   --enable-marco \
+  --enable-matewnck \
   --disable-rsvg \
   --disable-bugbuddy \
   --disable-mediaprofiles \
-  --disable-wnck \
   --disable-gtop \
   --disable-gtksourceview \
-  --disable-totem_plparser \
-  --disable-evolution \
-  --disable-evolution_ecal \
-  --disable-evince \
-  --disable-braseroburn \
-  --disable-braseromedia
+  --disable-totem_plparser
 
-# all applets are: applet mateprint mateprintui gtksourceview wnck totem_plparser gtop cajaburn mediaprofiles
-# rsvg matekeyring matedesktop bugbuddy marco evolution evolution_ecal evince braseromedia braseroburn marco
+# all applets are: applet mateprint mateprintui gtksourceview matewnck totem_plparser gtop cajaburn mediaprofiles
+# rsvg matekeyring matedesktop bugbuddy marco atril marco
 
 DEB_DH_INSTALL_ARGS += --list-missing
 
