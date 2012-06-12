@@ -15,6 +15,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --disable-scrollkeeper \
                 --enable-mixer-applet \
                 --disable-schemas-install
+
 #               --enable-mini-commander
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
