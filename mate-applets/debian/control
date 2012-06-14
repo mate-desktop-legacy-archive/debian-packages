@@ -70,12 +70,17 @@ Depends: ${shlibs:Depends},
          gstreamer0.10-alsa,
          gstreamer0.10-plugins-good,
          python,
-         gvfs
+         gvfs,
+         python-mate,
+         python-gobject,
+         python-gtk2,
+         python-mate-desktop,
+         python-glade2,
+         python-notify,
+         python-dbus,
+         python-gst0.10
 Recommends: mate-system-monitor,
             mate-media,
-            python-mate,
-            python-gobject,
-            python-gtk2,
             cpufrequtils,
             mate-polkit
 Description: Various applets for the MATE panel

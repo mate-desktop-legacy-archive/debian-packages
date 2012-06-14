@@ -14,6 +14,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --disable-static \
                 --disable-scrollkeeper \
                 --enable-mixer-applet \
+                --enable-timer-applet \
                 --disable-schemas-install
 
 #               --enable-mini-commander
@@ -27,6 +28,8 @@ binary-install/mate-applets::
 	rm -rfv debian/*/etc/mateconf/
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyc
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyo
+	rm -rfv debian/*/usr/lib/python*/dist-packages/timerapplet/*.pyc
+	rm -rfv debian/*/usr/lib/python*/dist-packages/timerapplet/*.pyo
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
