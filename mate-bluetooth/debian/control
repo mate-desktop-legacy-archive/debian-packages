@@ -34,7 +34,8 @@ Depends: ${shlibs:Depends},
          udev (>= 154),
          consolekit,
          obex-data-server
-Recommends: gvfs-backends
+Recommends: gvfs-backends,
+            mate-user-share
 Suggests: caja-sendto
 Architecture: any
 Description: MATE Bluetooth tools
