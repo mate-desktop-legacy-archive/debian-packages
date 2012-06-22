@@ -1,4 +1,4 @@
 usr/lib/MateConf/mateconf*
 usr/lib/MateConf/2/*.so
 usr/lib/*.so.*
-usr/lib/*-linux-gnu/gio/modules/*.so
+usr/lib/*-linux-gnu*/gio/modules/*.so
