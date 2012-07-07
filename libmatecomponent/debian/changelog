@@ -1,3 +1,9 @@
+libmatecomponent (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 07 Jul 2012 11:13:43 +0200
+
 libmatecomponent (1.2.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
