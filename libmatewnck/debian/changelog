@@ -1,3 +1,9 @@
+libmatewnck (1.4.0-2) unstable; urgency=low
+
+  * Add gobject-introspection to build-depends to fix build in oneiric.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 09 Jul 2012 02:19:03 +0200
+
 libmatewnck (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
