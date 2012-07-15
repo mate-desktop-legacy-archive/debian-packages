@@ -1,3 +1,15 @@
+mate-notification-daemon (1.4.0-2) unstable; urgency=low
+
+  * Changed libwnck dep to libmatewnck.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 20:28:06 -0400
+
+mate-notification-daemon (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 19:14:46 -0400
+
 mate-notification-daemon (1.3.1-0) unstable; urgency=low
 
   * New upstream development release.

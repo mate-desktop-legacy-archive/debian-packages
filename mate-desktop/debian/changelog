@@ -1,3 +1,9 @@
+mate-desktop (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 15:58:50 -0400
+
 mate-desktop (1.2.0-3) unstable; urgency=low
 
   * Added gnome-desktop3-data to conflicts. 

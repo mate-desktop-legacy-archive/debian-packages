@@ -2,6 +2,7 @@ Source: mate-menus
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 8),
                cdbs (>= 0.4.90~),
                libglib2.0-dev,

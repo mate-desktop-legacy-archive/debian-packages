@@ -1,3 +1,17 @@
+mate-settings-daemon (1.4.0-2) unstable; urgency=low
+
+  * Removed x11proto-xf86misc-dev from build depends.
+    It's obsolete and has been removed from Wheezy.
+    It's also not required to succesfully bulid mate-settings-daemon.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 14 Jul 2012 17:07:17 -0400
+
+mate-settings-daemon (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 14 Jul 2012 15:13:27 -0400
+
 mate-settings-daemon (1.2.0-4) unstable; urgency=low
 
   * Fixed lintian errors.

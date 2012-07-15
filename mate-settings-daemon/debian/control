@@ -31,7 +31,6 @@ Build-Depends: cdbs,
                libpolkit-gobject-1-dev,
                libpulse-dev,
                libcanberra-gtk-dev,
-               x11proto-xf86misc-dev,
                x11proto-kb-dev,
                mate-common
 Standards-Version: 3.9.3
