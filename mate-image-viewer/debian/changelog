@@ -1,3 +1,9 @@
+mate-image-viewer (1.4.0-1) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 15 Jul 2012 13:48:05 -0400
+
 mate-image-viewer (1.2.0-2) unstable; urgency=low
 
   * Rebuild for precise. 

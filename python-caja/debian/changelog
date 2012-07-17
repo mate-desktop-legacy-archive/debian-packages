@@ -1,3 +1,9 @@
+python-caja (1.4.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 15 Jul 2012 21:17:29 -0400
+
 python-caja (1.2.0-1) unstable; urgency=low
 
   * New upstream release.

@@ -1,3 +1,9 @@
+mate-sensors-applet (1.4.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 16 Jul 2012 11:57:03 -0400
+
 mate-sensors-applet (1.2.0-3) unstable; urgency=low
 
   * Add support for NVIDIA sensors (mate-sensors-applet-nvidia package).
