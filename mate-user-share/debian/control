@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: cdbs,
-               debhelper (>= 5),
+               debhelper (>= 8),
                quilt,
                intltool (>= 0.35.0),
                mate-doc-utils,

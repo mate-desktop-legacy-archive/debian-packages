@@ -1,3 +1,12 @@
+mate-user-share (1.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+    * Changed gconf to mateconf in desktop_mate_file_sharing.schemas.
+  * debian/control
+    * depends on debhelper version 8 instead of version 5.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Wed, 18 Jul 2012 13:19:34 -0400
+
 mate-user-share (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
