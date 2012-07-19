@@ -1,3 +1,12 @@
+mate-desktop (1.4.1-1) unstable; urgency=low
+
+  * New upstream release. 
+    * Removed nyan-cat.
+  * debian/rules:
+    * Removed --disable-nyancat configure flag.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Thu, 19 Jul 2012 18:26:53 -0400
+
 mate-desktop (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
