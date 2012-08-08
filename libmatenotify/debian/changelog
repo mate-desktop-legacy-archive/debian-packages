@@ -1,3 +1,12 @@
+libmatenotify (1.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+    * Fixed version of libmatenotify.so.
+  * debian/control
+    * added version >= 8 to debhelper build depends.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Wed, 08 Aug 2012 14:24:43 -0400
+
 libmatenotify (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
