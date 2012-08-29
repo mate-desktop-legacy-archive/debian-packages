@@ -15,7 +15,6 @@ Build-Depends: debhelper (>= 8),
                libmate-dev,
                libmateui-dev,
                libmatecanvas-dev,
-               libmatevfs-dev,
                libmateconf-dev,
                libmatecomponent-dev,
                libmatecomponentui-dev,
@@ -41,5 +40,5 @@ Depends: ${python:Depends},
          python-gobject
 Description: Python bindings for the MATE desktop environment
  This archive contains modules that allow you to write Python programs
- using the MATE libraries: MateVFS, libmatecomponent, libmate, libmateui and 
+ using the MATE libraries: libmatecomponent, libmate, libmateui and 
  libmatecanvas.
