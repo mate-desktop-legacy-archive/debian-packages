@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: cdbs,
-               debhelper,
+               debhelper (>= 8),
                libglib2.0-dev,
                libgtk2.0-dev,
                libdbus-1-dev,
