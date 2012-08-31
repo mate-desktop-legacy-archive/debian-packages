@@ -2,13 +2,11 @@ Source: libmate
 Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Build-Depends: debhelper (>= 8),
-               libmatevfs-dev,
                libmatecorba-dev,
                libpopt-dev,
                intltool,
-               libmateconf-dev,
                libcanberra-dev,
                libglib2.0-dev,
                cdbs,
@@ -22,7 +20,7 @@ Build-Depends: debhelper (>= 8),
                libavahi-common-dev,
                libavahi-glib-dev,
                libselinux1-dev,
-               mate-common (>= 1.2.1-1)
+               mate-common (>= 1.2.1)
 Build-Depends-Indep: libglib2.0-doc
 Homepage: http://www.mate-desktop.org/
 
@@ -32,11 +30,9 @@ Section: libs
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate-common (= ${source:Version}),
-         mate-conf (>= 1.1.0),
          libglib2.0-0,
          libmatecomponent,
-         mate-corba,
-         mate-vfs
+         mate-corba
 Description: MATE library
  This package contains the shared library for the base MATE library
  functions.
@@ -47,12 +43,9 @@ Section: libdevel
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate (= ${binary:Version}),
-         libmateconf-dev,
          libglib2.0-dev,
          libmatecomponent-dev,
          libmatecorba-dev,
-         libmateconf-dev,
-         libmatevfs-dev,
          libcanberra-dev,
          libpopt-dev
 Description: MATE library (development files)

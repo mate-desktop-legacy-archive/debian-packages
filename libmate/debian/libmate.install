@@ -1,7 +1,5 @@
 etc/
 usr/bin/
 usr/lib/*.so.*
-usr/lib/matecomponent/monikers/*.so
-usr/lib/matecomponent/servers/
 usr/share/man/
 usr/share/mate-background-properties/

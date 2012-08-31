@@ -1,3 +1,10 @@
+libmate (1.5.0-1) UNRELEASED; urgency=low
+
+  * New upstream development release.
+  * Dropped mate-vfs and mate-conf deps.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 31 Aug 2012 22:44:32 +0200
+
 libmate (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
