@@ -7,7 +7,6 @@ usr/lib/mate-keyring/mate-keyring-prompt
 usr/lib/mate-keyring/standalone/*.so
 usr/lib/pkcs11/*.so
 usr/share/dbus-1/services/
-usr/share/MateConf/
 usr/share/mategcr/
 usr/share/glib-2.0/
 usr/share/locale/

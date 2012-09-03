@@ -1,7 +1,8 @@
 Source: mate-doc-utils
 Section: devel
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>, Steve Zesch <stevezesch2@gmail.com>
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: cdbs,
                debhelper (>= 8)
 Build-Depends-Indep: libxml2-dev,
@@ -48,3 +49,5 @@ Description: collection of documentation utilities for the MATE project (GNOME f
  project.
  .
  This package contains files that conflict with gnome-doc-utils.
+ .
+ You can replace this package with gnome-doc-utils without issues.

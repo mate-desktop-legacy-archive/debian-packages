@@ -12,14 +12,5 @@ DEB_CONFIGURE_EXTRA_FLAGS += --disable-static \
                              --with-root-certs=/etc/ssl/certs \
                              --libexecdir=/usr/lib/mate-keyring \
 
-#DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-# mate-keyring uses gsettings, not mate-conf!
-#binary-install/mate-keyring::
-#	mkdir -p debian/mate-keyring/usr/share/mateconf/schemas
-#	mateconf-merge-schema "debian/mate-keyring/usr/share/mateconf/schemas/mate-keyring.schemas" --domain mate-keyring debian/tmp/etc/mateconf/schemas/*.schemas
-#	rm -rf debian/tmp/etc/mateconf/schemas/
-#	rm -rf debian/tmp/etc/mateconf/
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
