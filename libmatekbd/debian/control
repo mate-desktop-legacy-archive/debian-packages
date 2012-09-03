@@ -7,7 +7,6 @@ Build-Depends: debhelper (>= 8),
                autotools-dev,
                cdbs,
                libglib2.0-dev,
-               libmateconf-dev,
                libmatecorba-dev,
                libgtk2.0-dev,
                libxklavier-dev,
@@ -21,8 +20,7 @@ Section: mate
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         iso-codes,
-         mate-conf (>= 1.1.0)
+         iso-codes
 Description: MATE library to manage keyboard configuration
  libmatekbd offers an API to manage the keyboard in MATE applications.
 
@@ -33,7 +31,6 @@ Depends: ${misc:Depends},
          libmatekbd (= ${binary:Version}),
          libglib2.0-dev,
          libgtk2.0-dev,
-         libmateconf-dev,
          libxklavier-dev,
          libx11-dev
 Description: MATE library to manage keyboard configuration (development files)
