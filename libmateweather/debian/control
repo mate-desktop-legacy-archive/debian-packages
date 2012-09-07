@@ -9,8 +9,6 @@ Build-Depends: debhelper (>= 8),
                libxml2-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libmateconf-dev,
-               libmatecorba-dev,
                intltool,
                pkg-config,
                libxml2-utils,
@@ -33,7 +31,6 @@ Depends: ${shlibs:Depends},
          libglib2.0-0,
          libgtk2.0-0,
          libsoup2.4-1,
-         mate-conf (>= 1.1.0),
          libmateweather-common (= ${source:Version})
 Description: MateWeather shared library
  libmateweather is a library to access weather information from online
@@ -59,8 +56,7 @@ Depends: ${shlibs:Depends},
          libxml2-dev,
          libglib2.0-dev,
          libgtk2.0-dev,
-         libsoup2.4-dev,
-         libmateconf-dev
+         libsoup2.4-dev
 Description: MateWeather shared library (development files)
  libmateweather is a library to access weather information from online
  services for numerous locations.

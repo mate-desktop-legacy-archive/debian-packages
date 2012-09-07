@@ -15,13 +15,6 @@ DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/caja \
                              --enable-unique \
                              --enable-introspection
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-binary-install/caja::
-	mkdir -p debian/caja/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/caja/usr/share/mateconf/schemas/mate-file-manager.schemas" --domain mate-file-manager debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -rf debian/tmp/etc/mateconf/schemas/
-
 binary-post-install/caja::
 	dh_installmime -p$(cdbs_curpkg)
 
