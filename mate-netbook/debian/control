@@ -1,0 +1,37 @@
+Source: mate-netbook
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: cdbs,
+               debhelper (>= 8),
+               libgtk2.0-dev,
+               libmatepanelapplet-dev,
+               libmateconf-dev,
+               libmatewnck-dev,
+               libmateui-dev,
+               libfakekey-dev,
+               libunique-dev,
+               mate-doc-utils,
+               mate-doc-utils-gnome | gnome-doc-utils,
+               mate-common
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
+
+Package: mate-netbook
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: MATE utilities for netbooks
+ This package contains an applet and a daemon to maximize windows and
+ move their titles on panel.
+
+Package: mate-netbook-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-netbook (= ${binary:Version})
+Description: MATE utilities for netbooks (debugging symbols)
+ This package contains debugging symbols for mate-netbook. The
+ debugging symbols are installed  in /usr/lib/debug and will
+ automatically be used by gdb.

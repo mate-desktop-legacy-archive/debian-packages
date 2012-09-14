@@ -1,0 +1,6 @@
+etc/xdg/autostart/
+usr/bin/mate-maximus
+usr/lib/mate-netbook/
+usr/share/dbus-1/services/
+usr/share/locale
+usr/share/mate-panel
