@@ -1,3 +1,9 @@
+mate-document-viewer (1.4.0-2) unstable; urgency=low
+
+  * Rebuild for quantal.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Oct 2012 13:37:06 +0200
+
 mate-document-viewer (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 
