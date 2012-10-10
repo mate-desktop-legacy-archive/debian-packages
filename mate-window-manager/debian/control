@@ -27,8 +27,6 @@ Build-Depends: cdbs,
                libice-dev,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
-               libmateconf-dev,
-               libmatecorba-dev,
                mate-dialogs
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
@@ -38,7 +36,6 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-dialogs,
-         mate-conf (>= 1.1.0),
          marco-common (= ${source:Version}),
          libmarco (= ${binary:Version})
 Breaks: mate-window-manager (<= 1.0.0-2)
