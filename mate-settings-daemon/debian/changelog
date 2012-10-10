@@ -1,3 +1,9 @@
+mate-settings-daemon (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 23:16:50 +0200
+
 mate-settings-daemon (1.4.0-2) unstable; urgency=low
 
   * Removed x11proto-xf86misc-dev from build depends.

@@ -23,8 +23,6 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 	--enable-gstreamer \
 	--enable-polkit
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
 configure/mate-settings-daemon-pulse:: $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status
 $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status:
 	cp -a `find . -maxdepth 1 -mindepth 1 -not -name debian` $(DEB_SRCDIR_mate-settings-daemon-pulse)/$*
@@ -44,18 +42,10 @@ build/mate-settings-daemon-pulse::
 	make -C $(DEB_BUILDDIR_mate-settings-daemon-pulse)
 
 install/mate-settings-daemon-pulse::
-	make -C $(DEB_BUILDDIR_mate-settings-daemon-pulse) install DESTDIR=$(DEB_DESTDIR_mate-settings-daemon-pulse) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-	mkdir -p debian/mate-settings-daemon-pulse/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-settings-daemon-pulse/usr/share/mateconf/schemas/mate-settings-daemon.schemas" --domain mate-settings-daemon debian/mate-settings-daemon-pulse/etc/mateconf/schemas/*.schemas
-	rm -rf debian/mate-settings-daemon-pulse/etc/mateconf/schemas
+	make -C $(DEB_BUILDDIR_mate-settings-daemon-pulse) install DESTDIR=$(DEB_DESTDIR_mate-settings-daemon-pulse)
 	rm -rf debian/mate-settings-daemon-pulse/usr/lib/mate-settings-daemon-*/*.la
 	# delete conflicts file with mate-settings-daemon-common
 	rm -rf debian/mate-settings-daemon-pulse/usr/share/locale/
-
-binary-install/mate-settings-daemon-gstreamer::
-	mkdir -p debian/mate-settings-daemon-gstreamer/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-settings-daemon-gstreamer/usr/share/mateconf/schemas/mate-settings-daemon.schemas" --domain mate-settings-daemon debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -rf debian/tmp/etc/mateconf/schemas
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
