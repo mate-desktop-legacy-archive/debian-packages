@@ -1,8 +1,8 @@
-libmatewnck (1.5.0-1) UNRELEASED; urgency=low
+libmatewnck (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 31 Aug 2012 21:46:23 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 11:47:41 +0200
 
 libmatewnck (1.4.0-2) unstable; urgency=low
 
