@@ -10,7 +10,7 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --localstatedir=/var \
 		--libexecdir=/usr/lib/mate-window-manager --disable-static \
-		--disable-startup-notification --disable-scrollkeeper
+		--enable-startup-notification=yes --disable-scrollkeeper
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
