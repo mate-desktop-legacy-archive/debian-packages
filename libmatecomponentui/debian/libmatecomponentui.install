@@ -1,8 +1,0 @@
-usr/bin/
-usr/lib/*.so.*
-usr/lib/libglade/2.0/*.so
-usr/lib/matecomponent/
-usr/lib/matecomponent-2.0/
-usr/share/applications
-usr/share/locale
-usr/share/mate-2.0
