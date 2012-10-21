@@ -11,11 +11,8 @@ Build-Depends: cdbs,
                libdbus-1-dev,
                libdbus-glib-1-dev,
                libmatewnck-dev,
-               libgconf2-dev,
                libcanberra-gtk-dev,
                libmatenotify-dev,
-               libmateconf-dev,
-               libmatecorba-dev,
                intltool,
                mate-common
 Standards-Version: 3.9.3

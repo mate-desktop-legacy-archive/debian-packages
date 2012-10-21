@@ -14,7 +14,6 @@ Build-Depends: cdbs,
                libgtk2.0-dev,
                libglib2.0-dev,
                libmatedesktop-dev,
-               libmateconf-dev,
                mate-icon-theme,
                shared-mime-info,
                zlib1g-dev,
@@ -39,7 +38,6 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          eom-common (= ${source:Version}),
-         mate-conf (>= 1.1.0),
          mate-icon-theme,
          shared-mime-info
 Recommends: librsvg2-common
