@@ -10,7 +10,7 @@ Build-Depends: cdbs,
                libdbus-glib-1-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libmatedesktop-dev,
+               libmatedesktop-dev (>= 1.5.0),
                libmatenotify-dev,
                libxt-dev,
                libxi-dev,
@@ -19,12 +19,12 @@ Build-Depends: cdbs,
                libfontconfig1-dev,
                libxext-dev,
                libx11-dev,
-               libmatekbd-dev,
+               libmatekbd-dev (>= 1.5.0),
                libxklavier-dev,
                libgstreamer0.10-dev,
                libgstreamer-plugins-base0.10-dev,
                libstartup-notification0-dev,
-               libmatepolkit-dev,
+               libmatepolkit-dev (>= 1.5.0),
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
                libpulse-dev,
@@ -37,7 +37,7 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-settings-daemon
 Architecture: all
 Depends: ${misc:Depends},
-         mate-settings-daemon-gstreamer | mate-settings-daemon-pulse
+         mate-settings-daemon-gstreamer (>= ${source:Version}) | mate-settings-daemon-pulse (>= ${source:Version})
 Description: daemon handling the MATE session settings (metapackage)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
