@@ -1,3 +1,10 @@
+mate-control-center (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Add libdconf-dev in build depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 27 Oct 2012 17:06:10 +0200
+
 mate-control-center (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
