@@ -1,8 +1,10 @@
-mate-settings-daemon (1.5.1-2) UNRELEASED; urgency=low
+mate-settings-daemon (1.5.2-1) unstable; urgency=low
 
+  * New upstream development release.
   * debian/control: add missing dependency on x11-xserver-utils.
+  * debian/control: fix dep min versions for MATE 1.5.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 20 Oct 2012 21:33:49 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 23 Oct 2012 13:37:29 +0200
 
 mate-settings-daemon (1.5.1-1) unstable; urgency=low
 
