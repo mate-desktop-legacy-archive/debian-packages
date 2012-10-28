@@ -18,7 +18,6 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += \
 	--libexecdir=/usr/bin \
 	--disable-static \
-	--disable-schemas-install \
 	--disable-pulse \
 	--enable-gstreamer \
 	--enable-polkit
@@ -32,7 +31,6 @@ $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status:
 			$(cdbs_configure_flags) \
 			--libexecdir=/usr/bin \
 			--disable-static \
-			--disable-schemas-install \
 			--enable-pulse \
 			--disable-gstreamer \
 			--enable-polkit \
