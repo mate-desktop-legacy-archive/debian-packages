@@ -1,3 +1,9 @@
+mate-bluetooth (1.4.0-2) unstable; urgency=low
+
+  * Rebuild with no changes.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 04 Nov 2012 23:08:23 +0100
+
 mate-bluetooth (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 
