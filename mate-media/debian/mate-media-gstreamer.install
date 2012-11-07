@@ -1,13 +1,7 @@
 usr/bin/
-usr/include/
-usr/lib/glade3/modules/lib*.so
-usr/lib/*.so
-usr/lib/*.so.*
-usr/lib/pkgconfig/
 usr/share/applications/
-usr/share/glade3/
+usr/share/glib-2.0/
 usr/share/icons/
-usr/share/mate-gstreamer-properties/
 usr/share/mate-media/
 usr/share/mate/help/
 usr/share/omf/

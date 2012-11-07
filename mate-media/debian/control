@@ -11,7 +11,6 @@ Build-Depends: cdbs,
                libglib2.0-dev,
                libgtk2.0-dev,
                libgladeui-1-dev,
-               libmateconf-dev,
                libpulse-dev,
                libcanberra-gtk-dev,
                libxml2-dev,
@@ -46,8 +45,11 @@ Depends: ${shlibs:Depends},
          gstreamer0.10-alsa | gstreamer0.10-audiosink,
          gstreamer0.10-plugins-base,
          gstreamer0.10-plugins-good,
-         x11-utils
-Recommends: alsa-utils
+         x11-utils,
+         marco (>= 1.5.0),
+         mate-desktop (>= 1.5.0)
+Recommends: alsa-utils,
+            sound-theme-freedesktop
 Replaces: mate-media (<< 1.2.1-4)
 Conflicts: mate-media-pulse
 Breaks: mate-media (<< 1.2.1-4)
@@ -65,7 +67,10 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-media-common (= ${source:Version}),
          x11-utils,
-         pulseaudio
+         pulseaudio,
+         marco (>= 1.5.0),
+         mate-desktop (>= 1.5.0)
+Recommends: sound-theme-freedesktop
 Replaces: mate-media (<< 1.2.1-4)
 Conflicts: mate-media-gstreamer
 Breaks: mate-media (<< 1.2.1-4)

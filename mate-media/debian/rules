@@ -17,13 +17,11 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
 		--localstatedir=/var --disable-static \
-		--disable-schemas-install \
 		--disable-pulseaudio \
 		--disable-scrollkeeper \
-		--enable-profiles \
-		--enable-gstprops --enable-gstmix 
+		--enable-gstmix 
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+#DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 configure/mate-media-pulse:: $(DEB_BUILDDIR_mate-media-pulse)/config.status
 $(DEB_BUILDDIR_mate-media-pulse)/config.status:
@@ -34,30 +32,19 @@ $(DEB_BUILDDIR_mate-media-pulse)/config.status:
 			$(cdbs_configure_flags) \
 			--libexecdir=/usr/lib/mate-media \
 			--localstatedir=/var --disable-static \
-			--disable-schemas-install \
 			--enable-pulseaudio \
 			--disable-scrollkeeper \
-			--enable-profiles \
-			--disable-gstprops --disable-gstmix 
+			--disable-gstmix 
 			$(DEB_CONFIGURE_USER_FLAGS)
 
 build/mate-media-pulse::
 	make -C $(DEB_BUILDDIR_mate-media-pulse)
 
 install/mate-media-pulse::
-	make -C $(DEB_BUILDDIR_mate-media-pulse) install DESTDIR=$(DEB_DESTDIR_mate-media-pulse) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-	mkdir -p debian/mate-media-pulse/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-media-pulse/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/mate-media-pulse/etc/mateconf/schemas/*.schemas
-	rm -rf debian/mate-media-pulse/etc/mateconf/schemas
-	rm -rf debian/mate-media-pulse/usr/lib/glade3/modules/*.la
+	make -C $(DEB_BUILDDIR_mate-media-pulse) install DESTDIR=$(DEB_DESTDIR_mate-media-pulse)
 	rm -rf debian/mate-media-pulse/usr/lib/*.la
 	# delete conflicts file with mate-media-common
 	rm -rf debian/mate-media-pulse/usr/share/locale/
-
-binary-install/mate-media-gstreamer::
-	mkdir -p debian/mate-media-gstreamer/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-media-gstreamer/usr/share/mateconf/schemas/mate-media.schemas" --domain mate-media debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -rf debian/tmp/etc/mateconf/schemas/
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
