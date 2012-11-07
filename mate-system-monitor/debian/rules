@@ -12,15 +12,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
     --libexecdir=/usr/lib/${pkgname} \
     --localstatedir=/var \
     --disable-static \
-    --disable-scrollkeeper \
-    --disable-schemas-install
-
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-binary-install/mate-system-monitor::
-	mkdir -p debian/mate-system-monitor/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-system-monitor/usr/share/mateconf/schemas/mate-system-monitor.schemas" --domain mate-system-monitor debian/mate-system-monitor/etc/mateconf/schemas/*.schemas
-	rm debian/mate-system-monitor/etc/mateconf/schemas/*.schemas
+    --disable-scrollkeeper
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

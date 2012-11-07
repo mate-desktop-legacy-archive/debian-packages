@@ -1,3 +1,10 @@
+mate-system-monitor (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Removed mateconf dependency.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Nov 2012 16:06:59 +0100
+
 mate-system-monitor (1.4.0-2) unstable; urgency=low
 
   * debian/control
