@@ -13,12 +13,5 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 			--disable-scrollkeeper \
 			--enable-applets
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-binary-install/mate-power-manager::
-	mkdir -p debian/mate-power-manager/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-power-manager/usr/share/mateconf/schemas/mate-power-manager.schemas" --domain mate-power-manager debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -rf debian/tmp/etc/mateconf/schemas/
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

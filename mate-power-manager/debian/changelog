@@ -1,3 +1,10 @@
+mate-power-manager (1.5.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Dropped deprecated mate packages in depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Nov 2012 00:47:10 +0100
+
 mate-power-manager (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 
