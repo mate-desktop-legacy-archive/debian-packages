@@ -10,11 +10,6 @@ Build-Depends: cdbs,
                libxml-parser-perl,
                libgtop2-dev,
                libgtk2.0-dev,
-               libmate-dev,
-               libmateconf-dev,
-               libmatecomponent-dev,
-               libmatecomponentui-dev,
-               libmatecanvas-dev,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
                wireless-tools,
@@ -30,3 +25,14 @@ Description: Traffic monitor applet for MATE
  Netspeed is an applet for the MATE panel that shows how much traffic
  occurs on a network device (ethernet card, wireless LAN card, or
  dial-up).
+
+Package: mate-netspeed-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-netspeed (= ${binary:Version})
+Description: Traffic monitor applet for MATE (debugging symbols)
+ This package contains debugging symbols for mate-netspeed.
+ It is provided to help debugging problems. The debugging symbols are
+ installed in /usr/lib/debug and will automatically be used by gdb.

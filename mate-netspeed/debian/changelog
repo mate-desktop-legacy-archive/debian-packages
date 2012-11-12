@@ -1,3 +1,11 @@
+mate-netspeed (1.5.0-1) UNRELEASED; urgency=low
+
+  * New upstream development release.
+  * Remove deprecated depends.
+  * Add debug package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Nov 2012 19:39:58 +0100
+
 mate-netspeed (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 
