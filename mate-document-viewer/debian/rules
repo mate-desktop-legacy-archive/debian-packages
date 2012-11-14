@@ -18,12 +18,5 @@ DEB_CONFIGURE_EXTRA_FLAGS := --disable-scrollkeeper \
 			--disable-introspection \
 			--disable-static
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-binary-install/atril::
-	mkdir -p debian/atril/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/atril/usr/share/mateconf/schemas/atril.schemas" --domain atril debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -rf debian/tmp/etc/mateconf/schemas/
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
