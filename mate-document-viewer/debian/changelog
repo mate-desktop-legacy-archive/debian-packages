@@ -1,4 +1,4 @@
-mate-document-viewer (1.5.0-1) UNRELEASED; urgency=low
+mate-document-viewer (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
   * Add libgxps-dev in build depends.
@@ -6,7 +6,7 @@ mate-document-viewer (1.5.0-1) UNRELEASED; urgency=low
   * Depend to debhelper 9.
   * debian/rules: remove mateconf stuff.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 02 Sep 2012 23:14:52 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Nov 2012 19:41:03 +0100
 
 mate-document-viewer (1.4.0-1) unstable; urgency=low
 
