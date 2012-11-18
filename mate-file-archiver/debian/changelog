@@ -1,3 +1,15 @@
+mate-file-archiver (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+    * Fixed a bug that caused the application to crash when
+      clicking Cancel in Add Files.
+    * Numerous code cleanups.
+    * Fixed an error when a filename contains "%".
+    * Fixed an error that prevented encrypted rar files from
+      being opened.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 18 Nov 2012 16:21:18 -0500
+
 mate-file-archiver (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
