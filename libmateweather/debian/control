@@ -17,6 +17,7 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-doc,
                libgtk2.0-doc,
                libsoup2.4-dev,
+               libsoupgnome2.4-dev,
                mate-common,
                gtk-doc-tools,
                python-all-dev (>= 2.6.6-3~),
@@ -33,6 +34,7 @@ Depends: ${shlibs:Depends},
          libglib2.0-0,
          libgtk2.0-0,
          libsoup2.4-1,
+         libsoupgnome2.4-1,
          mate-conf (>= 1.1.0),
          libmateweather-common (= ${source:Version})
 Description: MateWeather shared library
@@ -60,6 +62,7 @@ Depends: ${shlibs:Depends},
          libglib2.0-dev,
          libgtk2.0-dev,
          libsoup2.4-dev,
+         libsoupgnome2.4-dev,
          libmateconf-dev
 Description: MateWeather shared library (development files)
  libmateweather is a library to access weather information from online

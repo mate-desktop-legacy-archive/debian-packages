@@ -1,3 +1,9 @@
+libmateweather (1.4.0-2) unstable; urgency=low
+
+  * Added missing libsoupgnome dependency. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Wed, 21 Nov 2012 15:07:58 -0500
+
 libmateweather (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
