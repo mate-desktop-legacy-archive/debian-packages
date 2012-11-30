@@ -9,11 +9,5 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS := --with-plugins=pidgin,removable-devices,upnp,emailclient
 
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
-binary-install/caja-sendto::
-	mkdir -p debian/caja-sendto/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/caja-sendto/usr/share/mateconf/schemas/caja-sendto.schemas" --domain caja-sendto debian/caja-sendto/etc/mateconf/schemas/*.schemas
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
