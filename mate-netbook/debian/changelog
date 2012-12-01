@@ -1,3 +1,10 @@
+mate-netbook (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Remove deprecated depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 01 Dec 2012 01:24:48 +0100
+
 mate-netbook (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
