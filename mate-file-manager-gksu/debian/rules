@@ -13,11 +13,5 @@ install/caja-gksu::
 	rm -f debian/caja-gksu/$(shell pkg-config --variable=extensiondir libcaja-extension)/libcaja-gksu.la
 	rm -f debian/caja-gksu/$(shell pkg-config --variable=extensiondir libcaja-extension)/libcaja-gksu.a
 
-binary-install/caja-gksu::
-	mkdir -p debian/caja-gksu/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/caja-gksu/usr/share/mateconf/schemas/caja-gksu.schemas" \
-		--domain caja-gksu debian/caja-gksu/etc/mateconf/schemas/*.schemas
-	rm -rf debian/caja-gksu/etc/mateconf/schemas/
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
