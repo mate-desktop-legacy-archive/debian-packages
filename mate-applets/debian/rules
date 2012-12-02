@@ -14,18 +14,10 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --disable-static \
                 --disable-scrollkeeper \
                 --enable-mixer-applet \
-                --enable-timer-applet \
+                --disable-timer-applet \
                 --disable-schemas-install
 
-#               --enable-mini-commander
-
-DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
-
 binary-install/mate-applets::
-	mkdir -p debian/mate-applets/usr/share/mateconf/schemas
-	mateconf-merge-schema "debian/mate-applets/usr/share/mateconf/schemas/mate-applets.schemas" --domain mate-applets debian/tmp/etc/mateconf/schemas/*.schemas
-	rm -rfv debian/*/etc/mateconf/schemas/*.schemas
-	rm -rfv debian/*/etc/mateconf/
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyc
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyo
 	rm -rfv debian/*/usr/lib/python*/dist-packages/timerapplet/*.pyc
