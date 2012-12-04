@@ -1,3 +1,9 @@
+mate-file-manager (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 04 Dec 2012 00:20:22 +0100
+
 mate-file-manager (1.5.1-1) unstable; urgency=low
 
   * New upstream development release.
