@@ -19,7 +19,8 @@ DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
 		--localstatedir=/var --disable-static \
 		--disable-pulseaudio \
 		--disable-scrollkeeper \
-		--enable-gstmix 
+		--enable-gstmix \
+		--enable-gst-mixer-applet
 
 #DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
@@ -34,7 +35,8 @@ $(DEB_BUILDDIR_mate-media-pulse)/config.status:
 			--localstatedir=/var --disable-static \
 			--enable-pulseaudio \
 			--disable-scrollkeeper \
-			--disable-gstmix 
+			--disable-gstmix \
+			--disable-gst-mixer-applet \
 			$(DEB_CONFIGURE_USER_FLAGS)
 
 build/mate-media-pulse::
