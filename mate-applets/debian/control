@@ -91,8 +91,6 @@ Description: Various applets for the MATE panel
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
  .
- Mixer: volume control.
- .
  Modem Monitor: monitors the modem.
  .
  Invest: downloads current stock quotes from the Internet and displays
@@ -129,8 +127,6 @@ Description: Various applets for the MATE panel (common files)
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Mixer: volume control.
  .
  Modem Monitor: monitors the modem.
  .

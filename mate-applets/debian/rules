@@ -13,7 +13,6 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --localstatedir=/var \
                 --disable-static \
                 --disable-scrollkeeper \
-                --enable-mixer-applet \
                 --disable-timer-applet \
                 --disable-schemas-install
 
