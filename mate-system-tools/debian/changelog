@@ -1,3 +1,9 @@
+mate-system-tools (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 12 Dec 2012 23:07:01 +0100
+
 mate-system-tools (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
