@@ -46,7 +46,7 @@ Depends: ${shlibs:Depends},
          libmatevfs (= ${binary:Version}),
          mate-vfs-common (= ${source:Version}),
          x11-utils,
-         fuse-utils,
+         fuse | fuse-utils,
          mate-mime-data,
          mate-conf (>= 1.0.9),
          gvfs

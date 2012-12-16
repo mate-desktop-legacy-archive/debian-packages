@@ -1,3 +1,10 @@
+mate-vfs (1.4.0-2) unstable; urgency=low
+
+  * Add fuse as optional replacement of fuse-utils dependency, as fuse-utils
+    is removed from unstable.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 16 Dec 2012 23:54:14 +0100
+
 mate-vfs (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
