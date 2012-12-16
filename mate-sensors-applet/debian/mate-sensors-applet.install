@@ -1,4 +1,3 @@
-usr/lib/matecomponent
 usr/lib/mate-sensors-applet/mate-sensors-applet
 usr/lib/mate-sensors-applet/plugins/libacpi.so
 usr/lib/mate-sensors-applet/plugins/libeee.so
