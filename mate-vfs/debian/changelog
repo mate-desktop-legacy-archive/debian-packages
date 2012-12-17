@@ -1,3 +1,9 @@
+mate-vfs (1.4.0-3) UNRELEASED; urgency=low
+
+  * Remove unused libgdu-dev build dependency.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 17 Dec 2012 07:38:31 +0100
+
 mate-vfs (1.4.0-2) unstable; urgency=low
 
   * Add fuse as optional replacement of fuse-utils dependency, as fuse-utils
