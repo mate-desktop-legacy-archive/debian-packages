@@ -21,10 +21,10 @@ ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
     endif
 endif
 
-binary-install/mate-control-center::
-	rm -f debian/tmp/usr/share/applications/mimeinfo.cache
-	rm -f debian/tmp/usr/lib/libmate-window-settings.la
-	rm -f debian/tmp/usr/lib/window-manager-settings/libmarco.la
+binary-post-install/mate-control-center::
+	rm -f debian/*/usr/share/applications/mimeinfo.cache
+	rm -f debian/*/usr/lib/*.la
+	rm -f debian/*/usr/lib/*/*.la
 	
 
 get-orig-source:
