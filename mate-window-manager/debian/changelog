@@ -1,3 +1,11 @@
+mate-window-manager (1.5.3-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Fixed a bug that caused the roll up titlebar action to
+    always occur.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 13 Jan 2013 16:51:24 -0500
+
 mate-window-manager (1.5.2-1) unstable; urgency=low
 
   * New upstream development release.

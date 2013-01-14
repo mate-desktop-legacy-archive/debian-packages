@@ -1,3 +1,10 @@
+mate-control-center (1.5.3-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Fixed a bug in the ordering of titlebar actions.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 13 Jan 2013 16:41:55 -0500
+
 mate-control-center (1.5.2-1) unstable; urgency=low
 
   * New upstream development release.
