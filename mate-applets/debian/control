@@ -143,3 +143,15 @@ Description: Various applets for the MATE panel (common files)
  Network (IWIN).
  .
  This package contains the architecture independent files.
+
+Package: mate-applets-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-applets (= ${binary:Version})
+Description: Various applets for the MATE panel (debugging symbols)
+ This package contains debugging symbols for mate-applets package.
+ It is provided to help debugging problem in the applets. The debugging
+ symbols are installed in /usr/lib/debug and will automatically be used
+ by gdb.

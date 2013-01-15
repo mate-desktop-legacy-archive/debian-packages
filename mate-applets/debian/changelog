@@ -1,3 +1,9 @@
+mate-applets (1.5.0-2) unstable; urgency=low
+
+  * Add mate-applets-dbg package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 14 Jan 2013 16:41:39 +0100
+
 mate-applets (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
