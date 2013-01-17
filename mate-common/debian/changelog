@@ -1,6 +1,7 @@
 mate-common (1.5.1-2) experimental; urgency=low
 
   * Drop cdbs and use debhelper and dh-autoreconf.
+  * First upload to Debian (Closes: 658783).
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Jan 2013 20:24:28 +0100
 
@@ -43,7 +44,7 @@ mate-common (1.2.1-2) unstable; urgency=low
 
 mate-common (1.2.1-1) unstable; urgency=low
 
-  * New upstream release (Closes: #658783).
+  * New upstream release.
   * Add manpages for mate-autogen and mate-doc-common scripts.
   * debian/copyright: updated Format (thanks to Dominique Lasserre).
 
