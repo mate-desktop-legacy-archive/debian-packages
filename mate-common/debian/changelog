@@ -1,7 +1,13 @@
+mate-common (1.5.1-2) experimental; urgency=low
+
+  * Drop cdbs and use debhelper and dh-autoreconf.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Jan 2013 20:24:28 +0100
+
 mate-common (1.5.1-1) unstable; urgency=low
 
   * New upstream development release.
-    * Added support for automate 1.13.
+    * Added support for automake 1.13.
 
  -- Steve Zesch <stevezesch2@gmail.com>  Mon, 14 Jan 2013 18:25:46 -0500
 

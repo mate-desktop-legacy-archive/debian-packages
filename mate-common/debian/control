@@ -2,8 +2,8 @@ Source: mate-common
 Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 8),
+               dh-autoreconf,
                pkg-config,
                autoconf,
                automake,
