@@ -16,8 +16,8 @@ Build-Depends: cdbs,
                docbook-to-man,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
-               libmateconf-dev,
                libdbus-glib-1-dev,
+               libdconf-dev,
                mate-common
 Homepage: http://www.mate-desktop.org
 
@@ -25,7 +25,6 @@ Package: mate-terminal
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-conf (>= 1.1.0),
          mate-terminal-common (= ${source:Version})
 Provides: x-terminal-emulator
 Description: MATE terminal emulator application
@@ -54,3 +53,15 @@ Description: MATE terminal emulator application (common files)
  window (tabs) and profiles support.
  .
  This package contains the architecture independent files.
+
+Package: mate-terminal-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-terminal (= ${binary:Version})
+Description: MATE terminal emulator application (debugging symbols)
+ This package contains debugging symbols for mate-terminal. It is
+ provided to help debugging problem in the terminal emulator. The
+ debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
