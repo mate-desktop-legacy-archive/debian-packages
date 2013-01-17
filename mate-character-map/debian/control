@@ -10,6 +10,7 @@ Build-Depends: cdbs,
                libxml2-utils,
                bsdmainutils,
                libgirepository1.0-dev,
+               gir1.2-gtk-2.0,
                python-dev,
                python-gtk2-dev,
                mate-doc-utils,
@@ -92,7 +93,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         mate-netspeed (= ${binary:Version})
+         mate-character-map (= ${binary:Version})
 Description: Unicode character picker and font browser (debugging symbols)
  This package contains debugging symbols for mate-character-map.
  It is provided to help debugging problems. The debugging symbols are
