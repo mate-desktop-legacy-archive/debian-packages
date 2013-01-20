@@ -1,3 +1,13 @@
+mate-notification-daemon (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+    * Users can now select which monitor they want the
+      notification to display on.
+  * debian/control
+    * Added debugging symbols.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 20 Jan 2013 14:22:42 -0500
+
 mate-notification-daemon (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
