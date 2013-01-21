@@ -1,3 +1,12 @@
+mate-applets (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+    * Fixed weather units.
+    * Added mateconf-gsettings-data-convert-file
+    * Added gio-unix-2.0 to gio requirements
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 20 Jan 2013 15:56:05 -0500
+
 mate-applets (1.5.0-2) unstable; urgency=low
 
   * Add mate-applets-dbg package.

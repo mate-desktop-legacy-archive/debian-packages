@@ -1,3 +1,10 @@
+libmateweather (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+    * Fixed unit defaults in schema making them translatable.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 20 Jan 2013 15:48:22 -0500
+
 libmateweather (1.5.0-2) unstable; urgency=low
 
   * Added missing libsoupgnome dep.

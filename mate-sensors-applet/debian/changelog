@@ -1,3 +1,13 @@
+mate-sensors-applet (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+    * Fix load of save enabled sensors in GSettings.
+    * Fix string compare in hddtemp-plugin.
+    * Added missing includes.
+    * Improved internationalization of translators credits.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 20 Jan 2013 16:03:18 -0500
+
 mate-sensors-applet (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.

@@ -1,3 +1,12 @@
+mate-panel (1.5.4-1) unstable; urgency=low
+
+  * New upstream development release. 
+    * Fixed window-list grouping bug.
+    * Fixed weather units.
+    * Added mateconf-gsettings-data-convert file.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 20 Jan 2013 15:53:18 -0500
+
 mate-panel (1.5.3-1) unstable; urgency=low
 
   * New upstream development release.
