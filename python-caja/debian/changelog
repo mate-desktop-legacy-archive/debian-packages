@@ -1,8 +1,13 @@
-python-caja (1.4.0-2) unstable; urgency=low
+python-caja (1.5.0-1) unstable; urgency=low
 
+  [ Stefano Karapetsas ]
+  * New upstream development release.
+  * Add python-caja-dbg package.
+
+  [ Scott Balneaves ]
   * Removed python-mate as a dependency.
 
- -- Scott Balneaves <sbalneav@ltsp.org>  Sun, 18 Nov 2012 09:27:31 -0600
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Jan 2013 00:31:18 +0100
 
 python-caja (1.4.0-1) unstable; urgency=low
 

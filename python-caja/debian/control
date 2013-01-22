@@ -7,20 +7,28 @@ Build-Depends: debhelper (>= 8),
                cdbs,
                mate-common,
                gtk-doc-tools,
-               python,
+               libcaja-extension-dev,
                python-dev,
                python-gtk2-dev (>= 2.8.0),
-               python-gobject-dev (>= 2.16.0),
-               libcaja-extension-dev
+               python-gobject-2-dev (>= 2.28.2)
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: python-caja
 Architecture: any
 Depends: ${misc:Depends},
-         ${python:Depends},
-         python-gtk2 (>= 2.8.0),
-         python-mate
+         ${python:Depends}
 Description: Python binding for Caja components
  Python binding for Caja, to allow Caja property page and menu item
  extensions to be written in Python.
+
+Package: python-caja-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         python-caja (= ${binary:Version})
+Description: Python binding for Caja components (debugging symbols)
+ This package contains debugging symbols for python-caja.
+ It is provided to help debugging problems. The debugging symbols are
+ installed in /usr/lib/debug and will automatically be used by gdb.
