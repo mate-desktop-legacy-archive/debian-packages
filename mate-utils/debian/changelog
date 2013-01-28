@@ -1,7 +1,7 @@
 mate-utils (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
-  * Add mate-utils-deb, mate-utils-common and mate-utils-dbg packages.
+  * Add mate-utils-dev, mate-utils-common and mate-utils-dbg packages.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Jan 2013 10:10:34 +0100
 
