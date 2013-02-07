@@ -1,3 +1,11 @@
+mate-text-editor (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Drop mate-conf dependency and usage.
+  * Split into pluma, pluma-common, pluma-dev and pluma-dbg packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 07 Feb 2013 23:05:40 +0100
+
 mate-text-editor (1.4.0-1) unstable; urgency=low
 
   * New upstream release. 

@@ -18,7 +18,6 @@ Build-Depends: cdbs,
                libglib2.0-dev,
                libgtk2.0-dev,
                libgtksourceview2.0-dev,
-               libmateconf-dev,
                libx11-dev,
                python-dev,
                python-gobject-dev,
@@ -34,15 +33,32 @@ XS-Python-Version: >= 2.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-text-editor
+Architecture: all
+Depends: ${misc:Depends},
+         pluma
+Description: official text editor of the MATE desktop environment (transitional package)
+ pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ This is a transitional package. You can remove it once installed.
+
+Package: pluma
 Architecture: any
 Depends: ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
+         pluma-common (= ${source:Version}),
          python-gtksourceview2,
          python-gobject,
          python-gtk2,
          iso-codes
 Recommends: mate-dialogs
+Provides: mate-text-editor
+Breaks: mate-text-editor (<< 1.5.0)
+Replaces: mate-text-editor (<< 1.5.0)
 XB-Python-Version: ${python:Versions}
 Description: official text editor of the MATE desktop environment
  pluma is a text editor which supports most standard editor features,
@@ -59,3 +75,44 @@ Description: official text editor of the MATE desktop environment
  pluma is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
+
+Package: pluma-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: mate-text-editor (<< 1.5.0)
+Description: official text editor of the MATE desktop environment (common files)
+ pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ This package contains the architecture independent files.
+
+Package: pluma-dev
+Architecture: all
+Section: devel
+Depends: ${misc:Depends},
+         pluma (= ${source:Version})
+Breaks: mate-text-editor (<< 1.5.0)
+Description: official text editor of the MATE desktop environment (development files)
+ pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ This package is required to build plugins for pluma.
+
+Package: pluma-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         pluma (= ${binary:Version})
+Description: official text editor of the MATE desktop environment (debugging symbols)
+ This package contains debugging symbols for pluma text editor. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed  in /usr/lib/debug and will
+ automatically be used by gdb.
