@@ -16,6 +16,10 @@ Build-Depends: cdbs,
                libxml2-dev,
                libcairo2-dev,
                libx11-dev,
+               network-manager-dev,
+               libnm-glib-dev,
+               libnm-util-dev,
+               libiw-dev,
                mate-control-center,
                mate-common
 Standards-Version: 3.9.3
@@ -25,6 +29,7 @@ Package: gnome-main-menu
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
+Suggests: network-manager
 Description: GNOME start menu applet for MATE
  This applet provides a "start menu" for the MATE desktop.
  .
