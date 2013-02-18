@@ -11,26 +11,15 @@ Package: mate-core
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         atril,
-         engrampa,
-         ffmpegthumbnailer-caja,
-         libmateui,
-         mate-applets,
          mate-backgrounds,
          mate-control-center,
          caja,
+         marco,
          mate-icon-theme,
-         eom,
-         mate-keyring,
-         mate-media,
+         mate-keyring | gnome-keyring,
          mate-notification-daemon | notification-daemon,
-         mate-power-manager,
-         mate-screensaver,
          mate-session-manager,
-         mate-system-monitor,
-         mate-terminal,
-         mate-text-editor,
-         mate-themes
+         mate-terminal
 Description: MATE Desktop Environment (essential components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
@@ -44,13 +33,19 @@ Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
-         mate-bluetooth,
+         atril,
+         engrampa,
+         pluma,
+         eom,
+         mate-power-manager,
+         mate-screensaver,
          mate-calc,
-         mate-netspeed,
-         mate-sensors-applet,
-         mate-system-tools,
          mate-utils,
-         mozo
+         mate-applets,
+         mate-themes,
+         mate-system-monitor,
+         mozo,
+         ubuntu-wallpapers | desktop-base
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
@@ -60,3 +55,21 @@ Description: MATE Desktop Environment
  necessary for daily use of a personal computer, including web browsing,
  email, audio and video playback, network and communication tools,
  document viewers, and much more. 
+
+Package: mate-desktop-environment-extra
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-core (= ${binary:Version}),
+         mate-desktop-environment (= ${binary:Version}),
+         mate-bluetooth,
+         mate-netspeed,
+         mate-sensors-applet,
+         mate-system-tools,
+         mozo
+Description: MATE Desktop Environment
+ The MATE Desktop Environment, a non-intuitive and unattractive desktop
+ for users, using traditional computing desktop metaphor.
+ .
+ This package depends on the extra set of applications that are
+ part of the official MATE release.

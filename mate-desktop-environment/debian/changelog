@@ -1,3 +1,10 @@
+mate-desktop-environment (1.5.0) unstable; urgency=low
+
+  * Update for latest MATE development release.
+  * Add branding for distributions.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 17 Feb 2013 17:33:35 +0100
+
 mate-desktop-environment (1.4.0) unstable; urgency=low
 
   * New upstream release. 
