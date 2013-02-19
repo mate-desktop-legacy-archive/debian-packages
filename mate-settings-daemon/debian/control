@@ -30,6 +30,7 @@ Build-Depends: cdbs,
                libpulse-dev,
                libcanberra-gtk-dev,
                x11proto-kb-dev,
+               libdconf-dev,
                mate-common
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
