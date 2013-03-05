@@ -50,7 +50,6 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libunique-1.0-0,
-         libmatenotify,
          hicolor-icon-theme
 Conflicts: gnome-desktop-data, gnome-desktop3-data
 Description: Library with common API for various MATE modules (GNOME files)

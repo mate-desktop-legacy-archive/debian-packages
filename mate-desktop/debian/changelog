@@ -1,3 +1,9 @@
+mate-desktop (1.5.7-2) UNRELEASED; urgency=low
+
+  * debian/control: Remove libmatenotify dependency.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 05 Mar 2013 11:56:37 +0100
+
 mate-desktop (1.5.7-1) unstable; urgency=low
 
   * New upstream development release.
