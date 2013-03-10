@@ -1,3 +1,10 @@
+mate-settings-daemon (1.5.6-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Use libnotify instead of libmatenotify.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 10 Mar 2013 20:22:37 +0100
+
 mate-settings-daemon (1.5.5-1) unstable; urgency=low
 
   * New upstream development release.
