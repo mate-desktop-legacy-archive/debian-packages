@@ -1,3 +1,10 @@
+mate-notification-daemon (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Use libnotify instead of libmatenotify as build dependency.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 10 Mar 2013 19:35:42 +0100
+
 mate-notification-daemon (1.5.1-2) unstable; urgency=low
 
   * Add debian/mate-notification-daemon.install to fix empty package.

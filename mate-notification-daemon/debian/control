@@ -12,7 +12,7 @@ Build-Depends: cdbs,
                libdbus-glib-1-dev,
                libmatewnck-dev,
                libcanberra-gtk-dev,
-               libmatenotify-dev,
+               libnotify-dev,
                intltool,
                mate-common
 Standards-Version: 3.9.3
