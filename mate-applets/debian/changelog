@@ -1,3 +1,11 @@
+mate-applets (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Replace libmatenofiy-dev with libnotify-dev.
+  * Replace libgucharmap2-dev with libmucharmap-dev.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 10 Mar 2013 17:30:54 +0100
+
 mate-applets (1.5.1-1) unstable; urgency=low
 
   * New upstream development release.
