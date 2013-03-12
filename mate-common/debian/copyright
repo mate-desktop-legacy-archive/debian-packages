@@ -5,7 +5,6 @@ Source: http://pub.mate-desktop.org/releases/
 Files: *
 Copyright: 1997-2001 Elliot Lee <sopwith@redhat.com>
            1997, 1998 Erik Troan <ewt@src.gnome.org>
-           1997 Gnome CVS User <gnomecvs@src.gnome.org>
            1997 Marc Ewing <marc@src.gnome.org>
            1998-2001 Martin Baulig <baulig@suse.de>
            1998-2000 Miguel de Icaza <miguel@src.gnome.org>
@@ -35,7 +34,6 @@ Copyright: 1997-2001 Elliot Lee <sopwith@redhat.com>
            1998 jbj <jbj@localhost>
            1998 Joel Becker <jlbec@src.gnome.org>
            1998 Karl Eichwalder <ke@suse.de>
-           1998 Changwoo Ryu <cwryu@adam.kaist.ac.kr>
            1998 Manish Singh <yosh@src.gnome.org>
            1998 Marius Vollmer <mvo@src.gnome.org>
            1998 Martin baulig <martin@home-of-linux.org>
@@ -56,7 +54,6 @@ Copyright: 1997-2001 Elliot Lee <sopwith@redhat.com>
            1999 Alan Aspuru Guzik <pquim@src.gnome.org>
            1999 Asbjørn Pettersen <asbjoer@src.gnome.org>
            1999, 2003 Chris Lahey <clahey@src.gnome.org>
-           1999 gedit <gedit@localhost>
            1999 Jeremy Wise <jwise@src.gnome.org>
            1999 lukka <lukka@src.gnome.org>
            1999 Marcin Gorycki <mgo@src.gnome.org>
