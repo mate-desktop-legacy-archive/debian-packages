@@ -1,7 +1,7 @@
 mate-common (1.5.1-3) UNRELEASED; urgency=low
 
   * debian/copyright: Add list of gnome-common copyright holders, generated
-    using a custom python script and python-git module on git-common history
+    using a custom python script and python-git module on git gnome-common history
     until 2011.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 13 Mar 2013 00:33:54 +0100
