@@ -1,15 +1,16 @@
-mate-common (1.5.1-3) UNRELEASED; urgency=low
+mate-common (1.5.2-1) UNRELEASED; urgency=low
 
+  * New upstream development release.
   * debian/copyright: Add list of gnome-common copyright holders, generated
     using a custom python script and python-git module on git gnome-common history
     until 2011.
+  * First upload to Debian (Closes: 658783).
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 13 Mar 2013 00:33:54 +0100
 
 mate-common (1.5.1-2) experimental; urgency=low
 
   * Drop cdbs and use debhelper and dh-autoreconf.
-  * First upload to Debian (Closes: 658783).
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Jan 2013 20:24:28 +0100
 

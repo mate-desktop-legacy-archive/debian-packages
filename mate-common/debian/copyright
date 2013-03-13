@@ -145,7 +145,6 @@ Copyright: 1997-2001 Elliot Lee <sopwith@redhat.com>
            2011 Colin Walters <walters@verbum.org>
            2011 Matthias Clasen <mclasen@redhat.com>
            2011 Perberos <perberos@gmail.com>
-
 License: GPL-3.0+
 
 Files: debian/*
