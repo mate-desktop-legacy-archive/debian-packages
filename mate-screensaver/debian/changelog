@@ -1,3 +1,11 @@
+mate-screensaver (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Enable libnotify-dev in build deps.
+  * Build mate-screensaver-common and mate-screensaver-dbg packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 14 Mar 2013 16:06:53 +0100
+
 mate-screensaver (1.5.1-1) unstable; urgency=low
 
   * New upstream development release.

@@ -15,6 +15,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 							--with-mit-ext \
 							--libexecdir=/usr/lib/ \
 							--with-console-kit \
+							--with-libnotify \
 							--without-systemd \
 							--enable-locking
 

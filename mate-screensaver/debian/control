@@ -26,7 +26,7 @@ Build-Depends: cdbs,
                x11proto-xf86vidmode-dev,
                libxxf86vm-dev,
                libgl1-mesa-dev | libgl1-mesa-swx11-dev,
-               libmatenotify,
+               libnotify-dev,
                mate-common
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
@@ -35,6 +35,7 @@ Package: mate-screensaver
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         mate-screensaver-common (= ${source:Version}),
          dbus-x11,
          mate-icon-theme,
          mate-session-manager
@@ -49,3 +50,26 @@ Description: MATE screen saver and locker
   * the ability to lock down configuration settings
   * translation into other languages
   * user switching
+
+Package: mate-screensaver-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: mate-screensaver (<< 1.5.2)
+Description: MATE screen saver and locker (common files)
+ mate-screensaver is a screen saver and locker that aims to have simple,
+ sane and secure defaults, and be well integrated with the MATE desktop.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-screensaver-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-screensaver (= ${binary:Version})
+Description: MATE screen saver and locker (debugging symbols)
+ This package contains debugging symbols for MATE screensaver. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed  in /usr/lib/debug and will
+ automatically be used by gdb.
