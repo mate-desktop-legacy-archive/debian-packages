@@ -1,3 +1,9 @@
+mate-panel (1.5.6-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 17 Mar 2013 14:55:03 +0100
+
 mate-panel (1.5.5-2) unstable; urgency=low
 
   * debian/control: Update minimum libmatewnck version in build depends.
