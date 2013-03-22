@@ -1,3 +1,9 @@
+mate-settings-daemon (1.5.7-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 22 Mar 2013 23:24:57 +0100
+
 mate-settings-daemon (1.5.6-1) unstable; urgency=low
 
   * New upstream development release.

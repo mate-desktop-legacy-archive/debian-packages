@@ -131,3 +131,15 @@ Description: daemon handling the MATE session settings (common files)
  freedesktop.org XSETTINGS.
  .
  This package contains the architecture independent files.
+
+Package: mate-settings-daemon-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-settings-daemon-pulse (= ${binary:Version})
+Description: daemon handling the MATE session settings (debugging symbols)
+ This package contains debugging symbols for the mate-settings-daemon
+ package. It is provided to help debugging problems in the daemon. The
+ debugging symbols are installed in /usr/lib/debug and will automatically be
+ used by gdb.
