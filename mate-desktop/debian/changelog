@@ -1,3 +1,9 @@
+mate-desktop (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 10:34:42 +0200
+
 mate-desktop (1.5.8-1) unstable; urgency=low
 
   * New upstream development release.

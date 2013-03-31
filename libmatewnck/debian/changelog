@@ -1,3 +1,9 @@
+libmatewnck (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 12:59:20 +0200
+
 libmatewnck (1.5.1-2) unstable; urgency=low
 
   * Give a minimum version to dh_makeshlibs due to API changes.
