@@ -16,7 +16,7 @@ mate-control-center (1.5.4-1) unstable; urgency=low
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 18 Feb 2013 23:34:10 +0100
 
-mate-control-center (1.5.3-1) unstable; urgency=low
+mate-control-center (1.5.3-2) unstable; urgency=low
 
   * New upstream development release.
   * Fixed a bug in the ordering of titlebar actions.
@@ -28,7 +28,6 @@ mate-control-center (1.5.3-1) unstable; urgency=low
   * Testing a bugfix. 
 
  -- Steve Zesch <stevezesch2@gmail.com>  Thu, 10 Jan 2013 23:23:23 -0500
->>>>>>> Stashed changes
 
 mate-control-center (1.5.2-1) unstable; urgency=low
 
