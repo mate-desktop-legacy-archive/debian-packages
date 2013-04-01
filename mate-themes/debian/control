@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Standards-Version: 3.9.3
-Build-Depends: debhelper,
+Build-Depends: debhelper (>= 8),
                cdbs,
                mate-common
 Build-Depends-Indep: libxml-parser-perl,

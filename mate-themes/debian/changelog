@@ -1,3 +1,15 @@
+mate-themes (1.6.0-2) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 31 Mar 2013 19:24:54 -0400
+
+mate-themes (1.6.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 31 Mar 2013 17:58:48 -0400
+
 mate-themes (1.5.2-1) unstable; urgency=low
 
   * New upstream development release.
@@ -9,6 +21,7 @@ mate-themes (1.5.1-1) unstable; urgency=low
   * New upstream development release.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 22 Mar 2013 23:28:50 +0100
+=======
 
 mate-themes (1.5.0-1) unstable; urgency=low
 
