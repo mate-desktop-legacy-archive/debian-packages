@@ -1,3 +1,9 @@
+mate-bluetooth (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 02 Apr 2013 17:06:19 +0200
+
 mate-bluetooth (1.5.1-1) unstable; urgency=low
 
   * New upstream development release.

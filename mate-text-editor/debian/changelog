@@ -1,3 +1,9 @@
+mate-text-editor (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 02 Apr 2013 16:08:06 +0200
+
 mate-text-editor (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
