@@ -11,15 +11,25 @@ Package: mate-core
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-backgrounds,
-         mate-control-center,
-         caja,
-         marco,
-         mate-icon-theme,
-         mate-keyring | gnome-keyring,
-         mate-notification-daemon | notification-daemon,
-         mate-session-manager,
-         mate-terminal
+         mate-backgrounds (>= 1.6.0),
+         mate-control-center (>= 1.6.0),
+         caja (>= 1.6.0),
+         marco (>= 1.6.0),
+         mate-icon-theme (>= 1.6.0),
+         mate-keyring  (>= 1.6.0) | gnome-keyring,
+         mate-notification-daemon (>= 1.6.0) | notification-daemon,
+         mate-session-manager (>= 1.6.0),
+         mate-panel (>= 1.6.0),
+         mate-polkit (>= 1.6.0),
+         mate-menus (>= 1.6.0),
+         mate-settings-daemon (>= 1.6.0),
+         mate-terminal (>= 1.6.0),
+         mate-desktop (>= 1.6.0),
+         libmatekbd (>= 1.6.0),
+         libmatewnck (>= 1.6.0),
+         libmatedesktop (>= 1.6.0),
+         libmatekbd (>= 1.6.0),
+         libmatekeyring (>= 1.6.0)
 Description: MATE Desktop Environment (essential components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
@@ -33,18 +43,18 @@ Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
-         atril,
-         engrampa,
-         pluma,
-         eom,
-         mate-power-manager,
-         mate-screensaver,
-         mate-calc,
-         mate-utils,
-         mate-applets,
-         mate-themes,
-         mate-system-monitor,
-         mozo,
+         atril (>= 1.6.0),
+         engrampa (>= 1.6.0),
+         pluma (>= 1.6.0),
+         eom (>= 1.6.0),
+         mate-power-manager (>= 1.6.0),
+         mate-screensaver (>= 1.6.0),
+         mate-calc (>= 1.6.0),
+         mate-utils (>= 1.6.0),
+         mate-applets (>= 1.6.0),
+         mate-media (>= 1.6.0),
+         mate-themes (>= 1.6.0),
+         mate-system-monitor (>= 1.6.0),
          ubuntu-wallpapers | desktop-base
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
@@ -62,11 +72,11 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
          mate-desktop-environment (= ${binary:Version}),
-         mate-bluetooth,
-         mate-netspeed,
-         mate-sensors-applet,
-         mate-system-tools,
-         mozo
+         mate-bluetooth (>= 1.6.0),
+         mate-netspeed (>= 1.6.0),
+         mate-sensors-applet (>= 1.6.0),
+         mate-system-tools (>= 1.6.0),
+         mozo (>= 1.6.0)
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.

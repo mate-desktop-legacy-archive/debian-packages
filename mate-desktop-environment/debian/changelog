@@ -1,3 +1,9 @@
+mate-desktop-environment (1.6.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Apr 2013 00:34:14 +0200
+
 mate-desktop-environment (1.5.0) unstable; urgency=low
 
   * Update for latest MATE development release.
