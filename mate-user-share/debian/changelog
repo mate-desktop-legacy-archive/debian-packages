@@ -1,3 +1,9 @@
+mate-user-share (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 02 Apr 2013 23:49:39 +0200
+
 mate-user-share (1.5.1-1) unstable; urgency=low
 
   * New upstream development release.

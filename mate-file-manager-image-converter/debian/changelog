@@ -1,3 +1,9 @@
+mate-file-manager-image-converter (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 02 Apr 2013 23:39:10 +0200
+
 mate-file-manager-image-converter (1.5.0-1) unstable; urgency=low
 
   * New upstream development release.
