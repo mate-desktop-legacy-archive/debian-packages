@@ -1,3 +1,11 @@
+mate-control-center (1.6.0-2) unstable; urgency=low
+
+  * Cherry pick upstream patch to support Compiz 0.9.
+  * Add libglib2.0-bin as dependency.
+  * Add gconf2 in suggested packages (needed to support Compiz 0.8).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Apr 2013 11:24:17 +0200
+
 mate-control-center (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

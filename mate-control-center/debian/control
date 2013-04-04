@@ -55,7 +55,9 @@ Depends: ${shlibs:Depends},
          mate-desktop,
          mate-icon-theme,
          desktop-file-utils,
-         gsettings-desktop-schemas
+         gsettings-desktop-schemas,
+         libglib2.0-bin
+Suggests: gconf2
 Description: utilities to configure the MATE desktop
  This package contains configuration applets for the MATE desktop,
  allowing to set accessibility configuration, desktop fonts, keyboard
