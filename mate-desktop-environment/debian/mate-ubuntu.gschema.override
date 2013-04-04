@@ -6,7 +6,7 @@ icon-theme='ubuntu-mono-light'
 gtk-theme='Radiance'
 font-name='Ubuntu Medium 10'
 document-font-name='Ubuntu Medium 10'
-monospace-font-name=''
+monospace-font-name='Ubuntu Mono 11'
 
 [org.mate.Marco.general]
 theme='Radiance'

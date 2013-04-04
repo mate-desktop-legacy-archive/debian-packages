@@ -29,7 +29,8 @@ Depends: ${shlibs:Depends},
          libmatewnck (>= 1.6.0),
          libmatedesktop (>= 1.6.0),
          libmatekbd (>= 1.6.0),
-         libmatekeyring (>= 1.6.0)
+         libmatekeyring (>= 1.6.0),
+         gvfs-bin
 Description: MATE Desktop Environment (essential components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
@@ -55,7 +56,8 @@ Depends: ${shlibs:Depends},
          mate-media (>= 1.6.0),
          mate-themes (>= 1.6.0),
          mate-system-monitor (>= 1.6.0),
-         ubuntu-wallpapers | desktop-base
+         ubuntu-wallpapers | desktop-base,
+         ffmpegthumbnailer
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
@@ -76,7 +78,8 @@ Depends: ${shlibs:Depends},
          mate-netspeed (>= 1.6.0),
          mate-sensors-applet (>= 1.6.0),
          mate-system-tools (>= 1.6.0),
-         mozo (>= 1.6.0)
+         mozo (>= 1.6.0),
+         dconf-tools
 Description: MATE Desktop Environment
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.

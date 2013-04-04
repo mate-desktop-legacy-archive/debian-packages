@@ -1,3 +1,14 @@
+mate-desktop-environment (1.6.0.1) unstable; urgency=low
+
+  * Add gvfs-bin as dependency of mate-core.
+  * Add ffmpegthumbnailer as dependency of mate-desktop-environment.
+  * Add dconf-tools as dependency of mate-desktop-environment-extra.
+  * Fix empty monospace font in Ubuntu GSettings overrides.
+  * Add mate-ffmpegthumbnailer.thumbnailer file to have video
+    thumbnails.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Apr 2013 09:49:53 +0200
+
 mate-desktop-environment (1.6.0) unstable; urgency=low
 
   * New upstream release.
