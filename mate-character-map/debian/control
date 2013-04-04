@@ -22,7 +22,9 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-character-map
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         libmucharmap (= ${binary:Version}),
+         mate-character-map-common (= ${source:Version})
 Description: Unicode character picker and font browser
  This program allows you to browse through all the available Unicode
  characters and categories for the installed fonts, and to examine their
@@ -55,7 +57,8 @@ Description: Unicode character picker and font browser (library)
 Package: libmucharmap-dev
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         libmucharmap (= ${binary:Version})
 Description: Unicode character picker and font browser (development files)
  This program allows you to browse through all the available Unicode
  characters and categories for the installed fonts, and to examine their
@@ -93,7 +96,8 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         mate-character-map (= ${binary:Version})
+         mate-character-map (= ${binary:Version}),
+         libmucharmap (= ${binary:Version})
 Description: Unicode character picker and font browser (debugging symbols)
  This package contains debugging symbols for mate-character-map.
  It is provided to help debugging problems. The debugging symbols are
