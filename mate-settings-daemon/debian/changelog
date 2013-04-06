@@ -1,3 +1,9 @@
+mate-settings-daemon (1.6.0-2) unstable; urgency=low
+
+  * Cherry pick patch to fix libnotify initialization.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Apr 2013 18:32:34 +0200
+
 mate-settings-daemon (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
