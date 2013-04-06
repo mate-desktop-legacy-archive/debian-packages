@@ -54,7 +54,8 @@ Recommends: alsa-utils,
             sound-theme-freedesktop
 Replaces: mate-media (<< 1.2.1-4)
 Conflicts: mate-media-pulse
-Breaks: mate-media (<< 1.2.1-4)
+Breaks: mate-media (<< 1.2.1-4),
+        mate-applets (<< 1.6.0)
 Description: MATE media utilities (GStreamer backend)
  This package contains a few media utilities for the MATE desktop:
   * the MATE GStreamer-based audio mixer and applet.
