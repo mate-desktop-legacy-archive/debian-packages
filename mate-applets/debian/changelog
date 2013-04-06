@@ -1,3 +1,9 @@
+mate-applets (1.6.0-3) UNRELEASED; urgency=low
+
+  * Install missing /usr/share/MateConf/gsettings/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Apr 2013 21:55:34 +0200
+
 mate-applets (1.6.0-2) unstable; urgency=low
 
   * Add a patch to get cpufreq applet working.
