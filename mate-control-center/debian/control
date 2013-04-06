@@ -58,6 +58,8 @@ Depends: ${shlibs:Depends},
          gsettings-desktop-schemas,
          libglib2.0-bin
 Suggests: gconf2
+Conflicts: libslab0,
+           libslab0a
 Description: utilities to configure the MATE desktop
  This package contains configuration applets for the MATE desktop,
  allowing to set accessibility configuration, desktop fonts, keyboard
