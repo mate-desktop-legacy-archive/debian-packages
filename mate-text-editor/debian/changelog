@@ -1,3 +1,9 @@
+mate-text-editor (1.6.0-2) unstable; urgency=low
+
+  * pluma-common: Add missing /usr/share/MateConf/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Apr 2013 21:44:01 +0200
+
 mate-text-editor (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
