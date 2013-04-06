@@ -1,3 +1,9 @@
+mate-image-viewer (1.6.0-2) unstable; urgency=low
+
+  * eom-common: Add missing /usr/share/MateConf/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Apr 2013 21:46:42 +0200
+
 mate-image-viewer (1.6.0-1) unstable; urgency=low
 
   * New upstream release. 
