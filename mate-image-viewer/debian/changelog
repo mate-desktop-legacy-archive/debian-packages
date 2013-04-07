@@ -1,3 +1,9 @@
+mate-image-viewer (1.6.0-3) unstable; urgency=low
+
+  * Cherry pick patch to fix MateConf convert file.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 07 Apr 2013 11:45:34 +0200
+
 mate-image-viewer (1.6.0-2) unstable; urgency=low
 
   * eom-common: Add missing /usr/share/MateConf/ folder.
