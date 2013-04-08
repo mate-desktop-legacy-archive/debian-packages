@@ -1,3 +1,13 @@
+mate-panel (1.6.0-2) unstable; urgency=low
+
+  * Cherry pick upstream patches.
+  * 00-allow-to-change-custom-format.patch:
+    Allow users to change custom format in clock applet.
+  * 01-fix-2-x-screens.patch:
+    Fix panel layout when user has two separate X screens.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 08 Apr 2013 18:28:19 +0200
+
 mate-panel (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
