@@ -1,0 +1,27 @@
+From b4167a4d733f56a1853c1fffdbe0491fe0e0e989 Mon Sep 17 00:00:00 2001
+From: Ivor Uhliarik <ifrag@localhost.localdomain>
+Date: Sun, 7 Apr 2013 23:16:13 +0200
+Subject: [PATCH] On make install, the Makefile will now copy .icon files into
+ the package dir too, allowing for text-x-preview.icon (a requirement for text
+ file preview) to be included in the package.
+
+---
+ src/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Makefile.am b/src/Makefile.am
+index 985ce3d..0cd35a2 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -6,7 +6,7 @@ $(render_sizes): Makefile
+ install-data-local:
+ 	for size in $(render_sizes); do \
+ 		echo -e "Going to copy files for $$size"; \
+-		for file in `cd $(top_srcdir)/$(SVGOUTDIR)/$$size && find . -name "*.png"`; do \
++		for file in `cd $(top_srcdir)/$(SVGOUTDIR)/$$size && find . -name "*.png" -o -name "*.icon"`; do \
+ 			context="`dirname $$file`"; \
+ 			$(mkdir_p) $(DESTDIR)$(themedir)/$$size/$$context; \
+ 			$(install_sh_DATA) $(top_srcdir)/$(SVGOUTDIR)/$$size/$$file $(DESTDIR)$(themedir)/$$size/$$file; \
+-- 
+1.8.1.5
+
