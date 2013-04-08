@@ -1,3 +1,9 @@
+mate-window-manager (1.6.0-2) unstable; urgency=low
+
+  * Cherry pick upstream patches to fix keybinding issues.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 07 Apr 2013 21:00:49 +0200
+
 mate-window-manager (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
