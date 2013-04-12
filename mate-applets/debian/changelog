@@ -1,4 +1,10 @@
-mate-applets (1.6.0-3) UNRELEASED; urgency=low
+mate-applets (1.6.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 12 Apr 2013 00:04:10 +0200
+
+mate-applets (1.6.0-3) unstable; urgency=low
 
   * Install missing /usr/share/MateConf/gsettings/ folder.
 
