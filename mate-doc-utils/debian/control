@@ -3,13 +3,10 @@ Section: devel
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8)
+Build-Depends: debhelper (>= 8)
 Build-Depends-Indep: libxml2-dev,
                      libxslt1-dev,
                      libxml2-utils,
-                     automake,
-                     intltool,
                      python-support,
                      python-libxml2,
                      xsltproc,

@@ -1,3 +1,11 @@
+mate-doc-utils (1.6.1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Use debhelper instead of cdbs.
+  * Update debian/copyright.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 18 Apr 2013 00:27:27 +0200
+
 mate-doc-utils (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
