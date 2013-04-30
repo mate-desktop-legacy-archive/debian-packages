@@ -1,6 +1,7 @@
-mate-user-share (1.6.0-2) UNRELEASED; urgency=low
+mate-user-share (1.6.0-2) unstable; urgency=low
 
   * debian/rules: Dont remove xdg folder.
+  * Add 02_fix-callback-argument.patch.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 30 Apr 2013 15:04:22 +0200
 
