@@ -1,3 +1,9 @@
+mate-bluetooth (1.6.0-2) UNRELEASED; urgency=low
+
+  * debian/rules: Add LDFLAGS hack.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 30 Apr 2013 15:10:25 +0200
+
 mate-bluetooth (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
