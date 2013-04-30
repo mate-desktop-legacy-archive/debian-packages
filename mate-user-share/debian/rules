@@ -13,8 +13,6 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 
 install/mate-user-share::
 	rm -f debian/mate-user-share/usr/share/mate-user-share/dav_user_2.0.conf
-	mv debian/mate-user-share/etc/xdg/autostart debian/mate-user-share/usr/share/mate/
-	rmdir -p --ignore-fail-on-non-empty debian/mate-user-share/etc/xdg
 	find debian/mate-user-share -name "*.la" -delete
 
 get-orig-source:
