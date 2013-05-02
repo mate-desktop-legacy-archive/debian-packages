@@ -1,3 +1,10 @@
+mate-power-manager (1.6.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop cdbs and autogen.sh usage.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 02 May 2013 11:16:32 +0200
+
 mate-power-manager (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
