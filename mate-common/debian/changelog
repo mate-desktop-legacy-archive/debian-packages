@@ -1,46 +1,5 @@
 mate-common (1.6.1-1) unstable; urgency=low
 
-  * New upstream release.
-  * Upload to unstable.
-  * Drop unneeded dh-autoreconf usage.
-  * debian/control: Bump Standards-Version to 3.9.4 (no changes required).
-  * debian/control: Add Vcs-* fields.
-  * debian/copyright: Update format link.
-  * Bump minimum debhelper version to 9.
+  * Initial release (Closes: #658783)
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 May 2013 19:31:10 +0200
-
-mate-common (1.6.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 30 Mar 2013 22:39:14 +0100
-
-mate-common (1.5.2-1) experimental; urgency=low
-
-  * New upstream development release.
-  * debian/copyright: Add list of gnome-common copyright holders, generated
-    using a custom python script and python-git module on git gnome-common
-    history until 2011.
-  * First upload to Debian (Closes: #658783).
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 13 Mar 2013 00:33:54 +0100
-
-mate-common (1.5.1-2) experimental; urgency=low
-
-  * Drop cdbs and use debhelper and dh-autoreconf.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Jan 2013 20:24:28 +0100
-
-mate-common (1.5.1-1) unstable; urgency=low
-
-  * New upstream development release.
-    * Added support for automake 1.13.
-
- -- Steve Zesch <stevezesch2@gmail.com>  Mon, 14 Jan 2013 18:25:46 -0500
-
-mate-common (1.5.0-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Oct 2012 12:27:52 +0200

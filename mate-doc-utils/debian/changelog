@@ -1,22 +1,5 @@
 mate-doc-utils (1.6.1-1) unstable; urgency=low
 
-  * New upstream release.
-  * Use debhelper instead of cdbs.
-  * Update debian/copyright.
-  * debian/control: Bump Standards-Version to 3.9.4 (no changes required).
-  * debian/control: Add Vcs-* fields.
-  * Bump minimum debhelper version to 9.
+  * Initial release.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 May 2013 20:53:47 +0200
-
-mate-doc-utils (1.6.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 00:30:54 +0100
-
-mate-doc-utils (1.5.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Oct 2012 15:38:08 +0200
