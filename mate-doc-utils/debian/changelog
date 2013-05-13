@@ -1,10 +1,13 @@
-mate-doc-utils (1.6.1-1) UNRELEASED; urgency=low
+mate-doc-utils (1.6.1-1) unstable; urgency=low
 
   * New upstream release.
   * Use debhelper instead of cdbs.
   * Update debian/copyright.
+  * debian/control: Bump Standards-Version to 3.9.4 (no changes required).
+  * debian/control: Add Vcs-* fields.
+  * Bump minimum debhelper version to 9.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 18 Apr 2013 00:27:27 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 May 2013 20:53:47 +0200
 
 mate-doc-utils (1.6.0-1) unstable; urgency=low
 
@@ -17,106 +20,3 @@ mate-doc-utils (1.5.0-1) unstable; urgency=low
   * New upstream release.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Oct 2012 15:38:08 +0200
-
-mate-doc-utils (1.4.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 06 Jul 2012 23:35:28 +0200
-
-mate-doc-utils (1.2.1-2) unstable; urgency=low
-
-  * Rebuild for precise.
-  * Add Steve Zesch to maintainers.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 27 Mar 2012 17:09:21 +0200
-
-mate-doc-utils (1.2.1-1) unstable; urgency=low
-
-  * New upstream bugfix release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 22 Feb 2012 00:22:48 +0100
-
-mate-doc-utils (1.2.0-2) unstable; urgency=low
-
-  * Fix some lintian tags.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 Feb 2012 18:55:59 +0100
-
-mate-doc-utils (1.2.0-1) unstable; urgency=low
-
-  * New upstream release.
-  * debian/copyright: updated.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 28 Jan 2012 01:54:06 +0100
-
-mate-doc-utils (1.1.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 20:11:51 +0100
-
-mate-doc-utils (2011.12.01-1) unstable; urgency=low
-
-  * New upstream relase.
-  * Switch to new versioning schema.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 03 Dec 2011 13:08:48 +0100
-
-mate-doc-utils (1.0.7-1) unstable; urgency=low
-
-  * New upstream release.
-  * Switched to autogen.sh.
-  * Added xsltproc as depends.
-  * Changed arch to all (thanks to lubos).
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 23 Nov 2011 00:07:20 +0100
-
-mate-doc-utils (1.0.0-2) unstable; urgency=low
-
-  * Fixed debian/ folder.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 22:20:54 +0100
-
-mate-doc-utils (1.0.0-1) unstable; urgency=low
-
-  * New upstream release
-
- -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 16:31:01 +0000
-
-mate-doc-utils (2011.11.02) unstable; urgency=low
-
-  * 2011.11.02
-
- -- Clement Lefebvre <root@linuxmint.com>  Wed, 02 Nov 2011 16:31:44 +0000
-
-mate-doc-utils (2011.11.01-1) unstable; urgency=low
-
-  * Fixed pkgconfig conflict with gnome-doc-utils.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 01 Nov 2011 13:58:22 +0100
-
-mate-doc-utils (2011.10.30-2) unstable; urgency=low
-
-  * Fixed mate-doc-utils-gnome depends.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 30 Oct 2011 17:22:09 +0100
-
-mate-doc-utils (2011.10.30-1) unstable; urgency=low
-
-  * New upstream release.
-  * Added package mate-doc-utils-gnome to prevent conflicts.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 30 Oct 2011 16:40:46 +0100
-
-mate-doc-utils (2011.10.18-2) unstable; urgency=low
-
-  * Fixed debian/control.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 20 Oct 2011 02:59:30 +0200
-
-mate-doc-utils (2011.10.18-1) unstable; urgency=low
-
-  * New upsream release;
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Oct 2011 18:56:28 +0200

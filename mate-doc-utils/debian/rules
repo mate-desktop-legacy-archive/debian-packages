@@ -1,9 +1,10 @@
 #!/usr/bin/make -f
 
-DEB_DH_INSTALL_ARGS += --list-missing
-
 %:
 	dh $@
+
+override_dh_install:
+	dh_install --list-missing
 
 override_dh_auto_configure:
 	dh_auto_configure -- --disable-scrollkeeper
