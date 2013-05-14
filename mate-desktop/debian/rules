@@ -1,18 +1,15 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
-include /usr/share/cdbs/1/rules/utils.mk
+%:
+	dh $@
 
-DEB_DH_INSTALL_ARGS += --list-missing
+override_dh_install:
+	rm -f debian/tmp/usr/lib/*/*.la 
+	rm -rf debian/tmp/usr/share/omf/
+	dh_install --list-missing
 
-DEB_CONFIGURE_SCRIPT := ./autogen.sh
-
-DEB_CONFIGURE_EXTRA_FLAGS += \
-			--with-mate-distributor=Debian \
-			--disable-static \
-			--disable-scrollkeeper
+override_dh_auto_configure:
+	dh_auto_configure -- --disable-static --disable-scrollkeeper --disable-schemas-compile
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
-

@@ -1,10 +1,8 @@
 Source: mate-desktop
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs,
+Build-Depends: debhelper (>= 9),
                intltool,
                libglib2.0-dev,
                libgtk2.0-dev,
@@ -21,8 +19,10 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-doc,
                libgtk2.0-doc,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: mate-desktop
 Architecture: any
@@ -30,9 +30,9 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libunique-1.0-0,
          hicolor-icon-theme,
-         libmatedesktop,
-         mate-desktop-common (= ${source:Version}),
-         mate-desktop-gnome | gnome-desktop-data | gnome-desktop3-data
+         libmate-desktop-2-17,
+         mate-desktop-common (= ${source:Version})
+Conflicts: mate-desktop-gnome
 Description: Library with common API for various MATE modules
  This package contains the library with common API for various MATE modules.
 
@@ -45,43 +45,36 @@ Description: Library with common API for various MATE modules (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-desktop-gnome
+Package: libmate-desktop-2-17
 Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         libunique-1.0-0,
-         hicolor-icon-theme
-Conflicts: gnome-desktop-data, gnome-desktop3-data
-Description: Library with common API for various MATE modules (GNOME files)
- This package contains the library with common API for various MATE modules.
- .
- The files in this package conflict with gnome-desktop-data.
-
-Package: libmatedesktop
-Architecture: any
+Pre-Depends: multiarch-support
 Depends: ${misc:Depends},
          ${shlibs:Depends}
+Provides: libmatedesktop
+Conflicts: libmatedesktop
 Description: Library with common API for various MATE modules (library)
  This package contains the library with common API for various MATE modules.
  .
  The package contains the library.
 
-Package: libmatedesktop-dev
+Package: libmate-desktop-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmatedesktop (= ${binary:Version}),
-         libstartup-notification0-dev 
+         libmate-desktop-2-17 (= ${binary:Version}),
+         libstartup-notification0-dev
+Conflicts: libmatedesktop-dev
 Description: Library with common API for various MATE modules (development files)
  This package contain the library with common API for various MATE modules.
  .
  This package contains the development files.
 
-Package: libmatedesktop-doc
+Package: libmate-desktop-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
+Conflicts: libmatedesktop-doc
 Description: Library with common API for various MATE modules (documentation files)
  This package contains the library with common API for various MATE modules.
  .
@@ -93,10 +86,10 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          mate-desktop (= ${binary:Version}),
-         libmatedesktop (= ${binary:Version})
+         libmate-desktop-2-17 (= ${binary:Version})
 Description: Library with common API for various MATE modules (debugging symbols)
  This package contains debugging symbols for mate-desktop and the
- libmatedesktop library. It is provided to help debugging problems.
+ libmate-desktop library. It is provided to help debugging problems.
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
 
