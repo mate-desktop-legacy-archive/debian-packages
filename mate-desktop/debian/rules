@@ -11,5 +11,8 @@ override_dh_install:
 override_dh_auto_configure:
 	dh_auto_configure -- --disable-static --disable-scrollkeeper --disable-schemas-compile
 
+override_dh_strip:
+	dh_strip --dbg-package=mate-desktop-dbg
+
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
