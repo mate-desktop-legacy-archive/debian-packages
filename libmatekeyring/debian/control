@@ -2,10 +2,7 @@ Source: libmatekeyring
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs,
-               quilt,
+Build-Depends: debhelper (>= 9),
                intltool,
                libglib2.0-dev,
                gtk-doc-tools,
@@ -14,14 +11,19 @@ Build-Depends: debhelper (>= 8),
                libgcrypt11-dev,
                libglib2.0-doc,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
-Package: libmatekeyring
+Package: libmate-keyring1
 Section: libs
 Architecture: any
+Pre-Depends: multiarch-support
 Depends: ${misc:Depends},
          ${shlibs:Depends}
+Conflicts: libmatekeyring
+Provides: libmatekeyring
 Description: MATE keyring services library
  mate-keyring is a daemon in the session, similar to ssh-agent,
  and other applications can use it to store passwords and other
@@ -31,11 +33,11 @@ Description: MATE keyring services library
  password, and there is also a session keyring which is never stored to
  disk, but forgotten when the session ends.
 
-Package: libmatekeyring-dev
+Package: libmate-keyring-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
-         libmatekeyring (= ${binary:Version}),
+         libmate-keyring1 (= ${binary:Version}),
          libglib2.0-dev
 Description: MATE keyring services library (development files)
  mate-keyring is a daemon in the session, similar to ssh-agent,
@@ -48,7 +50,7 @@ Description: MATE keyring services library (development files)
  .
  This package contains the development files.
 
-Package: libmatekeyring-doc
+Package: libmate-keyring-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
@@ -63,12 +65,12 @@ Description: MATE keyring services library (documentation files)
  .
  This package contains the documentation files.
 
-Package: libmatekeyring-dbg
+Package: libmate-keyring-dbg
 Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         libmatekeyring (= ${binary:Version})
+         libmate-keyring1 (= ${binary:Version})
 Description: MATE keyring services library (debugging symbols)
  This package contains debugging symbols for the libmatekeyring
  library. It is provided to help debugging problems.
