@@ -9,7 +9,11 @@ override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
-	dh_auto_configure -- --disable-static --disable-scrollkeeper --disable-schemas-compile
+	dh_auto_configure -- \
+		--disable-static \
+		--disable-scrollkeeper \
+		--disable-schemas-compile \
+		--enable-gtk-doc
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-desktop-dbg
