@@ -1,7 +1,7 @@
 mate-doc-utils (1.6.1-2) unstable; urgency=low
 
   * debian/control: Add rarian-compat to Build-Depends to allow build without
-    internet access. Closes: #710562.
+    internet access (Closes: #710562).
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 01 Jun 2013 19:27:46 +0200
 
