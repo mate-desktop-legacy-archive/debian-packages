@@ -11,6 +11,7 @@ Build-Depends-Indep: libxml2-dev,
                      xsltproc,
                      pkg-config,
                      librarian-dev,
+                     rarian-compat,
                      mate-common
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org
