@@ -1,3 +1,9 @@
+mate-window-manager (1.6.2-1~mate1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 01 Jul 2013 07:34:36 +0200
+
 mate-window-manager (1.6.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
