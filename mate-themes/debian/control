@@ -4,8 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Standards-Version: 3.9.3
-Build-Depends: debhelper (>= 8),
-               cdbs,
+Build-Depends: debhelper (>= 9),
                mate-common
 Build-Depends-Indep: libxml-parser-perl,
                      libgtk2.0-dev,
@@ -24,6 +23,6 @@ Depends: gtk2-engines,
          ${misc:Depends}
 Recommends: dmz-cursor-theme
 Conflicts: mate-themes-gnome
-Description: official themes for the MATE desktop
+Description: Official themes for the MATE desktop
  This package contains the official desktop themes of the MATE desktop
  environment.
