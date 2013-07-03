@@ -1,3 +1,9 @@
+libmatekbd (1.6.1-1~mate1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 10:57:40 +0200
+
 libmatekbd (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

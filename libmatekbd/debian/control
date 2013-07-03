@@ -3,9 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               autotools-dev,
-               cdbs,
+Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libgtk2.0-dev,
                libxklavier-dev,
@@ -14,12 +12,16 @@ Build-Depends: debhelper (>= 8),
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
-Package: libmatekbd
+Package: libmatekbd4
 Section: mate
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          iso-codes
+Provides: libmatekbd
+Replaces: libmatekbd
+Breaks: libmatekbd
+Conflicts: libmatekbd
 Description: MATE library to manage keyboard configuration
  libmatekbd offers an API to manage the keyboard in MATE applications.
 
@@ -27,7 +29,7 @@ Package: libmatekbd-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends},
-         libmatekbd (= ${binary:Version}),
+         libmatekbd4 (= ${binary:Version}),
          libglib2.0-dev,
          libgtk2.0-dev,
          libxklavier-dev,
@@ -42,7 +44,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         libmatekbd (= ${binary:Version})
+         libmatekbd4 (= ${binary:Version})
 Description: MATE library to manage keyboard configuration (debugging symbols)
  This package contains debugging symbols for the libmatekbd library.
  It is provided to help debugging problems.
