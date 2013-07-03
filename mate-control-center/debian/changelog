@@ -1,3 +1,9 @@
+mate-control-center (1.6.0-3.1) unstable; urgency=low
+
+  * Rebuild for new dconf library in Jessie.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 12:51:13 +0200
+
 mate-control-center (1.6.0-3) unstable; urgency=low
 
   * Add conflict with GNOME's libslab0 and libslab0a.

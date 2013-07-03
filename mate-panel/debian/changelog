@@ -1,3 +1,9 @@
+mate-panel (1.6.0-2.1) unstable; urgency=low
+
+  * Rebuild for new dconf library in Jessie.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 12:47:26 +0200
+
 mate-panel (1.6.0-2) unstable; urgency=low
 
   * Cherry pick upstream patches.
