@@ -25,11 +25,6 @@ Depends: ${shlibs:Depends},
          mate-settings-daemon (>= 1.6.0),
          mate-terminal (>= 1.6.0),
          mate-desktop (>= 1.6.0),
-         libmatekbd (>= 1.6.0),
-         libmatewnck (>= 1.6.0),
-         libmatedesktop (>= 1.6.0),
-         libmatekbd (>= 1.6.0),
-         libmatekeyring (>= 1.6.0),
          gvfs-bin
 Description: MATE Desktop Environment (essential components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop

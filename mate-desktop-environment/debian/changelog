@@ -1,3 +1,9 @@
+mate-desktop-environment (1.6.0.2) unstable; urgency=low
+
+  * Remove libraries from dependencies.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 16:22:35 +0200
+
 mate-desktop-environment (1.6.0.1) unstable; urgency=low
 
   * Add gvfs-bin as dependency of mate-core (for gvfs-open).
