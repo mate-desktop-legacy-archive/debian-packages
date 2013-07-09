@@ -1,19 +1,18 @@
 Source: libmatekbd
-Section: mate
+Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libgtk2.0-dev,
                libxklavier-dev,
                intltool,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 
 Package: libmatekbd4
-Section: mate
+Section: libs
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
