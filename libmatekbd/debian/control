@@ -10,6 +10,8 @@ Build-Depends: debhelper (>= 9),
                mate-common
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: libmatekbd4
 Architecture: any
