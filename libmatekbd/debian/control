@@ -33,7 +33,7 @@ Replaces: libmatekbd4 (<< 1.6.1-1)
 Description: MATE library to manage keyboard configuration (common files)
  libmatekbd offers an API to manage the keyboard in MATE applications.
  .
- This package contains the architecture independent files.
+ This package contains the architecture-independent files.
 
 Package: libmatekbd-dev
 Section: libdevel
@@ -56,7 +56,8 @@ Architecture: any
 Depends: ${misc:Depends},
          libmatekbd4 (= ${binary:Version})
 Description: MATE library to manage keyboard configuration (debugging symbols)
- This package contains debugging symbols for the libmatekbd library.
- It is provided to help debugging problems.
+ This package contains debugging symbols for the libmatekbd library. It is
+ provided to help debugging problems.
+ .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
