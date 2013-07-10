@@ -1,4 +1,3 @@
 usr/include
-usr/lib/pkgconfig
-usr/lib/libmatewnck.a
-usr/lib/libmatewnck.so
+usr/lib/*/pkgconfig
+usr/lib/*/libmatewnck.so

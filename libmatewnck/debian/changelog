@@ -1,41 +1,5 @@
-libmatewnck (1.6.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 12:59:20 +0200
-
-libmatewnck (1.5.1-2) unstable; urgency=low
-
-  * Give a minimum version to dh_makeshlibs due to API changes.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 08 Feb 2013 10:56:45 +0100
-
-libmatewnck (1.5.1-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 07 Feb 2013 23:25:03 +0100
-
-libmatewnck (1.5.0-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 11:47:41 +0200
-
-libmatewnck (1.4.0-2) unstable; urgency=low
-
-  * Add gobject-introspection to build-depends to fix build in oneiric.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 09 Jul 2012 02:19:03 +0200
-
-libmatewnck (1.4.0-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 09 Jul 2012 01:13:02 +0200
-
-libmatewnck (1.3.0-1) unstable; urgency=low
+libmatewnck (1.6.1-1) unstable; urgency=low
 
   * Initial release.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 May 2012 11:49:28 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Jul 2013 06:54:39 +0200
