@@ -88,6 +88,7 @@ Depends: ${misc:Depends},
 Description: MATE Window Navigator Construction Kit (debugging symbols)
  This package contains debugging symbols for the libmatewnck
  library. It is provided to help debugging problems.
+ .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
 
