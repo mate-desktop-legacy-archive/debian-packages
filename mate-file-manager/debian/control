@@ -46,6 +46,7 @@ Depends: ${shlibs:Depends},
          desktop-file-utils,
          libglib2.0-data,
          mate-desktop,
+         gvfs,
          libcaja-extension (= ${binary:Version}),
          caja-common (= ${source:Version})
 Suggests: gstreamer0.10-tools,

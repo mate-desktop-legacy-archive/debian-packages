@@ -1,3 +1,9 @@
+mate-file-manager (1.6.1-4) UNRELEASED; urgency=low
+
+  * Add gvfs to Depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 12 Jul 2013 20:33:32 +0200
+
 mate-file-manager (1.6.1-3) unstable; urgency=low
 
   * Cherry pick upstream patch:
