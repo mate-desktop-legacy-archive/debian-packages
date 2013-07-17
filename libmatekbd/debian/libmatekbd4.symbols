@@ -83,7 +83,6 @@ libmatekbdui.so.4 libmatekbd4 #MINVER#
  matekbd_keyboard_drawing_get_compat@Base 1.6.1
  matekbd_keyboard_drawing_get_geometry@Base 1.6.1
  matekbd_keyboard_drawing_get_keycodes@Base 1.6.1
- matekbd_keyboard_drawing_get_pixbuf@Base 1.6.1
  matekbd_keyboard_drawing_get_symbols@Base 1.6.1
  matekbd_keyboard_drawing_get_type@Base 1.6.1
  matekbd_keyboard_drawing_get_types@Base 1.6.1
