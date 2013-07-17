@@ -4,13 +4,13 @@ libmate-desktop-2.so.17 libmate-desktop-2-17 #MINVER#
  make_display_name@Base 1.6.1
  mate_bg_changes_with_time@Base 1.6.1
  mate_bg_create_frame_thumbnail@Base 1.6.1
- mate_bg_create_pixmap@Base 1.6.1
+ mate_bg_create_surface@Base 1.7.0
  mate_bg_create_thumbnail@Base 1.6.1
  mate_bg_crossfade_get_type@Base 1.6.1
  mate_bg_crossfade_is_started@Base 1.6.1
  mate_bg_crossfade_new@Base 1.6.1
- mate_bg_crossfade_set_end_pixmap@Base 1.6.1
- mate_bg_crossfade_set_start_pixmap@Base 1.6.1
+ mate_bg_crossfade_set_end_surface@Base 1.7.0
+ mate_bg_crossfade_set_start_surface@Base 1.7.0
  mate_bg_crossfade_start@Base 1.6.1
  mate_bg_crossfade_stop@Base 1.6.1
  mate_bg_draw@Base 1.6.1
@@ -18,7 +18,7 @@ libmate-desktop-2.so.17 libmate-desktop-2-17 #MINVER#
  mate_bg_get_draw_background@Base 1.6.1
  mate_bg_get_filename@Base 1.6.1
  mate_bg_get_image_size@Base 1.6.1
- mate_bg_get_pixmap_from_root@Base 1.6.1
+ mate_bg_get_surface_from_root@Base 1.7.0
  mate_bg_get_placement@Base 1.6.1
  mate_bg_get_type@Base 1.6.1
  mate_bg_has_multiple_sizes@Base 1.6.1
@@ -33,8 +33,8 @@ libmate-desktop-2.so.17 libmate-desktop-2-17 #MINVER#
  mate_bg_set_color@Base 1.6.1
  mate_bg_set_draw_background@Base 1.6.1
  mate_bg_set_filename@Base 1.6.1
- mate_bg_set_pixmap_as_root@Base 1.6.1
- mate_bg_set_pixmap_as_root_with_crossfade@Base 1.6.1
+ mate_bg_set_surface_as_root@Base 1.7.0
+ mate_bg_set_surface_as_root_with_crossfade@Base 1.7.0
  mate_bg_set_placement@Base 1.6.1
  mate_desktop_item_attr_exists@Base 1.6.1
  mate_desktop_item_clear_localestring@Base 1.6.1

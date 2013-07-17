@@ -3,23 +3,21 @@ Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
-               dh-autoreconf,
                intltool,
                libglib2.0-dev,
-               libgtk2.0-dev,
+               libgtk-3-dev,
                libstartup-notification0-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
                libx11-dev,
                libxrandr-dev,
                libxml2-dev,
-               libunique-dev,
+               libunique-3.0-dev,
                gtk-doc-tools,
                python-dev,
                python-support,
                libglib2.0-doc,
-               libgtk2.0-doc,
-               mate-common
+               libgtk-3-doc,
+               mate-common,
+               yelp-tools
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -29,7 +27,6 @@ Package: mate-desktop
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libunique-1.0-0,
          hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version})
