@@ -2,10 +2,7 @@ Source: mate-panel
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
-               autoconf,
+Build-Depends: debhelper (>= 9),
                intltool,
                mate-doc-utils,
                mate-doc-utils-gnome | gnome-doc-utils,
@@ -55,7 +52,7 @@ Depends: ${shlibs:Depends},
          menu-xdg,
          python,
          mate-polkit,
-         libmatepanelapplet (= ${binary:Version}),
+         libmate-panel-applet4-1 (= ${binary:Version}),
          mate-panel-common (= ${source:Version})
 Breaks: mate-panel-common (<< 1.1.1-4)
 Replaces: mate-panel-common (<< 1.1.1-4)
@@ -73,12 +70,14 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          mate-panel (= ${binary:Version}),
-         libmatepanelapplet (= ${binary:Version})
+         libmate-panel-applet4-1 (= ${binary:Version})
 Description: launcher and docking facility for MATE (debugging symbols)
  This package contains debugging symbols for mate-panel and the 
  libmatepanelapplet library. It is provided to help debugging problem in 
- the panel itself or in the library. The debugging symbols are installed 
- in /usr/lib/debug and will automatically be used by gdb.
+ the panel itself or in the library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
 Package: mate-panel-common
 Architecture: all
@@ -95,32 +94,41 @@ Description: launcher and docking facility for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: libmatepanelapplet
+Package: libmate-panel-applet4-1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Breaks: mate-panel (<= 1.0.0-3)
+Breaks: mate-panel (<= 1.0.0-3), libmatepanelapplet
+Replaces: libmatepanelapplet
+Provides: libmatepanelapplet
+Conflicts: libmatepanelapplet
 Description: library for MATE Panel applets
  This library is used by MATE Panel applets.
 
-Package: libmatepanelapplet-dev
+Package: libmate-panel-applet-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmatepanelapplet (= ${binary:Version}),
+         libmate-panel-applet4-1 (= ${binary:Version}),
          libgtk2.0-dev,
          libglib2.0-dev
+Provides: libmatepanelapplet-dev
+Conflicts: libmatepanelapplet-dev
+Replaces: libmatepanelapplet-dev
 Description: library for MATE Panel applets (development files)
  This library is used by MATE Panel applets.
  .
  This package contains the development files.
 
-Package: libmatepanelapplet-doc
+Package: libmate-panel-applet-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
+Provides: libmatepanelapplet-doc
+Conflicts: libmatepanelapplet-doc
+Replaces: libmatepanelapplet-doc
 Description: library for MATE Panel applets (documentation files)
  This library is used by MATE Panel applets.
  .
