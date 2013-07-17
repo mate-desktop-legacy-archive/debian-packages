@@ -1,3 +1,9 @@
+mate-common (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 17 Jul 2013 13:06:27 +0200
+
 mate-common (1.6.1-1) unstable; urgency=low
 
   * Initial release (Closes: #658783)
