@@ -6,7 +6,9 @@
 override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la 
 	rm -rfv debian/tmp/usr/share/omf/
-	rm -rfv debian/tmp/usr/share/help/
+	rm -rfv debian/tmp/usr/share/help/*/fdl/
+	rm -rfv debian/tmp/usr/share/help/*/gpl/
+	rm -rfv debian/tmp/usr/share/help/*/lgpl/
 	dh_install --list-missing
 
 override_dh_auto_configure:
