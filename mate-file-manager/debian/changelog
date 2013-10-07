@@ -1,6 +1,8 @@
 mate-file-manager (1.6.1-4) UNRELEASED; urgency=low
 
   * Add gvfs to Depends.
+  * Cherry pick upstream patch:
+    06-fix-thumbnails-frames.patch
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 12 Jul 2013 20:33:32 +0200
 

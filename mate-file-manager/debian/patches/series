@@ -4,3 +4,7 @@
 03-fix-for-x-caja-desktop-windows.patch
 04-fix-binary-check.patch
 05-fix-binary-check-2.patch
+06-fix-thumbnails-frames.patch
+07-fix-thumbnails-frames-2.patch
+08-fix-segfault.patch
+
