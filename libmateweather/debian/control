@@ -2,38 +2,33 @@ Source: libmateweather
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
+               mate-common,
                autotools-dev,
-               cdbs (>= 0.4.90~),
                libxml2-dev,
                libglib2.0-dev,
-               libgtk2.0-dev,
-               intltool,
-               pkg-config,
-               libxml2-utils,
-               libglib2.0-doc,
-               libgtk2.0-doc,
+               libgtk-3-dev,
                libsoup2.4-dev,
                libsoup-gnome2.4-dev,
-               mate-common,
+               libxml2-utils,
                gtk-doc-tools,
                python-all-dev (>= 2.6.6-3~),
                python-gobject-dev,
                python-gtk2-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
-Package: libmateweather
+Package: libmateweather1
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libxml2,
-         libglib2.0-0,
-         libgtk2.0-0,
-         libsoup2.4-1,
-         libsoup-gnome2.4-1,
          libmateweather-common (= ${source:Version})
+Provides: libmateweather
+Breaks: libmateweather
+Conflicts: libmateweather
+Replaces: libmateweather
 Description: MateWeather shared library
  libmateweather is a library to access weather information from online
  services for numerous locations.
@@ -54,7 +49,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmateweather (= ${binary:Version}),
+         libmateweather1 (= ${binary:Version}),
          libxml2-dev,
          libglib2.0-dev,
          libgtk2.0-dev,
@@ -71,7 +66,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         libmateweather (= ${binary:Version})
+         libmateweather1 (= ${binary:Version})
 Description: MateWeather shared library (debugging symbols)
  This package contains debugging symbols for the libmateweather
  library. It is provided to help debugging problems.
