@@ -1,6 +1,5 @@
 usr/bin/matedialog
+usr/share/help/
 usr/share/locale/
 usr/share/man/
-usr/share/mate/
 usr/share/matedialog/
-usr/share/omf/
