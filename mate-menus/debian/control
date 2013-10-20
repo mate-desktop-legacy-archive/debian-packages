@@ -19,7 +19,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends},
-         libmatemenu (= ${binary:Version})
+         libmate-menu2 (= ${binary:Version})
 Description: implementation of the freedesktop menu specification for MATE
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -36,6 +36,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends}
 Breaks: mate-menus (<= 1.0.2-1), libmatemenu
 Replaces: mate-menus (<= 1.0.2-1), libmatemenu
+Conflicts: libmatemenu
 Provides: libmatemenu
 Description: implementation of the freedesktop menu specification for MATE (library)
  The package contains an implementation of the draft
@@ -50,10 +51,12 @@ Architecture: any
 Section: libdevel
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libmatemenu (= ${binary:Version}),
+         libmate-menu2 (= ${binary:Version}),
          mate-menus (= ${binary:Version}),
          libglib2.0-dev
 Conflicts: libmatemenu-dev
+Replaces: libmatemenu-dev
+Breaks: libmatemenu-dev
 Provides: libmatemenu-dev
 Description: implementation of the freedesktop menu specification for MATE (development files)
  The package contains an implementation of the draft

@@ -1,3 +1,9 @@
+mate-menus (1.7.0-2) unstable; urgency=low
+
+  * Fix dependencies.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 20 Oct 2013 14:31:30 +0200
+
 mate-menus (1.7.0-1) unstable; urgency=low
 
   * Initial release.
