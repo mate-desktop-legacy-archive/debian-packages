@@ -1,4 +1,4 @@
-mate-file-manager (1.7.0-1) UNRELEASED; urgency=low
+caja (1.7.0-1) UNRELEASED; urgency=low
 
   * Add gvfs to Depends.
 
