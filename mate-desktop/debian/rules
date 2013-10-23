@@ -17,6 +17,7 @@ override_dh_auto_configure:
 		--disable-scrollkeeper \
 		--disable-schemas-compile \
 		--enable-gtk-doc \
+		--enable-mpaste \
 		--with-gtk=3.0
 
 override_dh_strip:
