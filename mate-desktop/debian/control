@@ -63,7 +63,8 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate-desktop-2-17 (= ${binary:Version}),
-         libstartup-notification0-dev
+         libstartup-notification0-dev,
+         libdconf-dev,
 Conflicts: libmatedesktop-dev
 Description: Library with common API for various MATE modules (development files)
  This package contain the library with common API for various MATE modules.
