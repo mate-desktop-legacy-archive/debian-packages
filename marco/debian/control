@@ -1,14 +1,14 @@
-Source: mate-window-manager
+Source: marco
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                mate-common,
                intltool,
-               libgtk2.0-dev,
+               libgtk-3-dev,
                libpango1.0-dev,
-               libcanberra-gtk-dev,
+               libcanberra-gtk3-dev,
                libglib2.0-dev,
                libstartup-notification0-dev,
                libgtop2-dev,
@@ -24,10 +24,9 @@ Build-Depends: debhelper (>= 8),
                libxrandr-dev,
                libsm-dev,
                libice-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                mate-dialogs
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 
 Package: marco
