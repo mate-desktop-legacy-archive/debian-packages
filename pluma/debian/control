@@ -1,49 +1,24 @@
-Source: mate-text-editor
-Section: mate
+Source: pluma
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                autotools-dev,
-               python-support,
                intltool,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                gtk-doc-tools,
                libenchant-dev,
                iso-codes,
                libsm-dev,
                libxml2-dev,
                libglib2.0-dev,
-               libgtk2.0-dev,
-               libgtksourceview2.0-dev,
+               libgtk-3-dev,
+               libgtksourceview-3.0-dev,
                libx11-dev,
-               python-dev,
-               python-gobject-dev,
-               python-gtk2-dev,
-               python-gtksourceview2,
-               scrollkeeper,
-               mate-common
-Build-Depends-Indep: libglib2.0-doc,
-                     libgtk2.0-doc,
-                     libgtksourceview2.0-doc
-Standards-Version: 3.9.3
-XS-Python-Version: >= 2.5
+               mate-common,
+Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
-
-Package: mate-text-editor
-Architecture: all
-Depends: ${misc:Depends},
-         pluma
-Description: official text editor of the MATE desktop environment (transitional package)
- pluma is a text editor which supports most standard editor features,
- extending this basic functionality with other features not usually
- found in simple text editors. pluma is a graphical application which
- supports editing multiple text files in one window (known sometimes as
- tabs or MDI).
- .
- This is a transitional package. You can remove it once installed.
 
 Package: pluma
 Architecture: any
@@ -51,9 +26,6 @@ Depends: ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
          pluma-common (= ${source:Version}),
-         python-gtksourceview2,
-         python-gobject,
-         python-gtk2,
          iso-codes
 Recommends: mate-dialogs
 Provides: mate-text-editor
