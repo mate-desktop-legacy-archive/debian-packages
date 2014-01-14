@@ -1,2 +1,2 @@
 version=3
-http://pub.mate-desktop.org/releases/(\d\.\d)/python-caja-(.*)\.tar\.xz
+http://pub.mate-desktop.org/releases/(\d\.(2|4|6|8|0))/python-caja-(.*)\.tar\.xz

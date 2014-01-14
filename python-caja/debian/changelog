@@ -1,3 +1,9 @@
+python-caja (1.6.1-0~mate1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 13 Jan 2014 15:37:04 +0100
+
 python-caja (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
