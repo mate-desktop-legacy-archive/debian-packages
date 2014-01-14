@@ -13,7 +13,7 @@ override_dh_auto_configure:
 		--disable-static \
 		--enable-startup-notification=yes \
 		--disable-scrollkeeper \
-		--with-gtk=3.0
+		--with-gtk=2.0
 
 override_dh_strip:
 	dh_strip --dbg-package=marco-dbg
