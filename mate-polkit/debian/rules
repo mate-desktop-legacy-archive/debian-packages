@@ -12,7 +12,7 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/polkit-mate \
 		--disable-static \
 		--disable-introspection \
-		--with-gtk=3.0
+		--with-gtk=2.0
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

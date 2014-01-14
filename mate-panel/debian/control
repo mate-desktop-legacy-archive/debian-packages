@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9),
                libxau-dev,
                libice-dev,
                libsm-dev,
-               libgtk-3-dev,
+               libgtk2.0-dev,
                libmate-desktop-dev,
                libcairo2-dev,
                gtk-doc-tools,
@@ -22,14 +22,15 @@ Build-Depends: debhelper (>= 9),
                libdbus-glib-1-dev,
                libdbus-1-dev,
                libxrandr-dev,
-               libcanberra-gtk3-dev,
+               libcanberra-gtk-dev,
                libsoup2.4-dev,
                libavahi-client-dev,
                libavahi-common-dev,
                libavahi-glib-dev,
+               libwnck-dev,
                libgirepository1.0-dev,
                gobject-introspection,
-               gir1.2-gtk-3.0,
+               gir1.2-gtk-2.0,
                gir1.2-glib-2.0,
                gir1.2-atk-1.0,
                gir1.2-freedesktop,
@@ -110,7 +111,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libmate-panel-applet4-1 (= ${binary:Version}),
-         libgtk-3-dev,
+         libgtk2.0-dev,
          libglib2.0-dev
 Provides: libmatepanelapplet-dev
 Conflicts: libmatepanelapplet-dev
@@ -138,7 +139,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends},
          ${gir:Depends},
-         gir1.2-gtk-3.0
+         gir1.2-gtk-2.0
 Description: GObject introspection data for MATE panel
  This package contains introspection data for MATE panel.
  .
