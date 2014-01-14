@@ -1,3 +1,9 @@
+libmateweather (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Oct 2013 12:50:10 +0200
+
 libmateweather (1.6.2-1) unstable; urgency=low
 
   * Initial release.
