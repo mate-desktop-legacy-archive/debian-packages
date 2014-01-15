@@ -1,20 +1,17 @@
-Source: mate-file-archiver
-Section: mate
+Source: engrampa
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libgtk2.0-dev,
                libcaja-extension-dev,
                gettext,
                intltool,
-               scrollkeeper,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: engrampa
