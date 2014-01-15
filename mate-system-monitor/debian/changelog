@@ -1,3 +1,9 @@
+mate-system-monitor (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 15 Jan 2014 10:03:58 +0100
+
 mate-system-monitor (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
