@@ -1,4 +1,10 @@
-mate-terminal (1.7.0-1) UNRELEASED; urgency=low
+mate-terminal (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano <stefano@karapetsas.com>  Thu, 16 Jan 2014 17:08:52 +0100
+
+mate-terminal (1.7.0-1) unstable; urgency=low
 
   * New upstream release.
 
