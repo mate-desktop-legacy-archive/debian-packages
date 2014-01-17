@@ -33,6 +33,7 @@ replaces.append(["libvte-dev", "libvte-2.90-dev"])
 replaces.append(["libgail-dev", "libgail-3-dev"])
 replaces.append(["libwnck-dev", "libwnck-3-dev"])
 replaces.append(["libgtkmm-2.4-dev", "libgtkmm-3.0-dev"])
+replaces.append(["libgtksourceview2.0-dev", "libgtksourceview-3.0-dev"])
 
 for package in packages:
 	if os.path.isdir(package):
