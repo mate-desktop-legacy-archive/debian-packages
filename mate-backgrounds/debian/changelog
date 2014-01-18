@@ -1,3 +1,9 @@
+mate-backgrounds (1.7.1-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 14:14:11 +0100
+
 mate-backgrounds (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
