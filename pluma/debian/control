@@ -88,3 +88,16 @@ Description: official text editor of the MATE desktop environment (debugging sym
  .
  The debugging symbols are installed  in /usr/lib/debug and will
  automatically be used by gdb.
+
+Package: pluma-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: official text editor of the MATE desktop environment (documentation files)
+ pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ This package contains the documentation files.

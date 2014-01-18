@@ -4,12 +4,13 @@
 	dh $@
 
 override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/pluma/plugin-loaders/*.la
 	dh_install --list-missing
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		--libexecdir=/usr/lib/ \
-		--disable-python \
+		--enable-python \
 		--with-gtk=2.0
 
 override_dh_auto_test:
