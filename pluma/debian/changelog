@@ -1,5 +1,11 @@
-pluma (1.7.0-1) UNRELEASED; urgency=low
+pluma (1.7.1-1) unstable; urgency=low
 
-  * New release.
+  * New upstream development release.
 
- -- stefano <stefano@debian>  Wed, 30 Oct 2013 22:16:14 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 13:49:19 +0100
+
+pluma (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 30 Oct 2013 22:16:14 +0100
