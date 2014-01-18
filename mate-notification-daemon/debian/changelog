@@ -1,5 +1,11 @@
-mate-notification-daemon (1.7.0-1) UNRELEASED; urgency=low
+mate-notification-daemon (1.7.1-1) unstable; urgency=medium
 
-  * New upstream release.
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 17:25:17 +0100
+
+mate-notification-daemon (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Oct 2013 13:01:14 +0100
