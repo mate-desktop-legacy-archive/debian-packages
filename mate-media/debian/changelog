@@ -1,3 +1,9 @@
+mate-media (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 20 Jan 2014 16:05:54 +0100
+
 mate-media (1.6.0-2) unstable; urgency=low
 
   * mate-media-gstreamer: Add Breaks with mate-applets < 1.6.0.
