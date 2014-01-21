@@ -3,6 +3,10 @@
 %:
 	dh $@
 
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-maintainer-mode
+
 override_dh_install:
 	dh_install --list-missing
 
