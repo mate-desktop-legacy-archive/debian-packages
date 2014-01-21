@@ -1,3 +1,9 @@
+atril (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 21 Jan 2014 14:17:54 +0100
+
 mate-document-viewer (1.6.0-2) unstable; urgency=low
 
   * Disable impress backend.
