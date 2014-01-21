@@ -1,3 +1,9 @@
+mate-icon-theme-faenza (1.7.0-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 21 Jan 2014 18:49:34 +0100
+
 mate-icon-theme-faenza (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
