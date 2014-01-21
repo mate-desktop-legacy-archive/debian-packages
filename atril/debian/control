@@ -1,21 +1,18 @@
-Source: mate-document-viewer
+Source: atril
 Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               debhelper (>= 9),
+Build-Depends: debhelper (>= 9),
                intltool,
                mate-common,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                gtk-doc-tools,
                libdbus-glib-1-dev,
                libx11-dev,
                libgtk2.0-dev,
                libglib2.0-dev,
-               libmatekeyring-dev,
-               mate-icon-theme,
+               libsecret-1-dev,
                libxml2-dev,
                libsm-dev,
                zlib1g-dev,
@@ -30,7 +27,7 @@ Build-Depends: cdbs,
                libgail-dev,
                xsltproc,
                libgxps-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: atril
