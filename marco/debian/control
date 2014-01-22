@@ -26,7 +26,7 @@ Build-Depends: debhelper (>= 9),
                libice-dev,
                yelp-tools,
                mate-dialogs
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: marco
@@ -35,7 +35,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-dialogs,
          marco-common (= ${source:Version}),
-         libmarco-private0 (= ${binary:Version})
+         libmarco-private0 (= ${binary:Version}),
 Breaks: mate-window-manager (<= 1.0.0-2)
 Provides: x-window-manager
 Description: lightweight GTK+ window manager
@@ -58,7 +58,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          marco (= ${binary:Version}),
-         libmarco-private0 (= ${binary:Version})
+         libmarco-private0 (= ${binary:Version}),
 Description: lightweight GTK+ window manager (debugging symbols)
  This package contains debugging symbols for marco and the
  libmarco-private0 library. It is provided to help debugging problems.
@@ -69,7 +69,7 @@ Package: libmarco-private0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2), libmarco
 Conflicts: libmarco
 Replaces: libmarco
@@ -85,7 +85,7 @@ Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmarco-private0 (= ${binary:Version})
+         libmarco-private0 (= ${binary:Version}),
 Breaks: mate-window-manager (<= 1.0.0-2)
 Description: library for marco window manager (development files)
  Marco is a small window manager, using GTK+ to do everything. It is
