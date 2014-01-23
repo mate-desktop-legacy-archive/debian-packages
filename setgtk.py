@@ -40,7 +40,8 @@ for package in packages:
 		for dfile in ["control", "rules"]:
 			pfile = package + "/debian/" + dfile
 			if os.path.exists(pfile):
-				print pfile
+				if not options.all:
+					print pfile
 				for r in replaces:
 					if options.gtk2:
 						r1 = r[1]
