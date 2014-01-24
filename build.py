@@ -17,6 +17,7 @@ packages = [
             "mate-applets",
             "mate-backgrounds",
             "mate-common",
+            "mate-control-center",
             "mate-desktop",
             "mate-icon-theme",
             "mate-icon-theme-faenza",

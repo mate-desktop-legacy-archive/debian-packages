@@ -3,9 +3,7 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs,
-               dh-autoreconf,
-               debhelper,
+Build-Depends: debhelper (>= 9),
                mate-common,
                docbook-to-man,
                autotools-dev,
@@ -23,7 +21,6 @@ Build-Depends: cdbs,
                libdbus-glib-1-dev,
                libxml2-dev,
                libmarco-dev,
-               mate-settings-daemon,
                libxft-dev,
                libxrender-dev,
                libxrandr-dev,
@@ -34,14 +31,13 @@ Build-Depends: cdbs,
                libunique-dev,
                desktop-file-utils,
                shared-mime-info,
-               scrollkeeper,
                libgtop2-dev,
                xsltproc,
                libstartup-notification0-dev,
                libpango1.0-dev,
                librsvg2-dev,
                libdconf-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-control-center
