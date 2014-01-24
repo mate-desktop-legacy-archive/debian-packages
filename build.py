@@ -23,6 +23,7 @@ packages = [
             "mate-icon-theme-faenza",
             "mate-media",
             "mate-menus",
+            "mate-netspeed",
             "mate-notification-daemon",
             "mate-panel",
             "mate-power-manager",

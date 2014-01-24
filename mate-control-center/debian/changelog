@@ -1,3 +1,9 @@
+mate-control-center (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 24 Jan 2014 19:38:42 +0100
+
 mate-control-center (1.6.0-3.1) unstable; urgency=low
 
   * Rebuild for new dconf library in Jessie.
