@@ -3,12 +3,10 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
-               cdbs,
+Build-Depends: debhelper (>= 9),
                docbook-xml,
                mate-common,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                intltool,
                libatasmart-dev [!kfreebsd-i386 !kfreebsd-amd64],
                libcairo2-dev,
@@ -16,14 +14,13 @@ Build-Depends: debhelper (>= 8),
                libglib2.0-dev,
                libgtk2.0-dev,
                libnotify-dev,
-               libmatepanelapplet-dev,
+               libmate-panel-applet-dev,
                libsensors4-dev [!kfreebsd-i386 !kfreebsd-amd64],
                libxnvctrl-dev | nvidia-settings,
                fglrx-driver | fglrx,
                libtool,
-               libxml-parser-perl,
-               rarian-compat
-Standards-Version: 3.9.3
+               libxml-parser-perl
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-sensors-applet
