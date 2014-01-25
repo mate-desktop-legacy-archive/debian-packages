@@ -1,4 +1,4 @@
-caja (1.7.0-1) UNRELEASED; urgency=low
+caja (1.7.0-1) unstable; urgency=low
 
   * Add gvfs to Depends.
   * Cherry pick upstream patch:
