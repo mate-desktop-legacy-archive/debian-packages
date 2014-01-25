@@ -5,39 +5,13 @@ import os
 import codecs
 
 package = sys.argv[1]
-packages = [
-            "atril",
-            "caja",
-            "caja-extensions",
-            "engrampa",
-            "eom",
-            "libmatekbd",
-            "libmateweather",
-            "marco",
-            "mate-applets",
-            "mate-backgrounds",
-            "mate-common",
-            "mate-control-center",
-            "mate-desktop",
-            "mate-icon-theme",
-            "mate-icon-theme-faenza",
-            "mate-media",
-            "mate-menus",
-            "mate-netspeed",
-            "mate-notification-daemon",
-            "mate-panel",
-            "mate-power-manager",
-            "mate-screensaver",
-            "mate-session-manager",
-            "mate-settings-daemon",
-            "mate-terminal",
-            "mate-themes",
-            "mozo",
-            "pluma"
-            ]
+if package == "":
+    sys.exit(1)
+if package[-1] == "/":
+    package = package[:-1]
 
-if not package in packages:
-    print "E: package '%s' not valid" % package
+if not os.path.exists(package):
+    print "E: package '%s' not found" % package
     sys.exit(1)
 
 os.system("rm -rf /tmp/%s/ " % package)
