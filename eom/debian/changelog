@@ -1,3 +1,9 @@
+eom (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 25 Jan 2014 17:45:37 +0100
+
 mate-image-viewer (1.6.0-3) unstable; urgency=low
 
   * Cherry pick patch to fix MateConf convert file.
