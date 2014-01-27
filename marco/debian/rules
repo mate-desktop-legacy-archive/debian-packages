@@ -4,6 +4,8 @@
 	dh $@
 
 override_dh_install:
+	rm -rfv debian/tmp/usr/share/MateConf/gsettings/marco.convert
+	rm -rfv debian/tmp/usr/lib/*/libmarco-private.la
 	dh_install --list-missing
 
 override_dh_auto_configure:
