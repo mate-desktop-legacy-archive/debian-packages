@@ -2,11 +2,25 @@
 
 import codecs
 import datetime
+import optparse
 import os
 import subprocess
 import sys
 
-package = sys.argv[1]
+parser = optparse.OptionParser()
+parser.add_option("-s", "--source", dest="source", action="store_true", help="Build source package")
+parser.add_option("-i", "--i386", dest="i386", action="store_true", help="Build i386 binary package")
+(options, args) = parser.parse_args()
+
+if len(args) == 0:
+    print "E: No package given!"
+    sys.exit(1)
+elif len(args) > 1:
+    print "E: Too many packages given!"
+    sys.exit(1)
+
+package = args[0]
+
 if package == "":
     sys.exit(1)
 if package[-1] == "/":
@@ -33,6 +47,9 @@ orig_changelog = orig_changelog_file.read().splitlines()
 orig_changelog_file.close()
 new_changelog = orig_changelog
 new_changelog[0] = new_changelog[0].replace(")", suffix + ")")
+if options.source:
+    for i in range(10):
+        new_changelog[0] = new_changelog[0].replace("-" + str(i), "")
 new_changelog_file = codecs.open("debian/changelog", encoding="utf-8", mode="w")
 new_changelog_file.write("\n".join(new_changelog))
 new_changelog_file.close()
@@ -48,12 +65,21 @@ new_rules_file = codecs.open("debian/rules", encoding="utf-8", mode="w")
 new_rules_file.write(new_rules)
 new_rules_file.close()
 
-os.system("dpkg-buildpackage -b -Zxz -uc -tc 2>&1 | tee build.log")
-os.system("mv -v build.log ~/mate/logs/%s.log" % package)
-os.system("rm -v ../*.changes")
-os.system("mv -v ../*.deb ~/mate/")
+if options.source:
+    os.system("dpkg-buildpackage -S -Zxz -uc -us")
+    os.system("mv -v ../*.dsc ~/mate/deb/")
+    os.system("mv -v ../*.xz ~/mate/deb/")
+    os.system("mv -v ../*.changes ~/mate/deb/")
+else:
+    if options.i386:
+        os.system("dpkg-buildpackage -B -ai386 -Zxz -uc -tc 2>&1 | tee build.log")
+    else:
+        os.system("dpkg-buildpackage -b -Zxz -uc -tc 2>&1 | tee build.log")
+    os.system("mv -v build.log ~/mate/logs/%s.log" % package)
+    os.system("rm -v ../*.changes")
+    os.system("mv -v ../*.deb ~/mate/deb/")
 os.chdir(os.path.join(os.path.expanduser("~"), "mate"))
 os.system("rm -rf /tmp/%s/ " % package)
 print "---------------------------------------------------------------"
-os.system("ls -1 *.deb")
+os.system("ls -1 deb/")
 print "---------------------------------------------------------------"
