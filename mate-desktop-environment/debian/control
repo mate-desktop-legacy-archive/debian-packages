@@ -3,28 +3,28 @@ Section: mate
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-core
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-backgrounds (>= 1.6.0),
-         mate-control-center (>= 1.6.0),
-         caja (>= 1.6.0),
-         marco (>= 1.6.0),
-         mate-icon-theme (>= 1.6.0),
-         mate-keyring  (>= 1.6.0) | gnome-keyring,
-         mate-notification-daemon (>= 1.6.0) | notification-daemon,
-         mate-session-manager (>= 1.6.0),
-         mate-panel (>= 1.6.0),
-         mate-polkit (>= 1.6.0),
-         mate-menus (>= 1.6.0),
-         mate-settings-daemon (>= 1.6.0),
-         mate-terminal (>= 1.6.0),
-         mate-desktop (>= 1.6.0),
+         mate-backgrounds (>= 1.7.0),
+         mate-control-center (>= 1.7.0),
+         caja (>= 1.7.0),
+         marco (>= 1.7.0),
+         mate-icon-theme (>= 1.7.0),
+         gnome-keyring,
+         mate-notification-daemon (>= 1.7.0) | notification-daemon,
+         mate-session-manager (>= 1.7.0),
+         mate-panel (>= 1.7.0),
+         mate-polkit (>= 1.7.0),
+         mate-menus (>= 1.7.0),
+         mate-settings-daemon (>= 1.7.0),
+         mate-terminal (>= 1.7.0),
+         mate-desktop (>= 1.7.0),
          gvfs-bin
 Description: MATE Desktop Environment (essential components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
@@ -39,18 +39,18 @@ Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
-         atril (>= 1.6.0),
-         engrampa (>= 1.6.0),
-         pluma (>= 1.6.0),
-         eom (>= 1.6.0),
-         mate-power-manager (>= 1.6.0),
-         mate-screensaver (>= 1.6.0),
-         mate-calc (>= 1.6.0),
-         mate-utils (>= 1.6.0),
-         mate-applets (>= 1.6.0),
-         mate-media (>= 1.6.0),
-         mate-themes (>= 1.6.0),
-         mate-system-monitor (>= 1.6.0),
+         atril (>= 1.7.0),
+         engrampa (>= 1.7.0),
+         pluma (>= 1.7.0),
+         eom (>= 1.7.0),
+         mate-power-manager (>= 1.7.0),
+         mate-screensaver (>= 1.7.0),
+         mate-calc (>= 1.7.0),
+         mate-utils (>= 1.7.0),
+         mate-applets (>= 1.7.0),
+         mate-media (>= 1.7.0),
+         mate-themes (>= 1.7.0),
+         mate-system-monitor (>= 1.7.0),
          ubuntu-wallpapers | desktop-base,
          ffmpegthumbnailer
 Description: MATE Desktop Environment
@@ -69,15 +69,27 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
          mate-desktop-environment (= ${binary:Version}),
-         mate-bluetooth (>= 1.6.0),
-         mate-netspeed (>= 1.6.0),
-         mate-sensors-applet (>= 1.6.0),
-         mate-system-tools (>= 1.6.0),
-         mozo (>= 1.6.0),
+         mate-bluetooth (>= 1.7.0),
+         mate-netspeed (>= 1.7.0),
+         mate-sensors-applet (>= 1.7.0),
+         mate-system-tools (>= 1.7.0),
+         mozo (>= 1.7.0),
          dconf-tools
-Description: MATE Desktop Environment
+Description: MATE Desktop Environment (extra components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
  .
  This package depends on the extra set of applications that are
  part of the official MATE release.
+
+Package: mate-unstable-preview
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-core (= ${binary:Version})
+Description: MATE Desktop Environment (unstable preview)
+ The MATE Desktop Environment, a non-intuitive and unattractive desktop
+ for users, using traditional computing desktop metaphor.
+ .
+ This package contains a set of GSettings overrides to enable by default
+ all new features implemented in unstable releases of MATE.

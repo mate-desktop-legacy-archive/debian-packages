@@ -1,3 +1,10 @@
+mate-desktop-environment (1.7.0.1) unstable; urgency=low
+
+  * New upstream development release.
+  * Added metapackage with GSettings overrides for new MATE features.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 08 Feb 2014 22:20:25 +0100
+
 mate-desktop-environment (1.6.0.2) unstable; urgency=low
 
   * Remove libraries from dependencies.
