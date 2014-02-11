@@ -6,6 +6,7 @@ Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 9),
                intltool,
                mate-common,
+               mate-icon-theme,
                yelp-tools,
                gtk-doc-tools,
                libdbus-glib-1-dev,
