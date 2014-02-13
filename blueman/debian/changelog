@@ -1,0 +1,7 @@
+blueman (1.23-git201312311147-1) unstable; urgency=low
+
+  * Snapshot from (new :)) upstream repository (Closes: #674519, #705859,
+                                                #719747, #682848, #680757)
+  * Remaining patch: dhcpclient_priority
+
+ -- Christopher Schramm <debian@shakaweb.org>  Tue, 31 Dec 2013 11:47:00 +0100
