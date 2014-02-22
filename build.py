@@ -30,6 +30,10 @@ if not os.path.exists(package):
     print "E: package '%s' not found" % package
     sys.exit(1)
 
+# create build script needed folders
+os.system ("mkdir -p ~/mate/deb")
+os.system ("mkdir -p ~/mate/logs")
+
 os.system("rm -rf /tmp/%s/ " % package)
 os.system("cp " + package + " /tmp/" + package + "/ -R") 
 
