@@ -1,3 +1,9 @@
+mate-polkit (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:25:10 +0100
+
 mate-polkit (1.7.2-1) unstable; urgency=low
 
   * New upstream development release.

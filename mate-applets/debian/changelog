@@ -1,3 +1,9 @@
+mate-applets (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 18:57:37 +0100
+
 mate-applets (1.7.0-1) unstable; urgency=low
 
   * New upstream development release.

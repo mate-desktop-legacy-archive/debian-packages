@@ -1,3 +1,9 @@
+mozo (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 22:49:46 +0100
+
 mate-menu-editor (1.6.0-1) unstable; urgency=low
 
   * New upstream release.

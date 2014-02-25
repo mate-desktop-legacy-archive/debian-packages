@@ -1,11 +1,10 @@
-Source: mate-menu-editor
+Source: mozo
 Section: utils
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: cdbs (>= 0.4.41),
+Build-Depends: debhelper (>= 9),
                autotools-dev,
-               debhelper (>= 8),
                python-support (>= 0.7),
                python (>= 2.4),
                mate-common

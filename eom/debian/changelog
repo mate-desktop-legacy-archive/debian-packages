@@ -1,3 +1,9 @@
+eom (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 20:37:54 +0100
+
 eom (1.7.0-1) unstable; urgency=low
 
   * New upstream development release.
