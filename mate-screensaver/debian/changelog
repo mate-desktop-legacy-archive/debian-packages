@@ -1,3 +1,9 @@
+mate-screensaver (1.7.90-2) unstable; urgency=medium
+
+  * Add systemd support.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 27 Feb 2014 21:49:19 +0100
+
 mate-screensaver (1.7.90-1) unstable; urgency=low
 
   * New upstream development release
