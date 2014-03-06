@@ -1,3 +1,9 @@
+mate-session-manager (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- stefano <stefano@satellite>  Wed, 05 Mar 2014 21:33:26 +0100
+
 mate-session-manager (1.7.90-2) unstable; urgency=medium
 
   * Add systemd support.
