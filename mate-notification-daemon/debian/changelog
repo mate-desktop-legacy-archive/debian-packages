@@ -2,7 +2,7 @@ mate-notification-daemon (1.8.0-0) unstable; urgency=low
 
   * New upstream release
 
- -- stefano <stefano@satellite>  Wed, 05 Mar 2014 21:53:52 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:53:52 +0100
 
 mate-notification-daemon (1.7.90-1) unstable; urgency=low
 
