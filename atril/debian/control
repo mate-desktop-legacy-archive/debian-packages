@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libgtk2.0-dev,
                libglib2.0-dev,
-               libsecret-1-dev,
+               libsecret-1-dev | libgnome-keyring-dev,
                libxml2-dev,
                libsm-dev,
                zlib1g-dev,
@@ -27,7 +27,8 @@ Build-Depends: debhelper (>= 9),
                autotools-dev,
                libgail-dev,
                xsltproc,
-               libgxps-dev
+               libgxps-dev,
+               lsb-release
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 

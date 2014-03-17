@@ -69,27 +69,16 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-core (= ${binary:Version}),
          mate-desktop-environment (= ${binary:Version}),
-         mate-bluetooth (>= 1.7.0),
          mate-netspeed (>= 1.7.0),
-         mate-sensors-applet (>= 1.7.0),
-         mate-system-tools (>= 1.7.0),
+         mate-user-guide (>= 1.7.0),
          mozo (>= 1.7.0),
-         dconf-tools
+         dconf-editor | dconf-tools,
+         yelp
+Suggests: mate-sensors-applet (>= 1.7.0),
+          mate-system-tools (>= 1.7.0),
 Description: MATE Desktop Environment (extra components)
  The MATE Desktop Environment, a non-intuitive and unattractive desktop
  for users, using traditional computing desktop metaphor.
  .
  This package depends on the extra set of applications that are
  part of the official MATE release.
-
-Package: mate-unstable-preview
-Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-core (= ${binary:Version})
-Description: MATE Desktop Environment (unstable preview)
- The MATE Desktop Environment, a non-intuitive and unattractive desktop
- for users, using traditional computing desktop metaphor.
- .
- This package contains a set of GSettings overrides to enable by default
- all new features implemented in unstable releases of MATE.

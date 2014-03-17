@@ -1,5 +1,12 @@
 #!/usr/bin/make -f
 
+DEB_ATRIL_FLAGS=
+ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
+ifeq ($(shell lsb_release -cs),wheezy)
+	DEB_ATRIL_FLAGS=--without-keyring
+endif
+endif
+
 %:
 	dh $@
 
@@ -24,7 +31,8 @@ override_dh_auto_configure:
 		--enable-comics \
 		--disable-introspection \
 		--disable-static \
-		--with-gtk=2.0
+		--with-gtk=2.0 \
+		$(DEB_ATRIL_FLAGS)
 
 override_dh_strip:
 	dh_strip --dbg-package=atril-dbg
