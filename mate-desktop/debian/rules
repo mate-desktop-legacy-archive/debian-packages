@@ -12,6 +12,8 @@ override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- \
 		--disable-static \
 		--disable-scrollkeeper \
@@ -21,7 +23,8 @@ override_dh_auto_configure:
 		--with-gtk=2.0
 
 override_dh_strip:
-	dh_strip --dbg-package=mate-desktop-dbg
+	dh_strip -pmate-desktop --dbg-package=mate-desktop-dbg
+	dh_strip -plibmate-desktop-2-17 --dbg-package=libmate-desktop-2-17-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
