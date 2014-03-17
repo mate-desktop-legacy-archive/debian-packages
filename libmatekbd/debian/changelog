@@ -1,35 +1,5 @@
-libmatekbd (1.8.0-0) unstable; urgency=low
-
-  * New upstream release
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:49:19 +0100
-
-libmatekbd (1.7.90-1) unstable; urgency=low
-
-  * New upstream development release
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 14 Feb 2014 19:43:57 +0100
-
-libmatekbd (1.7.2-1) unstable; urgency=medium
+libmatekbd (1.9.0-1) unstable; urgency=medium
 
   * New upstream development release.
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 18:58:34 +0100
-
-libmatekbd (1.7.1-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 07 Oct 2013 18:30:56 +0200
-
-libmatekbd (1.7.0-1) unstable; urgency=low
-
-  * New upstream development release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 18 Jul 2013 00:21:59 +0200
-
-libmatekbd (1.6.1-1) unstable; urgency=low
-
-  * Initial release.
-
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 10:57:40 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 17 Mar 2014 18:39:18 +0100
