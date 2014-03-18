@@ -27,7 +27,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          pluma-common (= ${source:Version}),
          iso-codes
-Recommends: mate-dialogs
 Provides: mate-text-editor
 Breaks: mate-text-editor (<< 1.5.0)
 Replaces: mate-text-editor (<< 1.5.0)

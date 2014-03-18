@@ -25,7 +25,7 @@ Build-Depends: debhelper (>= 9),
                libsm-dev,
                libice-dev,
                yelp-tools,
-               mate-dialogs
+               zenity,
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
@@ -33,7 +33,7 @@ Package: marco
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-dialogs,
+         zenity,
          marco-common (= ${source:Version}),
          libmarco-private0 (= ${binary:Version}),
 Breaks: mate-window-manager (<= 1.0.0-2)
