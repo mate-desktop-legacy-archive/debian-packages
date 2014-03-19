@@ -1,7 +1,9 @@
 #!/usr/bin/make -f
 
+DHFLAGS=--parallel
+
 %:
-	dh $@
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja-sendto/plugins/*.la
@@ -10,7 +12,8 @@ override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
 		--with-gtk=2.0
 
 override_dh_strip:

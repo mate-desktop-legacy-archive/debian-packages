@@ -9,12 +9,13 @@ override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la 
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/
-	dh_install $(DHFLAGS) --list-missing
+	dh_install --list-missing
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test
 
 override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--libexecdir=/usr/lib/caja \
 		--disable-update-mimedb \
@@ -26,7 +27,7 @@ override_dh_auto_configure:
 		--with-gtk=2.0
 
 override_dh_strip:
-	dh_strip $(DHFLAGS) --dbg-package=caja-dbg
+	dh_strip --dbg-package=caja-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
