@@ -10,8 +10,10 @@ ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
 DEB_CONFIGURE_EXTRA_FLAGS += --with-aticonfig=/usr/lib/fglrx/bin/aticonfig
 endif
 
+DHFLAGS=--parallel
+
 %:
-	dh $@
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la 
@@ -19,7 +21,8 @@ override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
 		--libexecdir=/usr/lib/mate-sensors-applet
 		$(DEB_CONFIGURE_EXTRA_FLAGS) \
 		--with-nvidia=yes \

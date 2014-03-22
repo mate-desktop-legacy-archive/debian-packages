@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) $(DHFLAGS)
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/pluma/plugin-loaders/*.la

@@ -53,9 +53,8 @@ orig_changelog = orig_changelog_file.read().splitlines()
 orig_changelog_file.close()
 new_changelog = orig_changelog
 new_changelog[0] = new_changelog[0].replace(")", suffix + ")")
-if options.source:
-    for i in range(10):
-        new_changelog[0] = new_changelog[0].replace("-" + str(i), "")
+for i in range(10):
+    new_changelog[0] = new_changelog[0].replace("-" + str(i), "")
 new_changelog_file = codecs.open("debian/changelog", encoding="utf-8", mode="w")
 new_changelog_file.write("\n".join(new_changelog))
 new_changelog_file.close()
