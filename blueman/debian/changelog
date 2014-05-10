@@ -1,3 +1,9 @@
+blueman (1.90-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Apr 2014 21:15:59 +0200
+
 blueman (1.23-1) unstable; urgency=low
 
   * New upstream release.
