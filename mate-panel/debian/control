@@ -1,7 +1,11 @@
 Source: mate-panel
-Section: mate
+Section: x11
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Petr Baudis <pasky@ucw.cz>,
 Build-Depends: debhelper (>= 9),
                intltool,
                yelp-tools,
@@ -38,8 +42,8 @@ Build-Depends: debhelper (>= 9),
                gir1.2-gdkpixbuf-2.0,
                mate-common,
                lsb-release,
-               libdconf-dev
-Standards-Version: 3.9.3
+               libdconf-dev,
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-panel
@@ -51,7 +55,7 @@ Depends: ${shlibs:Depends},
          menu-xdg,
          python,
          mate-polkit,
-         libmate-panel-applet4-1 (= ${binary:Version}),
+         libmate-panel-applet-4-1 (= ${binary:Version}),
          mate-panel-common (= ${source:Version})
 Breaks: mate-panel-common (<< 1.1.1-4)
 Replaces: mate-panel-common (<< 1.1.1-4)
@@ -69,11 +73,15 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          mate-panel (= ${binary:Version}),
-         libmate-panel-applet4-1 (= ${binary:Version})
 Description: launcher and docking facility for MATE (debugging symbols)
- This package contains debugging symbols for mate-panel and the 
- libmatepanelapplet library. It is provided to help debugging problem in 
- the panel itself or in the library.
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the debugging symbols of the MATE panel application.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
@@ -93,33 +101,71 @@ Description: launcher and docking facility for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: libmate-panel-applet4-1
+Package: libmate-panel-applet-4-1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Breaks: mate-panel (<= 1.0.0-3), libmatepanelapplet
-Replaces: libmatepanelapplet
-Provides: libmatepanelapplet
-Conflicts: libmatepanelapplet
+Breaks: mate-panel (<= 1.0.0-3), 
+        libmatepanelapplet,
+        libmate-panel-applet4-1,
+Replaces: libmatepanelapplet,
+          libmate-panel-applet4-1,
+Provides: libmatepanelapplet,
+          libmate-panel-applet4-1,
 Description: library for MATE Panel applets
- This library is used by MATE Panel applets.
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the MATE Panel applet library.
+
+Package: libmate-panel-applet-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Breaks: mate-panel-dbg (<= 1.6.1),
+Depends: ${misc:Depends},
+         libmate-panel-applet-4-1 (= ${binary:Version})
+Description: library for MATE Panel applets (debugging symbols)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the debugging symbols of the MATE panel applet
+ library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
 
 Package: libmate-panel-applet-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmate-panel-applet4-1 (= ${binary:Version}),
+         libmate-panel-applet-4-1 (= ${binary:Version}),
          libgtk2.0-dev,
          libglib2.0-dev
 Provides: libmatepanelapplet-dev
 Conflicts: libmatepanelapplet-dev
 Replaces: libmatepanelapplet-dev
 Description: library for MATE Panel applets (development files)
- This library is used by MATE Panel applets.
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
  .
- This package contains the development files.
+ This package contains the development files of the MATE panel applet
+ library.
 
 Package: libmate-panel-applet-doc
 Section: doc
@@ -129,9 +175,15 @@ Provides: libmatepanelapplet-doc
 Conflicts: libmatepanelapplet-doc
 Replaces: libmatepanelapplet-doc
 Description: library for MATE Panel applets (documentation files)
- This library is used by MATE Panel applets.
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
  .
- This package contains the documentation files.
+ This package contains the documentation files of the MATE panel applet
+ library.
 
 Package: gir1.2-mate-panel
 Architecture: any
@@ -141,6 +193,13 @@ Depends: ${shlibs:Depends},
          ${gir:Depends},
          gir1.2-gtk-2.0
 Description: GObject introspection data for MATE panel
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
  This package contains introspection data for MATE panel.
  .
  It can be used by packages using the GIRepository format to generate

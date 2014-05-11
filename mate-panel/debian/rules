@@ -8,13 +8,15 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -f debian/tmp/usr/lib/*/*.la
 	rm -f debian/tmp/usr/share/MateConf/gsettings/mate-panel.convert
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--localstatedir=/var \
-		--libexecdir=/usr/lib/mate-panel \
+		--libexecdir=/usr/lib/$(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)/mate-panel \
 		--disable-scrollkeeper \
 		--disable-static \
 		--enable-introspection \
@@ -22,7 +24,8 @@ override_dh_auto_configure:
 		--with-gtk=2.0
 
 override_dh_strip:
-	dh_strip --dbg-package=mate-panel-dbg
+	dh_strip -pmate-panel --dbg-package=mate-panel-dbg
+	dh_strip -plibmate-panel-applet-4-1 --dbg-package=libmate-panel-applet-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -8,7 +8,7 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/python*/dist-packages/mate_invest/*.pyc
 	rm -rfv debian/tmp/usr/lib/python*/dist-packages/mate_invest/*.pyo
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

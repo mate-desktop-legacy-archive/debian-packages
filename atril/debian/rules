@@ -16,7 +16,7 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
 	rm -rfv debian/tmp/usr/share/MateConf/gsettings/atril.convert
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test

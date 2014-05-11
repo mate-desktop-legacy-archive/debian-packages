@@ -18,7 +18,7 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la 
 	rm -rfv debian/tmp/usr/lib/*/*/*.la 
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

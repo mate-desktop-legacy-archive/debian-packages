@@ -11,7 +11,7 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/share/help/*/fdl/
 	rm -rfv debian/tmp/usr/share/help/*/gpl/
 	rm -rfv debian/tmp/usr/share/help/*/lgpl/
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

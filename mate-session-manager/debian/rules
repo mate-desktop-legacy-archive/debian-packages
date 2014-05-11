@@ -6,7 +6,7 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test

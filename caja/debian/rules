@@ -9,7 +9,7 @@ override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la 
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test

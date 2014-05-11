@@ -11,7 +11,7 @@ DEB_DESTDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/mate-settings-daemon-
 DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-gstreamer += --no-act
 DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-pulse += --no-act
 
-DEB_DH_INSTALL_ARGS += --list-missing
+DEB_DH_INSTALL_ARGS += --fail-missing
 
 #DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += \

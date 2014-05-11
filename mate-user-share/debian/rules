@@ -8,7 +8,7 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -f debian/*/usr/share/mate-user-share/dav_user_2.0.conf
 	find debian/ -name "*.la" -delete
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

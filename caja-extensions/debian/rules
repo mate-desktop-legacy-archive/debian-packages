@@ -9,11 +9,12 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja-sendto/plugins/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/share/MateConf/
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--enable-gtk-doc \
 		--with-gtk=2.0
 
 override_dh_strip:
