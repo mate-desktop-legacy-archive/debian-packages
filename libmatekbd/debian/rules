@@ -6,6 +6,8 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
+	rm -rfv debian/tmp/usr/share/MateConf/gsettings/matekbd.convert
+	rm -rfv debian/tmp/usr/lib/*/*.la
 	dh_install --fail-missing
 
 override_dh_auto_configure:

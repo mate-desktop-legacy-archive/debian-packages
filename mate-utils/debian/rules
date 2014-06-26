@@ -6,6 +6,7 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/*.a 
 	rm -rfv debian/tmp/usr/lib/*/*.la 
 	dh_install --fail-missing
 
@@ -13,6 +14,8 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--libexecdir=/usr/lib/mate-utils \
+		--enable-deprecated \
+		--disable-maintainer-flags \
 		--with-gtk=2.0
 
 override_dh_strip:

@@ -13,7 +13,9 @@ DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-pulse += --no-act
 
 DEB_DH_INSTALL_ARGS += --fail-missing
 
-#DEB_CONFIGURE_SCRIPT := ./autogen.sh
+DEB_BUILD_PARALLEL = 1
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
 DEB_CONFIGURE_EXTRA_FLAGS += \
 	--libexecdir=/usr/bin \
 	--disable-static \
@@ -21,6 +23,13 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
 	--enable-gstreamer \
 	--enable-polkit \
 	--with-gtk=2.0
+
+common-install-indep:: remove-cruft
+common-install-arch:: remove-cruft
+
+remove-cruft::
+	rm -fv debian/tmp/usr/lib/mate-settings-daemon/*.la
+	rm -fv debian/tmp/usr/share/MateConf/gsettings/*.convert
 
 configure/mate-settings-daemon-pulse:: $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status
 $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status:
