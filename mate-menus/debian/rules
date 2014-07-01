@@ -12,6 +12,10 @@ override_dh_auto_configure:
 		--disable-maintainer-mode
 
 override_dh_install:
+	rm -rvf debian/tmp/usr/lib/*/*.la
+	rm -rvf debian/tmp/usr/lib/*/*.a
+	rm -rvf debian/tmp/usr/lib/python*/dist-packages/*.la
+	rm -rvf debian/tmp/usr/lib/python*/dist-packages/*.a
 	dh_install --fail-missing
 
 override_dh_strip:
