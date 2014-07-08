@@ -54,6 +54,7 @@ install/mate-settings-daemon-pulse::
 	rm -rf debian/mate-settings-daemon-pulse/usr/lib/mate-settings-daemon-*/*.la
 	# delete conflicts file with mate-settings-daemon-common
 	rm -rf debian/mate-settings-daemon-pulse/usr/share/locale/
+	rm -rf debian/mate-settings-daemon-pulse/usr/share/man/
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
