@@ -1,0 +1,68 @@
+Source: libmatemixer
+Section: libs
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders:
+ John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+ Stefano Karapetsas <stefano@karapetsas.com>,
+ Mike Gabriel <sunweaver@debian.org>,
+Build-Depends:
+ debhelper (>= 9),
+ libglib2.0-dev,
+ libpulse-dev,
+ mate-common,
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
+
+Package: libmatemixer0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+             multiarch-support,
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ iso-codes,
+ libmatemixer-common,
+Description: FIXME
+ FIXME
+ .
+ This package contains the shared libraries.
+
+Package: libmatemixer-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: FIXME
+ FIXME
+ .
+ This package contains the architecture-independent files.
+
+Package: libmatemixer-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ libmatemixer0 (= ${binary:Version}),
+ libglib2.0-dev,
+Description: FIXME
+ FIXME
+ .
+ This package contains the development files.
+
+Package: libmatemixer0-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ libmatemixer0 (= ${binary:Version}),
+Description: FIXME
+ FIXME
+ .
+ They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
