@@ -82,3 +82,17 @@ Description: Eye of MATE graphics viewer program (development files)
  simplicity and standards compliance.
  .
  This package contains the development files.
+
+Package: gir1.2-eom
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: GObject introspection data for the eom library
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.
+ .
+ It can be used by packages using the GIRepository format to generate 
+ dynamic bindings.
