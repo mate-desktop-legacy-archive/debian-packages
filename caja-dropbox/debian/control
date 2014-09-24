@@ -19,11 +19,11 @@ Depends: procps,
          python-gtk2 (>= 2.12),
          python-gpgme,
          policykit-1,
-         dropbox,
          ${shlibs:Depends},
          ${python:Depends},
-         ${misc:Depends}
-Suggests: caja
+         ${misc:Depends},
+Suggests: caja,
+          dropbox,
 Description: Dropbox integration for Caja
  Caja Dropbox is an extension that integrates the Dropbox web service with
  your MATE Desktop.
