@@ -26,8 +26,8 @@ Depends:
  ${shlibs:Depends},
  iso-codes,
  libmatemixer-common,
-Description: FIXME
- FIXME
+Description: Mixer library for MATE Desktop
+ Mixer library for MATE Desktop.
  .
  This package contains the shared libraries.
 
@@ -35,10 +35,19 @@ Package: libmatemixer-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Description: FIXME
- FIXME
+Description: Mixer library for MATE Desktop (common files)
+ Mixer library for MATE Desktop.
  .
  This package contains the architecture-independent files.
+
+Package: libmatemixer-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Mixer library for MATE Desktop (documentation files)
+ Mixer library for MATE Desktop.
+ .
+ This package contains the documentation files.
 
 Package: libmatemixer-dev
 Section: libdevel
@@ -48,8 +57,8 @@ Depends:
  ${misc:Depends},
  libmatemixer0 (= ${binary:Version}),
  libglib2.0-dev,
-Description: FIXME
- FIXME
+Description: Mixer library for MATE Desktop (development files)
+ Mixer library for MATE Desktop.
  .
  This package contains the development files.
 
@@ -61,8 +70,8 @@ Multi-Arch: same
 Depends:
  ${misc:Depends},
  libmatemixer0 (= ${binary:Version}),
-Description: FIXME
- FIXME
+Description: Mixer library for MATE Desktop (debug files)
+ Mixer library for MATE Desktop.
  .
  They are installed into /usr/lib/debug and will automatically be used
  by gdb.
