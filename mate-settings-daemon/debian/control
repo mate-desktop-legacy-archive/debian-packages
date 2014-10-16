@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 9),
-               cdbs,
                autotools-dev,
                intltool,
                libdbus-glib-1-dev,
@@ -31,41 +30,18 @@ Build-Depends: debhelper (>= 9),
                libcanberra-gtk-dev,
                x11proto-kb-dev,
                libdconf-dev,
-               mate-common
+               mate-common,
+               libmatemixer-dev
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-settings-daemon
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends},
-         mate-settings-daemon-gstreamer (>= ${source:Version}) | mate-settings-daemon-pulse (>= ${source:Version})
-Description: daemon handling the MATE session settings (metapackage)
- This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
- under it. It handles the following kinds of settings:
- .
-  * Keyboard: layout, accessibility options, shortcuts, media keys
-  * Clipboard management
-  * Theming: background, icons, GTK+ applications
-  * Cleanup of unused files
-  * Mouse: cursors, speed, accessibility options
-  * Startup of other daemons: screensaver, sound daemon
-  * Typing break
- .
- It also sets various application settings through X resources and
- freedesktop.org XSETTINGS.
- .
- This is a metapackage, it depends on GStreamer or PulseAudio backends.
-
-Package: mate-settings-daemon-gstreamer
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
          mate-settings-daemon-common (= ${source:Version}),
-         x11-xserver-utils
-Replaces: mate-settings-daemon (<< 1.1.1-1)
-Conflicts: mate-settings-daemon-pulse
-Description: daemon handling the MATE session settings (GStreamer version)
+Conflicts: mate-settings-daemon-pulse,
+           mate-settings-daemon-gstreamer,
+Description: daemon handling the MATE session settings
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
  under it. It handles the following kinds of settings:
@@ -80,40 +56,10 @@ Description: daemon handling the MATE session settings (GStreamer version)
  .
  It also sets various application settings through X resources and
  freedesktop.org XSETTINGS.
- .
- This package uses GStreamer for media keys.
-
-Package: mate-settings-daemon-pulse
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-settings-daemon-common (= ${source:Version}),
-         pulseaudio,
-         x11-xserver-utils
-Replaces: mate-settings-daemon (<< 1.1.1-1)
-Conflicts: mate-settings-daemon-gstreamer
-Description: daemon handling the MATE session settings (PulseAudio version)
- This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
- under it. It handles the following kinds of settings:
- .
-  * Keyboard: layout, accessibility options, shortcuts, media keys
-  * Clipboard management
-  * Theming: background, icons, GTK+ applications
-  * Cleanup of unused files
-  * Mouse: cursors, speed, accessibility options
-  * Startup of other daemons: screensaver, sound daemon
-  * Typing break
- .
- It also sets various application settings through X resources and
- freedesktop.org XSETTINGS.
- .
- This package uses PulseAudio instead of GStreamer for media keys.
 
 Package: mate-settings-daemon-common
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: mate-settings-daemon (<< 1.1.1-1)
 Description: daemon handling the MATE session settings (common files)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -137,7 +83,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         mate-settings-daemon-pulse (= ${binary:Version})
+         mate-settings-daemon (= ${binary:Version})
 Description: daemon handling the MATE session settings (debugging symbols)
  This package contains debugging symbols for the mate-settings-daemon
  package. It is provided to help debugging problems in the daemon. The
