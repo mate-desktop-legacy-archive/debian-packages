@@ -1,2 +1,2 @@
-usr/lib/gir*
+usr/lib/*/gir*
 usr/share/gir*
