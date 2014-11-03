@@ -6,6 +6,7 @@ usr/lib/*/atril/3/backends/*.atril-backend
 usr/lib/*/atril/3/backends/epub/
 usr/lib/*/caja/*/*.so
 usr/share/applications/atril.desktop
+usr/share/caja/extensions/libatril-properties-page.caja-extension
 usr/share/dbus-1/
 usr/share/glib-2.0/
 usr/share/man/

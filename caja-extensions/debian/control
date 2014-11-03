@@ -74,6 +74,15 @@ Description: Allows to quickly share a folder from the Caja file manager
  file manager without requiring root access. It uses Samba, so your folders
  can be accessed by any operating system.
 
+Package: caja-wallpaper
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-extensions-common (= ${source:Version}),
+Description: Allows to quickly set a wallpaper from folders
+ Caja Wallpaper allows you to quickly set a wallpaper directly from
+ file browser folders.
+
 Package: caja-extensions-common
 Architecture: all
 Depends: ${misc:Depends}
