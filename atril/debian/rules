@@ -39,5 +39,9 @@ override_dh_auto_configure:
 override_dh_strip:
 	dh_strip --dbg-package=atril-dbg
 
+override_dh_builddeb:
+	dh_builddeb -- -Zxz -z9
+
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
+
