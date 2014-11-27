@@ -16,7 +16,6 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--localstatedir=/var/lib \
 		--libexecdir=/usr/lib \
-		--disable-introspection \
 		--disable-upower \
 		--with-gtk=2.0
 
