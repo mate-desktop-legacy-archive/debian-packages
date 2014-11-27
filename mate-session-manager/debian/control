@@ -22,7 +22,6 @@ Build-Depends: debhelper (>= 9),
                libsystemd-login-dev,
                xmlto,
                xsltproc,
-               gobject-introspection,
                mate-common
 Homepage: http://www.mate-desktop.org/
 
