@@ -28,7 +28,9 @@ Build-Depends: cdbs,
                libgail-dev,
                xsltproc,
                libgxps-dev,
-               lsb-release
+               lsb-release,
+               gobject-introspection,
+               libgirepository1.0-dev,
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/atril.git;a=summary
@@ -182,3 +184,16 @@ Description: MATE document rendering library (debugging symbols)
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
+
+Package: gir1.2-atril
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: GObject introspection data for the atril library
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ It can be used by packages using the GIRepository format to generate 
+ dynamic bindings.
