@@ -15,7 +15,6 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
-		--disable-scrollkeeper \
 		--localstatedir=/var \
 		--disable-static \
 		--disable-update-mimedb \
