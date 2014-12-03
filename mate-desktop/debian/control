@@ -22,6 +22,8 @@ Build-Depends: debhelper (>= 9),
                rarian-compat,
                yelp-tools,
                libdconf-dev (>= 0.10.0),
+               gobject-introspection,
+               libgirepository1.0-dev
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
