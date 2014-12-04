@@ -22,6 +22,8 @@ Build-Depends: debhelper (>= 9),
                rarian-compat,
                yelp-tools,
                libdconf-dev (>= 0.10.0),
+               gobject-introspection,
+               libgirepository1.0-dev
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -158,3 +160,21 @@ Description: Library with common API for various MATE modules (library debugging
  This package contains the debugging symbols for the mate-desktop library.
  They are installed into /usr/lib/debug and will automatically be used
  by gdb.
+
+Package: gir1.2-mate-desktop
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: GObject introspection data for the mate-desktop library
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains introspection data for the library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
