@@ -24,7 +24,6 @@ override_dh_auto_test:
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
-		--disable-scrollkeeper \
 		--enable-gtk-doc \
 		--enable-djvu \
 		--enable-dvi \
