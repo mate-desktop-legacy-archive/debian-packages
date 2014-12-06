@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 9),
                libcaja-extension-dev,
                libmate-desktop-dev,
                libmate-menu-dev,
+               libmate-slab-dev,
                libgtk2.0-dev,
                libglib2.0-dev,
                librsvg2-dev,
@@ -19,7 +20,6 @@ Build-Depends: debhelper (>= 9),
                libnm-glib-dev,
                libnm-util-dev,
                libiw-dev,
-               mate-control-center,
                mate-common
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
