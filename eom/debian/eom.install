@@ -1,6 +1,5 @@
 usr/bin/eom
 usr/lib/*/eom/plugins/
-usr/share/appdata/
 usr/share/applications/eom.desktop
 usr/share/glib-2.0/
 usr/share/eom/
