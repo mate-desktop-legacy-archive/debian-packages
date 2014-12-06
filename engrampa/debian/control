@@ -22,6 +22,7 @@ Depends: ${shlibs:Depends},
          bzip2 (>= 1.0.1),
          gzip (>= 1.3.2),
          p7zip-full,
+         libmagic-dev,
          engrampa-common (= ${source:Version})
 Recommends: rpm2cpio,
             mate-icon-theme,
