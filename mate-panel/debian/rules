@@ -17,7 +17,6 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--localstatedir=/var \
 		--libexecdir=/usr/lib/$(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)/mate-panel \
-		--disable-scrollkeeper \
 		--disable-static \
 		--enable-introspection \
 		--enable-gtk-doc \
