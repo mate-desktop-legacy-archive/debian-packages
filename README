@@ -2,7 +2,7 @@ This is the repository of debian/ folders to build Debian and Ubuntu
 unstable packages for MATE, for development and testing purposes.
 
 You can use debian/ folders with standard tarballs from
-http://pub.mate-desktop.org/releases/1.7/, 
+http://pub.mate-desktop.org/releases/1.9/, 
 
 Or you can build from git master branches. In this case you need to have
 these folders:
