@@ -13,7 +13,6 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--libexecdir=/usr/lib/mate-power-manager \
-		--disable-scrollkeeper \
 		--enable-applets \
 		--enable-deprecated \
 		--disable-strict \
