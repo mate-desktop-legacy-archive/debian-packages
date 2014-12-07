@@ -40,11 +40,12 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-notification-daemon | notification-daemon, 
          dbus-x11,
-         consolekit,
+         systemd | consolekit,
          upower,
+         policykit-1,
          mate-power-manager-common (= ${source:Version})
 Recommends: udisks
-Suggests: policykit-1
+Suggests: mate-polkit
 Description: power management tool for the MATE desktop
  MATE Power Manager is a session daemon for the MATE desktop
  that takes care of system or desktop events related to power, and
