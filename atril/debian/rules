@@ -36,7 +36,9 @@ override_dh_auto_configure:
 		$(DEB_ATRIL_FLAGS)
 
 override_dh_strip:
-	dh_strip --dbg-package=atril-dbg
+	dh_strip -patril --dbg-package=atril-dbg
+	dh_strip -plibatrildocument3 --dbg-package=libatrildocument3-dbg
+	dh_strip -plibatrilview3 --dbg-package=libatrilview3-dbg
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz -z9
