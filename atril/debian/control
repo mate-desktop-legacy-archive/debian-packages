@@ -28,6 +28,7 @@ Build-Depends: cdbs,
                libgail-dev,
                xsltproc,
                libgxps-dev,
+               libwebkitgtk-dev (>= 2.4.3)
                lsb-release,
                gobject-introspection,
                libgirepository1.0-dev,
