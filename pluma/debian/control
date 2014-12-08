@@ -17,6 +17,11 @@ Build-Depends: debhelper (>= 9),
                libgtksourceview2.0-dev,
                libx11-dev,
                mate-common,
+               python-dev,
+               python-gobject-2-dev,
+               python-gtk2-dev,
+               python-gtksourceview2,
+               quilt
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
 
