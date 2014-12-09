@@ -21,7 +21,6 @@ override_dh_auto_configure:
 		--disable-update-mimedb \
 		--disable-static \
 		--localstatedir=/var \
-		--enable-unique \
 		--enable-introspection \
 		--enable-gtk-doc \
 		--with-gtk=2.0
