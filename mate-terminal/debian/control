@@ -22,7 +22,8 @@ Package: mate-terminal
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-terminal-common (= ${source:Version})
+         mate-terminal-common (= ${source:Version}),
+         mate-desktop-common
 Provides: x-terminal-emulator
 Description: MATE terminal emulator application
  MATE Terminal is a terminal emulation application that you can use to
