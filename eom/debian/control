@@ -21,6 +21,7 @@ Build-Depends: debhelper (>= 9),
                libjpeg-dev,
                libdbus-glib-1-dev,
                libxml2-dev,
+               librsvg2-dev (>= 2.36.2),
                x11proto-core-dev,
                libstartup-notification0-dev,
                gobject-introspection,
@@ -35,8 +36,8 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          eom-common (= ${source:Version}),
          mate-icon-theme,
-         shared-mime-info
-Recommends: librsvg2-common
+         shared-mime-info,
+         librsvg2-common (>= 2.36.2)
 Breaks: mate-image-viewer (<= 1.0.0-1)
 Description: Eye of MATE graphics viewer program
  eom or the Eye of MATE is a simple graphics viewer for the MATE
