@@ -15,10 +15,7 @@ Build-Depends: debhelper (>= 9),
                libsoup2.4-dev,
                libsoup-gnome2.4-dev,
                libxml2-utils,
-               gtk-doc-tools,
-               python-all-dev (>= 2.6.6-3~),
-               python-gobject-dev,
-               python-gtk2-dev,
+               gtk-doc-tools
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
