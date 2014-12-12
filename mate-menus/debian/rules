@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) --with python2
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
@@ -18,7 +18,8 @@ override_dh_install:
 	dh_install --fail-missing
 
 override_dh_strip:
-	dh_strip --dbg-package=mate-menus-dbg
+	dh_strip -p libmate-menu2 --dbg-package=libmate-menu2-dbg
+	dh_strip -p python-mate-menu --dbg-package=python-mate-menu-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
