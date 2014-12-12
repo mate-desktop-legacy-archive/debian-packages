@@ -14,7 +14,6 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--localstatedir=/var \
 		--disable-static \
-		--disable-introspection \
 		--with-gtk=2.0
 
 override_dh_strip:

@@ -87,3 +87,17 @@ Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
  This package contains the debugging symbols for the libpolkit-gtk-mate-1-0
  library. They are installed into /usr/lib/debug and will automatically be used
  by gdb.
+
+Package: gir1.2-mate-polkit
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: GObject introspection data for mate-polkit
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains introspection data for mate-polkit.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
