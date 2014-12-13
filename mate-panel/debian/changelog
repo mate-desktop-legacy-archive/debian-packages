@@ -2,7 +2,7 @@ mate-panel (1.9.2-1) unstable; urgency=medium
 
   * New upstream development release
 
- -- stefano <stefano@debian>  Mon, 10 Nov 2014 10:49:29 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 10 Nov 2014 10:49:29 +0100
 
 mate-panel (1.9.0-1) unstable; urgency=low
 
