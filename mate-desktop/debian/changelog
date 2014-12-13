@@ -2,7 +2,7 @@ mate-desktop (1.9.3-1) unstable; urgency=medium
 
   * New upstream development release
 
- -- stefano <stefano@debian>  Mon, 10 Nov 2014 09:53:14 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 10 Nov 2014 09:53:14 +0100
 
 mate-desktop (1.9.2-1) unstable; urgency=low
 
