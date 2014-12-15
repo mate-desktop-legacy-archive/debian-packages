@@ -1,5 +1,5 @@
 Source: mate-session-manager
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
@@ -36,6 +36,7 @@ Recommends: mate-settings-daemon,
             marco,
             caja,
             mate-polkit
+Provides: x-session-manager
 Description: MATE Session Manager
  This package contains a session that can be started from a display
  manager such as MDM. It will load all necessary applications for a
@@ -56,5 +57,6 @@ Depends: ${misc:Depends},
 Description: MATE Session Manager (debugging symbols)
  This package contains debugging symbols for mate-session-manager.
  It is provided to help debugging problems.
+ .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
