@@ -40,8 +40,11 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-notification-daemon (= ${binary:Version})
 Description: daemon to display passive pop-up notifications (debugging symbols)
+ mate-notification-daemon displays passive pop-up notifications, as per
+ the Desktop Notifications Specification.
+ .
  This package contains debugging symbols for the mate-notification-daemon
- package. It is provided to help debugging problems in the daemon. The
- debugging symbols are installed in /usr/lib/debug and will automatically be
- used by gdb.
-
+ package. It is provided to help debugging problems in the daemon.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
