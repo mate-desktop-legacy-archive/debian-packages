@@ -5,7 +5,7 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 9),
                autotools-dev,
-               libtool,
+               libtool-bin,
                libdbus-glib-1-dev,
                libxml-parser-perl,
                libxext-dev,
