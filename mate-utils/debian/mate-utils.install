@@ -1,6 +1,4 @@
 usr/bin/
-usr/lib/*/*.so
-usr/lib/*/*.so.*
 usr/lib/mate-utils/
 usr/share/applications/
 usr/share/man/
