@@ -1,5 +1,5 @@
 Source: mate-netspeed
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
@@ -30,6 +30,11 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-netspeed (= ${binary:Version})
 Description: Traffic monitor applet for MATE (debugging symbols)
+ Netspeed is an applet for the MATE panel that shows how much traffic
+ occurs on a network device (ethernet card, wireless LAN card, or
+ dial-up).
+ .
  This package contains debugging symbols for mate-netspeed.
- It is provided to help debugging problems. The debugging symbols are
- installed in /usr/lib/debug and will automatically be used by gdb.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
