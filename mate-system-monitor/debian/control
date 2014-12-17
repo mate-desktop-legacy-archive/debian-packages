@@ -17,7 +17,6 @@ Build-Depends: debhelper (>= 9),
                libglibmm-2.4-dev,
                libxml2-dev,
                librsvg2-dev,
-               libdbus-glib-1-dev,
                yelp-tools,
                mate-common
 Standards-Version: 3.9.5
