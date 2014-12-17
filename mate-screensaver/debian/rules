@@ -24,7 +24,6 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/ \
 		--with-console-kit \
 		--with-libnotify \
-		--without-systemd \
 		--enable-locking \
 		--with-gtk=2.0
 
