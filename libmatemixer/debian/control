@@ -2,16 +2,14 @@ Source: libmatemixer
 Section: libs
 Priority: optional
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Uploaders:
- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
- Stefano Karapetsas <stefano@karapetsas.com>,
- Mike Gabriel <sunweaver@debian.org>,
-Build-Depends:
- debhelper (>= 9),
- libglib2.0-dev,
- libpulse-dev,
- libasound2-dev,
- mate-common,
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+Build-Depends: debhelper (>= 9),
+               libglib2.0-dev,
+               libpulse-dev,
+               libasound2-dev,
+               mate-common
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -21,12 +19,11 @@ Package: libmatemixer0
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
-             multiarch-support,
-Depends:
- ${misc:Depends},
- ${shlibs:Depends},
- iso-codes,
- libmatemixer-common,
+             multiarch-support
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         iso-codes,
+         libmatemixer-common
 Description: Mixer library for MATE Desktop
  Mixer library for MATE Desktop.
  .
@@ -54,10 +51,9 @@ Package: libmatemixer-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends:
- ${misc:Depends},
- libmatemixer0 (= ${binary:Version}),
- libglib2.0-dev,
+Depends: ${misc:Depends},
+         libmatemixer0 (= ${binary:Version}),
+         libglib2.0-dev
 Description: Mixer library for MATE Desktop (development files)
  Mixer library for MATE Desktop.
  .
@@ -68,11 +64,12 @@ Section: debug
 Priority: extra
 Architecture: any
 Multi-Arch: same
-Depends:
- ${misc:Depends},
- libmatemixer0 (= ${binary:Version}),
+Depends: ${misc:Depends},
+         libmatemixer0 (= ${binary:Version}),
 Description: Mixer library for MATE Desktop (debug files)
  Mixer library for MATE Desktop.
  .
- They are installed into /usr/lib/debug and will automatically be used
- by gdb.
+ This package contains debugging symbols for the library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
