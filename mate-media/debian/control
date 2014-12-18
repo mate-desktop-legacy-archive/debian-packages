@@ -10,16 +10,14 @@ Build-Depends: cdbs,
                intltool,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libpulse-dev,
                libcanberra-gtk-dev,
                libxml2-dev,
                libunique-dev,
                libgstreamer0.10-dev,
                libgstreamer-plugins-base0.10-dev,
-               docbook-utils,
-               yelp-tools,
                mate-common,
-               libmate-desktop-dev
+               libmatemixer (>= 1.9.1),
+               libmate-desktop-dev (>= 1.9.3)
 
 Package: mate-media
 Architecture: any
