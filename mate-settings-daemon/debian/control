@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 9),
                libdbus-glib-1-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libmate-desktop-dev (>= 1.9.3),
+               libmate-desktop-dev (>= 1.9.4),
                libnotify-dev,
                libxt-dev,
                libxi-dev,
@@ -20,10 +20,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libmatekbd-dev (>= 1.7.0),
                libxklavier-dev,
-               libgstreamer0.10-dev,
-               libgstreamer-plugins-base0.10-dev,
                libstartup-notification0-dev,
-               libmatepolkit-dev (>= 1.5.0),
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
                libpulse-dev,
@@ -31,7 +28,7 @@ Build-Depends: debhelper (>= 9),
                x11proto-kb-dev,
                libdconf-dev,
                mate-common,
-               libmatemixer-dev
+               libmatemixer-dev (>= 1.9.0)
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org/
 
@@ -39,8 +36,12 @@ Package: mate-settings-daemon
 Architecture: any
 Depends: ${misc:Depends},
          mate-settings-daemon-common (= ${source:Version}),
-Conflicts: mate-settings-daemon-pulse,
-           mate-settings-daemon-gstreamer,
+         mate-desktop-common (>= 1.9.4),
+         mate-polkit | policykit-1-gnome
+Replaces: mate-settings-daemon-pulse (<< 1.9.0),
+          mate-settings-daemon-gstreamer (<< 1.9.0)
+Breaks: mate-settings-daemon-pulse (<< 1.9.0),
+        mate-settings-daemon-gstreamer (<< 1.9.0)
 Description: daemon handling the MATE session settings
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -60,6 +61,10 @@ Description: daemon handling the MATE session settings
 Package: mate-settings-daemon-common
 Architecture: all
 Depends: ${misc:Depends}
+Replaces: mate-settings-daemon-pulse (<< 1.9.0),
+          mate-settings-daemon-gstreamer (<< 1.9.0)
+Breaks: mate-settings-daemon-pulse (<< 1.9.0),
+        mate-settings-daemon-gstreamer (<< 1.9.0)
 Description: daemon handling the MATE session settings (common files)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -85,7 +90,23 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-settings-daemon (= ${binary:Version})
 Description: daemon handling the MATE session settings (debugging symbols)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
  This package contains debugging symbols for the mate-settings-daemon
- package. It is provided to help debugging problems in the daemon. The
- debugging symbols are installed in /usr/lib/debug and will automatically be
- used by gdb.
+ package.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

@@ -15,9 +15,12 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-static \
-		--enable-polkit \
+		--enable-pulse \
 		--libexecdir=/usr/bin \
 		--with-gtk=2.0
+
+override_dh_strip:
+	dh_strip --dbg-package=mate-settings-daemon-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
