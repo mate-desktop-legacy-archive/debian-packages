@@ -14,7 +14,7 @@ Build-Depends: cdbs,
                libxml2-dev,
                libunique-dev,
                mate-common,
-               libmatemixer (>= 1.9.1),
+               libmatemixer-dev (>= 1.9.1),
                libmate-desktop-dev (>= 1.9.3)
 
 Package: mate-media
