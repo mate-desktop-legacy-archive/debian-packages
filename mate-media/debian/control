@@ -30,7 +30,8 @@ Replaces: mate-media-pulse (<< 1.9.0),
 Breaks: mate-media-pulse (<< 1.9.0),
         mate-media-gstreamer (<< 1.9.0)
 Description: MATE media utilities
- This package contains MATE audio mixer and applet.
+ MATE media utilities are the audio mixer and the volume
+ control applet.
 
 Package: mate-media-common
 Architecture: all
@@ -40,6 +41,23 @@ Replaces: mate-media-pulse (<< 1.9.0),
 Breaks: mate-media-pulse (<< 1.9.0),
         mate-media-gstreamer (<< 1.9.0)
 Description: MATE media utilities (common files)
- This package contains MATE audio mixer and applet.
+ MATE media utilities are the audio mixer and the volume
+ control applet.
  .
  This package contains the common files.
+
+Package: mate-media-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-media (= ${binary:Version})
+Description: MATE media utilities (debugging symbols)
+ MATE media utilities are the audio mixer and the volume
+ control applet.
+ .
+ This package contains debugging symbols for MATE media
+ utilities.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
