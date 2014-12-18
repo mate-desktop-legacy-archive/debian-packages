@@ -25,21 +25,21 @@ Depends: ${shlibs:Depends},
          x11-utils
 Recommends: alsa-utils,
             sound-theme-freedesktop
-Replaces: mate-media (<< 1.2.1-4)
-Conflicts: mate-media-pulse,
-           mate-media-gstreamer
-Description: MATE media utilities (GStreamer backend)
- This package contains a few media utilities for the MATE desktop:
-  * the MATE GStreamer-based audio mixer and applet.
-  .
-  This package uses GStreamer for mate-media package.
+Replaces: mate-media-pulse (<< 1.9.0),
+          mate-media-gstreamer (<< 1.9.0)
+Breaks: mate-media-pulse (<< 1.9.0),
+        mate-media-gstreamer (<< 1.9.0)
+Description: MATE media utilities
+ This package contains MATE audio mixer and applet.
 
 Package: mate-media-common
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: mate-media (<< 1.2.1-4)
-Breaks: mate-media (<< 1.2.1-4)
+Replaces: mate-media-pulse (<< 1.9.0),
+          mate-media-gstreamer (<< 1.9.0)
+Breaks: mate-media-pulse (<< 1.9.0),
+        mate-media-gstreamer (<< 1.9.0)
 Description: MATE media utilities (common files)
- This package contains a few media utilities for the MATE desktop.
+ This package contains MATE audio mixer and applet.
  .
  This package contains the common files.
