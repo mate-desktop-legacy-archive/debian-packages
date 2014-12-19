@@ -4,8 +4,7 @@ Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
 Build-Depends: debhelper (>= 9),
-               mate-common,
-               libglib2.0-dev
+               mate-common
 Build-Depends-Indep: intltool
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
