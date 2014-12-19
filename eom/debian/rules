@@ -7,7 +7,7 @@ DHFLAGS=--parallel
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/share/MateConf/ 
-	rm -f debian/tmp/usr/lib/*/eom/plugins/*.la
+	rm -rfv debian/tmp/usr/lib/*/eom/plugins/*.la
 	dh_install --fail-missing
 
 override_dh_auto_configure:
