@@ -58,10 +58,12 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          marco (= ${binary:Version}),
-         libmarco-private0 (= ${binary:Version}),
 Description: lightweight GTK+ window manager (debugging symbols)
- This package contains debugging symbols for marco and the
- libmarco-private0 library. It is provided to help debugging problems.
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the debugging symbols for the marco executable.
+ .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
 
@@ -71,7 +73,6 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2), libmarco
-Conflicts: libmarco
 Replaces: libmarco
 Provides: libmarco
 Description: library for marco window manager
@@ -79,6 +80,24 @@ Description: library for marco window manager
  developed mainly for the MATE Desktop.
  .
  This package contains the library.
+
+Package: libmarco-private0-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         libmarco-private0 (= ${binary:Version}),
+Breaks: marco-dbg (<= 1.6.2-1~),
+Replaces: marco-dbg (<= 1.6.2-1~),
+Description: library for marco window manager (debugging symbols)
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains debugging symbols for the library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
 Package: libmarco-dev
 Section: libdevel
