@@ -191,10 +191,12 @@ Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends}
-Description: GObject introspection data for the atril library
+Description: GObject introspection data for Atril
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
+ .
+ This package contains introspection data for Atril.
  .
  It can be used by packages using the GIRepository format to generate 
  dynamic bindings.
