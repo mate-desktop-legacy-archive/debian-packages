@@ -57,18 +57,6 @@ Description: Eye of MATE graphics viewer program (common files)
  .
  This package contains the architecture independent files.
 
-Package: eom-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: ${misc:Depends},
-         eom (= ${binary:Version})
-Description: Eye of MATE graphics viewer program (debugging symbols)
- This package contains debugging symbols for eom.
- It is provided to help debugging problems.
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
 Package: eom-dev
 Section: libdevel
 Architecture: any
@@ -81,7 +69,25 @@ Description: Eye of MATE graphics viewer program (development files)
  images, and zoom and scroll with constant memory usage.  Its goals are
  simplicity and standards compliance.
  .
- This package contains the development files.
+ This package contains the development files for building eom plugins.
+
+Package: eom-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         eom (= ${binary:Version})
+Description: Eye of MATE graphics viewer program (debugging symbols)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains debugging symbols for eom. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
 Package: gir1.2-eom
 Architecture: any
@@ -93,6 +99,8 @@ Description: GObject introspection data for the eom library
  desktop which uses the gdk-pixbuf library.  It can deal with large
  images, and zoom and scroll with constant memory usage.  Its goals are
  simplicity and standards compliance.
+ .
+ This package contains introspection data for eom.
  .
  It can be used by packages using the GIRepository format to generate 
  dynamic bindings.
