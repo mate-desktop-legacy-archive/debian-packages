@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS) $(DHFLAGS)
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/share/MateConf/ 
