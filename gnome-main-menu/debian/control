@@ -1,5 +1,5 @@
 Source: gnome-main-menu
-Section: mate
+Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
