@@ -23,9 +23,6 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-indicator-applet-common (= ${source:Version}),
          mate-panel
-Recommends: indicator-messages-gtk2
-Suggests: indicator-application-gtk2,
-          indicator-sound-gtk2
 Provides: indicator-renderer
 Description: MATE panel indicator applet
  indicator-applet is an applet to display information from
