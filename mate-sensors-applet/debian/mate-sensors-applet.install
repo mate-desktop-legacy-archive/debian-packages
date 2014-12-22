@@ -10,4 +10,5 @@ usr/lib/*/mate-sensors-applet/plugins/libpmu-sys.so
 usr/lib/*/mate-sensors-applet/plugins/libsmu-sys.so
 usr/lib/*/mate-sensors-applet/plugins/libsonypi.so
 usr/lib/*/mate-sensors-applet/plugins/libudisks.so
-usr/share
+usr/share/dbus-1/
+usr/share/mate-panel/applets/

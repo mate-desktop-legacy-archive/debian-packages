@@ -27,6 +27,7 @@ Package: mate-sensors-applet
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         mate-sensors-applet-common (= ${source:Version}),
          libmate-sensors-applet-plugin0 (= ${binary:Version})
 Recommends: hddtemp
 Suggests: mate-sensors-applet-ati,
@@ -53,6 +54,18 @@ Description: Display readings from hardware sensors in your MATE panel
  Alarms can be set for each sensor to notify the user once a certain high or
  low value has been reached, and can be configured to execute a given command
  at given repeated intervals.
+
+Package: mate-sensors-applet-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-sensors-applet (<< 1.8.0)
+Breaks: mate-sensors-applet (<< 1.8.0)
+Description: Display readings from hardware sensors in your MATE panel (common files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the architecture independent files.
 
 Package: mate-sensors-applet-nvidia
 Architecture: any
