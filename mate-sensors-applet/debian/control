@@ -27,7 +27,7 @@ Package: mate-sensors-applet
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libmatesensorsappletplugin (= ${binary:Version})
+         libmate-sensors-applet-plugin0 (= ${binary:Version})
 Recommends: hddtemp
 Suggests: mate-sensors-applet-ati,
           mate-sensors-applet-nvidia
@@ -79,11 +79,13 @@ Description: Display readings from hardware sensors in your MATE panel (ATI sens
  .
  This package contains plugin for ATI graphics cards.
 
-Package: libmatesensorsappletplugin
+Package: libmate-sensors-applet-plugin0
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends},
          ${misc:Depends}
+Breaks: libmatesensorsappletplugin
+Replaces: libmatesensorsappletplugin
 Description: Library for plugins for the 'mate-sensors-applet' package
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
@@ -92,14 +94,16 @@ Description: Library for plugins for the 'mate-sensors-applet' package
  This package contains the library that is used to create plugins for
  the applet.
 
-Package: libmatesensorsappletplugin-dev
+Package: libmate-sensors-applet-plugin-dev
 Architecture: any
 Section: libdevel
-Depends: libmatesensorsappletplugin (= ${binary:Version}),
+Depends: libmate-sensors-applet-plugin0 (= ${binary:Version}),
          libglib2.0-dev,
          ${shlibs:Depends},
          ${misc:Depends}
-Description: Create plugins for the 'mate-sensors-applet' package
+Breaks: libmatesensorsappletplugin-dev
+Replaces: libmatesensorsappletplugin-dev
+Description: Library for plugins for the 'mate-sensors-applet' package (development files)
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
@@ -114,7 +118,31 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-sensors-applet (= ${binary:Version})
 Description: Display readings from hardware sensors in your MATE panel (debugging symbols)
- This package contains debugging symbols for mate-sensors-applet package
- and libmatesensorsappletplugin library.
- It is provided to help debugging problems. The debugging symbols are
- installed in /usr/lib/debug and will automatically be used by gdb.
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains debugging symbols for mate-sensors-applet package.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmate-sensors-applet-plugin0-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Provides: libmate-sensors-applet-plugin-dbg
+Depends: ${misc:Depends},
+         libmate-sensors-applet-plugin0 (= ${binary:Version})
+Breaks: mate-sensors-applet-dbg (<< 1.8.0+dfsg1-1)
+Description: Library for plugins for the 'mate-sensors-applet' package (debugging symbols)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains debugging symbols for the libmate-sensors-applet-plugin
+ library. It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
