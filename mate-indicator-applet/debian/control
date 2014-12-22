@@ -29,6 +29,3 @@ Provides: indicator-renderer
 Description: MATE panel indicator applet
  indicator-applet is an applet to display information from
  various applications consistently in the MATE panel.
- .
- Currently this includes support for messaging applications in the
- indicator-messages package.
