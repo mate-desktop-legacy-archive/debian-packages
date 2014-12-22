@@ -86,7 +86,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends}
 Breaks: libmatesensorsappletplugin
 Replaces: libmatesensorsappletplugin
-Description: Library for plugins for the 'mate-sensors-applet' package
+Description: Library for plugins for the mate-sensors-applet package
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
@@ -103,7 +103,7 @@ Depends: libmate-sensors-applet-plugin0 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libmatesensorsappletplugin-dev
 Replaces: libmatesensorsappletplugin-dev
-Description: Library for plugins for the 'mate-sensors-applet' package (development files)
+Description: Library for plugins for the mate-sensors-applet package (development files)
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
@@ -122,7 +122,7 @@ Description: Display readings from hardware sensors in your MATE panel (debuggin
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
- This package contains debugging symbols for mate-sensors-applet package.
+ This package contains debugging symbols for the mate-sensors-applet package.
  It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will
@@ -136,13 +136,13 @@ Provides: libmate-sensors-applet-plugin-dbg
 Depends: ${misc:Depends},
          libmate-sensors-applet-plugin0 (= ${binary:Version})
 Breaks: mate-sensors-applet-dbg (<< 1.8.0+dfsg1-1)
-Description: Library for plugins for the 'mate-sensors-applet' package (debugging symbols)
+Description: Library for plugins for the mate-sensors-applet package (debugging symbols)
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
  This package contains debugging symbols for the libmate-sensors-applet-plugin
- library. It is provided to help debugging problems.
+ package. It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
