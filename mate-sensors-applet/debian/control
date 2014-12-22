@@ -71,7 +71,8 @@ Package: mate-sensors-applet-nvidia
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-sensors-applet (= ${binary:Version})
+         mate-sensors-applet (= ${binary:Version}),
+         libxnvctrl0 | nvidia-settings
 Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
