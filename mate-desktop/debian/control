@@ -92,6 +92,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate-desktop-2-17 (= ${binary:Version}),
          libstartup-notification0-dev,
+         libdconf-dev (>= 0.10.0)
 Breaks: libmatedesktop-dev
 Replaces: libmatedesktop-dev
 Description: Library with common API for various MATE modules (development files)
