@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 9),
                intltool,
                libxml2-dev,
                gtk-doc-tools,
-               libindicator-dev (>= 0.3.22),
+               libindicator-dev (>= 0.3.90),
                mate-common
 Standards-Version: 3.9.3
 Homepage: http://www.mate-desktop.org
