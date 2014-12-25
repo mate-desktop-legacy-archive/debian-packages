@@ -6,18 +6,19 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -f debian/*/usr/share/mate-user-share/dav_user_2.0.conf
-	find debian/ -name "*.la" -delete
+	rm -rfv debian/tmp/usr/share/mate-user-share/dav_user_2.0.conf
+	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--with-httpd=/usr/lib/apache2/mpm-worker/apache2 \
-		--with-modules-path=/usr/lib/apache2/modules/
+		--with-modules-path=/usr/lib/apache2/modules/ \
+		--with-gtk=2.0
 
-#override_dh_strip:
-#	dh_strip --dbg-package=mate-user-share
+override_dh_strip:
+	dh_strip --dbg-package=mate-user-share-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
