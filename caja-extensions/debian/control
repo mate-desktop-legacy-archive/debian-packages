@@ -19,13 +19,13 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          caja-extensions-common (= ${source:Version}),
-Description: privilege granting extension for caja using gksu 
+Description: privilege granting extension for Caja using gksu 
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
- The gksu extension for caja allows you to open files with
- administration privileges using the context menu when browsing your
- files with caja.
+ The gksu extension for Caja allows you to open files with
+ administration privileges using the context menu when browsing
+ your files with Caja.
 
 Package: caja-image-converter
 Architecture: any
@@ -47,7 +47,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          caja-extensions-common (= ${source:Version}),
-Description: caja plugin for opening terminals in arbitrary local paths
+Description: Caja plugin for opening terminals in arbitrary local paths
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
@@ -84,7 +84,7 @@ Description: Allows one to quickly share a folder from the Caja file manager
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
- The Caja share extension allows you to quickly share a folder from the MATE
+ The Caja share extension allows you to quickly share a folder from the
  Caja file manager without requiring root access. It uses Samba, so your
  folders can be accessed by any operating system.
 
@@ -93,7 +93,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          caja-extensions-common (= ${source:Version}),
-Description: Allows to quickly set a wallpaper from folders
+Description: Allows one to quickly set a wallpaper from folders
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
@@ -107,8 +107,8 @@ Description: Caja extensions (common files)
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
- This package contains architecture independent files for various
- available Caja extensions.
+ This package contains the architecture independent files for
+ various available Caja extensions.
 
 Package: caja-extensions-dbg
 Section: debug
