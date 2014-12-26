@@ -75,7 +75,7 @@ Description: MATE document viewer (debugging symbols)
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains debugging symbols of Atril.
+ This package contains debugging symbols for Atril.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
@@ -117,7 +117,7 @@ Description: MATE document viewing library (development files)
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains the development files of the libatrilview
+ This package contains the development files for the libatrilview
  library.
 
 Package: libatrilview3-dbg
@@ -132,7 +132,7 @@ Description: MATE document viewing library (debugging symbols)
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains debugging symbols of the libatrilview
+ This package contains debugging symbols for the libatrilview
  library.
  .
  The debugging symbols are installed in /usr/lib/debug and will
@@ -165,7 +165,7 @@ Description: MATE document rendering library (development files)
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains the development files of the libatrildocument
+ This package contains the development files for the libatrildocument
  library.
 
 Package: libatrildocument3-dbg
@@ -180,7 +180,7 @@ Description: MATE document rendering library (debugging symbols)
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains debugging symbols of the libatrildocument
+ This package contains debugging symbols for the libatrildocument
  library.
  .
  The debugging symbols are installed in /usr/lib/debug and will
