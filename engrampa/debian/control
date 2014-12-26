@@ -24,12 +24,16 @@ Depends: ${shlibs:Depends},
          bzip2 (>= 1.0.1),
          gzip (>= 1.3.2),
          p7zip-full,
-         engrampa-common (= ${source:Version})
-Recommends: rpm2cpio,
-            mate-icon-theme,
-            gvfs
+         engrampa-common (= ${source:Version}),
+         caja-common
+Recommends:mate-icon-theme,
+           gvfs,
+           xz-utils,
+           zip,
+           unzip
 Suggests: lha,
-          unrar | p7zip-rar,
+          unar | unrar | p7zip-rar,
+          rpm2cpio,
           sharutils,
           ncompress,
           binutils,
@@ -40,10 +44,7 @@ Suggests: lha,
           lzop,
           rzip,
           unalz,
-          unzip,
-          zip,
           zoo,
-          xz-utils,
           arj,
           rar
 Description: archive manager for MATE
