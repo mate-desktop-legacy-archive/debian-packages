@@ -86,7 +86,10 @@ Architecture: any
 Depends: ${misc:Depends},
          engrampa (= ${binary:Version})
 Description: archive manager for MATE (debugging symbols)
- This package contains debugging symbols for engrampa. It is provided
- to help debugging problems.
+ Engrampa is an archive manager for the MATE environment.
+ .
+ This package contains debugging symbols for Engrampa. It is
+ provided to help debugging problems.
+ .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
