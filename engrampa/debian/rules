@@ -6,7 +6,7 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/libcaja-engrampa.la
+	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	dh_install --fail-missing
 
 override_dh_auto_configure:
