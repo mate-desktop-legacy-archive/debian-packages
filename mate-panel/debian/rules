@@ -6,8 +6,8 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -f debian/tmp/usr/lib/*/*.la
-	rm -f debian/tmp/usr/share/MateConf/gsettings/mate-panel.convert
+	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -rfv debian/tmp/usr/share/MateConf/gsettings/mate-panel.convert
 	dh_install --fail-missing
 
 override_dh_auto_configure:
@@ -16,7 +16,7 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
 		--localstatedir=/var \
-		--libexecdir=/usr/lib/$(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)/mate-panel \
+		--libexecdir=/usr/lib/mate-panel \
 		--disable-static \
 		--enable-introspection \
 		--enable-gtk-doc \

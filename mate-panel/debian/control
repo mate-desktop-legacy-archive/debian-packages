@@ -70,8 +70,8 @@ Description: launcher and docking facility for MATE
 Package: mate-panel-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: mate-panel (<= 1.0.2-3)
-Replaces: mate-panel (<= 1.0.2-3)
+Breaks: mate-panel (<< 1.9.0)
+Replaces: mate-panel (<< 1.9.0)
 Description: launcher and docking facility for MATE (common files)
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
