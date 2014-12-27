@@ -41,8 +41,9 @@ Description: MATE desktop utilities
 
 Package: mate-utils-common
 Architecture: all
-Depends: ${misc:Depends},
-Breaks: mate-utils (<< 1.5.0)
+Depends: ${misc:Depends}
+Replaces: mate-utils (<< 1.9.0)
+Breaks: mate-utils (<< 1.9.0)
 Description: MATE desktop utilities (common files)
  This package contains all the tools bundled as MATE utilities:
   - mate-disk-usage-analyzer, a disk usage analyser
@@ -71,8 +72,8 @@ Description: MATE desktop utilities (debugging symbols)
   - mate-screenshot, a tool to take desktop screenshots and save them into
     a file
  .
- This package contains debugging symbols for the MATE desktop utilities. It
- is provided to help debugging problems.
+ This package contains debugging symbols for the MATE desktop utilities.
+ It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
@@ -116,8 +117,8 @@ Description: MATE desktop utilities (matedict debugging symbols)
  over the internet (including a panel applet to do the same). MATE
  dictionary is included in the MATE utilities bundle.
  .
- This package contains debugging symbols for the MATE dictionary library. It
- is provided to help debugging problems.
+ This package contains debugging symbols for the MATE dictionary library.
+ It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
