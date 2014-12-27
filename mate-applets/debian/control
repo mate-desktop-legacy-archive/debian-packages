@@ -104,7 +104,8 @@ Description: Various applets for the MATE panel
 Package: mate-applets-common
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: mate-applets (<< 1.1.1-1)
+Replaces: mate-applets (<< 1.9.0)
+Breaks: mate-applets (<< 1.9.0)
 Description: Various applets for the MATE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -147,7 +148,40 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-applets (= ${binary:Version})
 Description: Various applets for the MATE panel (debugging symbols)
+ accessx-status: indicates keyboard accessibility settings, including
+ the current state of the keyboard, if those features are in use.
+ .
+ Battstat: monitors the power subsystem on a laptop.
+ .
+ Character palette: provides a convenient way to access non-standard
+ characters, such as accented characters, mathematical symbols, special
+ symbols, and punctuation marks.
+ .
+ MATE CPUFreq Applet: CPU frequency scaling monitor
+ .
+ Drivemount: lets you mount and unmount drives and file systems.
+ .
+ Geyes: pair of eyes which follow the mouse pointer around the screen.
+ .
+ Keyboard layout switcher: lets you assign different keyboard
+ layouts for different locales.
+ .
+ Modem Monitor: monitors the modem.
+ .
+ Invest: downloads current stock quotes from the Internet and displays
+ the quotes in a scrolling display in the applet. The applet downloads the
+ stock information from Yahoo! Finance.
+ .
+ System monitor: CPU, memory, network, swap file and resource.
+ .
+ Trash: lets you drag items to the trash folder.
+ .
+ Weather report: downloads weather information from the U.S National Weather
+ Service (NWS) servers, including the Interactive Weather Information
+ Network (IWIN).
+ .
  This package contains debugging symbols for mate-applets package.
- It is provided to help debugging problem in the applets. The debugging
- symbols are installed in /usr/lib/debug and will automatically be used
- by gdb.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
