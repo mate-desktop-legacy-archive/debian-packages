@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 9),
                mate-common
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
-X-Python-Version: >= 2.5
+X-Python-Version: >= 2.7
 
 Package: mate-menus
 Architecture: any
@@ -37,7 +37,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends}
 Breaks: mate-menus (<= 1.0.2-1), libmatemenu
 Replaces: mate-menus (<= 1.0.2-1), libmatemenu
-Conflicts: libmatemenu
 Provides: libmatemenu
 Description: implementation of the freedesktop menu specification for MATE (library)
  The package contains an implementation of the draft
@@ -55,7 +54,6 @@ Depends: ${misc:Depends},
          libmate-menu2 (= ${binary:Version}),
          mate-menus (= ${binary:Version}),
          libglib2.0-dev
-Conflicts: libmatemenu-dev
 Replaces: libmatemenu-dev
 Breaks: libmatemenu-dev
 Provides: libmatemenu-dev
@@ -87,11 +85,11 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          ${python:Depends}
-Description: implementation of the freedesktop menu specification for MATE (python bindings)
+Description: implementation of the freedesktop menu specification for MATE (Python bindings)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
  .
- This package contains the python bindings.
+ This package contains the Python bindings.
 
 Package: libmate-menu2-dbg
 Architecture: any
@@ -103,6 +101,8 @@ Depends: ${misc:Depends},
 Description: implementation of the freedesktop menu spec for MATE (debugging symbols)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
+ .
+ This package contains the debugging symbols for the library.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
@@ -118,7 +118,7 @@ Description: implementation of the freedesktop menu spec for MATE (Python debugg
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
  .
- This package contains the debugging symbols of the Python bindings.
+ This package contains the debugging symbols for the Python bindings.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
