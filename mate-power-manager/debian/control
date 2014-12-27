@@ -60,8 +60,8 @@ Description: power management tool for the MATE desktop
 Package: mate-power-manager-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: mate-power-manager (<= 1.2.0-1)
-Replaces: mate-power-manager (<= 1.2.0-1)
+Breaks: mate-power-manager (<< 1.9.0)
+Replaces: mate-power-manager (<< 1.9.0)
 Description: power management tool for the MATE desktop (common files)
  MATE Power Manager is a session daemon for the MATE desktop
  that takes care of system or desktop events related to power, and
