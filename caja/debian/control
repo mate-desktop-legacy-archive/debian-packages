@@ -61,8 +61,8 @@ Description: file manager for the MATE desktop
 Package: caja-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: caja (<= 1.0.3-1)
-Replaces: caja (<= 1.0.3-1)
+Replaces: caja (<< 1.9.0)
+Breaks: caja (<< 1.9.0)
 Description: file manager for the MATE desktop (common files)
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
