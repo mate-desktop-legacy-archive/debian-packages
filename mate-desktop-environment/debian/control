@@ -26,7 +26,8 @@ Depends: ${shlibs:Depends},
          mate-desktop (>= 1.9.0),
          gvfs-bin
 Breaks: mate-desktop-environment (<< 1.9.0)
-Conflicts: mate-conf,
+Conflicts: mate-bluetooth,
+           mate-conf,
            mate-conf-editor,
            mate-dialogs,
            mate-dialogs-common,
@@ -34,7 +35,8 @@ Conflicts: mate-conf,
            mate-keyring,
            mate-doc-utils,
            mate-doc-utils-gnome
-Replaces: mate-conf (<< 1.9.0),
+Replaces: mate-bluetooth (<< 1.9.0),
+          mate-conf (<< 1.9.0),
           mate-conf-editor (<< 1.9.0),
           mate-dialogs (<< 1.9.0),
           mate-dialogs-common (<< 1.9.0),
@@ -111,6 +113,7 @@ Recommends: caja-gksu (>= 1.9.0),
             caja-share (>= 1.9.0),
             mate-user-share (>= 1.9.0),
             mate-sensors-applet (>= 1.9.0),
+            blueman
 Suggests: mate-netbook (>= 1.9.0),
           mate-user-guide,
 Description: MATE Desktop Environment (extra components, metapackage)
