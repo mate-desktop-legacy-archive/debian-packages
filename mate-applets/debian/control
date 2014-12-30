@@ -82,8 +82,6 @@ Description: Various applets for the MATE panel
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
  .
- Modem Monitor: monitors the modem.
- .
  Invest: downloads current stock quotes from the Internet and displays
  the quotes in a scrolling display in the applet. The applet downloads the
  stock information from Yahoo! Finance.
@@ -119,8 +117,6 @@ Description: Various applets for the MATE panel (common files)
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Modem Monitor: monitors the modem.
  .
  Invest: downloads current stock quotes from the Internet and displays
  the quotes in a scrolling display in the applet. The applet downloads the
@@ -160,8 +156,6 @@ Description: Various applets for the MATE panel (debugging symbols)
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Modem Monitor: monitors the modem.
  .
  Invest: downloads current stock quotes from the Internet and displays
  the quotes in a scrolling display in the applet. The applet downloads the
