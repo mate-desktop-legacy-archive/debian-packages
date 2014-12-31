@@ -26,12 +26,12 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-notification-daemon-common (= ${source:Version})
 Provides: notification-daemon
-Description: daemon for displaying passive pop-up notifications
- mate-notification-daemon displays passive pop-up notifications, as per
+Description: daemon to display passive popup notifications
+ mate-notification-daemon displays passive popup notifications, as per
  the Desktop Notifications Specification.
  .
  The Desktop Notifications Specification provides a standard way of
- doing passive pop-up notifications on the Linux desktop. These are
+ doing passive popup notifications on the Linux desktop. These are
  designed to notify the user of something without interrupting their
  work with a dialog box that they must close.  Passive popups can
  automatically disappear after a short period of time, as per the
@@ -60,12 +60,20 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         mate-notification-daemon (= ${binary:Version}),
-Description: daemon for displaying passive pop-up notifications (debugging symbols)
- mate-notification-daemon displays passive pop-up notifications, as per
+         mate-notification-daemon (= ${binary:Version})
+Description: daemon to display passive popup notifications (debugging symbols)
+ mate-notification-daemon displays passive popup notifications, as per
  the Desktop Notifications Specification.
  .
- This package contains debugging symbols for mate-notification-daemon.
+ The Desktop Notifications Specification provides a standard way of
+ doing passive popup notifications on the Linux desktop. These are
+ designed to notify the user of something without interrupting their
+ work with a dialog box that they must close.  Passive popups can
+ automatically disappear after a short period of time, as per the
+ Desktop Notifications spec.
+ .
+ This package contains debugging symbols for the mate-notification-daemon
+ package. It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
