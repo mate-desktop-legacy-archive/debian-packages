@@ -35,7 +35,9 @@ Homepage: http://www.mate-desktop.org/
 
 Package: mate-settings-daemon
 Architecture: any
-Depends: ${misc:Depends},
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         x11-xserver-utils,
          mate-settings-daemon-common (= ${source:Version}),
          mate-desktop-common (>= 1.9.4),
          mate-polkit | policykit-1-gnome
