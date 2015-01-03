@@ -27,7 +27,10 @@ Homepage: http://www.mate-desktop.org/
 Package: gnome-main-menu
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
+         mate-session-manager,
+         mate-screensaver,
+         mate-control-center-common
 Suggests: network-manager
 Description: GNOME start menu applet for MATE
  This applet provides a "start menu" for the MATE desktop.
@@ -35,7 +38,7 @@ Description: GNOME start menu applet for MATE
  It features a list of favorite applications, and recently used documents.
  .
  It provides shortcuts for common system administration actions and integrates
- with network-manager for network status reporting. 
+ with network-manager for network status reporting.
 
 Package: gnome-main-menu-dbg
 Section: debug
@@ -44,6 +47,15 @@ Architecture: any
 Depends: ${misc:Depends},
          gnome-main-menu (= ${binary:Version})
 Description: GNOME start menu applet for MATE (debugging symbols)
- This package contains debugging symbols for gnome-main-menu.
- It is provided to help debugging problems. The debugging symbols are
- installed in /usr/lib/debug and will automatically be used by gdb.
+ This applet provides a "start menu" for the MATE desktop.
+ .
+ It features a list of favorite applications, and recently used documents.
+ .
+ It provides shortcuts for common system administration actions and integrates
+ with network-manager for network status reporting.
+ .
+ This package contains debugging symbols for the applet.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
