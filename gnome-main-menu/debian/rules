@@ -14,6 +14,7 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--enable-caja-extension \
+		--disable-static \
 		--with-gtk=2.0
 
 override_dh_strip:
