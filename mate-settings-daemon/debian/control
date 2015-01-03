@@ -27,6 +27,7 @@ Build-Depends: debhelper (>= 9),
                libcanberra-gtk-dev,
                x11proto-kb-dev,
                libdconf-dev,
+               libnss3-dev,
                mate-common,
                libmatemixer-dev (>= 1.9.0)
 Standards-Version: 3.9.3
