@@ -22,6 +22,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-media-common (= ${source:Version}),
+         mate-desktop-common (>= 1.9.3),
          x11-utils
 Recommends: alsa-utils,
             sound-theme-freedesktop
