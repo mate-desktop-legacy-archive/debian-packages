@@ -22,8 +22,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-media-common (= ${source:Version}),
-         mate-desktop-common (>= 1.9.3),
-         x11-utils
+         mate-desktop-common (>= 1.9.3)
 Recommends: alsa-utils,
             sound-theme-freedesktop
 Replaces: mate-media-pulse (<< 1.9.0),
