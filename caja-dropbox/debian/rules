@@ -1,10 +1,14 @@
 #!/usr/bin/make -f
 
+DHFLAGS=--parallel
+
 %:
-	dh $@ --with=python2
+	dh $@ $(DHFLAGS) --with=python2
 
 override_dh_auto_configure:
-	./autogen.sh
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-static
 
 override_dh_makeshlibs:
 	# Don't generate a shlibs file for the plugin
@@ -13,12 +17,11 @@ override_dh_makeshlibs:
 override_dh_auto_install:
 	dh_auto_install
 	# Drop useless files
-	rm -f debian/caja-dropbox/usr/lib/caja/extensions-*/libcaja-dropbox.a
-	rm -f debian/caja-dropbox/usr/lib/caja/extensions-*/libcaja-dropbox.la
-	rm -f debian/caja-dropbox/usr/bin/dropbox
-	rm -f debian/caja-dropbox/usr/share/applications/dropbox.desktop
-	rm -rf debian/caja-dropbox/usr/share/icons/*
-	rm -rf debian/caja-dropbox/usr/share/man/*
+	rm -rfv debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.la
+	rm -rfv debian/caja-dropbox/usr/bin/dropbox
+	rm -rfv debian/caja-dropbox/usr/share/applications/dropbox.desktop
+	rm -rfv debian/caja-dropbox/usr/share/icons/*
+	rm -rfv debian/caja-dropbox/usr/share/man/*
 
 override_dh_auto_clean:
 	dh_auto_clean
