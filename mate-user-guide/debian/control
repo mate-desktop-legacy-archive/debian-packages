@@ -11,8 +11,8 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-user-guide
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}
-Recommends: yelp
+Depends: ${misc:Depends},
+         yelp
 Suggests: mate-desktop-environment
 Description: User documentation for MATE Desktop Environment
  This package contains the user guide for MATE Desktop Environment and
