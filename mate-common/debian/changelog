@@ -1,3 +1,9 @@
+mate-common (1.9.1-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- stefano <stefano@debian>  Mon, 12 Jan 2015 11:47:22 +0100
+
 mate-common (1.9.0-1) unstable; urgency=low
 
   * New development upstream release
