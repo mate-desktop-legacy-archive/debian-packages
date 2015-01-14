@@ -1,3 +1,9 @@
+marco (1.9.4-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- stefano <stefano@debian>  Wed, 14 Jan 2015 11:31:23 +0100
+
 marco (1.9.2-1) unstable; urgency=low
 
   * New upstream development release
