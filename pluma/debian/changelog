@@ -1,3 +1,9 @@
+pluma (1.9.1-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- stefano <stefano@debian>  Thu, 22 Jan 2015 11:55:31 +0100
+
 pluma (1.9.0-1) unstable; urgency=low
 
   * New upstream development release
