@@ -1,3 +1,9 @@
+mate-netspeed (1.9.1-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- stefano <stefano@debian>  Thu, 22 Jan 2015 11:03:54 +0100
+
 mate-netspeed (1.9.0-1) unstable; urgency=low
 
   * New upstream development release
