@@ -1,3 +1,9 @@
+caja (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 24 Feb 2015 20:29:21 +0100
+
 caja (1.9.4-1) unstable; urgency=medium
 
   * New upstream development release

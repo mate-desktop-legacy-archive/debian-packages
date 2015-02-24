@@ -1,3 +1,9 @@
+libmatemixer (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 24 Feb 2015 20:00:40 +0100
+
 libmatemixer (1.9.2-1) unstable; urgency=low
 
   * New upstream development release
