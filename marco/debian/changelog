@@ -1,3 +1,9 @@
+marco (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 25 Feb 2015 23:32:35 +0100
+
 marco (1.9.4-1) unstable; urgency=medium
 
   * New upstream development release
