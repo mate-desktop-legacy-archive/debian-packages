@@ -28,6 +28,7 @@ Depends: ${shlibs:Depends},
          apache2.2-bin,
          libapache2-mod-dnssd (>= 0.6),
          obex-data-server [linux-any],
+         gvfs-backends,
          mate-user-share-common (= ${source:Version})
 Description: User level public file sharing via WebDAV or ObexFTP
  MATE user share tool allows easy user-level file sharing via WebDAV
