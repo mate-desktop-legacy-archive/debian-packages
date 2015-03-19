@@ -36,7 +36,8 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          mate-screensaver-common (= ${source:Version}),
          dbus-x11,
-         mate-session-manager
+         mate-session-manager,
+         mate-desktop-common
 Recommends: mate-power-manager
 Suggests: xscreensaver-data, rss-glx
 Breaks: mate-screensaver-common (<< 1.8.0)
