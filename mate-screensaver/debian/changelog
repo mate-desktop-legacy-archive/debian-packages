@@ -1,3 +1,9 @@
+mate-screensaver (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 04 Apr 2015 18:34:52 +0200
+
 mate-screensaver (1.9.2-1) unstable; urgency=low
 
   * New upstream development release
