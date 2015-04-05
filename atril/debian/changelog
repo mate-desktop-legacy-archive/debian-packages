@@ -1,3 +1,9 @@
+atril (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 04 Apr 2015 20:29:19 +0200
+
 atril (1.9.2-1) unstable; urgency=medium
 
   * New upstream development release

@@ -1,3 +1,9 @@
+mate-power-manager (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 04 Apr 2015 20:29:29 +0200
+
 mate-power-manager (1.9.0-1) unstable; urgency=low
 
   * New upstream development release
