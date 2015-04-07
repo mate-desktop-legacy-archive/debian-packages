@@ -1,3 +1,9 @@
+pluma (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 06 Apr 2015 11:26:50 +0200
+
 pluma (1.9.1-1) unstable; urgency=medium
 
   * New upstream development release

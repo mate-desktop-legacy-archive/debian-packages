@@ -1,3 +1,9 @@
+mate-utils (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 06 Apr 2015 11:15:16 +0200
+
 mate-utils (1.9.0-1) unstable; urgency=low
 
   * New upstream development release
