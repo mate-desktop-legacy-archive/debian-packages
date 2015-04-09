@@ -19,6 +19,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          caja-extensions-common (= ${source:Version}),
+         gksu
 Description: privilege granting extension for Caja using gksu 
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
