@@ -7,7 +7,7 @@ ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
 endif
 # add appropriate flags for Ubuntu
 ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
-DEB_CONFIGURE_EXTRA_FLAGS += --with-aticonfig=/usr/lib/fglrx/bin/aticonfig
+	DEB_CONFIGURE_EXTRA_FLAGS += --with-aticonfig=/usr/lib/fglrx/bin/aticonfig
 endif
 
 DHFLAGS=--parallel
