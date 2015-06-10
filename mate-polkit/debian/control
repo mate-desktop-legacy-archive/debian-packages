@@ -5,29 +5,29 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
-Build-Depends: debhelper (>= 9),
+Build-Depends: autotools-dev,
                cdbs,
-               autotools-dev,
-               pkg-config,
+               debhelper (>= 9),
+               gobject-introspection,
+               gtk-doc-tools,
                libdbus-glib-1-dev,
+               libgirepository1.0-dev,
                libgtk2.0-dev,
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
-               gtk-doc-tools,
-               libgirepository1.0-dev,
-               gobject-introspection,
                mate-common,
+               pkg-config,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-polkit
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: mate-polkit-common (= ${binary:Version}),
          policykit-1,
-         mate-polkit-common (= ${binary:Version}),
-Provides: policykit-1-gnome
+         ${misc:Depends},
+         ${shlibs:Depends},
+Provides: policykit-1-gnome,
 Description: MATE authentication agent for PolicyKit-1
  The mate-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
@@ -37,8 +37,8 @@ Description: MATE authentication agent for PolicyKit-1
 Package: mate-polkit-common
 Architecture: any
 Multi-Arch: foreign
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
 Breaks: mate-polkit (<< 1.8.0),
 Description: MATE authentication agent for PolicyKit-1 (common files)
  The mate-polkit package provides a D-Bus session bus service that is used to
@@ -51,10 +51,10 @@ Package: libpolkit-gtk-mate-1-0
 Section: libs
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
+Depends: policykit-1,
          ${misc:Depends},
-         policykit-1,
-Provides: libmatepolkit
+         ${shlibs:Depends},
+Provides: libmatepolkit,
 Breaks: libmatepolkit (<< 1.8.0),
 Replaces: libmatepolkit (<< 1.8.0),
 Description: MATE authentication agent for PolicyKit-1 (library)
@@ -67,12 +67,12 @@ Package: libmatepolkit-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: libpolkit-gobject-1-dev,
          libpolkit-gtk-mate-1-0 (= ${binary:Version}),
-         libpolkit-gobject-1-dev,
          mate-polkit,
          policykit-1,
+         ${misc:Depends},
+         ${shlibs:Depends},
 Description: MATE authentication agent for PolicyKit-1 (development files)
  The mate-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
@@ -84,9 +84,9 @@ Priority: extra
 Section: debug
 Architecture: any
 Multi-Arch: same
-Depends: ${shlibs:Depends},
+Depends: libpolkit-gtk-mate-1-0 (= ${binary:Version}),
          ${misc:Depends},
-         libpolkit-gtk-mate-1-0 (= ${binary:Version}),
+         ${shlibs:Depends},
 Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
  The mate-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
