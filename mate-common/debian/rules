@@ -1,14 +1,12 @@
 #!/usr/bin/make -f
 
-DHFLAGS=--parallel
-
 %:
-	dh $@ $(DHFLAGS)
+	dh $@
 
 override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
-	dh_auto_configure $(DHFLAGS)
+	dh_auto_configure
 
 override_dh_install:
 	dh_install --fail-missing
