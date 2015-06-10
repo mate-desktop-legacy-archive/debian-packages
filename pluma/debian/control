@@ -16,6 +16,7 @@ Build-Depends: debhelper (>= 9),
                libgtk2.0-dev,
                libgtksourceview2.0-dev,
                libx11-dev,
+               libmate-desktop-dev (>= 1.9.0),
                mate-common,
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/

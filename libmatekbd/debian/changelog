@@ -14,7 +14,7 @@ libmatekbd (1.9.2-1) unstable; urgency=medium
 
   * New upstream development release
 
- -- stefano <stefano@debian>  Tue, 13 Jan 2015 08:22:12 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 13 Jan 2015 08:22:12 +0100
 
 libmatekbd (1.9.0-1) unstable; urgency=medium
 

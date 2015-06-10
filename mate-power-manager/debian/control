@@ -25,6 +25,7 @@ Build-Depends: debhelper (>= 9),
                libgnome-keyring-dev,
                pkg-config,
                libmate-panel-applet-dev,
+               libmate-desktop-dev (>= 1.9.0),
                mate-common,
                docbook-utils,
                libgcrypt20-dev
