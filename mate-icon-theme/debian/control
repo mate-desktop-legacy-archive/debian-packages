@@ -5,23 +5,23 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
-                     intltool (>= 0.40.0),
-                     pkg-config,
                      icon-naming-utils (>= 0.8.7),
+                     intltool (>= 0.40.0),
                      librsvg2-bin,
                      mate-common,
+                     pkg-config,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-icon-theme
 Architecture: all
-Depends: ${misc:Depends},
-         hicolor-icon-theme,
+Depends: hicolor-icon-theme,
          libgtk2.0-bin,
          librsvg2-common,
+         ${misc:Depends},
 Description: MATE Desktop icon theme
  This package contains the default icon theme used by the MATE desktop.
  The icons are used in the panel menu, in Caja and other
