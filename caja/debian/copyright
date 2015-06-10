@@ -345,9 +345,14 @@ Copyright: 2003-2004, Novell, Inc.
 License: LGPL-2+
 
 Files: libcaja-private/caja-undostack-manager.c
- libcaja-private/caja-undostack-manager.h
+       libcaja-private/caja-undostack-manager.h
 Copyright: 2007-2010, Amos Brocco
            2011, Stefano Karapetsas
+License: GPL-2+
+
+Files: libcaja-private/caja-extensions.c
+       libcaja-private/caja-extensions.h
+Copyright: 2014, Alexander van der Meij <alexandervdm@gliese.me>
 License: GPL-2+
 
 Files: src/caja-notebook.c
