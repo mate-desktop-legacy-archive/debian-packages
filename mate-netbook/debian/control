@@ -5,7 +5,7 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
                libgtk2.0-dev,
                libmate-panel-applet-dev,
-               libmate-desktop-dev,
+               libmate-desktop-dev (>= 1.9.0),
                libwnck-dev,
                libfakekey-dev,
                libunique-dev,
