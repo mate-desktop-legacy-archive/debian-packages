@@ -2,7 +2,10 @@ Source: mate-system-monitor
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
                quilt,
                docbook-to-man,
@@ -17,19 +20,20 @@ Build-Depends: debhelper (>= 9),
                libglibmm-2.4-dev,
                libxml2-dev,
                librsvg2-dev,
+               libdbus-glib-1-dev,
                libsystemd-login-dev,
                yelp-tools,
-               mate-common
-Standards-Version: 3.9.5
+               mate-common,
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-system-monitor
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-system-monitor-common (= ${source:Version})
+         mate-system-monitor-common (>= ${source:Version}),
 Recommends: libgksu2-0,
-            gvfs
+            gvfs,
 Description: Process viewer and system resource monitor for MATE
  MATE system monitor allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
@@ -52,7 +56,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         mate-system-monitor (= ${binary:Version})
+         mate-system-monitor (= ${binary:Version}),
 Description: Process viewer and system resource monitor for MATE (debugging symbols)
  MATE system monitor allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
