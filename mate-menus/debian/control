@@ -2,16 +2,17 @@ Source: mate-menus
 Section: libs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                python-all-dev (>= 2.6.6-3~),
-               dh-python,
                intltool,
                gobject-introspection,
                libgirepository1.0-dev,
                mate-common
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 X-Python-Version: >= 2.7
 
@@ -32,7 +33,7 @@ Description: implementation of the freedesktop menu specification for MATE
 
 Package: libmate-menu2
 Architecture: any
-Section: libs
+Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends}
 Breaks: mate-menus (<= 1.0.2-1), libmatemenu
@@ -44,20 +45,21 @@ Description: implementation of the freedesktop menu specification for MATE (libr
  .
  http://www.freedesktop.org/Standards/menu-spec
  .
- This package contains the library.
+ This package contains the actual library files.
 
 Package: libmate-menu-dev
 Architecture: any
+Multi-Arch: same
 Section: libdevel
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate-menu2 (= ${binary:Version}),
          mate-menus (= ${binary:Version}),
          libglib2.0-dev
-Replaces: libmatemenu-dev
 Breaks: libmatemenu-dev
+Replaces: libmatemenu-dev
 Provides: libmatemenu-dev
-Description: implementation of the freedesktop menu specification for MATE (development files)
+Description: implementation of the freedesktop menu specification for MATE (headers)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
@@ -84,7 +86,7 @@ Section: python
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         ${python:Depends}
+         ${python:Depends},
 Description: implementation of the freedesktop menu specification for MATE (Python bindings)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
@@ -118,7 +120,7 @@ Description: implementation of the freedesktop menu spec for MATE (Python debugg
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org.
  .
- This package contains the debugging symbols for the Python bindings.
+ This package contains the debugging symbols of the Python bindings.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
