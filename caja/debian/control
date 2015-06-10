@@ -2,9 +2,12 @@ Source: caja
 Section: utils
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
+               libmate-desktop-dev (>= 1.9.0),
                libpango1.0-dev,
                libgtk2.0-dev,
                libxml2-dev,
@@ -17,13 +20,12 @@ Build-Depends: debhelper (>= 9),
                gtk-doc-tools,
                libxt-dev,
                libx11-dev,
-               libselinux1-dev,
+               libselinux1-dev [linux-any],
                libxrender-dev,
                libxext-dev,
                x11proto-core-dev,
                shared-mime-info,
                libstartup-notification0-dev,
-               libmate-desktop-dev (>= 1.9.0),
                mate-common,
                gobject-introspection,
                gir1.2-atk-1.0,
@@ -33,13 +35,14 @@ Build-Depends: debhelper (>= 9),
                gir1.2-gtk-2.0,
                gir1.2-pango-1.0,
                libgirepository1.0-dev
-Standards-Version: 3.9.4
-Vcs-Browser: https://github.com/mate-desktop/debian-packages
-Vcs-Git: git://github.com/mate-desktop/debian-packages.git
+               libdconf-dev,
+               quilt,
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: caja
 Architecture: any
+Multi-Arch: foreign
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          shared-mime-info,
@@ -48,10 +51,13 @@ Depends: ${shlibs:Depends},
          mate-desktop,
          gvfs,
          libcaja-extension1 (= ${binary:Version}),
-         caja-common (= ${source:Version})
+         caja-common (= ${source:Version}),
+Recommends: gvfs-backends,
 Suggests: gstreamer0.10-tools,
           meld,
           engrampa
+Breaks: libcaja-extension (<< 1.6.2),
+        mate-session-manager (<< 1.8.1-7),
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
@@ -60,6 +66,7 @@ Description: file manager for the MATE desktop
 
 Package: caja-common
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Replaces: caja (<< 1.9.0)
 Breaks: caja (<< 1.9.0)
@@ -74,9 +81,10 @@ Description: file manager for the MATE desktop (common files)
 Package: libcaja-extension1
 Section: libs
 Architecture: any
-Pre-Depends: multiarch-support
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
 Replaces: libcaja-extension
 Breaks: libcaja-extension
 Conflicts: libcaja-extension
@@ -93,10 +101,11 @@ Description: libraries for Caja components
 Package: libcaja-extension-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libcaja-extension1 (= ${binary:Version}),
-         libgtk2.0-dev
+         libgtk2.0-dev,
 Description: libraries for Caja components (development files)
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
@@ -110,7 +119,7 @@ Package: gir1.2-caja
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: GObject introspection data for Caja
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
@@ -128,7 +137,7 @@ Priority: extra
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends},
-         caja (= ${binary:Version})
+         caja (= ${binary:Version}),
 Description: file manager for the MATE desktop (debugging symbols)
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
@@ -147,7 +156,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: ${misc:Depends},
-         libcaja-extension1 (= ${binary:Version})
+         libcaja-extension1 (= ${binary:Version}),
 Description: libraries for caja components (debugging symbols)
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated

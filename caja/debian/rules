@@ -6,24 +6,26 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -fv debian/tmp/usr/lib/*/*.la 
+	rm -fv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/
 	dh_install --fail-missing
 
-override_dh_auto_test:
-	DEB_BUILD_OPTIONS=nocheck dh_auto_test
-
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--libexecdir=/usr/lib/caja \
+		--includedir=/usr/include/$(dpkg-architecture -qDEB_BUILD_MULTIARCH) \
 		--disable-update-mimedb \
 		--disable-static \
 		--localstatedir=/var \
 		--enable-introspection \
 		--enable-gtk-doc \
 		--with-gtk=2.0
+
+override_dh_auto_test:
+	DEB_BUILD_OPTIONS=nocheck dh_auto_test
 
 override_dh_strip:
 	dh_strip -pcaja --dbg-package=caja-dbg
