@@ -2,16 +2,19 @@ Source: mate-backgrounds
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
-               mate-common
+               mate-common,
+               libglib2.0-dev,
 Build-Depends-Indep: intltool
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-backgrounds
 Architecture: all
 Depends: ${misc:Depends}
-Description: a set of backgrounds packaged with the MATE desktop
- This is a collection of desktop wallpapers created with MATE users in 
- mind.
+Description: Set of backgrounds packaged with the MATE Desktop Environment
+ The package mate-backgrounds provides a collection of desktop wallpapers
+ created with MATE users in mind.
