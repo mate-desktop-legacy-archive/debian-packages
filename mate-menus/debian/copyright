@@ -17,24 +17,24 @@ Files: libmenu/desktop-entries.c
        util/test-menu-spec.c
 Copyright: 2002-2005 Red Hat, Inc
 License: LGPL-2+
- 
+
 Files: libmenu/canonicalize.c
        libmenu/canonicalize.h
 Copyright: 1996-2002, Free Software Foundation, Inc
            2002, Red Hat, Inc. (trivial port to GLib)
 License: LGPL-2.1+
- 
+
 Files: util/mate-menus-ls.py
 Copyright: 2008, Novell, Inc
 License: GPL-2+
- 
+
 Files: libmenu/menu-monitor.c
 Copyright: 2005, Red Hat, Inc
            2006, Mark McLoughlin
            2007, Sebastian Dröge
            2008, Vincent Untz
 License: LGPL-2+
- 
+
 Files: libmenu/menu-monitor.h
 Copyright: 2005, Red Hat, Inc
            2011, Perberos
