@@ -3,11 +3,11 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ --with python2 $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/*.la
-	rm -rfv debian/tmp/usr/share/MateConf/gsettings/mate-panel.convert
+	rm -f debian/tmp/usr/lib/*/*.la
+	rm -f debian/tmp/usr/share/MateConf/gsettings/mate-panel.convert
 	dh_install --fail-missing
 
 override_dh_auto_configure:

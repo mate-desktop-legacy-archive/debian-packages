@@ -423,7 +423,8 @@ License: LGPL-2+
 Comment:
  Assuming same license as for libmate-panel-applet.
 
-Files: applets/Makefile.am
+Files: .tx/config
+       applets/Makefile.am
        applets/clock/Makefile.am
        applets/clock/clock-location-tile.c
        applets/clock/clock-location-tile.h
@@ -445,19 +446,22 @@ Files: applets/Makefile.am
        applets/fish/fish-menu.xml
        applets/fish/*.png
        applets/fish/*.svg
-       applets/fish/org.mate-panel.*.in
+       applets/fish/fish.ui
+       applets/fish/org.mate.panel.*.in
        applets/notification_area/Makefile.am
        applets/notification_area/na-marshal.*
        applets/notification_area/*.xml
        applets/notification_area/org.mate.panel.*.in
        applets/wncklet/Makefile.am
-       applets/wncklet/org.mate-panel.*.in
+       applets/wncklet/org.mate.panel.*.in
        applets/wncklet/*.xml
        applets/wncklet/*.ui
        data/Makefile.am
        data/mate-panel.convert
        data/org.mate.panel.*.in
-       data/panel-default-layout.mate
+       data/default.layout
+       data/linuxmint.layout
+       data/opensuse.layout
        doc/Makefile.am
        doc/*.txt
        doc/reference/Makefile.am
@@ -482,10 +486,12 @@ Files: applets/Makefile.am
        icons/48x48/*.svg
        icons/scalable/Makefile.am
        icons/scalable/*.svg
+       libmate-panel-applet/TODO
        libmate-panel-applet/Makefile.am
        libmate-panel-applet/*.in
        libmate-panel-applet/*.list
        libmate-panel-applet/test-dbus-applet.c
+       m4/d-type.m4
        man/Makefile.am
        man/mate-desktop-item-edit.1
        man/mate-panel-test-applets.1
@@ -498,6 +504,7 @@ Files: applets/Makefile.am
        mate-panel/button-widget.h
        mate-panel/drawer.h
        mate-panel/mate-desktop-item-edit.c
+       mate-panel/panel-marshal.list
        mate-panel/nothing.cP
        mate-panel/nothing.h
        mate-panel/panel-icon-names.h
@@ -514,8 +521,35 @@ Files: applets/Makefile.am
        po/POTFILES.*
        autogen.sh
        configure.ac
+       AUTHORS
+       COPYING
+       COPYING.LIB
+       ChangeLog
+       HACKING
+       NEWS
+       README
        Makefile.am
 Copyright: *No copyright*
+License: GPL-2+ or LGPL-2+
+Comment:
+ Assume license as found either in COPYING or in COPYING.LIB file.
+
+Files: po/*.po
+       po/gnome-copyrights.txt
+Copyright: THE PACKAGE'S COPYRIGHT HOLDER
+           1997-2010, Free Software Foundation, Inc.
+           1999-2004, Jesús Bravo Álvarez
+           2003-2008, Sharif FarsiWeb, Inc.
+           2004-2006, Miloslav Trmac <mitr@volny.cz>.
+           2004-2006, Adam Weinberger and the GNOME Foundation
+           2004, Zuza Software Foundation
+           2005, Canonical Ltd.
+           2005, Free Software Foundation, Andhra Pradesh.
+           2006, The GNOME Foundation
+           2007-2010, The GNOME Project.
+           2006-2010, Rosetta Contributors and Canonical Ltd 2008
+           2010, HZ
+           Croatiann team
 License: GPL-2+ or LGPL-2+
 Comment:
  Assume license as found either in COPYING or in COPYING.LIB file.
