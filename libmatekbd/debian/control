@@ -13,7 +13,7 @@ Build-Depends:
  libxklavier-dev,
  intltool,
  mate-common,
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
 Vcs-Git: git://github.com/mate-desktop/debian-packages.git
