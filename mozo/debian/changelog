@@ -1,8 +1,8 @@
-mozo (1.9.0-1) unstable; urgency=low
+mozo (1.10.0-1) unstable; urgency=low
 
-  * New upstream development release
+  * New upstream release
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Apr 2014 16:14:34 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 20 May 2015 21:24:02 +0200
 
 mozo (1.8.0-0) unstable; urgency=low
 
