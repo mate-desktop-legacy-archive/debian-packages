@@ -7,12 +7,14 @@ DHFLAGS=--parallel
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/share/MateConf/gsettings/marco.convert
-	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -f debian/tmp/usr/lib/*/*.la
 	dh_install --fail-missing
 
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--localstatedir=/var \
 		--libexecdir=/usr/lib/mate-window-manager \
 		--disable-static \
