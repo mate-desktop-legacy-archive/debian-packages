@@ -21,10 +21,9 @@ Build-Depends: debhelper (>= 9),
                libxext-dev,
                libxtst-dev,
                libxrender-dev,
-               libsystemd-dev [linux-any],
+               libsystemd-login-dev,
                xmlto,
                xsltproc,
-               gobject-introspection,
                mate-common,
 Homepage: http://www.mate-desktop.org/
 
