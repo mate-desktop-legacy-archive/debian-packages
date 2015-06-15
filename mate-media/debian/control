@@ -2,11 +2,12 @@ Source: mate-media
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Standards-Version: 3.9.3
-Homepage: http://www.mate-desktop.org/
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: cdbs,
-               debhelper (>= 8),
+               debhelper (>= 9),
                intltool,
                libglib2.0-dev,
                libgtk2.0-dev,
@@ -16,6 +17,8 @@ Build-Depends: cdbs,
                mate-common,
                libmatemixer-dev (>= 1.9.1),
                libmate-desktop-dev (>= 1.9.3)
+Standards-Version: 3.9.6
+Homepage: http://www.mate-desktop.org/
 
 Package: mate-media
 Architecture: any
