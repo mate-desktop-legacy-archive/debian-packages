@@ -1,43 +1,73 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mozo (old name: mate-menu-editor)
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mozo/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Thu, 12 Jan 2012 20:11:17 +0100
+Files: Mozo/MainWindow.py
+       Mozo/util.py
+Copyright: 2006, Travis Watkins
+License: LGPL-2+
 
-It was downloaded from:
+Files: Mozo/MenuEditor.py
+Copyright: 2006, Travis Watkins, Heinrich Wendel
+License: LGPL-2+
 
-    <https://github.com/mate-desktop/mate-menu-editor>
+Files: .tx/config
+       data/Makefile.am
+       data/*.ui
+       data/*.desktop.in.in
+       data/mozo.1
+       data/icons/Makefile.am
+       data/icons/*.png
+       po/LINGUAS
+       po/POTFILES.*
+       Mozo/Makefile.am
+       Mozo/__init__.py
+       Mozo/config.py.in
+       autogen.sh
+       configure.ac
+       AUTHORS
+       COPYING
+       ChangeLog
+       Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
+       acinclude.m4
+       mozo.in
+Copyright: *No copyright*
+License: LGPL-2+
+Comment:
+ Use license as found in COPYING file.
 
-Upstream Author:
+Files: po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
+Copyright: 2007, Free Software Foundation, Inc.
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: LGPL-2+
+Comment:
+ Assume license as found in COPYING file.
 
-    Perberos <perberos@gmail.com>
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: LGPL-2+
 
-Copyright:
-
-    Copyright (C) 2011 Perberos
-
-License:
-
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
-
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
-The Debian packaging is:
-
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
-
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
