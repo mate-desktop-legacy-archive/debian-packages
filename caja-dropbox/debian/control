@@ -3,14 +3,15 @@ Section: non-free/x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 9),
+               dh-python,
                libcaja-extension-dev,
                libglib2.0-dev (>= 2.14.0),
                python-gtk2 (>= 2.12),
                python-docutils (>= 0.6),
                python (>= 2.6.6-3~),
                mate-common
-Standards-Version: 3.9.3
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: caja-dropbox

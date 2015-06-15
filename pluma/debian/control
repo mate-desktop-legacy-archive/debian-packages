@@ -18,7 +18,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libmate-desktop-dev (>= 1.9.0),
                mate-common,
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: pluma
@@ -27,7 +27,9 @@ Depends: ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
          pluma-common (= ${source:Version}),
+         mate-desktop-common,
          iso-codes
+Recommends: zenity
 Provides: mate-text-editor
 Breaks: mate-text-editor (<< 1.5.0)
 Replaces: mate-text-editor (<< 1.5.0)
@@ -50,7 +52,8 @@ Description: official text editor of the MATE desktop environment
 
 Package: pluma-common
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
+         python
 Breaks: mate-text-editor (<< 1.5.0)
 Description: official text editor of the MATE desktop environment (common files)
  Pluma is a text editor which supports most standard editor features,
@@ -71,10 +74,10 @@ Description: official text editor of the MATE desktop environment (common files)
  This package contains the architecture independent files.
 
 Package: pluma-dev
-Architecture: all
+Architecture: any
 Section: devel
 Depends: ${misc:Depends},
-         pluma (= ${source:Version})
+         pluma (= ${binary:Version})
 Breaks: mate-text-editor (<< 1.5.0)
 Description: official text editor of the MATE desktop environment (development files)
  Pluma is a text editor which supports most standard editor features,
