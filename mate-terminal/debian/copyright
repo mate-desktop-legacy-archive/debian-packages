@@ -1,43 +1,109 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-terminal
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-terminal/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Sun, 30 Oct 2011 15:47:05 +0100
+Files: *
+Copyright: 2011, Perberos <perberos@gmail.com>,
+           2013, Guilherme de S. Pastore <gpastore@gnome.org>
+           2013, Havoc Pennington <hp@redhat.com>
+           2013, Mariano Suárez-Alvarez <mariano@gnome.org>
+           2013, Perberos <perberos@gmail.com>
+           2013, Steve Zesch <stevezesch2@gmail.com>
+           2013, Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-3+
 
-It was downloaded from:
+Files: src/terminal-app.c
+       src/terminal-options.c
+       src/terminal-options.h
+       src/terminal-util.c
+       src/terminal.c
+Copyright: 2001-2002, Havoc Pennington
+           2002, Red Hat, Inc.
+           2002, Sun Microsystems
+           2003, Mariano Suarez-Alvarez
+           2008-2010 Christian Persch
+License: GPL-3+
 
-    <https://github.com/perberos/Mate-Extra>
+Files: src/eggdesktopfile.h
+       src/eggsmclient-private.h
+       src/eggsmclient-win32.c
+       src/eggsmclient.c
+       src/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+License: LGPL-3+
 
-Upstream Author:
+Files: src/extra-strings.c
+       src/terminal-info-bar.c
+       src/terminal-info-bar.h
+       src/terminal-tab-label.h
+Copyright: 2008-2010, Christian Persch
+License: GPL-3+
 
-    Perberos <perberos@gmail.com>
+Files: src/profile-editor.h
+       src/terminal-accels.h
+       src/terminal-intl.h
+       src/terminal-window.h
+Copyright: 2001, Havoc Pennington
+           2002, Havoc Pennington
+License: LGPL-3+
 
-Copyright:
+Files: src/terminal-app.h
+       src/terminal-screen.h
+       src/terminal-util.h
+Copyright: 2001, Havoc Pennington
+           2008, Christian Persch
+License: LGPL-3+
 
-    Copyright (C) 2011 Perberos
+Files: src/terminal-debug.c
+       src/terminal-debug.h
+       src/terminal-encoding.h
+Copyright: 2002, Red Hat, Inc.
+           2002-2003, Red Hat, Inc.
+License: LGPL-3+
 
-License:
+Files: src/terminal-dconf.c
+       src/terminal-dconf.h
+Copyright: 2011, Novell, Inc.
+License: GPL-2+
 
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+Files: src/terminal-gsettings.c
+       src/terminal-gsettings.h
+Copyright: 2001-2003, Sun Microsystems, Inc.
+License: GPL-2+
 
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+Files: src/terminal-screen.c
+       src/terminal-tab-label.c
+Copyright: 2001, Havoc Pennington
+           2007-2010 Christian Persch
+License: GPL-3+
 
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
+Files: src/profile-editor.c
+       src/terminal-profile.c
+Copyright: 2001-2002, Havoc Pennington
+           2002, Mathias Hasselmann
+           2008, Christian Persch
+License: GPL-3+
 
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+Files: src/terminal-search-dialog.c
+       src/terminal-search-dialog.h
+Copyright: 2005, Paolo Maggi
+           2010, Red Hat, Inc.
+License: GPL-3+
 
-The Debian packaging is:
+Files: src/terminal-screen-container.c
+       src/terminal-screen-container.h
+Copyright: 2008-2010 Christian Persch
+License: LGPL-3+
 
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
+Files: src/terminal-tabs-menu.c
+Copyright: 2003, David Bordoley
+           2003-2004, Christian Persch
+License: GPL-3+
 
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+Files: src/terminal-window.c
+Copyright: 2001, Havoc Pennington
+           2002, Red Hat, Inc.
+           2007-2009, Christian Persch
+License: GPL-3+
 
