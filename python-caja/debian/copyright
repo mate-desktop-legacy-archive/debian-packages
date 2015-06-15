@@ -1,44 +1,94 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: python-caja
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/python-caja/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Fri, 13 Jan 2012 23:36:23 +0100
+Files: autogen.sh
+       examples/background-image.py
+       examples/block-size-column.py
+       examples/location-widget-provider.py
+       examples/md5sum-property-page.py
+       examples/open-terminal.py
+       examples/submenu.py
+       examples/update-file-info-async.py
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
-It was downloaded from:
+Files: src/caja-python.c
+       src/caja-python.h
+Copyright: 2004-2005, Johan Dahlin
+License: GPL-2+
 
-    <https://github.com/mate-desktop/python-caja>
+Files: src/caja-python-object.c
+       src/caja-python-object.h
+Copyright: 2003-2004, Novell, Inc.
+License: GPL-2+
 
-Upstream Author:
+Files: AUTHORS
+       COPYING
+       ChangeLog
+       Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
+       caja-python.pc.in
+       configure.ac
+       docs/Makefile.am
+       docs/reference/caja-python-class-reference.xml
+       docs/reference/caja-python-column-provider.xml
+       docs/reference/caja-python-column.xml
+       docs/reference/caja-python-enum-reference.xml
+       docs/reference/caja-python-file-info.xml
+       docs/reference/caja-python-info-provider.xml
+       docs/reference/caja-python-location-widget-provider.xml
+       docs/reference/caja-python-menu-item.xml
+       docs/reference/caja-python-menu-provider.xml
+       docs/reference/caja-python-menu.xml
+       docs/reference/caja-python-operation-result.xml
+       docs/reference/caja-python-overview-example.xml
+       docs/reference/caja-python-overview-methods.xml
+       docs/reference/caja-python-overview.xml
+       docs/reference/caja-python-property-page-provider.xml
+       docs/reference/caja-python-property-page.xml
+       docs/reference/caja-python-provider-reference.xml
+       docs/reference/caja-python-ref.xml
+       docs/reference/entities.docbook.in
+       docs/xsl/common.xsl
+       docs/xsl/devhelp.xsl
+       docs/xsl/fixxref.py
+       docs/xsl/html.xsl
+       docs/xsl/pdf-style.xsl
+       docs/xsl/pdf.xsl
+       docs/xsl/ref-html-style.xsl
+       docs/xsl/style.css
+       examples/Makefile.am
+       examples/README
+       src/Makefile.am
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
-    Perberos <perberos@gmail.com>
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
 
-Copyright:
-
-    Copyright (C) 2011 Perberos
-
-License:
-
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
-
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
-The Debian packaging is:
-
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
-
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

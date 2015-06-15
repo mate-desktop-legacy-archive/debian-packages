@@ -1,0 +1,5 @@
+# caja extensions in /usr/lib/*/caja/extensions-2.0/ erroneously trigger
+# debhelper's makeshlibs script
+python-caja: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+python-caja: postinst-has-useless-call-to-ldconfig
+python-caja: postrm-has-useless-call-to-ldconfig

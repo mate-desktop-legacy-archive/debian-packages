@@ -2,15 +2,18 @@ Source: python-caja
 Section: python
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
                mate-common,
                gtk-doc-tools,
                libcaja-extension-dev,
                python-dev,
-               python-gi-dev,
-               quilt
-Standards-Version: 3.9.3
+               python-gobject-dev,
+               quilt,
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: python-caja
@@ -51,7 +54,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         python-caja (= ${binary:Version})
+         python-caja (= ${binary:Version}),
 Description: Python binding for Caja components (debugging symbols)
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated

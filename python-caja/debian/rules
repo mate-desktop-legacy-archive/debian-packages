@@ -8,11 +8,15 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja-python/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	mkdir -p debian/tmp/usr/share/caja-python/extensions
+	touch debian/tmp/usr/share/caja-python/extensions/.placeholder
 	dh_install --fail-missing
 
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--disable-static \
 		--enable-gtk-doc
 
