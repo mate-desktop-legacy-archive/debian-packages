@@ -6,12 +6,14 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/share/MateConf/gsettings/mate-power-manager.convert
+	rm -f debian/tmp/usr/share/MateConf/gsettings/mate-power-manager.convert
 	dh_install --fail-missing
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
+	# ustream is without configure. autogen.sh will create it
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--libexecdir=/usr/lib/mate-power-manager \
 		--enable-applets \
 		--enable-deprecated \
