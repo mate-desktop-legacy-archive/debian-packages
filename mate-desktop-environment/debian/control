@@ -24,7 +24,8 @@ Depends: ${shlibs:Depends},
          mate-settings-daemon (>= 1.9.0),
          mate-terminal (>= 1.9.0),
          mate-desktop (>= 1.9.0),
-         gvfs-bin
+         gvfs-bin,
+         gvfs-backends,
 Breaks: mate-desktop-environment (<< 1.9.0)
 Conflicts: mate-bluetooth,
            mate-conf,
