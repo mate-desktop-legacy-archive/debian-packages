@@ -41,7 +41,7 @@ Build-Depends: debhelper (>= 9),
                librsvg2-dev,
                libdconf-dev,
                mate-settings-daemon,
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-control-center.git;a=summary
 Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-control-center.git

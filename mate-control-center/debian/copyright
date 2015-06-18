@@ -263,6 +263,33 @@ Copyright: 2002, Red Hat, Inc.
            1998-2001 Tim Janik
 License: LGPL-2+
 
+Files: po/*.po
+       po/gnome-copyrights.txt
+Copyright: 2003-2006, Miloslav Trmac <mitr@volny.cz>.
+           2003-2005, Sharif FarsiWeb, Inc.
+           2004-2006, Adam Weinberger and the GNOME Foundation
+           2004, Zuza Software Foundation
+           2005, Canonical Ltd.
+           2005, Free Software Foundation, Andhra Pradesh.
+           2005, THE PACKAGE'S COPYRIGHT HOLDER.
+           2006, Lukas Novotny <lukasnov@cvs.gnome.org>.
+           2007, Aleś Navicki
+           2007-2008, Rosetta Contributors and Canonical Ltd
+           1999-2010, Free Software Foundation, Inc.
+           2009, Krasimir "Bfaf" Chonov <mk2616@abv.bg>.
+           2009, The GNOME Foundation.
+           Croatiann team
+           2001, Roy-Magne Mo <rmo@sunnmore.net>
+           1999-2014, THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: capplets/network/icons/scalable/mate-network-properties.svg
+       capplets/display/icons/scalable/mate-preferences-desktop-display.svg
+Copyright: *No copyright*
+License: GPL-2
+
 Files: capplets/about-me/icons/Makefile.am
        capplets/about-me/Makefile.am
        capplets/about-me/mate-about-me-password.h
@@ -270,6 +297,31 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/about-me/*.ui
        capplets/about-me/*.1
        capplets/about-me/*.in
+       capplets/about-me/AUTHORS
+       capplets/about-me/icons/left-index-finger.png
+       capplets/about-me/icons/left-index-finger.svg
+       capplets/about-me/icons/left-little-finger.png
+       capplets/about-me/icons/left-little-finger.svg
+       capplets/about-me/icons/left-middle-finger.png
+       capplets/about-me/icons/left-middle-finger.svg
+       capplets/about-me/icons/left-ring-finger.png
+       capplets/about-me/icons/left-ring-finger.svg
+       capplets/about-me/icons/left-thumb.png
+       capplets/about-me/icons/left-thumb.svg
+       capplets/about-me/icons/print_error.png
+       capplets/about-me/icons/print_error.svg
+       capplets/about-me/icons/print_ok.png
+       capplets/about-me/icons/print_ok.svg
+       capplets/about-me/icons/right-index-finger.png
+       capplets/about-me/icons/right-index-finger.svg
+       capplets/about-me/icons/right-little-finger.png
+       capplets/about-me/icons/right-little-finger.svg
+       capplets/about-me/icons/right-middle-finger.png
+       capplets/about-me/icons/right-middle-finger.svg
+       capplets/about-me/icons/right-ring-finger.png
+       capplets/about-me/icons/right-ring-finger.svg
+       capplets/about-me/icons/right-thumb.png
+       capplets/about-me/icons/right-thumb.svg
        capplets/accessibility/at-properties/Makefile.am
        capplets/accessibility/at-properties/main.c
        capplets/accessibility/at-properties/*.ui
@@ -298,6 +350,7 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/display/icons/*x*/*.png
        capplets/display/icons/scalable/*.svg
        capplets/display/Makefile.am
+       capplets/display/TODO
        capplets/display/*.ui
        capplets/display/*.in
        capplets/display/foo-marshal.*
@@ -321,6 +374,8 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/network/*.ui
        capplets/windows/Makefile.am
        capplets/windows/*.in
+       capplets/windows/mate-metacity-support.c
+       capplets/windows/mate-metacity-support.h
        capplets/Makefile.am
        font-viewer/Makefile.am
        font-viewer/*.in
@@ -336,13 +391,23 @@ Files: capplets/about-me/icons/Makefile.am
        libwindow-settings/marco-window-manager.h
        libwindow-settings/mate-wm-manager.h
        libwindow-settings/*.in
+       po/LINGUAS
+       po/POTFILES.in
+       po/POTFILES.skip
        shell/Makefile.am
        shell/*.in
        shell/*.menu
        typing-break/Makefile.am
        typing-break/*.png
        typing-break/*.svg
+       .tx/config
+       AUTHORS
+       COPYING
+       ChangeLog
        Makefile.am
+       NEWS
+       README
+       TODO
        autogen.sh
        configure.ac
        *.convert
@@ -443,4 +508,3 @@ License: MIT~OldStyle+LegalDisclaimer
  DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
  WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
  OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
