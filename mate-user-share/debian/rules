@@ -6,8 +6,8 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/share/mate-user-share/dav_user_2.0.conf
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	rm -f debian/tmp/usr/share/mate-user-share/dav_user_2.0.conf
+	rm -f debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	dh_install --fail-missing
 
 override_dh_auto_configure:
