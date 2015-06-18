@@ -1,2 +1,8 @@
 # We have no better way to shut down user processes
 caja-dropbox: killall-is-dangerous prerm:8
+
+# caja extensions in /usr/lib/*/caja/extensions-2.0/ erroneously trigger
+# debhelper's makeshlibs script
+caja-dropbox: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+caja-dropbox: postinst-has-useless-call-to-ldconfig
+caja-dropbox: postrm-has-useless-call-to-ldconfig
