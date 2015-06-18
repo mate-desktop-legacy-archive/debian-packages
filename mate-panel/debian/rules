@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ --with python2 $(DHFLAGS)
+	dh $@ $(DHFLAGS) --with python2
 
 override_dh_install:
 	rm -f debian/tmp/usr/lib/*/*.la

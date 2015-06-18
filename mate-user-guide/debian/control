@@ -5,7 +5,7 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
                mate-common,
                yelp-tools
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-user-guide
