@@ -1,3 +1,9 @@
+atril (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 23 Jun 2015 16:58:29 +0300
+
 atril (1.9.90-1) unstable; urgency=low
 
   * New upstream release candidate

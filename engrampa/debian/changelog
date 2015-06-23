@@ -1,3 +1,9 @@
+engrampa (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 23 Jun 2015 17:01:01 +0300
+
 engrampa (1.9.90-1) unstable; urgency=low
 
   * New upstream release candidate
