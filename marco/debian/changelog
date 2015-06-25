@@ -1,3 +1,9 @@
+marco (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 25 Jun 2015 12:38:24 +0300
+
 marco (1.10.0-1) unstable; urgency=low
 
   * New upstream release
