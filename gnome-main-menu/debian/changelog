@@ -1,3 +1,9 @@
+gnome-main-menu (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 25 Jun 2015 17:23:17 +0300
+
 gnome-main-menu (1.7.0-1) unstable; urgency=low
 
   * New upstream development release.
