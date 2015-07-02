@@ -98,7 +98,8 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libatrildocument3 (= ${binary:Version})
-Breaks: libatril (<< 1.8.0+dfsg1-1)
+Breaks: libatril (<< 1.9.0)
+Replaces: libatril (<< 1.9.0)
 Description: MATE document viewing library
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -112,7 +113,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libatrilview3 (= ${binary:Version})
-Breaks: libatril-dev (<< 1.8.0+dfsg1-1)
+Breaks: libatril-dev (<< 1.9.0)
 Description: MATE document viewing library (development files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -127,7 +128,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          libatrilview3 (= ${binary:Version})
-Breaks: atril-dbg (<< 1.8.0+dfsg1-1)
+Breaks: atril-dbg (<< 1.9.0)
 Description: MATE document viewing library (debugging symbols)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -144,8 +145,8 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Breaks: libatril (<< 1.8.0+dfsg1-1)
-Replaces: libatril (<< 1.8.0+dfsg1-1)
+Breaks: libatril (<< 1.9.0)
+Replaces: libatril (<< 1.9.0)
 Description: MATE document rendering library
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -159,8 +160,8 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libatrildocument3 (= ${binary:Version})
-Breaks: libatril-dev (<< 1.8.0+dfsg1-1)
-Replaces: libatril-dev (<< 1.8.0+dfsg1-1)
+Breaks: libatril-dev (<< 1.9.0)
+Replaces: libatril-dev (<< 1.9.0)
 Description: MATE document rendering library (development files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -175,7 +176,7 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          libatrildocument3 (= ${binary:Version})
-Breaks: atril-dbg (<< 1.8.0+dfsg1-1)
+Breaks: atril-dbg (<< 1.9.0)
 Description: MATE document rendering library (debugging symbols)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
