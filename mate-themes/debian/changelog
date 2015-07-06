@@ -1,3 +1,9 @@
+mate-themes (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 06 Jul 2015 15:31:44 +0300
+
 mate-themes (1.9.3-1) unstable; urgency=low
 
   * New upstream development release
