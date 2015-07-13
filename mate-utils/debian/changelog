@@ -1,3 +1,9 @@
+mate-utils (1.10.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 13 Jul 2015 12:06:40 +0300
+
 mate-utils (1.10.1-1) unstable; urgency=medium
 
   * New upstream bugfix release

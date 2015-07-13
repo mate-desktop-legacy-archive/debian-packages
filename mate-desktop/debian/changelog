@@ -1,3 +1,9 @@
+mate-desktop (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 13 Jul 2015 12:03:35 +0300
+
 mate-desktop (1.10.0-1) unstable; urgency=low
 
   * New upstream release
