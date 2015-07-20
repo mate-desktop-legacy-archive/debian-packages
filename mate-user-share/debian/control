@@ -29,7 +29,7 @@ Package: mate-user-share
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         apache2.2-bin,
+         apache2-bin,
          libapache2-mod-dnssd (>= 0.6),
          obex-data-server [linux-any],
          gvfs-backends,
