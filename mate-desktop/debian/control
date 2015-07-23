@@ -5,6 +5,7 @@ Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
+           Martin Wimpress <code@flexion.org>,
 Build-Depends: debhelper (>= 9),
                dh-python,
                intltool,
@@ -165,6 +166,7 @@ Description: Library with common API for various MATE modules (library debugging
  by gdb.
 
 Package: gir1.2-mate-desktop
+Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
