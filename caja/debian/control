@@ -27,7 +27,7 @@ Build-Depends: debhelper (>= 9),
                libxml2-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common,
+               mate-common (>= 1.10),
                quilt,
                shared-mime-info,
                x11proto-core-dev,
@@ -110,6 +110,7 @@ Description: libraries for Caja components (development files)
  by Caja's extensions.
 
 Package: gir1.2-caja
+Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
