@@ -5,6 +5,7 @@ Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
+           Martin Wimpress <code@flexion.org>,
 Build-Depends: autotools-dev,
                debhelper (>= 9),
                gtk-doc-tools,
@@ -14,7 +15,7 @@ Build-Depends: autotools-dev,
                libsoup2.4-dev,
                libxml2-dev,
                libxml2-utils,
-               mate-common,
+               mate-common (>= 1.10),
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -23,8 +24,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Package: libmateweather1
 Architecture: any
 Multi-Arch: same
-Pre-Depends: multiarch-support,
-             ${misc:Pre-Depends},
+Pre-Depends: ${misc:Pre-Depends},
 Depends: libmateweather-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
