@@ -16,7 +16,7 @@ Copyright: 2008, Red Hat, Inc
            2008, Novell, Inc
 License: LGPL-2.1+
 
-Files: libmateweather/mateweather-xml-*
+Files: libmateweather/mateweather-xml.*
 Copyright: 2004, Gareth Owen
            2005, Ryan Lortie
 License: GPL-2+
@@ -80,19 +80,23 @@ License: GPL-2+ or LGPL-2.1+
  Apply appropriate license as either found in COPYING
  file or in COPYING.GPL file.
 
-Files: data/Makefile.am
+Files: .tx/config
+       data/Makefile.am
        data/Locations.xml.in
        data/README*
        data/check-timezones.sh
        data/locations.dtd
        doc/*
        icons/Makefile.am
+       libmateweather/AUTHORS
        libmateweather/Makefile.am
+       libmateweather/README
        libmateweather/mateweather-enum-types.c
        libmateweather/mateweather-enum-types.h
        libmateweather/mateweather-uninstalled.pc.in
        libmateweather/org.mate.weather.gschema.xml.in.in
        libmateweather/test_*.c
+       libmateweather/mateweather.pc.in
        po/LINGUAS
        po/POTFILES.in
        po/POTFILES.skip
@@ -107,6 +111,13 @@ Files: data/Makefile.am
        acinclude.m4
        autogen.sh
        configure.ac
+       AUTHORS
+       COPYING
+       COPYING.GPL
+       ChangeLog
+       NEWS
+       NEWS.GNOME
+       README
 Copyright: *No copyright*
 License: GPL-2+ or LGPL-2.1+
  Apply appropriate license as either found in COPYING
