@@ -44,12 +44,24 @@ License: LGPL-3+ or CC-BY-SA
 Comment:
  Assuming dual licensing as found in COPYING file.
 
-Files: Makefile.am
+Files: .tx/config
+       AUTHORS
+       COPYING
+       ChangeLog
+       Makefile.am
+       NEWS
+       README
+       TODO
+       autogen.sh
        configure.ac
        index.theme.in.in
        mate-icon-theme.pc.in
+       po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
+       po/gnome-copyrights.txt
+       src/Makefile.am
+       src/TODO
 Copyright: *No Copyright*
 License: LGPL-3+ or CC-BY-SA
 Comment:
