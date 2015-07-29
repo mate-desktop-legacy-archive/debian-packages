@@ -8,16 +8,32 @@ Files: common/Makefile.am
        common/*.data
        common/*.rc
        cursor-themes/Makefile.am
-       desktop-themes/ContrastHighLargePrintInverse/Makefile.am
-       desktop-themes/ContrastHighLargePrint/Makefile.am
-       desktop-themes/Fog/Makefile.am
+       desktop-themes/Blue-Submarine/Makefile.am
+       desktop-themes/Blue-Submarine/cinnamon/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-2.0/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-2.0/apps/Handles/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-2.0/apps/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-2.0/apps/Panel/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-2.0/assets/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-3.0/Makefile.am
+       desktop-themes/Blue-Submarine/gtk-3.0/assets/Makefile.am
+       desktop-themes/Blue-Submarine/metacity-1/Makefile.am
+       desktop-themes/Green-Submarine/Makefile.am
+       desktop-themes/Green-Submarine/cinnamon/Makefile.am
+       desktop-themes/Green-Submarine/gtk-2.0/Makefile.am
+       desktop-themes/Green-Submarine/gtk-2.0/apps/Panel/Makefile.am
+       desktop-themes/Green-Submarine/gtk-2.0/apps/Handles/Makefile.am
+       desktop-themes/Green-Submarine/gtk-2.0/apps/Makefile.am
+       desktop-themes/Green-Submarine/gtk-2.0/assets/Makefile.am
+       desktop-themes/Green-Submarine/gtk-3.0/Makefile.am
+       desktop-themes/Green-Submarine/gtk-3.0/assets/Makefile.am
+       desktop-themes/Green-Submarine/metacity-1/Makefile.am
        desktop-themes/TraditionalGreen/gtk-3.0/img/Makefile.am
        desktop-themes/TraditionalGreen/gtk-3.0/Makefile.am
        desktop-themes/TraditionalGreen/Makefile.am
        desktop-themes/TraditionalGreen/gtk-2.0/Makefile.am
        desktop-themes/TraditionalGreen/metacity-1/Makefile.am
        desktop-themes/Makefile.am
-       desktop-themes/LargePrint/Makefile.am
        desktop-themes/TraditionalOk/gtk-3.0/img/Makefile.am
        desktop-themes/TraditionalOk/gtk-3.0/Makefile.am
        desktop-themes/TraditionalOk/openbox-3/Makefile.am
@@ -55,7 +71,6 @@ Files: common/Makefile.am
        desktop-themes/BlueMenta/gtk-2.0/apps/Others/Makefile.am
        desktop-themes/BlueMenta/gtk-2.0/apps/Caja/Makefile.am
        desktop-themes/BlueMenta/metacity-1/Makefile.am
-       desktop-themes/Quid/Makefile.am
        desktop-themes/GreenLaguna/gtk-3.0/assets/Makefile.am
        desktop-themes/GreenLaguna/gtk-3.0/Makefile.am
        desktop-themes/GreenLaguna/Makefile.am
@@ -91,86 +106,7 @@ Files: common/Makefile.am
        desktop-themes/TraditionalOkTest/Makefile.am
        desktop-themes/TraditionalOkTest/gtk-2.0/Makefile.am
        desktop-themes/TraditionalOkTest/metacity-1/Makefile.am
-       desktop-themes/AlaDelta/Makefile.am
-       desktop-themes/AlaDelta/*
-       gtk-themes/Simply/Makefile.am
-       gtk-themes/Makefile.am
-       gtk-themes/LargePrint/Makefile.am
-       gtk-themes/AlaDelta/Makefile.am
-       gtk-themes/Reverse/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/36x36/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/36x36/animations/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/actions/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/mimetypes/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/apps/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/places/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/categories/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/devices/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/emblems/Makefile.am
-       icon-themes/ContrastHighLargePrintInverse/48x48/status/Makefile.am
-       icon-themes/ContrastHighLargePrint/Makefile.am
-       icon-themes/Fog/22x22/actions/Makefile.am
-       icon-themes/Fog/22x22/Makefile.am
-       icon-themes/Fog/22x22/apps/Makefile.am
-       icon-themes/Fog/22x22/places/Makefile.am
-       icon-themes/Fog/22x22/devices/Makefile.am
-       icon-themes/Fog/22x22/status/Makefile.am
-       icon-themes/Fog/16x16/actions/Makefile.am
-       icon-themes/Fog/16x16/Makefile.am
-       icon-themes/Fog/16x16/apps/Makefile.am
-       icon-themes/Fog/16x16/places/Makefile.am
-       icon-themes/Fog/16x16/devices/Makefile.am
-       icon-themes/Fog/16x16/status/Makefile.am
-       icon-themes/Fog/Makefile.am
-       icon-themes/Fog/32x32/actions/Makefile.am
-       icon-themes/Fog/32x32/Makefile.am
-       icon-themes/Fog/32x32/apps/Makefile.am
-       icon-themes/Fog/32x32/places/Makefile.am
-       icon-themes/Fog/32x32/devices/Makefile.am
-       icon-themes/Fog/32x32/status/Makefile.am
-       icon-themes/Fog/24x24/actions/Makefile.am
-       icon-themes/Fog/24x24/Makefile.am
-       icon-themes/Fog/24x24/apps/Makefile.am
-       icon-themes/Fog/24x24/places/Makefile.am
-       icon-themes/Fog/24x24/devices/Makefile.am
-       icon-themes/Fog/24x24/status/Makefile.am
-       icon-themes/Fog/256x256/actions/Makefile.am
-       icon-themes/Fog/256x256/Makefile.am
-       icon-themes/Fog/256x256/apps/Makefile.am
-       icon-themes/Fog/256x256/places/Makefile.am
-       icon-themes/Fog/256x256/devices/Makefile.am
-       icon-themes/Fog/256x256/status/Makefile.am
-       icon-themes/Fog/48x48/actions/Makefile.am
-       icon-themes/Fog/48x48/Makefile.am
-       icon-themes/Fog/48x48/apps/Makefile.am
-       icon-themes/Fog/48x48/places/Makefile.am
-       icon-themes/Fog/48x48/devices/Makefile.am
-       icon-themes/Fog/48x48/status/Makefile.am
        icon-themes/Makefile.am
-       icon-themes/LargePrint/Makefile.am
-       icon-themes/Quid/22x22/actions/Makefile.am
-       icon-themes/Quid/22x22/Makefile.am
-       icon-themes/Quid/22x22/places/Makefile.am
-       icon-themes/Quid/22x22/status/Makefile.am
-       icon-themes/Quid/16x16/actions/Makefile.am
-       icon-themes/Quid/16x16/Makefile.am
-       icon-themes/Quid/16x16/places/Makefile.am
-       icon-themes/Quid/16x16/status/Makefile.am
-       icon-themes/Quid/scalable/actions/Makefile.am
-       icon-themes/Quid/scalable/Makefile.am
-       icon-themes/Quid/scalable/places/Makefile.am
-       icon-themes/Quid/scalable/status/Makefile.am
-       icon-themes/Quid/Makefile.am
-       icon-themes/Quid/32x32/actions/Makefile.am
-       icon-themes/Quid/32x32/Makefile.am
-       icon-themes/Quid/32x32/places/Makefile.am
-       icon-themes/Quid/32x32/status/Makefile.am
-       icon-themes/Quid/24x24/actions/Makefile.am
-       icon-themes/Quid/24x24/Makefile.am
-       icon-themes/Quid/24x24/places/Makefile.am
-       icon-themes/Quid/24x24/status/Makefile.am
        icon-themes/ContrastHigh/Makefile.am
        marco-themes/Makefile.am
        Makefile.am
@@ -191,6 +127,8 @@ Files: desktop-themes/BlackMATE/*
        desktop-themes/GreenLaguna/*
        desktop-themes/Menta/*
        desktop-themes/TraditionalGreen/*
+       desktop-themes/Blue-Submarine/*
+       desktop-themes/Green-Submarine/*
 Copyright: 2013, Wolfgang Ulbrich <chat-to-me@raveit.de>
 License: GPL-3+
 Comment:
@@ -234,30 +172,6 @@ Comment:
  .
  Applying license as found in COPYING file in this package's base folder.
 
-Files: desktop-themes/Fog/*
-       desktop-themes/LargePrint/*
-       desktop-themes/Quid/*
-       desktop-themes/Shiny/*
-Copyright: *No copyright*
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-
-Files: gtk-themes/Contrast*/*
-       gtk-themes/LargePrint/*
-Copyright: Bill Haneman <bill.haneman@sun.com>
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: gtk-themes/Reverse/*
-       gtk-themes/Simply/*
-Copyright: *No copyright*
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
 Files: icon-themes/Contrast*/*
 Copyright: Bill Haneman <bill.haneman@sun.com>
            Suzanna Smith <suzanna.smith@sun.com>
@@ -268,50 +182,7 @@ Comment:
  .
  Applying license as found in COPYING file in this package's base folder.
 
-Files: icon-themes/Fog/*
-       icon-themes/LargePrint/*
-       icon-themes/Quid/*
-Copyright: *No copyright*
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: marco-themes/AlaDelta/*
-Copyright: 2004, Link Dupont <link@subpop.net>
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: marco-themes/Atantla/*
-Copyright: 2002, Havoc Pennington <hp@redhat.com>
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: marco-themes/Fog/*
-Copyright: 2002, Dave Camp (Ximian, Inc.) <dave@ximian.com>
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: marco-themes/BlackMenta/*
-Copyright: 2009, Jakub Steiner
-           2006-2009, Novell, Inc.
-           2005, Daniel Borgmann <daniel.borgmann@gmail.com>
-           2004, Canonical Ltd.
-           2002, Ximian, Inc.
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: marco-themes/Quid/*
-Copyright: 2002, Anders Carlsson <andersca@gnu.org>
-           2000, Eazel, Inc.
-License: LGPL-2.1+
-Comment:
- Applying license as found in COPYING file in this package's base folder.
-
-Files: marco-themes/Reverse/*
+Files: marco-themes/Shiny/*
 Copyright: 2005-2007, Daniel Borgmann <daniel.borgmann@gmail.com>
            2005-2007, Andrea Cimitan <andrea.cimitan@gmail.com>
 License: LGPL-2.1+
@@ -338,39 +209,12 @@ License: LGPL-2.1+
 Comment:
  Applying license as found in COPYING file in this package's base folder.
 
-Files: icon-themes/Quid/scalable/actions/document-open.svg
-       icon-themes/Quid/scalable/actions/go-bottom.svg
-       icon-themes/Quid/scalable/actions/go-down.svg
-       icon-themes/Quid/scalable/actions/go-first.svg
-       icon-themes/Quid/scalable/actions/go-home.svg
-       icon-themes/Quid/scalable/actions/go-last.svg
-       icon-themes/Quid/scalable/actions/go-next.svg
-       icon-themes/Quid/scalable/actions/go-previous.svg
-       icon-themes/Quid/scalable/actions/go-top.svg
-       icon-themes/Quid/scalable/actions/go-up.svg
-       icon-themes/Quid/scalable/actions/view-refresh.svg
-       icon-themes/Quid/scalable/places/folder-remote.svg
-       icon-themes/Quid/scalable/places/folder-saved-search.svg
-       icon-themes/Quid/scalable/places/folder.svg
-       icon-themes/Quid/scalable/places/user-home.svg
-       icon-themes/Quid/scalable/status/folder-drag-accept.svg
-       icon-themes/Quid/scalable/status/folder-open.svg
-       icon-themes/Quid/scalable/status/folder-visiting.svg
-Copyright: *No copyright*
-License: GPL-2
-
-Files: low-contrast-preset.scm
-Copyright: 1995, Spencer Kimball
-           1995, Peter Mattis
-License: GPL-2+
-
 Files: .tx/config
        AUTHORS
        COPYING
        ChangeLog
        NEWS
        README
-       gtk-themes/AlaDelta/gtkrc
 Copyright: *No copyright*
 License: LGPL-2.1+
 Comment:
@@ -386,23 +230,6 @@ License: GPL-2+
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 2 of the License, or
  (at your option) any later version.
- .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- GNU Genaral Public License for more details.
- .
- You should have received a copy og the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in the file
- `/usr/share/common-licenses/GPL-2'.
-
-License: GPL-2
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License version 2 as
- published by the Free Software Foundation.
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
