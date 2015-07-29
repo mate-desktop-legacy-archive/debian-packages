@@ -263,6 +263,18 @@ Copyright: 2002, Red Hat, Inc.
            1998-2001 Tim Janik
 License: LGPL-2+
 
+Files: man/*.1
+Copyright: 2014-2015, Stefano Karapetsas <stefano@karapetsas.com>
+           2014-2015, Vangelis Mouhtsis <vangelis@gnugr.org>
+           2014-2015, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+           GNOME Developers
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+ .
+ Several of the man pages have been derived from their
+ equivalent in the GNOME project.
+
 Files: po/*.po
        po/gnome-copyrights.txt
 Copyright: 2003-2006, Miloslav Trmac <mitr@volny.cz>.
@@ -295,7 +307,6 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/about-me/mate-about-me-password.h
        capplets/about-me/*.list
        capplets/about-me/*.ui
-       capplets/about-me/*.1
        capplets/about-me/*.in
        capplets/about-me/AUTHORS
        capplets/about-me/icons/left-index-finger.png
@@ -332,7 +343,6 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/appearance/data/*.png
        capplets/appearance/data/*.pcf
        capplets/appearance/data/*.in
-       capplets/appearance/data/*.1
        capplets/appearance/data/*.ui
        capplets/appearance/Makefile.am
        capplets/common/Makefile.am
@@ -344,11 +354,9 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/common/wm-common.c
        capplets/common/wm-common.h
        capplets/default-applications/Makefile.am
-       capplets/default-applications/*.1
        capplets/default-applications/*.in
        capplets/default-applications/*.ui
        capplets/display/icons/*x*/*.png
-       capplets/display/icons/scalable/*.svg
        capplets/display/Makefile.am
        capplets/display/TODO
        capplets/display/*.ui
@@ -368,7 +376,6 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/mouse/*.png
        capplets/mouse/*.ui
        capplets/network/icons/*x*/*.png
-       capplets/network/icons/scalable/*.svg
        capplets/network/Makefile.am
        capplets/network/*.in
        capplets/network/*.ui
@@ -391,6 +398,7 @@ Files: capplets/about-me/icons/Makefile.am
        libwindow-settings/marco-window-manager.h
        libwindow-settings/mate-wm-manager.h
        libwindow-settings/*.in
+       man/Makefile.am
        po/LINGUAS
        po/POTFILES.in
        po/POTFILES.skip
