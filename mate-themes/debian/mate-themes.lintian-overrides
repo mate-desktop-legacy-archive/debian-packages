@@ -1,0 +1,5 @@
+# FIXME: These empty dirs have to stay until Debian stretch+1.
+# See https://bugs.debian.org/792841
+mate-themes: package-contains-empty-directory usr/share/icons/ContrastHighLargePrintInverse/
+mate-themes: package-contains-empty-directory usr/share/icons/Fog/
+mate-themes: package-contains-empty-directory usr/share/icons/Quid/

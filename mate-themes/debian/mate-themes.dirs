@@ -1,0 +1,5 @@
+# FIXME: These empty dirs have to stay until Debian stretch+1.
+# See https://bugs.debian.org/792841
+usr/share/icons/ContrastHighLargePrintInverse/
+usr/share/icons/Fog/
+usr/share/icons/Quid/

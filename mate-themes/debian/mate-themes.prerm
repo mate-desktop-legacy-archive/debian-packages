@@ -1,0 +1,13 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
+	rm -f /usr/share/icons/ContrastHigh/icon-theme.cache
+	# FIXME: The below removals have to stay until stretch+1.
+	# See https://bugs.debian.org/792841
+	rm -f /usr/share/icons/ContrastHighLargePrintInverse/icon-theme.cache
+	rm -f /usr/share/icons/Fog/icon-theme.cache
+	rm -f /usr/share/icons/Quid/icon-theme.cache
+fi
+
+#DEBHELPER#
