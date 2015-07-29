@@ -1,11 +1,17 @@
 #!/usr/bin/make -f
 
 DHFLAGS=--parallel
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+        SYSTEMD_SUPPORT=--with-systemd
+else
+        SYSTEMD_SUPPORT=--without-systemd
+endif
 
 %:
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
+	rm -rfv debian/tmp/usr/share/MateConf/
 	rm -fv debian/tmp/usr/lib/*/*.la 
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/*/fdl/
@@ -20,15 +26,16 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 	        --disable-silent-rules \
-		--disable-static \
-		--with-xscreensaverdir=/usr/share/xscreensaver/config \
-		--with-xscreensaverhackdir=/usr/lib/xscreensaver \
-		--with-mit-ext \
-		--libexecdir=/usr/lib/ \
-		--with-console-kit \
-		--with-libnotify \
-		--enable-locking \
-		--with-gtk=2.0
+	        --disable-static \
+	        --with-xscreensaverdir=/usr/share/xscreensaver/config \
+	        --with-xscreensaverhackdir=/usr/lib/xscreensaver \
+	        --with-mit-ext \
+	        --libexecdir=/usr/lib/ \
+	        --with-console-kit \
+	        --with-libnotify \
+	        --enable-locking \
+	        --with-gtk=2.0 \
+	        $(SYSTEMD_SUPPORT)
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-screensaver-dbg
