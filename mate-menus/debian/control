@@ -70,6 +70,7 @@ Description: implementation of the freedesktop menu specification for MATE (deve
  This package contains the development files.
 
 Package: gir1.2-mate-menu
+Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
