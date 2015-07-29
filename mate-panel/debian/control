@@ -8,55 +8,55 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Petr Baudis <pasky@ucw.cz>,
 Build-Depends: debhelper (>= 9),
                dh-python,
-               intltool,
-               yelp-tools,
-               python,
-               libx11-dev,
-               libxau-dev,
-               libice-dev,
-               libsm-dev,
-               libgtk2.0-dev,
-               libmate-desktop-dev (>= 1.9.0),
-               libcairo2-dev,
-               gtk-doc-tools,
-               libmate-menu-dev,
-               libpango1.0-dev,
-               libglib2.0-dev ,
-               libmateweather-dev,
-               librsvg2-dev,
-               libdbus-glib-1-dev,
-               libdbus-1-dev,
-               libxrandr-dev,
-               libcanberra-gtk-dev,
-               libsoup2.4-dev,
-               libwnck-dev,
-               libgirepository1.0-dev,
-               gobject-introspection,
-               gir1.2-gtk-2.0,
-               gir1.2-glib-2.0,
                gir1.2-atk-1.0,
                gir1.2-freedesktop,
-               gir1.2-pango-1.0,
                gir1.2-gdkpixbuf-2.0,
-               mate-common,
-               lsb-release,
+               gir1.2-glib-2.0,
+               gir1.2-gtk-2.0,
+               gir1.2-pango-1.0,
+               gobject-introspection,
+               gtk-doc-tools,
+               intltool,
+               libcairo2-dev,
+               libcanberra-gtk-dev,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
                libdconf-dev,
+               libgirepository1.0-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libice-dev,
+               libmate-desktop-dev (>= 1.9.0),
+               libmate-menu-dev,
+               libmateweather-dev,
+               libpango1.0-dev,
+               librsvg2-dev,
+               libsm-dev,
+               libsoup2.4-dev,
+               libwnck-dev,
+               libx11-dev,
+               libxau-dev,
+               libxrandr-dev,
+               lsb-release,
+               mate-common,
+               python,
+               yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-panel
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: libmate-panel-applet-4-1 (= ${binary:Version}),
          mate-desktop,
          mate-menus,
+         mate-panel-common (= ${source:Version}),
+         mate-polkit,
          menu-xdg,
          python,
-         mate-polkit,
-         libmate-panel-applet-4-1 (= ${binary:Version}),
-         mate-panel-common (= ${source:Version})
-Breaks: mate-panel-common (<< 1.1.1-4)
-Replaces: mate-panel-common (<< 1.1.1-4)
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: mate-panel-common (<< 1.1.1-4),
+Replaces: mate-panel-common (<< 1.1.1-4),
 Description: launcher and docking facility for MATE
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -69,8 +69,8 @@ Package: mate-panel-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-panel (= ${binary:Version}),
+Depends: mate-panel (= ${binary:Version}),
+         ${misc:Depends},
 Description: launcher and docking facility for MATE (debugging symbols)
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -86,9 +86,9 @@ Description: launcher and docking facility for MATE (debugging symbols)
 
 Package: mate-panel-common
 Architecture: all
-Depends: ${misc:Depends}
-Breaks: mate-panel (<= 1.9.0)
-Replaces: mate-panel (<= 1.9.0)
+Depends: ${misc:Depends},
+Breaks: mate-panel (<= 1.9.0),
+Replaces: mate-panel (<= 1.9.0),
 Description: launcher and docking facility for MATE (common files)
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -102,15 +102,15 @@ Description: launcher and docking facility for MATE (common files)
 Package: libmate-panel-applet-4-1
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
-Breaks: mate-panel (<= 1.0.0-3), 
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: libmate-panel-applet4-1,
         libmatepanelapplet,
-        libmate-panel-applet4-1,
-Replaces: libmatepanelapplet,
-          libmate-panel-applet4-1,
-Provides: libmatepanelapplet,
-          libmate-panel-applet4-1,
+        mate-panel (<= 1.0.0-3),
+Replaces: libmate-panel-applet4-1,
+          libmatepanelapplet,
+Provides: libmate-panel-applet4-1,
+          libmatepanelapplet,
 Description: library for MATE Panel applets
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -126,8 +126,8 @@ Section: debug
 Priority: extra
 Architecture: any
 Breaks: mate-panel-dbg (<= 1.6.1),
-Depends: ${misc:Depends},
-         libmate-panel-applet-4-1 (= ${binary:Version})
+Depends: libmate-panel-applet-4-1 (= ${binary:Version}),
+         ${misc:Depends},
 Description: library for MATE Panel applets (debugging symbols)
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -142,18 +142,17 @@ Description: library for MATE Panel applets (debugging symbols)
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
 
-
 Package: libmate-panel-applet-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         libmate-panel-applet-4-1 (= ${binary:Version}),
+Depends: libglib2.0-dev,
          libgtk2.0-dev,
-         libglib2.0-dev
-Provides: libmatepanelapplet-dev
-Conflicts: libmatepanelapplet-dev
-Replaces: libmatepanelapplet-dev
+         libmate-panel-applet-4-1 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Provides: libmatepanelapplet-dev,
+Conflicts: libmatepanelapplet-dev,
+Replaces: libmatepanelapplet-dev,
 Description: library for MATE Panel applets (development files)
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -168,10 +167,10 @@ Description: library for MATE Panel applets (development files)
 Package: libmate-panel-applet-doc
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}
-Provides: libmatepanelapplet-doc
-Conflicts: libmatepanelapplet-doc
-Replaces: libmatepanelapplet-doc
+Depends: ${misc:Depends},
+Provides: libmatepanelapplet-doc,
+Conflicts: libmatepanelapplet-doc,
+Replaces: libmatepanelapplet-doc,
 Description: library for MATE Panel applets (documentation files)
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
@@ -185,11 +184,11 @@ Description: library for MATE Panel applets (documentation files)
 
 Package: gir1.2-mate-panel
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: gir1.2-gtk-2.0,
+         ${gir:Depends},
          ${misc:Depends},
          ${python:Depends},
-         ${gir:Depends},
-         gir1.2-gtk-2.0
+         ${shlibs:Depends},
 Description: GObject introspection data for MATE panel
  The MATE Panel is an essential part of the MATE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
