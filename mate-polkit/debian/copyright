@@ -18,12 +18,27 @@ Files: polkitgtkmate/example.c
 Copyright: 2009, Red Hat, Inc
 License: LGPL-2+
 
-Files: Makefile.am
+Files: .tx/config
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
+       Makefile.am
+       NEWS
+       README
        autogen.sh
        configure.ac
+       docs/Makefile.am
+       docs/polkit-gtk-mate-1-docs.xml
+       docs/polkit-lock-button-lock-down.png
+       docs/polkit-lock-button-locked.png
+       docs/polkit-lock-button-not-authorized.png
+       docs/polkit-lock-button-unlocked.png
+       docs/version.xml.in
        po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
+       po/gnome-copyrights.txt
        polkitgtkmate/Makefile.am
        polkitgtkmate/polkit-gtk-mate-1.pc.in
        src/Makefile.am
