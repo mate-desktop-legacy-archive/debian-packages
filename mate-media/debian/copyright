@@ -3,131 +3,59 @@ Upstream-Name: mate-media
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-media/
 
-Files: mate-volume-control/src/applet-main.c
-       mate-volume-control/src/dialog-main.c
-       mate-volume-control/src/gvc-applet.c
-       mate-volume-control/src/gvc-applet.h
-       mate-volume-control/src/gvc-balance-bar.h
-       mate-volume-control/src/gvc-channel-bar.h
-       mate-volume-control/src/gvc-channel-map.h
-       mate-volume-control/src/gvc-combo-box.h
-       mate-volume-control/src/gvc-log.c
-       mate-volume-control/src/gvc-log.h
-       mate-volume-control/src/gvc-mixer-card.h
-       mate-volume-control/src/gvc-mixer-control.h
-       mate-volume-control/src/gvc-mixer-dialog.h
-       mate-volume-control/src/gvc-mixer-event-role.h
-       mate-volume-control/src/gvc-mixer-sink-input.h
-       mate-volume-control/src/gvc-mixer-sink.h
-       mate-volume-control/src/gvc-mixer-source-output.h
-       mate-volume-control/src/gvc-mixer-source.h
-       mate-volume-control/src/gvc-mixer-stream.h
-       mate-volume-control/src/gvc-speaker-test.h
-       mate-volume-control/src/gvc-stream-status-icon.h
-       sound-theme/gvc-sound-theme-chooser.h
-       sound-theme/gvc-sound-theme-editor.h
+Files: mate-volume-control/gvc-balance-bar.h
+       mate-volume-control/gvc-channel-bar.h
+       mate-volume-control/gvc-combo-box.h
+       mate-volume-control/gvc-speaker-test.h
+       mate-volume-control/gvc-stream-status-icon.h
 Copyright: 2008-2009, Red Hat, Inc.
 License: GPL-2+
 
-Files: gst-mixer-applet/applet.c
-       gst-mixer-applet/applet.h
-       gst-mixer-applet/dock.c
-       gst-mixer-applet/dock.h
-       gst-mixer-applet/keys.h
-       gst-mixer-applet/load.c
-       gst-mixer-applet/preferences.c
-       gst-mixer-applet/preferences.h
-       gst-mixer/src/button.c
-       gst-mixer/src/button.h
-       gst-mixer/src/element.c
-       gst-mixer/src/element.h
-       gst-mixer/src/main.c
-       gst-mixer/src/misc.c
-       gst-mixer/src/misc.h
-       gst-mixer/src/preferences.c
-       gst-mixer/src/preferences.h
-       gst-mixer/src/track.c
-       gst-mixer/src/track.h
-       gst-mixer/src/volume.c
-       gst-mixer/src/volume.h
-       gst-mixer/src/window.c
-       gst-mixer/src/window.h
-Copyright: 2003-2004, Ronald Bultje <rbultje@ronald.bitfreak.net>
-License: LGPL-2+
-
-Files: mate-volume-control/src/gvc-balance-bar.c
-       mate-volume-control/src/gvc-channel-bar.c
-       mate-volume-control/src/gvc-channel-map.c
-       mate-volume-control/src/gvc-mixer-dialog.c
-       mate-volume-control/src/gvc-mixer-event-role.c
-       mate-volume-control/src/gvc-mixer-sink-input.c
-       mate-volume-control/src/gvc-mixer-sink.c
-       mate-volume-control/src/gvc-mixer-source-output.c
-       mate-volume-control/src/gvc-mixer-source.c
-       mate-volume-control/src/gvc-mixer-stream.c
-       mate-volume-control/src/gvc-stream-status-icon.c
+Files: mate-volume-control/gvc-balance-bar.c
+       mate-volume-control/gvc-channel-bar.c
+       mate-volume-control/gvc-mixer-dialog.c
+       mate-volume-control/gvc-mixer-dialog.h
+       mate-volume-control/gvc-stream-status-icon.c
+       mate-volume-control/gvc-stream-status-icon.h
 Copyright: 2008, William Jon McCann
 License: GPL-2+
 
-Files: mate-volume-control/src/gvc-combo-box.c
-       mate-volume-control/src/gvc-speaker-test.c
+Files: mate-volume-control/gvc-combo-box.c
+       mate-volume-control/gvc-combo-box.h
+       mate-volume-control/gvc-speaker-test.c
+       mate-volume-control/gvc-speaker-test.h
 Copyright: 2009, Bastien Nocera
 License: GPL-2+
 
-Files: sound-theme/sound-theme-file-utils.c
-       sound-theme/sound-theme-file-utils.h
+Files: mate-volume-control/sound-theme-file-utils.c
+       mate-volume-control/sound-theme-file-utils.h
 Copyright: 2008, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
-Files: sound-theme/gvc-sound-theme-chooser.c
-       sound-theme/gvc-sound-theme-editor.c
+Files: mate-volume-control/gvc-sound-theme-chooser.c
+       mate-volume-control/gvc-sound-theme-chooser.h
 Copyright: 2008, Bastien Nocera <hadess@hadess.net>
            2008, William Jon McCann
 License: GPL-2+
 
-Files: mate-volume-control/src/gvc-level-bar.c
-       mate-volume-control/src/gvc-level-bar.h
+Files: mate-volume-control/gvc-level-bar.c
+       mate-volume-control/gvc-level-bar.h
 Copyright: 2008, William Jon McCann <william.jon.mccann@gmail.com>
 License: GPL-2+
-
-Files: gst-mixer/src/schemas.c
-       gst-mixer/src/schemas.h
-Copyright: 2012, Stefano Karapetsas <stefano@karapetsas.com>
-License: LGPL-2+
 
 Files: build-aux/git-version-gen
 Copyright: 2007-2008, Free Software Foundation, Inc.
 License: GPL-3+
 
-Files: mate-volume-control/src/gvc-mixer-card.c
-Copyright: 2008, William Jon McCann
-           2009, Bastien Nocera
+Files: mate-volume-control/applet-main.c
+       mate-volume-control/dialog-main.c
+       mate-volume-control/gvc-applet.c
+       mate-volume-control/gvc-applet.h
+       mate-volume-control/gvc-utils.c
+       mate-volume-control/gvc-utils.h
+Copyright: 2008, Red Hat, Inc.
+           2014, Michal Ratajsky <michal.ratajsky@gmail.com>
 License: GPL-2+
-
-Files: mate-volume-control/src/gvc-mixer-control.c
-Copyright: 2006-2008, Lennart Poettering
-           2008, Sjoerd Simons <sjoerd@luon.net>
-           2008, William Jon McCann
-License: GPL-2+
-
-Files: gst-mixer/icons/16x16/devices/Makefile.am
-       gst-mixer/icons/16x16/devices/*.png
-       gst-mixer/icons/16x16/status/Makefile.am
-       gst-mixer/icons/16x16/status/*.png
-       gst-mixer/icons/16x16/Makefile.am
-       gst-mixer/icons/Makefile.am
-       gst-mixer/pixmaps/Makefile.am
-       gst-mixer/pixmaps/*.png
-       gst-mixer/src/Makefile.am
-       gst-mixer/Makefile.am
-       gst-mixer/*.convert
-       gst-mixer/*.in
-       gst-mixer-applet/AUTHORS
-       COPYING.gst-mixer
-Copyright: *No copyright*
-License: LGPL-2+
-Comment:
- Using license from COPYING.gst-mixer file.
 
 Files:  po/*.po
 Copyright: 1998-2010, Free Software Foundation, Inc.
@@ -147,45 +75,28 @@ License: LGPL-2+ or GPL-2+
 Comment:
  Using licenses from COPYING or COPYING.gst-mixer file.
 
-Files: gst-mixer-applet/Makefile.am
-       gst-mixer-applet/*.xml
-       gst-mixer-applet/*.in
+Files: data/Makefile.am
+       data/*.in
+       data/icons/Makefile.am
+       data/icons/*/Makefile.am
+       data/icons/*/status/Makefile.am
+       data/icons/*/status/*.png
+       data/icons/*/status/*.svg
+       data/icons/*/devices/Makefile.am
+       data/icons/*/devices/*.svg
        man/Makefile.am
        man/*.1
-       mate-volume-control/data/icons/16x16/status/Makefile.am
-       mate-volume-control/data/icons/16x16/status/*.png
-       mate-volume-control/data/icons/16x16/Makefile.am
-       mate-volume-control/data/icons/22x22/status/Makefile.am
-       mate-volume-control/data/icons/22x22/status/*.png
-       mate-volume-control/data/icons/22x22/Makefile.am
-       mate-volume-control/data/icons/24x24/status/Makefile.am
-       mate-volume-control/data/icons/24x24/status/*.png
-       mate-volume-control/data/icons/24x24/Makefile.am
-       mate-volume-control/data/icons/32x32/status/Makefile.am
-       mate-volume-control/data/icons/32x32/status/*.png
-       mate-volume-control/data/icons/32x32/Makefile.am
-       mate-volume-control/data/icons/scalable/devices/Makefile.am
-       mate-volume-control/data/icons/scalable/devices/*.svg
-       mate-volume-control/data/icons/scalable/status/Makefile.am
-       mate-volume-control/data/icons/scalable/status/*.svg
-       mate-volume-control/data/icons/scalable/Makefile.am
-       mate-volume-control/data/icons/Makefile.am
-       mate-volume-control/data/Makefile.am
-       mate-volume-control/data/*.in
-       mate-volume-control/src/Makefile.am
-       mate-volume-control/AUTHORS
-       mate-volume-control/ChangeLog.pre-2-26
        mate-volume-control/Makefile.am
-       sound-theme/sounds/Makefile.am
-       sound-theme/sounds/*.ogg
-       sound-theme/sounds/*.in
+       data/sounds/Makefile.am
+       data/sounds/*.ogg
+       data/sounds/*.in
        .tx/config
        AUTHORS
-       sound-theme/Makefile.am
        Makefile.am
        autogen.sh
        configure.ac
        COPYING
+       COPYING-DOCS
        ChangeLog
        NEWS
        NEWS.GNOME
