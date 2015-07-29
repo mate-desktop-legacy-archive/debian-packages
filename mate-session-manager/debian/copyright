@@ -112,6 +112,10 @@ Copyright: 1998, Tom Tromey
            2008, Red Hat, Inc.
 License: GPL-2+
 
+Files: tools/mate-session-inhibit.c
+Copyright: 2012, Red Hat, Inc.
+License: GPL-2+
+
 Files: mate-session/gsm-logout-dialog.c
 Copyright: 2006, Vincent Untz
            2008, Red Hat, Inc.
@@ -178,6 +182,7 @@ Files: .tx/config
        doc/dbus/mate-session.xml.in
        doc/dbus/spec-to-docbook.xsl
        doc/man/*.1
+       doc/man/*.xml
        mate-session/README
        mate-session/gsm-marshal.list
        mate-session/*.xml

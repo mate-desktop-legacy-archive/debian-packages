@@ -15,6 +15,9 @@ endif
 override_dh_install:
 	dh_install --fail-missing
 
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test
 
