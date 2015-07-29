@@ -32,7 +32,7 @@ Build-Depends: autotools-dev,
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common,
+               mate-common (>= 1.10),
                x11proto-kb-dev,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/

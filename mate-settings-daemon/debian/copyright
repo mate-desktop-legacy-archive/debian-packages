@@ -64,15 +64,6 @@ Copyright: 2005, 2007 William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
 Files: mate-settings-daemon/mate-settings-plugin-info.h
-       plugins/media-keys/cut-n-paste/gvc-channel-map.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-card.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-control.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-event-role.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-sink-input.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-sink.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-source-output.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-source.h
-       plugins/media-keys/cut-n-paste/gvc-mixer-stream.h
        plugins/smartcard/msd-smartcard-manager.c
        plugins/smartcard/msd-smartcard-manager.h
        plugins/smartcard/msd-smartcard-plugin.c
@@ -92,16 +83,6 @@ Files: plugins/clipboard/list.c
        plugins/xsettings/xsettings-manager.h
 Copyright: 2001, 2004 Red Hat, Inc
 License: MIT~OldStyleWithDisclaimer+RedHat
-
-Files: plugins/media-keys/cut-n-paste/gvc-channel-map.c
-       plugins/media-keys/cut-n-paste/gvc-mixer-event-role.c
-       plugins/media-keys/cut-n-paste/gvc-mixer-sink-input.c
-       plugins/media-keys/cut-n-paste/gvc-mixer-sink.c
-       plugins/media-keys/cut-n-paste/gvc-mixer-source-output.c
-       plugins/media-keys/cut-n-paste/gvc-mixer-source.c
-       plugins/media-keys/cut-n-paste/gvc-mixer-stream.c
-Copyright: 2008, William Jon McCann
-License: GPL-2+
 
 Files: plugins/datetime/system-timezone.h
        plugins/housekeeping/msd-disk-space.c
@@ -179,14 +160,6 @@ Copyright: 2001, Ximian, Inc
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: plugins/media-keys/cut-n-paste/gvc-gstreamer-acme-vol.c
-       plugins/media-keys/cut-n-paste/gvc-gstreamer-acme-vol.h
-Copyright: 2002-2003, Bastien Nocera
-           2004, Novell, Inc
-           2009, PERIER Romain <mrpouet@tuxfamily.org>
-           2011, Stefano Karapetsas <stefano@karapetsas.com>
-License: LGPL-2+
-
 Files: plugins/common/msd-osd-window.c
        plugins/common/msd-osd-window.h
 Copyright: 2006-2007 William Jon McCann <mccann@jhu.edu>
@@ -206,13 +179,13 @@ Copyright: 2007, Anders Carlsson
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: plugins/media-keys/cut-n-paste/gvc-mixer-card.c
-Copyright: 2008, William Jon McCann
-           2009, Bastien Nocera
-License: GPL-2+
-
 Files: plugins/media-keys/acme.h
 Copyright: 2001, Bastien Nocera <hadess@hadess.net>
+License: GPL-2+
+
+Files: plugins/common/msd-input-helper.c
+       plugins/common/msd-input-helper.h
+Copyright: 2010, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
 Files: plugins/common/msd-keygrab.c
@@ -240,12 +213,6 @@ License: GPL-2+
 
 Files: plugins/common/msd-keygrab.h
 Copyright: 2008, Jens Granseuer <jensgr@gmx.net>
-License: GPL-2+
-
-Files: plugins/media-keys/cut-n-paste/gvc-mixer-control.c
-Copyright: 2006-2008, Lennart Poettering
-           2008, Sjoerd Simons <sjoerd@luon.net>
-           2008, William Jon McCann
 License: GPL-2+
 
 Files: plugins/datetime/system-timezone.c
@@ -305,6 +272,8 @@ Files: .tx/config
        data/Makefile.am
        data/*.in.in
        data/*.in
+       data/msd-datetime-mechanism.1
+       data/msd-locate-pointer.1
        data/mate-settings-daemon.1
        data/mate-settings-daemon.convert
        Makefile.am
@@ -334,7 +303,6 @@ Files: .tx/config
        plugins/keyboard/*.mate-settings-plugin.in
        plugins/keyboard/*.png
        plugins/Makefile.am
-       plugins/media-keys/cut-n-paste/Makefile.am
        plugins/media-keys/Makefile.am
        plugins/media-keys/msd-marshal.*
        plugins/media-keys/*.mate-settings-plugin.in

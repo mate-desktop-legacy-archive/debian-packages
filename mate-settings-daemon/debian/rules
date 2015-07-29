@@ -14,10 +14,13 @@ override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
+		--libexecdir=/usr/bin \
 		--disable-static \
 		--enable-pulse \
-		--libexecdir=/usr/bin \
 		--with-gtk=2.0
+
+override_dh_makeshlibs:
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-settings-daemon-dbg
