@@ -9,40 +9,40 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: cdbs,
                debhelper (>= 9),
                intltool,
+               libcanberra-gtk-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libcanberra-gtk-dev,
-               libxml2-dev,
-               libunique-dev,
-               mate-common,
+               libmate-desktop-dev (>= 1.9.3),
                libmatemixer-dev (>= 1.9.1),
-               libmate-desktop-dev (>= 1.9.3)
+               libunique-dev,
+               libxml2-dev,
+               mate-common,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-media
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: mate-desktop-common (>= 1.9.3),
          mate-media-common (= ${source:Version}),
-         mate-desktop-common (>= 1.9.3)
+         ${misc:Depends},
+         ${shlibs:Depends},
 Recommends: alsa-utils,
-            sound-theme-freedesktop
-Replaces: mate-media-pulse (<< 1.9.0),
-          mate-media-gstreamer (<< 1.9.0)
-Breaks: mate-media-pulse (<< 1.9.0),
-        mate-media-gstreamer (<< 1.9.0)
+            sound-theme-freedesktop,
+Replaces: mate-media-gstreamer (<< 1.9.0),
+          mate-media-pulse (<< 1.9.0),
+Breaks: mate-media-gstreamer (<< 1.9.0),
+        mate-media-pulse (<< 1.9.0),
 Description: MATE media utilities
  MATE media utilities are the audio mixer and the volume
  control applet.
 
 Package: mate-media-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-media-pulse (<< 1.9.0),
-          mate-media-gstreamer (<< 1.9.0)
-Breaks: mate-media-pulse (<< 1.9.0),
-        mate-media-gstreamer (<< 1.9.0)
+Depends: ${misc:Depends},
+Replaces: mate-media-gstreamer (<< 1.9.0),
+          mate-media-pulse (<< 1.9.0),
+Breaks: mate-media-gstreamer (<< 1.9.0),
+        mate-media-pulse (<< 1.9.0),
 Description: MATE media utilities (common files)
  MATE media utilities are the audio mixer and the volume
  control applet.
@@ -53,8 +53,8 @@ Package: mate-media-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-media (= ${binary:Version})
+Depends: mate-media (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE media utilities (debugging symbols)
  MATE media utilities are the audio mixer and the volume
  control applet.
