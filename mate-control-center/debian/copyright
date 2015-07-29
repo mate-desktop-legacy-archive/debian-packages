@@ -38,7 +38,7 @@ Files: libslab/app-resizer.c
        libslab/tile.h
 Copyright: 2006-2007, Novell, Inc.
 License: LGPL-2+
- 
+
 Files: capplets/appearance/appearance-desktop.c
        capplets/appearance/appearance-desktop.h
        capplets/appearance/appearance-main.c
@@ -56,7 +56,7 @@ Files: capplets/appearance/appearance-desktop.c
        capplets/keyboard/mate-keyboard-properties-a11y.c
 Copyright: 2007-2010, The GNOME Foundation
 License: GPL-2+
- 
+
 Files: capplets/appearance/mate-wp-info.c
        capplets/appearance/mate-wp-info.h
        capplets/appearance/mate-wp-item.c
@@ -74,7 +74,7 @@ Files: capplets/display/mate-display-properties-install-systemwide.c
        shell/control-center.c
 Copyright: 2006-2010 Novell, Inc.
 License: GPL-2+
- 
+
 Files: capplets/keyboard/mate-keyboard-properties-xkb.c
        capplets/keyboard/mate-keyboard-properties-xkblt.c
        capplets/keyboard/mate-keyboard-properties-xkbltadd.c
@@ -83,7 +83,7 @@ Files: capplets/keyboard/mate-keyboard-properties-xkb.c
        capplets/keyboard/mate-keyboard-properties-xkbpv.c
 Copyright: 2003-2007, Sergey V. Udaltsov
 License: GPL-2+
- 
+
 Files: capplets/about-me/fingerprint-strings.h
        capplets/about-me/mate-about-me-fingerprint.c
        capplets/about-me/mate-about-me-fingerprint.h
@@ -91,7 +91,7 @@ Files: capplets/about-me/fingerprint-strings.h
        font-viewer/totem-resources.h
 Copyright: 2007-2008, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
- 
+
 Files: capplets/windows/mate-window-properties.c
        libwindow-settings/marco-window-manager.c
        libwindow-settings/mate-window-manager.c
@@ -108,7 +108,7 @@ Files: capplets/common/capplet-util.c
        capplets/keyboard/mate-keyboard-properties-a11y.h
 Copyright: 2001-2002, Ximian, Inc.
 License: GPL-2+
- 
+
 Files: typing-break/drw-break-window.c
        typing-break/drw-break-window.h
        typing-break/drw-monitor.c
@@ -116,7 +116,7 @@ Files: typing-break/drw-break-window.c
 Copyright: 2002, CodeFactory AB
            2002-2003, Richard Hult <richard@imendio.com>
 License: GPL-2+
- 
+
 Files: capplets/appearance/appearance-support.c
        capplets/appearance/appearance-support.h
        capplets/common/dconf-util.c
@@ -230,7 +230,7 @@ License: GPL-2+
 Files: capplets/network/mate-network-properties.c
 Copyright: 2002, Sun Microsystems, Inc.
 License: GPL-2+
- 
+
 Files: capplets/common/mate-theme-apply.c
 Copyright: 2002, Jonathan Blandford <aes@gnome.org>
 License: LGPL-2.1+
@@ -499,7 +499,7 @@ License: MIT~OldStyle+LegalDisclaimer
  documentation, and that the name of the copyright holder not be used
  in advertising or publicity pertaining to distribution of the software
  without specific, written prior permission.  The copyright holder makes
- no representations about the suitability of this software for any purpose. 
+ no representations about the suitability of this software for any purpose.
  It is provided "as is" without express or implied warranty.
  .
  THE COPYRIGHT HOLDER DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
