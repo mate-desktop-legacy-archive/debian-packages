@@ -6,7 +6,7 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
-               mate-common,
+               mate-common (>= 1.10),
 Build-Depends-Indep: intltool,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
@@ -15,5 +15,9 @@ Package: mate-backgrounds
 Architecture: all
 Depends: ${misc:Depends},
 Description: Set of backgrounds packaged with the MATE Desktop Environment
- The package mate-backgrounds provides a collection of desktop wallpapers
- created with MATE users in mind.
+ This package provides a collection of desktop wallpapers created with MATE
+ users in mind.
+ .
+ The package ships the default MATE backgrounds from various Linux
+ distributions as well as a set of nature photographs suitable as comforting
+ desktop backgrounds.
