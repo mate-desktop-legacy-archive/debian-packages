@@ -7,45 +7,45 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
            Petr Baudis <pasky@ucw.cz>,
-Build-Depends: debhelper (>= 9),
-               autotools-dev,
-               libtool-bin,
-               libdbus-glib-1-dev,
-               libxml-parser-perl,
-               libxext-dev,
-               libx11-dev,
-               libgtk2.0-dev,
-               libglib2.0-dev,
-               libwnck-dev,
+Build-Depends: autotools-dev,
+               debhelper (>= 9),
                docbook-to-man,
+               docbook-utils,
                intltool,
+               libcanberra-gtk-dev,
+               libdbus-glib-1-dev,
+               libgcrypt20-dev,
+               libglib2.0-dev,
+               libgnome-keyring-dev,
+               libgtk2.0-dev,
+               libmate-desktop-dev (>= 1.9.0),
+               libmate-panel-applet-dev,
                libnotify-dev,
+               libtool-bin,
+               libunique-dev,
+               libupower-glib-dev,
+               libwnck-dev,
+               libx11-dev,
+               libxext-dev,
+               libxml-parser-perl,
                libxrandr-dev,
+               mate-common,
+               pkg-config,
                xmlto,
                yelp-tools,
-               libupower-glib-dev,
-               libcanberra-gtk-dev,
-               libunique-dev,
-               libgnome-keyring-dev,
-               pkg-config,
-               libmate-panel-applet-dev,
-               libmate-desktop-dev (>= 1.9.0),
-               mate-common,
-               docbook-utils,
-               libgcrypt20-dev
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-power-manager
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: dbus-x11,
          mate-notification-daemon | notification-daemon,
-         dbus-x11,
-         systemd | consolekit,
-         upower,
          mate-power-manager-common (= ${source:Version}),
          policykit-1,
+         systemd | consolekit,
+         upower,
+         ${misc:Depends},
+         ${shlibs:Depends},
 Suggests: mate-polkit,
 Description: power management tool for the MATE desktop
  MATE Power Manager is a session daemon for the MATE desktop
@@ -60,9 +60,9 @@ Description: power management tool for the MATE desktop
 
 Package: mate-power-manager-common
 Architecture: all
-Depends: ${misc:Depends}
-Breaks: mate-power-manager (<< 1.9.0)
-Replaces: mate-power-manager (<< 1.9.0)
+Depends: ${misc:Depends},
+Breaks: mate-power-manager (<< 1.9.0),
+Replaces: mate-power-manager (<< 1.9.0),
 Description: power management tool for the MATE desktop (common files)
  MATE Power Manager is a session daemon for the MATE desktop
  that takes care of system or desktop events related to power, and
@@ -80,8 +80,8 @@ Package: mate-power-manager-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-power-manager (= ${binary:Version})
+Depends: mate-power-manager (= ${binary:Version}),
+         ${misc:Depends},
 Description: power management tool for the MATE desktop (debugging symbols)
  MATE Power Manager is a session daemon for the MATE desktop
  that takes care of system or desktop events related to power, and
