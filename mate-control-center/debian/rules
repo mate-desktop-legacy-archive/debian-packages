@@ -7,6 +7,7 @@ DHFLAGS=--parallel
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/share/applications/mimeinfo.cache
+	rm -rfv debian/tmp/usr/share/MateConf/
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/*/*.la
 	dh_install --fail-missing
@@ -20,6 +21,9 @@ override_dh_auto_configure:
 		--disable-static \
 		--disable-update-mimedb \
 		--with-gtk=2.0
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
 
 override_dh_strip:
 	dh_strip -pmate-control-center --dbg-package=mate-control-center-dbg
