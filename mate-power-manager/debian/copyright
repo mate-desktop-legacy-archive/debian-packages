@@ -33,8 +33,6 @@ Files: applets/brightness/egg-dbus-monitor.c
        src/egg-idletime.h
        src/egg-precision.c
        src/egg-precision.h
-       src/egg-string.c
-       src/egg-string.h
        src/egg-test.c
        src/egg-test.h
        src/egg-unique.c
@@ -47,8 +45,6 @@ Files: applets/brightness/egg-dbus-monitor.c
        src/gpm-common.c
        src/gpm-common.h
        src/gpm-control.c
-       src/gpm-disks.c
-       src/gpm-disks.h
        src/gpm-engine.c
        src/gpm-engine.h
        src/gpm-graph-widget.c
@@ -70,7 +66,6 @@ Files: applets/brightness/egg-dbus-monitor.c
        src/gpm-statistics.c
        src/gpm-upower.c
        src/gpm-upower.h
-       tools/mate-power-manager-bugreport
 Copyright: 2005-2010, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
@@ -164,7 +159,6 @@ Files: .tx/config
        src/Makefile.am
        src/gpm-marshal.list
        src/*.xml
-       tools/Makefile.am
        AUTHORS
        COPYING
        ChangeLog
@@ -252,9 +246,20 @@ License: GPL-2+
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
-
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
