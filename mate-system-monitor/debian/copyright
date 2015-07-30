@@ -3,7 +3,8 @@ Upstream-Name: mate-system-monitor
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com
 Source: http://pub.mate-desktop.org/releases/
 
-Files: src/*.xml.in.in
+Files: .tx/config
+       src/*.xml.in.in
        src/argv.cpp
        src/argv.h
        src/cgroups.cpp
@@ -48,12 +49,22 @@ Files: src/*.xml.in.in
        pixmaps/*.svg
        pixmaps/*.png
        src/Makefile.am
+       po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
+       po/gnome-copyrights.txt
+       AUTHORS
+       COPYING
+       ChangeLog
        Makefile.am
-       config.h.in
+       NEWS
+       NEWS.GNOME
+       README
+       TODO
+       autogen.sh
        configure.ac
        mate-system-monitor.1
+       mate-system-monitor.appdata.xml.in
        mate-system-monitor.desktop*
        omf.make
        xmldocs.make
