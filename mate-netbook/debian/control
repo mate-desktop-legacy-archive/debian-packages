@@ -7,23 +7,23 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
+               libdconf-dev,
+               libfakekey-dev,
                libgtk2.0-dev,
                libmate-desktop-dev (>= 1.9.0),
                libmate-panel-applet-dev,
-               libwnck-dev,
-               libfakekey-dev,
                libunique-dev,
-               yelp-tools,
+               libwnck-dev,
                mate-common,
-               libdconf-dev,
+               yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-netbook
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: mate-netbook-common (= ${source:Version}),
          ${misc:Depends},
-         mate-netbook-common (= ${source:Version})
+         ${shlibs:Depends},
 Description: MATE utilities for netbooks
  MATE utilities for netbooks are an applet and a daemon to maximize
  windows and move their titles on the panel.
@@ -33,9 +33,9 @@ Description: MATE utilities for netbooks
 
 Package: mate-netbook-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-netbook (<< 1.9.0)
-Breaks: mate-netbook (<< 1.9.0)
+Depends: ${misc:Depends},
+Replaces: mate-netbook (<< 1.9.0),
+Breaks: mate-netbook (<< 1.9.0),
 Description: MATE utilities for netbooks (common files)
  MATE utilities for netbooks are an applet and a daemon to maximize
  windows and move their titles on the panel.
@@ -49,8 +49,8 @@ Package: mate-netbook-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-netbook (= ${binary:Version})
+Depends: mate-netbook (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE utilities for netbooks (debugging symbols)
  MATE utilities for netbooks are an applet and a daemon to maximize
  windows and move their titles on the panel.
