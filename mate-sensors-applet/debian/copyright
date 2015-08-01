@@ -84,7 +84,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: lib/Makefile.am
+Files: .tx/config
+       lib/Makefile.am
        pixmaps/Makefile.am
        pixmaps/*.png
        plugins/udisks/Makefile.am
@@ -103,14 +104,21 @@ Files: lib/Makefile.am
        plugins/ibm-acpi/Makefile.am
        plugins/sonypi/Makefile.am
        plugins/i2c-proc/Makefile.am
+       po/ChangeLog
        po/LINGUAS
-       po/POFILES.*
+       po/POTFILES.*
        sensors-applet/Makefile.am
        Makefile.am
        SensorsApplet.xml
        autogen.sh
        configure.ac
        org.mate.*.in
+       AUTHORS
+       COPYING
+       ChangeLog
+       NEWS
+       README
+       TODO
 Copyright: *No copyright*
 License: GPL-2+
 Comment:

@@ -1,0 +1,4 @@
+# mate-sensor-applet plugins erroneously trigger debhelper's makeshlibs script
+mate-sensors-applet: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+mate-sensors-applet: postinst-has-useless-call-to-ldconfig
+mate-sensors-applet: postrm-has-useless-call-to-ldconfig
