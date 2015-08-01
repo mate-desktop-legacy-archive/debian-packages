@@ -8,21 +8,21 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
                intltool,
-               mate-common,
-               libmate-panel-applet-dev,
-               libmate-desktop-dev (>= 1.9.0),
-               libgtop2-dev,
                libgtk2.0-dev,
+               libgtop2-dev,
                libiw-dev,
-               yelp-tools
+               libmate-desktop-dev (>= 1.9.0),
+               libmate-panel-applet-dev,
+               mate-common,
+               yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-netspeed
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: mate-netspeed-common (= ${source:Version}),
          ${misc:Depends},
-         mate-netspeed-common (= ${source:Version})
+         ${shlibs:Depends},
 Description: Traffic monitor applet for MATE
  Netspeed is an applet for the MATE panel that shows how much traffic
  occurs on a network device (ethernet card, wireless LAN card, or
@@ -30,9 +30,9 @@ Description: Traffic monitor applet for MATE
 
 Package: mate-netspeed-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-netspeed (<< 1.9.0)
-Breaks: mate-netspeed (<< 1.9.0)
+Depends: ${misc:Depends},
+Replaces: mate-netspeed (<< 1.9.0),
+Breaks: mate-netspeed (<< 1.9.0),
 Description: Traffic monitor applet for MATE (common files)
  Netspeed is an applet for the MATE panel that shows how much traffic
  occurs on a network device (ethernet card, wireless LAN card, or
@@ -44,8 +44,8 @@ Package: mate-netspeed-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-netspeed (= ${binary:Version})
+Depends: mate-netspeed (= ${binary:Version}),
+         ${misc:Depends},
 Description: Traffic monitor applet for MATE (debugging symbols)
  Netspeed is an applet for the MATE panel that shows how much traffic
  occurs on a network device (ethernet card, wireless LAN card, or

@@ -14,7 +14,8 @@ Comment:
  .
  See also the AUTHORS file shipped with the upstream sources.
 
-Files: data/Makefile.am
+Files: .tx/config
+       data/Makefile.am
        data/*.xml
        data/*.in
        icons/22x22/apps/Makefile.am
@@ -40,9 +41,17 @@ Files: data/Makefile.am
        icons/scalable/apps/*.svg
        icons/scalable/Makefile.am
        icons/Makefile.am
+       po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
+       po/gnome-copyrights.txt
        src/Makefile.am
+       AUTHORS
+       COPYING
+       ChangeLog
+       NEWS
+       README
+       TODO
        Makefile.am
        autogen.sh
        configure.ac
@@ -59,7 +68,7 @@ Comment:
 
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
-           2014, Mike Gabriel <sunweaver@debian.org>
+           2015, Mike Gabriel <sunweaver@debian.org>
 License: GPL-2+
 
 License: GPL-2+
