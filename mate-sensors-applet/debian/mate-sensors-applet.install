@@ -1,4 +1,3 @@
-usr/lib/mate-sensors-applet/
 usr/lib/*/mate-sensors-applet/plugins/libacpi.so
 usr/lib/*/mate-sensors-applet/plugins/libeee.so
 usr/lib/*/mate-sensors-applet/plugins/libhddtemp.so
@@ -10,5 +9,6 @@ usr/lib/*/mate-sensors-applet/plugins/libpmu-sys.so
 usr/lib/*/mate-sensors-applet/plugins/libsmu-sys.so
 usr/lib/*/mate-sensors-applet/plugins/libsonypi.so
 usr/lib/*/mate-sensors-applet/plugins/libudisks.so
+usr/lib/mate-sensors-applet/
 usr/share/dbus-1/
 usr/share/mate-panel/applets/
