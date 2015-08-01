@@ -125,6 +125,18 @@ Description: Library with common API for various MATE modules (documentation fil
  .
  This package contains the documentation files.
 
+Package: mate-user-guide
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+         yelp
+Description: User documentation for MATE Desktop
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ This package contains the user guide for MATE Desktop and its main
+ applications.
+
 Package: mate-desktop-dbg
 Section: debug
 Priority: extra
