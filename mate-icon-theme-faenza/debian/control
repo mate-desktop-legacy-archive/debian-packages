@@ -6,23 +6,23 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
-                     intltool (>= 0.40.0),
-                     pkg-config,
                      icon-naming-utils (>= 0.8.7),
+                     intltool (>= 0.40.0),
                      librsvg2-bin,
                      mate-common,
+                     pkg-config,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-icon-theme-faenza
 Architecture: all
-Depends: ${misc:Depends},
-         hicolor-icon-theme,
+Depends: hicolor-icon-theme,
          libgtk2.0-bin,
-         librsvg2-common
+         librsvg2-common,
+         ${misc:Depends},
 Description: MATE Faenza Desktop icon theme
  This package contains the Faenza icon theme provided with the MATE desktop.
  .
