@@ -1,3 +1,4 @@
+usr/share/MateConf/
 usr/share/caja/extensions/
 usr/share/glib-2.0/
 usr/share/help/
@@ -5,4 +6,3 @@ usr/share/icons/
 usr/share/locale/
 usr/share/man/
 usr/share/mate-user-share/
-usr/share/MateConf/
