@@ -37,7 +37,7 @@ Files: debian/*
 Copyright: 2012, Stefano Karapetsas <stefano@karapetsas.com>
            2011, Raphaël Hertzog <hertzog@debian.org>
            2008, Rian Hunter <rian@getdropbox.com>
-           2014, Mike Gabriel <sunweaver@debian.org>
+           2014-2015, Mike Gabriel <sunweaver@debian.org>
 License: GPL-3+
 
 License: GPL-3+

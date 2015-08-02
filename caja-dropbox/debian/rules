@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS) --with=python2
+	dh $@ --with python2 $(DHFLAGS)
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
