@@ -10,22 +10,22 @@ Build-Depends: debhelper (>= 9),
                dh-python,
                libcaja-extension-dev,
                libglib2.0-dev (>= 2.14.0),
-               python-gtk2 (>= 2.12),
-               python-docutils (>= 0.6),
+               mate-common,
                python (>= 2.6.6-3~),
-               mate-common
+               python-docutils (>= 0.6),
+               python-gtk2 (>= 2.12),
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: caja-dropbox
-Architecture: i386 amd64
-Depends: procps,
-         python-gtk2 (>= 2.12),
+Architecture: amd64 i386
+Depends: policykit-1,
+         procps,
          python-gpgme,
-         policykit-1,
-         ${shlibs:Depends},
-         ${python:Depends},
+         python-gtk2 (>= 2.12),
          ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
 Suggests: caja,
           dropbox,
 Description: Dropbox integration for Caja
