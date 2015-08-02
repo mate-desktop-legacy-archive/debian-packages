@@ -2,37 +2,38 @@ Source: mate-terminal
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>, 
-	   Stefano Karapetsas <stefano@karapetsas.com>,
-	   Mike Gabriel <sunweaver@debian.org>,
-	   Wences Arana <aranax@debian.org.gt>,
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Wences Arana <aranax@debian.org.gt>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
+           ,
 Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9),
-               intltool,
-               libx11-dev,
-               libgtk2.0-dev,
-               libglib2.0-dev,
-               libvte-dev,
-               libsm-dev,
                docbook-to-man,
+               intltool,
                libdbus-glib-1-dev,
                libdconf-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
                libmate-desktop-dev (>= 1.9.0),
+               libsm-dev,
+               libvte-dev,
+               libx11-dev,
                mate-common,
-               yelp-tools,
                python-all (>= 2.6),
+               yelp-tools,
 Homepage: http://www.mate-desktop.org
 
 Package: mate-terminal
 Multi-Arch: foreign
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: mate-desktop-common,
+         mate-terminal-common (= ${source:Version}),
          ${misc:Depends},
          ${python:Depends},
-         mate-terminal-common (= ${source:Version}),
-	 mate-desktop-common,
-Provides: x-terminal-emulator
+         ${shlibs:Depends},
+Provides: x-terminal-emulator,
 Description: MATE terminal emulator application
  MATE Terminal is a terminal emulation application that you can use to
  perform the following actions:
@@ -45,9 +46,9 @@ Description: MATE terminal emulator application
 
 Package: mate-terminal-common
 Architecture: all
-Depends: ${misc:Depends}
-Breaks: mate-terminal (<< 1.1.0-2)
-Replaces: mate-terminal (<< 1.1.0-2)
+Depends: ${misc:Depends},
+Breaks: mate-terminal (<< 1.1.0-2),
+Replaces: mate-terminal (<< 1.1.0-2),
 Description: MATE terminal emulator application (common files)
  MATE Terminal is a terminal emulation application that you can use to
  perform the following actions:
@@ -64,8 +65,8 @@ Package: mate-terminal-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-terminal (= ${binary:Version}),
+Depends: mate-terminal (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE terminal emulator application (debugging symbols)
  MATE Terminal is a terminal emulation application that you can use to
  perform the following actions:
