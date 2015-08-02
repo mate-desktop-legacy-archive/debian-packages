@@ -26,7 +26,8 @@ Files: src/caja-python-object.c
 Copyright: 2003-2004, Novell, Inc.
 License: GPL-2+
 
-Files: AUTHORS
+Files: .tx/config
+       AUTHORS
        COPYING
        ChangeLog
        Makefile.am
@@ -65,11 +66,21 @@ Files: AUTHORS
        docs/xsl/style.css
        examples/Makefile.am
        examples/README
+       libcaja-python.caja-extension.in.in
+       libcaja-python.caja-extension.in.in
+       po/LINGUAS
+       po/POTFILES.in
        src/Makefile.am
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
- Using license from COPYING file.
+ Using license as found in COPYING file.
+
+Files: po/*.po
+Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Using license as found in COPYING file.
 
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
