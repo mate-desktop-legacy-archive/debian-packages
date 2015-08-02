@@ -21,14 +21,23 @@ Copyright: 2002, Red Hat, Inc.
            1998-2001, Tim Janik
 License: LGPL-2+
 
-Files: data/Makefile.am
+Files: .tx/config
+       data/Makefile.am
        data/*.svg
        data/*.in
        po/POTFILES.*
+       po/gnome-copyrights.txt
+       po/stamp-it
        src/Makefile.am
+       AUTHORS
+       COPYING
+       COPYING.LGPL
+       ChangeLog
        Makefile.am
        autogen.sh
        configure.ac
+       NEWS
+       README
 Copyright: *No copyright*
 License: GPL-3+ or LGPL-3+
 Comment:

@@ -6,39 +6,53 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
 Build-Depends: debhelper (>= 9),
-               libgtk2.0-dev,
-               libmate-panel-applet-dev,
-               libdbus-glib-1-dev,
-               yelp-tools,
-               libtool,
-               intltool,
-               libxml2-dev,
                gtk-doc-tools,
+               intltool,
+               libdbus-glib-1-dev,
+               libgtk2.0-dev,
                libindicator-dev (>= 0.3.90),
-               mate-common
+               libmate-panel-applet-dev,
+               libtool,
+               libxml2-dev,
+               mate-common (>= 1.10),
+               yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org
 
 Package: mate-indicator-applet
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: mate-indicator-applet-common (= ${source:Version}),
+         mate-panel,
          ${misc:Depends},
-         mate-indicator-applet-common (= ${source:Version}),
-         mate-panel
-Provides: indicator-renderer
+         ${shlibs:Depends},
+Provides: indicator-renderer,
 Description: MATE panel indicator applet
- indicator-applet is an applet to display information from
- various applications consistently in the MATE panel.
+ A small applet to display information from various applications
+ consistently in the panel.
+ .
+ The indicator applet exposes Ayatana Indicators in the MATE Panel.
+ Ayatana Indicators are an initiative by Canonical to provide crisp and
+ clean system and application status indication. They take the form of an
+ icon and associated menu, displayed (usually) in the desktop panel.
+ Existing indicators include the Message Menu, Battery Menu and Sound
+ menu.
 
 Package: mate-indicator-applet-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-indicator-applet (<< 1.9.0)
-Breaks: mate-indicator-applet (<< 1.9.0)
+Depends: ${misc:Depends},
+Breaks: mate-indicator-applet (<< 1.9.0),
 Description: MATE panel indicator applet (common files)
- indicator-applet is an applet to display information from
- various applications consistently in the MATE panel.
+ A small applet to display information from various applications
+ consistently in the panel.
+ .
+ The indicator applet exposes Ayatana Indicators in the MATE Panel.
+ Ayatana Indicators are an initiative by Canonical to provide crisp and
+ clean system and application status indication. They take the form of an
+ icon and associated menu, displayed (usually) in the desktop panel.
+ Existing indicators include the Message Menu, Battery Menu and Sound
+ menu.
  .
  This package contains the architecture independent files.
 
@@ -46,11 +60,18 @@ Package: mate-indicator-applet-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-indicator-applet (= ${binary:Version})
+Depends: mate-indicator-applet (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE panel indicator applet (debugging symbols)
- indicator-applet is an applet to display information from
- various applications consistently in the MATE panel.
+ A small applet to display information from various applications
+ consistently in the panel.
+ .
+ The indicator applet exposes Ayatana Indicators in the MATE Panel.
+ Ayatana Indicators are an initiative by Canonical to provide crisp and
+ clean system and application status indication. They take the form of an
+ icon and associated menu, displayed (usually) in the desktop panel.
+ Existing indicators include the Message Menu, Battery Menu and Sound
+ menu.
  .
  This package contains debugging symbols for the mate-indicator-applet package.
  It is provided to help debugging problems.
