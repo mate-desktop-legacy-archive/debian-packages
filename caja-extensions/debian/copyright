@@ -1,74 +1,137 @@
-This package was debianized by Julien Valroff <julien@kirya.net> on
-Fri,  7 Oct 2005 23:00:13 +0200.
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: caja-extentions
+Upstream-Contact: Stafano Karapetsas <stefano@karapetsas.com>
+Source: http://pub.mate-desktop.org/releases/
 
-It was downloaded from
-http://ftp.mate.org/pub/MATE/sources/caja-open-terminal/
+Files: image-converter/caja-image-converter.c
+       image-converter/caja-image-converter.h
+       image-converter/caja-image-resizer.c
+       image-converter/caja-image-resizer.h
+       image-converter/caja-image-rotator.c
+       image-converter/caja-image-rotator.h
+       image-converter/image-converter.c
+Copyright: 2004, 2005, 2006, 2008, Jürg Billeter
+License: GPL-2+
 
-Copyright:
+Files: .tx/config
+       gksu/Makefile.am
+       gksu/libcaja-gksu.c
+       image-converter/Makefile.am
+       image-converter/*.ui
+       open-terminal/Makefile.am
+       open-terminal/*.convert
+       open-terminal/*.in
+       po/LINGUAS
+       po/POTFILES.in
+       sendto/docs/*
+       sendto/plugins/caja-burn/Makefile.am
+       sendto/plugins/emailclient/Makefile.am
+       sendto/plugins/gajim/Makefile.am
+       sendto/plugins/pidgin/Makefile.am
+       sendto/plugins/removable-devices/Makefile.am
+       sendto/plugins/upnp/Makefile.am
+       sendto/plugins/Makefile.am
+       sendto/Makefile.am
+       sendto/caja-sendto-convert
+       sendto/*.ui
+       sendto/*.in
+       share/Makefile.am
+       share/shares.c
+       share/shares.h
+       share/*.ui
+       AUTHORS
+       COPYING
+       ChangeLog
+       Makefile.am
+       NEWS
+       README
+       autogen.sh
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
-    Christian Neumair <cneumair@gnome.org>
+Files: sendto/caja-sendto.1
+Copyright: 2006, Oystein Gisnas
+License: GPL-2+
 
-    aclocal.m4:
-        Copyright (C) 1995-2003 Free Software Foundation, Inc.
-        Copyright (C) 2004 Scott James Remnant <scott@netsplit.com>
-        Copyright (C) 2001-2003,2004 Red Hat, Inc.
+Files: open-terminal/caja-open-terminal.c
+       open-terminal/caja-open-terminal.h
+       open-terminal/open-terminal.c
+       sendto/caja-nste.c
+Copyright: 2004, 2005, Free Software Foundation, Inc
+License: GPL-2+
 
-    config.guess, config.sub:
-        Copyright (C) 1992-2005 Free Software Foundation, Inc.
+Files: sendto/plugins/nst-common.c
+       sendto/plugins/nst-common.h
+       sendto/plugins/removable-devices/removable-devices.c
+Copyright: *No copyright*
+License: GPL-2+
 
-    configure:
-        Copyright (C) 1992-2006 Free Software Foundation, Inc.
+Files: sendto/caja-nste.h
+       sendto/caja-sendto-command.c
+       sendto/caja-sendto-module.c
+Copyright: 2004, 2005, Roberto Majadas
+License: GPL-2+
 
-    depcomp:
-        Copyright 1999, 2000, 2003 Free Software Foundation, Inc.
+Files: share/mate-file-manager-share.c
+       share/mate-file-manager-share.h
+Copyright: 2005, Ethium, Inc
+License: GPL-2+
 
-    INSTALL:
-        Copyright (C) 1994, 1995, 1996, 1999, 2000, 2001, 2002, 2004, 2005
-        Free Software Foundation, Inc.
+Files: sendto/caja-sendto-plugin.h
+Copyright: 2004, Roberto Majadas
+           2009, Bastien Nocera <hadess@hadess.net>
+License: GPL-2+
 
-    intltool-extract.in:
-        Copyright (C) 2000-2001, 2003 Free Software Foundation, Inc.
+Files: sendto/plugins/gajim/gajim.c
+Copyright: 2006, Dimitur Kirov
+License: GPL-2+
 
-    intltool-merge.in:
-        Copyright (C) 2000-2003 Free Software Foundation, Inc.
-        Copyright (C) 2000-2001 Eazel, Inc
+Files: sendto/plugins/caja-burn/caja-burn.c
+Copyright: 2008, Jader Henrique da Silva
+License: GPL-2+
 
-    install-sh:
-        Copyright (C) 1994 X Consortium
+Files: sendto/plugins/pidgin/pidgin.c
+Copyright: 2004, Roberto Majadas
+           2009, Pascal Terjan
+License: GPL-2+
 
-    ltmain.sh:
-        Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005
-        Free Software Foundation, Inc.
+Files: sendto/plugins/upnp/upnp.c
+Copyright: 2006, Peter Enseleit
+           2008, Zeeshan Ali (Khattak)
+License: GPL-2+
 
-    Makefile.in, src/Makefile.in:
-        Copyright 1994-2003 Free Software Foundation, Inc.
+Files: sendto/plugins/emailclient/emailclient.c
+Copyright: 2004, Roberto Majadas <roberto.majadas@openshine.com>
+           2012, Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-2+
 
-    missing:
-        Copyright (C) 1996, 1997, 1999, 2000, 2002, 2003
-        Free Software Foundation, Inc.
+Files: po/*.po
+Copyright: THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
-    src/caja-open-terminal.c, src/caja-open-terminal.h,
-    src/open-terminal.c:
-        Copyright (C) 2004, 2005 Free Software Foundation, Inc.
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
 
-
-License:
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
-
-    On Debian systems, the complete text of the GNU General Public
-    License can be found in the file `/usr/share/common-licenses/GPL'.
-
-The Debian packaging is (C) 2005-2008 Julien Valroff <julien@kirya.net> and
-is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

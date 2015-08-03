@@ -1,0 +1,5 @@
+# caja extensions in /usr/lib/*/caja/extensions-2.0/ erroneously trigger
+# debhelper's makeshlibs script
+caja-gksu: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+caja-gksu: postinst-has-useless-call-to-ldconfig
+caja-gksu: postrm-has-useless-call-to-ldconfig
