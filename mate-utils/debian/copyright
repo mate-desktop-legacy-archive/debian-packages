@@ -1,43 +1,390 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-utils
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-utils/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Tue, 08 Nov 2011 00:16:18 +0100
+Files: mate-dictionary/libgdict/gdict-client-context.c
+       mate-dictionary/libgdict/gdict-client-context.h
+       mate-dictionary/libgdict/gdict-context-private.h
+       mate-dictionary/libgdict/gdict-context.c
+       mate-dictionary/libgdict/gdict-context.h
+       mate-dictionary/libgdict/gdict-database-chooser.c
+       mate-dictionary/libgdict/gdict-database-chooser.h
+       mate-dictionary/libgdict/gdict-debug.h
+       mate-dictionary/libgdict/gdict-defbox.c
+       mate-dictionary/libgdict/gdict-defbox.h
+       mate-dictionary/libgdict/gdict-private.h
+       mate-dictionary/libgdict/gdict-source-loader.c
+       mate-dictionary/libgdict/gdict-source-loader.h
+       mate-dictionary/libgdict/gdict-source.c
+       mate-dictionary/libgdict/gdict-source.h
+       mate-dictionary/libgdict/gdict-speller.c
+       mate-dictionary/libgdict/gdict-speller.h
+       mate-dictionary/libgdict/gdict-strategy-chooser.c
+       mate-dictionary/libgdict/gdict-strategy-chooser.h
+       mate-dictionary/libgdict/gdict-utils.c
+       mate-dictionary/libgdict/gdict-utils.h
+       mate-dictionary/libgdict/gdict.h
+Copyright: 2005-2006, Emmanuele Bassi <ebassi@gmail.com>
+License: LGPL-2+
 
-It was downloaded from:
+Files: mate-dictionary/src/gdict-about.h
+       mate-dictionary/src/gdict-app.c
+       mate-dictionary/src/gdict-app.h
+       mate-dictionary/src/gdict-common.c
+       mate-dictionary/src/gdict-common.h
+       mate-dictionary/src/gdict-pref-dialog.c
+       mate-dictionary/src/gdict-pref-dialog.h
+       mate-dictionary/src/gdict-print.c
+       mate-dictionary/src/gdict-print.h
+       mate-dictionary/src/gdict-source-dialog.c
+       mate-dictionary/src/gdict-source-dialog.h
+       mate-dictionary/src/gdict-window.c
+       mate-dictionary/src/gdict-window.h
+Copyright: 2005, Emmanuele Bassi
+License: GPL-2+
 
-    <https://github.com/Perberos/Mate-Extra>
+Files: baobab/src/baobab-prefs.c
+       baobab/src/baobab-prefs.h
+       baobab/src/baobab-scan.c
+       baobab/src/baobab-scan.h
+       baobab/src/baobab-treeview.c
+       baobab/src/baobab-treeview.h
+       baobab/src/baobab-utils.c
+       baobab/src/baobab-utils.h
+       baobab/src/baobab.c
+       baobab/src/baobab.h
+       baobab/src/callbacks.c
+       baobab/src/callbacks.h
+Copyright: 2005-2006, Fabio Marzocca <thesaltydog@gmail.com>
+License: GPL-2+
 
-Upstream Author:
+Files: mate-screenshot/screenshot-dialog.c
+       mate-screenshot/screenshot-dialog.h
+       mate-screenshot/screenshot-save.c
+       mate-screenshot/screenshot-save.h
+       mate-screenshot/screenshot-shadow.c
+       mate-screenshot/screenshot-shadow.h
+       mate-screenshot/screenshot-utils.h
+Copyright: 2001-2006, Jonathan Blandford <jrb@alum.mit.edu>
+License: GPL-2+
 
-    Perberos <perberos@gmail.com>
+Files: logview/logview-log.c
+       logview/logview-log.h
+       logview/logview-utils.c
+       logview/logview-utils.h
+       logview/logview-window.c
+       logview/logview-window.h
+Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
 
-Copyright:
+Files: logview/logview-about.h
+       logview/logview-findbar.c
+       logview/logview-findbar.h
+       logview/logview-loglist.c
+       logview/logview-loglist.h
+       logview/logview-prefs.h
+Copyright: 2004-2005, Vincent Noel <vnoel@cox.net>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
 
-    Copyright (C) 2011 Perberos
+Files: gsearchtool/gsearchtool-callbacks.c
+       gsearchtool/gsearchtool-callbacks.h
+       gsearchtool/gsearchtool-support.c
+       gsearchtool/gsearchtool-support.h
+       gsearchtool/gsearchtool.c
+       gsearchtool/gsearchtool.h
+Copyright: 1998-2002, Free Software Foundation, Inc.
+License: GPL-2+
 
-License:
+Files: logview/logview-app.c
+       logview/logview-app.h
+       logview/logview-manager.c
+       logview/logview-manager.h
+Copyright: 2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
 
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+Files: baobab/src/baobab-chart.c
+       baobab/src/baobab-chart.h
+       baobab/src/baobab-ringschart.c
+       baobab/src/baobab-treemap.c
+Copyright: 2006-2008, Igalia
+License: GPL-2+
 
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+Files: logview/logview-filter-manager.c
+       logview/logview-filter-manager.h
+       logview/logview-filter.c
+       logview/logview-filter.h
+Copyright: 2009, Johannes Schmid <jhs@gnome.org>
+License: GPL-3+
 
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
+Files: libeggsmclient/eggdesktopfile.h
+       libeggsmclient/eggsmclient-private.h
+       libeggsmclient/eggsmclient.c
+       libeggsmclient/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+License: LGPL-2+
 
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+Files: mate-screenshot/screenshot-utils.c
+       mate-screenshot/screenshot-xfer.c
+       mate-screenshot/screenshot-xfer.h
+Copyright: 2001, 2006, Jonathan Blandford <jrb@alum.mit.edu>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
 
-The Debian packaging is:
+Files: gsearchtool/libmateui-deprecated/gsearchtool-entry.c
+       gsearchtool/libmateui-deprecated/gsearchtool-entry.h
+Copyright: 2006, Paolo Borelli
+           2009, Dennis Cranston
+License: GPL-2+
 
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
+Files: mate-dictionary/src/gdict-applet.c
+       mate-dictionary/src/gdict-applet.h
+Copyright: 2005, Emmanuele Bassi <ebassi@gmail.com>
+License: GPL-2+
 
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+Files: baobab/src/baobab-remote-connect-dialog.c
+       baobab/src/baobab-remote-connect-dialog.h
+Copyright: 2003, Red Hat, Inc.
+           2005, Fabio Marzocca
+License: GPL-2+
 
+Files: baobab/src/baobab-ringschart.h
+       baobab/src/baobab-treemap.h
+Copyright: 2008, igalia
+License: GPL-2+
+
+Files: mate-dictionary/src/gdict-aligned-window.c
+       mate-dictionary/src/gdict-aligned-window.h
+Copyright: 2003, Seth Nickell
+           2005, 2006, Emmanuele Bassi <ebassi@gmail.com>
+License: LGPL-2+
+
+Files: mate-dictionary/libgdict/gdict-source-chooser.c
+       mate-dictionary/libgdict/gdict-source-chooser.h
+Copyright: 2007, Emmanuele Bassi <ebassi@gnome.org>
+License: LGPL-2+
+
+Files: baobab/src/baobab-cell-renderer-progress.c
+       baobab/src/baobab-cell-renderer-progress.h
+Copyright: 2006, Paolo Borelli
+License: LGPL-2+
+
+Files: mate-dictionary/src/gdict-sidebar.c
+       mate-dictionary/src/gdict-sidebar.h
+Copyright: 2004, Red Hat, Inc.
+           2006, Emmanuele Bassi <ebassi@gmail.com>
+License: LGPL-2.1+
+
+Files: mate-dictionary/src/gdict-about.c
+Copyright: 2005-2006, Emmanuele Bassi
+License: GPL-2+
+
+Files: logview/logview-prefs.c
+Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
+           2004, Vincent Noel
+           2006, Emmanuele Bassi
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: mate-screenshot/mate-screenshot.c
+Copyright: 2001, Jonathan Blandford <jrb@alum.mit.edu>
+           2006, Emmanuele Bassi <ebassi@gnome.org>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: logview/logview-main.c
+Copyright: 2004-2008, Vincent Noel, Cosimo Cecchi and others
+License: GPL-2+
+
+Files: libeggsmclient/eggsmclient-xsmp.c
+Copyright: 1998, Carsten Schaar
+           1998, The Open Group
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: libeggsmclient/eggdesktopfile.c
+Copyright: 1999, 2000, Red Hat, Inc.
+           2001, George Lebl
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
+Copyright: THE PACKAGE'S COPYRIGHT HOLDER
+           2009, The Gnome Foundation
+License: GPL-2+ or LGPL-2.1+
+Comment:
+ Using licenses as found either in the COPYING or
+ the COPYING.libs file.
+
+Files: .tx/config
+       baobab/data/Makefile.am
+       baobab/data/*.ui
+       baobab/data/*.1
+       baobab/data/*.convert
+       baobab/data/*.in
+       baobab/AUTHORS
+       baobab/ChangeLog
+       baobab/Makefile.am
+       baobab/README
+       baobab/TODO
+       baobab/pixmaps/24x24/Makefile.am
+       baobab/pixmaps/24x24/*.png
+       baobab/pixmaps/scalable/Makefile.am
+       baobab/pixmaps/scalable/*.svg
+       baobab/pixmaps/Makefile.am
+       baobab/pixmaps/*.png
+       baobab/src/Makefile.am
+       gsearchtool/data/Makefile.am
+       gsearchtool/data/*.png
+       gsearchtool/libmateui-deprecated/Makefile.am
+       gsearchtool/libmateui-deprecated/README
+       gsearchtool/AUTHORS
+       gsearchtool/ChangeLog
+       gsearchtool/Makefile.am
+       gsearchtool/*.1
+       gsearchtool/*.convert
+       gsearchtool/*.in
+       libeggsmclient/Makefile.am
+       libeggsmclient/README
+       logview/data/Makefile.am
+       logview/data/*.1
+       logview/data/*.convert
+       logview/data/*.in
+       logview/data/*.ui
+       logview/data/*.xml
+       logview/tests/Makefile.am
+       logview/tests/test-reader.c
+       logview/ChangeLog
+       logview/Makefile.am
+       logview/TODO
+       logview/logview-marshal.list
+       m4/Makefile.am
+       m4/shave-libtool.in
+       m4/shave.in
+       m4/shave.m4
+       mate-dictionary/data/Makefile.am
+       mate-dictionary/data/*.1
+       mate-dictionary/data/*.convert
+       mate-dictionary/data/*.in
+       mate-dictionary/data/*.ui
+       mate-dictionary/data/*.xml
+       mate-dictionary/docs/reference/gdict/ChangeLog
+       mate-dictionary/docs/reference/gdict/Makefile.am
+       mate-dictionary/docs/reference/gdict/gdict*
+       mate-dictionary/docs/reference/gdict/*.in
+       mate-dictionary/docs/reference/Makefile.am
+       mate-dictionary/docs/Makefile.am
+       mate-dictionary/docs/source-configuration.txt
+       mate-dictionary/libgdict/Makefile.am
+       mate-dictionary/libgdict/*.in
+       mate-dictionary/libgdict/*.list
+       mate-dictionary/src/Makefile.am
+       mate-dictionary/src/main.c
+       mate-dictionary/AUTHORS
+       mate-dictionary/Makefile.am
+       mate-dictionary/README
+       mate-dictionary/TODO
+       mate-screenshot/ChangeLog
+       mate-screenshot/Makefile.am
+       mate-screenshot/*.1
+       mate-screenshot/*.convert
+       mate-screenshot/*.in
+       mate-screenshot/*.ui
+       po/LINGUAS
+       po/POTFILES.*
+       AUTHORS
+       COPYING
+       COPYING.libs
+       ChangeLog
+       Makefile.am
+       NEWS
+       README
+       THANKS
+       configure.ac
+       autogen.sh
+Copyright: *No copyright*
+License: GPL-2+ or LGPL-2.1+
+Comment:
+ Using licenses as found either in the COPYING or
+ the COPYING.libs file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA  02110-1301  USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2,1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.

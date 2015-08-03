@@ -1,3 +1,4 @@
+usr/share/MateConf/
 usr/share/appdata/
 usr/share/dbus-1/
 usr/share/glib-2.0/
@@ -6,5 +7,4 @@ usr/share/icons/
 usr/share/locale/
 usr/share/man/
 usr/share/mate*/
-usr/share/MateConf/
 usr/share/pixmaps/

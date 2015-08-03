@@ -2,33 +2,38 @@ Source: mate-utils
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Build-Depends: debhelper (>= 9),
-               autotools-dev,
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
+Build-Depends: autotools-dev,
+               debhelper (>= 9),
+               gtk-doc-tools,
                intltool,
-               mate-common,
-               xsltproc,
-               libxt-dev,
+               libcanberra-gtk-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libmate-panel-applet-dev,
                libgtop2-dev,
-               libcanberra-gtk-dev,
-               x11proto-xext-dev,
-               libxext-dev,
+               libmate-panel-applet-dev,
                libx11-dev,
+               libxext-dev,
+               libxt-dev,
+               mate-common (>= 1.10),
+               x11proto-xext-dev,
+               xsltproc,
+               yelp-tools,
                zlib1g-dev,
-               gtk-doc-tools,
-               yelp-tools
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-utils
 Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         mate-utils-common (= ${source:Version}),
+Depends: libmatedict6 (= ${binary:Version}),
          mate-desktop-common,
-         libmatedict6 (= ${binary:Version})
+         mate-utils-common (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
 Description: MATE desktop utilities
  This package contains all the tools bundled as MATE utilities:
   - mate-disk-usage-analyzer, a disk usage analyser
@@ -41,9 +46,9 @@ Description: MATE desktop utilities
 
 Package: mate-utils-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-utils (<< 1.9.0)
-Breaks: mate-utils (<< 1.9.0)
+Depends: ${misc:Depends},
+Replaces: mate-utils (<< 1.9.0),
+Breaks: mate-utils (<< 1.9.0),
 Description: MATE desktop utilities (common files)
  This package contains all the tools bundled as MATE utilities:
   - mate-disk-usage-analyzer, a disk usage analyser
@@ -60,8 +65,8 @@ Package: mate-utils-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-utils (= ${binary:Version})
+Depends: mate-utils (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE desktop utilities (debugging symbols)
  This package contains all the tools bundled as MATE utilities:
   - mate-disk-usage-analyzer, a disk usage analyser
@@ -82,7 +87,7 @@ Package: libmatedict6
 Section: libs
 Architecture: any
 Depends: ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: MATE desktop utilities (matedict library)
  The MATE dictionary is a program which can look up the definition of words
  over the internet (including a panel applet to do the same). MATE
@@ -93,8 +98,8 @@ Description: MATE desktop utilities (matedict library)
 Package: libmatedict-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends},
-         libmatedict6 (= ${binary:Version})
+Depends: libmatedict6 (= ${binary:Version}),
+         ${misc:Depends},
 Breaks: mate-utils (<< 1.5.0),
         mate-utils-dev (<< 1.8.0),
 Replaces: mate-utils-dev (<< 1.8.0),
@@ -109,9 +114,9 @@ Package: libmatedict6-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Provides: libmatedict-dbg
-Depends: ${misc:Depends},
-         libmatedict6 (= ${binary:Version})
+Provides: libmatedict-dbg,
+Depends: libmatedict6 (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE desktop utilities (matedict debugging symbols)
  The MATE dictionary is a program which can look up the definition of words
  over the internet (including a panel applet to do the same). MATE
