@@ -6,12 +6,18 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/libcaja-engrampa.la
+	rm -rfv debian/tmp/usr/share/MateConf/gsettings/engrampa.convert
 	dh_install --fail-missing
 
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--disable-packagekit \
 		--enable-magic \
 		--with-gtk=2.0

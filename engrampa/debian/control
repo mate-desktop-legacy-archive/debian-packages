@@ -2,7 +2,10 @@ Source: engrampa
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>,
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
                gettext,
                intltool,
@@ -13,7 +16,7 @@ Build-Depends: debhelper (>= 9),
                libmagic-dev,
                mate-common,
                yelp-tools,
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: engrampa
@@ -76,7 +79,12 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: engrampa (<= 1.0.3-1),
 Description: archive manager for MATE (common files)
- Engrampa is an archive manager for the MATE environment.
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
  .
  This package contains the architecture independent files.
 
@@ -87,10 +95,14 @@ Architecture: any
 Depends: engrampa (= ${binary:Version}),
          ${misc:Depends},
 Description: archive manager for MATE (debugging symbols)
- Engrampa is an archive manager for the MATE environment.
+ Engrampa is an archive manager for the MATE environment. It allows you to:
  .
- This package contains debugging symbols for Engrampa. It is
- provided to help debugging problems.
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ This package contains debugging symbols for engrampa.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
