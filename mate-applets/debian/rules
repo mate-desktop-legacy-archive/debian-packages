@@ -14,6 +14,7 @@ override_dh_install:
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+                --disable-silent-rules \
                 --localstatedir=/var \
                 --disable-static \
                 --with-gtk=2.0

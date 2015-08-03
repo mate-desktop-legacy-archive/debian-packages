@@ -1,42 +1,373 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-applets
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-applets/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Tue, 08 Nov 2011 02:52:56 +0100
+Files: .tx/config
+       accessx-status/AUTHORS
+       accessx-status/COPYING
+       accessx-status/Makefile.am
+       accessx-status/*.in
+       accessx-status/*.xml
+       accessx-status/pixmaps/Makefile.am
+       accessx-status/pixmaps/*.png
+       battstat/sounds/Makefile.am
+       battstat/sounds/*.in
+       battstat/apmlib/Makefile.am
+       battstat/Makefile.am
+       battstat/*.in
+       battstat/*.ui
+       battstat/*.xml
+       charpick/Makefile.am
+       charpick/charpick.c
+       charpick/charpick.h
+       charpick/properties.c
+       charpick/*.in
+       charpick/*.xml
+       command/Makefile.am
+       command/*.in
+       cpufreq/AUTHORS
+       cpufreq/Makefile.am
+       cpufreq/README
+       cpufreq/*.in
+       cpufreq/*.ui
+       cpufreq/*.xml
+       cpufreq/src/Makefile.am
+       cpufreq/src/cpufreq-selector/Makefile.am
+       cpufreq/src/cpufreq-selector/*.xml
+       cpufreq/src/cpufreq-selector/*.conf
+       cpufreq/src/cpufreq-selector/*.in
+       cpufreq/pixmaps/Makefile.am
+       cpufreq/pixmaps/*.png
+       cpufreq/pixmaps/*.svg
+       drivemount/AUTHORS
+       drivemount/Makefile.am
+       drivemount/*.in
+       drivemount/*.xml
+       geyes/themes/Makefile.am
+       geyes/themes/*/*
+       geyes/AUTHORS
+       geyes/Makefile.am
+       geyes/NEWS
+       geyes/README
+       geyes/README.themes
+       geyes/*.in
+       geyes/*.xml
+       geyes/*.png
+       geyes/*.svg
+       invest-applet/invest/Makefile.am
+       invest-applet/invest/__init__.py
+       invest-applet/invest/applet.py
+       invest-applet/invest/chart.py
+       invest-applet/invest/defs.py.in
+       invest-applet/invest/currencies.py
+       invest-applet/invest/help.py
+       invest-applet/invest/invest-applet.py
+       invest-applet/invest/mate-invest-chart
+       invest-applet/invest/networkmanager.py
+       invest-applet/invest/preferences.py
+       invest-applet/invest/quotes.py
+       invest-applet/invest/test.py
+       invest-applet/invest/widgets.py
+       invest-applet/data/Makefile.am
+       invest-applet/data/*.in
+       invest-applet/data/*.ui
+       invest-applet/data/*.xml
+       invest-applet/data/art/Makefile.am
+       invest-applet/data/art/*.png
+       invest-applet/data/art/*.svg
+       invest-applet/Makefile.am
+       m4/*.m4
+       man/Makefile.am
+       mateweather/AUTHORS
+       mateweather/Makefile.am
+       mateweather/main.c
+       mateweather/mateweather-about.c
+       mateweather/mateweather-about.h
+       mateweather/mateweather-applet.c
+       mateweather/mateweather-applet.h
+       mateweather/mateweather-dialog.c
+       mateweather/mateweather-dialog.h
+       mateweather/mateweather-pref.c
+       mateweather/mateweather-pref.h
+       mateweather/mateweather.h
+       mateweather/*.in
+       mateweather/*.xml
+       multiload/AUTHORS
+       multiload/Makefile.am
+       multiload/autoscaler.c
+       multiload/autoscaler.h
+       multiload/global.h
+       multiload/linux-proc.c
+       multiload/linux-proc.h
+       multiload/load-graph.c
+       multiload/load-graph.h
+       multiload/netspeed.c
+       multiload/netspeed.h
+       multiload/*.in
+       multiload/*.xml
+       null_applet/Makefile.am
+       null_applet/README
+       null_applet/*.in
+       po/LINGUAS
+       po/POTFILES.*
+       stickynotes/pixmaps/Makefile.am
+       stickynotes/pixmaps/*.png
+       stickynotes/pixmaps/*.svg
+       stickynotes/Makefile.am
+       stickynotes/README
+       stickynotes/TODO
+       stickynotes/*.convert
+       stickynotes/*.in
+       stickynotes/*.ui
+       stickynotes/*.xml
+       timerapplet/Makefile.am
+       timerapplet/*.in
+       trashapplet/src/Makefile.am
+       trashapplet/src/xstuff.h
+       trashapplet/Makefile.am
+       trashapplet/README
+       trashapplet/*.in
+       trashapplet/*.ui
+       trashapplet/*.xml
+       AUTHORS
+       COPYING
+       ChangeLog
+       Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
+       autogen.sh
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
-It was downloaded from:
+Files: cpufreq/src/cpufreq-applet.c
+       cpufreq/src/cpufreq-applet.h
+       cpufreq/src/cpufreq-monitor-cpuinfo.c
+       cpufreq/src/cpufreq-monitor-cpuinfo.h
+       cpufreq/src/cpufreq-monitor-factory.c
+       cpufreq/src/cpufreq-monitor-factory.h
+       cpufreq/src/cpufreq-monitor-libcpufreq.c
+       cpufreq/src/cpufreq-monitor-libcpufreq.h
+       cpufreq/src/cpufreq-monitor-procfs.c
+       cpufreq/src/cpufreq-monitor-procfs.h
+       cpufreq/src/cpufreq-monitor-sysfs.c
+       cpufreq/src/cpufreq-monitor-sysfs.h
+       cpufreq/src/cpufreq-monitor.c
+       cpufreq/src/cpufreq-monitor.h
+       cpufreq/src/cpufreq-popup.c
+       cpufreq/src/cpufreq-popup.h
+       cpufreq/src/cpufreq-prefs.c
+       cpufreq/src/cpufreq-prefs.h
+       cpufreq/src/cpufreq-selector.c
+       cpufreq/src/cpufreq-selector.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-factory.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-factory.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-procfs.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-procfs.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-service.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-service.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector.h
+       cpufreq/src/cpufreq-selector/main.c
+       cpufreq/src/cpufreq-utils.c
+       cpufreq/src/cpufreq-utils.h
+Copyright: 2004-2008, Carlos Garcia Campos <carlosgc@gnome.org>
+License: GPL-2+
 
-    <https://github.com/Perberos/Mate-Desktop-Extra>
+Files: stickynotes/stickynotes.c
+       stickynotes/stickynotes.h
+       stickynotes/stickynotes_applet.c
+       stickynotes/stickynotes_applet.h
+       stickynotes/stickynotes_applet_callbacks.c
+       stickynotes/stickynotes_applet_callbacks.h
+       stickynotes/stickynotes_callbacks.c
+       stickynotes/stickynotes_callbacks.h
+       stickynotes/util.c
+       stickynotes/util.h
+Copyright: 2002-2003, Loban A Rahman
+License: GPL-2+
 
-Upstream Author:
+Files: battstat/acpi-freebsd.c
+       battstat/acpi-linux.c
+       battstat/acpi-linux.h
+       battstat/pixmaps.h
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
+License: GPL-2+
 
-    Perberos <perberos@gmail.com>
+Files: drivemount/drive-button.h
+       drivemount/drive-list.h
+       drivemount/drivemount.c
+Copyright: 2004, Canonical Ltd.
+License: GPL-2+
 
-Copyright:
+Files: drivemount/drive-button.c
+       drivemount/drive-list.c
+Copyright: 2004, Canonical Ltd.
+           2008, Pierre Ossman
+License: GPL-2+
 
-    Copyright (C) 2011 Perberos
+Files: geyes/geyes.h
+       geyes/themes.c
+Copyright: 1999, Dave Camp <dave@davec.dhs.org>
+License: GPL-2+
 
-License:
+Files: battstat/battstat_applet.c
+       battstat/power-management.c
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
+           2002-2005, Free Software Foundation, Inc.
+License: GPL-2+
 
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+Files: battstat/battstat-upower.c
+       battstat/battstat-upower.h
+Copyright: 2005, Ryan Lortie <desrt@desrt.ca>
+           2010, Joachim Breitner <mail@joachim-breitner.de>
+License: GPL-2+
 
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+Files: battstat/battstat.h
+       battstat/properties.c
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
+License: GPL-2+
 
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
+Files: trashapplet/src/trash-empty.c
+       trashapplet/src/trash-empty.h
+Copyright: 2008, Ryan Lortie
+License: GPL-2+
 
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+Files: accessx-status/applet.c
+       accessx-status/applet.h
+Copyright: 2003-2004, Sun Microsystems, Inc.
+License: LGPL-2+
 
-The Debian packaging is:
+Files: multiload/main.c
+       multiload/properties.c
+Copyright: 1997-2002, The Free Software Foundation, Inc.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
+Files: geyes/geyes.c
+Copyright: 1999, Dave Camp
+License: GPL-2+
 
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+Files: null_applet/null_applet.c
+Copyright: 2004, Davyd Madeley
+License: GPL-2+
+
+Files: battstat/acpi-freebsd.h
+Copyright: 2004, Joe Marcus Clarke <marcus@FreeBSD.org>
+License: GPL-2+
+
+Files: trashapplet/src/trashapplet.c
+Copyright: 2004, Michiel Sikkes <michiel@eyesopened.nl>
+License: GPL-2+
+
+Files: battstat/apmlib/apmlib.c
+Copyright: 1996-1997, Rickard E. Faith <faith@acm.org>
+License: LGPL-2+
+
+Files: battstat/apmlib/apm.h
+Copyright: 1996, Rickard E. Faith <r.faith@ieee.org>
+License: LGPL-2+
+
+Files: trashapplet/src/xstuff.c
+Copyright: 1997-2002, Alfredo K. Kojima
+           2000-2001, Eazel, Inc.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: invest-applet/invest/about.py
+Copyright: 2004-2005, Raphael Slinckx
+           2009-2010, Enrico Minack
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: po/*.po
+       po/gnome-copyrights.txt
+Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
+           1998-2006, Free Software Foundation, Inc.
+           2005, Norayr Chilingaryan
+           2009-2010, The Gnome Foundation
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: command/command.c
+       timerapplet/timerapplet.c
+Copyright: 2013-2014, Stefano Karapetsas
+License: GPL-3+
+
+Files: man/*.1
+Copyright: 2002, Christian Marillat <marillat@debian.org>
+           2014, Adam Erdman <hekel@archlinux.info>
+           2014-2015, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+           GNOME developers
+License: GPL-2+
+Comment:
+ Using license as found in COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
