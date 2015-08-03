@@ -2,53 +2,38 @@ Source: eom
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Build-Depends: debhelper (>= 9),
+               gobject-introspection,
                gtk-doc-tools,
                intltool,
-               yelp-tools,
-               libgtk2.0-dev,
+               libdbus-glib-1-dev,
+               libexempi-dev,
+               libexif-dev,
+               libgirepository1.0-dev,
                libglib2.0-dev,
+               libgtk2.0-dev,
+               libjpeg-dev,
+               liblcms2-dev,
+               libmate-desktop-dev (>= 1.9.0),
+               librsvg2-dev (>= 2.36.2),
+               libstartup-notification0-dev,
+               libxml2-dev,
+               mate-common,
                mate-icon-theme,
                shared-mime-info,
-               zlib1g-dev,
-               libexif-dev,
-               liblcms2-dev,
-               libexempi-dev,
-               libjpeg-dev,
-               libdbus-glib-1-dev,
-               libxml2-dev,
-               librsvg2-dev (>= 2.36.2),
                x11proto-core-dev,
-               libstartup-notification0-dev,
-               gobject-introspection,
-               libgirepository1.0-dev,
-               libmate-desktop-dev (>= 1.9.0),
-               mate-common
+               yelp-tools,
+               zlib1g-dev,
 Build-Depends-Indep: libglib2.0-doc,
-                     libgtk2.0-doc
+                     libgtk2.0-doc,
 
-Package: eom
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         eom-common (= ${source:Version}),
-         mate-icon-theme,
-         shared-mime-info,
-         librsvg2-common (>= 2.36.2)
-Breaks: mate-image-viewer (<= 1.0.0-1)
-Description: Eye of MATE graphics viewer program
- eom or the Eye of MATE is a simple graphics viewer for the MATE
- desktop which uses the gdk-pixbuf library.  It can deal with large
- images, and zoom and scroll with constant memory usage.  Its goals are
- simplicity and standards compliance.
- 
 Package: eom-common
 Architecture: all
-Depends: ${misc:Depends}
-Breaks: mate-image-viewer (<= 1.0.0-1)
+Depends: ${misc:Depends},
+Breaks: mate-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program (common files)
  eom or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library.  It can deal with large
@@ -60,9 +45,9 @@ Description: Eye of MATE graphics viewer program (common files)
 Package: eom-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends},
-         eom (= ${binary:Version})
-Breaks: mate-image-viewer (<= 1.0.0-1)
+Depends: eom (= ${binary:Version}),
+         ${misc:Depends},
+Breaks: mate-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program (development files)
  eom or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library.  It can deal with large
@@ -75,8 +60,8 @@ Package: eom-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         eom (= ${binary:Version})
+Depends: eom (= ${binary:Version}),
+         ${misc:Depends},
 Description: Eye of MATE graphics viewer program (debugging symbols)
  eom or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library.  It can deal with large
@@ -93,7 +78,7 @@ Package: gir1.2-eom
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: GObject introspection data for the eom library
  eom or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library.  It can deal with large
@@ -102,5 +87,5 @@ Description: GObject introspection data for the eom library
  .
  This package contains introspection data for eom.
  .
- It can be used by packages using the GIRepository format to generate 
+ It can be used by packages using the GIRepository format to generate
  dynamic bindings.
