@@ -1,2 +1,3 @@
 version=3
-http://pub.mate-desktop.org/releases/(\d\.\d)/eom-(.*)\.tar\.xz
+http://git.mate-desktop.org/eom/ \
+    snapshot/eom-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
