@@ -2,7 +2,7 @@ Source: mate-applets
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>,
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9),
                intltool,
@@ -20,8 +20,8 @@ Build-Depends: debhelper (>= 9),
                libpolkit-gobject-1-dev,
                libupower-glib-dev,
                libwnck-dev,
-               libxml2-dev,
                libx11-dev,
+               libxml2-dev,
                mate-common,
                mate-icon-theme,
                python-gi-dev,
@@ -31,19 +31,19 @@ Homepage: http://www.mate-desktop.org/
 
 Package: mate-applets
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: gir1.2-mate-panel,
+         gsettings-desktop-schemas,
+         gvfs,
          mate-applets-common (= ${source:Version}),
          mate-icon-theme,
          mate-panel,
          python-gi,
-         gvfs,
-         gsettings-desktop-schemas,
-         gir1.2-mate-panel
-Recommends: mate-system-monitor,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: cpufrequtils,
             mate-media,
-            cpufrequtils,
-            mate-polkit
+            mate-polkit,
+            mate-system-monitor,
 Description: Various applets for the MATE panel
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -77,9 +77,9 @@ Description: Various applets for the MATE panel
 
 Package: mate-applets-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-applets (<< 1.9.0)
-Breaks: mate-applets (<< 1.9.0)
+Depends: ${misc:Depends},
+Replaces: mate-applets (<< 1.9.0),
+Breaks: mate-applets (<< 1.9.0),
 Description: Various applets for the MATE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -117,8 +117,8 @@ Package: mate-applets-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-applets (= ${binary:Version})
+Depends: mate-applets (= ${binary:Version}),
+         ${misc:Depends},
 Description: Various applets for the MATE panel (debugging symbols)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
