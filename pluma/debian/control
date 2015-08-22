@@ -29,7 +29,6 @@ Architecture: any
 Depends: iso-codes,
          mate-desktop-common,
          pluma-common (= ${source:Version}),
-         python-gtksourceview2,
          ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
