@@ -9,7 +9,6 @@ Build-Depends: debhelper (>= 9),
                gobject-introspection,
                gtk-doc-tools,
                intltool,
-               libdbus-glib-1-dev,
                libdconf-dev,
                libexempi-dev,
                libexif-dev,
@@ -26,11 +25,9 @@ Build-Depends: debhelper (>= 9),
                libxext-dev,
                libxml2-dev,
                libxrender-dev,
-               libxt-dev,
                mate-common (>= 1.10),
                quilt,
                shared-mime-info,
-               x11proto-core-dev
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
