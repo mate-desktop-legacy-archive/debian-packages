@@ -12,7 +12,6 @@ Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9),
                docbook-to-man,
                intltool,
-               libdbus-glib-1-dev,
                libdconf-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
