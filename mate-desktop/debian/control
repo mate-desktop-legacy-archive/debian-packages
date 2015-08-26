@@ -21,7 +21,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxml2-dev,
                libxrandr-dev,
-               mate-common,
+               mate-common (>= 1.10),
                python-dev,
                python-support,
                yelp-tools,
@@ -36,6 +36,8 @@ Multi-Arch: foreign
 Depends: hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version}),
+         python,
+         yelp,
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-desktop-gnome,
@@ -63,13 +65,26 @@ Description: Library with common API for various MATE modules (common files)
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
- This package contains the architecture independent files.
+ This package contains the architecture-independent files.
+
+Package: mate-user-guide
+Architecture: all
+Depends: ${misc:Depends},
+Breaks: mate-desktop-common (<< 1.10.1-2),
+Description: MATE Desktop User Guide
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package contains MATE's user guide.
 
 Package: libmate-desktop-2-17
 Architecture: any
 Multi-Arch: same
-Pre-Depends: multiarch-support,
-             ${misc:Pre-Depends},
+Pre-Depends: ${misc:Pre-Depends},
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Provides: libmatedesktop,
@@ -125,18 +140,6 @@ Description: Library with common API for various MATE modules (documentation fil
  .
  This package contains the documentation files.
 
-Package: mate-user-guide
-Section: doc
-Architecture: all
-Depends: ${misc:Depends},
-         yelp
-Description: User documentation for MATE Desktop
- The MATE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
- .
- This package contains the user guide for MATE Desktop and its main
- applications.
-
 Package: mate-desktop-dbg
 Section: debug
 Priority: extra
@@ -180,7 +183,8 @@ Description: Library with common API for various MATE modules (library debugging
 Package: gir1.2-mate-desktop
 Section: introspection
 Architecture: any
-Depends: ${gir:Depends},
+Depends: libmate-desktop-2-17 (= ${binary:Version}),
+         ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
 Description: GObject introspection data for the mate-desktop library
