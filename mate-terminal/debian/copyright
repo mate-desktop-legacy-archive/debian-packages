@@ -3,16 +3,6 @@ Upstream-Name: mate-terminal
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-terminal/
 
-Files: *
-Copyright: 2011, Perberos <perberos@gmail.com>,
-           2013, Guilherme de S. Pastore <gpastore@gnome.org>
-           2013, Havoc Pennington <hp@redhat.com>
-           2013, Mariano Suárez-Alvarez <mariano@gnome.org>
-           2013, Perberos <perberos@gmail.com>
-           2013, Steve Zesch <stevezesch2@gmail.com>
-           2013, Stefano Karapetsas <stefano@karapetsas.com>
-License: GPL-3+
-
 Files: src/terminal-app.c
        src/terminal-options.c
        src/terminal-options.h
@@ -181,8 +171,16 @@ Comment:
  .
  Assuming license as found in COPYING file.
 
-Files: po/LINGUAS
+Files: .tx/config
+       help/Makefile.am
+       help/bg/Makefile.am
+       help/ja/Makefile.am
+       help/mate-terminal.omf.in
+       help/ro/Makefile.am
+       help/zh_TW/Makefile.am
+       po/LINGUAS
        po/POTFILES.*
+       po/gnome-copyrights.txt
        src/Makefile.am
        src/*.ui
        src/*.xml.in
@@ -196,10 +194,19 @@ Files: po/LINGUAS
        src/skey/md5.*
        src/skey/sha1.*
        src/skey/skey*.*
+       src/skey/test.c
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
        Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
        autogen.sh
        configure.ac
        mate-terminal.1
+       mate-terminal.appdata.xml.in
        mate-terminal.desktop.in.in
        mate-terminal.wrapper
 Copyright: *No copyright*
@@ -207,10 +214,45 @@ License: GPL-3+
 Comment:
  Assuming license as found in COPYING file.
 
+
+Files: help/C/*
+       help/bg/*
+       help/ca/*
+       help/cs/*
+       help/da/*
+       help/de/*
+       help/el/*
+       help/en_GB/*
+       help/es/*
+       help/fr/*
+       help/it/*
+       help/ja/*
+       help/ko/*
+       help/oc/*
+       help/pt_BR/*
+       help/ro/*
+       help/ru/*
+       help/sv/*
+       help/uk/*
+       help/zh_CN/*
+       help/zh_TW/*
+Copyright: 2002, Sun Microsystems
+           2000, Miguel de Icaza
+           2000, Alexander Kirillov 
+           2005, Ростислав "zbrox" Райков <zbrox@i-space.org>
+           2015, MATE-Dokumentationsprojekt
+           2009, Paul Cutler
+           2008, Christian Persch
+           2000-2010, Free Software Foundation, Inc.
+           2007-2009, Joan Duran <jodufi@gmail.com>
+           2005-2007, Maxim Dziumanenko <dziumanenko@gmail.com>
+           2009, mate-terminal's COPYRIGHT HOLDER
+License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
            2014 Mike Gabriel <sunweaver@debian.org>
-License: GPL-3+ or GPL-2+ or LGPL-3+ or LGPL-2.1+
+License: GPL-3+ or GPL-2+ or LGPL-3+ or LGPL-2.1+ or GFDL-1.1+
 
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify
@@ -283,3 +325,13 @@ License: LGPL-2.1+
  .
  On Debian systems, the complete text of the GNU Library General Public License 2.1
  can be found in "/usr/share/common-licenses/LGPL-2.1".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".
