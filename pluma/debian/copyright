@@ -43,8 +43,6 @@ Files: plugins/docinfo/pluma-docinfo-plugin.c
        pluma/pluma-io-error-message-area.h
        pluma/pluma-language-manager.c
        pluma/pluma-language-manager.h
-       pluma/pluma-message-area.c
-       pluma/pluma-message-area.h
        pluma/pluma-metadata-manager.c
        pluma/pluma-metadata-manager.h
        pluma/pluma-panel.c
@@ -309,21 +307,9 @@ Copyright: 1998-1999, Alex Roberts, Evan Lawrence
            2011, Perberos
 License: GPL-2+
 
-Files: pluma/pluma-spinner.c
-Copyright: 2000, Eazel, Inc.
-           2002-2004, Marco Pesenti Gritti
-           2004, Christian Persch
-           2005, Paolo Maggi
-License: GPL-2+
-
 Files: plugins/spell/pluma-spell-checker-language.c
 Copyright: 2003-2004, Christian Persch
            2006, Paolo Maggi
-License: GPL-2+
-
-Files: pluma/pluma-spinner.h
-Copyright: 2000, Eazel, Inc.
-           2005, Paolo Maggi
 License: GPL-2+
 
 Files: pluma/pluma-dirs.c
@@ -379,10 +365,12 @@ Files: data/*.in.in
        data/*.convert
        data/*.desktop.in.in
        data/*.pc.in
+       data/*.xml.in
        docs/*.dia
        docs/reference/*.txt
        docs/reference/*.sgml
        docs/reference/*.types
+       help/Makefile.am
        m4/python.m4
        pixmaps/*.png
        pixmaps/*.ico
@@ -490,9 +478,38 @@ License: GPL-2+ or LGPL-2+
 Comment:
  Using license from COPYING file.
 
+Files: help/*.in
+       help/ar/*
+       help/bg/*
+       help/C/*
+       help/ca/*
+       help/cs/*
+       help/da/*
+       help/de/*
+       help/el/*
+       help/es/*
+       help/fi/*
+       help/fr/*
+       help/hu/*
+       help/it/*
+       help/ja/*
+       help/ko/*
+       help/oc/*
+       help/pt_BR/*
+       help/ru/*
+       help/sv/*
+       help/th/*
+       help/uk/*
+       help/zh_CN/*
+       help/zh_HK/*
+       help/zh_TW/*
+Copyright: 2006-2010 Free Software Foundation, Inc.
+License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2013-2014, Mike Gabriel <sunweaver@debian.org>
+           2015, Martin Wimpress <code@flexion.org>
 License: GPL-2+ or LGPL-2+
 
 License: GPL-2+
