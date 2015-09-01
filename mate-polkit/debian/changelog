@@ -1,3 +1,9 @@
+mate-polkit (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 01 Sep 2015 18:38:47 +0300
+
 mate-polkit (1.10.0-1) unstable; urgency=low
 
   * New upstream release
