@@ -1,2 +1,0 @@
-# we hard-depend on yelp for displaying the mate-user-guide
-mate-desktop: desktop-command-not-in-package usr/share/applications/mate-user-guide.desktop yelp

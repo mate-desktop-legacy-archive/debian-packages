@@ -71,6 +71,7 @@ Package: mate-user-guide
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-desktop-common (<< 1.10.1-2),
+        mate-desktop (<< 1.10.2-1~),
 Description: MATE Desktop User Guide
  The MATE Desktop Environment is the continuation of GNOME 2. It provides an
  intuitive and attractive desktop environment using traditional metaphors for
