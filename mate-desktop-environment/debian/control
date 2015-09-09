@@ -2,49 +2,50 @@ Source: mate-desktop-environment
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.5
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 9),
+               lsb-release,
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-desktop-environment-core
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-backgrounds (>= 1.9.0),
-         mate-control-center (>= 1.9.0),
-         caja (>= 1.9.0),
-         marco (>= 1.9.0),
-         mate-icon-theme (>= 1.9.0),
-         mate-notification-daemon (>= 1.9.0) | notification-daemon,
-         mate-session-manager (>= 1.9.0),
-         mate-panel (>= 1.9.0),
-         mate-polkit (>= 1.9.0),
-         mate-menus (>= 1.9.0),
-         mate-settings-daemon (>= 1.9.0),
-         mate-terminal (>= 1.9.0),
-         mate-desktop (>= 1.9.0),
-         gvfs-bin,
+Depends: caja (>= 1.10.0),
          gvfs-backends,
-Breaks: mate-desktop-environment (<< 1.9.0)
-Conflicts: mate-bluetooth,
-           mate-conf,
+         gvfs-bin,
+         marco (>= 1.10.0),
+         mate-backgrounds (>= 1.10.0),
+         mate-control-center (>= 1.10.0),
+         mate-desktop (>= 1.10.0),
+         mate-icon-theme (>= 1.10.0),
+         mate-menus (>= 1.10.0),
+         mate-notification-daemon (>= 1.10.0) | notification-daemon,
+         mate-panel (>= 1.10.0),
+         mate-polkit (>= 1.10.0),
+         mate-session-manager (>= 1.10.0),
+         mate-settings-daemon (>= 1.10.0),
+         mate-terminal (>= 1.10.0),
+         ${misc:Depends},
+Breaks: mate-desktop-environment (<< 1.8.0),
+Conflicts: mate-conf,
            mate-conf-editor,
            mate-dialogs,
            mate-dialogs-common,
            mate-dialogs-dbg,
-           mate-keyring,
            mate-doc-utils,
-           mate-doc-utils-gnome
-Replaces: mate-bluetooth (<< 1.9.0),
-          mate-conf (<< 1.9.0),
-          mate-conf-editor (<< 1.9.0),
-          mate-dialogs (<< 1.9.0),
-          mate-dialogs-common (<< 1.9.0),
-          mate-dialogs-dbg (<< 1.9.0),
-          mate-keyring (<< 1.9.0),
-          mate-doc-utils (<< 1.9.0),
-          mate-doc-utils-gnome (<< 1.9.0)
+           mate-doc-utils-gnome,
+           mate-keyring,
+Replaces: mate-conf (<< 1.8.0),
+          mate-conf-editor (<< 1.8.0),
+          mate-dialogs (<< 1.8.0),
+          mate-dialogs-common (<< 1.8.0),
+          mate-dialogs-dbg (<< 1.8.0),
+          mate-doc-utils (<< 1.8.0),
+          mate-doc-utils-gnome (<< 1.8.0),
+          mate-keyring (<< 1.8.0),
 Description: MATE Desktop Environment (essential components, metapackage)
  The MATE Desktop Environment is the continuation of GNOME 2. It provides an
  intuitive and attractive desktop environment using traditional metaphors for
@@ -58,30 +59,45 @@ Description: MATE Desktop Environment (essential components, metapackage)
  MATE window manager (Marco), the MATE file manager (Caja), the MATE
  control center and a limited set of other obligatory MATE desktop components.
 
+Package: mate-core
+Architecture: all
+Depends: mate-desktop-environment-core (= ${binary:Version}),
+         ${misc:Depends},
+Description: MATE Desktop Environment (essential components, dummy package)
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package (mate-core) is a dummy package and can be safely removed.
+
 Package: mate-desktop-environment
 Architecture: all
-Depends: ${misc:Depends},
-         mate-desktop-environment-core (= ${binary:Version}),
-Provides: mate
-Recommends: atril (>= 1.9.0),
-            engrampa (>= 1.9.0),
-            pluma (>= 1.9.0),
-            eom (>= 1.9.0),
-            mate-power-manager (>= 1.9.0),
-            mate-screensaver (>= 1.9.0),
-            galculator,
-            mate-utils (>= 1.9.0),
-            mate-applets (>= 1.9.0),
-            mate-media (>= 1.9.0),
-            mate-themes (>= 1.9.0),
-            mate-icon-theme-faenza (>= 1.9.0),
-            mate-system-monitor (>= 1.9.0),
-            mate-notification-daemon (>= 1.9.0),
+Depends: mate-desktop-environment-core (= ${binary:Version}),
+         ${misc:Depends},
+Provides: mate,
+Recommends: atril (>= 1.10.0),
             desktop-base | ubuntu-wallpapers,
+            engrampa (>= 1.10.0),
+            eom (>= 1.10.0),
             ffmpegthumbnailer,
-Suggests: x-www-browser | iceweasel,
-          mail-reader | icedove,
+            galculator,
+            mate-applets (>= 1.10.0),
+            mate-icon-theme-faenza (>= 1.10.0),
+            mate-media (>= 1.10.0),
+            mate-notification-daemon (>= 1.10.0),
+            mate-power-manager (>= 1.10.0),
+            mate-screensaver (>= 1.10.0),
+            mate-system-monitor (>= 1.10.0),
+            mate-themes (>= 1.10.0),
+            mate-user-guide,
+            mate-utils (>= 1.10.0),
+            pluma (>= 1.10.0),
+Suggests: mail-reader | icedove,
           network-manager-gnome,
+          x-www-browser | iceweasel,
 Description: MATE Desktop Environment (metapackage)
  The MATE Desktop Environment is the continuation of GNOME 2. It provides an
  intuitive and attractive desktop environment using traditional metaphors for
@@ -98,25 +114,25 @@ Description: MATE Desktop Environment (metapackage)
 
 Package: mate-desktop-environment-extras
 Architecture: all
-Provides: mate-extras
-Depends: ${misc:Depends},
-         mate-desktop-environment (= ${binary:Version}),
-Recommends: caja-gksu (>= 1.9.0),
-            caja-image-converter (>= 1.9.0),
-            caja-open-terminal (>= 1.9.0),
-            caja-sendto (>= 1.9.0),
-            caja-share (>= 1.9.0),
-            caja-wallpaper (>= 1.9.0),
-            mate-netspeed (>= 1.9.0),
-            mate-gnome-main-menu-applet (>= 1.9.0),
-            mozo (>= 1.9.0),
-            gnome-keyring,
+Provides: mate-extras,
+Depends: mate-desktop-environment (= ${binary:Version}),
+         ${misc:Depends},
+Recommends: blueman,
+            caja-gksu (>= 1.10.0),
+            caja-image-converter (>= 1.10.0),
+            caja-open-terminal (>= 1.10.0),
+            caja-sendto (>= 1.10.0),
+            caja-share (>= 1.10.0),
+            caja-wallpaper (>= 1.10.0),
             dconf-editor,
+            gnome-keyring,
+            mate-gnome-main-menu-applet (>= 1.8.0),
+            mate-netspeed (>= 1.10.0),
+            mate-sensors-applet (>= 1.10.0),
+            mate-user-share (>= 1.10.0),
+            mozo (>= 1.10.0),
             yelp,
-            mate-user-share (>= 1.9.0),
-            mate-sensors-applet (>= 1.9.0),
-            blueman
-Suggests: mate-netbook (>= 1.9.0),
+Suggests: mate-netbook (>= 1.10.0),
           mate-user-guide,
 Description: MATE Desktop Environment (extra components, metapackage)
  The MATE Desktop Environment is the continuation of GNOME 2. It provides an
@@ -129,24 +145,10 @@ Description: MATE Desktop Environment (extra components, metapackage)
  This package installs an extra set of MATE components that are
  also part of the official MATE release.
 
-Package: mate-core
-Architecture: all
-Depends: ${misc:Depends},
-         mate-desktop-environment-core (= ${binary:Version}),
-Description: MATE Desktop Environment (essential components, dummy package)
- The MATE Desktop Environment is the continuation of GNOME 2. It provides an
- intuitive and attractive desktop environment using traditional metaphors for
- Linux and other Unix-like operating systems.
- .
- MATE is under active development to add support for new technologies while
- preserving a traditional desktop experience.
- .
- This package (mate-core) is a dummy package and can be safely removed.
-
 Package: mate-desktop-environment-extra
 Architecture: all
-Depends: ${misc:Depends},
-         mate-desktop-environment-extras (= ${binary:Version}),
+Depends: mate-desktop-environment-extras (= ${binary:Version}),
+         ${misc:Depends},
 Description: MATE Desktop Environment (extra components, dummy package)
  The MATE Desktop Environment is the continuation of GNOME 2. It provides an
  intuitive and attractive desktop environment using traditional metaphors for
