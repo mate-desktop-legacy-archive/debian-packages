@@ -1,3 +1,9 @@
+python-caja (1.10.0-2) unstable; urgency=medium
+
+  * Fixed python-caja not finding python's libdir
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 16 Sep 2015 12:21:43 +0200
+
 python-caja (1.10.0-1) unstable; urgency=medium
 
   * New upstream release
