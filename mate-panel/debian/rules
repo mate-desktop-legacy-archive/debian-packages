@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
+
 DHFLAGS=--parallel
 
 %:
@@ -8,6 +10,7 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -f debian/tmp/usr/lib/*/*.la
 	rm -f debian/tmp/usr/share/MateConf/gsettings/mate-panel.convert
+	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-mate-panel.install.in > debian/gir1.2-mate-panel.install
 	dh_install --fail-missing
 
 override_dh_installchangelogs:
