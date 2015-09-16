@@ -1,0 +1,13 @@
+Index: python-caja/configure.ac
+===================================================================
+--- python-caja.orig/configure.ac
++++ python-caja/configure.ac
+@@ -40,7 +40,7 @@ dnl * Check for Python
+ dnl **************************************************
+ AM_PATH_PYTHON([2.7])
+ PKG_CHECK_MODULES([PYTHON], [python-${PYTHON_VERSION}])
+-PYTHON_LIB_LOC="`pkg-config python-${PYTHON_VERSION} --variable=libdir`"
++PYTHON_LIB_LOC="`pkg-config gobject-introspection-1.0 --variable=libdir`"
+ AC_SUBST(PYTHON_LIBS)
+ AC_SUBST(PYTHON_CFLAGS)
+ AC_SUBST(PYTHON_LIB_LOC)
