@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
+
 DHFLAGS=--parallel
 
 %:
@@ -10,6 +12,7 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/
 	rm -rfv debian/tmp/usr/share/MateConf/
+	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-caja.install.in > debian/gir1.2-caja.install
 	dh_install --fail-missing
 
 override_dh_auto_configure:
