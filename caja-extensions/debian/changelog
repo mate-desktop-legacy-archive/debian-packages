@@ -1,3 +1,9 @@
+caja-extensions (1.10.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ --  Clement Lefebvre <root@linuxmint.com>  Thu, 17 Sep 2015 09:10:50 -0400
+
 caja-extensions (1.10.0-1) unstable; urgency=medium
 
   * New upstream release
