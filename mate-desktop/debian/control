@@ -67,21 +67,6 @@ Description: Library with common API for various MATE modules (common files)
  .
  This package contains the architecture-independent files.
 
-Package: mate-user-guide
-Architecture: all
-Depends: ${misc:Depends},
-Breaks: mate-desktop-common (<< 1.10.1-2),
-        mate-desktop (<< 1.10.2-1~),
-Description: MATE Desktop User Guide
- The MATE Desktop Environment is the continuation of GNOME 2. It provides an
- intuitive and attractive desktop environment using traditional metaphors for
- Linux and other Unix-like operating systems.
- .
- MATE is under active development to add support for new technologies while
- preserving a traditional desktop experience.
- .
- This package contains MATE's user guide.
-
 Package: libmate-desktop-2-17
 Architecture: any
 Multi-Arch: same
