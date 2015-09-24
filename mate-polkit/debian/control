@@ -9,9 +9,9 @@ Build-Depends: autotools-dev,
                debhelper (>= 9),
                gobject-introspection,
                gtk-doc-tools,
-               libdbus-glib-1-dev,
                libgirepository1.0-dev,
                libgtk2.0-dev,
+               libindicator-dev,
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
                mate-common (>= 1.10),
@@ -22,7 +22,8 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-polkit
 Architecture: any
 Multi-Arch: same
-Depends: mate-polkit-common (= ${binary:Version}),
+Depends: accountsservice,
+         mate-polkit-common (= ${binary:Version}),
          policykit-1,
          ${misc:Depends},
          ${shlibs:Depends},
