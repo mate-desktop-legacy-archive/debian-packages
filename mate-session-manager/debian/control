@@ -31,7 +31,7 @@ Homepage: http://www.mate-desktop.org/
 Package: mate-session-manager
 Architecture: any
 Depends: dbus-x11,
-         mate-desktop-common,
+         mate-desktop-common (>= 1.11.0),
          upower,
          ${misc:Depends},
          ${shlibs:Depends},
