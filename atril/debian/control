@@ -145,6 +145,7 @@ Section: libs
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+         libjs-mathjax,
 Breaks: libatril (<< 1.9.0),
 Replaces: libatril (<< 1.9.0),
 Description: MATE document rendering library
