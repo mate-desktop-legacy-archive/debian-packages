@@ -7,7 +7,9 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Mike Gabriel <sunweaver@debian.org>,
            Martin Wimpress <code@flexion.org>,
 Build-Depends: debhelper (>= 9),
+               gobject-introspection,
                intltool,
+               libgirepository1.0-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
                libxklavier-dev,
@@ -90,3 +92,20 @@ Description: MATE library to manage keyboard configuration (debugging symbols)
  .
  They are installed into /usr/lib/debug and will automatically be used
  by gdb.
+
+Package: gir1.2-matekbd
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: GObject introspection data for libmatekbd and libmatekbdui
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains introspection data for the libmatekbd and the
+ libmatekbdui libraries.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
