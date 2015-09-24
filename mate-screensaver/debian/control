@@ -38,7 +38,7 @@ Architecture: any
 Depends: dbus-x11,
          mate-desktop-common,
          mate-screensaver-common (= ${source:Version}),
-         mate-session-manager,
+         mate-session-manager (>= 1.11.0),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: mate-power-manager,
