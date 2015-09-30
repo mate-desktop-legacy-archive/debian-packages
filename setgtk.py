@@ -35,6 +35,7 @@ replaces.append(["libwnck-dev", "libwnck-3-dev"])
 replaces.append(["libgtkmm-2.4-dev", "libgtkmm-3.0-dev"])
 replaces.append(["libgtksourceview2.0-dev", "libgtksourceview-3.0-dev"])
 replaces.append(["libindicator-dev", "libindicator3-dev"])
+replaces.append(["libappindicator-dev", "libappindicator3-dev"])
 
 # this one is currently used for atril only
 # sorry for hardcoded version but that 3.0/4.0 shit from debian made me do it
