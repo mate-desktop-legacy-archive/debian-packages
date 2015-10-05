@@ -142,8 +142,7 @@ Description: MATE document viewing library (debugging symbols)
 Package: libatrildocument3
 Section: libs
 Architecture: any
-Depends: libjs-mathjax,
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libatril (<< 1.9.0),
 Replaces: libatril (<< 1.9.0),
