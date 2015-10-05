@@ -34,12 +34,14 @@ Build-Depends-Indep: libglib2.0-doc,
 
 Package: eom
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         eom-common (= ${source:Version}),
+Depends: eom-common (= ${source:Version}),
          librsvg2-common (>= 2.36.2),
+         mate-desktop-common,
          shared-mime-info,
-Breaks: mate-image-viewer (<= 1.0.0-1)
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: mate-image-viewer (<= 1.0.0-1),
+Replaces: mate-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program
  eom or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library. It can deal with large
