@@ -80,17 +80,12 @@ License: GPL-2+
 
 Files: bindings/python/eom.*
        cut-n-paste/toolbar-editor/eggmarshalers.list
-       cut-n-paste/toolbar-editor/eggtypebuiltins.c
-       cut-n-paste/toolbar-editor/eggtypebuiltins.h
        jpegutils/jpegint.h
        jpegutils/transupp.h
        plugins/fullscreen/eom-fullscreen-plugin.c
        plugins/fullscreen/eom-fullscreen-plugin.h
-       desktop/fullscreen/fullscreen.eom-plugin.destop
        plugins/reload/eom-reload-plugin.c
        plugins/reload/eom-reload-plugin.h
-       plugins/reload/reload.eom-plugin.desktop
-       plugins/statusbar-date/statusbar-date.eom-plugin.desktop
        src/eom-image-jpeg.h
        src/eom-image-save-info.c
        src/eom-image-save-info.h
@@ -132,6 +127,11 @@ License: GPL-2+
 Files: src/eom-close-confirmation-dialog.c
        src/eom-close-confirmation-dialog.h
 Copyright: 2004-2009, GNOME Foundation
+License: GPL-2+
+
+Files: src/eom-clipboard-handler.c
+ src/eom-clipboard-handler.h
+Copyright: 2010, GNOME Foundation
 License: GPL-2+
 
 Files: src/eom-sidebar.c
@@ -182,6 +182,8 @@ License: BSD-3-clause~IJG
 Files: po/*.po
        po/cmn.po
        po/en_US.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
 Copyright: 2000-2009, Free Software Foundation, Inc.
            2007, Ihar Hrachyshka
            2009, GNOME Foundation
@@ -190,12 +192,10 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: bindings/python/eom.*
-       cut-n-paste/toolbar-editor/eggmarshalers.c
-       cut-n-paste/toolbar-editor/eggmarshalers.h
+Files: .tx/config
+       bindings/python/eom.*
        cut-n-paste/toolbar-editor/eggmarshalers.list
-       cut-n-paste/toolbar-editor/eggtypebuiltins.c
-       cut-n-paste/toolbar-editor/eggtypebuiltins.h
+       cut-n-paste/totem-screensaver/README
        data/eom-image-properties-dialog.ui
        data/icons/22x22/actions/eom-image-collection.png
        data/icons/22x22/actions/eom-plugin.png
@@ -233,20 +233,24 @@ Files: bindings/python/eom.*
        data/eom-toolbar.xml
        data/gtkrc
        data/eom-multiple-save-as-dialog.ui
+       data/eom.appdata.xml.in
        data/eom.desktop.in.in
-       data/org.mate.eom.gschema.xml.in.in
+       data/org.mate.eom.gschema.xml.in
        data/pixmaps/thumbnail-frame.png
        data/eom-ui.xml
+       doc/reference/eom-docs.sgml.in
+       doc/reference/eom-overrides.txt
+       doc/reference/eom-sections.txt
+       doc/reference/version.xml.in
        jpegutils/jpegint.h
        jpegutils/transupp.h
+       jpegutils/README.6b
+       jpegutils/README.8a
        plugins/fullscreen/eom-fullscreen-plugin.c
        plugins/fullscreen/eom-fullscreen-plugin.h
-       desktop/fullscreen/fullscreen.eom-plugin.destop
        man/eom.1
        plugins/reload/eom-reload-plugin.c
        plugins/reload/eom-reload-plugin.h
-       plugins/reload/reload.eom-plugin.desktop
-       plugins/statusbar-date/statusbar-date.eom-plugin.desktop
        po/LINGUAS
        po/POTFILES.*
        src/eom-image-jpeg.h
@@ -280,20 +284,65 @@ Files: bindings/python/eom.*
        data/pixmaps/Makefile.am
        doc/reference/Makefile.am
        doc/Makefile.am
+       help/ChangeLog
+       help/Makefile.am
+       help/eom.omf.in
        jpegutils/Makefile.am
        man/Makefile.am
+       plugins/ChangeLog
        plugins/Makefile.am
+       plugins/fullscreen/fullscreen.eom-plugin.desktop.in
+       plugins/reload/reload.eom-plugin.desktop.in
+       plugins/statusbar-date/statusbar-date.eom-plugin.desktop.in
        src/Makefile.am
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
        Makefile.am
        configure.ac
+       NEWS
+       NEWS.gnome
+       README
+       THANKS
+       TODO
 Copyright: *No copyright*
 License: GPL-2+
  Using license from COPYING file.
 
+Files: help/C/*
+       help/ar/*
+       help/ca/*
+       help/cs/*
+       help/da/*
+       help/de/*
+       help/el/*
+       help/en_GB/*
+       help/es/*
+       help/eu/*
+       help/fi/*
+       help/fr/*
+       help/it/*
+       help/ja/*
+       help/ko/*
+       help/oc/*
+       help/pa/*
+       help/pl/*
+       help/pt_BR/*
+       help/ru/*
+       help/sv/*
+       help/th/*
+       help/uk/*
+       help/zh_CN/*
+       help/zh_TW/*
+Copyright: 1999-20009, Free Software Foundation, Inc.
+           YEAR, THE PACKAGE'S COPYRIGHT HOLDER
+License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>
-License: GPL-2+ or LGPL-2+ or BSD-3-clause~IJG
+License: GPL-2+ or LGPL-2+ or BSD-3-clause~IJG or GFDL-1.1+
 
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
