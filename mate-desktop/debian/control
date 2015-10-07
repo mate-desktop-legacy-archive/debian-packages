@@ -24,7 +24,6 @@ Build-Depends: debhelper (>= 9),
                mate-common (>= 1.10),
                python-dev,
                python-support,
-               yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -37,7 +36,6 @@ Depends: hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version}),
          python,
-         yelp,
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-desktop-gnome,
