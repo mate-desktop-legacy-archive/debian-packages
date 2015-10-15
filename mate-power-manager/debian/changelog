@@ -1,3 +1,9 @@
+mate-power-manager (1.11.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 15 Oct 2015 16:59:15 +0300
+
 mate-power-manager (1.10.2-1) unstable; urgency=medium
 
   * New upstream bugfix release
