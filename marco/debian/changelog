@@ -4,6 +4,12 @@ marco (1.11.0-1) unstable; urgency=medium
 
  -- Vlad Orlov <monsta@inbox.ru>  Thu, 15 Oct 2015 16:57:57 +0300
 
+marco (1.10.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 26 Oct 2015 18:03:37 +0300
+
 marco (1.10.2-1) unstable; urgency=medium
 
   * New upstream bugfix release
