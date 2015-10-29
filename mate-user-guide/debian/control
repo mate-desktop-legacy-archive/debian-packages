@@ -3,6 +3,8 @@ Section: docs
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
+               gettext,
+               intltool,
                mate-common,
                yelp-tools,
 Standards-Version: 3.9.6
