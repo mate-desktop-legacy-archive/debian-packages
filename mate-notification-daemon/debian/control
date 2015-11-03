@@ -40,8 +40,8 @@ Description: daemon to display passive popup notifications
 Package: mate-notification-daemon-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-notification-daemon (<< 1.9.0),
-Breaks: mate-notification-daemon (<< 1.9.0),
+Replaces: mate-notification-daemon (<< 1.11.0),
+Breaks: mate-notification-daemon (<< 1.11.0),
 Description: daemon to display passive popup notifications (common files)
  mate-notification-daemon displays passive popup notifications, as per
  the Desktop Notifications Specification.
