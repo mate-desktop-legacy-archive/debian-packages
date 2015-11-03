@@ -1,3 +1,9 @@
+mate-user-guide (1.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 03 Nov 2015 13:21:38 +0000
+
 mate-user-guide (1.11.0-1) unstable; urgency=medium
 
   * New upstream development release
