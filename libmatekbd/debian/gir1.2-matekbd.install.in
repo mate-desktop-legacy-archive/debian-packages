@@ -1,2 +1,2 @@
-TYPELIBDIR/girepository-1.0/
+usr/lib/*/girepository-1.0/ TYPELIBDIR
 usr/share/gir-1.0/
