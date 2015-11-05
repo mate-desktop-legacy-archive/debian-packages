@@ -4,8 +4,8 @@ Description: Use pkexec to execute Dropbox's installation as root
 Author: Raphaël Hertzog <hertzog@debian.org>
 Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/caja-dropbox/+bug/821212
 
---- a/dropbox.in
-+++ b/dropbox.in
+--- a/caja-dropbox.in
++++ b/caja-dropbox.in
 @@ -1239,7 +1239,14 @@ options:
  
          # install dropbox!!!
@@ -20,5 +20,5 @@ Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/caja-dropbox/+bug/821212
 +                console_print(u"The installation of Dropbox failed.")
 +                return
          except:
-             pass
+             traceback.print_exc()
          else:

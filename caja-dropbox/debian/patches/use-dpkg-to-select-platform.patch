@@ -8,8 +8,8 @@ Author: Raphaël Hertzog <hertzog@debian.org>
 Origin: vendor
 Forwarded: not-needed
 
---- a/dropbox.in
-+++ b/dropbox.in
+--- a/caja-dropbox.in
++++ b/caja-dropbox.in
 @@ -139,13 +139,13 @@ def yes_no_question(question):
  
  def plat():

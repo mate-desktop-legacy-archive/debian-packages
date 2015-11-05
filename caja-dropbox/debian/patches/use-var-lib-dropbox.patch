@@ -9,8 +9,8 @@ Description: Use /var/lib/dropbox instead of $HOME
 Author: Raphaël Hertzog <hertzog@debian.org>
 Origin: vendor
 
---- a/dropbox.in
-+++ b/dropbox.in
+--- a/caja-dropbox.in
++++ b/caja-dropbox.in
 @@ -54,7 +54,7 @@ GPG_WARNING = u"Note: python-gpgme is no
  DOWNLOADING = u"Downloading Dropbox... %d%%"
  UNPACKING = u"Unpacking Dropbox... %d%%"
@@ -18,7 +18,7 @@ Origin: vendor
 -PARENT_DIR = os.path.expanduser("~")
 +PARENT_DIR = os.path.expanduser("/var/lib/dropbox")
  DROPBOXD_PATH = "%s/.dropbox-dist/dropboxd" % PARENT_DIR
- DESKTOP_FILE = u"@DESKTOP_FILE_DIR@/dropbox.desktop"
+ DESKTOP_FILE = u"@DESKTOP_FILE_DIR@/caja-dropbox.desktop"
  
 @@ -275,6 +275,7 @@ class DownloadState(object):
              if os.path.exists(filename) and not os.path.isdir(filename):

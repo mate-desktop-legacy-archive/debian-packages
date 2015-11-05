@@ -4,8 +4,8 @@ Description: Unlink files that are going to be replaced by the unpack
 Author: Raphaël Hertzog <hertzog@debian.org>
 Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/caja-dropbox/+bug/818014
 
---- a/dropbox.in
-+++ b/dropbox.in
+--- a/caja-dropbox.in
++++ b/caja-dropbox.in
 @@ -271,6 +271,9 @@ class DownloadState(object):
          archive = tarfile.open(fileobj=self.local_file, mode='r:gz')
          total_members = len(archive.getmembers())
