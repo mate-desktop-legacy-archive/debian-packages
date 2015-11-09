@@ -47,8 +47,8 @@ Description: MATE desktop utilities
 Package: mate-utils-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-utils (<< 1.9.0),
-Breaks: mate-utils (<< 1.9.0),
+Replaces: mate-utils (<< 1.11.0),
+Breaks: mate-utils (<< 1.11.0),
 Description: MATE desktop utilities (common files)
  This package contains all the tools bundled as MATE utilities:
   - mate-disk-usage-analyzer, a disk usage analyser
