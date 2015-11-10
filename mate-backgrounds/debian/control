@@ -7,7 +7,7 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
 Build-Depends-Indep: intltool,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/

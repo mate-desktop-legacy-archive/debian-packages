@@ -7,7 +7,7 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Mike Gabriel <sunweaver@debian.org>,
 Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9),
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
 Build-Depends-Indep: libxml-parser-perl,
                      libgtk2.0-dev,
                      icon-naming-utils,

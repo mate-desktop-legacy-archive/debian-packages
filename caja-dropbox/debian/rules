@@ -18,10 +18,13 @@ override_dh_makeshlibs:
 override_dh_auto_install:
 	dh_auto_install
 	# Drop useless files
-	rm -rfv debian/caja-dropbox/usr/bin/dropbox
-	rm -rfv debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.la
-	rm -rfv debian/caja-dropbox/usr/share/applications/dropbox.desktop
-	rm -rfv debian/caja-dropbox/usr/share/man/*
+	rm -f debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.a
+	rm -f debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.la
+	rm -f debian/caja-dropbox/usr/bin/dropbox
+	rm -f debian/caja-dropbox/usr/share/applications/dropbox.desktop
+	rm -rf debian/caja-dropbox/usr/share/icons/*
+	rm -rf debian/caja-dropbox/usr/share/man/*
+	dh_install --fail-missing
 
 override_dh_auto_clean:
 	dh_auto_clean
