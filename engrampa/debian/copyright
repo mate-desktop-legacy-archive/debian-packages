@@ -50,12 +50,19 @@ Files: src/commands/rpm2cpio.c
        src/fr-command-zoo.h
        src/fr-command.c
        src/fr-command.h
+       src/fr-init.c
+       src/fr-init.h
+       src/fr-proc-error.c
+       src/fr-proc-error.h
        src/gtk-utils.c
        src/java-utils.c
        src/java-utils.h
-       src/main.h
        src/open-file.c
        src/open-file.h
+       src/rar-utils.c
+       src/rar-utils.h
+       src/server.c
+       src/test-server.c
        src/typedefs.h
 Copyright: 2001-2012, The Free Software Foundation, Inc.
 License: GPL-2+
@@ -118,6 +125,7 @@ Copyright: 2007, Novell, Inc.
 License: LGPL-2+
 
 Files: .tx/config
+       caja/libcaja-engrampa.caja-extension.in.in
        caja/Makefile.am
        copy-n-paste/Makefile.am
        data/icons/22x22/Makefile.am
@@ -163,6 +171,7 @@ Files: .tx/config
        NEWS
        NEWS.GNOME
        README
+       README-DISTRIBUTIONS
        TODO
        autogen.sh
        configure.ac
@@ -231,6 +240,44 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
+Files: help/*
+Copyright: Carles Ferrando Garcia <carles.ferrando@gmail.com>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Marios Zindilis <m.zindilis@dmajor.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Nguyễn Đình Trung <nguyendinhtrung141@gmail.com>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Valto Wirkola <valto.wirkola@yahoo.com>
+           Vincent van Adrighem <adrighem@gnome.org>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yasumichi Akahoshi <yasumichi@vinelinux.org>
+           YunQiang Su <wzssyqa@gmail.com>
+           Yuri Myasoedov <omerta13@yandex.ru>
+           Alessio Frusciante <algol@firenze.linux.it>
+           Alexander Shopov <ash@contact.bg>
+           Casagrande <milo_casagrande@yahoo.it>.
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           Gil Forcada <gforcada@gnome.org>
+           Ilkka Tuohela <hile@iki.fi>
+           Jan Arne Petersen <jpetersen@jpetersen.org>
+           Joachim Noreiko <jnoreiko@yahoo.com>
+           Kjartan Maraas <kmaraas@gnome.org>
+           Kostas Papadimas <pkst@gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Paolo Bacchilega <paobac@svn.gnome.org>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Raykov <zbrox@i-space.org>
+           Simos Xenitellis <simos@gnome.org>
+License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>
@@ -270,3 +317,13 @@ License: LGPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

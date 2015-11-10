@@ -15,11 +15,11 @@ Build-Depends: autotools-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
                libgtop2-dev,
-               libmate-panel-applet-dev,
+               libmate-panel-applet-dev (>= 1.12),
                libx11-dev,
                libxext-dev,
                libxt-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
                x11proto-xext-dev,
                xsltproc,
                yelp-tools,
@@ -88,6 +88,8 @@ Section: libs
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+Breaks: mate-utils (<< 1.8.0),
+Replaces: mate-utils (<< 1.8.0),
 Description: MATE desktop utilities (matedict library)
  The MATE dictionary is a program which can look up the definition of words
  over the internet (including a panel applet to do the same). MATE
@@ -117,6 +119,8 @@ Architecture: any
 Provides: libmatedict-dbg,
 Depends: libmatedict6 (= ${binary:Version}),
          ${misc:Depends},
+Breaks: mate-utils-dbg (<< 1.8.0),
+Replaces: mate-utils-dbg (<< 1.8.0),
 Description: MATE desktop utilities (matedict debugging symbols)
  The MATE dictionary is a program which can look up the definition of words
  over the internet (including a panel applet to do the same). MATE

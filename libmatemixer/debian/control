@@ -11,7 +11,7 @@ Build-Depends: debhelper (>= 9),
                libasound2-dev,
                libglib2.0-dev,
                libpulse-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages

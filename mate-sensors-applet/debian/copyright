@@ -79,10 +79,53 @@ Copyright: 2006, Thanate Dhirasakdanon <dthanate@gmail.com>
 License: GPL-2+
 
 Files: po/*.po
-Copyright: THE PACKAGE'S COPYRIGHT HOLDER
+Copyright: Alex Murray <murray.alex@gmail.com>
+           ABE Tsunehiko
+           abuyop <abuyop@gmail.com>
+           Alexei Sorokin <sor.alexei@meowr.ru>
+           Asier Iturralde Sarasola <asier.iturralde@gmail.com>
+           Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+           Carlos Moreira <crolidge@gmail.com>
+           Daniel <danny34ever@yahoo.com>
+           Darkcircle <darkcircle.0426@gmail.com>
+           Efstathios Iosifidis <iefstathios@gmail.com>
+           emfi <emrefirat93@gmail.com>
+           Emiliano Fascetti
+           exoos <mince.lesovski@gmail.com>
+           Martin Wimpress <code@flexion.org>
+           Ivar Smolin <okul@linux.ee>
+           Ján Ďanovský <dagsoftware@yahoo.com>
+           jierro <jierro@windowslive.com>
+           Joe Hansen <joedalton2@yahoo.dk>
+           Marcio Andre Padula <padula1000@gmail.com>
+           Matriks404 <marcink96@gmail.com>
+           mbouzada <mbouzada@gmail.com>
+           Michael Findlay <keltoiboy@gmail.com>
+           Michael Steenbeek <m.o.steenbeek@gmail.com>
+           Mihail Varantsou <meequz@gmail.com>
+           Mislav E. Lukšić <meluksic@yahoo.com>
+           Patrik Nilsson <asavartzeth@gmail.com>
+           Rezső Páder <rezso@rezso.net>
+           Sadgamaya <g.raghavan.g@gmail.com>
+           samson <sambelet@yahoo.com>
+           segfault <lukas.kvidera@seznam.cz>
+           Stefano Karapetsas <stefano@karapetsas.com>
+           Tobias Bannert <tobannert@gmail.com>
+           Vaibhav S Dalvi <vaibhav.dlv@gmail.com>
+           Wei-Lun Chao <bluebat@member.fsf.org>
+           willysr <willysr@slackware-id.org>
+           Wylmer Wang <wantinghard@gmail.com>
+           Микола Ткач <Stuartlittle1970@gmail.com>
+           Мирослав Николић <miroslavnikolic@rocketmail.com>
+           ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>
+           柏諺 黃 <s8321414@gmail.com>
 License: GPL-2+
 Comment:
  Using license from COPYING file.
+
+Files: help/*
+Copyright: Alex Murray <murray.alex@gmail.com>
+License: GFDL-1.1+
 
 Files: .tx/config
        lib/Makefile.am
@@ -145,3 +188,13 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

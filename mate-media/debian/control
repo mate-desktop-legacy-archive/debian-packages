@@ -11,17 +11,17 @@ Build-Depends: debhelper (>= 9),
                libcanberra-gtk-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libmate-desktop-dev (>= 1.9.3),
-               libmatemixer-dev (>= 1.9.1),
+               libmate-desktop-dev (>= 1.12),
+               libmatemixer-dev (>= 1.12),
                libunique-dev,
                libxml2-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-media
 Architecture: any
-Depends: mate-desktop-common (>= 1.9.3),
+Depends: mate-desktop-common (>= 1.12),
          mate-media-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},

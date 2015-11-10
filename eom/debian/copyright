@@ -230,6 +230,7 @@ Files: .tx/config
        data/eom-preferences-dialog.ui
        data/eom.pc.in
        data/eom.convert
+       data/eom.css
        data/eom-toolbar.xml
        data/gtkrc
        data/eom-multiple-save-as-dialog.ui
@@ -409,3 +410,13 @@ License: BSD-3-clause~IJG
  We specifically permit and encourage the use of this software as the basis of
  commercial products, provided that all warranty or liability claims are
  assumed by the product vendor.
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

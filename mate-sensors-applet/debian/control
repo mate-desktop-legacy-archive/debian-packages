@@ -16,13 +16,13 @@ Build-Depends: debhelper (>= 9),
                libdbus-glib-1-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libmate-panel-applet-dev,
+               libmate-panel-applet-dev (>= 1.12),
                libnotify-dev,
                libsensors4-dev [!kfreebsd-i386 !kfreebsd-amd64],
                libtool,
                libxml-parser-perl,
-               libxnvctrl-dev | nvidia-settings,
-               mate-common (>= 1.10),
+               libxnvctrl-dev [amd64 armhf i386] | nvidia-settings [amd64 armhf i386],
+               mate-common (>= 1.12),
                yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
@@ -72,7 +72,7 @@ Description: Display readings from hardware sensors in your MATE panel (common f
  This package contains the architecture independent files.
 
 Package: mate-sensors-applet-nvidia
-Architecture: any
+Architecture: amd64 armhf i386
 Depends: libxnvctrl0 | nvidia-settings,
          mate-sensors-applet (= ${binary:Version}),
          ${misc:Depends},
@@ -83,6 +83,24 @@ Description: Display readings from hardware sensors in your MATE panel (NVIDIA s
  voltage readings.
  .
  This package contains plugin for NVIDIA graphics cards.
+
+Package: mate-sensors-applet-nvidia-dbg
+Section: debug
+Priority: extra
+Architecture: amd64 armhf i386
+Depends: mate-sensors-applet-nvidia (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Display readings from hardware sensors in your MATE panel (NVIDIA, dbg package)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains debugging symbols for the mate-sensors-applet-nvidia
+ package. It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
 Package: mate-sensors-applet-ati
 Architecture: any
@@ -159,7 +177,7 @@ Description: Library for plugins for the mate-sensors-applet package (debugging 
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
- This package contains debugging symbols for the libmate-sensors-applet-plugin
+ This package contains debugging symbols for the libmate-sensors-applet-plugin0
  package. It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will

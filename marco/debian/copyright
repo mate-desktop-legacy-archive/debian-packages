@@ -337,6 +337,8 @@ Files: .tx/config
        doc/man/Makefile.am
        doc/man/*.1
        doc/Makefile.am
+       doc/creating_themes/Makefile.am
+       doc/creating_themes/C/index.docbook
        doc/*.txt
        po/LINGUAS
        po/POTFILES.in

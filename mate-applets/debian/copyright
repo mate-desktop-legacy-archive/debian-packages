@@ -9,6 +9,7 @@ Files: .tx/config
        accessx-status/Makefile.am
        accessx-status/*.in
        accessx-status/*.xml
+       accessx-status/docs/Makefile.am
        accessx-status/pixmaps/Makefile.am
        accessx-status/pixmaps/*.png
        battstat/sounds/Makefile.am
@@ -18,12 +19,14 @@ Files: .tx/config
        battstat/*.in
        battstat/*.ui
        battstat/*.xml
+       battstat/docs/Makefile.am
        charpick/Makefile.am
        charpick/charpick.c
        charpick/charpick.h
        charpick/properties.c
        charpick/*.in
        charpick/*.xml
+       charpick/help/Makefile.am
        command/Makefile.am
        command/*.in
        cpufreq/AUTHORS
@@ -32,6 +35,7 @@ Files: .tx/config
        cpufreq/*.in
        cpufreq/*.ui
        cpufreq/*.xml
+       cpufreq/help/Makefile.am
        cpufreq/src/Makefile.am
        cpufreq/src/cpufreq-selector/Makefile.am
        cpufreq/src/cpufreq-selector/*.xml
@@ -44,6 +48,7 @@ Files: .tx/config
        drivemount/Makefile.am
        drivemount/*.in
        drivemount/*.xml
+       drivemount/help/Makefile.am
        geyes/themes/Makefile.am
        geyes/themes/*/*
        geyes/AUTHORS
@@ -55,6 +60,9 @@ Files: .tx/config
        geyes/*.xml
        geyes/*.png
        geyes/*.svg
+       geyes/docs/Makefile.am
+       invest-applet/docs/Makefile.am
+       invest-applet/docs/mate-invest-applet.omf.in
        invest-applet/invest/Makefile.am
        invest-applet/invest/__init__.py
        invest-applet/invest/applet.py
@@ -93,6 +101,7 @@ Files: .tx/config
        mateweather/mateweather.h
        mateweather/*.in
        mateweather/*.xml
+       mateweather/docs/Makefile.am
        multiload/AUTHORS
        multiload/Makefile.am
        multiload/autoscaler.c
@@ -106,6 +115,7 @@ Files: .tx/config
        multiload/netspeed.h
        multiload/*.in
        multiload/*.xml
+       multiload/docs/Makefile.am
        null_applet/Makefile.am
        null_applet/README
        null_applet/*.in
@@ -121,8 +131,10 @@ Files: .tx/config
        stickynotes/*.in
        stickynotes/*.ui
        stickynotes/*.xml
+       stickynotes/docs/Makefile.am
        timerapplet/Makefile.am
        timerapplet/*.in
+       trashapplet/docs/Makefile.am
        trashapplet/src/Makefile.am
        trashapplet/src/xstuff.h
        trashapplet/Makefile.am
@@ -132,6 +144,7 @@ Files: .tx/config
        trashapplet/*.xml
        AUTHORS
        COPYING
+       COPYING-DOCS
        ChangeLog
        Makefile.am
        NEWS
@@ -315,6 +328,431 @@ License: GPL-2+
 Comment:
  Using license as found in COPYING file.
 
+Files: charpick/help/ko/*
+       charpick/help/el/*
+       charpick/help/uk/*
+       charpick/help/eu/*
+       charpick/help/ca/*
+       charpick/help/fi/*
+       charpick/help/de/*
+       charpick/help/fr/*
+       charpick/help/pt_BR/*
+       charpick/help/en_GB/*
+       charpick/help/ru/*
+       charpick/help/C/*
+       charpick/help/cs/*
+       charpick/help/es/*
+       charpick/help/nl/*
+       charpick/help/it/*
+       charpick/help/oc/*
+       charpick/help/bg/*
+       charpick/help/zh_CN/*
+       charpick/help/sv/*
+Copyright: Yavor Doganov <yavor@doganov.org>
+           Gil Forcada <gilforcada@guifi.net>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Jennie Petoumenou <epetoumenou@gmail.com>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Milo Casagrande <milo@ubuntu.com>
+           Changwoo Ryu <cwryu@debian.org>
+           Vincent van Adrighem <adrighem@gnome.org>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Leonardo Ferreira Fontenelle <leonardof@gnome.org>
+           Sergey V. Mironov <sergo@bk.ru>
+           Daniel Nylander <po@danielnylander.se>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           YunQiang Su <wzssyqa@gmail.com>
+License: GFDL-1.1+
+
+Files: cpufreq/help/el/*
+       cpufreq/help/uk/*
+       cpufreq/help/eu/*
+       cpufreq/help/ca/*
+       cpufreq/help/fi/*
+       cpufreq/help/de/*
+       cpufreq/help/fr/*
+       cpufreq/help/pt_BR/*
+       cpufreq/help/en_GB/*
+       cpufreq/help/ru/*
+       cpufreq/help/C/*
+       cpufreq/help/hu/*
+       cpufreq/help/cs/*
+       cpufreq/help/es/*
+       cpufreq/help/nl/*
+       cpufreq/help/oc/*
+       cpufreq/help/zh_CN/*
+       cpufreq/help/sv/*
+       cpufreq/help/zh_TW/*
+       cpufreq/help/zh_HK/*
+Copyright: Aron Xu <aronmalache@163.com>
+           Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Gabor Kelemen <kelemeng at mate dot hu>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>
+           Marek Černocký <marek@manet.cz>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Myckel Habets
+           Sergey V. Mironov <sergo@bk.ru>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Βασίλης Κοντογιάνης <vasilisk@ics.forth.gr>
+License: GFDL-1.1+
+
+Files: drivemount/help/ko/*
+       drivemount/help/pa/*
+       drivemount/help/el/*
+       drivemount/help/uk/*
+       drivemount/help/eu/*
+       drivemount/help/ca/*
+       drivemount/help/fi/*
+       drivemount/help/da/*
+       drivemount/help/de/*
+       drivemount/help/fr/*
+       drivemount/help/en_GB/*
+       drivemount/help/ru/*
+       drivemount/help/C/*
+       drivemount/help/cs/*
+       drivemount/help/es/*
+       drivemount/help/it/*
+       drivemount/help/oc/*
+       drivemount/help/zh_CN/*
+       drivemount/help/sv/*
+Copyright: Aniol Gervasi <tradueix@gmail.com>
+           A S Alam <apbrar@gmail.com>
+           Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Fotis Tsamis <ftsamis@gmail.com>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Milo Casagrande <milo@ubuntu.com>
+           Nicky <nicky441@gmail.com>
+           Salikhov Timur <Tima-S@yandex.ru>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
+
+Files: accessx-status/docs/ko/*
+       accessx-status/docs/el/*
+       accessx-status/docs/uk/*
+       accessx-status/docs/eu/*
+       accessx-status/docs/ca/*
+       accessx-status/docs/fi/*
+       accessx-status/docs/de/*
+       accessx-status/docs/fr/*
+       accessx-status/docs/en_GB/*
+       accessx-status/docs/C/*
+       accessx-status/docs/cs/*
+       accessx-status/docs/es/*
+       accessx-status/docs/nl/*
+       accessx-status/docs/it/*
+       accessx-status/docs/oc/*
+       accessx-status/docs/bg/*
+       accessx-status/docs/zh_CN/*
+       accessx-status/docs/gl/*
+       accessx-status/docs/sv/*
+Copyright: Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Gil Forcada <gilforcada@guifi.net>
+           Ilias Makris <ilmakris@sch.gr>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Inge Loots <inge.loots@gmail.com>
+           Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Luca Ferretti <elle.uca@libero.it>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yavor Doganov <yavor@doganov.org>
+License: GFDL-1.1+
+
+Files: battstat/docs/ko/*
+       battstat/docs/pa/*
+       battstat/docs/el/*
+       battstat/docs/uk/*
+       battstat/docs/eu/*
+       battstat/docs/ca/*
+       battstat/docs/fi/*
+       battstat/docs/da/*
+       battstat/docs/de/*
+       battstat/docs/fr/*
+       battstat/docs/pt_BR/*
+       battstat/docs/en_GB/*
+       battstat/docs/C/*
+       battstat/docs/cs/*
+       battstat/docs/es/*
+       battstat/docs/oc/*
+       battstat/docs/bg/*
+       battstat/docs/zh_CN/*
+       battstat/docs/sv/*
+Copyright: Aniol Gervasi <tradueix@gmail.com>
+           A S Alam <aalam@users.sf.net>
+           Awgnl <y.z.h@gmx.com>
+           Changwoo Ryu <cwryu@debian.org>
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Daniel Nylander <po@danielnylander.se>
+           Giannis Katsampirhs <giannis1_86@hotmail.com>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Leonardo Ferreira Fontenelle <leonardof@gnome.org>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Nicky <nicky441@gmail.com>
+           Petr Kovar <pknbe@volny.cz>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Robert-André Mauchin <zebob.m@pengzone.org>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yavor Doganov <yavor@doganov.org>
+License: GFDL-1.1+
+
+Files: geyes/docs/ast/*
+       geyes/docs/ko/*
+       geyes/docs/el/*
+       geyes/docs/uk/*
+       geyes/docs/eu/*
+       geyes/docs/ca/*
+       geyes/docs/fi/*
+       geyes/docs/da/*
+       geyes/docs/de/*
+       geyes/docs/fr/*
+       geyes/docs/en_GB/*
+       geyes/docs/ru/*
+       geyes/docs/C/*
+       geyes/docs/cs/*
+       geyes/docs/es/*
+       geyes/docs/it/*
+       geyes/docs/oc/*
+       geyes/docs/bg/*
+       geyes/docs/zh_CN/*
+       geyes/docs/sv/*
+       geyes/docs/zh_TW/*
+       geyes/docs/zh_HK/*
+Copyright:  Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Dominik Bitzer <dominik.bitzer@googlemail.com>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Kevin-Wei-2 <kevin_wei3@yahoo.com.tw>
+           Marek Černocký <marek@manet.cz>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Milo Casagrande <milo@ubuntu.com>
+           M.P. Rommedahl <Lhademmor@gmail.com>
+           TeliuTe <teliute@163.com>
+           Vasiliy Faronov <qvvx@land.ru>
+           Xandru Armesto <xandru@softastur.org>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yavor Doganov <yavor@doganov.org>
+           Μάριος Ζηντίλης <m.zindilis@dmajor.org>
+License: GFDL-1.1+
+
+Files: invest-applet/docs/el/*
+       invest-applet/docs/ca/*
+       invest-applet/docs/fi/*
+       invest-applet/docs/de/*
+       invest-applet/docs/en_GB/*
+       invest-applet/docs/ru/*
+       invest-applet/docs/C/*
+       invest-applet/docs/es/*
+       invest-applet/docs/zh_CN/*
+       invest-applet/docs/sv/*
+Copyright: Daniel Nylander <po@danielnylander.se>
+           Egorov Boris <jightuse@gmail.com>
+           Joan Duran <jodufi@gmail.com>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Mario Blättermann <mariobl@gnome.org>
+           Marios Zindilis <m.zindilis@dmajor.org>
+           Philip Withnall <philip@tecnocode.co.uk>
+           YunQiang Su <wzssyqa@gmail.com>
+License: GFDL-1.1+
+
+Files: mateweather/docs/ko/*
+       mateweather/docs/pa/*
+       mateweather/docs/el/*
+       mateweather/docs/uk/*
+       mateweather/docs/eu/*
+       mateweather/docs/ca/*
+       mateweather/docs/fi/*
+       mateweather/docs/de/*
+       mateweather/docs/ar/*
+       mateweather/docs/fr/*
+       mateweather/docs/pt_BR/*
+       mateweather/docs/en_GB/*
+       mateweather/docs/ru/*
+       mateweather/docs/C/*
+       mateweather/docs/cs/*
+       mateweather/docs/es/*
+       mateweather/docs/nl/*
+       mateweather/docs/oc/*
+       mateweather/docs/zh_CN/*
+       mateweather/docs/sv/*
+Copyright: Amadeu A. Barbosa Jr <amadeu@gmail.coom>
+           Aniol Gervasi <tradueix@gmail.com>
+           A S Alam <aalam@users.sf.net>
+           Changwoo Ryu <cwryu@debian.org>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Djihed Afifi <djihed@gmail.com>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mario.blaettermann@t-online.de>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Michael Kotsarinis <mk73628@hotmail.com>
+           Myckel Habets <myckel@sdf.lonestar.org>
+           Philip Withnall <philip@tecnocode.co.uk>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yuri Myasoedov <omerta13@yandex.ru>
+License: GFDL-1.1+
+
+Files: multiload/docs/ko/*
+       multiload/docs/pa/*
+       multiload/docs/el/*
+       multiload/docs/uk/*
+       multiload/docs/eu/*
+       multiload/docs/ca/*
+       multiload/docs/fi/*
+       multiload/docs/de/*
+       multiload/docs/fr/*
+       multiload/docs/pt_BR/*
+       multiload/docs/en_GB/*
+       multiload/docs/ru/*
+       multiload/docs/C/*
+       multiload/docs/cs/*
+       multiload/docs/es/*
+       multiload/docs/oc/*
+       multiload/docs/zh_CN/*
+       multiload/docs/sv/*
+Copyright: Amadeu A. Barbosa Jr <amadeu@gmail.coom>
+           A S Alam <aalam@users.sf.net>
+           Changwoo Ryu <cwryu@debian.org>
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Francisco Javier F. Serrador <serrador@cvs.gnome.org>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Petr Kovar <pknbe@volny.cz>
+           Sergey V. Mironov <sergo@bk.ru>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Μάριος Ζηντίλης <m.zindilis@dmajor.org>
+License: GFDL-1.1+
+
+Files: stickynotes/docs/ko/*
+       stickynotes/docs/pa/*
+       stickynotes/docs/el/*
+       stickynotes/docs/uk/*
+       stickynotes/docs/eu/*
+       stickynotes/docs/ca/*
+       stickynotes/docs/fi/*
+       stickynotes/docs/de/*
+       stickynotes/docs/fr/*
+       stickynotes/docs/pt_BR/*
+       stickynotes/docs/en_GB/*
+       stickynotes/docs/ru/*
+       stickynotes/docs/C/*
+       stickynotes/docs/cs/*
+       stickynotes/docs/es/*
+       stickynotes/docs/oc/*
+       stickynotes/docs/zh_CN/*
+       stickynotes/docs/sv/*
+       stickynotes/docs/zh_TW/*
+       stickynotes/docs/zh_HK/*
+Copyright: Amadeu A. Barbosa Jr <amadeu@gmail.coom>
+           Aron Xu <aronmalache@163.com>
+           A S Alam <aalam@users.sf.net>
+           Changwoo Ryu <cwryu@debian.org>
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Kevin-Wei-2 <kevin_wei3@yahoo.com.tw>
+           Marek Černocký <marek@manet.cz>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yuri Myasoedov <omerta13@yandex.ru>
+           Μάριος Ζηντίλης <m.zindilis@dmajor.org>
+License: GFDL-1.1+
+
+Files: trashapplet/docs/pa/*
+       trashapplet/docs/el/*
+       trashapplet/docs/uk/*
+       trashapplet/docs/eu/*
+       trashapplet/docs/ca/*
+       trashapplet/docs/fi/*
+       trashapplet/docs/da/*
+       trashapplet/docs/de/*
+       trashapplet/docs/fr/*
+       trashapplet/docs/pt_BR/*
+       trashapplet/docs/en_GB/*
+       trashapplet/docs/ru/*
+       trashapplet/docs/C/*
+       trashapplet/docs/hu/*
+       trashapplet/docs/cs/*
+       trashapplet/docs/es/*
+       trashapplet/docs/nl/*
+       trashapplet/docs/it/*
+       trashapplet/docs/oc/*
+       trashapplet/docs/zh_CN/*
+       trashapplet/docs/sv/*
+       trashapplet/docs/zh_TW/*
+       trashapplet/docs/zh_HK/*
+Copyright: Andrius da Costa Ribas <andriusmao@gmail.com>
+           A S Alam <aalam@users.sf.net>
+           Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Fotis Tsamis <ftsamis@gmail.com>
+           Gabor Kelemen <kelemeng@mate.hu>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Luca Ferretti <elle.uca@libero.it>
+           Marek Černocký <marek@manet.cz>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           M.P. Rommedahl <Lhademmor@gmail.com>
+           Myckel Habets <myckel@sdf.lonestar.org>
+           Vasiliy Faronov <qvvx@land.ru>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Zhang Miao <mymzhang@gmail.com>
+License: GFDL-1.1+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>
@@ -371,3 +809,13 @@ License: LGPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

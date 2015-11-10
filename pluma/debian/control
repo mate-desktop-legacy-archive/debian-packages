@@ -15,11 +15,11 @@ Build-Depends: autotools-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
                libgtksourceview2.0-dev,
-               libmate-desktop-dev (>= 1.10.0),
+               libmate-desktop-dev (>= 1.12),
                libsm-dev,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
                yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/

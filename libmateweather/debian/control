@@ -15,7 +15,7 @@ Build-Depends: autotools-dev,
                libsoup2.4-dev,
                libxml2-dev,
                libxml2-utils,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages

@@ -16,7 +16,7 @@ Build-Depends: debhelper (>= 9),
                libnotify-dev,
                libwnck-dev,
                libx11-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 

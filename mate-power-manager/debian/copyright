@@ -150,7 +150,6 @@ Files: .tx/config
        docs/docbook.css
        man/Makefile.am
        man/*.sgml
-       patches/gpm-manager.patch
        po/LINGUAS
        po/POTFILES.*
        po/gnome-copyrights.txt
@@ -224,6 +223,24 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
+Files: help/*
+Copyright: Amanpreet Singh Alam <aalam@users.sf.net>
+           Daniel Nylander <po@danielnylander.se>
+           Gabor Kelemen <kelemeng@mate.hu>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Joan Duran <jodufi@gmail.com>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Kaarina V. Sauna-aho <kaarina.v.sauna-aho@nomovok.com>
+           Mario Blättermann <mariobl@gnome.org>
+           Milo Casagrande <milo@ubuntu.com>
+           Pavel Shylenok <uriel@tut.by>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Robert-André Mauchin <zebob.m@pengzone.org>
+           Simos Xenitellis <simos@gnome.org>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           YunQiang Su <wzssyqa@gmail.com>
+License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>
@@ -263,3 +280,13 @@ License: LGPL-2+
  .
  On Debian systems, the complete text of the GNU Library General
  Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

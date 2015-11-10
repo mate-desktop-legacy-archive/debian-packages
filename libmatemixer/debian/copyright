@@ -161,7 +161,39 @@ Comment:
  License as found in COPYING file.
 
 Files: po/*.po
-Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER(S)
+Copyright:
+ 2014 - 2015, abuyop <abuyop@gmail.com>
+ 2014 - 2015, Acácio da Rosa Florentino <acaciosc1@gmail.com>
+ 2014 - 2015, AlexL <loginov.alex.valer@gmail.com>
+ 2014 - 2015, Asier Iturralde Sarasola <asier.iturralde@gmail.com>
+ 2014 - 2015, Daniel <danny34ever@yahoo.com>
+ 2014 - 2015, dardin88 <linkin88mail@gmail.com>
+ 2014 - 2015, Diogo Oliveira <diogodesigns@gmail.com>
+ 2014 - 2015, Efstathios Iosifidis <iefstathios@gmail.com>
+ 2014 - 2015, Emiliano Fascetti
+ 2014 - 2015, Falco Langeveld <falcolangeveld@gmail.com>
+ 2014 - 2015, Ivar Smolin <okul@linux.ee>
+ 2014 - 2015, Ivica Kolić <ikoli@yahoo.com>
+ 2014 - 2015, Jeff Huang <s8321414@gmail.com>
+ 2014 - 2015, Joe Hansen <joedalton2@yahoo.dk>
+ 2014 - 2015, Julian Rüger <jr98@gmx.net>
+ 2014 - 2015, 박정규(Jung Kyu Park) <bagjunggyu@gmail.com>
+ 2014 - 2015, Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>
+ 2014 - 2015, Kudret Emre <kudretemre@hotmail.com.tr>
+ 2014 - 2015, Marcin Kralka <marcink96@gmail.com>
+ 2014 - 2015, Martin Wimpress <code@flexion.org>
+ 2014 - 2015, Michael Findlay <keltoiboy@gmail.com>
+ 2014 - 2015, Michal <sinope@seznam.cz>
+ 2014 - 2015, Mihail Varantsou <meequz@gmail.com>
+ 2014 - 2015, Mika Kobayashi
+ 2014 - 2015, samson <sambelet@yahoo.com>
+ 2014 - 2015, Tibor Kaputa <tibbbi2@gmail.com>
+ 2014 - 2015, Tubuntu <tubuntu@testimonium.be>
+ 2014 - 2015, Willy Sudiarto Raharjo <willysr@slackware-id.org>
+ 2014 - 2015, worm <thewormhole@gmail.com>
+ 2014 - 2015, Микола Ткач <Stuartlittle1970@gmail.com>
+ 2014 - 2015, Мирослав Николић <miroslavnikolic@rocketmail.com>
+ 2014 - 2015, 白铭骢 <jeffbaichina@members.fsf.org>
 License: LGPL-2+
 
 Files: debian/*

@@ -1,18 +1,17 @@
 Source: mate-user-guide
-Section: docs
+Section: doc
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Build-Depends: debhelper (>= 9),
                gettext,
                intltool,
-               mate-common,
+               libglib2.0-dev,
+               mate-common (>= 1.12),
                yelp-tools,
-               libglib2.0-dev
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-user-guide
-Section: doc
 Architecture: all
 Depends: yelp,
          ${misc:Depends},

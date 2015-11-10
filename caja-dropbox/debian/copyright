@@ -1,4 +1,4 @@
-Format: http://dep.debian.net/deps/dep5/ as of 2011-06-04
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: caja-dropbox
 Upstream-Contact: Rian Hunter <rian@dropbox.com>, David Euresti <david@dropbox.com>
 Source: https://www.dropbox.com/downloading?os=lnx
@@ -30,6 +30,7 @@ Comment:
  License: http://creativecommons.org/licenses/by-nd/3.0/
 
 Files: rst2man.py
+Copyright: grubert@users.sf.net
 License: public-domain
  This module has been placed in the public domain.
 
@@ -37,7 +38,7 @@ Files: debian/*
 Copyright: 2012, Stefano Karapetsas <stefano@karapetsas.com>
            2011, Raphaël Hertzog <hertzog@debian.org>
            2008, Rian Hunter <rian@getdropbox.com>
-           2014-2015, Mike Gabriel <sunweaver@debian.org>
+           2014, Mike Gabriel <sunweaver@debian.org>
 License: GPL-3+
 
 License: GPL-3+

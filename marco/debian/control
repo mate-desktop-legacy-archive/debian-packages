@@ -25,7 +25,7 @@ Build-Depends: debhelper (>= 9),
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
                yelp-tools,
                zenity,
 Standards-Version: 3.9.6
@@ -35,6 +35,7 @@ Package: marco
 Architecture: any
 Depends: libmarco-private0 (= ${binary:Version}),
          marco-common (= ${source:Version}),
+         mate-desktop-common (>= 1.12),
          zenity,
          ${misc:Depends},
          ${shlibs:Depends},

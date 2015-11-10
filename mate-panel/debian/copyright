@@ -419,6 +419,39 @@ License: LGPL-2+
 Comment:
  Assuming same license as for libmate-panel-applet.
 
+Files: help/*
+Copyright: Amanpreet Singh Brar Alamwalia <apbrar@gmail.com>
+           Bakaoukas Nikolaos <nikolaosx1@gmail.com>
+           Carlos Manuel <crolidge@gmail.com>
+           Changwoo Ryu <cwryu@debian.org>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jen Ockwell <jenfraggleubuntu@gmail.com>
+           Joan Duran <jodufi@gmail.com>
+           Joe Hansen <joedalton2@yahoo.dk>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Kevin-Wei-2 <kevin_wei3@yahoo.com.tw>
+           Laurent Coudeur <laurentc@iol.ie>
+           Luca Ferretti
+           Luciana Bastos de Freitas Menezes <lu@via-rs.net>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim Dzumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Myckel Habets <myckel@sdf.lonestar.org>
+           OsamaKhalid <OsamaK.WFM@gmail.com>
+           Salikhov Timur <Tima-S@yandex.ru>
+           Theppitak Karoonboonyanan <thep@linux.thai.net>
+           Timo Jyrinki <timo.jyrinki@iki.fi>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yasumichi Akahoshi <yasumichi@vinelinux.org>
+           YunQiang Su <wzssyqa@gmail.com>
+           Yuri Myasoedov <omerta13@yandex.ru>
+           Zhangmiao <mymzhang@gmail.com>
+           Данио Шеган <danilo@gnome.org>
+           Максим Дзюманенко <dziumanenko@gmail.com>
+License: GFDL-1.1+
 Files: .tx/config
        applets/Makefile.am
        applets/clock/Makefile.am
@@ -454,10 +487,10 @@ Files: .tx/config
        data/mate-panel.convert
        data/org.mate.panel.*.in
        data/default.layout
-       data/linuxmint.layout
-       data/opensuse.layout
        data/fedora.layout
+       data/linuxmint.layout
        data/mageia.layout
+       data/opensuse.layout
        data/ubuntu.layout
        doc/Makefile.am
        doc/*.txt
@@ -520,6 +553,7 @@ Files: .tx/config
        configure.ac
        AUTHORS
        COPYING
+       COPYING-DOCS
        COPYING.LIB
        ChangeLog
        HACKING
@@ -589,3 +623,13 @@ License: LGPL-2+
  .
  On Debian systems, the complete text of the GNU Library General
  Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

@@ -213,12 +213,180 @@ License: LGPL-2+
 Files: po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
-Copyright: THE PACKAGE'S COPYRIGHT HOLDER
-           2009, The Gnome Foundation
+Copyright: 2009, The Gnome Foundation
 License: GPL-2+ or LGPL-2.1+
 Comment:
  Using licenses as found either in the COPYING or
  the COPYING.libs file.
+
+Files: baobab/help/*
+Copyright: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Emmanuele Bassi <ebassi@cvs.mate.org>
+           Fabio Marzocca <thesaltydog@gmail.com>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           Gil Forcada <gforcada@gnome.org>
+           Ilkka Tuohela <hile@iki.fi>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Kenneth Nielsen <k.nielsen81@gmail.com>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Petr Kovar <pknbe@volny.cz>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Roberto Majadas <telemaco@openshine.com>
+           Simos Xenitellis <simos@gnome.org>
+           Timo Jyrinki <timo.jyrinki@iki.fi>
+           Tomasz Dominikowski <tdominikowski@aviary.pl>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Yannig Marchegay <yannig@marchegay.org>
+           Andrea Zagli <azagli@libero.it>
+           Ask Hjorth Larsen <asklarsen@gmail.com>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Kevin-Wei-2 <kevin_wei3@yahoo.com.tw>
+           Lucas Lommer <llommer@svn.mate.org>
+           Mario Blättermann <mario.blaettermann@t-online.de>
+           Maxim V. Dziumanenko <dziumanenko@softprom.kiev.ua>
+           Philip Withnall <philip@tecnocode.co.uk>
+           TeliuTe <teliute@163.com>
+           Tomasz Dominikowski <dominikowski@gmail.com>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Βασίλης Κοντογιάνης <vasilisk@ics.forth.gr>
+License: GFDL-1.1+
+
+Files: gsearchtool/help/*
+Copyright: Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Jonas Haag <jonas@jonashaag.de>
+           Dennis Cranston <dennis_cranston@yahoo.com>
+           Emmanuele Bassi <ebassi@cvs.gnome.org>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           German Poo-Caaman~o <gpoo@ubiobio.cl>
+           Ilkka Tuohela <hile@iki.fi>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jan Arne Petersen <jpetersen@jpetersen.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Philipp Kerling <k.philipp@gmail.com>
+           Simos Xenitellis <simos@gnome.org>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Changwoo Ryu <cwryu@debian.org>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Sterios Prosiniklis <steriosprosiniklis@gmail.com>
+           TeliuTe <teliute@163.com>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
+
+Files: logview/help/*
+Copyright: Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Claude Paroz <claude@2xlibre.net>
+           Cosimo Cecchi <cosimoc@gnome.org>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Emmanuele Bassi <ebassi@cvs.gnome.org>
+           Francisco Javier F. Serrador <serrador@cvs.gnome.org>
+           German Poo-Caaman~o <gpoo@ubiobio.cl>
+           Gil Forcada <gforcada@gnome.org>
+           Ilkka Tuohela <hile@iki.fi>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Kjartan Maraas <kmaraas@gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <mvd@mylinux.ua>
+           Milo Casagrande <milo@ubuntu.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Simos Xenitellis <simos@gnome.org>
+           Timo Jyrinki <timo.jyrinki@iki.fi>
+           V. Mironov <sergo@bk.ru>
+           Adrian Guniš <andygun696@gmail.com>
+           Bakaoukas Nikolaos <nikolaosx1@gmail.com>
+           Changwoo Ryu <cwryu@debian.org>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Milo Casagrande <milo@ubuntu.com>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Sergey V. Mironov <sergo@bk.ru>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
+
+Files: mate-dictionary/help/*
+Copyright: Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Dennis Cranston <dennis_cranston@yahoo.com>
+           Emmanuele Bassi <ebassi@cvs.gnome.org>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           German Poo-Caaman~o <gpoo@ubiobio.cl>
+           Ilkka Tuohela <<hile@iki.fi>>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Kjartan Maraas <kmaraas@gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Nikos Charonitakis <nikosx@gmail.com>
+           Simos Xenitellis <simos@gnome.org>
+           Yannig Marchegay <yannig@marchegay.org>
+           Andrea Zagli <azagli@inwind.it>
+           Claude Paroz <paroz@email.ch>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Fotis Tsamis <ftsamis@gmail.com>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Joe Hansen <joedalton2@yahoo.dk>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Mario Blättermann <mario.blaettermann@t-online.de>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.r>
+           Petr Kovar <pknbe@volny.cz>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
 
 Files: .tx/config
        baobab/data/Makefile.am
@@ -262,10 +430,6 @@ Files: .tx/config
        logview/Makefile.am
        logview/TODO
        logview/logview-marshal.list
-       m4/Makefile.am
-       m4/shave-libtool.in
-       m4/shave.in
-       m4/shave.m4
        mate-dictionary/data/Makefile.am
        mate-dictionary/data/*.1
        mate-dictionary/data/*.convert
@@ -298,6 +462,7 @@ Files: .tx/config
        po/POTFILES.*
        AUTHORS
        COPYING
+       COPYING.docs
        COPYING.libs
        ChangeLog
        Makefile.am
@@ -388,3 +553,13 @@ License: LGPL-2.1+
  On Debian systems, the full text of the GNU Lesser General Public
  License version 2,1 can be found in the file
  `/usr/share/common-licenses/LGPL-2.1'.
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

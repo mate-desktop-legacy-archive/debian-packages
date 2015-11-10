@@ -93,6 +93,81 @@ Files: git.mk
 Copyright: 2009, Red Hat, Inc.
 License: Public-Domain
 
+Files: help/*
+Copyright: abuyop <abuyop@gmail.com>
+           Adam Weinberger <adamw@mateorg>
+           Alexander Shopov <ash@kambanaia.org>
+           Alexei Sorokin <sor.alexei@meowr.ru>
+           Andika Triwidada <andika@gmail.com>
+           Aron Xu <happyaron.xu@gmail.com>
+           A S Alam <aalam@users.sf.net>
+           Baris Cicek <baris@teamforce.name.tr>
+           Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+           Carlos Moreira <crolidge@gmail.com>
+           Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+           Clytie Siddall <clytie@riverland.net.au>
+           Daniel Nylander <po@danielnylander.se>
+           Darkcircle <darkcircle.0426@gmail.com>
+           Denis <denisarnuad@yahoo.fr>
+           Dr.T.Vasudevan <agnihot3@gmail.com>
+           Elian Myftiu <elian@alblinux.net>
+           Flamarion Jorge <jorge.flamarion@gmail.com>
+           Gabor Kelemen <kelemeng at matedot hu>
+           Gheyret Kenji <gheyret@gmail.com>
+           Gianvito Cavasoli <janvitus@ubuntu-it.org>
+           Gil Forcada <gilforcada@guifi.net>
+           Gintautas Miliauskas <gintautas@miliauskas.lt>
+           Goran Rakic <grakic@devbase.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Ivar Smolin <okul@linux.ee>
+           Ján Ďanovský <dagsoftware@yahoo.com>
+           jierro <jierro@windowslive.com>
+           Joe Hansen <joedalton2@yahoo.dk>
+           Jorge González <jorgegonz@svn.mateorg>
+           Kjartan Maraas <kmaraas@mateorg>
+           Koljan1970 <Stuartlittle1970@gmail.com>
+           Krishna Babu K <kkrothap@redhat.com>
+           Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>
+           Ḷḷumex03 <l.lumex03.tornes@gmail.com>
+           Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+           Mahesh subedi <submanesh@hotmail.com>
+           Manoj Kumar Giri <mgiri@redhat.com>
+           Marek Černocký <marek@manet.cz>
+           Martin Wimpress <code@flexion.org>
+           mbouzada <mbouzada@gmail.com>
+           Michael Findlay <keltoiboy@gmail.com>
+           Mihail Varantsou <meequz@gmail.com>
+           Mislav E. Lukšić <meluksic@yahoo.com>
+           norbu <nor_den@hotmail.com>
+           Peteris Krisjanis <pecisk@gmail.com>
+           Pierros Papadeas <ppapadeas@gmail.com>
+           Piotr Drąg <piotrdrag@gmail.com>
+           Runa Bhattacharjee <runab@redhat.com>
+           Sadgamaya <g.raghavan.g@gmail.com>
+           Sadia Afroz <sadia@ankur.org.bd>
+           samson <sambelet@yahoo.com>
+           Sangeeta Kumari <sangeeta09@gmail.com>
+           Scoubidou <david.vantyghem@free.fr>
+           Seán de Búrca <leftmostcat@gmail.com>
+           Shankar Prasad <svenkate@redhat.com>
+           Steve Murphy <murf@e-tools.com>
+           Sveinn í Felli <sv1@fellsnet.is>
+           Sweta Kothari <swkothar@redhat.com>
+           Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
+           Theppitak Karoonboonyanan <thep@linux.thai.net>
+           Thomas Thurman <tthurman@mateorg>
+           Tobias Bannert <tobannert@gmail.com>
+           Tommi Vainikainen <thv@iki.fi>
+           Torstein Adolf Winterseth <kvikende@fsfe.org>
+           Vaibhav S Dalvi <vaibhav.dlv@gmail.com>
+           Wei-Lun Chao <bluebat@member.fsf.org>
+           Wouter Bolsterlee <wbolster@mateorg>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yaron Shahrabani <sh.yaron@gmail.com>
+           Арангел Ангов <ufo@linux.net.mk>
+           Мирослав Николић <miroslavnikolic@rocketmail.com>
+License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>
@@ -119,3 +194,13 @@ License: Public-Domain
  Copying and distribution of this file, with or without modification,
  are permitted in any medium without royalty provided the copyright
  notice and this notice are preserved.
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

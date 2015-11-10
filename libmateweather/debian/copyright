@@ -7,7 +7,6 @@ Files: libmateweather/location-entry.c
        libmateweather/location-entry.h
        libmateweather/mateweather-location.*
        libmateweather/mateweather-timezone.*
-       libmateweather/mateweather-win32.*
        libmateweather/parser.c
        libmateweather/parser.h
        libmateweather/timezone-menu.c
@@ -91,10 +90,10 @@ Files: .tx/config
        libmateweather/AUTHORS
        libmateweather/Makefile.am
        libmateweather/README
-       libmateweather/mateweather-enum-types.c
-       libmateweather/mateweather-enum-types.h
+       libmateweather/mateweather-enum-types.c.tmpl
+       libmateweather/mateweather-enum-types.h.tmpl
        libmateweather/mateweather-uninstalled.pc.in
-       libmateweather/org.mate.weather.gschema.xml.in.in
+       libmateweather/org.mate.weather.gschema.xml.in
        libmateweather/test_*.c
        libmateweather/mateweather.pc.in
        po/LINGUAS
