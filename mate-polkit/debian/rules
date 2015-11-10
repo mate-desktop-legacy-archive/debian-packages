@@ -20,7 +20,8 @@ override_dh_auto_configure:
 		--with-gtk=2.0
 
 override_dh_strip:
-	dh_strip --dbg-package=libpolkit-gtk-mate-1-0-dbg
+	dh_strip -pmate-polkit --dbg-package=mate-polkit-dbg
+	dh_strip -plibpolkit-gtk-mate-1-0 --dbg-package=libpolkit-gtk-mate-1-0-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

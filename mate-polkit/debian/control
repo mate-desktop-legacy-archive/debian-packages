@@ -79,6 +79,22 @@ Description: MATE authentication agent for PolicyKit-1 (development files)
  .
  This package contains the development files for mate-polkit.
 
+Package: mate-polkit-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Multi-Arch: same
+Depends: mate-polkit (= ${binary:Version}),
+         ${misc:Depends},
+Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the debugging symbols for mate-polkit.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
 Package: libpolkit-gtk-mate-1-0-dbg
 Priority: extra
 Section: debug
@@ -86,14 +102,15 @@ Architecture: any
 Multi-Arch: same
 Depends: libpolkit-gtk-mate-1-0 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends},
 Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
  The mate-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
  .
  This package contains the debugging symbols for the libpolkit-gtk-mate-1-0
- library. They are installed into /usr/lib/debug and will automatically be used
- by gdb.
+ library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
 
 Package: gir1.2-mate-polkit
 Architecture: any
