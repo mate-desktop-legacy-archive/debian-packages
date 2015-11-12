@@ -45,6 +45,8 @@ Files: capplets/appearance/appearance-desktop.c
        capplets/appearance/appearance-style.h
        capplets/appearance/appearance-themes.c
        capplets/appearance/appearance-themes.h
+       capplets/appearance/appearance-ui.c
+       capplets/appearance/appearance-ui.h
        capplets/appearance/theme-installer.c
        capplets/appearance/theme-installer.h
        capplets/appearance/theme-save.c
@@ -134,6 +136,7 @@ License: GPL-2+
 Files: font-viewer/font-thumbnailer.c
        font-viewer/font-view.c
        font-viewer/ftstream-vfs.c
+       font-viewer/ftstream-vfs.h
 Copyright: 2002-2003, James Henstridge <james@daa.com.au>
 License: GPL-2+
 
@@ -325,6 +328,7 @@ Copyright: Alexey Dunaev <keir.ru@gmail.com>
            Zhang Miao <mymzhang@gmail.com>
            Μάριος Ζηντίλης <m.zindilis@dmajor.org>
 License: GFDL-1.1+
+
 Files: capplets/about-me/icons/Makefile.am
        capplets/about-me/Makefile.am
        capplets/about-me/mate-about-me-password.h
@@ -442,7 +446,7 @@ Files: capplets/about-me/icons/Makefile.am
        autogen.sh
        configure.ac
        *.convert
-       org.mate.*.xml.in.in
+       org.mate.*.xml.in
 Copyright: *No copyright*
 License: GPL-2+
 Comment:

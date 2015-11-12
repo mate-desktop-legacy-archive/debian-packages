@@ -337,6 +337,7 @@ Copyright: 2000-2001, Ximian, Inc.
 License: GPL-2+
 
 Files: applets/notification_area/main.c
+       applets/notification_area/main.h
 Copyright: 2002, Red Hat, Inc.
            2003-2006, Vincent Untz
            2011, Perberos
@@ -452,6 +453,7 @@ Copyright: Amanpreet Singh Brar Alamwalia <apbrar@gmail.com>
            Данио Шеган <danilo@gnome.org>
            Максим Дзюманенко <dziumanenko@gmail.com>
 License: GFDL-1.1+
+
 Files: .tx/config
        applets/Makefile.am
        applets/clock/Makefile.am

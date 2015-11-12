@@ -1,0 +1,5 @@
+# caja extensions in /usr/lib/*/caja/extensions-2.0/ erroneously trigger
+# debhelper's makeshlibs script
+caja-wallpaper: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+caja-wallpaper: postinst-has-useless-call-to-ldconfig
+caja-wallpaper: postrm-has-useless-call-to-ldconfig

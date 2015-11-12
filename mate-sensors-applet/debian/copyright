@@ -44,6 +44,11 @@ Files: lib/sensors-applet-plugin.c
 Copyright: 2005-2009, Alex Murray <murray.alex@gmail.com>
 License: GPL-2+
 
+Files: plugins/mbmon/mbmon-plugin.c
+       plugins/mbmon/mbmon-plugin.h
+Copyright: 2010 Daniele Napolitano <dnax88@gmail.com>
+License: GPL-2+
+
 Files: sensors-applet/sensors-applet-settings.c
        sensors-applet/sensors-applet-settings.h
 Copyright: 2005-2009, Alex Murray <murray.alex@gmail.com>
@@ -134,6 +139,7 @@ Files: .tx/config
        plugins/udisks/Makefile.am
        plugins/omnibook/Makefile.am
        plugins/nvidia/Makefile.am
+       plugins/mbmon/Makefile.am
        plugins/smu-sys/Makefile.am
        plugins/hddtemp/Makefile.am
        plugins/aticonfig/Makefile.am

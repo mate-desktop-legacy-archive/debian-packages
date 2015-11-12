@@ -55,7 +55,6 @@ Files: .tx/config
        autogen.sh
        configure.ac
        index.theme.in.in
-       mate-icon-theme.pc.in
        po/ChangeLog
        po/LINGUAS
        po/POTFILES.*

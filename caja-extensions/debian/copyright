@@ -13,11 +13,20 @@ Files: image-converter/caja-image-converter.c
 Copyright: 2004, 2005, 2006, 2008, Jürg Billeter
 License: GPL-2+
 
+Files: wallpaper/caja-wallpaper-command.c
+       wallpaper/caja-wallpaper-extension.c
+       wallpaper/caja-wallpaper-extension.h
+Copyright: 2005, Adam Israel
+           2014, Stefano Karapetsas
+License: GPL-2+
+
 Files: .tx/config
        gksu/Makefile.am
        gksu/libcaja-gksu.c
+       gksu/libcaja-gksu.caja-extension.in.in
        image-converter/Makefile.am
        image-converter/*.ui
+       image-converter/libcaja-image-converter.caja-extension.in.in
        open-terminal/Makefile.am
        open-terminal/*.convert
        open-terminal/*.in
@@ -39,6 +48,9 @@ Files: .tx/config
        share/shares.c
        share/shares.h
        share/*.ui
+       share/libcaja-share.caja-extension.in.in
+       wallpaper/Makefile.am
+       wallpaper/libcaja-wallpaper.caja-extension.in.in
        AUTHORS
        COPYING
        ChangeLog

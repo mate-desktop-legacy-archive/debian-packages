@@ -218,7 +218,6 @@ License: GPL-2+
 
 Files: cut-n-paste/smclient/eggdesktopfile.h
        cut-n-paste/smclient/eggsmclient-private.h
-       cut-n-paste/smclient/eggsmclient-win32.c
        cut-n-paste/smclient/eggsmclient.c
        cut-n-paste/smclient/eggsmclient.h
 Copyright: 2007, Novell, Inc.
@@ -462,11 +461,6 @@ Files: cut-n-paste/smclient/eggdesktopfile.c
 Copyright: 1999-2000, Red Hat Inc
            2001, George Lebl
            2007, Novell, Inc
-License: LGPL-2+
-
-Files: cut-n-paste/smclient/eggsmclient-osx.c
-Copyright: 2007, Novell, Inc
-           2008, Red Hat, Inc
 License: LGPL-2+
 
 Files: backend/ps/ev-spectre.h

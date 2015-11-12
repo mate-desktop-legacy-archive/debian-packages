@@ -17,7 +17,6 @@ License: GPL-3+
 
 Files: src/eggdesktopfile.h
        src/eggsmclient-private.h
-       src/eggsmclient-win32.c
        src/eggsmclient.c
        src/eggsmclient.h
 Copyright: 2007, Novell, Inc.
@@ -145,11 +144,6 @@ License: LGPL-3+
 
 Files: src/skey/md4.c
 Copyright: 2001, Nikos Mavroyanopoulos
-License: LGPL-3+
-
-Files: src/eggsmclient-osx.c
-Copyright: 2007, Novell, Inc.
-           2008, Red Hat, Inc.
 License: LGPL-3+
 
 Files: po/*.po

@@ -5,6 +5,7 @@ Source: http://git.mate-desktop.org/libmatemixer
 
 Files: backends/alsa/alsa-backend.c
  backends/alsa/alsa-backend.h
+ backends/alsa/alsa-compat.h
  backends/alsa/alsa-constants.c
  backends/alsa/alsa-constants.h
  backends/alsa/alsa-device.c

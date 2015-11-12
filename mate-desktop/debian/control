@@ -21,7 +21,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxml2-dev,
                libxrandr-dev,
-               mate-common (>= 1.10),
+               mate-common (>= 1.12),
                python-dev,
                python-support,
 Standards-Version: 3.9.6

@@ -608,7 +608,7 @@ Files:  .tx/config
        libcaja-private/caja-icon-info.h
        libcaja-private/caja-icon-names.h
        libcaja-private/caja-recent.h
-       libcaja-private/*.xml.in
+       libcaja-private/*.xml
        po/LINGUAS
        po/POTFILES.*
        src/file-manager/caja-audio-mime-types.h

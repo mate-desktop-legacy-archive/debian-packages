@@ -753,6 +753,7 @@ Copyright: Andrius da Costa Ribas <andriusmao@gmail.com>
            Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
            Zhang Miao <mymzhang@gmail.com>
 License: GFDL-1.1+
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>

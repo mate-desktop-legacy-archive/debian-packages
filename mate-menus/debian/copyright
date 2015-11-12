@@ -267,7 +267,6 @@ Files: autogen.sh
        libmenu/Makefile.am
        libmenu/libmate-menu.pc.in
        libmenu/libmate-menu-uninstalled.pc.in
-       m4/python.m4
        python/Makefile.am
        util/Makefile.am
 Copyright: *No copyright*
