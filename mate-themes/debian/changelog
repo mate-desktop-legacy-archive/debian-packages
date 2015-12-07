@@ -1,3 +1,9 @@
+mate-themes (1.12.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 07 Dec 2015 11:21:02 +0300
+
 mate-themes (1.12.0-1) unstable; urgency=medium
 
   * New upstream release
