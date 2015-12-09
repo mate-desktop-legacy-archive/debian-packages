@@ -47,6 +47,8 @@ Suggests: engrampa,
           meld,
 Breaks: libcaja-extension (<< 1.10.0),
         mate-session-manager (<< 1.8.1-7),
+        libcaja-extension1 (<< 1.10.0)
+Replaces: libcaja-extension1 (<< 1.10.0)
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
