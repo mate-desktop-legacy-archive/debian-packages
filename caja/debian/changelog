@@ -1,3 +1,9 @@
+caja (1.12.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 28 Dec 2015 11:02:31 +0300
+
 caja (1.12.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
