@@ -17,7 +17,6 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
-	rm -rfv debian/tmp/usr/share/MateConf/gsettings/atril.convert
 	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-atril.install.in > debian/gir1.2-atril.install
 	dh_install --fail-missing
 

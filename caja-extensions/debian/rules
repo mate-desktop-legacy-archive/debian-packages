@@ -8,7 +8,6 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja-sendto/plugins/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
-	rm -rfv debian/tmp/usr/share/MateConf/
 	dh_install --fail-missing
 
 override_dh_installchangelogs:

@@ -8,7 +8,6 @@ DHFLAGS=--parallel
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/share/MateConf/ 
 	rm -rfv debian/tmp/usr/lib/*/eom/plugins/*.la
 	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-eom.install.in > debian/gir1.2-eom.install
 	dh_install --fail-missing

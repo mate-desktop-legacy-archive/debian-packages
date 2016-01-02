@@ -7,7 +7,6 @@ DHFLAGS=--parallel
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/share/applications/mimeinfo.cache
-	rm -rfv debian/tmp/usr/share/MateConf/
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/*/*.la
 	dh_install --fail-missing

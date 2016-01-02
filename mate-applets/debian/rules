@@ -8,7 +8,6 @@ DHFLAGS=--parallel
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/python*/dist-packages/mate_invest/*.pyc
 	rm -rfv debian/tmp/usr/lib/python*/dist-packages/mate_invest/*.pyo
-	rm -rfv debian/tmp/usr/share/MateConf/gsettings/stickynotes-applet.convert
 	dh_install --fail-missing
 
 override_dh_auto_configure:
