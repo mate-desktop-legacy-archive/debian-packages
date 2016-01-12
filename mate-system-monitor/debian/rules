@@ -16,8 +16,7 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/${pkgname} \
 		--localstatedir=/var \
 		--disable-static \
-		--enable-systemd \
-		--with-gtk=2.0
+		--enable-systemd
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-system-monitor-dbg
