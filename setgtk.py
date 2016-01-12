@@ -41,8 +41,11 @@ replaces.append(["libappindicator-dev", "libappindicator3-dev"])
 # sorry for hardcoded version but that 3.0/4.0 shit from debian made me do it
 replaces.append(["libwebkitgtk-dev (>= 2.4.3)", "libwebkit2gtk-3.0-dev (>= 2.4.3) | libwebkit2gtk-4.0-dev (>= 2.4.3)"])
 
+# mate-system-monitor is GTK+3 only now
+excludes = ["mate-system-monitor"]
+
 for package in packages:
-	if os.path.isdir(package):
+	if os.path.isdir(package) and package not in excludes:
 		for dfile in ["control", "rules"]:
 			pfile = package + "/debian/" + dfile
 			if os.path.exists(pfile):
