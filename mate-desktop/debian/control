@@ -23,7 +23,6 @@ Build-Depends: debhelper (>= 9),
                libxrandr-dev,
                mate-common (>= 1.12),
                python-dev,
-               python-support,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages

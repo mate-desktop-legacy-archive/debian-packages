@@ -4,7 +4,7 @@
 	dh $@
 
 override_dh_install:
-	dh_pysupport
+	dh_python2
 	dh_install --fail-missing
 
 override_dh_auto_configure:
