@@ -1,3 +1,9 @@
+eom (1.12.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 16 Feb 2016 10:59:01 +0300
+
 eom (1.12.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
