@@ -1,3 +1,9 @@
+mate-terminal (1.13.2-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 10 Mar 2016 11:43:05 +0300
+
 mate-terminal (1.13.1-1) unstable; urgency=medium
 
   * New upstream development release
