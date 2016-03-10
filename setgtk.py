@@ -42,7 +42,7 @@ replaces.append(["libappindicator-dev", "libappindicator3-dev"])
 replaces.append(["libwebkitgtk-dev (>= 2.4.3)", "libwebkit2gtk-3.0-dev (>= 2.4.3) | libwebkit2gtk-4.0-dev (>= 2.4.3)"])
 
 # mate-system-monitor is GTK+3 only now
-excludes = ["mate-system-monitor"]
+excludes = ["mate-system-monitor", "mozo"]
 
 for package in packages:
 	if os.path.isdir(package) and package not in excludes:
