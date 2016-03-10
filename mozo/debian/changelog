@@ -1,3 +1,9 @@
+mozo (1.13.1-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 10 Mar 2016 13:36:00 +0300
+
 mozo (1.13.0-1) unstable; urgency=medium
 
   * New upstream development release
