@@ -11,21 +11,22 @@ Build-Depends: autotools-dev,
                debhelper (>= 9),
                dh-python,
                mate-common (>= 1.12),
-               python (>= 2.4),
+               python (>= 2.7),
 Build-Depends-Indep: gettext,
                      intltool (>= 0.40.0),
-                     libmatemenu-dev,
-                     python-gobject (>= 2.15.1),
-                     python-gtk2 (>= 2.13.0),
-XS-Python-Version: >= 2.4
+                     libmate-menu-dev,
+                     python-gi-dev,
+XS-Python-Version: >= 2.7
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: mozo
 Architecture: all
-Depends: mate-menus,
-         python-gobject (>= 2.15.1),
-         python-gtk2 (>= 2.13.0),
+Depends: gir1.2-gdkpixbuf-2.0,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         mate-menus,
+         python-gi,
          python-mate-menu,
          ${misc:Depends},
          ${python:Depends},
