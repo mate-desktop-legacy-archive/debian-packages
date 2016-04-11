@@ -36,10 +36,7 @@ replaces.append(["libgtkmm-2.4-dev", "libgtkmm-3.0-dev"])
 replaces.append(["libgtksourceview2.0-dev", "libgtksourceview-3.0-dev"])
 replaces.append(["libindicator-dev", "libindicator3-dev"])
 replaces.append(["libappindicator-dev", "libappindicator3-dev"])
-
-# this one is currently used for atril only
-# sorry for hardcoded version but that 3.0/4.0 shit from debian made me do it
-replaces.append(["libwebkitgtk-dev (>= 2.4.3)", "libwebkit2gtk-3.0-dev (>= 2.4.3) | libwebkit2gtk-4.0-dev (>= 2.4.3)"])
+replaces.append(["libwebkitgtk-dev", "libwebkit2gtk-4.0-dev"])
 
 # these packages are GTK+3 only now
 excludes = ["mate-system-monitor", "mozo"]
