@@ -52,7 +52,6 @@ Depends: libmate-panel-applet-4-1 (= ${binary:Version}),
          mate-panel-common (= ${source:Version}),
          mate-polkit,
          menu-xdg,
-         python,
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-panel-common (<< 1.1.1-4),
@@ -188,7 +187,6 @@ Architecture: any
 Depends: gir1.2-gtk-2.0,
          ${gir:Depends},
          ${misc:Depends},
-         ${python:Depends},
          ${shlibs:Depends},
 Description: GObject introspection data for MATE panel
  The MATE Panel is an essential part of the MATE Desktop, providing
