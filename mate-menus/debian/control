@@ -75,7 +75,6 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${python:Depends},
          ${shlibs:Depends},
 Description: GObject introspection data for the MATE menu specification
  This package contains introspection data for MATE menu specification, an
