@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS) --with python2
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
 	dh_install --fail-missing
