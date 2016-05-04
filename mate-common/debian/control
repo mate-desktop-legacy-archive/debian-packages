@@ -5,6 +5,7 @@ Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
            Martin Wimpress <code@flexion.org>,
 Build-Depends: autoconf,
                automake,
@@ -14,7 +15,7 @@ Build-Depends: autoconf,
                intltool,
                libtool,
                pkg-config,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
 Vcs-Git: git://github.com/mate-desktop/debian-packages.git
