@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                mate-common (>= 1.12),
                yelp-tools,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-user-guide
@@ -17,5 +17,9 @@ Depends: yelp,
          ${misc:Depends},
 Suggests: mate-desktop-environment,
 Description: User documentation for MATE Desktop Environment
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
  This package contains the user guide for MATE Desktop Environment and
  its main applications.
