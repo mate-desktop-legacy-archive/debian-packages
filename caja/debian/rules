@@ -4,6 +4,10 @@ TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed 
 
 DHFLAGS=--parallel
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 %:
 	dh $@ $(DHFLAGS)
 

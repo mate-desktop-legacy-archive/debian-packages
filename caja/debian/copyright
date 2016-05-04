@@ -8,8 +8,6 @@ Files: eel/check-program.c
        eel/eel-art-extensions.h
        eel/eel-art-gtk-extensions.c
        eel/eel-art-gtk-extensions.h
-       eel/eel-debug-drawing.c
-       eel/eel-debug-drawing.h
        eel/eel-debug.c
        eel/eel-debug.h
        eel/eel-gdk-extensions.c
@@ -425,11 +423,6 @@ Files: libcaja-private/caja-tree-view-drag-dest.c
 Copyright: 2002, Sun Microsystems, Inc.
 License: GPL-2+
 
-Files: libcaja-private/caja-users-groups-cache.c
-       libcaja-private/caja-users-groups-cache.h
-Copyright: 2006, Zbigniew Chyla
-License: GPL-2+
-
 Files: eel/eel-accessibility.h
        src/file-manager/fm-list-model.h
 Copyright: 2001-2002, Anders Carlsson
@@ -596,7 +589,6 @@ Files:  .tx/config
        data/*.xml
        data/*.xml.in
        docs/*
-       eel/ChangeLog
        eel/README
        eel/check-eel
        icons/*.svg
@@ -604,7 +596,6 @@ Files:  .tx/config
        libcaja-extension/caja-extension-i18n.h
        libcaja-extension/*.pc.in
        libcaja-private/README
-       libcaja-private/caja.convert
        libcaja-private/caja-icon-info.h
        libcaja-private/caja-icon-names.h
        libcaja-private/caja-recent.h
@@ -664,7 +655,6 @@ Comment:
  Appropriately apply licenses as found in COPYING or COPYING.LIBS.
 
 Files: po/*.po
-       po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 1999-2001, Eazel, Inc.
            1999-2008, Aŭtary Cajaa
