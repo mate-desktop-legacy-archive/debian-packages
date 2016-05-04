@@ -105,10 +105,6 @@ License: GPL-2+
 Comment:
  Using license as found in COPYING file.
 
-Files: man/mate-gsettings-toggle.1
-Copyright: 2014, Sander Sweers <infirit@gmail.com>
-License: GPL-2+
-
 Files: tools/mate-color-select.c
 Copyright: 2014, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
@@ -166,6 +162,15 @@ Files: .tx/config
        docs/reference/mate-desktop/mate-desktop-overrides.txt
        docs/reference/mate-desktop/mate-desktop-sections.txt
        docs/reference/mate-desktop/mate-desktop.types
+       icons/Makefile.am
+       icons/hicolor_apps_16x16_mate.png
+       icons/hicolor_apps_22x22_mate.png
+       icons/hicolor_apps_24x24_mate.png
+       icons/hicolor_apps_256x256_mate.png
+       icons/hicolor_apps_32x32_mate.png
+       icons/hicolor_apps_48x48_mate.png
+       icons/hicolor_apps_scalable_mate-symbolic.svg
+       icons/mate.svg
        libmate-desktop/Makefile.am
        libmate-desktop/mate-desktop-2.0-uninstalled.pc.in
        libmate-desktop/mate-desktop-2.0.pc.in
@@ -178,10 +183,9 @@ Files: .tx/config
        po/LINGUAS
        po/POTFILES.*
        schemas/mate-desktop.convert
-       schemas/org.mate.*.xml.in.in
+       schemas/org.mate.*.xml.in
        schemas/Makefile.am
        tools/Makefile.am
-       tools/mate-gsettings-toggle
        tools/mate-conf-import.desktop.in.in
        AUTHORS
        COPYING
