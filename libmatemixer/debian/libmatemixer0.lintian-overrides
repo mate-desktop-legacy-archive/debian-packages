@@ -1,0 +1,4 @@
+# libmatemixer backend plugin
+libmatemixer0: unused-shlib-entry-in-control-file libmatemixer pulse
+libmatemixer0: unused-shlib-entry-in-control-file libmatemixer alsa
+libmatemixer0: unused-shlib-entry-in-control-file libmatemixer null
