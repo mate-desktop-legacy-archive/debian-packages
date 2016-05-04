@@ -3,7 +3,7 @@ set -e
 
 write_cache()
 {
-if [ -x /usr/bin/gtk-update-icon-cache ]; then
+if [ -x `which gtk-update-icon-cache` ]; then
     if ! gtk-update-icon-cache --force --quiet /usr/share/icons/mate; then
         echo "WARNING: icon cache generation failed"
     fi

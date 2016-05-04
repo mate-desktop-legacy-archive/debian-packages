@@ -5,15 +5,16 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
                      icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
                      librsvg2-bin,
-                     mate-common (>= 1.12),
+                     mate-common (>= 1.14),
                      pkg-config,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-icon-theme
