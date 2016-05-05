@@ -1,6 +1,11 @@
 #!/usr/bin/make -f
 
 DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUIULDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 ifeq ($(DEB_HOST_ARCH_OS),linux)
         SYSTEMD_SUPPORT=--with-systemd
 else
