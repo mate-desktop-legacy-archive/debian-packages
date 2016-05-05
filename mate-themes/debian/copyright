@@ -116,7 +116,7 @@ Files: common/Makefile.am
        po/POTFILES.*
 Copyright: *No copyright*
 License: LGPL-2.1+
-Commment:
+Comment:
  Assuming license found in COPYING file.
 
 Files: cursor-themes/*
