@@ -275,7 +275,6 @@ Files: .tx/config
        data/msd-datetime-mechanism.1
        data/msd-locate-pointer.1
        data/mate-settings-daemon.1
-       data/mate-settings-daemon.convert
        Makefile.am
        mate-settings-daemon/Makefile.am
        mate-settings-daemon/mate-settings-manager.xml
