@@ -5,7 +5,9 @@ Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
+               dpkg-dev (>= 1.16.1.1),
                intltool,
                libcanberra-gtk-dev,
                libglib2.0-dev,
@@ -25,17 +27,17 @@ Build-Depends: debhelper (>= 9),
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common (>= 1.12),
+               mate-common (>= 1.14),
                yelp-tools,
                zenity,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: marco
 Architecture: any
 Depends: libmarco-private0 (= ${binary:Version}),
          marco-common (= ${source:Version}),
-         mate-desktop-common (>= 1.12),
+         mate-desktop-common (>= 1.14),
          zenity,
          ${misc:Depends},
          ${shlibs:Depends},
