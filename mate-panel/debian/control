@@ -5,9 +5,11 @@ Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
            Petr Baudis <pasky@ucw.cz>,
 Build-Depends: debhelper (>= 9),
                dh-python,
+               dpkg-dev (>= 1.16.1.1),
                gir1.2-atk-1.0,
                gir1.2-freedesktop,
                gir1.2-gdkpixbuf-2.0,
@@ -26,7 +28,7 @@ Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libgtk2.0-dev,
                libice-dev,
-               libmate-desktop-dev (>= 1.12),
+               libmate-desktop-dev (>= 1.14),
                libmate-menu-dev,
                libmateweather-dev,
                libpango1.0-dev,
@@ -38,10 +40,10 @@ Build-Depends: debhelper (>= 9),
                libxau-dev,
                libxrandr-dev,
                lsb-release,
-               mate-common (>= 1.12),
+               mate-common (>= 1.14),
                python,
                yelp-tools,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: mate-panel

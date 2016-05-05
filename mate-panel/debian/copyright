@@ -4,7 +4,7 @@ Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-panel
 
 Files: applets/wncklet/wncklet.c
-       mate-panel/mate-panel-applet-frame.h
+       mate-panel/panel-applet-frame.h
        mate-panel/panel-action-protocol.c
        mate-panel/panel-action-protocol.h
        mate-panel/panel-background.c
@@ -42,6 +42,8 @@ Files: applets/clock/system-timezone.h
        applets/clock/test-system-timezone.c
        mate-panel/libpanel-util/panel-cleanup.c
        mate-panel/libpanel-util/panel-cleanup.h
+       mate-panel/libpanel-util/panel-color.c
+       mate-panel/libpanel-util/panel-color.h
        mate-panel/libpanel-util/panel-error.h
        mate-panel/libpanel-util/panel-glib.h
        mate-panel/libpanel-util/panel-gtk.h
@@ -70,12 +72,12 @@ Files: applets/clock/calendar-window.c
 Copyright: 2007-2010, Vincent Untz <vuntz@gnome.org>
 License: GPL-2+
 
-Files: mate-panel/libmate-panel-applet-private/mate-panel-applets-manager-dbus.c
-       mate-panel/libmate-panel-applet-private/mate-panel-applets-manager-dbus.h
-       mate-panel/mate-panel-applet-info.c
-       mate-panel/mate-panel-applet-info.h
-       mate-panel/mate-panel-applets-manager.c
-       mate-panel/mate-panel-applets-manager.h
+Files: mate-panel/libmate-panel-applet-private/panel-applets-manager-dbus.c
+       mate-panel/libmate-panel-applet-private/panel-applets-manager-dbus.h
+       mate-panel/panel-applet-info.c
+       mate-panel/panel-applet-info.h
+       mate-panel/panel-applets-manager.c
+       mate-panel/panel-applets-manager.h
 Copyright: 2010, Carlos Garcia Campos <carlosgc@gnome.org>
            2010, Vincent Untz <vuntz@gnome.org>
 License: GPL-2+
@@ -91,10 +93,15 @@ License: GPL-2+
 
 Files: libmate-panel-applet/mate-panel-applet-factory.c
        libmate-panel-applet/mate-panel-applet-factory.h
-       mate-panel/libmate-panel-applet-private/mate-panel-applet-container.c
-       mate-panel/libmate-panel-applet-private/mate-panel-applet-container.h
+       mate-panel/libmate-panel-applet-private/panel-applet-container.c
+       mate-panel/libmate-panel-applet-private/panel-applet-container.h
 Copyright: 2010, Carlos Garcia Campos <carlosgc@gnome.org>
 License: LGPL-2+
+
+Files: libmate-panel-applet/panel-plug.c
+       libmate-panel-applet/panel-plug-private.h
+Copyright: 2016, Alberts Muktupāvels
+License: GPL-2+
 
 Files: mate-panel/libegg/eggdesktopfile.h
        mate-panel/libegg/eggsmclient-private.h
@@ -283,12 +290,12 @@ Copyright: 2001, Ximian, Inc.
            2010, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
-Files: mate-panel/mate-panel-applet-frame.c
+Files: mate-panel/panel-applet-frame.c
 Copyright: 2001, 2003, Sun Microsystems, Inc.
            2010, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
-Files: mate-panel/libmate-panel-applet-private/mate-panel-applet-frame-dbus.c
+Files: mate-panel/libmate-panel-applet-private/panel-applet-frame-dbus.c
 Copyright: 2001, 2003, Sun Microsystems, Inc.
            2010, Carlos Garcia Campos <carlosgc@gnome.org>
            2010, Vincent Untz <vuntz@gnome.org>
@@ -352,7 +359,7 @@ Copyright: 2003, Sun Microsystems, Inc.
            2004, Vincent Untz
 License: GPL-2+
 
-Files: mate-panel/libmate-panel-applet-private/mate-panel-applet-frame-dbus.h
+Files: mate-panel/libmate-panel-applet-private/panel-applet-frame-dbus.h
 Copyright: 2001-2003, Sun Microsystems, Inc.
            2010, Vincent Untz <vuntz@gnome.org>
 License: GPL-2+
@@ -486,7 +493,6 @@ Files: .tx/config
        applets/wncklet/*.xml
        applets/wncklet/*.ui
        data/Makefile.am
-       data/mate-panel.convert
        data/org.mate.panel.*.in
        data/default.layout
        data/fedora.layout
@@ -548,7 +554,7 @@ Files: .tx/config
        mate-panel/libegg/Makefile.am
        mate-panel/libpanel-util/Makefile.am
        mate-panel/libmate-panel-applet-private/Makefile.am
-       mate-panel/libmate-panel-applet-private/mate-panel-applet-mini.c
+       mate-panel/libmate-panel-applet-private/panel-applet-mini.c
        po/LINGUAS
        po/POTFILES.*
        autogen.sh
