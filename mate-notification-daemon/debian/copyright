@@ -54,11 +54,11 @@ Files: po/*.po
        po/quot.sed
 Copyright: 2005-2011, THE PACKAGE's COPYRIGHT HOLDER
 License: GPL-2+
+Comment:
  Using license information from COPYING file.
 
 Files: .tx/config
        data/Makefile.am
-       data/mate-notification-daemon.convert
        data/org.*
        data/icons/*
        src/themes/coco/Makefile.am
