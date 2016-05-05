@@ -174,7 +174,6 @@ Files: .tx/config
        data/*.ui
        data/*.desktop.in*
        data/*.xml.in*
-       data/*.convert
        data/mate-wm
        doc/dbus/config.xsl
        doc/dbus/dbus-introspect-docs.dtd
@@ -224,6 +223,7 @@ Files: .tx/config
        configure.ac
 Copyright: *No copyright*
 License: GPL-2+
+Comment:
  Using license from COPYING file.
 
 Files: debian/*

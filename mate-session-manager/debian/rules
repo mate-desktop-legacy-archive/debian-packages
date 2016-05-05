@@ -2,6 +2,10 @@
 
 DHFLAGS=--parallel
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 ifeq (kfreebsd,$(DEB_HOST_ARCH_OS))
 	SYSTEMD_OPTS := "--without-systemd"
