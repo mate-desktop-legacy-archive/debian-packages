@@ -1,3 +1,3 @@
 version=3
 http://git.mate-desktop.org/mate-themes/ \
-    snapshot/mate-themes-gtk3.16-(\d\.(?:[0-9]+|)[246890]\.\d)\.tar\.xz
+    snapshot/mate-themes-(\d\.(?:[0-9]+|)[246890]\.\d)\.tar\.xz
