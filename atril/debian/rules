@@ -2,6 +2,10 @@
 
 TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 DHFLAGS=--parallel
 DEB_ATRIL_FLAGS=
 ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)

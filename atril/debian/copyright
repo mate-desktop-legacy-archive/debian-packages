@@ -650,8 +650,6 @@ Files: .tx/config
        data/Makefile.am
        data/*.xml
        data/atril.1
-       data/atril.convert
-       data/atril.ico
        data/*.png
        data/*.in
        libdocument/Makefile.am
@@ -669,7 +667,6 @@ Files: .tx/config
        previewer/atril-previewer.1
        properties/Makefile.am
        shell/Makefile.am
-       shell/atril-icon.rc
        shell/ev-marshal.list
        test/Makefile.am
        test/*.py
