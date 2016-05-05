@@ -353,7 +353,6 @@ Files: .tx/config
        src/Makefile.am
        src/*.xml.in
        src/*.pc.in
-       src/*.convert
        src/*.desktop.in
        src/*.gschema.xml
        src/tools/*.png
