@@ -63,7 +63,7 @@ Depends: libglib2.0-dev,
 Breaks: libmatemenu-dev,
 Replaces: libmatemenu-dev,
 Provides: libmatemenu-dev,
-Description: implementation of the freedesktop menu specification for MATE (headers)
+Description: implementation of the freedesktop menu specification for MATE (development files)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
