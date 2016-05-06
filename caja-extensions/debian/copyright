@@ -28,7 +28,6 @@ Files: .tx/config
        image-converter/*.ui
        image-converter/libcaja-image-converter.caja-extension.in.in
        open-terminal/Makefile.am
-       open-terminal/*.convert
        open-terminal/*.in
        po/LINGUAS
        po/POTFILES.in
@@ -41,7 +40,6 @@ Files: .tx/config
        sendto/plugins/upnp/Makefile.am
        sendto/plugins/Makefile.am
        sendto/Makefile.am
-       sendto/caja-sendto-convert
        sendto/*.ui
        sendto/*.in
        share/Makefile.am
@@ -87,8 +85,8 @@ Files: sendto/caja-nste.h
 Copyright: 2004, 2005, Roberto Majadas
 License: GPL-2+
 
-Files: share/mate-file-manager-share.c
-       share/mate-file-manager-share.h
+Files: share/caja-share.c
+       share/caja-share.h
 Copyright: 2005, Ethium, Inc
 License: GPL-2+
 

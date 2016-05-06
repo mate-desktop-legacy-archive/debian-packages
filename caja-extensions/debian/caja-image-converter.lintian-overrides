@@ -2,4 +2,3 @@
 # debhelper's makeshlibs script
 caja-image-converter: pkg-has-shlibs-control-file-but-no-actual-shared-libs
 caja-image-converter: postinst-has-useless-call-to-ldconfig
-caja-image-converter: postrm-has-useless-call-to-ldconfig

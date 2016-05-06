@@ -2,4 +2,3 @@
 # debhelper's makeshlibs script
 caja-share: pkg-has-shlibs-control-file-but-no-actual-shared-libs
 caja-share: postinst-has-useless-call-to-ldconfig
-caja-share: postrm-has-useless-call-to-ldconfig
