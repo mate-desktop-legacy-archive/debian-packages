@@ -104,6 +104,7 @@ Files: bindings/python/eom.*
        autogen.sh
 Copyright: *No copyright*
 License: GPL-2+
+Comment:
  Using license from COPYING file.
 
 Files: cut-n-paste/toolbar-editor/egg-editable-toolbar.c
@@ -229,7 +230,6 @@ Files: .tx/config
        data/icons/48x48/actions/slideshow-play.png
        data/eom-preferences-dialog.ui
        data/eom.pc.in
-       data/eom.convert
        data/eom.css
        data/eom-toolbar.xml
        data/gtkrc
@@ -303,12 +303,10 @@ Files: .tx/config
        Makefile.am
        configure.ac
        NEWS
-       NEWS.gnome
        README
-       THANKS
-       TODO
 Copyright: *No copyright*
 License: GPL-2+
+Comment:
  Using license from COPYING file.
 
 Files: help/C/*
