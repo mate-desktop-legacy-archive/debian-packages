@@ -27,7 +27,6 @@ Files: .tx/config
        data/*.in
        po/POTFILES.*
        po/gnome-copyrights.txt
-       po/stamp-it
        src/Makefile.am
        AUTHORS
        COPYING
