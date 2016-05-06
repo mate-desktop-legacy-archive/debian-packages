@@ -10,14 +10,14 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: autotools-dev,
                debhelper (>= 9),
                dh-python,
-               mate-common (>= 1.12),
+               mate-common (>= 1.14),
                python (>= 2.7),
 Build-Depends-Indep: gettext,
                      intltool (>= 0.40.0),
                      libmate-menu-dev,
                      python-gi-dev,
 XS-Python-Version: >= 2.7
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: mozo
