@@ -6,7 +6,7 @@ Origin: vendor
 
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
-@@ -799,6 +799,15 @@ def columnize(list, display_list=None, d
+@@ -823,6 +823,15 @@
          console_print(line)
  
  @command

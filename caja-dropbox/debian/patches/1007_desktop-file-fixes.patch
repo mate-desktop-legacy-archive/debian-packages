@@ -1,0 +1,18 @@
+Description: Some .desktop file fixes
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Abtract:
+  - Add Keywords= field.
+  - Drop shebang line.
+
+--- a/data/caja-dropbox.desktop
++++ b/data/caja-dropbox.desktop
+@@ -1,4 +1,3 @@
+-#!/usr/bin/env xdg-open
+ [Desktop Entry]
+ Name=Caja Dropbox
+ GenericName=File Synchronizer For Mate
+@@ -9,3 +8,4 @@
+ Icon=caja-dropbox
+ Categories=Network;FileTransfer;
+ StartupNotify=false
++Keywords=dropbox,transfer,file,sharing,caja,MATE,filebrowser

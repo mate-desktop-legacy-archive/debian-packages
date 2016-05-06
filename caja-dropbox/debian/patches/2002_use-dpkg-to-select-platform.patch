@@ -10,7 +10,7 @@ Forwarded: not-needed
 
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
-@@ -139,13 +139,13 @@ def yes_no_question(question):
+@@ -145,13 +145,13 @@
  
  def plat():
      if sys.platform.lower().startswith('linux'):

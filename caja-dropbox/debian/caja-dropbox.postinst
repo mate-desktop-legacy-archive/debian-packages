@@ -7,7 +7,7 @@ UPDATENOTIFIERDIR=/var/lib/update-notifier/user.d
 case "$1" in
     configure)
 	unset DISPLAY # No GUI launched from postinst please
-	dropbox update || true
+	caja-dropbox update || true
 
         echo "Please restart all running instances of Caja, or you will experience problems. i.e. caja --quit"
 
@@ -37,7 +37,7 @@ DROPBOXEND
             cat > $UPDATENOTIFIERDIR/dropbox-start-required <<DROPBOXEND
 Name: Dropbox Start Required
 Priority: High
-Command: dropbox start -i
+Command: caja-dropbox start -i
 Terminal: False
 DontShowAfterReboot: True
 DisplayIf: dropbox running > /dev/null

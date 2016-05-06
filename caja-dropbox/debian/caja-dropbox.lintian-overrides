@@ -5,4 +5,3 @@ caja-dropbox: killall-is-dangerous prerm:8
 # debhelper's makeshlibs script
 caja-dropbox: pkg-has-shlibs-control-file-but-no-actual-shared-libs
 caja-dropbox: postinst-has-useless-call-to-ldconfig
-caja-dropbox: postrm-has-useless-call-to-ldconfig

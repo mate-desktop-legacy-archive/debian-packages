@@ -30,9 +30,10 @@ Comment:
  License: http://creativecommons.org/licenses/by-nd/3.0/
 
 Files: rst2man.py
-Copyright: grubert@users.sf.net
+Copyright: *No copyright*
 License: public-domain
- This module has been placed in the public domain.
+ This module has been placed in the public domain by
+ grubert@users.sf.net.
 
 Files: debian/*
 Copyright: 2012, Stefano Karapetsas <stefano@karapetsas.com>

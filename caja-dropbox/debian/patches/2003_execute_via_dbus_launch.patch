@@ -1,0 +1,23 @@
+Description: Execute via dbus-launch to ensure the tray icon works. Closes (LP: #1559249)
+Author: Martin Wimpress <code@flexion.org>
+Abstract:
+ This works around broken dropbox binary that will only activate the 
+ try icon on Ubuntu Unity. This patch works around that issue by
+ coercing QT to use GTK theming and executing dropbox via dbus-launch.
+ .
+ This patch is valid for Debian and Ubuntu alike.
+
+diff --git a/caja-dropbox.in b/caja-dropbox.in
+index 5026ab7..932d779 100755
+--- a/caja-dropbox.in
++++ b/caja-dropbox.in
+@@ -728,7 +728,8 @@ def start_dropbox():
+     if os.access(db_path, os.X_OK):
+         f = open("/dev/null", "w")
+         # we don't reap the child because we're gonna die anyway, let init do it
+-        a = subprocess.Popen([db_path], preexec_fn=os.setsid, cwd=os.path.expanduser("~"),
++        os.environ["QT_STYLE_OVERRIDE"] = "gtk"
++        a = subprocess.Popen(['dbus-launch', db_path], preexec_fn=os.setsid, cwd=os.path.expanduser("~"),
+                              stderr=sys.stderr, stdout=f, close_fds=True)
+ 
+         # in seconds

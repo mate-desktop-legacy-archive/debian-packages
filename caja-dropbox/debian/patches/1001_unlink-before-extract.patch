@@ -6,7 +6,7 @@ Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/caja-dropbox/+bug/818014
 
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
-@@ -271,6 +271,9 @@ class DownloadState(object):
+@@ -259,6 +259,9 @@
          archive = tarfile.open(fileobj=self.local_file, mode='r:gz')
          total_members = len(archive.getmembers())
          for i, member in enumerate(archive.getmembers()):

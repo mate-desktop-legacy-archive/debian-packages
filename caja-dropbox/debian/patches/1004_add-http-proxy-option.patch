@@ -7,7 +7,7 @@ Bug-Debian: http://bugs.debian.org/651065
 
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
-@@ -1351,8 +1351,15 @@ def main(argv):
+@@ -1382,8 +1382,15 @@
          os._exit(0)
          return
  

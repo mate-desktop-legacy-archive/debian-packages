@@ -8,20 +8,21 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
            Martin Wimpress <code@flexion.org>,
 Build-Depends: debhelper (>= 9),
-               dh-python,
-               libcaja-extension-dev (>= 1.12),
+               dh-autoreconf,
+               dpkg-dev (>= 1.16.1.1),
+               libcaja-extension-dev (>= 1.14),
                libglib2.0-dev (>= 2.14.0),
-               mate-common (>= 1.12),
+               mate-common (>= 1.14),
                python (>= 2.6.6-3~),
                python-docutils (>= 0.6),
                python-gtk2 (>= 2.12),
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: caja-dropbox
 Architecture: amd64 i386
-Pre-Depends: dropbox,
-Depends: policykit-1,
+Depends: dbus-x11,
+         policykit-1,
          procps,
          python,
          python-gpgme,

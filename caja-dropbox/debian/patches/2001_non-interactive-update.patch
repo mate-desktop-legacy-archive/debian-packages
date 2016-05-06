@@ -9,7 +9,7 @@ Origin: vendor
 
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
-@@ -526,9 +526,6 @@ else:
+@@ -548,9 +548,6 @@
          console_print(u"%s %s\n" % (INFO, LINK))
          GPG_WARNING_MSG = (u"\n%s" % GPG_WARNING) if not gpgme else u""
  
@@ -17,6 +17,5 @@ Origin: vendor
 -            return
 -
          download = DownloadState()
-
-         try:
  
+         try:
