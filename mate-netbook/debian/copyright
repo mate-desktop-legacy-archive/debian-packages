@@ -53,7 +53,6 @@ Files: .tx/config
        mate-window-picker-applet/*.in
        mate-window-picker-applet/*.xml
        maximus/Makefile.am
-       maximus/*.convert
        maximus/*.desktop
        maximus/*.in
        maximus/mate-maximus.1
@@ -65,7 +64,6 @@ Files: .tx/config
        Makefile.am
        NEWS
        README
-       TODO
        autogen.sh
        configure.ac
 Copyright: *No copyright*
