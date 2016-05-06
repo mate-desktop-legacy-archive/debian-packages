@@ -60,7 +60,6 @@ Files: data/icons/22x22/Makefile.am
        data/Makefile.am
        data/dav_groupfile
        data/dav_user_*.conf
-       data/*.convert
        data/*.in
        data/*.ui
        data/*.xml
@@ -82,7 +81,6 @@ Files: data/icons/22x22/Makefile.am
        ChangeLog
        MAINTAINERS
        NEWS
-       NEWS.GNOME
        README
 Copyright: *No copyright*
 License: GPL-2+
