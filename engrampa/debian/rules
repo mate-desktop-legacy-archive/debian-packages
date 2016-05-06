@@ -2,6 +2,10 @@
 
 DHFLAGS=--parallel
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 %:
 	dh $@ $(DHFLAGS)
 
@@ -19,6 +23,7 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--disable-packagekit \
 		--enable-magic \
+		--libexecdir=/usr/lib/engrampa \
 		--with-gtk=2.0
 
 override_dh_strip:

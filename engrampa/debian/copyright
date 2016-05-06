@@ -151,7 +151,6 @@ Files: .tx/config
        data/ui/Makefile.am
        data/ui/*.ui
        data/Makefile.am
-       data/*.convert
        data/*.in
        data/packages.match
        po/LINGUAS
@@ -217,6 +216,7 @@ License: LGPL-2+
 Files: src/egg-macros.h
 Copyright: 2001, Ben Tea Spoons, Inc.
 License: GPL-2+
+Comment:
  Using license from COPYING file.
 
 Files: po/*.po
