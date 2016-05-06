@@ -4,6 +4,7 @@ Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-user-guide/
 
 Files: mate-user-guide/*
+       po/*
 Copyright: Andre Klapper <a9016009@gmx.de>
            Changwoo Ryu <cwryu@debian.org>
            Claude Paroz <claude@2xlibre.net>
@@ -54,7 +55,8 @@ Copyright: Andre Klapper <a9016009@gmx.de>
            2007, Rosetta Contributors and Canonical Ltd
 License: GFDL-1.1+
 
-Files: po/LINGUAS
+Files: .tx/config
+       po/LINGUAS
        po/POTFILES.*
        AUTHORS
        COPYING
@@ -67,15 +69,19 @@ Files: po/LINGUAS
        configure.ac
        mate-user-guide.desktop.in.in
 Copyright: *No copyright*
-License: GPL-2+ or LGPL-2+
+License: GFDL-1.1+
 Comment:
- Appropriately assume either license found in COPYING or license found in
- COPYING.LIB file.
+ Assuming license as found in COPYING file.
 
 Files: debian/*
-Copyright: 2011-2013, Stefano Karapetsas <stefano@karapetsas.com>
-           2013-2015, Mike Gabriel <sunweaver@debian.org>
-License: GPL-2+ or LGPL-2+
+Copyright: 2015, Martin Wimpress <code@flexion.org>
+           2015, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+Files: debian/patches/*
+Copyright: 2015, Martin Wimpress <code@flexion.org>
+           2015, Mike Gabriel <sunweaver@debian.org>
+License: GFDL-1.1+
 
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
@@ -93,24 +99,6 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
-License: LGPL-2+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Library General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later version.
- .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- Library General Public License for more details.
- .
- You should have received a copy of the GNU Library General Public
- License along with this library; if not, write to the Free Software
- Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
- .
- On Debian systems, the complete text of the GNU Library General
- Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
 License: GFDL-1.1+
  Permission is granted to copy, distribute and/or modify this
