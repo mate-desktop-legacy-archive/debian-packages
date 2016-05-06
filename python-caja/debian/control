@@ -8,14 +8,15 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
            Martin Wimpress <code@flexion.org>,
 Build-Depends: debhelper (>= 9),
+               dpkg-dev (>= 1.16.1.1),
                gtk-doc-tools,
-               libcaja-extension-dev (>= 1.12),
-               mate-common (>= 1.12),
+               libcaja-extension-dev (>= 1.14),
+               mate-common (>= 1.14),
                python-dev,
                python-gobject-dev,
                libgirepository1.0-dev,
                quilt,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 
 Package: python-caja
@@ -26,7 +27,7 @@ Depends: gir1.2-caja,
          ${python:Depends},
          ${shlibs:Depends},
 Description: Python binding for Caja components
- Caja is the official file manager for the MATE desktop. It allows
+ Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
@@ -41,7 +42,7 @@ Depends: ${misc:Depends},
 Replaces: python-caja (<< 1.9.0),
 Breaks: python-caja (<< 1.9.0),
 Description: Python binding for Caja components (common files)
- Caja is the official file manager for the MATE desktop. It allows
+ Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
@@ -58,7 +59,7 @@ Architecture: any
 Depends: python-caja (= ${binary:Version}),
          ${misc:Depends},
 Description: Python binding for Caja components (debugging symbols)
- Caja is the official file manager for the MATE desktop. It allows
+ Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.

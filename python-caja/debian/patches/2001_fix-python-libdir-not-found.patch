@@ -1,3 +1,6 @@
+Description: Fix Python libdir not found on Debian et al.
+Author: Martin Wimpress <code@flexion.org>
+ 
 Index: python-caja/configure.ac
 ===================================================================
 --- python-caja.orig/configure.ac
