@@ -256,14 +256,14 @@ Copyright: 2002, Evan Martin
            2002, Paolo Maggi
 License: GPL-2+
 
+Files: plugins/trailsave/pluma-trail-save-plugin.c
+       plugins/trailsave/pluma-trail-save-plugin.h
+Copyright: 2015, daggerbot@gmail.com
+License: GPL-2+
+
 Files: pluma/plumatextregion.c
        pluma/plumatextregion.h
 Copyright: 2002, Gustavo Giráldez <gustavo.giraldez@gmx.net>
-License: GPL-2+
-
-Files: plugins/checkupdate/pluma-check-update-plugin.c
-       plugins/checkupdate/pluma-check-update-plugin.h
-Copyright: 2009, Ignacio Casal Quinteiro <icq@gnome.org>
 License: GPL-2+
 
 Files: plugin-loaders/python/pluma-plugin-python.c
@@ -362,7 +362,6 @@ License: LGPL-2+
 Files: data/*.in.in
        data/*.sh.in
        data/pluma.1
-       data/*.convert
        data/*.desktop.in.in
        data/*.pc.in
        data/*.xml.in
@@ -375,7 +374,7 @@ Files: data/*.in.in
        pixmaps/*.png
        pixmaps/*.ico
        plugins/*/*.desktop.in
-       plugins/*/*.xml.in.in
+       plugins/*/*.xml.in
        plugins/*/*.ui
        plugins/externaltools/data/*.desktop.in
        plugins/externaltools/data/*.tool.in
@@ -429,6 +428,7 @@ Files: data/*.in.in
        plugins/quickopen/Makefile.am
        plugins/spell/Makefile.am
        plugins/spell/pluma-spell-marshal.list
+       plugins/trailsave/Makefile.am
        plugins/Makefile.am
        plugins/modelines/Makefile.am
        plugins/externaltools/tools/Makefile.am
@@ -437,7 +437,6 @@ Files: data/*.in.in
        plugins/externaltools/scripts/Makefile.am
        plugins/taglist/Makefile.am
        plugins/changecase/Makefile.am
-       plugins/checkupdate/Makefile.am
        plugins/snippets/Makefile.am
        plugins/snippets/data/lang/Makefile.am
        plugins/snippets/data/Makefile.am
