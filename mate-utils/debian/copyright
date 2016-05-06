@@ -59,49 +59,49 @@ Files: baobab/src/baobab-prefs.c
 Copyright: 2005-2006, Fabio Marzocca <thesaltydog@gmail.com>
 License: GPL-2+
 
-Files: mate-screenshot/screenshot-dialog.c
-       mate-screenshot/screenshot-dialog.h
-       mate-screenshot/screenshot-save.c
-       mate-screenshot/screenshot-save.h
-       mate-screenshot/screenshot-shadow.c
-       mate-screenshot/screenshot-shadow.h
-       mate-screenshot/screenshot-utils.h
+Files: mate-screenshot/src/screenshot-dialog.c
+       mate-screenshot/src/screenshot-dialog.h
+       mate-screenshot/src/screenshot-save.c
+       mate-screenshot/src/screenshot-save.h
+       mate-screenshot/src/screenshot-shadow.c
+       mate-screenshot/src/screenshot-shadow.h
+       mate-screenshot/src/screenshot-utils.h
 Copyright: 2001-2006, Jonathan Blandford <jrb@alum.mit.edu>
 License: GPL-2+
 
-Files: logview/logview-log.c
-       logview/logview-log.h
-       logview/logview-utils.c
-       logview/logview-utils.h
-       logview/logview-window.c
-       logview/logview-window.h
+Files: logview/src/logview-log.c
+       logview/src/logview-log.h
+       logview/src/logview-utils.c
+       logview/src/logview-utils.h
+       logview/src/logview-window.c
+       logview/src/logview-window.h
 Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
-Files: logview/logview-about.h
-       logview/logview-findbar.c
-       logview/logview-findbar.h
-       logview/logview-loglist.c
-       logview/logview-loglist.h
-       logview/logview-prefs.h
+Files: logview/src/logview-about.h
+       logview/src/logview-findbar.c
+       logview/src/logview-findbar.h
+       logview/src/logview-loglist.c
+       logview/src/logview-loglist.h
+       logview/src/logview-prefs.h
 Copyright: 2004-2005, Vincent Noel <vnoel@cox.net>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
-Files: gsearchtool/gsearchtool-callbacks.c
-       gsearchtool/gsearchtool-callbacks.h
-       gsearchtool/gsearchtool-support.c
-       gsearchtool/gsearchtool-support.h
-       gsearchtool/gsearchtool.c
-       gsearchtool/gsearchtool.h
+Files: gsearchtool/src/gsearchtool-callbacks.c
+       gsearchtool/src/gsearchtool-callbacks.h
+       gsearchtool/src/gsearchtool-support.c
+       gsearchtool/src/gsearchtool-support.h
+       gsearchtool/src/gsearchtool.c
+       gsearchtool/src/gsearchtool.h
 Copyright: 1998-2002, Free Software Foundation, Inc.
 License: GPL-2+
 
-Files: logview/logview-app.c
-       logview/logview-app.h
-       logview/logview-manager.c
-       logview/logview-manager.h
+Files: logview/src/logview-app.c
+       logview/src/logview-app.h
+       logview/src/logview-manager.c
+       logview/src/logview-manager.h
 Copyright: 2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
@@ -112,23 +112,23 @@ Files: baobab/src/baobab-chart.c
 Copyright: 2006-2008, Igalia
 License: GPL-2+
 
-Files: logview/logview-filter-manager.c
-       logview/logview-filter-manager.h
-       logview/logview-filter.c
-       logview/logview-filter.h
+Files: logview/src/logview-filter-manager.c
+       logview/src/logview-filter-manager.h
+       logview/src/logview-filter.c
+       logview/src/logview-filter.h
 Copyright: 2009, Johannes Schmid <jhs@gnome.org>
 License: GPL-3+
 
-Files: libeggsmclient/eggdesktopfile.h
-       libeggsmclient/eggsmclient-private.h
-       libeggsmclient/eggsmclient.c
-       libeggsmclient/eggsmclient.h
+Files: gsearchtool/libeggsmclient/eggdesktopfile.h
+       gsearchtool/libeggsmclient/eggsmclient-private.h
+       gsearchtool/libeggsmclient/eggsmclient.c
+       gsearchtool/libeggsmclient/eggsmclient.h
 Copyright: 2007, Novell, Inc.
 License: LGPL-2+
 
-Files: mate-screenshot/screenshot-utils.c
-       mate-screenshot/screenshot-xfer.c
-       mate-screenshot/screenshot-xfer.h
+Files: mate-screenshot/src/screenshot-utils.c
+       mate-screenshot/src/screenshot-xfer.c
+       mate-screenshot/src/screenshot-xfer.h
 Copyright: 2001, 2006, Jonathan Blandford <jrb@alum.mit.edu>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
@@ -181,30 +181,30 @@ Files: mate-dictionary/src/gdict-about.c
 Copyright: 2005-2006, Emmanuele Bassi
 License: GPL-2+
 
-Files: logview/logview-prefs.c
+Files: logview/src/logview-prefs.c
 Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
            2004, Vincent Noel
            2006, Emmanuele Bassi
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
-Files: mate-screenshot/mate-screenshot.c
+Files: mate-screenshot/src/mate-screenshot.c
 Copyright: 2001, Jonathan Blandford <jrb@alum.mit.edu>
            2006, Emmanuele Bassi <ebassi@gnome.org>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
-Files: logview/logview-main.c
+Files: logview/src/logview-main.c
 Copyright: 2004-2008, Vincent Noel, Cosimo Cecchi and others
 License: GPL-2+
 
-Files: libeggsmclient/eggsmclient-xsmp.c
+Files: gsearchtool/libeggsmclient/eggsmclient-xsmp.c
 Copyright: 1998, Carsten Schaar
            1998, The Open Group
            2007, Novell, Inc.
 License: LGPL-2+
 
-Files: libeggsmclient/eggdesktopfile.c
+Files: gsearchtool/libeggsmclient/eggdesktopfile.c
 Copyright: 1999, 2000, Red Hat, Inc.
            2001, George Lebl
            2007, Novell, Inc.
@@ -392,7 +392,6 @@ Files: .tx/config
        baobab/data/Makefile.am
        baobab/data/*.ui
        baobab/data/*.1
-       baobab/data/*.convert
        baobab/data/*.in
        baobab/AUTHORS
        baobab/ChangeLog
@@ -409,30 +408,28 @@ Files: .tx/config
        gsearchtool/data/Makefile.am
        gsearchtool/data/*.png
        gsearchtool/libmateui-deprecated/Makefile.am
-       gsearchtool/libmateui-deprecated/README
        gsearchtool/AUTHORS
        gsearchtool/ChangeLog
        gsearchtool/Makefile.am
        gsearchtool/*.1
-       gsearchtool/*.convert
        gsearchtool/*.in
-       libeggsmclient/Makefile.am
-       libeggsmclient/README
-       logview/data/Makefile.am
+       gsearchtool/src/Makefile.am
+       gsearchtool/libeggsmclient/Makefile.am
        logview/data/*.1
-       logview/data/*.convert
        logview/data/*.in
        logview/data/*.ui
        logview/data/*.xml
-       logview/tests/Makefile.am
-       logview/tests/test-reader.c
+       logview/data/icons/*
+       logview/data/Makefile.am
+       logview/src/Makefile.am
+       logview/src/logview-marshal.list
+       logview/src/tests/Makefile.am
+       logview/src/tests/test-reader.c
        logview/ChangeLog
        logview/Makefile.am
        logview/TODO
-       logview/logview-marshal.list
        mate-dictionary/data/Makefile.am
        mate-dictionary/data/*.1
-       mate-dictionary/data/*.convert
        mate-dictionary/data/*.in
        mate-dictionary/data/*.ui
        mate-dictionary/data/*.xml
@@ -455,9 +452,10 @@ Files: .tx/config
        mate-screenshot/ChangeLog
        mate-screenshot/Makefile.am
        mate-screenshot/*.1
-       mate-screenshot/*.convert
        mate-screenshot/*.in
        mate-screenshot/*.ui
+       mate-screenshot/data/Makefile.am
+       mate-screenshot/src/Makefile.am
        po/LINGUAS
        po/POTFILES.*
        AUTHORS
