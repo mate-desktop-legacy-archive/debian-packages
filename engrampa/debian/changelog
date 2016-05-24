@@ -1,3 +1,9 @@
+engrampa (1.14.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 24 May 2016 10:14:36 +0300
+
 engrampa (1.14.0-1) unstable; urgency=medium
 
   * New upstream release
