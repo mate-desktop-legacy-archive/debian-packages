@@ -21,7 +21,7 @@ Build-Depends: debhelper (>= 9),
                libsensors4-dev [!kfreebsd-i386 !kfreebsd-amd64],
                libtool,
                libxml-parser-perl,
-               libxnvctrl-dev [amd64 armhf i386] | nvidia-settings [amd64 armhf i386],
+               libxnvctrl-dev [amd64 armhf i386],
                mate-common (>= 1.14),
                yelp-tools,
 Standards-Version: 3.9.7
@@ -71,8 +71,7 @@ Description: Display readings from hardware sensors in your MATE panel (common f
 
 Package: mate-sensors-applet-nvidia
 Architecture: amd64 armhf i386
-Depends: libxnvctrl0 | nvidia-settings,
-         mate-sensors-applet (= ${binary:Version}),
+Depends: mate-sensors-applet (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
