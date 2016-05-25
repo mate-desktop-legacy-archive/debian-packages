@@ -10,7 +10,6 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
                docbook-xml,
                dpkg-dev (>= 1.16.1.1),
-               fglrx | fglrx-driver,
                intltool,
                libatasmart-dev [!kfreebsd-i386 !kfreebsd-amd64],
                libcairo2-dev,
@@ -35,8 +34,7 @@ Depends: libmate-sensors-applet-plugin0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: hddtemp,
-Suggests: mate-sensors-applet-ati,
-          mate-sensors-applet-nvidia,
+Suggests: mate-sensors-applet-nvidia,
 Description: Display readings from hardware sensors in your MATE panel
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
@@ -53,7 +51,6 @@ Description: Display readings from hardware sensors in your MATE panel
   * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
   * Linux kernel Omnibook module
   * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
-  * ATI graphics cards (supplied with mate-sensors-applet-ati package)
   * Linux kernel sonypi module (for Sony Vaio laptops)
  .
  Alarms can be set for each sensor to notify the user once a certain high or
@@ -102,19 +99,6 @@ Description: Display readings from hardware sensors in your MATE panel (NVIDIA, 
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
-
-Package: mate-sensors-applet-ati
-Architecture: any
-Depends: fglrx | fglrx-driver,
-         mate-sensors-applet (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends},
-Description: Display readings from hardware sensors in your MATE panel (ATI sensors)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains plugin for ATI graphics cards.
 
 Package: libmate-sensors-applet-plugin0
 Architecture: any
