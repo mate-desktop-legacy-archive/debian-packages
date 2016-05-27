@@ -39,6 +39,7 @@ override_dh_auto_configure:
 		--enable-introspection \
 		--disable-static \
 		--with-gtk=2.0 \
+		--libexecdir=/usr/lib/atril \
 		$(DEB_ATRIL_FLAGS)
 
 override_dh_strip:
