@@ -445,7 +445,6 @@ Files: capplets/about-me/icons/Makefile.am
        TODO
        autogen.sh
        configure.ac
-       *.convert
        org.mate.*.xml.in
 Copyright: *No copyright*
 License: GPL-2+
