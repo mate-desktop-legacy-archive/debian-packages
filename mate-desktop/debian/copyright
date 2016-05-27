@@ -165,8 +165,8 @@ Files: .tx/config
        icons/hicolor_apps_256x256_mate.png
        icons/hicolor_apps_32x32_mate.png
        icons/hicolor_apps_48x48_mate.png
+       icons/hicolor_apps_scalable_mate.svg
        icons/hicolor_apps_scalable_mate-symbolic.svg
-       icons/mate.svg
        libmate-desktop/Makefile.am
        libmate-desktop/mate-desktop-2.0-uninstalled.pc.in
        libmate-desktop/mate-desktop-2.0.pc.in
