@@ -27,7 +27,8 @@ Homepage: http://www.mate-desktop.org
 Package: mate-terminal
 Multi-Arch: foreign
 Architecture: any
-Depends: mate-desktop-common,
+Depends: gsettings-desktop-schemas,
+         mate-desktop-common,
          mate-terminal-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
