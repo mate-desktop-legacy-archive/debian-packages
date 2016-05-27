@@ -1,5 +1,4 @@
 # caja extensions in /usr/lib/*/caja/extensions-2.0/ erroneously trigger
 # debhelper's makeshlibs script
-mate-user-share: pkg-has-shlibs-control-file-but-no-actual-shared-libs
 mate-user-share: postinst-has-useless-call-to-ldconfig
 mate-user-share: postrm-has-useless-call-to-ldconfig
