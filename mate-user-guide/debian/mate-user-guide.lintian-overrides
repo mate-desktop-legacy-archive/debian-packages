@@ -1,2 +1,5 @@
 # we hard-depend on yelp for displaying the mate-user-guide
 mate-user-guide: desktop-command-not-in-package usr/share/applications/mate-user-guide.desktop yelp
+
+# the mate-user-guide menu entry is hard-coded into the base of the Applications - Places - *System* menu...
+mate-user-guide: desktop-entry-lacks-main-category usr/share/applications/mate-user-guide.desktop
