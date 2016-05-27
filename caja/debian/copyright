@@ -583,6 +583,7 @@ Files:  .tx/config
        data/patterns/*.png
        data/patterns/*.jpg
        data/caja.xml.in
+       data/*.css
        data/*.desktop*
        data/*.service*
        data/*.placeholder
