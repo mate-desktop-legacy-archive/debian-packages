@@ -224,7 +224,7 @@ License: GPL-2+
 Files: netspeed/src/backend.c
        netspeed/src/backend.h
        netspeed/src/netspeed.c
-Copyright: 2006-2008 Jörgen Scheibengruber <mfcn@gmx.de>
+Copyright: 2006-2008, Jörgen Scheibengruber <mfcn@gmx.de>
            2014 Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
@@ -234,19 +234,18 @@ Files: netspeed/help/C/index.docbook
        netspeed/help/*/figures/*.png
        netspeed/help/*/*.po
        netspeed/help/*/*.xml
-Copyright: 2006-2008 Jörgen Scheibengruber <mfcn@gmx.de>
-           2008 Jonh Wendell <jwendell@gnome.org>
-           2008 Claude Paroz <claude@2xlibre.net>
-           2008 Simos Xenitellis <simos@gnome.org>
-           2008 Jorge Gonzalez <jorgegonz@svn.gnome.org>
-           2008 Jaap Haitsma <jaap@haitsma.org>
-           2006 Daniel Nylander <po@danielnylander.se>
+Copyright: 2006-2008, Jörgen Scheibengruber <mfcn@gmx.de>
+           2008, Jonh Wendell <jwendell@gnome.org>
+           2008, Claude Paroz <claude@2xlibre.net>
+           2008, Simos Xenitellis <simos@gnome.org>
+           2008, Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           2008, Jaap Haitsma <jaap@haitsma.org>
+           2006, Daniel Nylander <po@danielnylander.se>
 License: GFDL-1.1+
 
 Files: netspeed/icons/scalable/apps/mate-netspeed-applet.svg
 Copyright: Jimmac (http://jimmac.musichall.cz/)
 License: CC-BY-SA
-
 
 Files: stickynotes/stickynotes.c
        stickynotes/stickynotes.h
