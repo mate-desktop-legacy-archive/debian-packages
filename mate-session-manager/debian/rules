@@ -32,7 +32,6 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--localstatedir=/var/lib \
 		--libexecdir=/usr/lib \
-		--with-gtk=2.0 \
 		$(SYSTEMD_OPTS)
 
 override_dh_strip:
