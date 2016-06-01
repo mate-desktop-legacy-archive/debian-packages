@@ -23,8 +23,7 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--disable-packagekit \
 		--enable-magic \
-		--libexecdir=/usr/lib/engrampa \
-		--with-gtk=2.0
+		--libexecdir=/usr/lib/engrampa
 
 override_dh_strip:
 	dh_strip --dbg-package=engrampa-dbg
