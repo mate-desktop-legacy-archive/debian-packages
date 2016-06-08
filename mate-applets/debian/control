@@ -87,8 +87,10 @@ Package: mate-applets-common
 Architecture: all
 Depends: ${misc:Depends},
 Replaces: mate-applets (<< 1.9.0),
+          mate-netspeed (<< 1.13.0),
           mate-netspeed-common (<< 1.13.0),
 Breaks: mate-applets (<< 1.9.0),
+        mate-netspeed (<< 1.13.0),
         mate-netspeed-common (<< 1.13.0),
 Description: Various applets for the MATE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
