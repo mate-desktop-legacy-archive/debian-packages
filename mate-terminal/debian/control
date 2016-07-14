@@ -19,7 +19,7 @@ Build-Depends: debhelper (>= 9),
                libsm-dev,
                libvte-2.91-dev,
                libx11-dev,
-               mate-common (>= 1.14),
+               mate-common (>= 1.15),
                yelp-tools,
 Homepage: http://www.mate-desktop.org
 

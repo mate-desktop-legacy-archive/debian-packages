@@ -15,7 +15,7 @@ Build-Depends: autotools-dev,
                libgtk-3-dev,
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
-               mate-common (>= 1.14),
+               mate-common (>= 1.15),
                pkg-config,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/

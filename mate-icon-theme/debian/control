@@ -12,7 +12,7 @@ Build-Depends-Indep: gettext,
                      icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
                      librsvg2-bin,
-                     mate-common (>= 1.14),
+                     mate-common (>= 1.15),
                      pkg-config,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
