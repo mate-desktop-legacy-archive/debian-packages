@@ -1,3 +1,9 @@
+mate-netbook (1.15.1-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 27 Jul 2016 18:14:09 +0300
+
 mate-netbook (1.15.0-1) unstable; urgency=medium
 
   * New upstream development release
