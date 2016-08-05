@@ -1,3 +1,9 @@
+caja (1.15.3-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Fri, 05 Aug 2016 16:02:16 +0300
+
 caja (1.15.2-1) unstable; urgency=medium
 
   * New upstream development release
