@@ -1,3 +1,9 @@
+mate-applets (1.14.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 16 Aug 2016 14:48:42 +0300
+
 mate-applets (1.14.0-1) unstable; urgency=medium
 
   * New upstream release
