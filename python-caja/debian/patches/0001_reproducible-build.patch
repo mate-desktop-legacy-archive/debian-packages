@@ -1,0 +1,14 @@
+Description: Make build reproducible.
+Author: Chris Lamb <lamby@debian.org>
+
+--- python-caja-1.10.0.orig/docs/Makefile.am
++++ python-caja-1.10.0/docs/Makefile.am
+@@ -86,7 +86,7 @@ REFERENCE_DEPS = 	\
+ if ENABLE_GTK_DOC
+ 
+ reference/builddate.xml: $(REFERENCE_DEPS)
+-	$(PYTHON) -c 'import datetime; print datetime.date.today()' > $@
++	$(PYTHON) -c "import os, time, datetime; print datetime.datetime.utcfromtimestamp(int(os.environ.get('SOURCE_DATE_EPOCH', time.time()))).strftime('%Y-%m-%d')" > $@
+ 
+ $(HTML_FILES): $(REFERENCE_DEPS)
+ 	xsltproc --nonet --xinclude -o $(BUILDDIR)/html/ \
