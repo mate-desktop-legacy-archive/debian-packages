@@ -333,12 +333,15 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
+Files: doc/creating_themes/C/index.docbook
+Copyright: 2008, Thomas Thurman
+License: GFDL-1.2+
+
 Files: .tx/config
        doc/man/Makefile.am
        doc/man/*.1
        doc/Makefile.am
        doc/creating_themes/Makefile.am
-       doc/creating_themes/C/index.docbook
        doc/*.txt
        po/LINGUAS
        po/POTFILES.in
