@@ -1,3 +1,9 @@
+mate-desktop-environment (1.16.0) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 22 Sep 2016 17:36:35 +0300
+
 mate-desktop-environment (1.14.0) unstable; urgency=medium
 
   * Update for MATE 1.14.
