@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
-
 DHFLAGS=--parallel
 
 %:
@@ -9,7 +7,6 @@ DHFLAGS=--parallel
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la 
-	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-mate-polkit.install.in > debian/gir1.2-mate-polkit.install
 	dh_install --fail-missing
 
 override_dh_auto_configure:
