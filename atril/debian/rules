@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
-
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
@@ -21,7 +19,6 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
-	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-atril.install.in > debian/gir1.2-atril.install
 	dh_install --fail-missing
 
 override_dh_auto_test:
