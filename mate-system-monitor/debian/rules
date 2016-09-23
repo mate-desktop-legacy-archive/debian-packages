@@ -6,6 +6,13 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
+DEB_HOST_ARCH_OS ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+ifneq (,$(findstring linux,$(DEB_HOST_ARCH_OS)))
+  CONFIGURE_SYSTEMD = --enable-systemd
+else
+  CONFIGURE_SYSTEMD = --disable-systemd
+endif
+
 %:
 	dh $@ $(DHFLAGS)
 
@@ -20,7 +27,7 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/${pkgname} \
 		--localstatedir=/var \
 		--disable-static \
-		--enable-systemd
+		$(CONFIGURE_SYSTEMD)
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-system-monitor-dbg
