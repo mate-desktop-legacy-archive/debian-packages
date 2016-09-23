@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
-
 DHFLAGS=--parallel
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
@@ -15,7 +13,6 @@ override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/
-	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-caja.install.in > debian/gir1.2-caja.install
 	dh_install --fail-missing
 
 override_dh_auto_configure:
