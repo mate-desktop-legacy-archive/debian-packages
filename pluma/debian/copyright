@@ -457,10 +457,8 @@ Files: data/*.in.in
        AUTHORS
        COPYING
        ChangeLog
-       HACKING
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
        autogen.sh
        configure.ac

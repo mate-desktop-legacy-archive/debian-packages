@@ -71,8 +71,6 @@ Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
        src/eom-window.c
        src/eom-window.h
        src/main.c
-       src/uta.c
-       src/uta.h
        src/zoom.c
        src/zoom.h
 Copyright: 2000-2009, The Free Software Foundation, Inc.
@@ -181,8 +179,6 @@ Copyright: 1997-2009, Thomas G. Lane
 License: BSD-3-clause~IJG
 
 Files: po/*.po
-       po/cmn.po
-       po/en_US.po
        po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 2000-2009, Free Software Foundation, Inc.
@@ -299,7 +295,6 @@ Files: .tx/config
        AUTHORS
        COPYING
        ChangeLog
-       HACKING
        Makefile.am
        configure.ac
        NEWS

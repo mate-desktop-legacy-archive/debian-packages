@@ -83,7 +83,6 @@ Files: .tx/config
        ChangeLog
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
 Copyright: *No copyright*
 License: GPL-2+

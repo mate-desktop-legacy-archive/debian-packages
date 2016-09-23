@@ -74,14 +74,10 @@ Files: libcaja-private/caja-bookmark.c
        libcaja-private/caja-global-preferences.h
        libcaja-private/caja-icon-canvas-item.c
        libcaja-private/caja-icon-canvas-item.h
-       libcaja-private/caja-idle-queue.c
-       libcaja-private/caja-idle-queue.h
        libcaja-private/caja-keep-last-vertical-box.c
        libcaja-private/caja-keep-last-vertical-box.h
        libcaja-private/caja-lib-self-check-functions.c
        libcaja-private/caja-lib-self-check-functions.h
-       libcaja-private/caja-merged-directory.c
-       libcaja-private/caja-merged-directory.h
        libcaja-private/caja-metadata.h
        libcaja-private/caja-mime-actions.c
        libcaja-private/caja-mime-actions.h
@@ -111,8 +107,6 @@ Files: libcaja-private/caja-bookmark.c
        src/caja-location-bar.h
        src/caja-location-entry.c
        src/caja-location-entry.h
-       src/caja-navigation-bar.c
-       src/caja-navigation-bar.h
        src/caja-navigation-window-menus.c
        src/caja-notes-viewer.c
        src/caja-property-browser.c
@@ -287,8 +281,6 @@ License: LGPL-2+
 
 Files: eel/eel-canvas-rect-ellipse.c
        eel/eel-canvas-rect-ellipse.h
-       eel/eel-canvas-util.c
-       eel/eel-canvas-util.h
        eel/eel-canvas.c
        eel/eel-canvas.h
 Copyright: 1997-2000, Free Software Foundation, Inc.
@@ -639,15 +631,10 @@ Files:  .tx/config
        COPYING.LIB
        ChangeLog
        HACKING
-       MAINTAINERS
        Makefile.am
        Makefile.shared
        NEWS
        README
-       README.commits
-       THANKS
-       TODO
-       add-include-prefix
        autogen.sh
        configure.ac
 Copyright: *No copyright*

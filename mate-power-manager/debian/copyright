@@ -3,14 +3,10 @@ Upstream-Name: mate-power-manager
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-power-manager/
 
-Files: applets/brightness/egg-dbus-monitor.c
-       applets/brightness/egg-dbus-monitor.h
-       applets/brightness/egg-debug.c
+Files: applets/brightness/egg-debug.c
        applets/brightness/egg-debug.h
        applets/brightness/gpm-common.c
        applets/brightness/gpm-common.h
-       applets/inhibit/egg-dbus-monitor.c
-       applets/inhibit/egg-dbus-monitor.h
        applets/inhibit/egg-debug.c
        applets/inhibit/egg-debug.h
        applets/inhibit/gpm-common.c
@@ -21,10 +17,6 @@ Files: applets/brightness/egg-dbus-monitor.c
        src/egg-color.h
        src/egg-console-kit.c
        src/egg-console-kit.h
-       src/egg-dbus-monitor.c
-       src/egg-dbus-monitor.h
-       src/egg-dbus-proxy.c
-       src/egg-dbus-proxy.h
        src/egg-debug.c
        src/egg-debug.h
        src/egg-discrete.c
@@ -159,13 +151,10 @@ Files: .tx/config
        src/*.xml
        AUTHORS
        COPYING
-       ChangeLog
-       HACKING
+       ChangeLog       
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
-       TODO
        autogen.sh
        configure.ac
 Copyright: *No copyright*
@@ -202,7 +191,7 @@ Copyright: 2003, David Zeuthen, <david@fubar.dk>
            2005-2007, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: src/gpm-stock-icons.h
+Files: src/gpm-icon-names.h
 Copyright: 2002, Jorn Baayen
            2003-2004, Colin Walters <walters@verbum.org>
            2005-2007, Richard Hughes <richard@hughsie.com>

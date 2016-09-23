@@ -259,9 +259,12 @@ Copyright: 2007, Carlos Garnacho <carlos@imendio.com>
 License: LGPL-2+
 
 Files: cut-n-paste/synctex/synctex_parser.h
+       cut-n-paste/synctex/synctex_parser_local.h
        cut-n-paste/synctex/synctex_parser_utils.c
        cut-n-paste/synctex/synctex_parser_utils.h
-Copyright: 2008-2010, jerome DOT laurens AT u-bourgogne DOT fr
+       cut-n-paste/synctex/synctex_parser_version.txt
+       cut-n-paste/synctex/update-synctex-from-TL.sh
+Copyright: 2008-2011, jerome DOT laurens AT u-bourgogne DOT fr
 License: Expat
 
 Files: backend/pdf/ev-poppler.cc
@@ -300,11 +303,6 @@ Files: libdocument/ev-module.c
 Copyright: 2003, Marco Pesenti Gritti
            2003-2004, Christian Persch
            2005, Paolo Maggi
-License: GPL-2+
-
-Files: backend/dvi/texmfcnf.c
-       backend/dvi/texmfcnf.h
-Copyright: 2010, Hib Eris <hib@hiberis.nl>
 License: GPL-2+
 
 Files: backend/djvu/djvu-links.c
@@ -682,9 +680,7 @@ Files: .tx/config
        ChangeLog
        Makefile.am
        NEWS
-       NEWS.gnome
        README
-       TODO
        autogen.sh
        atril-document.*
        atril-view.*

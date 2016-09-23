@@ -52,8 +52,6 @@ Files: .tx/config
        geyes/themes/*/*
        geyes/AUTHORS
        geyes/Makefile.am
-       geyes/NEWS
-       geyes/README
        geyes/README.themes
        geyes/*.in
        geyes/*.xml
@@ -174,7 +172,6 @@ Files: .tx/config
        ChangeLog
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
        autogen.sh
        configure.ac

@@ -148,13 +148,14 @@ Files: .tx/config
        data/icons/24x24/Makefile.am
        data/icons/24x24/apps/Makefile.am
        data/icons/24x24/apps/*.png
-       data/ui/Makefile.am
-       data/ui/*.ui
        data/Makefile.am
        data/*.in
        data/packages.match
        po/LINGUAS
        po/POTFILES.*
+       src/engrampa.gresource.xml
+       src/ui/Makefile.am
+       src/ui/*.ui       
        src/sh/Makefile.am
        src/sh/isoinfo.sh
        src/Makefile.am
@@ -165,13 +166,10 @@ Files: .tx/config
        AUTHORS
        COPYING
        HACKING
-       MAINTAINERS
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
        README-DISTRIBUTIONS
-       TODO
        autogen.sh
        configure.ac
 Copyright: *No copyright*

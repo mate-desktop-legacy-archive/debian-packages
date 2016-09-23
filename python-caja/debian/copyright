@@ -32,7 +32,6 @@ Files: .tx/config
        ChangeLog
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
        caja-python.pc.in
        configure.ac

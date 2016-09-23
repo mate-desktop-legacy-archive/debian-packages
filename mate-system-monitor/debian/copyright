@@ -47,7 +47,6 @@ Files: .tx/config
        pixmaps/*.svg
        pixmaps/*.png
        src/Makefile.am
-       po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
        po/gnome-copyrights.txt

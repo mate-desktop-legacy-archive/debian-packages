@@ -186,8 +186,6 @@ Files: .tx/config
        COPYING-DOCS
        COPYING.LIB
        ChangeLog
-       HACKING
-       MAINTAINERS
        Makefile.am
        NEWS
        README

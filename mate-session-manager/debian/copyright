@@ -213,7 +213,6 @@ Files: .tx/config
        COPYING
        ChangeLog
        HACKING
-       MAINTAINERS
        Makefile.am
        NEWS
        README

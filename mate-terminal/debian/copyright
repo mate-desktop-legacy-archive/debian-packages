@@ -57,6 +57,13 @@ Copyright: 2001, Havoc Pennington
            2007-2010 Christian Persch
 License: GPL-3+
 
+Files: src/terminal-close-button.c
+       src/terminal-close-button.h
+Copyright: 2010 Paolo Borelli
+           2011 Ignacio Casal Quinteir
+           2016 Wolfgang Ulbrich
+License: GPL-3+
+
 Files: src/profile-editor.c
        src/terminal-profile.c
 Copyright: 2001-2002, Havoc Pennington
@@ -192,10 +199,8 @@ Files: .tx/config
        AUTHORS
        COPYING
        ChangeLog
-       HACKING
        Makefile.am
        NEWS
-       NEWS.GNOME
        README
        autogen.sh
        configure.ac
