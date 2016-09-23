@@ -36,6 +36,7 @@ Multi-Arch: foreign
 Depends: hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version}),
+         mate-user-guide,
          python,
          python-requests,
          ${misc:Depends},
