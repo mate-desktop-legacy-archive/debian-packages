@@ -1,7 +1,7 @@
 Source: mate-menus
 Section: libs
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -13,10 +13,12 @@ Build-Depends: debhelper (>= 9),
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
-               mate-common (>= 1.15),
+               mate-common (>= 1.16),
                python-all-dev (>= 2.7),
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 X-Python-Version: >= 2.7
 
 Package: mate-menus
