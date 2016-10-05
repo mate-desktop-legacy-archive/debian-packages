@@ -1,25 +1,27 @@
 Source: caja-extensions
 Section: x11
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
                dpkg-dev (>= 1.16.1.1),
-               libcaja-extension-dev (>= 1.15),
+               libcaja-extension-dev (>= 1.16),
                libdbus-1-dev,
                libdbus-glib-1-dev,
                libdconf-dev,
                libgtk2.0-dev,
                libgupnp-1.0-dev,
-               libmate-desktop-dev (>= 1.15),
+               libmate-desktop-dev (>= 1.16),
                libstartup-notification0-dev,
-               mate-common (>= 1.15),
+               mate-common (>= 1.16),
                pkg-config,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: caja-gksu
 Architecture: any
