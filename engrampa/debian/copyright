@@ -155,7 +155,7 @@ Files: .tx/config
        po/POTFILES.*
        src/engrampa.gresource.xml
        src/ui/Makefile.am
-       src/ui/*.ui       
+       src/ui/*.ui
        src/sh/Makefile.am
        src/sh/isoinfo.sh
        src/Makefile.am
