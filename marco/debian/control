@@ -1,7 +1,7 @@
 Source: marco
 Section: x11
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -27,17 +27,19 @@ Build-Depends: debhelper (>= 9),
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common (>= 1.15),
+               mate-common (>= 1.16),
                yelp-tools,
                zenity,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: marco
 Architecture: any
 Depends: libmarco-private0 (= ${binary:Version}),
          marco-common (= ${source:Version}),
-         mate-desktop-common (>= 1.15),
+         mate-desktop-common (>= 1.16),
          zenity,
          ${misc:Depends},
          ${shlibs:Depends},
