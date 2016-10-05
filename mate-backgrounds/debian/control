@@ -1,17 +1,19 @@
 Source: mate-backgrounds
 Section: x11
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
-               mate-common (>= 1.15),
+               mate-common (>= 1.16),
 Build-Depends-Indep: intltool,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: mate-backgrounds
 Architecture: all
