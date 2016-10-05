@@ -1,7 +1,7 @@
 Source: mate-desktop
 Section: x11
 Priority: optional
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -23,7 +23,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxml2-dev,
                libxrandr-dev,
-               mate-common (>= 1.15),
+               mate-common (>= 1.16),
                python-dev,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
@@ -36,11 +36,11 @@ Multi-Arch: foreign
 Depends: hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version}),
-         mate-user-guide,
          python,
          python-requests,
          ${misc:Depends},
          ${shlibs:Depends},
+Recommends: mate-user-guide,
 Breaks: mate-desktop-gnome,
 Replaces: mate-desktop-gnome,
 Description: Library with common API for various MATE modules
