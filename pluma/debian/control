@@ -1,7 +1,7 @@
 Source: pluma
 Section: x11
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -19,9 +19,11 @@ Build-Depends: autotools-dev,
                libsm-dev,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.15),
+               mate-common (>= 1.16),
                yelp-tools,
 Standards-Version: 3.9.7
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Homepage: http://www.mate-desktop.org/
 
 Package: pluma
