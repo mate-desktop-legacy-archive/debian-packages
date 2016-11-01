@@ -1,3 +1,9 @@
+atril (1.16.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 01 Nov 2016 17:12:31 +0300
+
 atril (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
