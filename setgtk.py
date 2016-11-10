@@ -39,7 +39,7 @@ replaces.append(["libappindicator-dev", "libappindicator3-dev"])
 replaces.append(["libwebkitgtk-dev", "libwebkit2gtk-4.0-dev"])
 
 # these packages are GTK+3 only now
-excludes = ["engrampa", "mate-notification-daemon", "mate-polkit", "mate-session-manager", "mate-system-monitor", "mate-terminal", "mozo"]
+excludes = ["engrampa", "mate-notification-daemon", "mate-polkit", "mate-session-manager", "mate-system-monitor", "mate-terminal", "mozo", "pluma"]
 
 for package in packages:
 	if os.path.isdir(package) and package not in excludes:
