@@ -1,3 +1,9 @@
+mate-common (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 23 Nov 2016 22:59:51 +0300
+
 mate-common (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
