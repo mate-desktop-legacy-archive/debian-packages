@@ -1,3 +1,9 @@
+mate-screensaver (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 24 Nov 2016 22:49:28 +0300
+
 mate-screensaver (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
