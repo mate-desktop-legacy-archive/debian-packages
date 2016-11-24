@@ -1,3 +1,9 @@
+libmatekbd (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 24 Nov 2016 17:51:56 +0300
+
 libmatekbd (1.16.0-1) unstable; urgency=medium
 
   * New upstream release

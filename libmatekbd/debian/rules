@@ -19,8 +19,7 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
 		--disable-static \
-		--enable-introspection \
-		--with-gtk=2.0
+		--enable-introspection
 
 override_dh_makeshlibs:
 	dh_makeshlibs -V 'libmatekbd4 (>= 1.8.0)'
