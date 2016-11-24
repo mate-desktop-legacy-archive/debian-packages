@@ -1,3 +1,9 @@
+mate-sensors-applet (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 24 Nov 2016 18:55:10 +0300
+
 mate-sensors-applet (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
