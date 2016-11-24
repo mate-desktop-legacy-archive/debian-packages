@@ -16,8 +16,7 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-static \
-		--libexecdir=/usr/lib/mate-indicator-applet \
-		--with-gtk=2.0
+		--libexecdir=/usr/lib/mate-indicator-applet
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-indicator-applet-dbg
