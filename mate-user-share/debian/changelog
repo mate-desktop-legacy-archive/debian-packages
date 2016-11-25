@@ -1,3 +1,9 @@
+mate-user-share (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Fri, 25 Nov 2016 15:27:36 +0300
+
 mate-user-share (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
