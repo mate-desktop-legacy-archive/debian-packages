@@ -1,3 +1,9 @@
+python-caja (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Fri, 25 Nov 2016 15:16:20 +0300
+
 python-caja (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
