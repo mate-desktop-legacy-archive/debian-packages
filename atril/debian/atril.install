@@ -1,5 +1,4 @@
 usr/bin/
-usr/lib/*/atril-convert-metadata
 usr/lib/*/atrild
 usr/lib/*/caja/
 usr/share/applications/atril.desktop
