@@ -21,8 +21,7 @@ override_dh_auto_configure:
                 --libexecdir=/usr/lib/mate-applets \
                 --localstatedir=/var \
                 --disable-static \
-                --with-cpufreq-lib=cpufreq \
-                --with-gtk=2.0
+                --with-cpufreq-lib=cpufreq
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-applets-dbg
