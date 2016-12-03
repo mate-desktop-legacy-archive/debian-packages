@@ -22,8 +22,7 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--localstatedir=/var \
 		--disable-static \
-		--disable-update-mimedb \
-		--with-gtk=2.0
+		--disable-update-mimedb
 
 override_dh_installchangelogs:
 	dh_installchangelogs NEWS
