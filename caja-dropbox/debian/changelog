@@ -1,3 +1,9 @@
+caja-dropbox (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 10 Dec 2016 20:15:41 +0300
+
 caja-dropbox (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
