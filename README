@@ -2,7 +2,7 @@ This is the repository of debian/ folders to build Debian and Ubuntu
 packages for MATE, for development and testing purposes.
 
 You can use debian/ folders with standard tarballs from
-http://pub.mate-desktop.org/releases/1.16/,
+http://pub.mate-desktop.org/releases/1.17/,
 
 Or you can build from git master branches. In this case you need to have
 these folders:
@@ -20,9 +20,3 @@ Launch build.py from ~/mate. Example:
 The source folder will be copied on /tmp/, debian folder will be hacked
 to build without tarball, and result .debs will be put on ~/mate.
 
-
-
-If you want to build packages with GTK3, use setgtk.py to edit debian/
-folders forcing them to using all GTK3 dependencies:
-
-    ./setgtk.py --all --gtk3
