@@ -10,7 +10,6 @@ include /usr/share/dpkg/buildflags.mk
 	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/pluma/plugin-loaders/*.la
 	rm -rfv debian/tmp/usr/lib/*/pluma/plugins/*.la
 	dh_install --fail-missing
 
