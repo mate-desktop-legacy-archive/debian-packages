@@ -19,8 +19,7 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
 		--disable-static \
-		--enable-locations-compression \
-		--with-gtk=3.0
+		--enable-locations-compression
 
 override_dh_strip:
 	dh_strip -plibmateweather1 --dbg-package=libmateweather1-dbg
