@@ -1,3 +1,9 @@
+mate-session-manager (1.17.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 07 Jan 2017 14:53:29 +0300
+
 mate-session-manager (1.16.0-1) unstable; urgency=medium
 
   * New upstream release
