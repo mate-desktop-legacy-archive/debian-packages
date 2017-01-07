@@ -1,3 +1,9 @@
+eom (1.17.2-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 07 Jan 2017 14:54:56 +0300
+
 eom (1.17.1-1) unstable; urgency=medium
 
   * New upstream development release
