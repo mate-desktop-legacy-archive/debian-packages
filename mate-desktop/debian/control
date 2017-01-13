@@ -23,7 +23,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxml2-dev,
                libxrandr-dev,
-               mate-common (>= 1.16),
+               mate-common (>= 1.17),
                python-dev,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
