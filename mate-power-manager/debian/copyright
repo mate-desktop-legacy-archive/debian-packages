@@ -27,8 +27,6 @@ Files: applets/brightness/egg-debug.c
        src/egg-precision.h
        src/egg-test.c
        src/egg-test.h
-       src/egg-unique.c
-       src/egg-unique.h
        src/gpm-backlight-helper.c
        src/gpm-brightness.c
        src/gpm-brightness.h
