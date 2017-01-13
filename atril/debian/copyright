@@ -45,7 +45,6 @@ Files: backend/dvi/cairo-device.c
        previewer/ev-previewer.c
        shell/ev-annotation-properties-dialog.c
        shell/ev-annotation-properties-dialog.h
-       shell/ev-convert-metadata.c
        shell/ev-file-monitor.c
        shell/ev-file-monitor.h
        shell/ev-keyring.c
