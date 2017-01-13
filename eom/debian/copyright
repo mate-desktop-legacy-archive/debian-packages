@@ -34,14 +34,8 @@ Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
        src/eom-metadata-reader-png.h
        src/eom-metadata-reader.c
        src/eom-metadata-reader.h
-       src/eom-module.c
-       src/eom-module.h
        src/eom-plugin-engine.c
        src/eom-plugin-engine.h
-       src/eom-plugin-manager.c
-       src/eom-plugin-manager.h
-       src/eom-plugin.c
-       src/eom-plugin.h
        src/eom-preferences-dialog.c
        src/eom-preferences-dialog.h
        src/eom-print-image-setup.c
@@ -52,9 +46,6 @@ Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
        src/eom-print.h
        src/eom-properties-dialog.c
        src/eom-properties-dialog.h
-       src/eom-python-module.h
-       src/eom-python-plugin.c
-       src/eom-python-plugin.h
        src/eom-session.c
        src/eom-session.h
        src/eom-statusbar.c
@@ -76,8 +67,7 @@ Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
 Copyright: 2000-2009, The Free Software Foundation, Inc.
 License: GPL-2+
 
-Files: bindings/python/eom.*
-       cut-n-paste/toolbar-editor/eggmarshalers.list
+Files: cut-n-paste/toolbar-editor/eggmarshalers.list
        jpegutils/jpegint.h
        jpegutils/transupp.h
        plugins/fullscreen/eom-fullscreen-plugin.c
@@ -145,10 +135,6 @@ Copyright: 1997, Thomas G. Lane
            2001-2002, The Free Software Foundation, Inc.
 License: GPL-2+
 
-Files: src/eom-python-module.c
-Copyright: 2005, Raphael Slinckx
-License: GPL-2+
-
 Files: jpegutils/transupp-8a.c
 Copyright: 1997-2009, Thomas G. Lane, Guido Vollbeding
            2001-2002, The Free Software Foundation, Inc.
@@ -190,7 +176,6 @@ Comment:
  Using license from COPYING file.
 
 Files: .tx/config
-       bindings/python/eom.*
        cut-n-paste/toolbar-editor/eggmarshalers.list
        cut-n-paste/totem-screensaver/README
        data/eom-image-properties-dialog.ui
@@ -265,8 +250,6 @@ Files: .tx/config
        src/*.xml
        src/*.template
        src/*.list
-       bindings/Makefile.am
-       bindings/python/Makefile.am
        cut-n-paste/Makefile.am
        cut-n-paste/totem-screensaver/Makefile.am
        cut-n-paste/toolbar-editor/Makefile.am
@@ -286,11 +269,10 @@ Files: .tx/config
        help/eom.omf.in
        jpegutils/Makefile.am
        man/Makefile.am
-       plugins/ChangeLog
        plugins/Makefile.am
-       plugins/fullscreen/fullscreen.eom-plugin.desktop.in
-       plugins/reload/reload.eom-plugin.desktop.in
-       plugins/statusbar-date/statusbar-date.eom-plugin.desktop.in
+       plugins/fullscreen/fullscreen.plugin.desktop.in
+       plugins/reload/reload.plugin.desktop.in
+       plugins/statusbar-date/statusbar-date.plugin.desktop.in
        src/Makefile.am
        AUTHORS
        COPYING
