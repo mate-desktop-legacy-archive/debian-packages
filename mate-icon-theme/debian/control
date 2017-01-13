@@ -22,7 +22,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Package: mate-icon-theme
 Architecture: all
 Depends: hicolor-icon-theme,
-         gtk-update-icon-cache,
+         gtk-update-icon-cache | libgtk2.0-bin,
          librsvg2-common,
          ${misc:Depends},
 Description: MATE Desktop icon theme
