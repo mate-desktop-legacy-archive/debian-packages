@@ -213,7 +213,6 @@ Files: libcaja-private/caja-thumbnails.c
        src/caja-history-sidebar.c
        src/caja-history-sidebar.h
        src/caja-main.c
-       src/caja-main.h
        src/caja-notes-viewer.h
        src/caja-spatial-window.c
        src/caja-window-bookmarks.c
@@ -452,10 +451,6 @@ Files: eel/eel-gtk-container.c
        eel/eel-gtk-container.h
 Copyright: 2001, Ramiro Estrugo
 License: LGPL-2+
-
-Files: src/caja-convert-metadata.c
-Copyright: 2009, Alexander Larsson
-License: GPL-2+
 
 Files: src/file-manager/fm-tree-model.h
 Copyright: 2002, Anders Carlsson
