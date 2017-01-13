@@ -47,9 +47,6 @@ Files: plugins/docinfo/pluma-docinfo-plugin.c
        pluma/pluma-metadata-manager.h
        pluma/pluma-panel.c
        pluma/pluma-panel.h
-       pluma/pluma-plugin-manager.h
-       pluma/pluma-plugin.c
-       pluma/pluma-plugin.h
        pluma/pluma-plugins-engine.c
        pluma/pluma-plugins-engine.h
        pluma/pluma-prefs-manager-app.c
@@ -96,18 +93,12 @@ Files: plugins/filebrowser/pluma-file-bookmarks-store.c
 Copyright: 2005-2008, Jesse van den Kieboom <jesse@icecrew.nl>
 License: GPL-2+
 
-Files: plugin-loaders/c/pluma-plugin-loader-c.c
-       plugin-loaders/c/pluma-plugin-loader-c.h
-       plugin-loaders/python/pluma-plugin-loader-python.c
-       plugin-loaders/python/pluma-plugin-loader-python.h
-       plugins/quickopen/quickopen/__init__.py
+Files: plugins/quickopen/quickopen/__init__.py
        plugins/quickopen/quickopen/popup.py
        plugins/quickopen/quickopen/virtualdirs.py
        plugins/quickopen/quickopen/windowhelper.py
        plugins/spell/pluma-spell-utils.c
        plugins/spell/pluma-spell-utils.h
-       pluma/pluma-plugin-loader.c
-       pluma/pluma-plugin-loader.h
        pluma/pluma-status-combo-box.c
        pluma/pluma-status-combo-box.h
        tests/document-loader.c
@@ -176,9 +167,6 @@ License: GPL-2+
 Files: pluma/pluma-document-loader.c
        pluma/pluma-document-loader.h
        pluma/pluma-document-saver.h
-       pluma/pluma-plugin-info-priv.h
-       pluma/pluma-plugin-info.c
-       pluma/pluma-plugin-info.h
 Copyright: 2002-2005, Paolo Maggi
            2007, Paolo Maggi
            2007, Steve Frécinaux
@@ -242,14 +230,6 @@ Copyright: 2002, Christophe Fergeau
            2005, Paolo Maggi
 License: GPL-2+
 
-Files: pluma/pluma-object-module.c
-       pluma/pluma-object-module.h
-Copyright: 2003, Marco Pesenti Gritti
-           2003-2004, Christian Persch
-           2005, Paolo Maggi
-           2008, Jesse van den Kieboom
-License: GPL-2+
-
 Files: plugins/spell/pluma-automatic-spell-checker.c
        plugins/spell/pluma-automatic-spell-checker.h
 Copyright: 2002, Evan Martin
@@ -266,12 +246,6 @@ Files: pluma/plumatextregion.c
 Copyright: 2002, Gustavo Giráldez <gustavo.giraldez@gmx.net>
 License: GPL-2+
 
-Files: plugin-loaders/python/pluma-plugin-python.c
-       plugin-loaders/python/pluma-plugin-python.h
-Copyright: 2005, Raphael Slinckx
-           2008, Jesse van den Kieboom
-License: GPL-2+
-
 Files: pluma/dialogs/pluma-close-confirmation-dialog.c
        pluma/dialogs/pluma-close-confirmation-dialog.h
 Copyright: 2004-2005, GNOME Foundation
@@ -286,12 +260,6 @@ License: GPL-2+
 Files: plugins/externaltools/tools/filelookup.py
        plugins/externaltools/tools/linkparsing.py
 Copyright: 2009-2010, Per Arneng <per.arneng@anyplanet.com>
-License: GPL-2+
-
-Files: ./pluma/pluma-plugin-info.h
-Copyright: 2002-2005, Paolo Maggi
-           2007, Paolo Maggi
-           2007, Steve Frécinaux
 License: GPL-2+
 
 Files: plugins/pythonconsole/pythonconsole/config.py
@@ -332,11 +300,6 @@ Copyright: 2005-2006, Paolo Borelli and Paolo Maggi
            2007, Paolo Borelli, Paolo Maggi, Steve Fr�cinaux
 License: GPL-2+
 
-Files: pluma/pluma-plugin-manager.c
-Copyright: 2002, Paolo Maggi and James Willcox
-           2003-2006, Paolo Maggi
-License: GPL-2+
-
 Files: pluma/pluma-encodings.c
 Copyright: 2002, Red Hat, Inc.
            2002-2005, Paolo Maggi
@@ -370,7 +333,6 @@ Files: data/*.in.in
        docs/reference/*.sgml
        docs/reference/*.types
        help/Makefile.am
-       m4/python.m4
        pixmaps/*.png
        pixmaps/*.ico
        plugins/*/*.desktop.in
@@ -406,18 +368,6 @@ Files: data/*.in.in
        docs/reference/Makefile.am
        docs/Makefile.am
        pixmaps/Makefile.am
-       plugin-loaders/c/Makefile.am
-       plugin-loaders/Makefile.am
-       plugin-loaders/python/Makefile.am
-       plugin-loaders/python/bindings/Makefile.am
-       plugin-loaders/python/bindings/pluma.defs
-       plugin-loaders/python/bindings/pluma.override
-       plugin-loaders/python/bindings/plumacommands.defs
-       plugin-loaders/python/bindings/plumacommands.override
-       plugin-loaders/python/bindings/plumamessage.override
-       plugin-loaders/python/bindings/plumaplugin.override
-       plugin-loaders/python/bindings/plumautils.defs
-       plugin-loaders/python/bindings/plumautils.override
        plugins/time/Makefile.am
        plugins/docinfo/Makefile.am
        plugins/pythonconsole/pythonconsole/Makefile.am
