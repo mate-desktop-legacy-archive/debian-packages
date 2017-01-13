@@ -18,7 +18,7 @@ Build-Depends: autotools-dev,
                libgtk-3-dev,
                libmate-desktop-dev (>= 1.17),
                libmatekbd-dev (>= 1.17),
-               libmatemixer-dev (>= 1.16),
+               libmatemixer-dev (>= 1.17),
                libnotify-dev,
                libnss3-dev,
                libpolkit-agent-1-dev,
@@ -32,7 +32,7 @@ Build-Depends: autotools-dev,
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common (>= 1.16),
+               mate-common (>= 1.17),
                x11proto-kb-dev,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
@@ -42,7 +42,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Package: mate-settings-daemon
 Architecture: any
 Depends: mate-desktop-common (>= 1.17),
-         mate-polkit | policykit-1-gnome,
+         mate-polkit,
          mate-settings-daemon-common (= ${source:Version}),
          x11-xserver-utils,
          ${misc:Depends},
