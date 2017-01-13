@@ -33,7 +33,6 @@ Comment:
 Files: icons/moonshadow.pl
        libmateweather/mateweather-prefs.*
        libmateweather/weather*.*
-       python/mateweathermodule.c
 Copyright: *No copyright*
 License: GPL-2+
 
@@ -103,12 +102,7 @@ Files: .tx/config
        po-locations/Makefile.am
        po-locations/extract.xsl
        po-locations/regen.sh
-       python/Makefile.am
-       python/bad__init__.py
-       python/demo.py
-       python/mateweather.*
        Makefile.am
-       acinclude.m4
        autogen.sh
        configure.ac
        AUTHORS
