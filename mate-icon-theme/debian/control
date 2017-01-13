@@ -12,7 +12,7 @@ Build-Depends-Indep: gettext,
                      icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
                      librsvg2-bin,
-                     mate-common (>= 1.16),
+                     mate-common (>= 1.17),
                      pkg-config,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
@@ -22,7 +22,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Package: mate-icon-theme
 Architecture: all
 Depends: hicolor-icon-theme,
-         libgtk2.0-bin,
+         gtk-update-icon-cache,
          librsvg2-common,
          ${misc:Depends},
 Description: MATE Desktop icon theme
