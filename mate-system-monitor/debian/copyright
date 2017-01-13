@@ -29,6 +29,8 @@ Files: .tx/config
        src/prettytable.h
        src/procman_gksu.cpp
        src/procman_gksu.h
+       src/procman_pkexec.cpp
+       src/procman_pkexec.h
        src/procproperties.cpp
        src/procproperties.h
        src/selection.cpp
@@ -43,6 +45,8 @@ Files: .tx/config
        src/sysinfo.h
        src/util.cpp
        src/util.h
+       tools/Makefile.am
+       tools/msm_execute_helper.c
        pixmaps/Makefile.am
        pixmaps/*.svg
        pixmaps/*.png
@@ -62,6 +66,7 @@ Files: .tx/config
        mate-system-monitor.1
        mate-system-monitor.appdata.xml.in
        mate-system-monitor.desktop*
+       org.mate.mate-system-monitor.policy.in.in
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
