@@ -368,7 +368,6 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/accessibility/Makefile.am
        capplets/appearance/data/Makefile.am
        capplets/appearance/data/*.png
-       capplets/appearance/data/*.pcf
        capplets/appearance/data/*.in
        capplets/appearance/data/*.ui
        capplets/appearance/Makefile.am
