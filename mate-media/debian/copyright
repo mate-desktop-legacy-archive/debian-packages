@@ -99,7 +99,6 @@ Files: data/Makefile.am
        COPYING-DOCS
        ChangeLog
        NEWS
-       NEWS.GNOME
        README
        po/ChangeLog
        po/LINGUAS
