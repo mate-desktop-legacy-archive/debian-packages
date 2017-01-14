@@ -12,6 +12,9 @@ include /usr/share/dpkg/buildflags.mk
 override_dh_install:
 	dh_install --fail-missing
 
+override_dh_installchangelogs:
+   	dh_installchangelogs NEWS
+
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
