@@ -1,3 +1,9 @@
+mate-calc (1.17.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin@mate-desktop.org>  Sat, 14 Jan 2017 01:02:42 +0000
+
 mate-calc (1.8.0-1) unstable; urgency=low
 
   * New upstream release
