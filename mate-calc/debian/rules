@@ -4,9 +4,10 @@
 	dh $@
 
 override_dh_install:
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- \
 		--disable-static \
 		--disable-silent-rules
