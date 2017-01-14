@@ -26,7 +26,6 @@ Architecture: any
 Depends: mate-calc-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: mate-icon-theme,
 Description: MATE desktop calculator
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
