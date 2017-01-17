@@ -13,7 +13,7 @@ endif
 endif
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) --with gir
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
