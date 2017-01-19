@@ -1,3 +1,9 @@
+mate-indicator-applet (1.17.1-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Martin Wimpress <martin@mate-desktop.org>  Thu, 19 Jan 2017 01:30:45 +0000
+
 mate-indicator-applet (1.17.0-1) unstable; urgency=medium
 
   * New upstream development release
