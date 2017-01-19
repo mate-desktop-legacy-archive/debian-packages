@@ -109,12 +109,7 @@ Files: tools/mate-color-select.c
 Copyright: 2014, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: tools/mpaste
-Copyright: 2013, Steve Zesch
-License: GPL-2+
-
 Files: man/mate-color-select.1
-       man/mpaste.1
 Copyright: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: GPL-2+
 Comment:

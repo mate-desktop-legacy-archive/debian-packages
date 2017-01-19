@@ -1,3 +1,9 @@
+mate-desktop (1.17.2-) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 19 Jan 2017 00:41:16 +0000
+
 mate-desktop (1.17.1-1) unstable; urgency=medium
 
   * New upstream development release
