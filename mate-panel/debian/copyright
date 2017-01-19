@@ -543,8 +543,6 @@ Files: .tx/config
        mate-panel/drawer.h
        mate-panel/mate-desktop-item-edit.c
        mate-panel/panel-marshal.list
-       mate-panel/nothing.cP
-       mate-panel/nothing.h
        mate-panel/panel-icon-names.h
        mate-panel/panel-schemas.h
        mate-panel/panel-types.h

@@ -1,3 +1,9 @@
+mate-panel (1.17.1-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 19 Jan 2017 01:10:40 +0000
+
 mate-panel (1.17.0-1) unstable; urgency=medium
 
   * New upstream development release
