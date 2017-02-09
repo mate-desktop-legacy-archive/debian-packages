@@ -1,3 +1,9 @@
+mate-terminal (1.16.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 09 Feb 2017 13:19:55 +0300
+
 mate-terminal (1.16.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
