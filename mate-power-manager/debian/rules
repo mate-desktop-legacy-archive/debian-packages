@@ -22,8 +22,7 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--libexecdir=/usr/lib/mate-power-manager \
 		--enable-applets \
-		--enable-deprecated \
-		--disable-strict
+		--enable-deprecated
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-power-manager-dbg
