@@ -34,7 +34,6 @@ Package: mate-session-manager
 Architecture: any
 Depends: dbus-x11,
          mate-desktop-common (>= 1.17),
-         upower,
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: caja,
