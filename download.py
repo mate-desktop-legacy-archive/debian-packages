@@ -3,7 +3,7 @@
 import os
 import commands
 
-for path in commands.getoutput("find . -name changelog").split("\n"):
+for path in commands.getoutput("find . -name changelog | grep -v mate-desktop-environment").split("\n"):
 	(current, project, debian, changelog) = path.split("/")
 	header = commands.getoutput("cat %s/debian/changelog | grep urgency | head -1" % project)
 	version = header.split("(")[1]	
