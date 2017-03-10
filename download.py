@@ -12,7 +12,7 @@ for path in commands.getoutput("find . -name changelog | grep -v mate-desktop-en
 		version = version.split("-")[0]	
 	version_components = version.split(".")
 	major = "%s.%s" % (version_components[0], version_components[1])
-	url = "http://pub.mate-desktop.org/releases/%s/%s-%s.tar.xz" % (major, project, version)
+	url = "https://pub.mate-desktop.org/releases/%s/%s-%s.tar.xz" % (major, project, version)
 	dest = "%s_%s.orig.tar.xz" % (project, version)
 	command = "wget -c %s -O %s" % (url, dest)
 	print "Running %s" % command
