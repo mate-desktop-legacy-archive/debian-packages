@@ -12,11 +12,11 @@ Build-Depends: debhelper (>= 9),
                intltool,
                libgtk-3-dev,
                libindicator3-dev (>= 0.3.90),
-               libmate-panel-applet-dev (>= 1.17),
+               libmate-panel-applet-dev (>= 1.18),
                libtool,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.17),
+               mate-common (>= 1.18),
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
