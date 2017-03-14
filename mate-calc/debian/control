@@ -40,3 +40,20 @@ Description: MATE desktop calculator (common files)
  to give a high degree of accuracy.
  .
  This package contains the architecture independent files.
+
+Package: mate-calc-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: mate-calc (= ${binary:Version}),
+         ${misc:Depends},
+Description: MATE desktop calculator (debugging symbols)
+ mate-calc is a powerful graphical calculator with financial, logical and
+ scientific modes. It uses a multiple precision package to do its arithmetic
+ to give a high degree of accuracy.
+ .
+ This package contains debugging symbols for mate-calc package.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
