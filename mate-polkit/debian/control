@@ -15,7 +15,7 @@ Build-Depends: autotools-dev,
                libgtk-3-dev (>= 3.14),
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
-               mate-common (>= 1.17),
+               mate-common (>= 1.18),
                pkg-config,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
@@ -81,6 +81,18 @@ Description: MATE authentication agent for PolicyKit-1 (development files)
  bring up authentication dialogs used for obtaining privileges.
  .
  This package contains the development files for mate-polkit.
+
+Package: libmatepolkit-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+Description: MATE authentication agent for PolicyKit-1 (shared library API documentation)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the API documentation files of the mate-polkit shared
+ library.
+
 
 Package: mate-polkit-dbg
 Priority: extra
