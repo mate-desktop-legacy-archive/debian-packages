@@ -116,9 +116,28 @@ Files: applets/clock/clock-sunpos.c
 Copyright: 2002, 2007, Red Hat, Inc.
 License: GPL-2+
 
-Files: applets/notification_area/na-tray-manager.c
-       applets/notification_area/na-tray-manager.h
-       applets/notification_area/na-tray.h
+Files: applets/notification_area/libstatus-notifier-watcher/*
+       applets/notification_area/status-notifier/*
+Copyright: 2016 Alberts Muktupāvels
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: applets/notification_area/na-box.c
+       applets/notification_area/na-box.h
+       applets/notification_area/na-host.c
+       applets/notification_area/na-host.h
+       applets/notification_area/na-item.c
+       applets/notification_area/na-item.h       
+Copyright: 2016 Alberts Muktupāvels
+           2017 Colomban Wendling <cwendling@hypra.fr>
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: applets/notification_area/system-tray/na-tray-manager.c
+       applets/notification_area/system-tray/na-tray-manager.h
+       applets/notification_area/system-tray/na-tray.h
 Copyright: 2002, Anders Carlsson <andersca@gnu.org>
            2003-2006, Vincent Untz
 License: LGPL-2+
@@ -213,8 +232,8 @@ Files: mate-panel/panel-a11y.c
 Copyright: 2002-2003, Sun Microsystems, Inc.
 License: GPL-2+
 
-Files: applets/notification_area/na-tray-child.c
-       applets/notification_area/na-tray-child.h
+Files: applets/notification_area/system-tray/na-tray-child.c
+       applets/notification_area/system-tray/na-tray-child.h
 Copyright: 2002, Anders Carlsson <andersca@gnu.org>
            2003-2006, Vincent Untz
            2008, Red Hat, Inc.
@@ -301,7 +320,7 @@ Copyright: 2001, 2003, Sun Microsystems, Inc.
            2010, Vincent Untz <vuntz@gnome.org>
 License: GPL-2+
 
-Files: applets/notification_area/na-tray.c
+Files: applets/notification_area/system-tray/na-tray.c
 Copyright: 2002, Red Hat, Inc.
            2003, 2006, Vincent Untz
            2007, Christian Persch
@@ -316,13 +335,10 @@ Copyright: 1998-2002, Free Software Foundation, Inc.
            2002-2005, Vincent Untz
 License: GPL-2+
 
-Files: applets/notification_area/fixedtip.c
-Copyright: 2001, Havoc Pennington
-           2003-2006, Vincent Untz
-License: GPL-2+
-
-Files: applets/notification_area/fixedtip.h
-Copyright: 2001, Havoc Pennington, 2002, Red Hat, Inc.
+Files: applets/notification_area/system-tray/fixedtip.c
+       applets/notification_area/system-tray/fixedtip.h
+Copyright: 2001, Havoc Pennington,
+           2002, Red Hat, Inc.
            2003-2006, Vincent Untz
 License: GPL-2+
 
@@ -485,7 +501,8 @@ Files: .tx/config
        applets/fish/fish.ui
        applets/fish/org.mate.panel.*.in
        applets/notification_area/Makefile.am
-       applets/notification_area/na-marshal.*
+       applets/notification_area/system-tray/Makefile.am
+       applets/notification_area/system-tray/na-marshal.*
        applets/notification_area/*.xml
        applets/notification_area/org.mate.panel.*.in
        applets/wncklet/Makefile.am
