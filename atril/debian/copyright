@@ -34,6 +34,8 @@ Files: backend/dvi/cairo-device.c
        libdocument/ev-page.h
        libview/ev-job-scheduler.c
        libview/ev-job-scheduler.h
+       libview/ev-link-accessible.c
+       libview/ev-link-accessible.h
        libview/ev-loading-window.c
        libview/ev-loading-window.h
        libview/ev-print-operation.c
@@ -59,7 +61,7 @@ Files: backend/dvi/cairo-device.c
        shell/ev-sidebar-annotations.h
        shell/ev-sidebar-layers.c
        shell/ev-sidebar-layers.h
-Copyright: 2006-2010, Carlos Garcia Campos <carlosgc@gnome.org>
+Copyright: 2006-2013, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
 Files: backend/pdf/ev-poppler.h
