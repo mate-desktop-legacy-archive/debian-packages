@@ -49,6 +49,8 @@ Files: .tx/config
        share/libcaja-share.caja-extension.in.in
        wallpaper/Makefile.am
        wallpaper/libcaja-wallpaper.caja-extension.in.in
+       xattr-tags/Makefile.am
+       xattr-tags/libcaja-xattr-tags.caja-extension.in.in
        AUTHORS
        COPYING
        ChangeLog
@@ -116,6 +118,11 @@ License: GPL-2+
 Files: sendto/plugins/emailclient/emailclient.c
 Copyright: 2004, Roberto Majadas <roberto.majadas@openshine.com>
            2012, Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-2+
+
+Files: xattr-tags/caja-xattr-tags-extension.c
+       xattr-tags/caja-xattr-tags-extension.h
+Copyright: 2016 Felipe Barriga Richards
 License: GPL-2+
 
 Files: po/*.po
