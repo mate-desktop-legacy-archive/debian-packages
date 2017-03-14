@@ -135,9 +135,26 @@ License: GPL-2+
 
 Files: font-viewer/font-thumbnailer.c
        font-viewer/font-view.c
-       font-viewer/ftstream-vfs.c
-       font-viewer/ftstream-vfs.h
 Copyright: 2002-2003, James Henstridge <james@daa.com.au>
+License: GPL-2+
+
+Files: capplets/mouse/msd-input-helper.c
+       capplets/mouse/msd-input-helper.h
+Copyright: 2010 Bastien Nocera <hadess@hadess.net>
+License: GPL-2+
+
+Files: font-viewer/font-model.c
+       font-viewer/font-model.h
+       font-viewer/font-utils.c
+       font-viewer/font-utils.h
+       font-viewer/gd-main-toolbar.c
+       font-viewer/gd-main-toolbar.h
+       font-viewer/sushi-font-loader.c
+       font-viewer/sushi-font-loader.h
+       font-viewer/sushi-font-widget.c
+       font-viewer/sushi-font-widget.h
+Copyright: 2011-2012 Cosimo Cecchi <cosimoc@gnome.org>
+           2002-2003  James Henstridge <james@daa.com.au>
 License: GPL-2+
 
 Files: typing-break/drw-utils.c
