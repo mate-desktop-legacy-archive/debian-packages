@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libgtk-3-dev,
                libxml2-dev,
-               mate-common (>= 1.17),
+               mate-common (>= 1.18),
                yelp-tools,
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
@@ -32,6 +32,7 @@ Description: MATE desktop calculator
 Package: mate-calc-common
 Architecture: all
 Depends: ${misc:Depends},
+Breaks: mate-calc (<< 1.7.0),
 Replaces: mate-calc (<< 1.7.0),
 Description: MATE desktop calculator (common files)
  mate-calc is a powerful graphical calculator with financial, logical and
