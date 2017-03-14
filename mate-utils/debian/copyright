@@ -211,7 +211,6 @@ Copyright: 1999, 2000, Red Hat, Inc.
 License: LGPL-2+
 
 Files: po/*.po
-       po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 2009, The Gnome Foundation
 License: GPL-2+ or LGPL-2.1+
@@ -394,7 +393,6 @@ Files: .tx/config
        baobab/data/*.1
        baobab/data/*.in
        baobab/AUTHORS
-       baobab/ChangeLog
        baobab/Makefile.am
        baobab/README
        baobab/TODO
@@ -409,7 +407,6 @@ Files: .tx/config
        gsearchtool/data/*.png
        gsearchtool/libmateui-deprecated/Makefile.am
        gsearchtool/AUTHORS
-       gsearchtool/ChangeLog
        gsearchtool/Makefile.am
        gsearchtool/*.1
        gsearchtool/*.in
@@ -425,7 +422,6 @@ Files: .tx/config
        logview/src/logview-marshal.list
        logview/src/tests/Makefile.am
        logview/src/tests/test-reader.c
-       logview/ChangeLog
        logview/Makefile.am
        logview/TODO
        mate-dictionary/data/Makefile.am
@@ -433,7 +429,6 @@ Files: .tx/config
        mate-dictionary/data/*.in
        mate-dictionary/data/*.ui
        mate-dictionary/data/*.xml
-       mate-dictionary/docs/reference/gdict/ChangeLog
        mate-dictionary/docs/reference/gdict/Makefile.am
        mate-dictionary/docs/reference/gdict/gdict*
        mate-dictionary/docs/reference/gdict/*.in
@@ -449,7 +444,6 @@ Files: .tx/config
        mate-dictionary/Makefile.am
        mate-dictionary/README
        mate-dictionary/TODO
-       mate-screenshot/ChangeLog
        mate-screenshot/Makefile.am
        mate-screenshot/*.1
        mate-screenshot/*.in
