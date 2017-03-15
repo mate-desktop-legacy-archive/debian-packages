@@ -54,6 +54,8 @@ Provides: djvu-viewer,
 Suggests: caja,
           poppler-data,
           unrar,
+Breaks: libatrildocument3 (<< 1.13.0),
+Replaces: libatrildocument3 (<< 1.13.0),
 Description: MATE document viewer
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
