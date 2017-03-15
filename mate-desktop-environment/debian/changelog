@@ -1,3 +1,9 @@
+mate-desktop-environment (1.18.0) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 15 Mar 2017 15:49:08 +0300
+
 mate-desktop-environment (1.16.0) unstable; urgency=medium
 
   * New upstream release

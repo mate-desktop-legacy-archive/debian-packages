@@ -1,3 +1,9 @@
+mate-calc (1.18.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 15 Mar 2017 15:48:02 +0300
+
 mate-calc (1.17.0-1) unstable; urgency=medium
 
   * New upstream development release
