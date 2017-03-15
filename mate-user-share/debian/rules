@@ -17,7 +17,8 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--with-httpd=/usr/lib/apache2/mpm-worker/apache2 \
-		--with-modules-path=/usr/lib/apache2/modules/
+		--with-modules-path=/usr/lib/apache2/modules/ \
+		--disable-silent-rules
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-user-share-dbg
