@@ -32,8 +32,8 @@ Description: MATE desktop calculator
 Package: mate-calc-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-calc (<< 1.7.0),
-Replaces: mate-calc (<< 1.7.0),
+Breaks: mate-calc (<< 1.17.0),
+Replaces: mate-calc (<< 1.17.0),
 Description: MATE desktop calculator (common files)
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
