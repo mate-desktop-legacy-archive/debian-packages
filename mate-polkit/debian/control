@@ -93,7 +93,6 @@ Description: MATE authentication agent for PolicyKit-1 (shared library API docum
  This package contains the API documentation files of the mate-polkit shared
  library.
 
-
 Package: mate-polkit-dbg
 Priority: extra
 Section: debug
