@@ -2,7 +2,7 @@ This is the repository of debian/ folders to build Debian and Ubuntu
 packages for MATE, for development and testing purposes.
 
 You can use debian/ folders with standard tarballs from:
-    * https://pub.mate-desktop.org/releases/1.17/
+    * https://pub.mate-desktop.org/releases/1.18/
     * https://pub.mate-desktop.org/releases/themes/3.22/
 
 Or you can build from git master branches. In this case you need to have
