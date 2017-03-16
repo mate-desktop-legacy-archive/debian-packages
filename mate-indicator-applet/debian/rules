@@ -15,6 +15,7 @@ override_dh_install:
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
 		--disable-static \
 		--libexecdir=/usr/lib/mate-indicator-applet
 
