@@ -8,7 +8,6 @@ DHFLAGS=--parallel
 override_dh_install:
 	# remove extra-license-file
 	rm -rfv debian/mate-themes/usr/share/themes/*/COPYING
-	rm -rfv debian/mate-themes/usr/share/themes/TraditionalOk/doc/gpl-3.0*.txt
 	dh_install --fail-missing
 
 override_dh_installchangelogs:
