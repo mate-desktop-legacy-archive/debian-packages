@@ -34,6 +34,7 @@ override_dh_auto_configure:
 		--enable-pixbuf \
 		--enable-comics \
 		--enable-introspection \
+		--disable-silent-rules \
 		--disable-static \
 		--with-gtk=2.0 \
 		--libexecdir=/usr/lib/atril \
