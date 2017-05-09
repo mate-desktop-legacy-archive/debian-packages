@@ -190,8 +190,7 @@ Description: MATE document rendering library (debugging symbols)
 
 Package: gir1.2-atril
 Architecture: any
-Depends: libatrildocument3,
-         ${gir:Depends},
+Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
 Description: GObject introspection data for Atril
