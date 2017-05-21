@@ -1,3 +1,9 @@
+libmateweather (1.18.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sun, 21 May 2017 18:14:40 +0300
+
 libmateweather (1.18.0-1) unstable; urgency=medium
 
   * New upstream release
