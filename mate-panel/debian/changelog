@@ -1,3 +1,9 @@
+mate-panel (1.18.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sun, 11 Jun 2017 23:25:07 +0300
+
 mate-panel (1.18.2-1) unstable; urgency=medium
 
   * New upstream bugfix release
