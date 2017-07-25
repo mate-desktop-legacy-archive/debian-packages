@@ -119,7 +119,7 @@ Description: Allows one to view extended attributes
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
- Caja xattr tags extention allows you to view file and folder
+ Caja xattr tags extension allows you to view file and folder
  extended attributes.
 
 Package: caja-extensions-common
