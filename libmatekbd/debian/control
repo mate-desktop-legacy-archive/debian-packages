@@ -26,7 +26,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: iso-codes,
-         libmatekbd-common,
+         libmatekbd-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Provides: libmatekbd,
