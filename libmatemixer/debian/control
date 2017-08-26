@@ -23,7 +23,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: iso-codes,
-         libmatemixer-common,
+         libmatemixer-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Mixer library for MATE Desktop
