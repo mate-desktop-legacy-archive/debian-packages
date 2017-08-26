@@ -26,7 +26,7 @@ Package: mate-polkit
 Architecture: any
 Multi-Arch: same
 Depends: accountsservice,
-         mate-polkit-common (= ${binary:Version}),
+         mate-polkit-common (= ${source:Version}),
          policykit-1,
          ${misc:Depends},
          ${shlibs:Depends},
