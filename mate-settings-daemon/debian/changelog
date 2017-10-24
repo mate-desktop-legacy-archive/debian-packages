@@ -1,3 +1,9 @@
+mate-settings-daemon (1.18.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 24 Oct 2017 16:25:45 +0300
+
 mate-settings-daemon (1.18.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
