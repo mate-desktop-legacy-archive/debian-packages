@@ -1,3 +1,9 @@
+mate-menus (1.18.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 08 Nov 2017 13:12:43 +0300
+
 mate-menus (1.18.0-1) unstable; urgency=medium
 
   * New upstream release
