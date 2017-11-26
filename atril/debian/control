@@ -39,7 +39,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: atril
 Architecture: any
-Depends: atril-common (>= ${source:Version}),
+Depends: atril-common (= ${source:Version}),
          libatrildocument3 (= ${binary:Version}),
          libatrilview3 (= ${binary:Version}),
          mate-desktop-common,

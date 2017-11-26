@@ -34,7 +34,7 @@ Package: mate-utils
 Architecture: any
 Depends: libmatedict6 (= ${binary:Version}),
          mate-desktop-common,
-         mate-utils-common (>= ${source:Version}),
+         mate-utils-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: MATE desktop utilities

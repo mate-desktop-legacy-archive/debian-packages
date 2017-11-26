@@ -30,7 +30,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: mate-system-monitor
 Architecture: any
-Depends: mate-system-monitor-common (>= ${source:Version}),
+Depends: mate-system-monitor-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: gvfs,
