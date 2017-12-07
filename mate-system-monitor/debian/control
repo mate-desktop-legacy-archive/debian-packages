@@ -34,7 +34,6 @@ Depends: mate-system-monitor-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: gvfs,
-            libgksu2-0,
 Description: Process viewer and system resource monitor for MATE
  MATE system monitor allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
