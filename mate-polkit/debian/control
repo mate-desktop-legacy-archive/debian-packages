@@ -27,7 +27,7 @@ Depends: accountsservice,
          policykit-1,
          ${misc:Depends},
          ${shlibs:Depends},
-Provides: policykit-1-gnome,
+Provides: polkit-1-auth-agent,
 Description: MATE authentication agent for PolicyKit-1
  The mate-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
