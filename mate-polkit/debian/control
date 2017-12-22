@@ -8,10 +8,7 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
 Build-Depends: autotools-dev,
                debhelper (>= 9),
                dpkg-dev (>= 1.16.1.1),
-               gobject-introspection,
-               gtk-doc-tools,
                libappindicator3-dev,
-               libgirepository1.0-dev,
                libgtk-3-dev (>= 3.14),
                libpolkit-agent-1-dev,
                libpolkit-gobject-1-dev,
@@ -50,49 +47,6 @@ Description: MATE authentication agent for PolicyKit-1 (common files)
  This package contains common files for the MATE policy kit authentication
  agent.
 
-Package: libpolkit-gtk-mate-1-0
-Section: libs
-Architecture: any
-Multi-Arch: same
-Depends: policykit-1,
-         ${misc:Depends},
-         ${shlibs:Depends},
-Provides: libmatepolkit,
-Breaks: libmatepolkit (<< 1.8.0),
-Replaces: libmatepolkit (<< 1.8.0),
-Description: MATE authentication agent for PolicyKit-1 (library)
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains the library for mate-polkit.
-
-Package: libmatepolkit-dev
-Section: libdevel
-Architecture: any
-Multi-Arch: same
-Depends: libpolkit-gobject-1-dev,
-         libpolkit-gtk-mate-1-0 (= ${binary:Version}),
-         mate-polkit,
-         policykit-1,
-         ${misc:Depends},
-         ${shlibs:Depends},
-Description: MATE authentication agent for PolicyKit-1 (development files)
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains the development files for mate-polkit.
-
-Package: libmatepolkit-doc
-Section: doc
-Architecture: all
-Depends: ${misc:Depends},
-Description: MATE authentication agent for PolicyKit-1 (shared library API documentation)
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains the API documentation files of the mate-polkit shared
- library.
-
 Package: mate-polkit-dbg
 Priority: extra
 Section: debug
@@ -108,33 +62,3 @@ Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
-
-Package: libpolkit-gtk-mate-1-0-dbg
-Priority: extra
-Section: debug
-Architecture: any
-Multi-Arch: same
-Depends: libpolkit-gtk-mate-1-0 (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends},
-Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains the debugging symbols for the libpolkit-gtk-mate-1-0
- library. They are installed into /usr/lib/debug and will automatically be used
- by gdb.
-
-Package: gir1.2-mate-polkit
-Architecture: any
-Depends: ${gir:Depends},
-         ${misc:Depends},
-         ${shlibs:Depends},
-Description: GObject introspection data for mate-polkit
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains introspection data for mate-polkit.
- .
- It can be used by packages using the GIRepository format to generate
- dynamic bindings.

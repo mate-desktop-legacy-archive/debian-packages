@@ -3,10 +3,9 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS) --with gir
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/*.la 
 	dh_install --fail-missing
 
 override_dh_auto_configure:
@@ -14,12 +13,10 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--localstatedir=/var \
 		--disable-silent-rules \
-		--disable-static \
-		--enable-gtk-doc
+		--disable-static
 
 override_dh_strip:
 	dh_strip -pmate-polkit --dbg-package=mate-polkit-dbg
-	dh_strip -plibpolkit-gtk-mate-1-0 --dbg-package=libpolkit-gtk-mate-1-0-dbg
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
