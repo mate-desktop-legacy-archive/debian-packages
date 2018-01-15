@@ -58,30 +58,6 @@ Files: .tx/config
        geyes/*.png
        geyes/*.svg
        geyes/docs/Makefile.am
-       invest-applet/docs/Makefile.am
-       invest-applet/docs/mate-invest-applet.omf.in
-       invest-applet/invest/Makefile.am
-       invest-applet/invest/__init__.py
-       invest-applet/invest/applet.py
-       invest-applet/invest/chart.py
-       invest-applet/invest/defs.py.in
-       invest-applet/invest/currencies.py
-       invest-applet/invest/help.py
-       invest-applet/invest/invest-applet.py
-       invest-applet/invest/mate-invest-chart
-       invest-applet/invest/networkmanager.py
-       invest-applet/invest/preferences.py
-       invest-applet/invest/quotes.py
-       invest-applet/invest/test.py
-       invest-applet/invest/widgets.py
-       invest-applet/data/Makefile.am
-       invest-applet/data/*.in
-       invest-applet/data/*.ui
-       invest-applet/data/*.xml
-       invest-applet/data/art/Makefile.am
-       invest-applet/data/art/*.png
-       invest-applet/data/art/*.svg
-       invest-applet/Makefile.am
        m4/*.m4
        man/Makefile.am
        mateweather/AUTHORS
@@ -338,13 +314,6 @@ License: LGPL-2+
 Files: trashapplet/src/xstuff.c
 Copyright: 1997-2002, Alfredo K. Kojima
            2000-2001, Eazel, Inc.
-License: GPL-2+
-Comment:
- Using license from COPYING file.
-
-Files: invest-applet/invest/about.py
-Copyright: 2004-2005, Raphael Slinckx
-           2009-2010, Enrico Minack
 License: GPL-2+
 Comment:
  Using license from COPYING file.
@@ -612,27 +581,6 @@ Copyright:  Changwoo Ryu <cwryu@debian.org>
            Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
            Yavor Doganov <yavor@doganov.org>
            Μάριος Ζηντίλης <m.zindilis@dmajor.org>
-License: GFDL-1.1+
-
-Files: invest-applet/docs/el/*
-       invest-applet/docs/ca/*
-       invest-applet/docs/fi/*
-       invest-applet/docs/de/*
-       invest-applet/docs/en_GB/*
-       invest-applet/docs/ru/*
-       invest-applet/docs/C/*
-       invest-applet/docs/es/*
-       invest-applet/docs/zh_CN/*
-       invest-applet/docs/sv/*
-Copyright: Daniel Nylander <po@danielnylander.se>
-           Egorov Boris <jightuse@gmail.com>
-           Joan Duran <jodufi@gmail.com>
-           Jorge González <jorgegonz@svn.gnome.org>
-           Jukka Heikkilä <jutsco@gmail.com>
-           Mario Blättermann <mariobl@gnome.org>
-           Marios Zindilis <m.zindilis@dmajor.org>
-           Philip Withnall <philip@tecnocode.co.uk>
-           YunQiang Su <wzssyqa@gmail.com>
 License: GFDL-1.1+
 
 Files: mateweather/docs/ko/*

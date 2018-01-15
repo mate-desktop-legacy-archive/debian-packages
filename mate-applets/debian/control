@@ -29,7 +29,6 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxml2-dev,
                mate-common (>= 1.18),
-               python-gi-dev,
                x11proto-kb-dev,
                yelp-tools,
 Homepage: http://www.mate-desktop.org/
@@ -38,12 +37,10 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: mate-applets
 Architecture: any
-Depends: gir1.2-mate-panel,
-         gsettings-desktop-schemas,
+Depends: gsettings-desktop-schemas,
          gvfs,
          mate-applets-common (= ${source:Version}),
          mate-panel,
-         python-gi,
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: cpufrequtils,
@@ -70,10 +67,6 @@ Description: Various applets for the MATE panel
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Invest: downloads current stock quotes from the Internet and displays
- the quotes in a scrolling display in the applet. The applet downloads the
- stock information from Yahoo! Finance.
  .
  Netspeed: network traffic monitor applet.
  .
@@ -113,10 +106,6 @@ Description: Various applets for the MATE panel (common files)
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
  .
- Invest: downloads current stock quotes from the Internet and displays
- the quotes in a scrolling display in the applet. The applet downloads the
- stock information from Yahoo! Finance.
- .
  Netspeed: network traffic monitor applet.
  .
  System monitor: CPU, memory, network, swap file and resource.
@@ -155,10 +144,6 @@ Description: Various applets for the MATE panel (debugging symbols)
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Invest: downloads current stock quotes from the Internet and displays
- the quotes in a scrolling display in the applet. The applet downloads the
- stock information from Yahoo! Finance.
  .
  Netspeed: network traffic monitor applet.
  .
