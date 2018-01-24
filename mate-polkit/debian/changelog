@@ -1,3 +1,9 @@
+mate-polkit (1.19.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 24 Jan 2018 11:47:31 +0300
+
 mate-polkit (1.18.2-1) unstable; urgency=medium
 
   * New upstream bugfix release

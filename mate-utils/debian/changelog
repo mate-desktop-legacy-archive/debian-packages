@@ -1,3 +1,9 @@
+mate-utils (1.19.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 24 Jan 2018 11:50:57 +0300
+
 mate-utils (1.18.3-1) unstable; urgency=medium
 
   * New upstream bugfix release
