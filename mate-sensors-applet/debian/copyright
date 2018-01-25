@@ -60,11 +60,6 @@ Files: plugins/aticonfig/aticonfig-plugin.c
 Copyright: 2009, Jaap Versteegh <j.r.versteegh@gmail.com>
 License: GPL-2+
 
-Files: plugins/eee/eee-plugin.c
-       plugins/eee/eee-plugin.h
-Copyright: 2005-2006, Nickolay Surin <nickolay.surin@gmail.com>
-License: GPL-2+
-
 Files: plugins/udisks/udisks-plugin.c
        plugins/udisks/udisks-plugin.h
 Copyright: 2009, Pramod Dematagoda <pmd.lotr.gandalf@gmail.com>
@@ -149,7 +144,6 @@ Files: .tx/config
        plugins/i2c-sys/Makefile.am
        plugins/acpi/Makefile.am
        plugins/i8k/Makefile.am
-       plugins/eee/Makefile.am
        plugins/ibm-acpi/Makefile.am
        plugins/sonypi/Makefile.am
        plugins/i2c-proc/Makefile.am
