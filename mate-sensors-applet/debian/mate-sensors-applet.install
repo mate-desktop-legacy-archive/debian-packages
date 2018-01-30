@@ -8,7 +8,6 @@ usr/lib/*/mate-sensors-applet/plugins/libomnibook.so
 usr/lib/*/mate-sensors-applet/plugins/libpmu-sys.so
 usr/lib/*/mate-sensors-applet/plugins/libsmu-sys.so
 usr/lib/*/mate-sensors-applet/plugins/libsonypi.so
-usr/lib/*/mate-sensors-applet/plugins/libudisks.so
 usr/lib/*/mate-sensors-applet/plugins/libudisks2.so
 usr/lib/mate-sensors-applet/
 usr/share/dbus-1/
