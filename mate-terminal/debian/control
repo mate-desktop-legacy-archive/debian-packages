@@ -18,7 +18,7 @@ Build-Depends: debhelper (>= 9),
                libsm-dev,
                libvte-2.91-dev (>= 0.38),
                libx11-dev,
-               mate-common (>= 1.18),
+               mate-common (>= 1.20),
                yelp-tools,
 Homepage: http://www.mate-desktop.org
 Vcs-Browser: https://github.com/mate-desktop/debian-packages

@@ -22,7 +22,7 @@ Build-Depends: autotools-dev,
                libsm-dev,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.18),
+               mate-common (>= 1.20),
                yelp-tools,
 Standards-Version: 3.9.7
 Vcs-Browser: https://github.com/mate-desktop/debian-packages

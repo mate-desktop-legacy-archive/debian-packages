@@ -22,7 +22,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxml2-dev,
                libxrandr-dev,
-               mate-common (>= 1.18),
+               mate-common (>= 1.20),
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
