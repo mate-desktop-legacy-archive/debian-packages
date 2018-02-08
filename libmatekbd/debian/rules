@@ -21,9 +21,6 @@ override_dh_auto_configure:
 		--disable-static \
 		--enable-introspection
 
-override_dh_makeshlibs:
-	dh_makeshlibs -V 'libmatekbd4 (>= 1.8.0)'
-
 override_dh_strip:
 	dh_strip -plibmatekbd4 --dbg-package=libmatekbd4-dbg
 
