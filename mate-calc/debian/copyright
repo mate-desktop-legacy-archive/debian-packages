@@ -295,7 +295,8 @@ Copyright: Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
            甘露(Gan Lu) <rhythm.gan@gmail.com>, 2009.
 License: GPL-2+
 
-Files: .tx/config
+Files: .github/issue_template.md
+       .tx/config
        data/*.in
        data/Makefile.am
        data/mate-calc-cmd.1

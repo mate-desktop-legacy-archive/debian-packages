@@ -76,6 +76,7 @@ Files: data/icons/22x22/Makefile.am
        autogen.sh
        configure.ac
        .tx/config
+       .github/issue_template.md
        AUTHORS
        COPYING
        ChangeLog

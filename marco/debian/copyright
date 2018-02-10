@@ -61,8 +61,6 @@ License: GPL-2+
 
 Files: src/core/group-private.h
        src/core/group.h
-       src/tools/marco-grayscale.c
-       src/tools/marco-mag.c
        src/ui/draw-workspace.c
        src/ui/draw-workspace.h
 Copyright: 2002, Red Hat, Inc.
@@ -337,7 +335,8 @@ Files: doc/creating_themes/C/index.docbook
 Copyright: 2008, Thomas Thurman
 License: GFDL-1.2+
 
-Files: .tx/config
+Files: .github/issue_template.md
+       .tx/config
        doc/man/Makefile.am
        doc/man/*.1
        doc/Makefile.am
@@ -366,6 +365,7 @@ Files: .tx/config
        Makefile.am
        NEWS
        README
+       README.md
        autogen.sh
        configure.ac
        rationales.txt

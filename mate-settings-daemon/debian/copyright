@@ -73,6 +73,11 @@ Files: mate-settings-daemon/mate-settings-plugin-info.h
 Copyright: 2006-2010 Red Hat, Inc
 License: GPL-2+
 
+Files: plugins/xsettings/wm-common.c
+       plugins/xsettings/wm-common.h
+Copyright: 2018 Victor Kareh <vkareh@vkareh.net>
+License: GPL-2+
+
 Files: plugins/clipboard/list.c
        plugins/clipboard/list.h
        plugins/clipboard/xutils.c
@@ -269,6 +274,7 @@ Comment:
  License assumed from COPYING file.
 
 Files: .tx/config
+       .github/issue_template.md
        data/Makefile.am
        data/*.in.in
        data/*.in

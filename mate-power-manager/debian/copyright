@@ -81,6 +81,7 @@ Copyright:  2006, William Jon McCann <mccann@jhu.edu>
 License: LGPL-2+
 
 Files: .tx/config
+       .github/issue_template.md
        applets/Makefile.am
        applets/brightness/Makefile.am
        applets/brightness/*.xml

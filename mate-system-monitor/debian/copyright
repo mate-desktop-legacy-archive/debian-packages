@@ -4,6 +4,7 @@ Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com
 Source: http://pub.mate-desktop.org/releases/
 
 Files: .tx/config
+       .github/issue_template.md
        m4/ax_cxx_compile_stdcxx_11.m4
        src/*.xml.in
        src/argv.cpp

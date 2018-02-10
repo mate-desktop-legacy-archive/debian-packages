@@ -93,6 +93,7 @@ License: GPL-2+
 
 Files: libmate-panel-applet/mate-panel-applet-factory.c
        libmate-panel-applet/mate-panel-applet-factory.h
+       libmate-panel-applet/panel-applet-private.h
        mate-panel/libmate-panel-applet-private/panel-applet-container.c
        mate-panel/libmate-panel-applet-private/panel-applet-container.h
 Copyright: 2010, Carlos Garcia Campos <carlosgc@gnome.org>
@@ -128,7 +129,7 @@ Files: applets/notification_area/na-box.c
        applets/notification_area/na-host.c
        applets/notification_area/na-host.h
        applets/notification_area/na-item.c
-       applets/notification_area/na-item.h       
+       applets/notification_area/na-item.h
 Copyright: 2016 Alberts Muktupāvels
            2017 Colomban Wendling <cwendling@hypra.fr>
 License: GPL-2+
@@ -478,6 +479,7 @@ Copyright: Amanpreet Singh Brar Alamwalia <apbrar@gmail.com>
 License: GFDL-1.1+
 
 Files: .tx/config
+       .github/issue_template.md
        applets/Makefile.am
        applets/clock/Makefile.am
        applets/clock/clock-location-tile.c

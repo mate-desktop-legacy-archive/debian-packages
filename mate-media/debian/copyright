@@ -91,6 +91,7 @@ Files: data/Makefile.am
        data/sounds/*.ogg
        data/sounds/*.in
        .tx/config
+       .github/issue_template.md
        AUTHORS
        Makefile.am
        autogen.sh

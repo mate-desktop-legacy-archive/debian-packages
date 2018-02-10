@@ -403,6 +403,7 @@ Files: data/*.in.in
        tests/Makefile.am
        tools/plugin_template/Makefile.am
        tools/plugin_template/pluma-plugin.desktop.in
+       .github/issue_template.md
        .tx/config
        AUTHORS
        COPYING

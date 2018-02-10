@@ -103,6 +103,10 @@ Files: backend/pdf/ev-poppler.h
 Copyright: 2004-2005, Red Hat, Inc.
 License: GPL-2+
 
+Files: libdocument/ev-macros.h
+Copyright: 2012, Christian Persch.
+License: GPL-2+
+
 Files: backend/dvi/mdvi-lib/bitmap.c
        backend/dvi/mdvi-lib/bitmap.h
        backend/dvi/mdvi-lib/color.c
@@ -217,6 +221,15 @@ Copyright: 2007, Iñigo Martinez <inigomartinez@gmail.com>
            2009, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
+Files: libview/ev-form-field-accessible.c
+       libview/ev-form-field-accessible.h
+       libview/ev-image-accessible.c
+       libview/ev-image-accessible.h
+       libview/ev-page-accessible.c
+       libview/ev-page-accessible.h
+Copyright: 2014, Igalia
+License: GPL-2+
+
 Files: cut-n-paste/smclient/eggdesktopfile.h
        cut-n-paste/smclient/eggsmclient-private.h
        cut-n-paste/smclient/eggsmclient.c
@@ -315,12 +328,6 @@ Files: libdocument/ev-document-text.c
        libdocument/ev-document-text.h
 Copyright: 2010, Yaco Sistemas, Daniel Garcia <danigm@yaco.es>
 License: GPL-2+
-
-Files: cut-n-paste/gimpcellrenderertoggle/gimpcellrenderertoggle.c
-       cut-n-paste/gimpcellrenderertoggle/gimpcellrenderertoggle.h
-Copyright: 1995-1997, Peter Mattis and Spencer Kimball
-           2003-2004, Sven Neumann <sven@gimp.org>
-License: LGPL-2+
 
 Files: shell/eggfindbar.c
        shell/eggfindbar.h
@@ -569,6 +576,7 @@ Copyright: Jonathan Blandford <jrb@redhat.com>
 License: GFDL-1.1+
 
 Files: .tx/config
+       .github/issue_template.md
        backend/comics/Makefile.am
        backend/comics/*.in
        backend/djvu/Makefile.am
@@ -593,8 +601,6 @@ Files: .tx/config
        backend/xps/*.in
        backend/Makefile.am
        backend/backend.symbols
-       cut-n-paste/gimpcellrenderertoggle/Makefile.am
-       cut-n-paste/gimpcellrenderertoggle/*.list
        cut-n-paste/smclient/Makefile.am
        cut-n-paste/synctex/Makefile.am
        cut-n-paste/toolbar-editor/Makefile.am

@@ -21,6 +21,7 @@ Copyright: 2005, Adam Israel
 License: GPL-2+
 
 Files: .tx/config
+       .github/issue_template.md
        gksu/Makefile.am
        gksu/libcaja-gksu.c
        gksu/libcaja-gksu.caja-extension.in.in

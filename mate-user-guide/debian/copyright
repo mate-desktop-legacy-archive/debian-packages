@@ -56,6 +56,7 @@ Copyright: Andre Klapper <a9016009@gmx.de>
 License: GFDL-1.1+
 
 Files: .tx/config
+       .github/issue_template.md
        po/LINGUAS
        po/POTFILES.*
        AUTHORS

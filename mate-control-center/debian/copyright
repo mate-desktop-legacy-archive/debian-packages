@@ -9,10 +9,6 @@ Files: libslab/app-resizer.c
        libslab/app-shell.h
        libslab/application-tile.c
        libslab/application-tile.h
-       libslab/directory-tile.c
-       libslab/directory-tile.h
-       libslab/document-tile.c
-       libslab/document-tile.h
        libslab/double-click-detector.c
        libslab/double-click-detector.h
        libslab/mate-utils.h
@@ -22,8 +18,6 @@ Files: libslab/app-resizer.c
        libslab/search-bar.h
        libslab/search-context-picker.c
        libslab/search-context-picker.h
-       libslab/search-entry.c
-       libslab/search-entry.h
        libslab/shell-window.c
        libslab/shell-window.h
        libslab/slab-mate-util.c
@@ -71,8 +65,6 @@ License: GPL-2
 Files: capplets/display/mate-display-properties-install-systemwide.c
        libslab/bookmark-agent.c
        libslab/bookmark-agent.h
-       libslab/system-tile.c
-       libslab/system-tile.h
        shell/control-center.c
 Copyright: 2006-2010 Novell, Inc.
 License: GPL-2+
@@ -173,11 +165,6 @@ Files: typing-break/drw-timer.c
 Copyright: 2009, Nathaniel Smith <njs@pobox.com>
 License: GPL-2+
 
-Files: capplets/about-me/eel-alert-dialog.c
-       capplets/about-me/eel-alert-dialog.h
-Copyright: *No copyright*
-License: LGPL-2+
-
 Files: capplets/common/mate-theme-apply.h
        capplets/common/mate-theme-info.h
 Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
@@ -260,10 +247,6 @@ Comment:
  alludes that this file should actually be dealt with as licensed under LGPL-2.1+.
  .
  See https://github.com/mate-desktop/mate-control-center/issues/95.
-
-Files: capplets/about-me/eel-gtk-macros.h
-Copyright: 1999-2001, Eazel, Inc.
-License: LGPL-2+
 
 Files: capplets/common/mate-theme-info.c
 Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
@@ -436,7 +419,6 @@ Files: capplets/about-me/icons/Makefile.am
        libslab/mate-utils.c
        libslab/*.in
        libslab/*.list
-       libslab/*.svg
        libwindow-settings/Makefile.am
        libwindow-settings/marco-window-manager.h
        libwindow-settings/mate-wm-manager.h
@@ -451,6 +433,7 @@ Files: capplets/about-me/icons/Makefile.am
        typing-break/Makefile.am
        typing-break/*.png
        typing-break/*.svg
+       .github/issue_template.md
        .tx/config
        AUTHORS
        COPYING

@@ -60,6 +60,12 @@ Files: plugins/aticonfig/aticonfig-plugin.c
 Copyright: 2009, Jaap Versteegh <j.r.versteegh@gmail.com>
 License: GPL-2+
 
+Files: plugins/udisks2/Makefile.am
+       plugins/udisks2/udisks2-plugin.c
+       plugins/udisks2/udisks2-plugin.h
+Copyright: 2009, Pramod Dematagoda <pmd.lotr.gandalf@gmail.com>
+License: GPL-2+
+
 Files: plugins/nvidia/nvidia-plugin.c
        plugins/nvidia/nvidia-plugin.h
 Copyright: 2006, Sven Peter <svpe@gmx.net>
@@ -123,6 +129,8 @@ Copyright: Alex Murray <murray.alex@gmail.com>
 License: GFDL-1.1+
 
 Files: .tx/config
+       .github/issue_template.md
+       autogenclean.sh
        lib/Makefile.am
        pixmaps/Makefile.am
        pixmaps/*.png

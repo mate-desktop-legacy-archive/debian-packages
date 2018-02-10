@@ -3,12 +3,7 @@ Upstream-Name: mate-polkit
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-polkit/
 
-Files: polkitgtkmate/example.c
-       polkitgtkmate/polkitgtkmate.h
-       polkitgtkmate/polkitgtkmatetypes.h
-       polkitgtkmate/polkitlockbutton.c
-       polkitgtkmate/polkitlockbutton.h
-       src/main.c
+Files: src/main.c
        src/polkitmateauthenticationdialog.c
        src/polkitmateauthenticationdialog.h
        src/polkitmateauthenticator.c
@@ -18,7 +13,8 @@ Files: polkitgtkmate/example.c
 Copyright: 2009, Red Hat, Inc
 License: LGPL-2+
 
-Files: .tx/config
+Files: .github/issue_template.md
+       .tx/config
        AUTHORS
        COPYING
        ChangeLog
@@ -28,19 +24,10 @@ Files: .tx/config
        README
        autogen.sh
        configure.ac
-       docs/Makefile.am
-       docs/polkit-gtk-mate-1-docs.xml
-       docs/polkit-lock-button-lock-down.png
-       docs/polkit-lock-button-locked.png
-       docs/polkit-lock-button-not-authorized.png
-       docs/polkit-lock-button-unlocked.png
-       docs/version.xml.in
        po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
        po/gnome-copyrights.txt
-       polkitgtkmate/Makefile.am
-       polkitgtkmate/polkit-gtk-mate-1.pc.in
        src/Makefile.am
        src/polkit-mate-authentication-agent-1.desktop.in.in
 Copyright: *No copyright*

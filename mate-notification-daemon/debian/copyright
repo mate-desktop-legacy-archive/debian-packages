@@ -57,7 +57,8 @@ License: GPL-2+
 Comment:
  Using license information from COPYING file.
 
-Files: .tx/config
+Files: .github/issue_template.md
+       .tx/config
        data/Makefile.am
        data/org.*
        data/icons/*

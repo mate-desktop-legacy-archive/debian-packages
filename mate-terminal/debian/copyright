@@ -173,6 +173,7 @@ Comment:
  Assuming license as found in COPYING file.
 
 Files: .tx/config
+       .github/issue_template.md
        help/Makefile.am
        help/bg/Makefile.am
        help/ja/Makefile.am

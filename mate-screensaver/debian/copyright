@@ -49,6 +49,7 @@ Copyright: 2004-2008, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
 Files: src/gs-auth-helper.c
+       src/gs-auth-bsdauth.c
        src/setuid.c
        src/setuid.h
        src/subprocs.h
@@ -119,7 +120,8 @@ Comment:
  Assuming license as either found in COPYING file or
  in COPYING.LIB file.
 
-Files: .tx/config
+Files: .github/issue_template.md
+       .tx/config
        data/Makefile.am
        data/xscreensaver-config.xsl
        data/*.ui

@@ -95,16 +95,15 @@ Copyright: 2014 Goce Mitevski
 License: CC-BY-SA-4.0
 Comment: Copyright holders are found in AUTHORS file.
 
-Files: .tx/config
+Files: .github/issue_template.md
+       .tx/config
        AUTHORS
        ChangeLog
        COPYING
        COPYING.CCBY4.0
-       NEWS.GNOME
        Makefile.am
        NEWS
        README
-       TODO
        autogen.sh
        abstract/Arc-Colors-Transparent-Wallpaper.png
        abstract/Makefile.am
@@ -134,7 +133,6 @@ Comment:
 Files: po/ar.po
        po/ku.po
        po/rw.po
-       po/uz@cyrillic.po
 Copyright: 2005, THE PACKAGE'S COPYRIGHT HOLDER
            2005, mate-backgrounds.
            2005, Free Software Foundation, Inc.

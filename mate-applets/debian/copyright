@@ -4,6 +4,7 @@ Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-applets/
 
 Files: .tx/config
+       .github/issue_template.md
        accessx-status/AUTHORS
        accessx-status/Makefile.am
        accessx-status/*.in

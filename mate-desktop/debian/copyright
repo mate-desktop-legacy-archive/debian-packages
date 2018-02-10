@@ -56,9 +56,7 @@ Files: libmate-desktop/mate-gsettings.c
 Copyright: 2013, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: libmate-desktop/mate-aboutdialog.c
-       libmate-desktop/mate-aboutdialog.h
-       libmate-desktop/mate-colorbutton.c
+Files: libmate-desktop/mate-colorbutton.c
        libmate-desktop/mate-colorbutton.h
 Copyright: 2001. CodeFactory AB
            2001, 2002 Anders Carlsson
@@ -146,6 +144,7 @@ Comment:
  COPYING.LIB file.
 
 Files: .tx/config
+       .github/issue_template.md
        docs/Makefile.am
        docs/reference/Makefile.am
        docs/reference/mate-desktop/Makefile.am

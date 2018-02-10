@@ -252,6 +252,7 @@ Comment:
  Same license(s) as the mate-menus package.
 
 Files: autogen.sh
+       .github/issue_template.md
        .tx/config
        AUTHORS
        COPYING

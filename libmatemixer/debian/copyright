@@ -131,6 +131,7 @@ Copyright: 2014, Michal Ratajsky <michal.ratajsky@gmail.com>
 License: LGPL-2+
 
 Files: autogen.sh
+ .github/issue_template.md
  .tx/config
  AUTHORS
  COPYING

@@ -49,6 +49,7 @@ Comment:
  the same license here.
 
 Files: .tx/config
+       .github/issue_template.md
        mate-window-picker-applet/Makefile.am
        mate-window-picker-applet/*.in
        mate-window-picker-applet/*.xml

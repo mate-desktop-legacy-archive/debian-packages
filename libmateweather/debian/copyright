@@ -81,6 +81,7 @@ Comment:
  file or in COPYING.GPL file.
 
 Files: .tx/config
+       .github/issue_template.md
        data/Makefile.am
        data/Locations.xml.in
        data/README*
@@ -110,7 +111,6 @@ Files: .tx/config
        COPYING.GPL
        ChangeLog
        NEWS
-       NEWS.GNOME
        README
 Copyright: *No copyright*
 License: GPL-2+ or LGPL-2.1+

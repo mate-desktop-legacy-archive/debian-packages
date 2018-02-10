@@ -176,6 +176,7 @@ Comment:
  Using license from COPYING file.
 
 Files: .tx/config
+       .github/issue_template.md
        cut-n-paste/toolbar-editor/eggmarshalers.list
        cut-n-paste/totem-screensaver/README
        data/eom-image-properties-dialog.ui

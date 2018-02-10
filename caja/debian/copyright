@@ -174,10 +174,10 @@ Files: libcaja-private/caja-autorun.c
 Copyright: 2000-2011, Red Hat, Inc
 License: GPL-2+
 
-Files: cut-n-paste-code/libegg/eggdesktopfile.h
-       cut-n-paste-code/libegg/eggsmclient-private.h
-       cut-n-paste-code/libegg/eggsmclient.c
-       cut-n-paste-code/libegg/eggsmclient.h
+Files: libegg/eggdesktopfile.h
+       libegg/eggsmclient-private.h
+       libegg/eggsmclient.c
+       libegg/eggsmclient.h
        libcaja-extension/caja-column-provider.c
        libcaja-extension/caja-column-provider.h
        libcaja-extension/caja-column.c
@@ -268,8 +268,8 @@ Files: libcaja-private/caja-sidebar-provider.c
 Copyright: 2004, Red Hat, Inc.
 License: GPL-2+
 
-Files: cut-n-paste-code/libegg/eggtreemultidnd.c
-       cut-n-paste-code/libegg/eggtreemultidnd.h
+Files: libegg/eggtreemultidnd.c
+       libegg/eggtreemultidnd.h
        libcaja-extension/caja-extension-private.h
        libcaja-extension/caja-location-widget-provider.c
        libcaja-private/caja-ui-utilities.c
@@ -508,7 +508,7 @@ Files: eel/eel-accessibility.c
 Copyright: 2002, Anders Carlsson, Sun Microsystems, Inc.
 License: LGPL-2+
 
-Files: cut-n-paste-code/libegg/eggsmclient-xsmp.c
+Files: libegg/eggsmclient-xsmp.c
 Copyright: 1998, Carsten Schaar
            1998, The Open Group
            2007, Novell, Inc.
@@ -524,7 +524,7 @@ Files: src/file-manager/fm-desktop-icon-view.c
 Copyright: 2000-2001, Eazel, Inc.
 License: LGPL-2+
 
-Files: cut-n-paste-code/libegg/eggdesktopfile.c
+Files: libegg/eggdesktopfile.c
 Copyright: 1999-2000, Red Hat, Inc.
            2001, George Lebl
            2007, Novell, Inc.
@@ -562,9 +562,8 @@ Files: libcaja-private/caja-metadata.c
 Copyright: 2009, Red Hat, Inc.
 License: LGPL-2+
 
-Files:  .tx/config
-       cut-n-paste-code/README
-       cut-n-paste-code/libegg/update-from-egg.sh
+Files: .github/issue_template.md
+       .tx/config
        data/icons/*.png
        data/icons/*.svg
        data/patterns/*.png
@@ -607,8 +606,7 @@ Files:  .tx/config
        test/test-eel-pixbuf-scale.c
        test/test.c
        test/test.h
-       cut-n-paste-code/libegg/Makefile.am
-       cut-n-paste-code/Makefile.am
+       libegg/Makefile.am
        data/icons/Makefile.am
        data/Makefile.am
        data/patterns/Makefile.am

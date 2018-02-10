@@ -125,6 +125,7 @@ Copyright: 2007, Novell, Inc.
 License: LGPL-2+
 
 Files: .tx/config
+       .github/issue_template.md
        caja/libcaja-engrampa.caja-extension.in.in
        caja/Makefile.am
        copy-n-paste/Makefile.am

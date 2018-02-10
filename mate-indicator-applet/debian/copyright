@@ -22,6 +22,7 @@ Copyright: 2002, Red Hat, Inc.
 License: LGPL-2+
 
 Files: .tx/config
+       .github/issue_template.md
        data/Makefile.am
        data/*.svg
        data/*.in
