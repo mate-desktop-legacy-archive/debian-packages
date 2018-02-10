@@ -1,7 +1,7 @@
 Source: mate-desktop-environment
 Section: x11
 Priority: optional
-Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
