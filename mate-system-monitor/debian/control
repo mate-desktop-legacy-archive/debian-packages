@@ -51,19 +51,4 @@ Description: Process viewer and system resource monitor for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-system-monitor-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-system-monitor (= ${binary:Version}),
-         ${misc:Depends},
-Description: Process viewer and system resource monitor for MATE (debugging symbols)
- MATE system monitor allows you to graphically view and manipulate the running
- processes on your system.  It also provides an overview of available
- resources such as CPU and memory.
- .
- This package contains debugging symbols for mate-system-monitor. It is
- provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
+

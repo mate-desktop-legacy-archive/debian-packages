@@ -64,28 +64,6 @@ Description: MATE desktop utilities (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-utils-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-utils (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE desktop utilities (debugging symbols)
- This package contains all the tools bundled as MATE utilities:
-  - mate-disk-usage-analyzer, a disk usage analyser
-  - mate-dictionary, a program which can look up the definition of words
-    over the internet (including a panel applet to do the same)
-  - mate-search-tool, with which one can find files by name or content
-  - mate-system-log, a log viewing application
-  - mate-screenshot, a tool to take desktop screenshots and save them into
-    a file
- .
- This package contains debugging symbols for the MATE desktop utilities.
- It is provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
 Package: libmatedict6
 Section: libs
 Architecture: any
@@ -115,22 +93,3 @@ Description: MATE desktop utilities (matedict development files)
  .
  This package provides the development files of the MATE dictionary library.
 
-Package: libmatedict6-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Provides: libmatedict-dbg,
-Depends: libmatedict6 (= ${binary:Version}),
-         ${misc:Depends},
-Breaks: mate-utils-dbg (<< 1.8.0),
-Replaces: mate-utils-dbg (<< 1.8.0),
-Description: MATE desktop utilities (matedict debugging symbols)
- The MATE dictionary is a program which can look up the definition of words
- over the internet (including a panel applet to do the same). MATE
- dictionary is included in the MATE utilities bundle.
- .
- This package contains debugging symbols for the MATE dictionary library.
- It is provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

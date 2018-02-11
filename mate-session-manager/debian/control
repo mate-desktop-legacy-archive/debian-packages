@@ -54,15 +54,3 @@ Description: Session manager of the MATE desktop environment
  This version is configured to start the MATE desktop, based on the
  MATE panel.
 
-Package: mate-session-manager-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-session-manager (= ${binary:Version}),
-         ${misc:Depends},
-Description: Session manager of the MATE desktop environment (debug symbols)
- This package contains debugging symbols for mate-session-manager.
- It is provided to help debugging problems.
- .
- The debugging symbols are installed into /usr/lib/debug and will
- automatically be used by gdb.

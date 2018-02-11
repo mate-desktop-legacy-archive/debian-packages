@@ -70,20 +70,3 @@ Description: MateWeather shared library (development files)
  .
  This package contains the development files.
 
-Package: libmateweather1-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Multi-Arch: same
-Provides: libmateweather-dbg,
-Breaks: libmateweather-dbg,
-Replaces: libmateweather-dbg,
-Depends: libmateweather1 (= ${binary:Version}),
-         ${misc:Depends},
-Description: MateWeather shared library (debugging symbols)
- libmateweather is a library to access weather information from online
- services for numerous locations.
- .
- This package contains the debugging symbols for the libmateweather library.
- They are installed into /usr/lib/debug and will automatically be used
- by gdb.

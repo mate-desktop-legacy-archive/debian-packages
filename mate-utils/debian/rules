@@ -23,8 +23,8 @@ override_dh_auto_configure:
 		--disable-maintainer-flags
 
 override_dh_strip:
-	dh_strip -pmate-utils --dbg-package=mate-utils-dbg
-	dh_strip -plibmatedict6 --dbg-package=libmatedict6-dbg
+	dh_strip -pmate-utils --dbgsym-migration='mate-utils-dbg (<< 1.20.0-1~)'
+	dh_strip -plibmatedict6 --dbgsym-migration='libmatedict6-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

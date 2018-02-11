@@ -16,7 +16,7 @@ override_dh_auto_configure:
 		--disable-static
 
 override_dh_strip:
-	dh_strip -pmate-polkit --dbg-package=mate-polkit-dbg
+	dh_strip -pmate-polkit --dbgsym-migration='libpolkit-gtk-mate-1-0-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

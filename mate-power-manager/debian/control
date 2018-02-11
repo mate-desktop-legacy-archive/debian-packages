@@ -74,25 +74,3 @@ Description: power management tool for the MATE desktop (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-power-manager-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-power-manager (= ${binary:Version}),
-         ${misc:Depends},
-Description: power management tool for the MATE desktop (debugging symbols)
- MATE Power Manager is a session daemon for the MATE desktop
- that takes care of system or desktop events related to power, and
- triggers actions accordingly. Its philosophy is to completely hide
- these complex tasks and only show some settings important to the user.
- .
- The MATE power manager displays and manages battery status, power plug
- events, display brightness, CPU, graphics card and hard disk drive
- power saving, and can trigger suspend-to-RAM, hibernate or shutdown
- events, all integrated to other components of the MATE desktop.
- .
- This package contains debugging symbols for mate-power-manager. It is
- provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

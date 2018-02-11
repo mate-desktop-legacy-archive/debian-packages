@@ -46,19 +46,3 @@ Description: MATE authentication agent for PolicyKit-1 (common files)
  .
  This package contains common files for the MATE policy kit authentication
  agent.
-
-Package: mate-polkit-dbg
-Priority: extra
-Section: debug
-Architecture: any
-Multi-Arch: same
-Depends: mate-polkit (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
- The mate-polkit package provides a D-Bus session bus service that is used to
- bring up authentication dialogs used for obtaining privileges.
- .
- This package contains the debugging symbols for mate-polkit.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

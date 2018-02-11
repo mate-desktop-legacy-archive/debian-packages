@@ -26,8 +26,8 @@ override_dh_auto_configure:
 		--enable-gtk-doc
 
 override_dh_strip:
-	dh_strip -pmate-desktop --dbg-package=mate-desktop-dbg
-	dh_strip -plibmate-desktop-2-17 --dbg-package=libmate-desktop-2-17-dbg
+	dh_strip -pmate-desktop --dbgsym-migration='mate-desktop-dbg (<< 1.20.0-1~)'
+	dh_strip -plibmate-desktop-2-17 --dbgsym-migration='libmate-desktop-2-17-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

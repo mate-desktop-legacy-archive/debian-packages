@@ -30,7 +30,7 @@ override_dh_auto_configure:
 		$(CONFIGURE_SYSTEMD)
 
 override_dh_strip:
-	dh_strip --dbg-package=mate-system-monitor-dbg
+	dh_strip --dbgsym-migration='mate-system-monitor-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

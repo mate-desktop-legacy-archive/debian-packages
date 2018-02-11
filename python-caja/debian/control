@@ -54,23 +54,4 @@ Description: Python binding for Caja components (common files)
  .
  This package contains the architecture independent files.
 
-Package: python-caja-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: python-caja (= ${binary:Version}),
-         ${misc:Depends},
-Description: Python binding for Caja components (debugging symbols)
- Caja is the official file manager for the MATE desktop. It allows one
- to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
- desktop. It works on local and remote filesystems.
- .
- The Python binding for Caja allows one to write Caja property page
- and menu item extensions in Python.
- .
- This package contains debugging symbols for python-caja. It is
- provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
+

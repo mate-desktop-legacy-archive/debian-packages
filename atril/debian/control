@@ -65,22 +65,6 @@ Description: MATE document viewer
  copying text to the clipboard, hypertext navigation, and
  table-of-contents bookmarks.
 
-Package: atril-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: atril (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE document viewer (debugging symbols)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains debugging symbols for Atril.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
 Package: atril-common
 Architecture: all
 Depends: ${misc:Depends},
@@ -121,24 +105,6 @@ Description: MATE document viewing library (development files)
  This package contains the development files for the libatrilview
  library.
 
-Package: libatrilview3-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: libatrilview3 (= ${binary:Version}),
-         ${misc:Depends},
-Breaks: atril-dbg (<< 1.9.0),
-Description: MATE document viewing library (debugging symbols)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains debugging symbols for the libatrilview
- library.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
 Package: libatrildocument3
 Section: libs
 Architecture: any
@@ -169,24 +135,6 @@ Description: MATE document rendering library (development files)
  .
  This package contains the development files for the libatrildocument
  library.
-
-Package: libatrildocument3-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: libatrildocument3 (= ${binary:Version}),
-         ${misc:Depends},
-Breaks: atril-dbg (<< 1.9.0),
-Description: MATE document rendering library (debugging symbols)
- Atril is a simple multi-page document viewer.  It can display
- and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
- Portable Document Format (PDF) files.
- .
- This package contains debugging symbols for the libatrildocument
- library.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
 
 Package: gir1.2-atril
 Architecture: any

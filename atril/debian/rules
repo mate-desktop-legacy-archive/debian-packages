@@ -40,9 +40,9 @@ override_dh_auto_configure:
 		$(DEB_ATRIL_FLAGS)
 
 override_dh_strip:
-	dh_strip -patril --dbg-package=atril-dbg
-	dh_strip -plibatrildocument3 --dbg-package=libatrildocument3-dbg
-	dh_strip -plibatrilview3 --dbg-package=libatrilview3-dbg
+	dh_strip -patril --dbgsym-migration='atril-dbg (<< 1.20.0-1~)'
+	dh_strip -plibatrildocument3 --dbgsym-migration='libatrildocument3-dbg (<< 1.20.0-1~)'
+	dh_strip -plibatrilview3 --dbgsym-migration='libatrilview3-dbg (<< 1.20.0-1~)'
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz -z9

@@ -58,25 +58,3 @@ Description: daemon to display passive popup notifications (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-notification-daemon-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-notification-daemon (= ${binary:Version}),
-         ${misc:Depends},
-Description: daemon to display passive popup notifications (debugging symbols)
- mate-notification-daemon displays passive popup notifications, as per
- the Desktop Notifications Specification.
- .
- The Desktop Notifications Specification provides a standard way of
- doing passive popup notifications on the Linux desktop. These are
- designed to notify the user of something without interrupting their
- work with a dialog box that they must close.  Passive popups can
- automatically disappear after a short period of time, as per the
- Desktop Notifications spec.
- .
- This package contains debugging symbols for the mate-notification-daemon
- package. It is provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

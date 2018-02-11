@@ -69,19 +69,3 @@ Description: Mixer library for MATE Desktop (development files)
  .
  This package contains the development files.
 
-Package: libmatemixer0-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Multi-Arch: same
-Depends: libmatemixer0 (= ${binary:Version}),
-         ${misc:Depends},
-Description: Mixer library for MATE Desktop (debug files)
- Mixer library for MATE Desktop. It provides an abstract API allowing
- access to mixer functionality available in the PulseAudio, ALSA and OSS
- sound systems.
- .
- This package contains debugging symbols for the library.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

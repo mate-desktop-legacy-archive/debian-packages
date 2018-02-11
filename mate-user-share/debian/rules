@@ -21,7 +21,7 @@ override_dh_auto_configure:
 		--disable-silent-rules
 
 override_dh_strip:
-	dh_strip --dbg-package=mate-user-share-dbg
+	dh_strip --dbgsym-migration='mate-user-share-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

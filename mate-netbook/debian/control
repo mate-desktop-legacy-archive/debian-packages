@@ -46,20 +46,3 @@ Description: MATE utilities for netbooks (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-netbook-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-netbook (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE utilities for netbooks (debugging symbols)
- MATE utilities for netbooks are an applet and a daemon to maximize
- windows and move their titles on the panel.
- .
- Installing these utilities is recommended for netbooks and similar
- devices with low resolution displays.
- .
- This package contains debugging symbols for mate-netbook.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

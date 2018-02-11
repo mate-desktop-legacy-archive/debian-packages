@@ -28,7 +28,7 @@ override_dh_installchangelogs:
 	dh_installchangelogs NEWS
 
 override_dh_strip:
-	dh_strip -plibmatemixer0 --dbg-package=libmatemixer0-dbg
+	dh_strip -plibmatemixer0 --dbgsym-migration='libmatemixer0-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

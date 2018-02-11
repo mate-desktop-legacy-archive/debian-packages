@@ -81,24 +81,6 @@ Description: Display readings from hardware sensors in your MATE panel (NVIDIA s
  .
  This package contains plugin for NVIDIA graphics cards.
 
-Package: mate-sensors-applet-nvidia-dbg
-Section: debug
-Priority: extra
-Architecture: amd64 armhf i386
-Depends: mate-sensors-applet-nvidia (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends},
-Description: Display readings from hardware sensors in your MATE panel (NVIDIA, dbg package)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains debugging symbols for the mate-sensors-applet-nvidia
- package. It is provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
 Package: libmate-sensors-applet-plugin0
 Architecture: any
 Section: libs
@@ -131,38 +113,4 @@ Description: Library for plugins for the mate-sensors-applet package (developmen
  This package contains the files necessary to develop plugins for the
  applet.
 
-Package: mate-sensors-applet-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-sensors-applet (= ${binary:Version}),
-         ${misc:Depends},
-Description: Display readings from hardware sensors in your MATE panel (debugging symbols)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains debugging symbols for the mate-sensors-applet package.
- It is provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
 
-Package: libmate-sensors-applet-plugin0-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Provides: libmate-sensors-applet-plugin-dbg,
-Depends: libmate-sensors-applet-plugin0 (= ${binary:Version}),
-         ${misc:Depends},
-Breaks: mate-sensors-applet-dbg (<< 1.8.0+dfsg1-1),
-Description: Library for plugins for the mate-sensors-applet package (debugging symbols)
- MATE Sensors Applet is an applet for the MATE panel that displays
- readings from hardware sensors, including temperatures, fan speeds and
- voltage readings.
- .
- This package contains debugging symbols for the libmate-sensors-applet-plugin0
- package. It is provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

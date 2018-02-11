@@ -28,7 +28,7 @@ override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test
 
 override_dh_strip:
-	dh_strip --dbg-package=pluma-dbg
+	dh_strip --dbgsym-migration='pluma-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

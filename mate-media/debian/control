@@ -53,18 +53,4 @@ Description: MATE media utilities (common files)
  .
  This package contains the common files.
 
-Package: mate-media-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-media (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE media utilities (debugging symbols)
- MATE media utilities are the audio mixer and the volume
- control applet.
- .
- This package contains debugging symbols for MATE media
- utilities.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
+

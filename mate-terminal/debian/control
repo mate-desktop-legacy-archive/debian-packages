@@ -60,24 +60,3 @@ Description: MATE terminal emulator application (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-terminal-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-terminal (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE terminal emulator application (debugging symbols)
- MATE Terminal is a terminal emulation application that you can use to
- perform the following actions:
-  - Access a UNIX shell in the MATE environment.
-  - Run any application that is designed to run on VT102, VT220, and xterm
- terminals.
- .
- MATE Terminal features the ability to use multiple terminals in a single
- window (tabs) and profiles support.
- .
- This package contains debugging symbols for mate-terminal. It is
- provided to help debugging problems.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

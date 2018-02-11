@@ -61,21 +61,6 @@ Description: lightweight GTK+ window manager for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: marco-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: marco (= ${binary:Version}),
-         ${misc:Depends},
-Description: lightweight GTK+ window manager for MATE (debugging symbols)
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains the debugging symbols for the marco executable.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
 Package: libmarco-private1
 Section: libs
 Architecture: any
@@ -93,24 +78,6 @@ Description: library for Marco window manager
  developed mainly for the MATE Desktop.
  .
  This package contains the library.
-
-Package: libmarco-private1-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Multi-Arch: same
-Depends: libmarco-private1 (= ${binary:Version}),
-         ${misc:Depends},
-Breaks: marco-dbg (<= 1.6.2-1~),
-Replaces: marco-dbg (<= 1.6.2-1~),
-Description: library for Marco window manager (debugging symbols)
- Marco is a small window manager, using GTK+ to do everything. It is
- developed mainly for the MATE Desktop.
- .
- This package contains debugging symbols for the library.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
 
 Package: libmarco-dev
 Section: libdevel

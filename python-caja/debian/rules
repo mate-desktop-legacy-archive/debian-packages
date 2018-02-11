@@ -28,7 +28,7 @@ override_dh_auto_configure:
 		--enable-gtk-doc
 
 override_dh_strip:
-	dh_strip --dbg-package=python-caja-dbg
+	dh_strip --dbgsym-migration='python-caja-dbg (<< 1.20.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

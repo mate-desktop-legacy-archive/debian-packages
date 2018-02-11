@@ -69,17 +69,3 @@ Description: MATE screen saver and locker (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-screensaver-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: mate-screensaver (= ${binary:Version}),
-         ${misc:Depends},
-Description: MATE screen saver and locker (debugging symbols)
- mate-screensaver is a screen saver and locker that aims to have simple,
- sane and secure defaults, and be well integrated with the MATE desktop.
- .
- This package contains debugging symbols for MATE screensaver.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
