@@ -54,7 +54,8 @@ Description: lightweight GTK+ window manager for MATE
 Package: marco-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-window-manager (<= 1.0.0-2),
+Breaks: mate-control-center (<< 1.20.0),
+        mate-window-manager (<= 1.0.0-2),
 Description: lightweight GTK+ window manager for MATE (common files)
  Marco is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
