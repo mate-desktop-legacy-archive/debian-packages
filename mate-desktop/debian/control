@@ -53,6 +53,7 @@ Package: mate-desktop-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-desktop (<< 1.1.1-1),
+        mate-settings-daemon (<< 1.20.0),
 Replaces: mate-desktop (<< 1.1.1-1),
 Description: Library with common API for various MATE modules (common files)
  The MATE component mate-desktop contains the libmate-desktop library, the
