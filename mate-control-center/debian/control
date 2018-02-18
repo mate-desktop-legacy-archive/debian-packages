@@ -59,7 +59,6 @@ Depends: caja-common (>= 1.8.0),
          mate-settings-daemon (>= 1.20),
          ${misc:Depends},
          ${shlibs:Depends},
-Suggests: gconf2,
 Breaks: ubuntu-mate-default-settings (<< 16.04),
 Description: utilities to configure the MATE desktop
  The MATE control center contains configuration applets for the MATE desktop,
