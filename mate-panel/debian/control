@@ -78,6 +78,7 @@ Description: launcher and docking facility for MATE (common files)
 
 Package: libmate-panel-applet-4-1
 Section: libs
+Multi-Arch: same
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
