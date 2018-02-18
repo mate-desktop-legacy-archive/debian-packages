@@ -80,9 +80,9 @@ Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
 Description: GObject introspection data for the MATE menu specification
- This package contains introspection data for MATE menu specification, an
+ This package contains introspection data for MATE menu specification,
  an implementation of the draft "Desktop Menu Specification" from
- freedesktop.org
+ freedesktop.org.
  .
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
