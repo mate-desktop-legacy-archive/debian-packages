@@ -45,7 +45,6 @@ Breaks: libmatemenu,
         mate-menus (<= 1.0.2-1),
 Replaces: libmatemenu,
           mate-menus (<= 1.0.2-1),
-Provides: libmatemenu,
 Description: implementation of the freedesktop menu specification for MATE (library)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -64,7 +63,6 @@ Depends: libglib2.0-dev,
          ${shlibs:Depends},
 Breaks: libmatemenu-dev,
 Replaces: libmatemenu-dev,
-Provides: libmatemenu-dev,
 Description: implementation of the freedesktop menu specification for MATE (development files)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
