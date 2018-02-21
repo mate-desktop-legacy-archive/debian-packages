@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: caja-dropbox
 Upstream-Contact: Rian Hunter <rian@dropbox.com>, David Euresti <david@dropbox.com>
 Source: https://www.dropbox.com/downloading?os=lnx
