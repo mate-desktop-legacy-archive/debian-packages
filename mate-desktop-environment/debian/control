@@ -99,9 +99,9 @@ Recommends: atril (>= 1.20),
             mate-user-guide (>= 1.20),
             mate-utils (>= 1.20),
             pluma (>= 1.20),
-Suggests: mail-reader | icedove,
+Suggests: mail-reader | thunderbird,
           network-manager-gnome,
-          x-www-browser | iceweasel,
+          x-www-browser | firefox,
 Description: MATE Desktop Environment (metapackage)
  The MATE Desktop Environment is the continuation of GNOME 2. It provides an
  intuitive and attractive desktop environment using traditional metaphors for
