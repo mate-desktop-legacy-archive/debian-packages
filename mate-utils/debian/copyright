@@ -388,6 +388,7 @@ Copyright: Christophe Bliard <christophe.bliard@trux.info>
 License: GFDL-1.1+
 
 Files: .tx/config
+       .github/issue_template.md
        baobab/data/Makefile.am
        baobab/data/*.ui
        baobab/data/*.1
