@@ -25,7 +25,6 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Package: engrampa
 Architecture: any
 Depends: bzip2 (>= 1.0.1),
-         caja-common,
          engrampa-common (= ${source:Version}),
          gzip (>= 1.3.2),
          p7zip-full,
@@ -33,7 +32,6 @@ Depends: bzip2 (>= 1.0.1),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: gvfs,
-            mate-icon-theme,
             unzip,
             xz-utils,
             zip,
