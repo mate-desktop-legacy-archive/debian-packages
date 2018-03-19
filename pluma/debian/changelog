@@ -1,3 +1,9 @@
+pluma (1.18.4-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 19 Mar 2018 13:10:26 +0300
+
 pluma (1.18.3-1) unstable; urgency=medium
 
   * New upstream bugfix release
