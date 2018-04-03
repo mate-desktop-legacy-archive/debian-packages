@@ -1,3 +1,9 @@
+mate-system-monitor (1.18.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 03 Apr 2018 11:54:39 +0300
+
 mate-system-monitor (1.18.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
