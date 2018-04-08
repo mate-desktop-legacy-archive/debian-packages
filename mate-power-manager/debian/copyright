@@ -136,6 +136,7 @@ Files: .tx/config
        data/*.ui
        data/*.in
        data/*.1       
+       makepot
        po/LINGUAS
        po/POTFILES.*
        po/gnome-copyrights.txt
@@ -192,7 +193,8 @@ Copyright: 2002, Jorn Baayen
            2005-2007, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: po/*.po
+Files: mate-power-manager.pot
+       po/*.po
 Copyright: 2005-2010, Free Software Foundation, Inc.
            2005-2006, Adam Weinberger <adamw@gnome.org>
            2005-2009, Richard Hughes <richard@hughsie.com>

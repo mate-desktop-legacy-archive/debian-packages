@@ -60,7 +60,8 @@ Copyright: Christian.Kirbach@googlemail.com
            sergi256@gmail.com
 License: CC-BY-SA
 
-Files: po/*
+Files: mate-calc.pot
+       po/*
 Copyright: Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
            Afonso Celso Medina <medina@maua.br>, 2005.
            Ahmad M. Zawawi <azawawi@emirates.net.ae>, 2003.
@@ -302,6 +303,7 @@ Files: .github/issue_template.md
        data/mate-calc-cmd.1
        data/mate-calc.1
        help/Makefile.am
+       makepot
        po/LINGUAS
        po/POTFILES.*
        po/gnome-copyrights.txt

@@ -587,6 +587,7 @@ Files: .github/issue_template.md
        libcaja-private/caja-icon-names.h
        libcaja-private/caja-recent.h
        libcaja-private/*.xml
+       makepot
        po/LINGUAS
        po/POTFILES.*
        src/file-manager/caja-audio-mime-types.h
@@ -635,7 +636,8 @@ License: GPL-2+ or LGPL-2+
 Comment:
  Appropriately apply licenses as found in COPYING or COPYING.LIBS.
 
-Files: po/*.po
+Files: caja.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: 1999-2001, Eazel, Inc.
            1999-2008, Aŭtary Cajaa

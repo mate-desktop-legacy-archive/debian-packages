@@ -315,7 +315,8 @@ Files: src/include/tile-preview.h
 Copyright: 2010, Florian Müllner
 License: GPL-2+
 
-Files: po/*.po
+Files: marco.pot
+       po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: THE PACKAGE's COPYRIGHT HOLDERS
@@ -342,6 +343,7 @@ Files: .github/issue_template.md
        doc/Makefile.am
        doc/creating_themes/Makefile.am
        doc/*.txt
+       makepot
        po/LINGUAS
        po/POTFILES.in
        po/POTFILES.skip

@@ -118,7 +118,8 @@ Files: libmate-desktop/test-ditem.c
 Copyright: *No copyright*
 License: GPL-2+
 
-Files: po/*.po
+Files: mate-desktop.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: 1999-2004, Jesús Bravo Álvarez
            2003-2004, Sharif FarsiWeb, Inc.
@@ -167,6 +168,7 @@ Files: .tx/config
        libmate-desktop/mate-rr-private.h
        libmate-desktop/pnp.ids
        libmate-desktop/test.c
+       makepot
        man/Makefile.am
        mate-about/Makefile.am
        mate-about/mate-about.desktop.in.in

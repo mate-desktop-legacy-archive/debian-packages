@@ -367,6 +367,7 @@ Files: data/*.in.in
        data/Makefile.am
        docs/reference/Makefile.am
        docs/Makefile.am
+       makepot
        pixmaps/Makefile.am
        plugins/time/Makefile.am
        plugins/docinfo/Makefile.am
@@ -418,7 +419,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: po/*.po
+Files: pluma.pot
+       po/*.po
 Copyright: 2005, Free Software Foundation, Inc.
            2006, Norayr Chilingaryan
            THE PACKAGE'S COPYRIGHT HOLDER

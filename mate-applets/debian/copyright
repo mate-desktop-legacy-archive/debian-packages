@@ -60,6 +60,7 @@ Files: .tx/config
        geyes/*.svg
        geyes/docs/Makefile.am
        m4/*.m4
+       makepot
        man/Makefile.am
        mateweather/AUTHORS
        mateweather/Makefile.am
@@ -319,7 +320,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: po/*.po
+Files: mate-applets.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
            1998-2006, Free Software Foundation, Inc.

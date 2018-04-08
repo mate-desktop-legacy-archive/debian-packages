@@ -36,8 +36,6 @@ Files: backend/dvi/cairo-device.c
        libview/ev-job-scheduler.h
        libview/ev-link-accessible.c
        libview/ev-link-accessible.h
-       libview/ev-loading-window.c
-       libview/ev-loading-window.h
        libview/ev-print-operation.c
        libview/ev-print-operation.h
        libview/ev-view-presentation.c
@@ -51,6 +49,8 @@ Files: backend/dvi/cairo-device.c
        shell/ev-file-monitor.h
        shell/ev-keyring.c
        shell/ev-keyring.h
+       shell/ev-loading-message.c
+       shell/ev-loading-message.h
        shell/ev-metadata.c
        shell/ev-metadata.h
        shell/ev-open-recent-action.c
@@ -61,7 +61,13 @@ Files: backend/dvi/cairo-device.c
        shell/ev-sidebar-annotations.h
        shell/ev-sidebar-layers.c
        shell/ev-sidebar-layers.h
-Copyright: 2006-2013, Carlos Garcia Campos <carlosgc@gnome.org>
+Copyright: 2006, Carlos Garcia Campos <carlosgc@gnome.org>
+  2007, Carlos Garcia Campos <carlosgc@gnome.org>
+  2008, Carlos Garcia Campos <carlosgc@gnome.org>
+  2009, Carlos Garcia Campos <carlosgc@gnome.org>
+  2010, 2012, Carlos Garcia Campos <carlosgc@gnome.org>
+  2010, Carlos Garcia Campos <carlosgc@gnome.org>
+  2013, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
 Files: backend/pdf/ev-poppler.h
@@ -329,6 +335,11 @@ Files: libdocument/ev-document-text.c
 Copyright: 2010, Yaco Sistemas, Daniel Garcia <danigm@yaco.es>
 License: GPL-2+
 
+Files: previewer/previewer.gresource.xml
+       shell/atril.gresource.xml
+Copyright: 2012, Christian Persch
+License: GPL-3+
+
 Files: shell/eggfindbar.c
        shell/eggfindbar.h
 Copyright: 2004, Red Hat, Inc.
@@ -371,7 +382,7 @@ License: GPL-2+
 
 Files: shell/ev-window.c
 Copyright: 2000-2004, Marco Pesenti Gritti
-           2003-2009 Christian Persch
+           2003-2005, 2009, 2012, Christian Persch
            2004, Martin Kretzschmar
            2004, Red Hat, Inc.
            2008, Carlos Garcia Campos
@@ -385,7 +396,7 @@ License: GPL-2+
 
 Files: shell/ev-daemon.c
 Copyright: 2009, Carlos Garcia Campos <carlosgc@gnome.org>
-           2010, Christian Persch
+           2010, 2012, Christian Persch
 License: GPL-2+
 
 Files: shell/ev-bookmark-action.c
@@ -415,7 +426,7 @@ License: GPL-2+
 
 Files: shell/ev-application.c
 Copyright: 2004, Martin Kretzschmar
-           2010, Christian Persch
+           2010, 2012, Christian Persch
 License: GPL-2+
 
 Files: thumbnailer/atril-thumbnailer.c
@@ -447,16 +458,6 @@ Files: backend/tiff/tiff2ps.h
 Copyright: 2005, rpath, Inc.
 License: GPL-2+
 
-Files: cut-n-paste/totem-screensaver/totem-scrsaver.h
-Copyright: 2004, Bastien Nocera <hadess@hadess.net>
-License: LGPL-2+
-
-Files: cut-n-paste/totem-screensaver/totem-scrsaver.c
-Copyright: 2004-2006, Bastien Nocera <hadess@hadess.net>
-           2010, Carlos Garcia Campos
-           2010, Christian Persch
-License: LGPL-2+
-
 Files: cut-n-paste/smclient/eggsmclient-xsmp.c
 Copyright: 1998, Carsten Schaar, and twm
            1998, The Open Group
@@ -481,7 +482,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: po/*.po
+Files: atril.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER
            2005, Free Software Foundation, Inc.
@@ -605,8 +607,6 @@ Files: .tx/config
        cut-n-paste/synctex/Makefile.am
        cut-n-paste/toolbar-editor/Makefile.am
        cut-n-paste/toolbar-editor/*.list
-       cut-n-paste/totem-screensaver/Makefile.am
-       cut-n-paste/totem-screensaver/README
        cut-n-paste/zoom-control/Makefile.am
        cut-n-paste/Makefile.am
        data/icons/16x16/actions/Makefile.am
@@ -665,14 +665,20 @@ Files: .tx/config
        libview/ev-pixbuf-cache.c
        libview/*.template
        libview/*.list
+       makepot
        po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
        previewer/Makefile.am
        previewer/atril-previewer.1
+       previewer/previewer-ui.xml
        properties/Makefile.am
        shell/Makefile.am
-       shell/ev-marshal.list
+       shell/atril-toolbar.xml
+       shell/atril-ui.xml
+       shell/atril.css
+       shell/ev-daemon-gdbus.xml
+       shell/ev-gdbus.xml
        test/Makefile.am
        test/*.py
        test/test-encrypt.pdf
@@ -718,6 +724,23 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
 License: LGPL-2+
  This library is free software; you can redistribute it and/or

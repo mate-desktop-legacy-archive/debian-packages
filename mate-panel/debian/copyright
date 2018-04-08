@@ -549,6 +549,7 @@ Files: .tx/config
        libmate-panel-applet/*.list
        libmate-panel-applet/test-dbus-applet.c
        m4/d-type.m4
+       makepot
        man/Makefile.am
        man/mate-desktop-item-edit.1
        man/mate-panel-test-applets.1
@@ -560,6 +561,7 @@ Files: .tx/config
        mate-panel/button-widget.c
        mate-panel/button-widget.h
        mate-panel/drawer.h
+       mate-panel/drawer-private.h
        mate-panel/mate-desktop-item-edit.c
        mate-panel/panel-marshal.list
        mate-panel/panel-icon-names.h
@@ -590,7 +592,8 @@ License: GPL-2+ or LGPL-2+
 Comment:
  Assume license as found either in COPYING or in COPYING.LIB file.
 
-Files: po/*.po
+Files: mate-panel.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER
            1997-2010, Free Software Foundation, Inc.
