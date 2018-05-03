@@ -94,9 +94,11 @@ Package: libatrilview-dev
 Section: libdevel
 Architecture: any
 Depends: libatrilview3 (= ${binary:Version}),
+         gir1.2-atrilview-1.5.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libatril-dev (<< 1.9.0),
+        gir1.2-atril (<< 1.20.1-1~),
 Description: MATE document viewing library (development files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -124,10 +126,13 @@ Package: libatrildocument-dev
 Section: libdevel
 Architecture: any
 Depends: libatrildocument3 (= ${binary:Version}),
+         gir1.2-atrildocument-1.5.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libatril-dev (<< 1.9.0),
+        gir1.2-atril (<< 1.20.1-1~),
 Replaces: libatril-dev (<< 1.9.0),
+          gir1.2-atril (<< 1.20.1-1~),
 Description: MATE document rendering library (development files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -136,17 +141,48 @@ Description: MATE document rendering library (development files)
  This package contains the development files for the libatrildocument
  library.
 
-Package: gir1.2-atril
+Package: gir1.2-atrildocument-1.5.0
+Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Description: GObject introspection data for Atril
+Breaks: gir1.2-atril (<< 1.20.1-1~),
+Replaces: gir1.2-atril (<< 1.20.1-1~),
+Description: GObject introspection data for libatrildocument
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains introspection data for Atril.
+ This package contains introspection data for libatrildocument.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
+
+Package: gir1.2-atrilview-1.5.0
+Section: introspection
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: gir1.2-atril (<< 1.20.1-1~),
+Replaces: gir1.2-atril (<< 1.20.1-1~),
+Description: GObject introspection data for libatrilview
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains introspection data for libatrilview.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: gir1.2-atril
+Section: oldlibs
+Architecture: any
+Depends: ${misc:Depends},
+         gir1.2-atrildocument-1.5.0 (= ${binary:Version}),
+         gir1.2-atrilview-1.5.0 (= ${binary:Version}),
+Description: GObject introspection data for libatril* (transitional package)
+ This package is a transitional package to gir1.2-atrildocument-1.5.0 and
+ gir1.2-atrilview-1.5.0. This package can be safely removed.
