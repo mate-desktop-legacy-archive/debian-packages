@@ -59,11 +59,14 @@ Multi-Arch: same
 Section: libdevel
 Depends: libglib2.0-dev,
          libmate-menu2 (= ${binary:Version}),
+         gir1.2-matemenu-2.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libmatemenu-dev,
+        gir1.2-mate-menu (<< 1.20.0-1~),
 Replaces: libmatemenu-dev,
-Description: implementation of the freedesktop menu specification for MATE (development files)
+          gir1.2-mate-menu (<< 1.20.0-1~),
+Description: implementation of the freedesktop menu specs for MATE (development files)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
  .
@@ -71,12 +74,15 @@ Description: implementation of the freedesktop menu specification for MATE (deve
  .
  This package contains the development files.
 
-Package: gir1.2-mate-menu
+Package: gir1.2-matemenu-2.0
 Section: introspection
 Architecture: any
+Multi-Arch: same
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
+Breaks: gir1.2-mate-menu (<< 1.20.0-1~),
+Replaces: gir1.2-mate-menu (<< 1.20.0-1~),
 Description: GObject introspection data for the MATE menu specification
  This package contains introspection data for MATE menu specification,
  an implementation of the draft "Desktop Menu Specification" from
@@ -84,6 +90,15 @@ Description: GObject introspection data for the MATE menu specification
  .
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
+
+Package: gir1.2-mate-menu
+Section: oldlibs
+Architecture: any
+Depends: ${misc:Depends},
+         gir1.2-matemenu-2.0 (= ${binary:Version}),
+Description: GObject introspection data for libmatemenu (transitional package)
+ This package is a transitional package to gir1.2-matemenu-2.0. The package
+ can be safely removed.
 
 Package: python-mate-menu
 Section: python
