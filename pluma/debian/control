@@ -30,8 +30,10 @@ Homepage: http://www.mate-desktop.org/
 
 Package: pluma
 Architecture: any
-Depends: gir1.2-pluma-1.0 (= ${binary:Version}),
+Depends: gir1.2-peas-1.0,
+         gir1.2-pluma-1.0 (= ${binary:Version}),
          iso-codes,
+         libpeas-1.0-python2loader,
          mate-desktop-common,
          pluma-common (= ${source:Version}),
          ${misc:Depends},
