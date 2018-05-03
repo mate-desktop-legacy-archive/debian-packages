@@ -58,12 +58,15 @@ Package: libmatekbd-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libglib2.0-dev,
+Depends: gir1.2-matekbd-1.0 (= ${binary:Version}),
+         libglib2.0-dev,
          libgtk-3-dev,
          libmatekbd4 (= ${binary:Version}),
          libx11-dev,
          libxklavier-dev,
          ${misc:Depends},
+Breaks: gir1.2-matekbd (<< 1.20.1-1~)
+Replaces: gir1.2-matekbd (<< 1.20.1-1~)
 Description: MATE library to manage keyboard configuration (development files)
  libmatekbd offers an API to manage the keyboard in MATE applications.
  .
@@ -72,11 +75,15 @@ Description: MATE library to manage keyboard configuration (development files)
  .
  This package contains the development files.
 
-Package: gir1.2-matekbd
+Package: gir1.2-matekbd-1.0
+Multi-Arch: same
+Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
+Breaks: gir1.2-matekbd (<< 1.20.1-1~)
+Replaces: gir1.2-matekbd (<< 1.20.1-1~)
 Description: GObject introspection data for libmatekbd and libmatekbdui
  libmatekbd offers an API to manage the keyboard in MATE applications.
  .
@@ -88,3 +95,12 @@ Description: GObject introspection data for libmatekbd and libmatekbdui
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
+
+Package: gir1.2-matekbd
+Section: oldlibs
+Architecture: any
+Depends: ${misc:Depends},
+         gir1.2-matekbd-1.0 (= ${binary:Version}),
+Description: GObject introspection data for libmatekbd (transitional package)
+ This package is a transitional package to gir1.2-matekbd-1.0. The package
+ can be safely removed.
