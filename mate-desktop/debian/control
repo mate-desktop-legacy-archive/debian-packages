@@ -94,10 +94,13 @@ Depends: libdconf-dev,
          libgtk-3-dev,
          libmate-desktop-2-17 (= ${binary:Version}),
          libstartup-notification0-dev,
+         gir1.2-matedesktop-2.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libmatedesktop-dev,
+        gir1.2-mate-desktop (<< 1.20.1-1~),
 Replaces: libmatedesktop-dev,
+          gir1.2-mate-desktop (<< 1.20.1-1~),
 Description: Library with common API for various MATE modules (development files)
  The MATE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
@@ -125,14 +128,17 @@ Description: Library with common API for various MATE modules (documentation fil
  .
  This package contains the documentation files.
 
-Package: gir1.2-mate-desktop
+Package: gir1.2-matedesktop-2.0
 Section: introspection
 Architecture: any
+Multi-Arch: same
 Depends: libmate-desktop-2-17 (= ${binary:Version}),
          ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Description: GObject introspection data for the mate-desktop library
+Breaks: gir1.2-mate-desktop (<< 1.20.1-1~),
+Replaces: gir1.2-mate-desktop (<< 1.20.1-1~),
+Description: GObject introspection data for the libmate-desktop library
  The MATE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
@@ -144,3 +150,12 @@ Description: GObject introspection data for the mate-desktop library
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
+
+Package: gir1.2-mate-desktop
+Section: oldlibs
+Architecture: any
+Depends: ${misc:Depends},
+         gir1.2-matedesktop-2.0 (= ${binary:Version}),
+Description: GObject introspection data for libmate-desktop (transitional package)
+ This package is a transitional package to gir1.2-matedesktop-2.0. The package
+ can be safely removed.
