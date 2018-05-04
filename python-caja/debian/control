@@ -23,7 +23,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: python-caja
 Architecture: any
-Depends: gir1.2-caja,
+Depends: gir1.2-caja-2.0,
          python-caja-common (= ${source:Version}),
          ${misc:Depends},
          ${python:Depends},
