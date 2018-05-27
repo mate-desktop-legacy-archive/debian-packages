@@ -17,7 +17,6 @@ Package: mate-desktop-environment-core
 Architecture: all
 Depends: caja (>= 1.20),
          gvfs-backends,
-         gvfs-bin,
          marco (>= 1.20),
          mate-backgrounds (>= 1.20),
          mate-control-center (>= 1.20),
