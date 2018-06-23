@@ -1,3 +1,9 @@
+libmatekbd (1.20.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 23 Jun 2018 14:19:33 +0300
+
 libmatekbd (1.20.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
