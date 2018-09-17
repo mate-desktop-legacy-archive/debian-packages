@@ -1,3 +1,9 @@
+mate-screensaver (1.20.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 17 Sep 2018 15:31:36 +0300
+
 mate-screensaver (1.20.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
