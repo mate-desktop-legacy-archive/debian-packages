@@ -1,3 +1,9 @@
+mate-icon-theme (1.20.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 08 Oct 2018 14:05:21 +0300
+
 mate-icon-theme (1.20.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
