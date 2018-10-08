@@ -25,7 +25,6 @@ Package: mate-menus
 Architecture: any
 Depends: python-mate-menu (= ${binary:Version}),
          ${misc:Depends},
-         ${python:Depends},
 Breaks: mate-control-center (<< 1.13.0),
 Description: implementation of the freedesktop menu specification for MATE
  The package contains an implementation of the draft
