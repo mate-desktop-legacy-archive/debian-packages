@@ -7,23 +7,20 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 10),
-               dh-python,
                dpkg-dev (>= 1.16.1.1),
                gobject-introspection,
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
                mate-common (>= 1.20),
-               python-all-dev (>= 2.7),
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
 Vcs-Git: git://github.com/mate-desktop/debian-packages.git
-X-Python-Version: >= 2.7
 
 Package: mate-menus
 Architecture: any
-Depends: python-mate-menu (= ${binary:Version}),
+Depends: gir1.2-matemenu-2.0 (= ${binary:Version}),
          ${misc:Depends},
 Breaks: mate-control-center (<< 1.13.0),
 Description: implementation of the freedesktop menu specification for MATE
@@ -98,15 +95,3 @@ Depends: ${misc:Depends},
 Description: GObject introspection data for libmatemenu (transitional package)
  This package is a transitional package to gir1.2-matemenu-2.0. The package
  can be safely removed.
-
-Package: python-mate-menu
-Section: python
-Architecture: any
-Depends: ${misc:Depends},
-         ${python:Depends},
-         ${shlibs:Depends},
-Description: implementation of the freedesktop menu specification for MATE (Python bindings)
- The package contains an implementation of the draft
- "Desktop Menu Specification" from freedesktop.org.
- .
- This package contains the Python bindings.
