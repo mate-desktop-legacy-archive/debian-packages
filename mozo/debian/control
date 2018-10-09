@@ -10,12 +10,12 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 10),
                dh-python,
                mate-common (>= 1.20),
-               python (>= 2.7),
+               python3 (>= 3.5),
 Build-Depends-Indep: gettext,
                      intltool (>= 0.40.0),
                      libmate-menu-dev,
                      python-gi-dev,
-XS-Python-Version: >= 2.7
+X-Python3-Version: >= 3.5
 Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
@@ -26,13 +26,12 @@ Architecture: all
 Depends: gir1.2-gdkpixbuf-2.0,
          gir1.2-glib-2.0,
          gir1.2-gtk-3.0,
+         gir1.2-matemenu-2.0,
          mate-menus,
-         python-gi,
-         python-mate-menu,
+         python3-gi,
          ${misc:Depends},
-         ${python:Depends},
+         ${python3:Depends},
 Recommends: mate-panel,
-XB-Python-Version: ${python:Versions}
 Description: easy MATE menu editing tool
  Mozo is an easy-to-use menu editor for MATE that can add
  and edit new entries and menus. It works with the freedesktop.org
