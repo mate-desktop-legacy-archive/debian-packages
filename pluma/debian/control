@@ -42,7 +42,6 @@ Recommends: zenity,
 Provides: mate-text-editor,
 Breaks: mate-text-editor (<< 1.5.0),
 Replaces: mate-text-editor (<< 1.5.0),
-XB-Python-Version: ${python:Versions}
 Description: official text editor of the MATE desktop environment
  Pluma is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
