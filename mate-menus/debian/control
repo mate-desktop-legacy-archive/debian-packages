@@ -119,7 +119,7 @@ Package: python-mate-menu-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: python-mate-menu,
+Depends: python-mate-menu (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
 Description: implementation of the freedesktop menu spec for MATE (Python debugging symbols)
