@@ -1,3 +1,9 @@
+engrampa (1.20.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sun, 16 Dec 2018 14:58:08 +0300
+
 engrampa (1.20.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
