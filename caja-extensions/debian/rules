@@ -22,6 +22,7 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
+		--disable-gksu \
 		--enable-gtk-doc
 
 override_dh_strip:

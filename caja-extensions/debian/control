@@ -23,20 +23,6 @@ Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
 Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
-Package: caja-gksu
-Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
-         gksu,
-         ${misc:Depends},
-         ${shlibs:Depends},
-Description: privilege granting extension for Caja using gksu
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
- .
- The gksu extension for Caja allows you to open files with
- administration privileges using the context menu when browsing
- your files with Caja.
-
 Package: caja-image-converter
 Architecture: any
 Depends: caja-extensions-common (= ${source:Version}),
