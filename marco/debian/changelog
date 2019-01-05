@@ -1,3 +1,9 @@
+marco (1.20.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 05 Jan 2019 14:20:23 +0300
+
 marco (1.20.2-1) unstable; urgency=medium
 
   * New upstream bugfix release
