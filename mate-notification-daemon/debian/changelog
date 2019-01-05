@@ -1,3 +1,9 @@
+mate-notification-daemon (1.20.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 05 Jan 2019 13:38:19 +0300
+
 mate-notification-daemon (1.20.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
