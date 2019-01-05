@@ -1,3 +1,9 @@
+mate-power-manager (1.20.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Sat, 05 Jan 2019 13:44:35 +0300
+
 mate-power-manager (1.20.2-1) unstable; urgency=medium
 
   * New upstream bugfix release
