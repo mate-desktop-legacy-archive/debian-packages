@@ -4,4 +4,3 @@
 # Patches below are not really upstreamable
 2001_non-interactive-update.patch
 2002_use-dpkg-to-select-platform.patch
-2003_execute_via_dbus_launch.patch
