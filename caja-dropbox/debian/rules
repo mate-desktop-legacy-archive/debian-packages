@@ -7,7 +7,7 @@ include /usr/share/dpkg/buildflags.mk
 DHFLAGS=--parallel
 
 %:
-	dh $@ --with python2 $(DHFLAGS)
+	dh $@ $(DHFLAGS)
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
