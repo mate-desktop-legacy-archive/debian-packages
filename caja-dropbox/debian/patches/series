@@ -1,11 +1,6 @@
-1001_unlink-before-extract.patch
-1002_do-not-hardcode-dropboxd-path.patch
-1003_dropbox-update.patch
-# Patches above should really be integrated upstream
 1004_add-http-proxy-option.patch
 1005_use-var-lib-dropbox.patch
 1006_use-pkexec-to-get-root-rights.patch
-1007_desktop-file-fixes.patch
 # Patches below are not really upstreamable
 2001_non-interactive-update.patch
 2002_use-dpkg-to-select-platform.patch
