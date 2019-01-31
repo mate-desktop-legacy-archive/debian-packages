@@ -12,13 +12,13 @@ Origin: vendor
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
 @@ -60,7 +60,7 @@
- DOWNLOADING = u"Downloading Dropbox... %d%%"
- UNPACKING = u"Unpacking Dropbox... %d%%"
+ DOWNLOADING = "Downloading Dropbox... %d%%"
+ UNPACKING = "Unpacking Dropbox... %d%%"
  
 -PARENT_DIR = os.path.expanduser("~")
 +PARENT_DIR = os.path.expanduser("/var/lib/dropbox")
  DROPBOXD_PATH = "%s/.dropbox-dist/dropboxd" % PARENT_DIR
- DESKTOP_FILE = u"@DESKTOP_FILE_DIR@/caja-dropbox.desktop"
+ DESKTOP_FILE = "@DESKTOP_FILE_DIR@/caja-dropbox.desktop"
  
 @@ -263,6 +263,7 @@
              if os.path.exists(filename) and not os.path.isdir(filename):

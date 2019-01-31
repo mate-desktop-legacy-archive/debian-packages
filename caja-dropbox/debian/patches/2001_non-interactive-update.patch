@@ -10,8 +10,8 @@ Origin: vendor
 --- a/caja-dropbox.in
 +++ b/caja-dropbox.in
 @@ -548,9 +548,6 @@
-         console_print(u"%s %s\n" % (INFO, LINK))
-         GPG_WARNING_MSG = (u"\n%s" % GPG_WARNING) if not gpgme else u""
+         console_print("%s %s\n" % (INFO, LINK))
+         GPG_WARNING_MSG = ("\n%s" % GPG_WARNING) if not gpg and not gpgme else ""
  
 -        if not yes_no_question("%s%s" % (WARNING, GPG_WARNING_MSG)):
 -            return
