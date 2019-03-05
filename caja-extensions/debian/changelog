@@ -1,3 +1,9 @@
+caja-extensions (1.22.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 05 Mar 2019 13:34:40 +0300
+
 caja-extensions (1.21.0-1) unstable; urgency=medium
 
   * New upstream development release

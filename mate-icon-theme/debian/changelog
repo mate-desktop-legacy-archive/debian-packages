@@ -1,3 +1,9 @@
+mate-icon-theme (1.22.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 05 Mar 2019 16:37:54 +0300
+
 mate-icon-theme (1.21.0-1) unstable; urgency=medium
 
   * New upstream development release

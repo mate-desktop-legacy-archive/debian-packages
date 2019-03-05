@@ -1,3 +1,9 @@
+mate-control-center (1.22.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 05 Mar 2019 16:31:20 +0300
+
 mate-control-center (1.21.2-1) unstable; urgency=medium
 
   * New upstream development release

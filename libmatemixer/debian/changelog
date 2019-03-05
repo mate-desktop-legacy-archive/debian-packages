@@ -1,3 +1,9 @@
+libmatemixer (1.22.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 05 Mar 2019 11:55:04 +0300
+
 libmatemixer (1.21.0-1) unstable; urgency=medium
 
   * New upstream development release
