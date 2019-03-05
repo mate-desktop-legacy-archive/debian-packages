@@ -1,4 +1,3 @@
-usr/share/appdata/
 usr/share/caja/extensions/
 usr/share/dbus-1/
 usr/share/engrampa/
@@ -7,3 +6,4 @@ usr/share/help/
 usr/share/icons/
 usr/share/locale/
 usr/share/man/
+usr/share/metainfo/
