@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 10),
                libcaja-extension-dev (>= 1.20),
                libglib2.0-dev (>= 2.36.0),
                mate-common (>= 1.20),
-               python-docutils (>= 0.6),
+               python3-docutils (>= 0.6),
                python3,
                python3-gi,
 Standards-Version: 3.9.7
