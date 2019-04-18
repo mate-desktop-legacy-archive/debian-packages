@@ -134,8 +134,7 @@ Package: gir1.2-matedesktop-2.0
 Section: introspection
 Architecture: any
 Multi-Arch: same
-Depends: libmate-desktop-2-17 (= ${binary:Version}),
-         ${gir:Depends},
+Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: gir1.2-mate-desktop (<< 1.20.1-1~),
