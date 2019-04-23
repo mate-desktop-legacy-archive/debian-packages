@@ -24,6 +24,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 Package: mate-notification-daemon
 Architecture: any
 Depends: mate-notification-daemon-common (= ${source:Version}),
+         libglib2.0-bin,
          ${misc:Depends},
          ${shlibs:Depends},
 Provides: notification-daemon,
