@@ -42,7 +42,6 @@ Architecture: any
 Depends: atril-common (= ${source:Version}),
          libatrildocument3 (= ${binary:Version}),
          libatrilview3 (= ${binary:Version}),
-         mate-desktop-common,
          shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends},
