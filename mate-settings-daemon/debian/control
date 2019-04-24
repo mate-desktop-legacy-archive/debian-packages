@@ -95,6 +95,9 @@ Section: devel
 Priority: extra
 Architecture: any
 Depends: mate-settings-daemon (= ${binary:Version}),
+         libdbus-1-dev,
+         libdbus-glib-1-dev,
+         libglib2.0-dev,
          ${misc:Depends},
 Replaces: mate-settings-daemon-gstreamer (<< 1.9.0),
           mate-settings-daemon-pulse (<< 1.9.0),
