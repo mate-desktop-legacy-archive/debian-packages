@@ -157,12 +157,3 @@ Description: GObject introspection data for Pluma
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
-
-Package: gir1.2-pluma
-Section: oldlibs
-Architecture: any
-Depends: ${misc:Depends},
-         gir1.2-pluma-1.0 (= ${binary:Version}),
-Description: GObject introspection data for Pluma (transitional package)
- This package is a transitional package to gir1.2-pluma-1.0. The package
- can be safely removed.
