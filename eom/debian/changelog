@@ -1,3 +1,9 @@
+eom (1.22.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 01 Jul 2019 16:23:24 +0300
+
 eom (1.22.0-1) unstable; urgency=medium
 
   * New upstream release
