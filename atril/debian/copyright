@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: atril
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/atril/
+Upstream-Name: Atril
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/atril/
 
 Files: backend/dvi/cairo-device.c
        backend/dvi/cairo-device.h
@@ -674,6 +674,7 @@ Files: .tx/config
        previewer/previewer-ui.xml
        properties/Makefile.am
        shell/Makefile.am
+       shell/atril.about
        shell/atril-toolbar.xml
        shell/atril-ui.xml
        shell/atril.css
@@ -698,6 +699,7 @@ Files: .tx/config
        atril-document.*
        atril-view.*
        configure.ac
+       update-authors.pl
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
