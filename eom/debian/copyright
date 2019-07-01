@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: eom (old name: mate-image-viewer)
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/eom/
+Upstream-Name: Eom
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/eom/
 
 Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
        plugins/statusbar-date/eom-statusbar-date-plugin.h
@@ -10,13 +10,9 @@ Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
        src/eom-config-keys.h
        src/eom-debug.c
        src/eom-debug.h
-       src/eom-dialog.c
-       src/eom-dialog.h
        src/eom-enums.h
        src/eom-error-message-area.c
        src/eom-error-message-area.h
-       src/eom-exif-details.c
-       src/eom-exif-details.h
        src/eom-exif-util.c
        src/eom-exif-util.h
        src/eom-image-private.h
@@ -140,16 +136,6 @@ Copyright: 1997-2009, Thomas G. Lane, Guido Vollbeding
            2001-2002, The Free Software Foundation, Inc.
 License: GPL-2+
 
-Files: cut-n-paste/totem-screensaver/totem-scrsaver.h
-Copyright: 2004, Bastien Nocera <hadess@hadess.net>
-License: LGPL-2+
-
-Files: cut-n-paste/totem-screensaver/totem-scrsaver.c
-Copyright: 2004-2006, Bastien Nocera <hadess@hadess.net>
-           2010, Carlos Garcia Campos
-           2010, Christian Persch
-License: LGPL-2+
-
 Files: src/eom-image-jpeg.c
 Copyright: 1999, Michael Zucchi
            1999, The Free Software Foundation
@@ -164,7 +150,8 @@ Copyright: 1997-2009, Thomas G. Lane
            1997-2009, Guido Vollbeding
 License: BSD-3-clause~IJG
 
-Files: po/*.po
+Files: eom.pot
+       po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 2000-2009, Free Software Foundation, Inc.
@@ -178,7 +165,6 @@ Comment:
 Files: .tx/config
        .github/issue_template.md
        cut-n-paste/toolbar-editor/eggmarshalers.list
-       cut-n-paste/totem-screensaver/README
        data/eom-image-properties-dialog.ui
        data/icons/22x22/actions/eom-image-collection.png
        data/icons/22x22/actions/eom-plugin.png
@@ -214,7 +200,6 @@ Files: .tx/config
        data/eom.pc.in
        data/eom.css
        data/eom-toolbar.xml
-       data/gtkrc
        data/eom-multiple-save-as-dialog.ui
        data/eom.appdata.xml.in
        data/eom.desktop.in.in
@@ -252,7 +237,6 @@ Files: .tx/config
        src/*.template
        src/*.list
        cut-n-paste/Makefile.am
-       cut-n-paste/totem-screensaver/Makefile.am
        cut-n-paste/toolbar-editor/Makefile.am
        data/icons/22x22/Makefile.am
        data/icons/16x16/Makefile.am
@@ -262,6 +246,8 @@ Files: .tx/config
        data/icons/24x24/Makefile.am
        data/icons/48x48/Makefile.am
        data/Makefile.am
+       data/eom.about
+       data/metadata-sidebar.ui
        data/pixmaps/Makefile.am
        doc/reference/Makefile.am
        doc/Makefile.am
@@ -275,42 +261,113 @@ Files: .tx/config
        plugins/reload/reload.plugin.desktop.in
        plugins/statusbar-date/statusbar-date.plugin.desktop.in
        src/Makefile.am
+       src/eom-application-activatable.c
+       src/eom-application-activatable.h
+       src/eom-application-internal.h
+       src/eom-metadata-details.c
+       src/eom-metadata-details.h
+       src/eom-metadata-sidebar.c
+       src/eom-metadata-sidebar.h
+       src/eom-window-activatable.c
+       src/eom-window-activatable.h
        AUTHORS
        COPYING
        ChangeLog
        Makefile.am
        configure.ac
+       makepot
        NEWS
        README
+       update-authors.pl
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: help/C/*
+Files: help/af/af.po
+       help/am/am.po
        help/ar/*
+       help/as/as.po
+       help/ast/ast.po
+       help/be/be.po
+       help/bg/bg.po
+       help/bn/bn.po
+       help/bn_IN/bn_IN.po
+       help/br/br.po
+       help/C/*
        help/ca/*
+       help/ca@valencia/ca@valencia.po
+       help/cmn/cmn.po
        help/cs/*
        help/da/*
        help/de/*
+       help/dz/dz.po
        help/el/*
+       help/en_AU/en_AU.po
+       help/en_CA/en_CA.po
        help/en_GB/*
+       help/eo/eo.po
+       help/eom.pot
        help/es/*
+       help/et/et.po
        help/eu/*
        help/fi/*
        help/fr/*
+       help/fur/fur.po
+       help/ga/ga.po
+       help/gl/gl.po
+       help/gu/gu.po
+       help/he/he.po
+       help/hi/hi.po
+       help/hr/hr.po
+       help/hu/hu.po
+       help/hy/hy.po
+       help/id/id.po
+       help/is/is.po
        help/it/*
        help/ja/*
+       help/ka/ka.po
+       help/kk/kk.po
+       help/kn/kn.po
        help/ko/*
+       help/ku/ku.po
+       help/ky/ky.po
+       help/lt/lt.po
+       help/lv/lv.po
+       help/mai/mai.po
+       help/mk/mk.po
+       help/ml/ml.po
+       help/mr/mr.po
+       help/ms/ms.po
+       help/nb/nb.po
+       help/ne/ne.po
+       help/nl/nl.po
+       help/nn/nn.po
        help/oc/*
+       help/or/or.po
        help/pa/*
        help/pl/*
+       help/ps/ps.po
        help/pt_BR/*
+       help/pt/pt.po
+       help/ro/ro.po
        help/ru/*
+       help/si/si.po
+       help/sk/sk.po
+       help/sl/sl.po
+       help/sq/sq.po
+       help/sr@latin/sr@latin.po
+       help/sr/sr.po
        help/sv/*
+       help/ta/ta.po
+       help/te/te.po
        help/th/*
+       help/tr/tr.po
        help/uk/*
+       help/uz/uz.po
+       help/vi/vi.po
        help/zh_CN/*
+       help/zh_HK/zh_HK.po
        help/zh_TW/*
 Copyright: 1999-20009, Free Software Foundation, Inc.
            YEAR, THE PACKAGE'S COPYRIGHT HOLDER
