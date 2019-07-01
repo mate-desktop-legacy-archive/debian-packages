@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Caja (old name: mate-file-manager)
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/caja/
+Upstream-Name: Caja
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/caja/
 
 Files: eel/check-program.c
        eel/eel-art-extensions.c
@@ -182,6 +182,8 @@ Files: libegg/eggdesktopfile.h
        libcaja-extension/caja-column-provider.h
        libcaja-extension/caja-column.c
        libcaja-extension/caja-column.h
+       libcaja-extension/caja-configurable.c
+       libcaja-extension/caja-configurable.h
        libcaja-extension/caja-extension-types.c
        libcaja-extension/caja-extension-types.h
        libcaja-extension/caja-file-info.c
@@ -565,7 +567,6 @@ License: LGPL-2+
 Files: .github/issue_template.md
        .tx/config
        data/icons/*.png
-       data/icons/*.svg
        data/patterns/*.png
        data/patterns/*.jpg
        data/caja.xml.in
@@ -592,6 +593,7 @@ Files: .github/issue_template.md
        po/POTFILES.*
        src/file-manager/caja-audio-mime-types.h
        src/file-manager/*.xml
+       src/caja.about
        src/check-caja
        src/*.ui
        src/*.xml
@@ -631,6 +633,7 @@ Files: .github/issue_template.md
        README
        autogen.sh
        configure.ac
+       update-authors.pl
 Copyright: *No copyright*
 License: GPL-2+ or LGPL-2+
 Comment:
