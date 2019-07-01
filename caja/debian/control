@@ -50,9 +50,11 @@ Recommends: gvfs-backends,
 Suggests: engrampa,
           gstreamer1.0-tools,
           meld,
-Breaks: libcaja-extension (<< 1.10.0),
+Breaks: caja-common (<< 1.22.1-1~),
+        libcaja-extension (<< 1.10.0),
         libcaja-extension1 (<< 1.10.0),
         mate-session-manager (<< 1.8.1-7),
+Replaces: caja-common (<< 1.22.1-1~),
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
