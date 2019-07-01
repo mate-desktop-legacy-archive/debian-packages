@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: engrampa
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/engrampa/
+Upstream-Name: Engrampa
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/engrampa/
 
 Files: src/commands/rpm2cpio.c
        src/dlg-add-files.h
@@ -156,6 +156,7 @@ Files: .tx/config
        po/POTFILES.*
        src/engrampa.gresource.xml
        src/ui/Makefile.am
+       src/ui/engrampa.about
        src/ui/*.ui
        src/sh/Makefile.am
        src/sh/isoinfo.sh
@@ -173,6 +174,8 @@ Files: .tx/config
        README-DISTRIBUTIONS
        autogen.sh
        configure.ac
+       makepot
+       update-authors.pl
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
@@ -218,7 +221,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: po/*.po
+Files: engrampa.pot
+       po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 2001-2010, Free Software Foundation, Inc.
