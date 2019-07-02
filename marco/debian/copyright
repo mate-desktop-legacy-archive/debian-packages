@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: marco (old name: mate-window-manager)
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/marco/
+Upstream-Name: Marco
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/marco/
 
 Files: src/core/eventqueue.h
        src/core/frame-private.h
@@ -371,6 +371,7 @@ Files: .github/issue_template.md
        autogen.sh
        configure.ac
        rationales.txt
+       git.mk
 Copyright: *No Copyright*
 License: GPL-2+
 Comment:
