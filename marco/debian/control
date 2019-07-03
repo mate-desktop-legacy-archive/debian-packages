@@ -39,7 +39,7 @@ Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: marco
 Architecture: any
-Depends: libmarco-private1 (= ${binary:Version}),
+Depends: libmarco-private2 (= ${binary:Version}),
          marco-common (= ${source:Version}),
          mate-desktop-common (>= 1.20),
          zenity,
@@ -64,7 +64,7 @@ Description: lightweight GTK+ window manager for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: libmarco-private1
+Package: libmarco-private2
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -85,7 +85,7 @@ Package: libmarco-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libmarco-private1 (= ${binary:Version}),
+Depends: libmarco-private2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
