@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-control-center
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-control-center/
+Upstream-Name: MATE Control Center
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-control-center/
 
 Files: libslab/app-resizer.c
        libslab/app-resizer.h
@@ -16,8 +16,6 @@ Files: libslab/app-resizer.c
        libslab/nameplate-tile.h
        libslab/search-bar.c
        libslab/search-bar.h
-       libslab/search-context-picker.c
-       libslab/search-context-picker.h
        libslab/shell-window.c
        libslab/shell-window.h
        libslab/slab-mate-util.c
@@ -300,11 +298,6 @@ License: GPL-2+
 Comment:
  Assuming license as found in COPYING file.
 
-Files: capplets/network/icons/scalable/mate-network-properties.svg
-       capplets/display/icons/scalable/mate-preferences-desktop-display.svg
-Copyright: *No copyright*
-License: GPL-2
-
 Files: help/*
 Copyright: Alexey Dunaev <keir.ru@gmail.com>
            Andika Triwidada <andika@gmail.com>
@@ -330,37 +323,12 @@ Copyright: Alexey Dunaev <keir.ru@gmail.com>
            Μάριος Ζηντίλης <m.zindilis@dmajor.org>
 License: GFDL-1.1+
 
-Files: capplets/about-me/icons/Makefile.am
-       capplets/about-me/Makefile.am
+Files: capplets/about-me/Makefile.am
        capplets/about-me/mate-about-me-password.h
        capplets/about-me/*.list
        capplets/about-me/*.ui
        capplets/about-me/*.in
        capplets/about-me/AUTHORS
-       capplets/about-me/icons/left-index-finger.png
-       capplets/about-me/icons/left-index-finger.svg
-       capplets/about-me/icons/left-little-finger.png
-       capplets/about-me/icons/left-little-finger.svg
-       capplets/about-me/icons/left-middle-finger.png
-       capplets/about-me/icons/left-middle-finger.svg
-       capplets/about-me/icons/left-ring-finger.png
-       capplets/about-me/icons/left-ring-finger.svg
-       capplets/about-me/icons/left-thumb.png
-       capplets/about-me/icons/left-thumb.svg
-       capplets/about-me/icons/print_error.png
-       capplets/about-me/icons/print_error.svg
-       capplets/about-me/icons/print_ok.png
-       capplets/about-me/icons/print_ok.svg
-       capplets/about-me/icons/right-index-finger.png
-       capplets/about-me/icons/right-index-finger.svg
-       capplets/about-me/icons/right-little-finger.png
-       capplets/about-me/icons/right-little-finger.svg
-       capplets/about-me/icons/right-middle-finger.png
-       capplets/about-me/icons/right-middle-finger.svg
-       capplets/about-me/icons/right-ring-finger.png
-       capplets/about-me/icons/right-ring-finger.svg
-       capplets/about-me/icons/right-thumb.png
-       capplets/about-me/icons/right-thumb.svg
        capplets/accessibility/at-properties/Makefile.am
        capplets/accessibility/at-properties/main.c
        capplets/accessibility/at-properties/*.ui
@@ -383,7 +351,6 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/default-applications/Makefile.am
        capplets/default-applications/*.in
        capplets/default-applications/*.ui
-       capplets/display/icons/*x*/*.png
        capplets/display/Makefile.am
        capplets/display/TODO
        capplets/display/*.ui
@@ -399,10 +366,11 @@ Files: capplets/about-me/icons/Makefile.am
        capplets/keyboard/*.in
        capplets/keyboard/*.ui
        capplets/mouse/Makefile.am
+       capplets/mouse/double-click-maybe.svg
+       capplets/mouse/double-click-off.svg
+       capplets/mouse/double-click-on.svg
        capplets/mouse/*.in
-       capplets/mouse/*.png
        capplets/mouse/*.ui
-       capplets/network/icons/*x*/*.png
        capplets/network/Makefile.am
        capplets/network/*.in
        capplets/network/*.ui
