@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-power-manager
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-power-manager/
+Upstream-Name: MATE Power Manager
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-power-manager/
 
 Files: applets/brightness/egg-debug.c
        applets/brightness/egg-debug.h
@@ -204,6 +204,7 @@ Copyright: 2005-2010, Free Software Foundation, Inc.
            2006-2007, Rosetta Contributors and Canonical Ltd.
            2008, Ihar Hrachyshka
            2009, The Gnome Foundation.
+           YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 License: GPL-2+
 Comment:
  Using license from COPYING file.
