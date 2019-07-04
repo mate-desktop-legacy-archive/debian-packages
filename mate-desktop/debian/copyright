@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-desktop
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-desktop/
+Upstream-Name: MATE Desktop
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-desktop/
 
 Files: libmate-desktop/mate-bg-crossfade.c
        libmate-desktop/mate-bg-crossfade.h
@@ -114,7 +114,7 @@ Comment:
  Assuming license as found in COPYING file.
 
 Files: libmate-desktop/test-ditem.c
-       tools/mate-color-select.desktop.in.in
+       tools/mate-color-select.desktop.in
 Copyright: *No copyright*
 License: GPL-2+
 
@@ -154,24 +154,26 @@ Files: .tx/config
        docs/reference/mate-desktop/mate-desktop-sections.txt
        docs/reference/mate-desktop/mate-desktop.types
        icons/Makefile.am
-       icons/hicolor_apps_16x16_mate.png
-       icons/hicolor_apps_22x22_mate.png
-       icons/hicolor_apps_24x24_mate.png
-       icons/hicolor_apps_256x256_mate.png
-       icons/hicolor_apps_32x32_mate.png
-       icons/hicolor_apps_48x48_mate.png
-       icons/hicolor_apps_scalable_mate.svg
-       icons/hicolor_apps_scalable_mate-symbolic.svg
+       icons/128x128/apps/mate-desktop.png
+       icons/16x16/apps/mate-desktop.png
+       icons/22x22/apps/mate-desktop.png
+       icons/24x24/apps/mate-desktop.png
+       icons/32x32/apps/mate-desktop.png
+       icons/48x48/apps/mate-desktop.png
+       icons/scalable/apps/mate-desktop-symbolic.svg
+       icons/scalable/apps/mate-desktop.svg
        libmate-desktop/Makefile.am
        libmate-desktop/mate-desktop-2.0-uninstalled.pc.in
        libmate-desktop/mate-desktop-2.0.pc.in
+       libmate-desktop/mate-languages.c
+       libmate-desktop/mate-languages.h
        libmate-desktop/mate-rr-private.h
        libmate-desktop/pnp.ids
        libmate-desktop/test.c
        makepot
        man/Makefile.am
        mate-about/Makefile.am
-       mate-about/mate-about.desktop.in.in
+       mate-about/mate-about.desktop.in
        po/LINGUAS
        po/POTFILES.*
        schemas/org.mate.*.xml.in
