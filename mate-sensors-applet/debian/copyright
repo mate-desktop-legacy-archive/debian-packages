@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-sensors-applet
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-sensors-applet/
+Upstream-Name: MATE Sensors Applet
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-sensors-applet/
 
 Files: lib/sensors-applet-plugin.c
        plugins/acpi/acpi-plugin.c
@@ -79,7 +79,8 @@ Files: plugins/sonypi/sonypi-plugin.h
 Copyright: 2006, Thanate Dhirasakdanon <dthanate@gmail.com>
 License: GPL-2+
 
-Files: po/*.po
+Files: mate-sensors-applet.pot
+       po/*.po
 Copyright: Alex Murray <murray.alex@gmail.com>
            ABE Tsunehiko
            abuyop <abuyop@gmail.com>
@@ -130,10 +131,12 @@ License: GFDL-1.1+
 
 Files: .tx/config
        .github/issue_template.md
-       autogenclean.sh
        lib/Makefile.am
        pixmaps/Makefile.am
        pixmaps/*.png
+       plugins/dummy/Makefile.am
+       plugins/dummy/dummy-plugin.c
+       plugins/dummy/dummy-plugin.h
        plugins/omnibook/Makefile.am
        plugins/nvidia/Makefile.am
        plugins/mbmon/Makefile.am
@@ -149,6 +152,9 @@ Files: .tx/config
        plugins/ibm-acpi/Makefile.am
        plugins/sonypi/Makefile.am
        plugins/i2c-proc/Makefile.am
+       plugins/netbsd/Makefile.am
+       plugins/netbsd/netbsd-plugin.c
+       plugins/netbsd/netbsd-plugin.h
        po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
@@ -157,6 +163,7 @@ Files: .tx/config
        SensorsApplet.xml
        autogen.sh
        configure.ac
+       makepot
        org.mate.*.in
        AUTHORS
        COPYING
