@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-netbook
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-netbook/
+Upstream-Name: MATE Netbook
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-netbook/
 
 Files: mate-window-picker-applet/applet.c
        mate-window-picker-applet/task-item.c
@@ -38,7 +38,8 @@ Copyright: 2002, Red Hat, Inc.
            1998, 2001, Tim Janik
 License: LGPL-2+
 
-Files: po/*.po
+Files: mate-netbook.pot
+       po/*.po
        po/ChangeLog
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER
            2009, THE window-picker-applet's COPYRIGHT HOLDER
@@ -50,6 +51,7 @@ Comment:
 
 Files: .tx/config
        .github/issue_template.md
+       makepot
        mate-window-picker-applet/Makefile.am
        mate-window-picker-applet/*.in
        mate-window-picker-applet/*.xml
