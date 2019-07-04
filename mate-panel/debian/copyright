@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-panel
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-panel
+Upstream-Name: MATE Panel
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-panel
 
 Files: applets/wncklet/wncklet.c
        mate-panel/panel-applet-frame.h
@@ -124,9 +124,7 @@ License: GPL-2+
 Comment:
  Assuming license as found in COPYING file.
 
-Files: applets/notification_area/na-box.c
-       applets/notification_area/na-box.h
-       applets/notification_area/na-host.c
+Files: applets/notification_area/na-host.c
        applets/notification_area/na-host.h
        applets/notification_area/na-item.c
        applets/notification_area/na-item.h
@@ -197,12 +195,6 @@ License: GPL-2+
 Files: mate-panel/panel-multiscreen.c
        mate-panel/panel-multiscreen.h
 Copyright: 2001, George Lebl <jirka@5z.com>
-License: GPL-2+
-
-Files: mate-panel/libpanel-util/panel-dbus-service.c
-       mate-panel/libpanel-util/panel-dbus-service.h
-Copyright: 2006, Ray Strode <rstrode@redhat.com>
-           2008, Novell, Inc.
 License: GPL-2+
 
 Files: mate-panel/libpanel-util/panel-gtk.c
@@ -491,6 +483,7 @@ Files: .tx/config
        applets/clock/clock-marshallers.*
        applets/clock/clock-menu.xml
        applets/clock/clock-sunpos.h
+       applets/clock/clock.gresource.xml
        applets/clock/clock.ui
        applets/clock/org.mate.panel.*.in
        applets/clock/pixmaps/Makefile.am
@@ -500,8 +493,12 @@ Files: .tx/config
        applets/fish/fish-menu.xml
        applets/fish/*.png
        applets/fish/*.svg
+       applets/fish/fish.gresource.xml
        applets/fish/fish.ui
        applets/fish/org.mate.panel.*.in
+       applets/notification_area/na-grid.c
+       applets/notification_area/na-grid.h
+       applets/notification_area/notification-area-preferences-dialog.ui
        applets/notification_area/Makefile.am
        applets/notification_area/system-tray/Makefile.am
        applets/notification_area/system-tray/na-marshal.*
@@ -518,6 +515,9 @@ Files: .tx/config
        data/linuxmint.layout
        data/mageia.layout
        data/opensuse.layout
+       data/theme/Makefile.am
+       data/theme/mate-panel.css
+       data/theme/panel-grid-symbolic.svg
        data/ubuntu.layout
        doc/Makefile.am
        doc/*.txt
@@ -568,12 +568,17 @@ Files: .tx/config
        mate-panel/panel-schemas.h
        mate-panel/panel-types.h
        mate-panel/panel-util.h
+       mate-panel/panel.gresource.xml
        mate-panel/panel.h
        mate-panel/xstuff.h
        mate-panel/libegg/Makefile.am
        mate-panel/libpanel-util/Makefile.am
        mate-panel/libmate-panel-applet-private/Makefile.am
        mate-panel/libmate-panel-applet-private/panel-applet-mini.c
+       mate-panel/panel-test-applets.gresource.xml
+       mate-panel/wayland-protocols/Makefile.am
+       mate-panel/wayland-protocols/wlr-layer-shell-unstable-v1.xml
+       mate-panel/wayland-protocols/xdg-shell.xml
        po/LINGUAS
        po/POTFILES.*
        autogen.sh
@@ -593,6 +598,8 @@ Comment:
  Assume license as found either in COPYING or in COPYING.LIB file.
 
 Files: mate-panel.pot
+       mate-clock.pot
+       mate-fish.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER
