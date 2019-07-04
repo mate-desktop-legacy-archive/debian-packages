@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-icon-theme
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-icon-theme/
+Upstream-Name: MATE Icon Theme
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-icon-theme/
 
 Files: src/*.svg
        menta/*
@@ -22,7 +22,8 @@ Copyright: 2009-2013, Perberos <perberos@gmail.com>
            2002-2008, Jakub Steiner <jimmac@novell.com>
 License: LGPL-3+ or CC-BY-SA
 
-Files: po/*.po
+Files: mate-icon-theme.pot
+       po/*.po
 Copyright: 2002-2008, Free Software Foundation, Inc.
            2003-2004, THE PACKAGE'S COPYRIGHT HOLDER
            2006-2008, Rosetta Contributors and Canonical Ltd 2008
@@ -56,6 +57,7 @@ Files: .github/issue_template.md
        autogen.sh
        configure.ac
        index.theme.in.in
+       makepot
        po/ChangeLog
        po/LINGUAS
        po/POTFILES.*
