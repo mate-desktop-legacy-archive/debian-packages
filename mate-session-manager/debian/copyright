@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-session-manager
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-session-manager/
+Upstream-Name: MATE Session Manager
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-session-manager/
 
 Files: mate-session/gs-idle-monitor.c
        mate-session/gs-idle-monitor.h
@@ -151,7 +151,8 @@ Copyright: 1999-2000, Red Hat Inc.
            2007, Novell, Inc.
 License: LGPL-2+
 
-Files: po/*.po
+Files: mate-session-manager.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: 2004, Zuza Software Foundation
            2006-2007, Rosetta Contributors and Canonical, Ltd.
@@ -217,6 +218,7 @@ Files: .github/issue_template.md
        Makefile.am
        NEWS
        README
+       makepot
        mate-session/Makefile.am
        tools/Makefile.am
        autogen.sh
