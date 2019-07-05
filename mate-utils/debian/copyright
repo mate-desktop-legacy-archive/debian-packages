@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-utils
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-utils/
+Upstream-Name: MATE Utils
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-utils/
 
 Files: mate-dictionary/libgdict/gdict-client-context.c
        mate-dictionary/libgdict/gdict-client-context.h
@@ -210,7 +210,8 @@ Copyright: 1999, 2000, Red Hat, Inc.
            2007, Novell, Inc.
 License: LGPL-2+
 
-Files: po/*.po
+Files: mate-utils.pot
+       po/*.po
        po/gnome-copyrights.txt
 Copyright: 2009, The Gnome Foundation
 License: GPL-2+ or LGPL-2.1+
@@ -397,11 +398,8 @@ Files: .tx/config
        baobab/Makefile.am
        baobab/README
        baobab/TODO
-       baobab/pixmaps/24x24/Makefile.am
-       baobab/pixmaps/24x24/*.png
-       baobab/pixmaps/scalable/Makefile.am
-       baobab/pixmaps/scalable/*.svg
        baobab/pixmaps/Makefile.am
+       baobab/pixmaps/hicolor_apps_scalable_mate-disk-usage-analyzer.svg
        baobab/pixmaps/*.png
        baobab/src/Makefile.am
        gsearchtool/data/Makefile.am
@@ -464,6 +462,11 @@ Files: .tx/config
        THANKS
        configure.ac
        autogen.sh
+       makepot
+       mate-dictionary.pot
+       mate-disk-usage-analyzer.pot
+       mate-search-tool.pot
+       mate-system-log.pot
 Copyright: *No copyright*
 License: GPL-2+ or LGPL-2.1+
 Comment:
