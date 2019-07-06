@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mozo (old name: mate-menu-editor)
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mozo/
+Upstream-Name: Mozo
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mozo/
 
 Files: Mozo/MainWindow.py
        Mozo/util.py
@@ -33,14 +33,15 @@ Files: .tx/config
        Makefile.am
        NEWS
        README
-       acinclude.m4
+       makepot
        mozo.in
 Copyright: *No copyright*
 License: LGPL-2+
 Comment:
  Use license as found in COPYING file.
 
-Files: po/*.po
+Files: mozo.pot
+       po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 2007, Free Software Foundation, Inc.
