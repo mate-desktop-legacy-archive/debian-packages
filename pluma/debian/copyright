@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: pluma (old name: mate-text-editor)
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/pluma/
+Upstream-Name: Pluma
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/pluma/
 
 Files: plugins/docinfo/pluma-docinfo-plugin.c
        plugins/docinfo/pluma-docinfo-plugin.h
@@ -396,6 +396,7 @@ Files: data/*.in.in
        pluma/pluma-marshal.list
        po/gnome-copyrights.txt
        pluma/Makefile.am
+       pluma/pluma.about
        pluma/smclient/Makefile.am
        pluma/dialogs/Makefile.am
        po/LINGUAS
@@ -414,6 +415,7 @@ Files: data/*.in.in
        README
        autogen.sh
        configure.ac
+       update-authors.pl
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
@@ -429,27 +431,105 @@ Comment:
  Using license from COPYING file.
 
 Files: help/*.in
+       help/af/*
+       help/am/*
        help/ar/*
+       help/as/*
+       help/ast/*
+       help/az/*
+       help/be/*
        help/bg/*
+       help/bn/*
+       help/bn_IN/*
+       help/br/*
+       help/bs/*
        help/C/*
        help/ca/*
+       help/ca@valencia/*
+       help/cmn/*
+       help/crh/*
        help/cs/*
+       help/cy/*
        help/da/*
        help/de/*
+       help/dz/*
        help/el/*
+       help/en_AU/*
+       help/en_CA/*
+       help/en_GB/*
+       help/eo/*
        help/es/*
+       help/es_AR/*
+       help/es_CO/*
+       help/et/*
+       help/eu/*
+       help/fa/*
        help/fi/*
        help/fr/*
+       help/frp/*
+       help/fur/*
+       help/ga/*
+       help/gl/*
+       help/gu/*
+       help/he/*
+       help/hi/*
+       help/hr/*
        help/hu/*
+       help/hy/*
+       help/id/*
+       help/is/*
        help/it/*
        help/ja/*
+       help/ka/*
+       help/kk/*
+       help/kn/*
        help/ko/*
+       help/ku/*
+       help/ku_IQ/*
+       help/ky/*
+       help/lt/*
+       help/lv/*
+       help/mai/*
+       help/mg/*
+       help/mk/*
+       help/ml/*
+       help/mn/*
+       help/mr/*
+       help/ms/*
+       help/nb/*
+       help/nds/*
+       help/ne/*
+       help/nl/*
+       help/nn/*
        help/oc/*
+       help/or/*
+       help/pa/*
+       help/pl/*
+       help/pluma.pot
+       help/ps/*
+       help/pt/*
        help/pt_BR/*
+       help/ro/*
        help/ru/*
+       help/rw/*
+       help/si/*
+       help/sk/*
+       help/sl/*
+       help/sq/*
+       help/sr/*
+       help/sr@latin/*
        help/sv/*
+       help/ta/*
+       help/te/*
        help/th/*
+       help/tr/*
+       help/ug/*
        help/uk/*
+       help/ur/*
+       help/uz/*
+       help/vi/*
+       help/wa/*
+       help/xh/*
        help/zh_CN/*
        help/zh_HK/*
        help/zh_TW/*
