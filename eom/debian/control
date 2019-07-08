@@ -86,6 +86,18 @@ Description: Eye of MATE graphics viewer program (development files)
  .
  This package contains the development files for building eom plugins.
 
+Package: eom-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+Description: Eye of MATE graphics viewer program (documentation files)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library. It can deal with large
+ images, and zoom and scroll with constant memory usage. Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains the documentation files for building eom plugins.
+
 Package: gir1.2-eom-1.0
 Section: introspection
 Architecture: any
