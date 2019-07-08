@@ -14,7 +14,7 @@ else
 endif
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) --without autoreconf
 
 override_dh_install:
 	dh_install --fail-missing

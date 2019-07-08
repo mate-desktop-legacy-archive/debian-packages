@@ -3,7 +3,7 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) --without autoreconf
 
 override_dh_install:
 	# remove extra-license-file
