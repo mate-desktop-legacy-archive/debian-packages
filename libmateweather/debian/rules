@@ -19,6 +19,7 @@ override_dh_auto_configure:
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
 		--disable-static \
+		--enable-gtk-doc \
 		--enable-locations-compression
 
 override_dh_strip:

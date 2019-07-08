@@ -70,3 +70,12 @@ Description: MateWeather shared library (development files)
  .
  This package contains the development files.
 
+Package: libmateweather-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+Description: MateWeather shared library (documentation files)
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the documentation files.
