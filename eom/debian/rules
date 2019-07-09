@@ -9,9 +9,12 @@ include /usr/share/dpkg/buildflags.mk
 %:
 	dh $@ $(DHFLAGS) --with gir --without autoreconf
 
+override_dh_missing:
+	dh_missing --fail-missing
+
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/eom/plugins/*.la
-	dh_install --fail-missing
+	dh_install
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

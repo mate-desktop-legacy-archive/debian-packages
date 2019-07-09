@@ -5,9 +5,12 @@ DHFLAGS=--parallel
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
+override_dh_missing:
+	dh_missing --fail-missing
+
 override_dh_install:
 	rm -rf debian/mate-icon-theme/usr/share/locale/
-	dh_install --fail-missing
+	dh_install
 
 override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it

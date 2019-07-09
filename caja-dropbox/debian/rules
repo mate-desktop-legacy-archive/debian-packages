@@ -22,7 +22,10 @@ override_dh_install:
 	# Drop useless files
 	rm -f debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.a
 	rm -f debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.la
-	dh_install --fail-missing
+	dh_install
+
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_auto_clean:
 	dh_auto_clean

@@ -9,12 +9,15 @@ include /usr/share/dpkg/buildflags.mk
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
+override_dh_missing:
+	dh_missing --fail-missing
+
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.a
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/mate-sensors-applet/plugins/*.a
 	rm -rfv debian/tmp/usr/lib/*/mate-sensors-applet/plugins/*.la
-	dh_install --fail-missing
+	dh_install
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

@@ -8,7 +8,10 @@ DHFLAGS=--parallel
 override_dh_install:
 	# remove extra-license-file
 	rm -rfv debian/mate-themes/usr/share/themes/*/COPYING
-	dh_install --fail-missing
+	dh_install
+
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_installchangelogs:
 	dh_installchangelogs NEWS

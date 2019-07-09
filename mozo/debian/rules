@@ -3,9 +3,12 @@
 %:
 	dh $@ --without autoreconf
 
+override_dh_missing:
+	dh_missing --fail-missing
+
 override_dh_install:
 	dh_python3
-	dh_install --fail-missing
+	dh_install
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh

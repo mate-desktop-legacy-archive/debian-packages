@@ -15,11 +15,14 @@ endif
 %:
 	dh $@ $(DHFLAGS) --with gir --without autoreconf
 
+override_dh_missing:
+	dh_missing --fail-missing
+
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
-	dh_install --fail-missing
+	dh_install
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test

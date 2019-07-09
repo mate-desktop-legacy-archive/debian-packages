@@ -9,8 +9,8 @@ include /usr/share/dpkg/buildflags.mk
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
 
 override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it
