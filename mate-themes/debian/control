@@ -7,7 +7,7 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Standards-Version: 3.9.7
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 11),
                mate-common (>= 1.20),
 Build-Depends-Indep: icon-naming-utils,
                      intltool,
