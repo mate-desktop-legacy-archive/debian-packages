@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-user-share
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-user-share/
+Upstream-Name: MATE User Share
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-user-share/
 
 Files: src/file-share-properties.c
        src/http.c
@@ -30,7 +30,8 @@ Copyright: 2003, Novell, Inc.
            2005, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: po/*.po
+Files: mate-user-share.pot
+       po/*.po
 Copyright: 2007-2010, THE PACKAGE'S COPYRIGHT HOLDER
            2009, GNOME i18n Project for Vietnamese
            1999-2010, Free Software Foundation, Inc.
@@ -75,6 +76,7 @@ Files: data/icons/22x22/Makefile.am
        Makefile.am
        autogen.sh
        configure.ac
+       makepot
        .tx/config
        .github/issue_template.md
        AUTHORS
