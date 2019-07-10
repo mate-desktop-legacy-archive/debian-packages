@@ -1,3 +1,9 @@
+mate-user-guide (1.22.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 10 Jul 2019 11:39:34 +0300
+
 mate-user-guide (1.22.1-1) unstable; urgency=medium
 
   * New upstream bugfix release
