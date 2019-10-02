@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: libmateweather
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/libmateweather
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/libmateweather
 
 Files: libmateweather/location-entry.c
        libmateweather/location-entry.h
@@ -36,7 +36,8 @@ Files: icons/moonshadow.pl
 Copyright: *No copyright*
 License: GPL-2+
 
-Files: po/*
+Files: libmateweather.pot
+       po/*
 Copyright: 1998-2010, Free Software Foundation, Inc.
            2009, GNOME i18n Project for Vietnamese.
            1999-2002, Jesús Bravo Álvarez
@@ -80,7 +81,8 @@ Comment:
  Apply appropriate license as either found in COPYING
  file or in COPYING.GPL file.
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        data/Makefile.am
        data/Locations.xml.in
@@ -97,6 +99,7 @@ Files: .tx/config
        libmateweather/org.mate.weather.gschema.xml.in
        libmateweather/test_*.c
        libmateweather/mateweather.pc.in
+       makepot
        po/LINGUAS
        po/POTFILES.in
        po/POTFILES.skip
