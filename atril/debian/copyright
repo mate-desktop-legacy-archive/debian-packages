@@ -577,7 +577,8 @@ Copyright: Jonathan Blandford <jrb@redhat.com>
            朱涛 <bill_zt@sina.com>
 License: GFDL-1.1+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        backend/comics/Makefile.am
        backend/comics/*.in
