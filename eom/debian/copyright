@@ -162,7 +162,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        cut-n-paste/toolbar-editor/eggmarshalers.list
        data/eom-image-properties-dialog.ui
