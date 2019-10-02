@@ -565,6 +565,7 @@ Copyright: 2009, Red Hat, Inc.
 License: LGPL-2+
 
 Files: .github/issue_template.md
+       .travis.yml
        .tx/config
        data/icons/*.png
        data/patterns/*.png
