@@ -337,6 +337,7 @@ Copyright: 2008, Thomas Thurman
 License: GFDL-1.2+
 
 Files: .github/issue_template.md
+       .travis.yml
        .tx/config
        doc/man/Makefile.am
        doc/man/*.1
