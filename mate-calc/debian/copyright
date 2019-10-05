@@ -386,6 +386,7 @@ Copyright: Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
 License: GPL-2+
 
 Files: .github/issue_template.md
+       .travis.yml
        .tx/config
        data/*.in
        data/Makefile.am
