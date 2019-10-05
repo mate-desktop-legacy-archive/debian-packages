@@ -3,7 +3,8 @@ Upstream-Name: MATE Applets
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
 Source: https://git.mate-desktop.org/mate-applets/
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        accessx-status/AUTHORS
        accessx-status/Makefile.am
