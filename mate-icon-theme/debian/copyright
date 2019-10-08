@@ -46,6 +46,7 @@ Comment:
  Assuming dual licensing as found in COPYING file.
 
 Files: .github/issue_template.md
+       .travis.yml
        .tx/config
        AUTHORS
        COPYING
