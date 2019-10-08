@@ -405,6 +405,7 @@ Files: capplets/about-me/Makefile.am
        typing-break/*.svg
        .github/issue_template.md
        .tx/config
+       .travis.yml
        AUTHORS
        COPYING
        ChangeLog
