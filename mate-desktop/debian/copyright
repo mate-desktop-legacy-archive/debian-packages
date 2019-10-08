@@ -144,7 +144,8 @@ Comment:
  Appropriately assume either license found in COPYING or license found in
  COPYING.LIB file.
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        docs/Makefile.am
        docs/reference/Makefile.am
@@ -187,7 +188,6 @@ Files: .tx/config
        Makefile.am
        NEWS
        README
-       acinclude.m4
        autogen.sh
        configure.ac
        mate-version.xml.in.in
