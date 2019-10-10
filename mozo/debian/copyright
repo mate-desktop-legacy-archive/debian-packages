@@ -12,7 +12,8 @@ Files: Mozo/MenuEditor.py
 Copyright: 2006, Travis Watkins, Heinrich Wendel
 License: LGPL-2+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        data/Makefile.am
        data/*.ui
