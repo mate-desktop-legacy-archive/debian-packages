@@ -56,7 +56,8 @@ Copyright: Andre Klapper <a9016009@gmx.de>
            2007, Rosetta Contributors and Canonical Ltd
 License: GFDL-1.1+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        po/LINGUAS
        po/POTFILES.*
