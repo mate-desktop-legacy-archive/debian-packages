@@ -470,7 +470,8 @@ Copyright: Amanpreet Singh Brar Alamwalia <apbrar@gmail.com>
            Максим Дзюманенко <dziumanenko@gmail.com>
 License: GFDL-1.1+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        applets/Makefile.am
        applets/clock/Makefile.am
