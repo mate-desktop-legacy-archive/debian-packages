@@ -3,7 +3,8 @@ Upstream-Name: MATE System Monitor
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
 Source: https://git.mate-desktop.org/mate-system-monitor
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        m4/ax_cxx_compile_stdcxx_11.m4
        src/*.xml.in
