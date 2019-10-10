@@ -173,6 +173,7 @@ Comment:
 
 Files: .github/issue_template.md
        .tx/config
+       .travis.yml
        data/*.ui
        data/*.desktop.in*
        data/*.xml.in*
