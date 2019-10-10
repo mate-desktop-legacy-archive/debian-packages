@@ -92,7 +92,6 @@ Description: daemon handling the MATE session settings (common files)
 
 Package: mate-settings-daemon-dev
 Section: devel
-Priority: extra
 Architecture: any
 Depends: mate-settings-daemon (= ${binary:Version}),
          libdbus-1-dev,
