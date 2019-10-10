@@ -388,7 +388,8 @@ Copyright: Christophe Bliard <christophe.bliard@trux.info>
            Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
 License: GFDL-1.1+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        baobab/data/Makefile.am
        baobab/data/*.ui
