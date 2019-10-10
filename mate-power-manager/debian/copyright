@@ -80,7 +80,8 @@ Copyright:  2006, William Jon McCann <mccann@jhu.edu>
             2009, Novell, Inc
 License: LGPL-2+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        applets/Makefile.am
        applets/brightness/Makefile.am
