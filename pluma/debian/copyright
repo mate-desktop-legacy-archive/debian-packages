@@ -406,6 +406,7 @@ Files: data/*.in.in
        tools/plugin_template/Makefile.am
        tools/plugin_template/pluma-plugin.desktop.in
        .github/issue_template.md
+       .travis.yml
        .tx/config
        AUTHORS
        COPYING
