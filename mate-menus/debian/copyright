@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-menus
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-menus/
+Upstream-Name: MATE Menus
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-menus/
 
 Files: libmenu/desktop-entries.c
        libmenu/desktop-entries.h
@@ -16,12 +16,6 @@ Files: libmenu/desktop-entries.c
        util/test-menu-spec.c
 Copyright: 2002-2005 Red Hat, Inc
 License: LGPL-2+
-
-Files: libmenu/canonicalize.c
-       libmenu/canonicalize.h
-Copyright: 1996-2002, Free Software Foundation, Inc
-           2002, Red Hat, Inc. (trivial port to GLib)
-License: LGPL-2.1+
 
 Files: util/mate-menus-ls.py
 Copyright: 2008, Novell, Inc
@@ -39,7 +33,8 @@ Copyright: 2005, Red Hat, Inc
            2011, Perberos
 License: LGPL-2+
 
-Files: po/*
+Files: mate-menus.pot
+       po/*
 Copyright:
  2004-2010, THE PACKAGE'S COPYRIGHT HOLDER
  2010, Mate Foundation
@@ -252,6 +247,7 @@ Comment:
 
 Files: autogen.sh
        .github/issue_template.md
+       .travis.yml
        .tx/config
        AUTHORS
        COPYING
@@ -259,7 +255,7 @@ Files: autogen.sh
        ChangeLog
        NEWS
        README
-       py-compile
+       makepot
        Makefile.am
        configure.ac
        desktop-directories/*
