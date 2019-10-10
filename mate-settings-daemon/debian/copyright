@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-settings-daemon
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-settings-daemon/
+Upstream-Name: MATE Settings Daemon
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-settings-daemon/
 
 Files: mate-settings-daemon/main.c
        mate-settings-daemon/mate-settings-manager.c
@@ -274,6 +274,7 @@ Comment:
  License assumed from COPYING file.
 
 Files: .tx/config
+       .travis.yml
        .github/issue_template.md
        data/Makefile.am
        data/*.in.in
@@ -285,6 +286,8 @@ Files: .tx/config
        makepot
        mate-settings-daemon/Makefile.am
        mate-settings-daemon/mate-settings-manager.xml
+       mate-settings-daemon/mate-settings-bus.c
+       mate-settings-daemon/mate-settings-bus.h
        plugins/a11y-keyboard/Makefile.am
        plugins/a11y-keyboard/*.mate-settings-plugin.in
        plugins/a11y-keyboard/*.ui
@@ -313,14 +316,22 @@ Files: .tx/config
        plugins/media-keys/msd-marshal.*
        plugins/media-keys/*.mate-settings-plugin.in
        plugins/media-keys/*.list
-       plugins/media-keys/*.png
-       plugins/media-keys/*.svg
        plugins/media-keys/*.ui
        plugins/media-keys/*.xml
        plugins/mouse/Makefile.am
        plugins/mouse/*.mate-settings-plugin.in
        plugins/mpris/Makefile.am
        plugins/mpris/*.mate-settings-plugin.in
+       plugins/rfkill/61-mate-settings-daemon-rfkill.rules
+       plugins/rfkill/Makefile.am
+       plugins/rfkill/msd-rfkill-manager.c
+       plugins/rfkill/msd-rfkill-manager.h
+       plugins/rfkill/msd-rfkill-plugin.c
+       plugins/rfkill/msd-rfkill-plugin.h
+       plugins/rfkill/rfkill-glib.c
+       plugins/rfkill/rfkill-glib.h
+       plugins/rfkill/rfkill.h
+       plugins/rfkill/rfkill.mate-settings-plugin.in
        plugins/smartcard/Makefile.am
        plugins/smartcard/*.mate-settings-plugin.in
        plugins/sound/Makefile.am
