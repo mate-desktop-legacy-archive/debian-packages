@@ -122,6 +122,7 @@ Comment:
  in COPYING.LIB file.
 
 Files: .github/issue_template.md
+       .travis.yml
        .tx/config
        data/Makefile.am
        data/xscreensaver-config.xsl
