@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-notification-daemon
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-notification-daemon/
+Upstream-Name: MATE Notification Daemon
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-notification-daemon/
 
 Files: src/daemon/daemon.c
        src/daemon/daemon.h
@@ -44,7 +44,8 @@ Copyright: 2008, Martin Sourada
            2012, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-3+
 
-Files: po/*.po
+Files: mate-notification-daemon.pot
+       po/*.po
        po/Rules-quot
        po/boldquot.sed
        po/en@boldquot.header
@@ -58,6 +59,7 @@ Comment:
  Using license information from COPYING file.
 
 Files: .github/issue_template.md
+       .travis.yml
        .tx/config
        data/Makefile.am
        data/org.*
@@ -73,10 +75,12 @@ Files: .github/issue_template.md
        src/capplet/mate-notification-properties.1
        src/capplet/mate-notification-properties.desktop.in
        src/capplet/mate-notification-properties.ui
+       src/daemon/mnd-daemon.c
        src/daemon/notificationdaemon.xml
        acinclude.m4
        autogen.sh
        configure.ac
+       makepot
        po/LINGUAS
        po/POTFILES.in
        AUTHORS
