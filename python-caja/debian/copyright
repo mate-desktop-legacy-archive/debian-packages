@@ -1,13 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: python-caja
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/python-caja/
+Upstream-Name: Python Caja
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/python-caja/
 
 Files: autogen.sh
        examples/background-image.py
        examples/block-size-column.py
        examples/location-widget-provider.py
        examples/md5sum-property-page.py
+       examples/mixed.py
        examples/open-terminal.py
        examples/submenu.py
        examples/update-file-info-async.py
@@ -26,7 +27,8 @@ Files: src/caja-python-object.c
 Copyright: 2003-2004, Novell, Inc.
 License: GPL-2+
 
-Files: .tx/config
+Files: .travis.yml
+       .tx/config
        .github/issue_template.md
        AUTHORS
        COPYING
@@ -68,6 +70,7 @@ Files: .tx/config
        examples/README
        libcaja-python.caja-extension.in.in
        libcaja-python.caja-extension.in.in
+       makepot
        po/LINGUAS
        po/POTFILES.in
        src/Makefile.am
@@ -76,7 +79,8 @@ License: GPL-2+
 Comment:
  Using license as found in COPYING file.
 
-Files: po/*.po
+Files: python-caja.pot
+       po/*.po
 Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 License: GPL-2+
 Comment:
