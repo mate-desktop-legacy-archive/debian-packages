@@ -19,8 +19,5 @@ override_dh_auto_configure:
 		--disable-static \
 		--libexecdir=/usr/lib/mate-indicator-applet
 
-override_dh_strip:
-	dh_strip --dbgsym-migration='mate-indicator-applet-dbg (<< 1.20.0-1~)'
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

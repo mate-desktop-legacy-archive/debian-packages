@@ -26,10 +26,5 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--with-nvidia=yes
 
-override_dh_strip:
-	dh_strip -pmate-sensors-applet --dbgsym-migration='mate-sensors-applet-dbg (<< 1.20.0-1~)'
-	dh_strip -pmate-sensors-applet-nvidia --dbgsym-migration='mate-sensors-applet-nvidia-dbg (<< 1.20.0-1~)'
-	dh_strip -plibmate-sensors-applet-plugin0 --dbgsym-migration='libmate-sensors-applet-plugin0-dbg (<< 1.20.0-1~)'
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

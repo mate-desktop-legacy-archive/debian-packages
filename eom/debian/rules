@@ -25,8 +25,5 @@ override_dh_auto_configure:
 override_dh_installchangelogs:
 	dh_installchangelogs NEWS
 
-override_dh_strip:
-	dh_strip --dbgsym-migration='eom-dbg (<< 1.20.0-1~)'
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -25,8 +25,5 @@ override_dh_auto_configure:
 		--enable-gtk-doc \
 		--enable-locations-compression
 
-override_dh_strip:
-	dh_strip -plibmateweather1 --dbgsym-migration='libmateweather1-dbg (<< 1.20.0-1~)'
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

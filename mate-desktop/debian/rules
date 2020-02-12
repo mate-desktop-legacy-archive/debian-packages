@@ -28,9 +28,5 @@ override_dh_auto_configure:
 		--disable-schemas-compile \
 		--enable-gtk-doc
 
-override_dh_strip:
-	dh_strip -pmate-desktop --dbgsym-migration='mate-desktop-dbg (<< 1.20.0-1~)'
-	dh_strip -plibmate-desktop-2-17 --dbgsym-migration='libmate-desktop-2-17-dbg (<< 1.20.0-1~)'
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

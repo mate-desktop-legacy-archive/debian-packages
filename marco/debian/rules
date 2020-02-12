@@ -29,9 +29,5 @@ override_dh_auto_configure:
 		--disable-static \
 		--enable-startup-notification=yes
 
-override_dh_strip:
-	dh_strip -pmarco --dbgsym-migration='marco-dbg (<< 1.20.0-1~)'
-	dh_strip -plibmarco-private2 --dbgsym-migration='libmarco-private1-dbg (<< 1.20.0-1~)'
-
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
