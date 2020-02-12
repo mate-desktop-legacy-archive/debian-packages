@@ -116,12 +116,3 @@ Description: GObject introspection data for the eom library
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
-
-Package: gir1.2-eom
-Section: oldlibs
-Architecture: any
-Depends: ${misc:Depends},
-         gir1.2-eom-1.0 (= ${binary:Version}),
-Description: GObject introspection data for eom (transitional package)
- This package is a transitional package to gir1.2-eom-1.0. The package
- can be safely removed.

@@ -175,13 +175,3 @@ Description: GObject introspection data for libatrilview
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
-
-Package: gir1.2-atril
-Section: oldlibs
-Architecture: any
-Depends: ${misc:Depends},
-         gir1.2-atrildocument-1.5.0 (= ${binary:Version}),
-         gir1.2-atrilview-1.5.0 (= ${binary:Version}),
-Description: GObject introspection data for libatril* (transitional package)
- This package is a transitional package to gir1.2-atrildocument-1.5.0 and
- gir1.2-atrilview-1.5.0. This package can be safely removed.
