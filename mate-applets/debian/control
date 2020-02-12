@@ -8,7 +8,7 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
            Martin Wimpress <code@flexion.org>,
 Standards-Version: 3.9.7
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper-compat (=12),
                dpkg-dev (>= 1.16.1.1),
                intltool,
                libcpupower-dev [linux-any] | libcpufreq-dev [linux-any],

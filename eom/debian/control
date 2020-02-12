@@ -10,7 +10,7 @@ Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://github.com/mate-desktop/debian-packages
 Vcs-Git: git://github.com/mate-desktop/debian-packages.git
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper-compat (=12),
                dpkg-dev (>= 1.16.1.1),
                gobject-introspection,
                gtk-doc-tools,
